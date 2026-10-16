@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "session_id": "",
+  "mode": "create",
+  "pace": "adaptive",
+  "target": {
+    "path": null,
+    "version": null,
+    "hash": null
+  },
+  "confirmed_requirements": [],
+  "proposed_defaults": [],
+  "assumptions": [],
+  "examples": [],
+  "acceptance_criteria": [],
+  "unresolved_questions": [],
+  "contradictions": [],
+  "private_preferences": {},
+  "capabilities": {},
+  "asked_question_ids": [],
+  "evidence": [],
+  "effort_limit": {
+    "active_minutes": 30,
+    "max_candidates": 3,
+    "candidates_used": 0
+  },
+  "next_action": "",
+  "updated_at": null
+}

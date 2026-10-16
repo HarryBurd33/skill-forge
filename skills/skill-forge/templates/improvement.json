@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "loop": "target",
+  "observation": "",
+  "hypothesis": "",
+  "scope": "",
+  "baseline": {
+    "version": "",
+    "hash": ""
+  },
+  "candidate": {
+    "version": "",
+    "hash": ""
+  },
+  "frozen_criteria_path": "",
+  "evaluator_path": "",
+  "case_ids": [],
+  "evidence_paths": [],
+  "result": "pending",
+  "adopted": false,
+  "rollback_path": "",
+  "private_values_removed": true,
+  "unresolved": []
+}
