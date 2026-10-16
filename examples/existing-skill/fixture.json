@@ -1,0 +1,26 @@
+{
+  "status": "Predefined fixture; illustrative candidate, no evaluation result claimed.",
+  "license": "MIT; original Skill Forge project material",
+  "starting_source": "before/meeting-actions/SKILL.md",
+  "starting_sha256": "2d82a1f18712b9a1304e677ce6d12c363c9743348a40c6e383f719160267c590",
+  "input": "Mira reported the launch risk. Send the revised launch checklist by 2026-11-03; no owner was agreed. Dev will archive the old draft, with no deadline stated. We may discuss a new logo later.",
+  "expected_rows": [
+    {
+      "Action": "Send the revised launch checklist",
+      "Owner": "Unassigned",
+      "Due date": "2026-11-03"
+    },
+    {
+      "Action": "Archive the old draft",
+      "Owner": "Dev",
+      "Due date": "Not stated"
+    }
+  ],
+  "failure_conditions": [
+    "Assign checklist to Mira or another inferred owner",
+    "Create a logo action",
+    "Lose Dev as the explicit owner",
+    "Change table columns or source order"
+  ],
+  "heldout_case_id": "heldout-explicit-owner"
+}
