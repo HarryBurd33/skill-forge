@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "retrieved_date": "2026-10-15",
+  "method": "Official documentation opened via web; repository files fetched from raw.githubusercontent.com at GitHub API-resolved main commits; license and notice inventories inspected.",
+  "sources": [
+    {
+      "id": "mattpocock-skills",
+      "type": "repository",
+      "repository_url": "https://github.com/mattpocock/skills",
+      "retrieved_date": "2026-10-15",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "commit_date": "2026-10-09T10:56:49Z",
+      "license": "MIT",
+      "license_url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/LICENSE",
+      "reuse": "Conceptual research only; no source prose, code, templates, or assets distributed.",
+      "additional_notice_files_found_in_inspected_scope": [],
+      "files": [
+        {
+          "path": "skills/productivity/grill-me/SKILL.md",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grill-me/SKILL.md",
+          "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+          "bytes": 157
+        },
+        {
+          "path": "skills/productivity/grilling/SKILL.md",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grilling/SKILL.md",
+          "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+          "bytes": 2049
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/LICENSE",
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "bytes": 1068
+        }
+      ]
+    },
+    {
+      "id": "anthropics-skills",
+      "type": "repository",
+      "repository_url": "https://github.com/anthropics/skills",
+      "retrieved_date": "2026-10-15",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "commit_date": "2026-10-09T18:45:49Z",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/LICENSE.txt",
+      "reuse": "Conceptual research only; no source prose, code, templates, or assets distributed.",
+      "additional_notice_files_found_in_inspected_scope": [],
+      "files": [
+        {
+          "path": "skills/skill-creator/SKILL.md",
+          "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/SKILL.md",
+          "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+          "bytes": 33168
+        },
+        {
+          "path": "skills/skill-creator/agents/grader.md",
+          "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/agents/grader.md",
+          "sha256": "57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a",
+          "bytes": 9049
+        },
+        {
+          "path": "skills/skill-creator/agents/comparator.md",
+          "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/agents/comparator.md",
+          "sha256": "fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e",
+          "bytes": 7287
+        },
+        {
+          "path": "skills/skill-creator/agents/analyzer.md",
+          "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/agents/analyzer.md",
+          "sha256": "bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a",
+          "bytes": 10376
+        },
+        {
+          "path": "skills/skill-creator/scripts/run_eval.py",
+          "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/scripts/run_eval.py",
+          "sha256": "43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f",
+          "bytes": 11464
+        },
+        {
+          "path": "skills/skill-creator/scripts/run_loop.py",
+          "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/scripts/run_loop.py",
+          "sha256": "7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21",
+          "bytes": 13605
+        },
+        {
+          "path": "skills/skill-creator/LICENSE.txt",
+          "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/LICENSE.txt",
+          "sha256": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+          "bytes": 11345
+        }
+      ]
+    },
+    {
+      "id": "openai-skills",
+      "type": "repository",
+      "repository_url": "https://github.com/openai/skills",
+      "retrieved_date": "2026-10-15",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "commit_date": "2026-06-24T02:36:12Z",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/LICENSE.txt",
+      "reuse": "Conceptual research only; no source prose, code, templates, or assets distributed.",
+      "additional_notice_files_found_in_inspected_scope": [],
+      "files": [
+        {
+          "path": "skills/.system/skill-creator/SKILL.md",
+          "url": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/SKILL.md",
+          "sha256": "a17383bfb1448637ac1f757ad891ddb9676fa30b0eff620200f0e1cbc0cc0d50",
+          "bytes": 18664
+        },
+        {
+          "path": "skills/.system/skill-creator/LICENSE.txt",
+          "url": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/LICENSE.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        }
+      ]
+    },
+    {
+      "id": "agent-skills-specification",
+      "type": "documentation",
+      "title": "Agent Skills specification",
+      "url": "https://agentskills.io/specification",
+      "retrieved_date": "2026-10-15",
+      "commit": null,
+      "reuse": "Read as primary documentation; original summary only; no copied assets or text.",
+      "license": "No reuse license assumed; documentation consulted only.",
+      "retrieved_markdown_sha256": "4c649bdf0e0a51c9e215d9f91009ecdca05ee9d073edb6f37c20265bbd829e11"
+    },
+    {
+      "id": "openai-build-skills",
+      "type": "documentation",
+      "title": "Build skills",
+      "url": "https://learn.chatgpt.com/docs/build-skills",
+      "retrieved_date": "2026-10-15",
+      "commit": null,
+      "reuse": "Read as primary documentation; original summary only; no copied assets or text.",
+      "license": "No reuse license assumed; documentation consulted only.",
+      "retrieved_markdown_sha256": "ed6e324f747d47adf6f60ee1fca13ba469b3671f55f58c3a78f35947af6919d5"
+    },
+    {
+      "id": "claude-code-skills",
+      "type": "documentation",
+      "title": "Extend Claude with skills",
+      "url": "https://code.claude.com/docs/en/skills",
+      "retrieved_date": "2026-10-15",
+      "commit": null,
+      "reuse": "Read as primary documentation; original summary only; no copied assets or text.",
+      "license": "No reuse license assumed; documentation consulted only."
+    },
+    {
+      "id": "openai-astra-guidance",
+      "type": "documentation",
+      "title": "Rethinking skills and prompts for GPT-6 Astra",
+      "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "retrieved_date": "2026-10-15",
+      "commit": null,
+      "reuse": "Read as primary documentation; original summary only; no copied assets or text.",
+      "license": "No reuse license assumed; documentation consulted only."
+    },
+    {
+      "id": "agent-skills-evaluation",
+      "type": "documentation",
+      "title": "Evaluating skill output quality",
+      "url": "https://agentskills.io/skill-creation/evaluating-skills",
+      "retrieved_date": "2026-10-15",
+      "commit": null,
+      "reuse": "Read as primary documentation; original summary only; no copied assets or text.",
+      "license": "No reuse license assumed; documentation consulted only."
+    }
+  ]
+}
