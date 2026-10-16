@@ -1,0 +1,21 @@
+name: Report an observed failure
+description: Help reproduce and evaluate a skill-building failure.
+title: "Failure: "
+body:
+  - type: textarea
+    id: input
+    attributes:
+      label: Sanitized input and context
+      description: Use fictional data if needed; no credentials or private transcripts.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: Host, model/version, and available tools (if known)

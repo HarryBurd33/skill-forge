@@ -1,0 +1,29 @@
+name: Propose a useful question
+description: Explain the decision a question reveals and when to skip it.
+title: "Question proposal: "
+body:
+  - type: textarea
+    id: observation
+    attributes:
+      label: Sanitized example and observed gap
+      description: State whether this was executed or illustrative. Never include private transcripts.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question, purpose, ask/skip conditions, dependencies, and affected decisions
+    validations:
+      required: true
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Existing questions searched and why this is not redundant
+    validations:
+      required: true
+  - type: textarea
+    id: check
+    attributes:
+      label: Expected behavior, failure conditions, and regression example
+    validations:
+      required: true
