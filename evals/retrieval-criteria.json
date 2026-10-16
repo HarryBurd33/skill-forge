@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "scope": "builder",
+  "change_kind": "behavior",
+  "evaluation_kind": "script_execution",
+  "checks": [
+    {"id":"destination","kind":"acceptance","input":"spreadsheet","expected":"Retrieve a question affecting destination and format","failure":"No relevant destination question"},
+    {"id":"constraints","kind":"regression","input":"constraints","expected":"Retrieve q-constraints","failure":"Original constraint question is lost"},
+    {"id":"evidence","kind":"regression","input":"meta-analysis","expected":"Retrieve q-evidence","failure":"Evidence question is lost"},
+    {"id":"deduplication","kind":"regression","input":"all question purposes","expected":"No duplicate normalized purpose","failure":"Redundant purpose is added"},
+    {"id":"csv","kind":"held_out","input":"CSV","expected":"Retrieve a destination question","failure":"Tabular destination is not discoverable"},
+    {"id":"repository","kind":"held_out","input":"repository","expected":"Retrieve a destination question","failure":"Repository destination is not discoverable"}
+  ],
+  "benefit":{"metric":"destination_queries_supported","direction":"higher","min_delta":1}
+}

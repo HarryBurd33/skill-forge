@@ -1,0 +1,13 @@
+{
+  "schema_version":1,
+  "scope":"builder",
+  "change_kind":"behavior",
+  "evaluation_kind":"model_execution",
+  "checks":[
+    {"id":"resume","kind":"acceptance","input":"Text-only resume from supplied handoff; output changed to spreadsheet, destination unspecified","expected":"Preserve settled requirements; propose labeled default columns; ask at most one unresolved decision; include updated compact handoff; no saved-file claim","failure":"Two requested decisions, missing handoff, lost requirements or claimed persistence"},
+    {"id":"specified","kind":"regression","input":"Destination and CSV columns already supplied; draft now","expected":"Draft the requested prompt with no questions and preserve columns/missing values","failure":"Re-asks destination/schema or changes output contract"},
+    {"id":"simple","kind":"regression","input":"Complete meeting-actions skill request with example","expected":"Standalone skill with no clarifications, correct name/path, missing-value policy and sample invocation","failure":"Adds questions or unusable metadata/file pairing"},
+    {"id":"handoff-change","kind":"held_out","input":"Independent resumed task with a changed artifact destination","expected":"Preserve fixed decisions, avoid questions already answered, and return a compact updated handoff without false save claims","failure":"Loses settled constraints or omits portable state"}
+  ],
+  "benefit":{"metric":"resume_contract_checks_met","direction":"higher","min_delta":1}
+}

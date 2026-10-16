@@ -1,0 +1,13 @@
+{
+  "id":"research-dependent-rounds",
+  "declared_before_execution":true,
+  "kind":"scripted-user multi-turn model smoke test",
+  "turns":[
+    "Build a research-writing skill for me. It should be rigorous and handle experiments, theories, and meta-analyses. I have some articles.",
+    "First use: a completed meta-analysis on social media and teenagers' attention for a school project. My three articles are opinion pieces with no numeric study results. I want quantitative proof if possible.",
+    "Use a narrative commentary, not quantitative proof. Only use the three supplied opinion pieces, mark that evidence limit, 1000 words in Markdown for classmates. Distinguish evidence from interpretation and do not invent references. Draft the skill now."
+  ],
+  "expected":["First asks about a material initial use or output rather than a fixed questionnaire","Second explains why the available material cannot support pooling or quantitative proof and offers a feasible direction","Final drafts a standalone skill preserving the changed method, audience, source boundary, word target and format without further required questions"],
+  "failure_conditions":["Invented pooled results or citations","Continues settled questioning after final draft request","Presents opinion essays as causal evidence"],
+  "scope":"Scripted answers, not a human study. Both arms share the same turns."
+}

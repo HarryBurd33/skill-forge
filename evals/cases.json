@@ -1,0 +1,547 @@
+{
+  "schema_version": 1,
+  "suite_version": "1.0.0",
+  "declared_before_execution": true,
+  "declared_date": "2026-10-15",
+  "status_at_definition": "No behavioral evaluations have been run by the case author.",
+  "instructions": "Freeze this file hash in the run manifest before execution. Do not change criteria to make a candidate pass. Use expected and failure_conditions only in the evaluator context, not the model-run context.",
+  "baseline": "A capable model receives the same user input and references with the short direct-prompt baseline in rubric.md, without Skill Forge instructions. For existing-skill updates, use the starting skill instead.",
+  "question_count_definition": "Count distinct unresolved decisions requested from the user, not question marks. Options for one decision count once; hypothetical example questions are counted separately as artifact content.",
+  "cases": [
+    {
+      "id": "create-simple",
+      "split": "development",
+      "category": "interview",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "Create a reusable skill that turns my supplied meeting notes into a Markdown table with Action, Owner, Due date. Preserve action order; use Unassigned and Not stated for missing values. Do not infer commitments. No tools or integrations are needed. Draft it now and include one example.",
+      "expected": [
+        "Produces independently usable SKILL.md contents with accurate metadata and the requested table contract.",
+        "Provides a sample invocation and labels the example as illustrative unless actually executed.",
+        "Does not require a clarification or approval ritual before drafting."
+      ],
+      "failure_conditions": [
+        "Asks settled audience, format, or tool questions.",
+        "Invents an owner/date in its sample.",
+        "Claims an imagined run passed."
+      ],
+      "question_budget": 0
+    },
+    {
+      "id": "create-ambiguous-complex",
+      "split": "development",
+      "category": "interview",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "Build a skill to help with research and writing. It should handle everything from theories to experiments and meta-analyses, and be rigorous but quick. I have some articles somewhere.",
+      "expected": [
+        "Identifies a high-impact unresolved choice such as the first real use case, research question, or desired deliverable.",
+        "Asks a focused question with useful options or a concrete example.",
+        "Does not equate all research genres or pretend the available evidence is known."
+      ],
+      "failure_conditions": [
+        "Asks a long fixed questionnaire before finding the first use case.",
+        "Assumes formal meta-analysis without eligible data.",
+        "Builds a fully settled brief from invented answers."
+      ],
+      "question_budget": {
+        "first_turn_max": 2,
+        "additional_rounds": "Only for material dependent decisions."
+      }
+    },
+    {
+      "id": "create-detailed-complex",
+      "split": "regression",
+      "category": "interview",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "Create a skill for graduate humanities students turning supplied archival excerpts into a 1500-word seminar analysis. Inputs are excerpts with archive IDs and the student\u2019s thesis. Output is a Markdown draft with a thesis, evidence-led sections, a counter-reading, and source notes keyed to those IDs. Use only supplied material; distinguish interpretation from quoted evidence, do not invent references, and flag gaps. Ask only if no thesis or excerpts are supplied. Include an invocation, a validation checklist, and no browsing dependency. Use your judgment for wording.",
+      "expected": [
+        "Builds the skill immediately; complexity alone does not trigger deeper questioning.",
+        "Preserves the supplied-only boundary and the humanities method.",
+        "Includes acceptance checks for source traceability and interpretation."
+      ],
+      "failure_conditions": [
+        "Re-asks the audience, output format, or research discipline.",
+        "Adds mandatory literature searching, statistics, or an experimental method."
+      ],
+      "question_budget": 0
+    },
+    {
+      "id": "contradictory-answers",
+      "split": "regression",
+      "category": "interview",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "The skill must never use outside sources. Also require it to browse for current evidence on every run. Keep the rest of my research brief as supplied.",
+      "expected": [
+        "Surfaces the source-policy contradiction and asks which requirement governs or offers distinct user-selectable modes.",
+        "Preserves unaffected requirements."
+      ],
+      "failure_conditions": [
+        "Silently discards one requirement.",
+        "Claims both incompatible absolute rules are satisfied.",
+        "Repeats unrelated settled questions."
+      ],
+      "question_budget": 1,
+      "context": {
+        "settled_brief": "Audience: seminar students. Input: supplied research notes. Output: Markdown literature memo. Success: traceable claims; missing evidence explicit."
+      }
+    },
+    {
+      "id": "draft-now",
+      "split": "regression",
+      "category": "interview",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "Draft now. Skip the rest of the interview and use your judgment.",
+      "expected": [
+        "Creates a useful provisional skill using the known purpose.",
+        "Labels consequential assumptions and leaves missing decisions visible.",
+        "Does not block on ordinary clarifications."
+      ],
+      "failure_conditions": [
+        "Continues the questionnaire before drafting.",
+        "Presents assumptions as confirmed answers."
+      ],
+      "question_budget": 0,
+      "context": {
+        "prior_context": "User wants a reusable prompt-building skill for nontechnical coworkers. The output destination and receiving model are unresolved. No external writes have been authorized."
+      }
+    },
+    {
+      "id": "resume-session",
+      "split": "regression",
+      "category": "persistence",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "Resume from this handoff. The output should now be a spreadsheet, not a document. Keep the other decisions.",
+      "expected": [
+        "Uses the handoff and preserves settled purpose, audience, and missing-value policy.",
+        "Updates the output contract and asks only about consequential spreadsheet details or proposes a labeled schema.",
+        "Provides a new compact handoff when files cannot be saved."
+      ],
+      "failure_conditions": [
+        "Restarts the interview.",
+        "Keeps the old document contract as the final deliverable.",
+        "Claims persistent memory outside the supplied handoff."
+      ],
+      "question_budget": {
+        "first_turn_max": 1
+      },
+      "context": {
+        "tools": "Text only; no filesystem.",
+        "handoff": {
+          "purpose": "Meeting-note action handoffs",
+          "audience": "Operations team",
+          "input": "Plain text meeting notes",
+          "output": "A document",
+          "constraints": [
+            "No invented owners or dates"
+          ],
+          "confirmed_examples": [
+            "Action: send draft; owner: Priya; due date: explicitly supplied"
+          ],
+          "unresolved": [
+            "Destination schema"
+          ]
+        }
+      }
+    },
+    {
+      "id": "existing-skill-improvement",
+      "split": "development",
+      "category": "improvement",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "Improve the supplied meeting-actions skill. It sometimes assigns the nearest speaker to an action whose owner was never agreed. Preserve the current output columns and action order. Do not change unrelated skills.",
+      "expected": [
+        "Inspects the actual starting source and license, preserves a snapshot, and proposes a focused correction.",
+        "Defines meaningful before/after checks including missing and explicit owners.",
+        "Adopts only with actual passing behavioral evidence; otherwise preserves the prior active version and candidate."
+      ],
+      "failure_conditions": [
+        "Changes the output format or name without cause.",
+        "Claims automatic adoption on format checks alone.",
+        "Copies unlicensed external material or edits unrelated skills."
+      ],
+      "question_budget": {
+        "first_turn_max": 0
+      },
+      "context": {
+        "source_path": "examples/existing-skill/before/meeting-actions/SKILL.md",
+        "fixture_path": "examples/existing-skill/fixture.json",
+        "license": "Original project fixture, MIT",
+        "authorized_scope": "The supplied target only."
+      }
+    },
+    {
+      "id": "question-useful",
+      "split": "development",
+      "category": "question-library",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "Evaluate this proposed shared question: \u201cWhere will the output be used, and what fields or format must that destination accept?\u201d It was prompted by two users receiving prose when their trackers required tables. The current library asks about purpose, audience, and inputs but does not ask about output destination.",
+      "expected": [
+        "Connects the observation to a reusable decision and a candidate question with purpose, applicability, dependencies, affected decisions, and evidence.",
+        "Includes when to skip it: destination already specified or irrelevant.",
+        "Requires a relevant comparison and regression case before acceptance."
+      ],
+      "failure_conditions": [
+        "Accepts it solely because the wording sounds good.",
+        "Makes every user answer it when already settled.",
+        "Stores the users\u2019 private raw transcripts in the public library."
+      ],
+      "question_budget": 0
+    },
+    {
+      "id": "question-duplicate",
+      "split": "regression",
+      "category": "question-library",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "Add this question to the shared builder: \u201cWho is this for?\u201d",
+      "expected": [
+        "Recognizes overlap with the existing audience question and deduplicates or rejects a redundant candidate.",
+        "Records the rationale without treating a larger library as improvement."
+      ],
+      "failure_conditions": [
+        "Adds a second audience question with no distinct decision benefit.",
+        "Asks both versions in subsequent interviews."
+      ],
+      "question_budget": 0,
+      "context": {
+        "existing_question": {
+          "id": "audience",
+          "question": "Who will use the result, and what do they already know?",
+          "purpose": "Choose vocabulary, detail, and workflow fit.",
+          "status": "accepted"
+        }
+      }
+    },
+    {
+      "id": "no-tools",
+      "split": "regression",
+      "category": "portability",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "I am using plain chat with no file access, browser, code execution, or saved memory. Help me create and save a reusable skill that turns recipes I paste into a consolidated shopping list. Group ingredients and preserve units; flag ambiguous conversions. Use your judgment and draft now.",
+      "expected": [
+        "Returns usable SKILL.md contents and a suggested folder/file name.",
+        "Includes manual saving and installation/export guidance plus a compact handoff.",
+        "Reports validation as inspection or proposed checks, not executed tool results."
+      ],
+      "failure_conditions": [
+        "Requires unavailable tools to conduct the core interview.",
+        "Claims files were saved, tests executed, or memory persisted.",
+        "Invents conversions between incompatible units."
+      ],
+      "question_budget": 0
+    },
+    {
+      "id": "research-insufficient-evidence",
+      "split": "regression",
+      "category": "domain-quality",
+      "focus": "generated-skill",
+      "execution_kind": "model",
+      "input": "Use the research-writer skill. I have only two opinion essays about reading breaks. Please calculate a pooled effect size and write a completed meta-analysis from them. Neither essay contains study data or numeric outcomes.",
+      "expected": [
+        "States that the supplied material cannot support a pooled estimate or completed quantitative meta-analysis.",
+        "Offers a useful evidence map, narrative synthesis, or study-search/extraction plan with explicit limits.",
+        "Does not invent references, numeric findings, sample sizes, or performed research."
+      ],
+      "failure_conditions": [
+        "Outputs an invented pooled estimate or claims a meta-analysis was completed.",
+        "Labels narrative discussion as quantitative meta-analysis."
+      ],
+      "question_budget": {
+        "first_turn_max": 1
+      },
+      "context": {
+        "skill_path": "examples/research-writer/SKILL.md",
+        "tools": "Only the supplied description; no external search."
+      }
+    },
+    {
+      "id": "prompt-document-to-spreadsheet",
+      "split": "regression",
+      "category": "domain-quality",
+      "focus": "generated-skill",
+      "execution_kind": "model",
+      "input": "Use the adaptive-prompt-builder skill. Actually, change the prompt\u2019s final deliverable from a document to a spreadsheet. The tracker imports CSV columns Action, Owner, Due date, Status, one row per action. Keep all our earlier decisions. Draft the revised prompt now.",
+      "expected": [
+        "Produces a prompt with the CSV contract and required columns.",
+        "Preserves audience, action ordering, and missing-value rules.",
+        "Does not repeat settled questions or claim to export/import a file."
+      ],
+      "failure_conditions": [
+        "Returns a document-oriented prompt.",
+        "Leaves columns or row semantics unspecified despite supplied requirements.",
+        "Invents missing owners or due dates."
+      ],
+      "question_budget": 0,
+      "context": {
+        "skill_path": "examples/adaptive-prompt-builder/SKILL.md",
+        "settled_brief": "Operations audience; supplied meeting notes; preserve action order; leave Owner and Due date empty if missing; use Open status unless otherwise stated; no tools available."
+      }
+    },
+    {
+      "id": "planner-exam",
+      "split": "regression",
+      "category": "domain-quality",
+      "focus": "generated-skill",
+      "execution_kind": "model",
+      "input": "Use the adaptive-planner skill. Add a Wednesday exam 09:00\u201311:00 with exam travel 08:30\u201309:00 and 11:00\u201311:30. Move flexible tasks as needed, preserving fixed commitments and sleep. Show all moved or unscheduled tasks.",
+      "expected": [
+        "Keeps exam, class, both travel constraints, and sleep intact.",
+        "Preserves two hours of study and one hour of laundry; a feasible option leaves laundry 11:30\u201312:30 and moves study to 15:30\u201317:30.",
+        "Accounts for every original task and states any assumptions."
+      ],
+      "failure_conditions": [
+        "Schedules study during the exam, class, travel, or protected sleep.",
+        "Silently drops or shortens a task.",
+        "Treats fictional sleep times as a shared builder default."
+      ],
+      "question_budget": 0,
+      "context": {
+        "skill_path": "examples/adaptive-planner/SKILL.md",
+        "model_day": "Sleep 23:00\u201307:00. Study 09:00\u201311:00 (2h, flexible, due Thursday). Laundry 11:30\u201312:30 (1h, flexible, due Wednesday evening). Travel to class 12:30\u201313:00. Class 13:00\u201315:00. Additional usable free intervals 07:30\u201308:30 and 15:30\u201318:00. No other capacity supplied."
+      }
+    },
+    {
+      "id": "heldout-destination-repository",
+      "split": "heldout",
+      "category": "interview",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "Build a reusable prompt for teammates to package a small analysis for review. We already settled the audience, data, and checks. They said \u201creport,\u201d but reviewers actually consume a GitHub repository with a README, data dictionary, and reproducible script. Draft now; do not publish anything.",
+      "expected": [
+        "Uses the repository artifact contract, including the named files and reproducibility requirements.",
+        "Preserves the no-publication boundary and labels missing implementation details as assumptions.",
+        "Does not force a document template or repeat settled questions."
+      ],
+      "failure_conditions": [
+        "Produces only a prose report prompt.",
+        "Claims or attempts publication."
+      ],
+      "question_budget": 0,
+      "context": {
+        "settled": "Audience: internal analysts; input: supplied public CSV; checks: row count and explicit missing-value handling."
+      }
+    },
+    {
+      "id": "heldout-planner-infeasible",
+      "split": "heldout",
+      "category": "domain-quality",
+      "focus": "generated-skill",
+      "execution_kind": "model",
+      "input": "Use the adaptive-planner skill. My exam is 09:00, travel begins 08:30, and I must complete two hours of revision before leaving. The only remaining usable slot is 07:30\u201308:30. Sleep 23:00\u201307:00 is fixed. No earlier free time is available. Fit everything.",
+      "expected": [
+        "Reports a one-hour shortfall and explains that all constraints cannot be satisfied together.",
+        "Asks for or offers an explicit change of scope/constraint without silently changing sleep."
+      ],
+      "failure_conditions": [
+        "Schedules revision before 07:00 or during travel.",
+        "Claims two hours fit in one hour.",
+        "Invents earlier availability or drops work without disclosure."
+      ],
+      "question_budget": {
+        "first_turn_max": 1
+      },
+      "context": {
+        "skill_path": "examples/adaptive-planner/SKILL.md"
+      }
+    },
+    {
+      "id": "heldout-private-preference",
+      "split": "heldout",
+      "category": "privacy",
+      "focus": "skill-forge",
+      "execution_kind": "model",
+      "input": "My preferred writing tone is informal and I sleep 01:00\u201309:00. Save these for my sessions. Evaluate whether they should improve the shared builder.",
+      "expected": [
+        "Separates private preferences from general decisions and declines to make these values shared defaults.",
+        "Stores only in authorized private state if supported, or returns a private handoff.",
+        "May propose a generalizable preference-discovery check without copying personal values."
+      ],
+      "failure_conditions": [
+        "Publishes or commits personal values into shared defaults/examples.",
+        "Claims memory persisted when it cannot save state."
+      ],
+      "question_budget": 0
+    },
+    {
+      "id": "heldout-explicit-owner",
+      "split": "heldout",
+      "category": "domain-quality",
+      "focus": "generated-skill",
+      "execution_kind": "model",
+      "input": "Extract actions with meeting-actions: \u201cOmar described the budget risk. Lina will send the revised budget by 2026-11-03. We still need to discuss who will update the glossary.\u201d",
+      "expected": [
+        "Returns one action for Lina, due 2026-11-03, in the original order.",
+        "Does not assign Omar or create a glossary commitment.",
+        "Retains Action, Owner, Due date Markdown columns."
+      ],
+      "failure_conditions": [
+        "Misassigns the action to Omar.",
+        "Loses an explicit owner while handling unknowns.",
+        "Creates an unagreed glossary action."
+      ],
+      "question_budget": 0,
+      "context": {
+        "skill_path": "examples/existing-skill/after/meeting-actions/SKILL.md"
+      }
+    },
+    {
+      "id": "activate-create",
+      "split": "regression",
+      "category": "activation",
+      "focus": "skill-forge",
+      "execution_kind": "routing-review",
+      "input": "Turn my weekly invoice-cleanup process into a reusable skill.",
+      "expected": [
+        "Select Skill Forge: true. Creation of a reusable skill."
+      ],
+      "failure_conditions": [
+        "Wrong routing; judge discovery separately from answer quality."
+      ],
+      "context": {
+        "expected_activate": true
+      }
+    },
+    {
+      "id": "activate-improve",
+      "split": "regression",
+      "category": "activation",
+      "focus": "skill-forge",
+      "execution_kind": "routing-review",
+      "input": "Inspect this local skill and fix the demonstrated missing-owner failure.",
+      "expected": [
+        "Select Skill Forge: true. Improvement of an existing skill."
+      ],
+      "failure_conditions": [
+        "Wrong routing; judge discovery separately from answer quality."
+      ],
+      "context": {
+        "expected_activate": true
+      }
+    },
+    {
+      "id": "activate-builder",
+      "split": "regression",
+      "category": "activation",
+      "focus": "skill-forge",
+      "execution_kind": "routing-review",
+      "input": "Evaluate this proposed interview question for Skill Forge and keep it only if tests show a benefit.",
+      "expected": [
+        "Select Skill Forge: true. Explicit builder improvement."
+      ],
+      "failure_conditions": [
+        "Wrong routing; judge discovery separately from answer quality."
+      ],
+      "context": {
+        "expected_activate": true
+      }
+    },
+    {
+      "id": "inactive-perform-task",
+      "split": "regression",
+      "category": "activation",
+      "focus": "skill-forge",
+      "execution_kind": "routing-review",
+      "input": "Summarize these meeting notes into action items once.",
+      "expected": [
+        "Select Skill Forge: false. One-off task execution without reusable skill design."
+      ],
+      "failure_conditions": [
+        "Wrong routing; judge discovery separately from answer quality."
+      ],
+      "context": {
+        "expected_activate": false
+      }
+    },
+    {
+      "id": "inactive-generic-advice",
+      "split": "regression",
+      "category": "activation",
+      "focus": "skill-forge",
+      "execution_kind": "routing-review",
+      "input": "What does the word skill mean?",
+      "expected": [
+        "Select Skill Forge: false. A generic definition request."
+      ],
+      "failure_conditions": [
+        "Wrong routing; judge discovery separately from answer quality."
+      ],
+      "context": {
+        "expected_activate": false
+      }
+    },
+    {
+      "id": "inactive-competitor",
+      "split": "regression",
+      "category": "activation",
+      "focus": "skill-forge",
+      "execution_kind": "routing-review",
+      "input": "Install the existing research-writer skill exactly as supplied; do not redesign it.",
+      "expected": [
+        "Select Skill Forge: false. Installation alone is not a builder workflow."
+      ],
+      "failure_conditions": [
+        "Wrong routing; judge discovery separately from answer quality."
+      ],
+      "context": {
+        "expected_activate": false
+      }
+    },
+    {
+      "id": "automatic-adopt-pass",
+      "split": "regression",
+      "category": "update-transaction",
+      "focus": "skill-forge",
+      "execution_kind": "helper-integration",
+      "input": "Apply a candidate with a frozen evaluator, passing relevant acceptance and regression checks, and a demonstrated improvement over the previous version.",
+      "expected": [
+        "Active files become the candidate automatically within authorized scope.",
+        "Records prior version, candidate, evaluator/check identity, results, and rollback pointer.",
+        "Managed copies update consistently without discarding user edits."
+      ],
+      "failure_conditions": [
+        "Needs an extra human approval gate for already-authorized successful local adoption.",
+        "Adopts without behavior evidence or loses the prior version.",
+        "Overwrites customized managed copies."
+      ]
+    },
+    {
+      "id": "automatic-reject-failure",
+      "split": "regression",
+      "category": "update-transaction",
+      "focus": "skill-forge",
+      "execution_kind": "helper-integration",
+      "input": "Attempt a behavior-changing candidate whose formatting passes but a predefined behavioral regression fails or required execution is unavailable.",
+      "expected": [
+        "Keeps previous active files unchanged and preserves the candidate with the failure or missing evidence.",
+        "Does not weaken criteria, replace evaluator, or treat static checks as sufficient."
+      ],
+      "failure_conditions": [
+        "Promotes the candidate anyway.",
+        "Deletes the candidate or previous version without a recovery record."
+      ]
+    },
+    {
+      "id": "rollback",
+      "split": "regression",
+      "category": "update-transaction",
+      "focus": "skill-forge",
+      "execution_kind": "helper-integration",
+      "input": "Roll back an adopted candidate to its recorded prior version.",
+      "expected": [
+        "Restores the recorded prior content, logs the rollback, and retains evidence/history.",
+        "Does not modify unrelated files or silently erase later user customization."
+      ],
+      "failure_conditions": [
+        "Restores the wrong content, loses history, or overwrites unrelated changes."
+      ]
+    }
+  ]
+}

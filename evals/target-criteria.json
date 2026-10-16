@@ -1,0 +1,12 @@
+{
+  "schema_version":1,
+  "scope":"target",
+  "change_kind":"behavior",
+  "evaluation_kind":"model_execution",
+  "checks":[
+    {"id":"missing-owner","kind":"acceptance","input":"Original examples/existing-skill/fixture.json input","expected":"Exactly two rows: checklist owner Unassigned due 2026-11-03; archive owner Dev due Not stated; no logo commitment","failure":"Inferred owner, invented date, lost action, or extra unagreed commitment"},
+    {"id":"columns-order","kind":"regression","input":"Same original fixture","expected":"Action, Owner, Due date Markdown columns, checklist before archive","failure":"Changed columns or ordering"},
+    {"id":"explicit-owner","kind":"regression","input":"Predefined heldout-explicit-owner case in cases.json","expected":"Only Lina's budget action due 2026-11-03; no glossary commitment","failure":"Wrong owner, lost explicit action or added discussion as commitment"}
+  ],
+  "benefit":{"metric":"cases_meeting_contract","direction":"higher","min_delta":1}
+}
