@@ -1,0 +1,64 @@
+{
+  "runtime": "3.9.6",
+  "host": "macOS, Codex desktop shell",
+  "native_host_discovery": "not tested",
+  "checks": [
+    {
+      "id": "codex-personal",
+      "result": "pass",
+      "scope": "archive extraction, documented directory shape, helper installation and installed-file validation"
+    },
+    {
+      "id": "codex-project",
+      "result": "pass",
+      "scope": "archive extraction, documented directory shape, helper installation and installed-file validation"
+    },
+    {
+      "id": "claude-code-personal",
+      "result": "pass",
+      "scope": "archive extraction, documented directory shape, helper installation and installed-file validation"
+    },
+    {
+      "id": "claude-code-project",
+      "result": "pass",
+      "scope": "archive extraction, documented directory shape, helper installation and installed-file validation"
+    },
+    {
+      "id": "installed-question-search",
+      "result": "pass"
+    },
+    {
+      "id": "installed-portable-export-identical",
+      "result": "pass"
+    },
+    {
+      "id": "private-state-not-in-skill-or-prompt-package",
+      "result": "pass"
+    }
+  ],
+  "helper_tests": {
+    "count": 18,
+    "exit_code": 0,
+    "result": "pass",
+    "names": [
+      "test_adoption_preserves_concurrent_target_change",
+      "test_broken_and_escaping_link",
+      "test_bundle_contains_resources_and_detects_drift",
+      "test_cli_help_and_version",
+      "test_failed_candidate_is_preserved_and_baseline_stays_active",
+      "test_frozen_criteria_cannot_be_weakened",
+      "test_managed_install_update_and_customization_refusal",
+      "test_no_benefit_and_hash_mismatch_rejected",
+      "test_package_notices_links_and_private_exclusion",
+      "test_private_session_outside_repo_and_snapshot",
+      "test_question_schema_and_duplicate_id",
+      "test_real_executed_candidate_adopts_and_rolls_back",
+      "test_rollback_preserves_later_customization",
+      "test_round_limit_and_time_limit",
+      "test_simulation_and_format_only_behavior_evidence_rejected",
+      "test_source_manifest_allowlist_and_portable_bundle",
+      "test_symlink_is_not_followed",
+      "test_validation_and_query"
+    ]
+  }
+}

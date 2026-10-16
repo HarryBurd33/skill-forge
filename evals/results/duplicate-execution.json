@@ -1,0 +1,64 @@
+{
+  "outputs": {
+    "baseline": {
+      "checks": {
+        "destination": true,
+        "constraints": true,
+        "evidence": true,
+        "csv": true,
+        "repository": true,
+        "deduplication": true
+      },
+      "hits": {
+        "destination": [
+          "q-destination"
+        ],
+        "constraints": [
+          "q-constraints",
+          "q-conflict"
+        ],
+        "evidence": [
+          "q-evidence"
+        ],
+        "csv": [
+          "q-destination"
+        ],
+        "repository": [
+          "q-destination"
+        ]
+      },
+      "destination_queries_supported": 3
+    },
+    "candidate": {
+      "checks": {
+        "destination": true,
+        "constraints": true,
+        "evidence": true,
+        "csv": true,
+        "repository": true,
+        "deduplication": false
+      },
+      "hits": {
+        "destination": [
+          "q-destination"
+        ],
+        "constraints": [
+          "q-constraints",
+          "q-conflict"
+        ],
+        "evidence": [
+          "q-evidence"
+        ],
+        "csv": [
+          "q-destination"
+        ],
+        "repository": [
+          "q-destination"
+        ]
+      },
+      "destination_queries_supported": 3
+    }
+  },
+  "runtime": "3.9.6",
+  "claim": "Redundant purpose detected; destination-query coverage does not improve."
+}

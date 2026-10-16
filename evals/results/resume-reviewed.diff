@@ -1,0 +1,21 @@
+diff -ru private-control-state/run-2946030d8a4b/baseline/SKILL.md private-control-state/resume-candidate/skill-forge/SKILL.md
+--- private-control-state/run-2946030d8a4b/baseline/SKILL.md	2026-10-15 17:48:27
++++ private-control-state/resume-candidate/skill-forge/SKILL.md	2026-10-16 09:02:36
+@@ -16,7 +16,7 @@
+ 
+ Check available capabilities: files, browsing, execution, independent evaluation, persistence and external writes. Use what is actually available. The core workflow needs no API subscription or script runtime. Without tools, use the [portable workflow](references/portability.md) and return complete file contents and a resumable handoff; never claim to have saved, tested, installed or published them.
+ 
+-Maintain a compact brief using [the session template](templates/session.json): confirmed requirements, proposed defaults, assumptions, examples, acceptance criteria, unresolved questions, and next action. Keep private session material outside publishable source. Resume from that record, acknowledge relevant changes, and do not repeat settled questions without a specific contradiction or failure.
++Maintain a compact brief using [the session template](templates/session.json): confirmed requirements, proposed defaults, assumptions, examples, acceptance criteria, unresolved questions, and next action. Keep private session material outside publishable source. Resume from that record, acknowledge relevant changes, and do not repeat settled questions without a specific contradiction or failure. When resuming or changing settled decisions without file persistence, include the updated compact handoff in the response so the next session can continue.
+ 
+ ## Discover enough to build
+ 
+diff -ru private-control-state/run-2946030d8a4b/baseline/references/interview.md private-control-state/resume-candidate/skill-forge/references/interview.md
+--- private-control-state/run-2946030d8a4b/baseline/references/interview.md	2026-10-15 17:48:27
++++ private-control-state/resume-candidate/skill-forge/references/interview.md	2026-10-16 09:02:36
+@@ -9,3 +9,5 @@
+ An interview is sufficient when these can be stated concretely: repeated purpose; when to activate or abstain; inputs; output and its destination; representative application; material constraints; observable success. They need not have been answered as separate questions. A prototype can resolve uncertainty more cheaply than another round.
+ 
+ Question records in `questions/questions.json` include purpose, ask/skip conditions, dependencies, decisions affected, evidence, status and tags. Search rather than recite them. A question earns its place when it exposes a reusable decision not covered by an existing question, and a case shows its value. Merge synonyms and overlapping intent. Track candidate, accepted, revised and retired states; keep retirement rationale without asking retired questions. Count needless questions as a cost in evaluation.
++
++Count the decisions you ask the user to make, not the number of question marks. A sentence can hide several questions. When one decision depends on another, ask the upstream one first and propose labeled defaults for the rest. For example, an unknown receiving destination can be settled before asking about its required fields; inspect available destination documentation when possible. If the destination and schema are already given, carry them forward without asking again.

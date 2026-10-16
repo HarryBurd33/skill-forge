@@ -1,0 +1,15 @@
+{
+  "status": "adopted",
+  "reason": "All frozen checks passed and predefined benefit was demonstrated",
+  "baseline_hash": "a5efb8e257c5c9fca885cc3e9da3507c6761564b905ae6e2d995f4ec046912b4",
+  "adopted_hash": "ca7abe77cac895b05fb4436d6ab4973c2f38019435439ed46bb3ea7a055e23cb",
+  "benefit": {
+    "metric": "cases_meeting_contract",
+    "baseline": 0,
+    "candidate": 2
+  },
+  "source_hash": "99e8c71b7e104f11ec849584bc8e0b7fc2cdd03ed1d153762ec042b593cb9691",
+  "snapshot": "examples/existing-skill/before/meeting-actions/SKILL.md",
+  "active": "examples/existing-skill/active/meeting-actions/SKILL.md",
+  "rollback": "Private run retains baseline; public before snapshot retained. Helper rollback tested in unit suite."
+}

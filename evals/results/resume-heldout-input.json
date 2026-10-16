@@ -1,0 +1,24 @@
+{
+  "id": "resume-heldout-ndjson-queue",
+  "input": "Resume from this handoff. The output destination is now our triage queue, not an email. It accepts newline-delimited JSON: one object per explicitly agreed follow-up, with exactly summary, owner, due_date, and source_id in that order. Use null for an absent owner or due date, preserve source IDs exactly, and output no Markdown fence or prose around the queue data. Keep the other decisions and draft the updated reusable instructions now.",
+  "context": {
+    "tools": "Text only; no filesystem, integrations, execution, or saved memory.",
+    "handoff": {
+      "purpose": "Extract explicitly agreed customer-support follow-ups from supplied feedback notes",
+      "audience": "Support team leads",
+      "input": "Plain-text feedback notes, each bearing a supplied source ID",
+      "output": "An email handoff",
+      "constraints": [
+        "Use only supplied notes",
+        "Preserve follow-ups in source appearance order",
+        "Do not turn a complaint or suggestion into a commitment",
+        "Do not infer an owner or due date",
+        "Missing owners and due dates remain unknown"
+      ],
+      "confirmed_example": "Source F-08: Mira will reply to the customer by Friday. Preserve Mira, Friday, and F-08.",
+      "unresolved": [
+        "Destination format"
+      ]
+    }
+  }
+}

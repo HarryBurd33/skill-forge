@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "baseline_hash": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "criteria_hash": "e949170acf6808540f94bc53b3ee2fb5c8c4212bb10bb09e36a312d3fde6372c",
+  "evaluator_hash": "1cc9513e6c551fbba5c647cc496bb0086f2a51b520014d0d351e688a9403e8a0",
+  "candidate_hash": "5d2058226d892c81dee5fd4c8d6aeaa7a22118ef14624aef6fa240e4a6444812",
+  "execution": {
+    "kind": "script_execution",
+    "coverage": "behavior",
+    "model": "not-applicable",
+    "host": "Python 3.9.6 on macOS",
+    "conditions": "Same fixed evaluator and baseline helper; candidate adds a redundant audience question."
+  },
+  "results": [
+    {
+      "id": "destination",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "duplicate-execution.json"
+    },
+    {
+      "id": "constraints",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "duplicate-execution.json"
+    },
+    {
+      "id": "evidence",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "duplicate-execution.json"
+    },
+    {
+      "id": "deduplication",
+      "baseline": "pass",
+      "candidate": "fail",
+      "artifact": "duplicate-execution.json"
+    },
+    {
+      "id": "csv",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "duplicate-execution.json"
+    },
+    {
+      "id": "repository",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "duplicate-execution.json"
+    }
+  ],
+  "benefit": {
+    "metric": "destination_queries_supported",
+    "baseline": 3,
+    "candidate": 3
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "command": "Python fixed evaluator with frozen baseline helper against baseline and candidate",
+  "runtime": "3.9.6",
+  "outputs": {
+    "baseline": {
+      "checks": {
+        "destination": false,
+        "constraints": true,
+        "evidence": true,
+        "csv": false,
+        "repository": false,
+        "deduplication": true
+      },
+      "hits": {
+        "destination": [],
+        "constraints": [
+          "q-constraints",
+          "q-conflict"
+        ],
+        "evidence": [
+          "q-evidence"
+        ],
+        "csv": [],
+        "repository": []
+      },
+      "destination_queries_supported": 0
+    },
+    "candidate": {
+      "checks": {
+        "destination": true,
+        "constraints": true,
+        "evidence": true,
+        "csv": true,
+        "repository": true,
+        "deduplication": true
+      },
+      "hits": {
+        "destination": [
+          "q-destination"
+        ],
+        "constraints": [
+          "q-constraints",
+          "q-conflict"
+        ],
+        "evidence": [
+          "q-evidence"
+        ],
+        "csv": [
+          "q-destination"
+        ],
+        "repository": [
+          "q-destination"
+        ]
+      },
+      "destination_queries_supported": 3
+    }
+  },
+  "author_blinding": "Question author received observed spreadsheet gap and current library; did not read evaluator or held-out queries."
+}

@@ -1,0 +1,229 @@
+[
+  {
+    "id": "q-purpose",
+    "status": "accepted",
+    "question": "What repeated task should become easier, and can you show one real request?",
+    "purpose": "Establish scope and a concrete use.",
+    "ask_when": "Purpose or representative input is unclear.",
+    "skip_when": "A repeated purpose and example are already supplied.",
+    "dependencies": [],
+    "affects": [
+      "activation",
+      "scope",
+      "example"
+    ],
+    "tags": [
+      "purpose",
+      "activation",
+      "example"
+    ],
+    "evidence": "User-provided brief: avoid a fixed questionnaire; case simple vs ambiguous complex.",
+    "history": [
+      {
+        "version": "0.1.0",
+        "action": "accepted",
+        "reason": "Original seed question; validate selection in release cases."
+      }
+    ]
+  },
+  {
+    "id": "q-success",
+    "status": "accepted",
+    "question": "What would make the result useful, and what would make it unacceptable?",
+    "purpose": "Make success observable.",
+    "ask_when": "Quality goals are vague.",
+    "skip_when": "Concrete acceptance checks already exist.",
+    "dependencies": [
+      "q-purpose"
+    ],
+    "affects": [
+      "acceptance",
+      "failure_conditions"
+    ],
+    "tags": [
+      "quality",
+      "success",
+      "failure"
+    ],
+    "evidence": "Evaluation requires observable outcomes rather than confidence.",
+    "history": [
+      {
+        "version": "0.1.0",
+        "action": "accepted",
+        "reason": "Original seed question; validate selection in release cases."
+      }
+    ]
+  },
+  {
+    "id": "q-output",
+    "status": "accepted",
+    "question": "What should the result contain and who will use it?",
+    "purpose": "Choose useful content and audience.",
+    "ask_when": "Output content or intended reader changes the workflow.",
+    "skip_when": "Output and audience are specified.",
+    "dependencies": [
+      "q-purpose"
+    ],
+    "affects": [
+      "content",
+      "audience"
+    ],
+    "tags": [
+      "output",
+      "audience",
+      "content"
+    ],
+    "evidence": "Representative research and prompt-builder briefs.",
+    "history": [
+      {
+        "version": "0.1.0",
+        "action": "accepted",
+        "reason": "Original seed question; validate selection in release cases."
+      }
+    ]
+  },
+  {
+    "id": "q-evidence",
+    "status": "accepted",
+    "question": "What evidence is available, and what claims must it support?",
+    "purpose": "Align research rigor with evidence.",
+    "ask_when": "Requested research claims depend on missing or uncertain material.",
+    "skip_when": "Sources and intended claims are already clear.",
+    "dependencies": [
+      "q-purpose"
+    ],
+    "affects": [
+      "method",
+      "scope",
+      "claim_limits"
+    ],
+    "tags": [
+      "research",
+      "sources",
+      "rigor",
+      "meta-analysis"
+    ],
+    "evidence": "Research insufficient-evidence scenario; distinguish synthesis from formal pooling.",
+    "history": [
+      {
+        "version": "0.1.0",
+        "action": "accepted",
+        "reason": "Original seed question; validate selection in release cases."
+      }
+    ]
+  },
+  {
+    "id": "q-constraints",
+    "status": "accepted",
+    "question": "Which commitments are fixed, and what may move if the plan does not fit?",
+    "purpose": "Protect hard constraints before optimization.",
+    "ask_when": "Scheduling or interacting constraints have unresolved priorities.",
+    "skip_when": "Firm constraints and flexibility are already explicit.",
+    "dependencies": [
+      "q-purpose"
+    ],
+    "affects": [
+      "feasibility",
+      "tradeoffs"
+    ],
+    "tags": [
+      "planner",
+      "schedule",
+      "sleep",
+      "exam",
+      "constraints"
+    ],
+    "evidence": "Planner exam disruption scenario; never silently drop sleep or fixed commitments.",
+    "history": [
+      {
+        "version": "0.1.0",
+        "action": "accepted",
+        "reason": "Original seed question; validate selection in release cases."
+      }
+    ]
+  },
+  {
+    "id": "q-tools",
+    "status": "accepted",
+    "question": "Where will you run this, and which tools or files can it access?",
+    "purpose": "Choose a feasible delivery path.",
+    "ask_when": "Available capabilities could change the solution and cannot be inspected.",
+    "skip_when": "Host and needed capabilities are known or discoverable.",
+    "dependencies": [
+      "q-purpose"
+    ],
+    "affects": [
+      "dependencies",
+      "fallbacks",
+      "installation"
+    ],
+    "tags": [
+      "host",
+      "tools",
+      "files",
+      "cost"
+    ],
+    "evidence": "Plain-chat fallback and portable format requirements.",
+    "history": [
+      {
+        "version": "0.1.0",
+        "action": "accepted",
+        "reason": "Original seed question; validate selection in release cases."
+      }
+    ]
+  },
+  {
+    "id": "q-conflict",
+    "status": "accepted",
+    "question": "These two requirements conflict: [A] and [B]. Which should govern this case?",
+    "purpose": "Resolve a consequential contradiction without inventing preference.",
+    "ask_when": "Confirmed requirements cannot both hold.",
+    "skip_when": "They can coexist or a prior priority rule resolves them.",
+    "dependencies": [],
+    "affects": [
+      "priority",
+      "constraints"
+    ],
+    "tags": [
+      "contradiction",
+      "conflict",
+      "tradeoff"
+    ],
+    "evidence": "Contradictory answers case.",
+    "history": [
+      {
+        "version": "0.1.0",
+        "action": "accepted",
+        "reason": "Original seed question; validate selection in release cases."
+      }
+    ]
+  },
+  {
+    "id": "q-preserve",
+    "status": "accepted",
+    "question": "Which current behavior must stay the same, and what example shows the failure?",
+    "purpose": "Keep existing-skill revisions scoped.",
+    "ask_when": "An existing skill has an unclear intended change.",
+    "skip_when": "Actual files and a clear failure/preservation contract already supply this.",
+    "dependencies": [
+      "q-purpose"
+    ],
+    "affects": [
+      "patch_scope",
+      "regressions"
+    ],
+    "tags": [
+      "existing",
+      "improve",
+      "preserve"
+    ],
+    "evidence": "Existing-skill baseline comparison requirement.",
+    "history": [
+      {
+        "version": "0.1.0",
+        "action": "accepted",
+        "reason": "Original seed question; validate selection in release cases."
+      }
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "status": "pass",
+  "public_files": 90,
+  "relative_links": 93,
+  "skills": [
+    {
+      "status": "pass",
+      "name": "meeting-actions",
+      "files": 1,
+      "relative_links": 0,
+      "questions": 0,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+    },
+    {
+      "status": "pass",
+      "name": "meeting-actions",
+      "files": 1,
+      "relative_links": 0,
+      "questions": 0,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+    },
+    {
+      "status": "pass",
+      "name": "meeting-actions",
+      "files": 1,
+      "relative_links": 0,
+      "questions": 0,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+    },
+    {
+      "status": "pass",
+      "name": "adaptive-prompt-builder",
+      "files": 3,
+      "relative_links": 2,
+      "questions": 0,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+    },
+    {
+      "status": "pass",
+      "name": "research-writer",
+      "files": 3,
+      "relative_links": 2,
+      "questions": 0,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+    },
+    {
+      "status": "pass",
+      "name": "adaptive-planner",
+      "files": 3,
+      "relative_links": 2,
+      "questions": 0,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+    },
+    {
+      "status": "pass",
+      "name": "skill-forge",
+      "files": 13,
+      "relative_links": 9,
+      "questions": 9,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+    }
+  ]
+}

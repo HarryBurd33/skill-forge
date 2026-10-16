@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "baseline_hash": "d6597e0fe024b5258fb0488b3bb94e8b9436c4b6a12a3ca8a02f52de8e377820",
+  "criteria_hash": "e949170acf6808540f94bc53b3ee2fb5c8c4212bb10bb09e36a312d3fde6372c",
+  "evaluator_hash": "1cc9513e6c551fbba5c647cc496bb0086f2a51b520014d0d351e688a9403e8a0",
+  "candidate_hash": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "execution": {
+    "kind": "script_execution",
+    "coverage": "behavior",
+    "model": "not-applicable",
+    "host": "Python 3.9.6 on macOS",
+    "conditions": "Same frozen evaluator and baseline helper executed twice; isolated data trees; only question record added."
+  },
+  "results": [
+    {
+      "id": "destination",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "destination-execution.json"
+    },
+    {
+      "id": "constraints",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "destination-execution.json"
+    },
+    {
+      "id": "evidence",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "destination-execution.json"
+    },
+    {
+      "id": "deduplication",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "destination-execution.json"
+    },
+    {
+      "id": "csv",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "destination-execution.json"
+    },
+    {
+      "id": "repository",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "destination-execution.json"
+    }
+  ],
+  "benefit": {
+    "metric": "destination_queries_supported",
+    "baseline": 0,
+    "candidate": 3
+  }
+}

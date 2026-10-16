@@ -1,0 +1,23 @@
+{
+  "id": "resume-heldout-ndjson-queue",
+  "declared_before_repair_execution": true,
+  "author_had_seen_repair_diff": false,
+  "status": "New held-out text-only scenario; no prior acceptance claim.",
+  "question_budget": 0,
+  "expected": [
+    "Drafts useful updated reusable instructions without requesting any further destination or field decision.",
+    "Uses newline-delimited JSON with one object per explicitly agreed follow-up and exactly summary, owner, due_date, source_id; uses JSON null for absent owner/due_date and no data wrapper.",
+    "Preserves support-lead audience, supplied-notes-only boundary, source appearance order, exact source IDs, and prohibition on inferred commitments, owners, or dates.",
+    "Treats the former email contract and unresolved destination format as superseded; preserves other confirmed decisions.",
+    "Returns a new compact copyable handoff recording the updated contract and retained constraints, without claiming to save, import, or remember it.",
+    "Any example is illustrative, uses only supplied details, and does not claim an actual queue import or test."
+  ],
+  "failure_conditions": [
+    "Asks for destination or fields already provided.",
+    "Retains email as the final output contract.",
+    "Uses a JSON array or Markdown table as the queue data contract.",
+    "Invents assignments, deadlines, source IDs, or commits complaints as actions.",
+    "Claims persisted state or a completed integration in text-only conditions."
+  ],
+  "scoring": "Apply the original frozen rubric.md dimensions. All applicable dimensions must score 2 and all expected behaviors must be observable to pass; action promises never establish execution."
+}

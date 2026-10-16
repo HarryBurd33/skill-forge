@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "baseline_hash": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "criteria_hash": "17e1818f5ca233cc22130dfaeff5f6d91f414aaa96e56f6d17e2d7af7e5ee2aa",
+  "evaluator_hash": "c01e749f48596e8314f95e2fb794cd2bc7636ce2deef498f8ced8d37e936d483",
+  "candidate_hash": "800a4af40b767f1f9d7ec6e372d3f1d3588a0e64d3a628eb6dec79c3e40ba2b9",
+  "execution": {
+    "kind": "model_execution",
+    "coverage": "behavior",
+    "model": "GPT-6-based Codex agent; exact runtime model/build unavailable",
+    "host": "Codex desktop subagents",
+    "conditions": "One fresh context per arm, four batched cases; text-only envelope; same inputs and fixed evaluator. Independent grader, nonblind repair labels."
+  },
+  "results": [
+    {
+      "id": "resume",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "resume-grades.json"
+    },
+    {
+      "id": "specified",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "resume-grades.json"
+    },
+    {
+      "id": "simple",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "resume-grades.json"
+    },
+    {
+      "id": "handoff-change",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "resume-grades.json"
+    }
+  ],
+  "benefit": {
+    "metric": "resume_contract_checks_met",
+    "baseline": 5,
+    "candidate": 5
+  }
+}

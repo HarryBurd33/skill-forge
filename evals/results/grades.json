@@ -1,0 +1,2151 @@
+{
+  "schema_version": 1,
+  "evaluation": "Independent strict grading against frozen criteria; no criteria or source edits.",
+  "sources": {
+    "cases.json": "a6f995e7ec2ecccf756ad5f9f65a4f1bd73db95e7f70c3fa006b8a4611b580a0",
+    "rubric.md": "ce56ea3d686880ee20e8c50f7cde75ced48a31ba5368b6b0c257819b728ca771",
+    "multiturn-case.json": "f2ca033c84f300df882fbc78f9eb029f5e4ce7765681411311be352dde9a21ae",
+    "arm-A.json": "3c26cd47388aebb78c3b1433bac5772a9d16abe55c1f4832443a656bb3b7732c",
+    "arm-B.json": "ce72ccfc2bae1dd60cea01abbe781699b20b71de7f4a89b99ce23e01231d5466",
+    "multiturn-baseline.json": "891cadd4e1177b01af229feda569f760adafc99dcfc7800c88a0ed535a8b224f",
+    "multiturn-candidate.json": "74e13fd0164686b5b9ca4662f94c97b3975ae140ad2a0e782e223bf9af7b750c",
+    "generated-format-checks.json": "acb98aa88df499f48ced4ac151562272d8a2c3f54f08b849b02aa416de9d493d"
+  },
+  "blinding": {
+    "arm_mapping_known": false,
+    "canonical_source_read": false,
+    "run_manifest_read": false,
+    "limit": "Output content can reveal likely identity. An initial directory inventory accidentally displayed result filenames containing baseline/candidate labels, but none of those original result files were opened and no A/B mapping was learned. Later multi-turn filenames reveal those conditions only.",
+    "canonical_source_read_before_initial_grading": false,
+    "subsequent_scope_review": "After initial grades were saved, the parent explicitly authorized inspection only of the private resume-candidate diff. That two-file diff was inspected for scope/privacy and did not cause retrospective changes to behavioral criteria."
+  },
+  "capability_envelope": "Text-only model execution. Supplied source/license existed for existing-skill-improvement; no actual filesystem save or adoption available in the executor role. Artifact strings are drafts, not saved files.",
+  "grading_interpretations": [
+    "All expected behaviors and applicable score 2 are required for a pass. An honest tool-action deferral is untested, not passed.",
+    "A compound sentence asking destination and required columns contains two decisions under the frozen definition.",
+    "A compact resumable prose brief can satisfy a handoff without requiring an extra heading; no new formatting criterion was invented.",
+    "Approximate wording around a 1500/1000-word target does not remove that target; the frozen prompts do not demand exactly that many words.",
+    "For evidence-insufficient domain output, a grouped prose evidence-availability map counts; no table format was required.",
+    "A explicitly chooses Python on the repository held-out case without the required assumption label, whereas B labels it provisional."
+  ],
+  "aggregates": {
+    "builder": {
+      "A": {
+        "total": 12,
+        "pass": 9,
+        "fail": 3,
+        "untested_only": 0,
+        "cases_with_untested_action_criteria": [
+          "existing-skill-improvement"
+        ],
+        "questions_grader_total": 5,
+        "questions_self_reported_total": 3
+      },
+      "B": {
+        "total": 12,
+        "pass": 8,
+        "fail": 4,
+        "untested_only": 0,
+        "cases_with_untested_action_criteria": [
+          "existing-skill-improvement"
+        ],
+        "questions_grader_total": 4,
+        "questions_self_reported_total": 3
+      }
+    },
+    "generated_skill_domain": {
+      "A": {
+        "total": 5,
+        "pass": 5,
+        "fail": 0,
+        "untested_only": 0,
+        "cases_with_untested_action_criteria": [],
+        "questions_grader_total": 0,
+        "questions_self_reported_total": 0
+      },
+      "B": {
+        "total": 5,
+        "pass": 4,
+        "fail": 1,
+        "untested_only": 0,
+        "cases_with_untested_action_criteria": [],
+        "questions_grader_total": 1,
+        "questions_self_reported_total": 1
+      }
+    },
+    "all_predefined_behavioral": {
+      "A": {
+        "total": 17,
+        "pass": 14,
+        "fail": 3,
+        "untested_only": 0,
+        "cases_with_untested_action_criteria": [
+          "existing-skill-improvement"
+        ],
+        "questions_grader_total": 5,
+        "questions_self_reported_total": 3
+      },
+      "B": {
+        "total": 17,
+        "pass": 12,
+        "fail": 5,
+        "untested_only": 0,
+        "cases_with_untested_action_criteria": [
+          "existing-skill-improvement"
+        ],
+        "questions_grader_total": 5,
+        "questions_self_reported_total": 4
+      }
+    }
+  },
+  "behavioral_results": [
+    {
+      "arm": "A",
+      "id": "create-simple",
+      "focus": "skill-forge",
+      "split": "development",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Produces independently usable SKILL.md contents with accurate metadata and the requested table contract.",
+          "status": "met",
+          "evidence": "Complete name/description metadata and standalone meeting-actions instructions specify Action, Owner, Due date, source order, Unassigned/Not stated, and no inferred commitments."
+        },
+        {
+          "criterion": 2,
+          "expected": "Provides a sample invocation and labels the example as illustrative unless actually executed.",
+          "status": "met",
+          "evidence": "Invocation plus “illustration, not an executed test” and explicit unexecuted checks."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not require a clarification or approval ritual before drafting.",
+          "status": "met",
+          "evidence": "Immediately supplies the full draft; no live clarification or approval request."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "create-ambiguous-complex",
+      "focus": "skill-forge",
+      "split": "development",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Identifies a high-impact unresolved choice such as the first real use case, research question, or desired deliverable.",
+          "status": "met",
+          "evidence": "Targets representative request and finished deliverable, then evidence needs."
+        },
+        {
+          "criterion": 2,
+          "expected": "Asks a focused question with useful options or a concrete example.",
+          "status": "met",
+          "evidence": "Asks for a representative request and finished result; gives proposal, narrative synthesis, and quantitative meta-analysis examples."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not equate all research genres or pretend the available evidence is known.",
+          "status": "met",
+          "evidence": "“Evidence requirements differ substantially” across theory, experiment, and pooling; articles not inspectable."
+        }
+      ],
+      "questions": {
+        "grader_count": 2,
+        "self_reported_count": 1,
+        "budget": {
+          "first_turn_max": 2,
+          "additional_rounds": "Only for material dependent decisions."
+        },
+        "decisions": [
+          "Representative first-use request",
+          "Finished deliverable"
+        ],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "create-detailed-complex",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Builds the skill immediately; complexity alone does not trigger deeper questioning.",
+          "status": "met",
+          "evidence": "Full archival-seminar-analysis skill is delivered immediately without live questions."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves the supplied-only boundary and the humanities method.",
+          "status": "met",
+          "evidence": "Graduate humanities analysis, thesis, supplied excerpts/IDs, evidence-led sections, counter-reading, no outside sources, and visible gaps are retained."
+        },
+        {
+          "criterion": 3,
+          "expected": "Includes acceptance checks for source traceability and interpretation.",
+          "status": "met",
+          "evidence": "Validation requires quotations to match supplied text, IDs to be traceable, and interpretation to be distinguishable from evidence."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "contradictory-answers",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Surfaces the source-policy contradiction and asks which requirement governs or offers distinct user-selectable modes.",
+          "status": "met",
+          "evidence": "Explicitly identifies conflict between no outside sources and mandatory browsing, and asks which source policy governs."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves unaffected requirements.",
+          "status": "met",
+          "evidence": "Restates seminar-student audience, supplied notes, Markdown literature memo, traceable claims, and explicit missing evidence."
+        }
+      ],
+      "questions": {
+        "grader_count": 1,
+        "self_reported_count": 1,
+        "budget": 1,
+        "decisions": [
+          "Governing source policy"
+        ],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "draft-now",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Creates a useful provisional skill using the known purpose.",
+          "status": "met",
+          "evidence": "Complete standalone prompt-building skill for nontechnical coworkers is supplied immediately."
+        },
+        {
+          "criterion": 2,
+          "expected": "Labels consequential assumptions and leaves missing decisions visible.",
+          "status": "met",
+          "evidence": "Opening labels receiving-model/destination choices provisional; skill/handoff keeps unresolved host/destination visible and assumes no tools."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not block on ordinary clarifications.",
+          "status": "met",
+          "evidence": "No live clarification request; examples, invocation, and validation guidance are supplied."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "resume-session",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "persistence",
+      "status": "fail",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 1,
+        "user_effort": 1,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Uses the handoff and preserves settled purpose, audience, and missing-value policy.",
+          "status": "met",
+          "evidence": "Preserves operations audience, plain-text meeting notes, no invented owners/dates, and the Priya example."
+        },
+        {
+          "criterion": 2,
+          "expected": "Updates the output contract and asks only about consequential spreadsheet details or proposes a labeled schema.",
+          "status": "partial",
+          "evidence": "Proposes CSV with Action, Owner, Due date and blank missing fields, but asks separately for destination AND required columns, exceeding the one-decision budget."
+        },
+        {
+          "criterion": 3,
+          "expected": "Provides a new compact handoff when files cannot be saved.",
+          "status": "met",
+          "evidence": "The compact prose itself carries updated output, retained decisions, proposed schema, outstanding destination/fields, and the no-saving limit; a special “handoff” heading is not required by the frozen case."
+        }
+      ],
+      "questions": {
+        "grader_count": 2,
+        "self_reported_count": 1,
+        "budget": {
+          "first_turn_max": 1
+        },
+        "decisions": [
+          "Spreadsheet/tracker destination",
+          "Required columns"
+        ],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [
+        "Question budget exceeded: two distinct unresolved decisions requested despite the self-reported count of one."
+      ],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Partial or failed; see failure conditions and criterion evidence.",
+        "user_effort": "Partial or failed; see failure conditions and criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "existing-skill-improvement",
+      "focus": "skill-forge",
+      "split": "development",
+      "category": "improvement",
+      "status": "fail_with_untested",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 1,
+        "evidence_honesty": 2,
+        "improvement_discipline": 1
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Inspects the actual starting source and license, preserves a snapshot, and proposes a focused correction.",
+          "status": "untested",
+          "evidence": "Candidate explicitly preserves MIT/name/columns/order, and supplies a claimed verbatim baseline text; actual snapshot preservation cannot be executed in this text-only role."
+        },
+        {
+          "criterion": 2,
+          "expected": "Defines meaningful before/after checks including missing and explicit owners.",
+          "status": "met",
+          "evidence": "Defines fixed baseline/candidate checks for unassigned nearest-speaker ownership, explicit “I will”, explicit different owner, order, and no-action input."
+        },
+        {
+          "criterion": 3,
+          "expected": "Adopts only with actual passing behavioral evidence; otherwise preserves the prior active version and candidate.",
+          "status": "untested",
+          "evidence": "States no hashes, saves, or comparisons ran and “prior active version should remain in use”; candidate/baseline retention and adoption cannot be established from that promise."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": {
+          "first_turn_max": 0
+        },
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [
+        "Actual static packaging failure: candidate and baseline paths do not match the frontmatter name meeting-actions.",
+        "Required snapshot/retention/adoption tool actions remain untested in the text-only role; no promises counted as execution."
+      ],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Actual static check rejects both supplied artifact folder/name pairs: meeting-actions-candidate and meeting-actions-baseline versus name: meeting-actions. Draft text is usable after a packaging correction, but supplied paths fail.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "Partial or failed; see failure conditions and criterion evidence."
+      },
+      "additional_executed_static_evidence": {
+        "source": "evals/results/generated-format-checks.json",
+        "results": [
+          {
+            "artifact": "meeting-actions-candidate/SKILL.md",
+            "status": "fail",
+            "reason": "Frontmatter name must match skill directory name"
+          },
+          {
+            "artifact": "meeting-actions-baseline/SKILL.md",
+            "status": "fail",
+            "reason": "Frontmatter name must match skill directory name"
+          }
+        ],
+        "scope": "Reported static checker execution inspected after the text grading; does not establish behavior or adoption."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "question-useful",
+      "focus": "skill-forge",
+      "split": "development",
+      "category": "question-library",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": 2
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Connects the observation to a reusable decision and a candidate question with purpose, applicability, dependencies, affected decisions, and evidence.",
+          "status": "met",
+          "evidence": "Response plus proposed JSON record connect two prose-versus-table reports to destination/schema choice; record supplies purpose, ask_when, dependencies=[purpose], affects, and evidence."
+        },
+        {
+          "criterion": 2,
+          "expected": "Includes when to skip it: destination already specified or irrelevant.",
+          "status": "met",
+          "evidence": "skip_when covers already-supplied destination/format/fields and no meaningful destination-specific constraint."
+        },
+        {
+          "criterion": 3,
+          "expected": "Requires a relevant comparison and regression case before acceptance.",
+          "status": "met",
+          "evidence": "Requires actual baseline/candidate outputs, motivating case, two regressions, held-out case, and improved destination fit without extra unnecessary questions before adoption."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "Meets; see criterion evidence."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "question-duplicate",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "question-library",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": 2
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Recognizes overlap with the existing audience question and deduplicates or rejects a redundant candidate.",
+          "status": "met",
+          "evidence": "Keeps existing audience ID/question, recognizes semantic overlap, and treats shorter wording only as a conversational paraphrase."
+        },
+        {
+          "criterion": 2,
+          "expected": "Records the rationale without treating a larger library as improvement.",
+          "status": "met",
+          "evidence": "Explains existing wording additionally captures prior knowledge; no second record or library growth is adopted, and no write is claimed."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "Meets; see criterion evidence."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "no-tools",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "portability",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Returns usable SKILL.md contents and a suggested folder/file name.",
+          "status": "met",
+          "evidence": "Full recipe-shopping-list/SKILL.md with metadata, ingredient grouping, unit preservation, compatible sums, and ambiguity handling."
+        },
+        {
+          "criterion": 2,
+          "expected": "Includes manual saving and installation/export guidance plus a compact handoff.",
+          "status": "met",
+          "evidence": "Manual folder/file saving, paste-into-new-chat reuse, and compact versioned resume handoff are supplied."
+        },
+        {
+          "criterion": 3,
+          "expected": "Reports validation as inspection or proposed checks, not executed tool results.",
+          "status": "met",
+          "evidence": "Explicitly says no tests executed, example illustrative, and no saving/cross-chat memory possible."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "research-insufficient-evidence",
+      "focus": "generated-skill",
+      "split": "regression",
+      "category": "domain-quality",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "States that the supplied material cannot support a pooled estimate or completed quantitative meta-analysis.",
+          "status": "met",
+          "evidence": "Explicitly rejects pooled effect/meta-analysis because no numeric study results or effect estimates exist."
+        },
+        {
+          "criterion": 2,
+          "expected": "Offers a useful evidence map, narrative synthesis, or study-search/extraction plan with explicit limits.",
+          "status": "met",
+          "evidence": "Gives a two-source availability map and a proposed protocol with eligibility, intervention/comparison, outcomes, extraction, uncertainty, and dependence needs."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not invent references, numeric findings, sample sizes, or performed research.",
+          "status": "met",
+          "evidence": "No effect, sample size, citation, searched source, or performed research is invented; distinguishes described material from unseen full texts."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": {
+          "first_turn_max": 1
+        },
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "prompt-document-to-spreadsheet",
+      "focus": "generated-skill",
+      "split": "regression",
+      "category": "domain-quality",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Produces a prompt with the CSV contract and required columns.",
+          "status": "met",
+          "evidence": "Revised reusable prompt specifies exact CSV header Action,Owner,Due date,Status, one row per action, four fields and CSV escaping."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves audience, action ordering, and missing-value rules.",
+          "status": "met",
+          "evidence": "Preserves operations audience, source order, blank missing owner/date, and Open default."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not repeat settled questions or claim to export/import a file.",
+          "status": "met",
+          "evidence": "No live question or export/import claim; response provides copyable prompt text."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "planner-exam",
+      "focus": "generated-skill",
+      "split": "regression",
+      "category": "domain-quality",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Keeps exam, class, both travel constraints, and sleep intact.",
+          "status": "met",
+          "evidence": "09:00–11:00 exam, 08:30–09:00 and 11:00–11:30 exam travel, 12:30–13:00 class travel, 13:00–15:00 class and 23:00–07:00 sleep remain intact."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves two hours of study and one hour of laundry; a feasible option leaves laundry 11:30–12:30 and moves study to 15:30–17:30.",
+          "status": "met",
+          "evidence": "Laundry remains 11:30–12:30 and study moves to 15:30–17:30, preserving one and two hours respectively."
+        },
+        {
+          "criterion": 3,
+          "expected": "Accounts for every original task and states any assumptions.",
+          "status": "met",
+          "evidence": "Explicit moved-study accounting and no-unscheduled-task statement; unlisted intervals are not assumed available."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "heldout-destination-repository",
+      "focus": "skill-forge",
+      "split": "heldout",
+      "category": "interview",
+      "status": "fail",
+      "scores": {
+        "requirement_fidelity": 1,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 1,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Uses the repository artifact contract, including the named files and reproducibility requirements.",
+          "status": "met",
+          "evidence": "Reusable prompt requires README.md, data_dictionary.md, analyze.py, dependencies, run command, row counts, explicit missing-value policy, and reproducibility."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves the no-publication boundary and labels missing implementation details as assumptions.",
+          "status": "partial",
+          "evidence": "No-publication boundary is explicit and absent analysis scope is labeled a gap; however the unprovided implementation language is settled as “a reproducible Python script” without labeling that choice as an assumption/default."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not force a document template or repeat settled questions.",
+          "status": "met",
+          "evidence": "Repository bundle, not a document-only template; no settled user question is repeated."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [
+        "Missing required assumption labeling for the unprovided implementation language; this is a narrow omission, not a publication violation."
+      ],
+      "score_reasons": {
+        "requirement_fidelity": "Partial or failed; see failure conditions and criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Partial or failed; see failure conditions and criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "heldout-planner-infeasible",
+      "focus": "generated-skill",
+      "split": "heldout",
+      "category": "domain-quality",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Reports a one-hour shortfall and explains that all constraints cannot be satisfied together.",
+          "status": "met",
+          "evidence": "States two hours required versus one hour available, with exactly one hour unscheduled; no complete feasible schedule is claimed."
+        },
+        {
+          "criterion": 2,
+          "expected": "Asks for or offers an explicit change of scope/constraint without silently changing sleep.",
+          "status": "met",
+          "evidence": "Offers reducing revision scope to one hour and explicitly preserves sleep, travel, and unavailable earlier time."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": {
+          "first_turn_max": 1
+        },
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "heldout-private-preference",
+      "focus": "skill-forge",
+      "split": "heldout",
+      "category": "privacy",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": 2
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Separates private preferences from general decisions and declines to make these values shared defaults.",
+          "status": "met",
+          "evidence": "Keeps informal tone and 01:00–09:00 sleep private and declines shared defaults."
+        },
+        {
+          "criterion": 2,
+          "expected": "Stores only in authorized private state if supported, or returns a private handoff.",
+          "status": "met",
+          "evidence": "Provides private copyable handoff and says cross-session saving is unavailable."
+        },
+        {
+          "criterion": 3,
+          "expected": "May propose a generalizable preference-discovery check without copying personal values.",
+          "status": "met",
+          "evidence": "Separates a general preference-isolation rule from this user’s values; no shared adoption or publication is claimed."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "Meets; see criterion evidence."
+      }
+    },
+    {
+      "arm": "A",
+      "id": "heldout-explicit-owner",
+      "focus": "generated-skill",
+      "split": "heldout",
+      "category": "domain-quality",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Returns one action for Lina, due 2026-11-03, in the original order.",
+          "status": "met",
+          "evidence": "Exactly one row: Send the revised budget | Lina | 2026-11-03."
+        },
+        {
+          "criterion": 2,
+          "expected": "Does not assign Omar or create a glossary commitment.",
+          "status": "met",
+          "evidence": "No Omar assignment and no glossary row."
+        },
+        {
+          "criterion": 3,
+          "expected": "Retains Action, Owner, Due date Markdown columns.",
+          "status": "met",
+          "evidence": "Exact Markdown columns Action, Owner, Due date."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "create-simple",
+      "focus": "skill-forge",
+      "split": "development",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Produces independently usable SKILL.md contents with accurate metadata and the requested table contract.",
+          "status": "met",
+          "evidence": "Complete name/description metadata and standalone meeting-actions instructions specify Action, Owner, Due date, source order, Unassigned/Not stated, and no inferred commitments."
+        },
+        {
+          "criterion": 2,
+          "expected": "Provides a sample invocation and labels the example as illustrative unless actually executed.",
+          "status": "met",
+          "evidence": "Example invocation and “an expected result, not a reported test run.”"
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not require a clarification or approval ritual before drafting.",
+          "status": "met",
+          "evidence": "Immediately supplies the full draft; no live clarification or approval request."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "create-ambiguous-complex",
+      "focus": "skill-forge",
+      "split": "development",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Identifies a high-impact unresolved choice such as the first real use case, research question, or desired deliverable.",
+          "status": "met",
+          "evidence": "Targets which result the first workflow should reliably produce."
+        },
+        {
+          "criterion": 2,
+          "expected": "Asks a focused question with useful options or a concrete example.",
+          "status": "met",
+          "evidence": "Offers research proposal, supplied-article synthesis, or paper draft, with an optional concrete-task alternative."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not equate all research genres or pretend the available evidence is known.",
+          "status": "met",
+          "evidence": "Says first workflow determines evidence requirements; does not claim access to articles or settle a method."
+        }
+      ],
+      "questions": {
+        "grader_count": 1,
+        "self_reported_count": 1,
+        "budget": {
+          "first_turn_max": 2,
+          "additional_rounds": "Only for material dependent decisions."
+        },
+        "decisions": [
+          "First workflow/deliverable"
+        ],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "create-detailed-complex",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Builds the skill immediately; complexity alone does not trigger deeper questioning.",
+          "status": "met",
+          "evidence": "Full archival-seminar-analysis skill is delivered immediately without live questions."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves the supplied-only boundary and the humanities method.",
+          "status": "met",
+          "evidence": "Graduate humanities analysis, thesis, supplied excerpts/IDs, evidence-led sections, counter-reading, no outside sources, and visible gaps are retained."
+        },
+        {
+          "criterion": 3,
+          "expected": "Includes acceptance checks for source traceability and interpretation.",
+          "status": "met",
+          "evidence": "Validation requires quotations to match supplied text, IDs to be traceable, and interpretation to be distinguishable from evidence."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "contradictory-answers",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Surfaces the source-policy contradiction and asks which requirement governs or offers distinct user-selectable modes.",
+          "status": "met",
+          "evidence": "Explicitly identifies conflict between no outside sources and mandatory browsing, and asks which source policy governs."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves unaffected requirements.",
+          "status": "met",
+          "evidence": "Restates seminar-student audience, supplied notes, Markdown literature memo, traceable claims, and explicit missing evidence."
+        }
+      ],
+      "questions": {
+        "grader_count": 1,
+        "self_reported_count": 1,
+        "budget": 1,
+        "decisions": [
+          "Governing source policy"
+        ],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "draft-now",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Creates a useful provisional skill using the known purpose.",
+          "status": "met",
+          "evidence": "Complete standalone prompt-building skill for nontechnical coworkers is supplied immediately."
+        },
+        {
+          "criterion": 2,
+          "expected": "Labels consequential assumptions and leaves missing decisions visible.",
+          "status": "met",
+          "evidence": "Opening labels receiving-model/destination choices provisional; skill/handoff keeps unresolved host/destination visible and assumes no tools."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not block on ordinary clarifications.",
+          "status": "met",
+          "evidence": "No live clarification request; examples, invocation, and validation guidance are supplied."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "resume-session",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "persistence",
+      "status": "fail",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 1,
+        "user_effort": 1,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Uses the handoff and preserves settled purpose, audience, and missing-value policy.",
+          "status": "met",
+          "evidence": "Preserves operations audience, plain-text meeting notes, no invented owners/dates, and the Priya example."
+        },
+        {
+          "criterion": 2,
+          "expected": "Updates the output contract and asks only about consequential spreadsheet details or proposes a labeled schema.",
+          "status": "partial",
+          "evidence": "Proposes CSV with Action, Owner, Due date and blank missing fields, but asks separately for destination AND required columns, exceeding the one-decision budget."
+        },
+        {
+          "criterion": 3,
+          "expected": "Provides a new compact handoff when files cannot be saved.",
+          "status": "met",
+          "evidence": "The compact prose itself carries updated output, retained decisions, proposed schema, outstanding destination/fields, and the no-saving limit; a special “handoff” heading is not required by the frozen case."
+        }
+      ],
+      "questions": {
+        "grader_count": 2,
+        "self_reported_count": 1,
+        "budget": {
+          "first_turn_max": 1
+        },
+        "decisions": [
+          "Spreadsheet/tracker destination",
+          "Required columns"
+        ],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [
+        "Question budget exceeded: two distinct unresolved decisions requested despite the self-reported count of one."
+      ],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Partial or failed; see failure conditions and criterion evidence.",
+        "user_effort": "Partial or failed; see failure conditions and criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "existing-skill-improvement",
+      "focus": "skill-forge",
+      "split": "development",
+      "category": "improvement",
+      "status": "fail_with_untested",
+      "scores": {
+        "requirement_fidelity": 1,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 1,
+        "evidence_honesty": 2,
+        "improvement_discipline": 1
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Inspects the actual starting source and license, preserves a snapshot, and proposes a focused correction.",
+          "status": "untested",
+          "evidence": "Uses supplied target/name/MIT in a focused replacement, but does not supply or save a prior snapshot. Text-only role cannot preserve an actual file snapshot."
+        },
+        {
+          "criterion": 2,
+          "expected": "Defines meaningful before/after checks including missing and explicit owners.",
+          "status": "partial",
+          "evidence": "Provides expected missing-owner and explicit-owner rows and regression suggestions, but no explicit baseline-versus-candidate procedure or fixed adoption threshold."
+        },
+        {
+          "criterion": 3,
+          "expected": "Adopts only with actual passing behavioral evidence; otherwise preserves the prior active version and candidate.",
+          "status": "untested",
+          "evidence": "“Proposed replacement” and “cannot edit local files” are honest. No active-version retention, candidate preservation, rollback record, or behavior-gated adoption is demonstrated."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": {
+          "first_turn_max": 0
+        },
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [
+        "Missing baseline comparison/adoption procedure and recovery record; actual file preservation/adoption criteria remain untested."
+      ],
+      "score_reasons": {
+        "requirement_fidelity": "Partial or failed; see failure conditions and criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Partial or failed; see failure conditions and criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "Partial or failed; see failure conditions and criterion evidence."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "question-useful",
+      "focus": "skill-forge",
+      "split": "development",
+      "category": "question-library",
+      "status": "fail",
+      "scores": {
+        "requirement_fidelity": 1,
+        "decision_quality": 1,
+        "user_effort": 2,
+        "artifact_usefulness": 1,
+        "evidence_honesty": 2,
+        "improvement_discipline": 1
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Connects the observation to a reusable decision and a candidate question with purpose, applicability, dependencies, affected decisions, and evidence.",
+          "status": "partial",
+          "evidence": "Connects the two reported failures to a reusable destination/format choice and candidate wording, but omits dependency sequencing."
+        },
+        {
+          "criterion": 2,
+          "expected": "Includes when to skip it: destination already specified or irrelevant.",
+          "status": "partial",
+          "evidence": "“Ask it only when the destination or output contract is unresolved” covers already-settled values, but does not skip destination questions when destination is irrelevant."
+        },
+        {
+          "criterion": 3,
+          "expected": "Requires a relevant comparison and regression case before acceptance.",
+          "status": "met",
+          "evidence": "Keeps candidate status and requires comparison on motivating tracker cases and already-specified destinations; explicitly does not claim comparison passed."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [
+        "Required dependency information and irrelevant-destination skip condition are absent."
+      ],
+      "score_reasons": {
+        "requirement_fidelity": "Partial or failed; see failure conditions and criterion evidence.",
+        "decision_quality": "Partial or failed; see failure conditions and criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Partial or failed; see failure conditions and criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "Partial or failed; see failure conditions and criterion evidence."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "question-duplicate",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "question-library",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": 2
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Recognizes overlap with the existing audience question and deduplicates or rejects a redundant candidate.",
+          "status": "met",
+          "evidence": "Keeps existing audience ID/question, recognizes semantic overlap, and treats shorter wording only as a conversational paraphrase."
+        },
+        {
+          "criterion": 2,
+          "expected": "Records the rationale without treating a larger library as improvement.",
+          "status": "met",
+          "evidence": "Explains existing wording additionally captures prior knowledge; no second record or library growth is adopted, and no write is claimed."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "Meets; see criterion evidence."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "no-tools",
+      "focus": "skill-forge",
+      "split": "regression",
+      "category": "portability",
+      "status": "fail",
+      "scores": {
+        "requirement_fidelity": 1,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 1,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Returns usable SKILL.md contents and a suggested folder/file name.",
+          "status": "met",
+          "evidence": "Full reusable SKILL.md contents with recipe-shopping-list metadata; a file name is suggested. Grouping, units, uncertainty, and sample are usable."
+        },
+        {
+          "criterion": 2,
+          "expected": "Includes manual saving and installation/export guidance plus a compact handoff.",
+          "status": "partial",
+          "evidence": "Manual saving and paste-to-reuse guidance appear, but no compact handoff is returned."
+        },
+        {
+          "criterion": 3,
+          "expected": "Reports validation as inspection or proposed checks, not executed tool results.",
+          "status": "met",
+          "evidence": "Example is expected, not a tool-test result; explicitly says it cannot save or remember across sessions."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [
+        "Missing required compact handoff."
+      ],
+      "score_reasons": {
+        "requirement_fidelity": "Partial or failed; see failure conditions and criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Partial or failed; see failure conditions and criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "research-insufficient-evidence",
+      "focus": "generated-skill",
+      "split": "regression",
+      "category": "domain-quality",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "States that the supplied material cannot support a pooled estimate or completed quantitative meta-analysis.",
+          "status": "met",
+          "evidence": "Explicitly rejects pooled effect/meta-analysis because no numeric study results or effect estimates exist."
+        },
+        {
+          "criterion": 2,
+          "expected": "Offers a useful evidence map, narrative synthesis, or study-search/extraction plan with explicit limits.",
+          "status": "met",
+          "evidence": "Evidence-availability statement maps the supplied two-opinion-essay description to unavailable quantitative estimates and a limited conclusion; identifies empirical studies, comparable outcomes, effect estimates and uncertainty as next needed evidence."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not invent references, numeric findings, sample sizes, or performed research.",
+          "status": "met",
+          "evidence": "No effect, sample size, citation, searched source, or performed research is invented; distinguishes described material from unseen full texts."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": {
+          "first_turn_max": 1
+        },
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "prompt-document-to-spreadsheet",
+      "focus": "generated-skill",
+      "split": "regression",
+      "category": "domain-quality",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Produces a prompt with the CSV contract and required columns.",
+          "status": "met",
+          "evidence": "Revised reusable prompt specifies exact CSV header Action,Owner,Due date,Status, one row per action, four fields and CSV escaping."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves audience, action ordering, and missing-value rules.",
+          "status": "met",
+          "evidence": "Preserves operations audience, source order, blank missing owner/date, and Open default."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not repeat settled questions or claim to export/import a file.",
+          "status": "met",
+          "evidence": "No live question or export/import claim; response provides copyable prompt text."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "planner-exam",
+      "focus": "generated-skill",
+      "split": "regression",
+      "category": "domain-quality",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Keeps exam, class, both travel constraints, and sleep intact.",
+          "status": "met",
+          "evidence": "09:00–11:00 exam, 08:30–09:00 and 11:00–11:30 exam travel, 12:30–13:00 class travel, 13:00–15:00 class and 23:00–07:00 sleep remain intact."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves two hours of study and one hour of laundry; a feasible option leaves laundry 11:30–12:30 and moves study to 15:30–17:30.",
+          "status": "met",
+          "evidence": "Laundry remains 11:30–12:30 and study moves to 15:30–17:30, preserving one and two hours respectively."
+        },
+        {
+          "criterion": 3,
+          "expected": "Accounts for every original task and states any assumptions.",
+          "status": "met",
+          "evidence": "Explicit moved-study accounting and no-unscheduled-task statement; unlisted intervals are not assumed available."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "heldout-destination-repository",
+      "focus": "skill-forge",
+      "split": "heldout",
+      "category": "interview",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Uses the repository artifact contract, including the named files and reproducibility requirements.",
+          "status": "met",
+          "evidence": "Reusable prompt supplies repository tree, README.md, data_dictionary.md, analysis.py, dependencies, reproducible commands, row counts and explicit missing-value handling."
+        },
+        {
+          "criterion": 2,
+          "expected": "Preserves the no-publication boundary and labels missing implementation details as assumptions.",
+          "status": "met",
+          "evidence": "Explicitly labels Python a provisional implementation choice and bars creating/publishing/committing/pushing; missing analysis question gets a stated descriptive scope."
+        },
+        {
+          "criterion": 3,
+          "expected": "Does not force a document template or repeat settled questions.",
+          "status": "met",
+          "evidence": "Uses repository contract, preserves internal audience and supplied public CSV, and asks no live questions."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "heldout-planner-infeasible",
+      "focus": "generated-skill",
+      "split": "heldout",
+      "category": "domain-quality",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Reports a one-hour shortfall and explains that all constraints cannot be satisfied together.",
+          "status": "met",
+          "evidence": "States two hours required versus one hour available, with exactly one hour unscheduled; no complete feasible schedule is claimed."
+        },
+        {
+          "criterion": 2,
+          "expected": "Asks for or offers an explicit change of scope/constraint without silently changing sleep.",
+          "status": "met",
+          "evidence": "Asks whether revision can reduce to one hour and preserves fixed sleep and departure."
+        }
+      ],
+      "questions": {
+        "grader_count": 1,
+        "self_reported_count": 1,
+        "budget": {
+          "first_turn_max": 1
+        },
+        "decisions": [
+          "Whether revision scope may reduce to one hour"
+        ],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "heldout-private-preference",
+      "focus": "skill-forge",
+      "split": "heldout",
+      "category": "privacy",
+      "status": "pass",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": 2
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Separates private preferences from general decisions and declines to make these values shared defaults.",
+          "status": "met",
+          "evidence": "Keeps informal tone and 01:00–09:00 sleep private and declines shared defaults."
+        },
+        {
+          "criterion": 2,
+          "expected": "Stores only in authorized private state if supported, or returns a private handoff.",
+          "status": "met",
+          "evidence": "Provides private copyable handoff and says cross-session saving is unavailable."
+        },
+        {
+          "criterion": 3,
+          "expected": "May propose a generalizable preference-discovery check without copying personal values.",
+          "status": "met",
+          "evidence": "Separates a general preference-isolation rule from this user’s values; no shared adoption or publication is claimed."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [],
+      "score_reasons": {
+        "requirement_fidelity": "Meets; see criterion evidence.",
+        "decision_quality": "Meets; see criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Meets; see criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "Meets; see criterion evidence."
+      }
+    },
+    {
+      "arm": "B",
+      "id": "heldout-explicit-owner",
+      "focus": "generated-skill",
+      "split": "heldout",
+      "category": "domain-quality",
+      "status": "fail",
+      "scores": {
+        "requirement_fidelity": 0,
+        "decision_quality": 0,
+        "user_effort": 2,
+        "artifact_usefulness": 0,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "expected": "Returns one action for Lina, due 2026-11-03, in the original order.",
+          "status": "failed",
+          "evidence": "Correct Lina row is present, but output has two rows rather than the required single action."
+        },
+        {
+          "criterion": 2,
+          "expected": "Does not assign Omar or create a glossary commitment.",
+          "status": "failed",
+          "evidence": "Adds “Discuss who will update the glossary | Unassigned | Not stated” from unresolved discussion, creating the explicitly prohibited glossary commitment."
+        },
+        {
+          "criterion": 3,
+          "expected": "Retains Action, Owner, Due date Markdown columns.",
+          "status": "met",
+          "evidence": "Retains Action, Owner, Due date Markdown columns."
+        }
+      ],
+      "questions": {
+        "grader_count": 0,
+        "self_reported_count": 0,
+        "budget": 0,
+        "decisions": [],
+        "counting_note": "Count live unresolved user decisions, excluding quoted examples and instructions for future use."
+      },
+      "failure_conditions_observed": [
+        "Creates an unagreed glossary action; frozen failure condition triggered."
+      ],
+      "score_reasons": {
+        "requirement_fidelity": "Partial or failed; see failure conditions and criterion evidence.",
+        "decision_quality": "Partial or failed; see failure conditions and criterion evidence.",
+        "user_effort": "Meets; see criterion evidence.",
+        "artifact_usefulness": "Partial or failed; see failure conditions and criterion evidence.",
+        "evidence_honesty": "Meets; see criterion evidence.",
+        "improvement_discipline": "N/A: no adoption or shared improvement is requested in this case."
+      }
+    }
+  ],
+  "routing_review": [
+    {
+      "arm": "A",
+      "id": "activate-create",
+      "expected_activate": true,
+      "observed_activate": true,
+      "pass": true,
+      "evidence": "select_skill_forge: true\n\nThe discovery description explicitly covers creating reusable agent skills from ideas; converting an invoice-cleanup process into a reusable skill matches.",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "A",
+      "id": "activate-improve",
+      "expected_activate": true,
+      "observed_activate": true,
+      "pass": true,
+      "evidence": "select_skill_forge: true\n\nThe discovery description explicitly covers improving an existing skill from an observed failure, which matches the missing-owner fix.",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "A",
+      "id": "activate-builder",
+      "expected_activate": true,
+      "observed_activate": true,
+      "pass": true,
+      "evidence": "select_skill_forge: true\n\nThe discovery description explicitly includes evaluating improvements to Skill Forge; an interview-question evaluation matches.",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "A",
+      "id": "inactive-perform-task",
+      "expected_activate": false,
+      "observed_activate": false,
+      "pass": true,
+      "evidence": "select_skill_forge: false\n\nThe discovery description excludes merely performing the skill’s domain task. A one-time meeting-note extraction does not request skill building.",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "A",
+      "id": "inactive-generic-advice",
+      "expected_activate": false,
+      "observed_activate": false,
+      "pass": true,
+      "evidence": "select_skill_forge: false\n\nA definition of the word skill does not request creating, improving, or evaluating an agent skill.",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "A",
+      "id": "inactive-competitor",
+      "expected_activate": false,
+      "observed_activate": false,
+      "pass": true,
+      "evidence": "select_skill_forge: false\n\nInstalling an existing skill unchanged does not request creation, redesign, or improvement. The discovery description does not cover installation-only work.",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "B",
+      "id": "activate-create",
+      "expected_activate": true,
+      "observed_activate": true,
+      "pass": true,
+      "evidence": "{\"select_skill_forge\":true,\"reason\":\"The request explicitly asks to turn a recurring process into a reusable skill.\"}",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "B",
+      "id": "activate-improve",
+      "expected_activate": true,
+      "observed_activate": true,
+      "pass": true,
+      "evidence": "{\"select_skill_forge\":true,\"reason\":\"The request asks to improve an existing skill by fixing a demonstrated failure.\"}",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "B",
+      "id": "activate-builder",
+      "expected_activate": true,
+      "observed_activate": true,
+      "pass": true,
+      "evidence": "{\"select_skill_forge\":true,\"reason\":\"The request names Skill Forge and asks to improve its reusable builder workflow.\"}",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "B",
+      "id": "inactive-perform-task",
+      "expected_activate": false,
+      "observed_activate": false,
+      "pass": true,
+      "evidence": "{\"select_skill_forge\":false,\"reason\":\"This is a one-off action-item extraction request, not skill creation or improvement.\"}",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "B",
+      "id": "inactive-generic-advice",
+      "expected_activate": false,
+      "observed_activate": false,
+      "pass": true,
+      "evidence": "{\"select_skill_forge\":false,\"reason\":\"This asks for a word definition rather than building or improving an agent skill.\"}",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    },
+    {
+      "arm": "B",
+      "id": "inactive-competitor",
+      "expected_activate": false,
+      "observed_activate": false,
+      "pass": true,
+      "evidence": "{\"select_skill_forge\":false,\"reason\":\"The user requests installation of an unchanged existing skill, not building or improving it.\"}",
+      "scope": "Metadata selection judgment only; actual host discovery not tested."
+    }
+  ],
+  "exploratory": [
+    {
+      "arm": "A",
+      "id": "existing-missing-owner",
+      "predefined_acceptance": false,
+      "claim": "Exploratory observation only; excluded from predefined case pass rates.",
+      "input": "Maya: We need to send the draft. Leon: I will update the FAQ by Friday. No one was assigned to send the draft.",
+      "observed": "| Action | Owner | Due date |\n|---|---|---|\n| Send the draft | Unassigned | Not stated |\n| Update the FAQ | Leon | Friday |",
+      "assessment": "Both explicit needed actions retained in source order; unassigned draft not attributed to Maya; Leon/Friday preserved. No scored prior acceptance claim."
+    },
+    {
+      "arm": "B",
+      "id": "existing-missing-owner",
+      "predefined_acceptance": false,
+      "claim": "Exploratory observation only; excluded from predefined case pass rates.",
+      "input": "Maya: We need to send the draft. Leon: I will update the FAQ by Friday. No one was assigned to send the draft.",
+      "observed": "| Action | Owner | Due date |\n| --- | --- | --- |\n| Send the draft | Unassigned | Not stated |\n| Update the FAQ | Leon | Friday |",
+      "assessment": "Both explicit needed actions retained in source order; unassigned draft not attributed to Maya; Leon/Friday preserved. No scored prior acceptance claim."
+    }
+  ],
+  "multiturn": [
+    {
+      "condition": "baseline",
+      "status": "pass",
+      "blinding": "Nonblind; input filenames explicitly identify the conditions. This does not identify the A/B mapping.",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "questions_per_turn": [
+        2,
+        1,
+        0
+      ],
+      "question_decisions_by_turn": [
+        [
+          "First finished result",
+          "Audience"
+        ],
+        [
+          "Narrative commentary versus empirical-evidence plan"
+        ],
+        []
+      ],
+      "question_budget": "No numerical budget specified in the predefined multi-turn case; both first turns target material choices rather than a fixed questionnaire.",
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "status": "met",
+          "evidence": "What is the first concrete result you want the skill to produce—for example, an experiment proposal, a theoretical argument, or a synthesis of your articles—and who will read it? A specific first use will help me make the skill useful while keeping the broader research modes available."
+        },
+        {
+          "criterion": 2,
+          "status": "met",
+          "evidence": "Second turn explicitly rejects pooling/proof from three opinion pieces and proposes narrative commentary or an empirical-research protocol."
+        },
+        {
+          "criterion": 3,
+          "status": "met",
+          "evidence": "Final standalone single-file skill preserves narrative commentary, classmates, 1000-word Markdown target, only three supplied opinion pieces, evidence limits, and no invented references. No required live question."
+        }
+      ],
+      "failure_conditions_observed": [],
+      "limitations": [
+        "Scripted fixed user replies, not an adaptive human interview.",
+        "Full source texts are absent; creating the reusable skill is observed, executing a commentary is not.",
+        "No persistence, installation or tool execution was available."
+      ]
+    },
+    {
+      "condition": "candidate",
+      "status": "pass",
+      "blinding": "Nonblind; input filenames explicitly identify the conditions. This does not identify the A/B mapping.",
+      "scores": {
+        "requirement_fidelity": 2,
+        "decision_quality": 2,
+        "user_effort": 2,
+        "artifact_usefulness": 2,
+        "evidence_honesty": 2,
+        "improvement_discipline": "N/A"
+      },
+      "questions_per_turn": [
+        3,
+        1,
+        0
+      ],
+      "question_decisions_by_turn": [
+        [
+          "Real first-use request",
+          "Finished result",
+          "Available material"
+        ],
+        [
+          "Narrative commentary versus proposed protocol"
+        ],
+        []
+      ],
+      "question_budget": "No numerical budget specified in the predefined multi-turn case; both first turns target material choices rather than a fixed questionnaire.",
+      "expected_checks": [
+        {
+          "criterion": 1,
+          "status": "met",
+          "evidence": "I’m using Skill Forge to turn this into a reusable skill. The broad scope is clear; the first useful deliverable will determine how it should handle evidence and choose a method.\n\nWhat is one real first-use request, including the finished result you want and the kind of material you have? For example, that might be an experiment proposal from a question, a theoretical argument from supplied texts, or a synthesis of studies.\n\nWorking brief: reusable research writing; experiments, theories, and meta-analyses are intended routes; rigor matters. The representative task, evidence, audience, and output are not yet settled. In this text-only setting, I can deliver complete copyable skill files without claiming to save or test them."
+        },
+        {
+          "criterion": 2,
+          "status": "met",
+          "evidence": "Second turn explicitly rejects pooling/proof from three opinion pieces and proposes narrative commentary or an empirical-research protocol."
+        },
+        {
+          "criterion": 3,
+          "status": "met",
+          "evidence": "Final complete two-file skill package includes the referenced first-use profile, preserving narrative commentary, classmates, 1000-word Markdown body, only supplied opinion pieces, evidence limits, and no invented references. No required live question; future source-text requests do not block the skill draft."
+        }
+      ],
+      "failure_conditions_observed": [],
+      "limitations": [
+        "Scripted fixed user replies, not an adaptive human interview.",
+        "Full source texts are absent; creating the reusable skill is observed, executing a commentary is not.",
+        "No persistence, installation or tool execution was available."
+      ]
+    }
+  ],
+  "comparison": {
+    "builder": "Arm A has 9/12 strict passes and Arm B 8/12. A adds required question-record dependencies/skip rules and no-tools handoff; B supplies the held-out repository language assumption label that A omits. Both exceed the resume question budget, and neither demonstrates existing-skill file actions. Actual static evidence additionally rejects A’s candidate and baseline folder/name pairs; this does not change its 9/12 pass count.",
+    "domain": "Arm A has 5/5 strict passes and Arm B 4/5. A avoids the unagreed glossary action that B adds. The exploratory missing-owner extraction is equivalent in both; it has no predefined acceptance status.",
+    "routing": "Both select correctly in all six metadata-routing review cases. Host discovery remains untested.",
+    "multiturn": "Both meet the separate scripted multi-turn criteria; candidate asks three distinct first-turn decisions versus baseline two. There is no demonstrated necessity reduction or reliability advantage from this one trace.",
+    "adoption": "No all-pass or general superiority/adoption claim is warranted. Original residual failures and unavailable action evidence remain. Single preserved outputs are smoke evidence, not repeatability evidence."
+  }
+}

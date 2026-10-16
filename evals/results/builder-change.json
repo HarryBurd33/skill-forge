@@ -1,0 +1,16 @@
+{
+  "observation": "No destination question returned for spreadsheet",
+  "hypothesis": "A distinct destination-contract record improves relevant retrieval",
+  "result": "adopted",
+  "baseline_hash": "d6597e0fe024b5258fb0488b3bb94e8b9436c4b6a12a3ca8a02f52de8e377820",
+  "candidate_hash": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "criteria_hash": "e949170acf6808540f94bc53b3ee2fb5c8c4212bb10bb09e36a312d3fde6372c",
+  "evaluator_hash": "1cc9513e6c551fbba5c647cc496bb0086f2a51b520014d0d351e688a9403e8a0",
+  "benefit": {
+    "metric": "destination_queries_supported",
+    "baseline": 0,
+    "candidate": 3
+  },
+  "rollback": "Private run retains full baseline. Public previous question library is questions-before.json. See docs/improvements.md.",
+  "scope": "Only literal question retrieval; downstream interview superiority not established."
+}

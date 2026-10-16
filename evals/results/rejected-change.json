@@ -1,0 +1,9 @@
+{
+  "result": "rejected",
+  "reason": "Candidate failed or was inconclusive: deduplication",
+  "active_before": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "active_after": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "candidate_hash": "5d2058226d892c81dee5fd4c8d6aeaa7a22118ef14624aef6fa240e4a6444812",
+  "candidate_preserved": true,
+  "private_run_retained": true
+}

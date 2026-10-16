@@ -1,0 +1,13 @@
+{
+  "status": "rejected",
+  "reason": "Candidate did not demonstrate the predefined benefit",
+  "baseline_hash": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "active_hash": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "candidate_hash": "800a4af40b767f1f9d7ec6e372d3f1d3588a0e64d3a628eb6dec79c3e40ba2b9",
+  "candidate_preserved": true,
+  "metric": {
+    "metric": "resume_contract_checks_met",
+    "baseline": 5,
+    "candidate": 5
+  }
+}

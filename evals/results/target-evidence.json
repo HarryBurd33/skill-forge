@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "baseline_hash": "a5efb8e257c5c9fca885cc3e9da3507c6761564b905ae6e2d995f4ec046912b4",
+  "criteria_hash": "7569f4f4ed8e8d9d3701ce2fb3db09bac983aa00e83802b1ebfd2bbdf573da5a",
+  "evaluator_hash": "a93285cd6e034ebbee7d5fe688e0169a28af5bfeef3be329927690de37fb93d4",
+  "candidate_hash": "ca7abe77cac895b05fb4436d6ab4973c2f38019435439ed46bb3ea7a055e23cb",
+  "execution": {
+    "kind": "model_execution",
+    "coverage": "behavior",
+    "model": "GPT-6-based Codex agent; exact runtime model/build unavailable",
+    "host": "Codex desktop subagents",
+    "conditions": "Same before/after skill sources; exact fixture in fresh contexts, prior held-out case in independent paired batch; same text-only envelope. Criteria inherited unchanged from original fixture/case table."
+  },
+  "results": [
+    {
+      "id": "missing-owner",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "target-execution.json"
+    },
+    {
+      "id": "columns-order",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "target-execution.json"
+    },
+    {
+      "id": "explicit-owner",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "target-execution.json"
+    }
+  ],
+  "benefit": {
+    "metric": "cases_meeting_contract",
+    "baseline": 0,
+    "candidate": 2
+  }
+}

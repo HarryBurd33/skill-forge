@@ -1,0 +1,24 @@
+{
+  "source": "Exact final responses from independent target_before/target_after agents, saved by orchestrator; no invented execution.",
+  "fixture": "examples/existing-skill/fixture.json",
+  "baseline": "| Action | Owner | Due date |\n|---|---|---|\n| Send the revised launch checklist | Not agreed | 2026-11-03 |\n| Archive the old draft | Dev | Not stated |\n",
+  "candidate": "| Action | Owner | Due date |\n|---|---|---|\n| Send the revised launch checklist | Unassigned | 2026-11-03 |\n| Archive the old draft | Dev | Not stated |\n",
+  "judgments": {
+    "missing-owner": {
+      "baseline": "fail",
+      "candidate": "pass",
+      "reason": "Baseline uses Not agreed instead of predefined Unassigned; both retain unknown-owner meaning."
+    },
+    "columns-order": {
+      "baseline": "pass",
+      "candidate": "pass",
+      "reason": "Both preserve exact columns and action order."
+    },
+    "explicit-owner": {
+      "baseline": "fail",
+      "candidate": "pass",
+      "reason": "Independent original grades: baseline added unagreed glossary discussion; candidate returns only Lina action."
+    }
+  },
+  "limitation": "Exact-fixture review by orchestrator; heldout-explicit-owner reviewed independently. Small single-sample evidence."
+}

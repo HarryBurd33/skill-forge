@@ -1,0 +1,38 @@
+[
+  {
+    "case": "create-simple",
+    "artifact": "meeting-actions/SKILL.md",
+    "status": "pass",
+    "reason": null
+  },
+  {
+    "case": "create-detailed-complex",
+    "artifact": "archival-seminar-analysis/SKILL.md",
+    "status": "pass",
+    "reason": null
+  },
+  {
+    "case": "draft-now",
+    "artifact": "plain-language-prompt-builder/SKILL.md",
+    "status": "pass",
+    "reason": null
+  },
+  {
+    "case": "existing-skill-improvement",
+    "artifact": "meeting-actions-candidate/SKILL.md",
+    "status": "fail",
+    "reason": "Frontmatter name must match skill directory name"
+  },
+  {
+    "case": "existing-skill-improvement",
+    "artifact": "meeting-actions-baseline/SKILL.md",
+    "status": "fail",
+    "reason": "Frontmatter name must match skill directory name"
+  },
+  {
+    "case": "no-tools",
+    "artifact": "recipe-shopping-list/SKILL.md",
+    "status": "pass",
+    "reason": null
+  }
+]

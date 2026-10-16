@@ -1,0 +1,28 @@
+{
+  "id": "q-audience-again",
+  "status": "accepted",
+  "question": "Who is this for?",
+  "purpose": "Choose useful content and audience.",
+  "ask_when": "Output content or intended reader changes the workflow.",
+  "skip_when": "Output and audience are specified.",
+  "dependencies": [
+    "q-purpose"
+  ],
+  "affects": [
+    "content",
+    "audience"
+  ],
+  "tags": [
+    "output",
+    "audience",
+    "content"
+  ],
+  "evidence": "Representative research and prompt-builder briefs.",
+  "history": [
+    {
+      "version": "0.1.0",
+      "action": "accepted",
+      "reason": "Original seed question; validate selection in release cases."
+    }
+  ]
+}

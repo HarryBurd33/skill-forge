@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "status": "comparison_complete_candidate_not_qualified_for_adoption",
+  "scope": "Narrow resume-state and one-decision-questioning repair; separate from original 17-case totals.",
+  "blinding": "Nonblind before/after labels. Held-out input was authored before the grader saw the repair diff and was withheld from patch development; the authorized diff was inspected only after output grading.",
+  "frozen_inputs": {
+    "evals/resume-criteria.json": "17e1818f5ca233cc22130dfaeff5f6d91f414aaa96e56f6d17e2d7af7e5ee2aa",
+    "evals/resume-evaluator.md": "c01e749f48596e8314f95e2fb794cd2bc7636ce2deef498f8ced8d37e936d483",
+    "evals/results/resume-before.json": "01eb87e7c3eb39d6d7393e881b6ae4384f8f87ac727c8c4ec01862aecee187aa",
+    "evals/results/resume-after.json": "9f05b5957c40f5d9c687090f77ecc793e3d8cb09859c438bb743fe25a323bd45",
+    "evals/results/resume-heldout-input.json": "9b9db7525abac0d4e886364b3d19e40f90d1c7dc27158a8580d8d6b99b4899b8",
+    "evals/results/resume-heldout-expected.json": "d6ce7888233860dbb249f6ff6a101fd76c3c9dafc96b279e0512ec6d0c4f57ec"
+  },
+  "grading_rule": "All listed behaviors observable and no failure condition. Distinct unresolved decisions count, not question marks; a proposed default is not a requested decision. Compact resumable prose need not have a separate heading; same standard applied to both arms.",
+  "results": [
+    {
+      "arm": "before",
+      "input_id": "simple",
+      "criterion_id": "simple",
+      "status": "pass",
+      "questions_grader_count": 0,
+      "evidence": [
+        "Standalone complete skill matches meeting-actions-table folder/name.",
+        "No live clarification; exact columns, Unassigned/Not stated, source order, explicit actions, and example/invocation supplied.",
+        "Manual checks/example are not represented as executed tests."
+      ],
+      "failure_conditions_observed": []
+    },
+    {
+      "arm": "before",
+      "input_id": "resume",
+      "criterion_id": "resume",
+      "status": "pass",
+      "questions_grader_count": 1,
+      "evidence": [
+        "Preserves purpose, operations audience, plain-text notes, no invented owners/dates, and Priya example.",
+        "CSV and three columns with blank missing owner/date explicitly labeled proposed defaults.",
+        "Only asks whether to use required columns versus proposed schema: one schema decision, not a destination-plus-schema question.",
+        "Compact handoff records spreadsheet output, unresolved schema, no saves/tests, and next step. Retained details and proposed defaults appear immediately above and the response is copyable.",
+        "No persistent-state or file mutation claim."
+      ],
+      "failure_conditions_observed": [],
+      "metric_checks": {
+        "settled_requirements_preserved": 1,
+        "labeled_schema_proposed": 1,
+        "at_most_one_user_decision": 1,
+        "updated_compact_handoff_present": 1,
+        "no_unsupported_persistence_claim": 1
+      },
+      "resume_contract_checks_met": 5
+    },
+    {
+      "arm": "before",
+      "input_id": "specified",
+      "criterion_id": "specified",
+      "status": "pass",
+      "questions_grader_count": 0,
+      "evidence": [
+        "No live question.",
+        "CSV-only prompt preserves exact Action,Owner,Due date,Status contract, source order, blank missing owner/date, default Open, and operations audience.",
+        "Returns actual copyable prompt and updated handoff; no export/import claim."
+      ],
+      "failure_conditions_observed": []
+    },
+    {
+      "arm": "before",
+      "input_id": "resume-heldout-ndjson-queue",
+      "criterion_id": "handoff-change",
+      "status": "pass",
+      "questions_grader_count": 0,
+      "evidence": [
+        "No live destination/schema question; fully specified NDJSON replaces email.",
+        "Preserves support-lead audience, supplied-only notes, explicit commitments, appearance order, exact source IDs, and null missing owners/dates.",
+        "Exact summary, owner, due_date, source_id keys and one object per line; no data wrapper or extraneous prose in generated queue-data contract.",
+        "Actual reusable instructions and copyable handoff returned; no false file saving or execution claim."
+      ],
+      "failure_conditions_observed": []
+    },
+    {
+      "arm": "after",
+      "input_id": "simple",
+      "criterion_id": "simple",
+      "status": "pass",
+      "questions_grader_count": 0,
+      "evidence": [
+        "Standalone complete skill matches meeting-actions-table folder/name.",
+        "No live clarification; exact columns, Unassigned/Not stated, source order, explicit actions, and example/invocation supplied.",
+        "Manual checks/example are not represented as executed tests."
+      ],
+      "failure_conditions_observed": []
+    },
+    {
+      "arm": "after",
+      "input_id": "resume",
+      "criterion_id": "resume",
+      "status": "pass",
+      "questions_grader_count": 1,
+      "evidence": [
+        "Preserves purpose, operations audience, plain-text notes, no invented owners/dates, and Priya example.",
+        "Explicit proposed-default handoff includes three columns, blank missing values, and CSV.",
+        "Only asks whether specific columns are required or defaults may be used: one schema decision.",
+        "Updated handoff includes confirmed state, defaults, example, acceptance checks, current artifact, remaining decision, and next action.",
+        "Explicitly says nothing saved or executed."
+      ],
+      "failure_conditions_observed": [],
+      "metric_checks": {
+        "settled_requirements_preserved": 1,
+        "labeled_schema_proposed": 1,
+        "at_most_one_user_decision": 1,
+        "updated_compact_handoff_present": 1,
+        "no_unsupported_persistence_claim": 1
+      },
+      "resume_contract_checks_met": 5
+    },
+    {
+      "arm": "after",
+      "input_id": "specified",
+      "criterion_id": "specified",
+      "status": "pass",
+      "questions_grader_count": 0,
+      "evidence": [
+        "No live question.",
+        "CSV-only prompt preserves exact Action,Owner,Due date,Status contract, source order, blank missing owner/date, default Open, and operations audience.",
+        "Returns actual copyable prompt and updated handoff; no export/import claim."
+      ],
+      "failure_conditions_observed": []
+    },
+    {
+      "arm": "after",
+      "input_id": "resume-heldout-ndjson-queue",
+      "criterion_id": "handoff-change",
+      "status": "pass",
+      "questions_grader_count": 0,
+      "evidence": [
+        "No live destination/schema question; fully specified NDJSON replaces email.",
+        "Preserves support-lead audience, supplied-only notes, explicit commitments, appearance order, exact source IDs, and null missing owners/dates.",
+        "Exact summary, owner, due_date, source_id keys and one object per line; no data wrapper or extraneous prose in generated queue-data contract.",
+        "Actual reusable instructions and copyable handoff returned; no false file saving or execution claim."
+      ],
+      "failure_conditions_observed": []
+    }
+  ],
+  "metric": {
+    "name": "resume_contract_checks_met",
+    "before": 5,
+    "after": 5,
+    "delta": 0,
+    "required_min_delta": 1,
+    "demonstrated_benefit": false
+  },
+  "candidate_all_four_cases_pass": true,
+  "baseline_all_four_cases_pass": true,
+  "no_regression_in_sample": true,
+  "scope_privacy_review": {
+    "status": "pass",
+    "changed_files": [
+      "SKILL.md",
+      "references/interview.md"
+    ],
+    "changes": "Adds an explicit updated-handoff instruction when persistence is absent, and decision-counting/sequencing guidance with generic destination/schema examples.",
+    "personal_values_or_fixture_values_added": false,
+    "unrelated_changes_observed": false,
+    "evidence": "evals/results/resume-reviewed.diff",
+    "diff_sha256": "b151130a66443bad36ef120535935c8cd5aaa58b4d67d687ec886ee889df2d95"
+  },
+  "adoption_gate": {
+    "qualifies": false,
+    "reason": "The predefined evaluator explicitly requires a metric improvement of at least one and says not to adopt when baseline already passes all five. Observed scores are 5 to 5. Preserve the candidate and evidence, retain the prior active version.",
+    "actual_transaction_status": "Not executed by this grader; this is the evaluation decision only."
+  },
+  "limitations": [
+    "One fresh model context per arm with cases batched within that arm; smoke evidence only.",
+    "Text-only outputs cannot establish file saving, importing, persistent memory, or real skill adoption.",
+    "A more detailed candidate handoff is observable but is not the predefined demonstrated-benefit metric.",
+    "No original case was removed or rescored to qualify the repair."
+  ]
+}
