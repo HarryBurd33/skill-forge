@@ -229,10 +229,10 @@
   {
     "id": "q-destination",
     "status": "accepted",
-    "question": "Where will you use the finished result, and what file format or required fields does that destination need?",
-    "purpose": "Set the delivery contract: destination, artifact format, and structural requirements needed to use or import the result. This is separate from choosing its content or audience.",
-    "ask_when": "The output destination is unresolved, changes during the task, or imposes requirements that would change how the artifact is built. Examples include moving a document into a spreadsheet, importing a CSV into a tracker, or delivering files in a GitHub repository.",
-    "skip_when": "The destination and relevant format or field requirements are already supplied or can be established from available templates and documentation; also skip when plain chat text fully serves the agreed use.",
+    "question": "Where will people use the results produced by this skill, and what format or required fields does that destination need?",
+    "purpose": "Set the domain-output contract: where the generated skill sends its results, their format, and required structure. This is separate from how the skill files themselves are distributed.",
+    "ask_when": "The destination of results produced by the skill is unresolved, changes during the task, or imposes requirements that change the artifact. Examples include moving a document into a spreadsheet or importing CSV into a tracker.",
+    "skip_when": "The domain-output destination and relevant format/fields are already supplied or discoverable; skip when chat text serves the agreed use. For skill installation, packaging or GitHub publication, use q-skill-distribution instead.",
     "dependencies": [
       "q-purpose",
       "q-output"
@@ -272,6 +272,96 @@
         "version": "0.1.0",
         "action": "accepted-on-gate-pass",
         "reason": "Candidate becomes active only after frozen retrieval acceptance, regression and withheld probe checks pass. Claims limited to question retrieval."
+      },
+      {
+        "version": "0.2.0",
+        "action": "revised",
+        "reason": "Distinguish domain output from distribution of the skill itself; no longer infer one from the other."
+      }
+    ]
+  },
+  {
+    "id": "q-skill-distribution",
+    "status": "accepted",
+    "question": "How would you like to receive the skill itself: a local Markdown file, an installable folder or ZIP, a GitHub repository, or another destination?",
+    "purpose": "Choose how the generated skill files will be saved, installed or shared, independently of the outputs the skill produces.",
+    "ask_when": "The delivery or implementation destination for the skill itself is unsettled, or the user changes it. GitHub delivery additionally needs an identified owner/repository, public/private visibility and authorization for that external write.",
+    "skip_when": "The user already settled delivery and any needed publication details; preserve recorded choices and authorization. Do not repeat the choice because the skill produces a spreadsheet or another domain artifact.",
+    "dependencies": [
+      "q-purpose",
+      "q-tools"
+    ],
+    "affects": [
+      "skill_delivery",
+      "packaging",
+      "installation",
+      "publication_destination",
+      "publication_visibility",
+      "publication_authorization"
+    ],
+    "tags": [
+      "skill",
+      "distribution",
+      "delivery",
+      "Markdown",
+      "md",
+      "SKILL.md",
+      "folder",
+      "ZIP",
+      "install",
+      "implementation",
+      "GitHub",
+      "repository",
+      "public",
+      "private",
+      "publish",
+      "sharing"
+    ],
+    "evidence": "User-requested improvement on 2026-10-17: explicitly ask about publishing the generated skill as GitHub repository versus delivering a Markdown file or another implementation. Existing q-destination concerned domain artifacts and did not settle this independent decision.",
+    "history": [
+      {
+        "version": "0.2.0",
+        "action": "accepted-on-gate-pass",
+        "reason": "Candidate delivery question becomes active only if frozen behavioral checks and regressions pass; skip settled delivery decisions."
+      }
+    ]
+  },
+  {
+    "id": "q-counterexample",
+    "status": "accepted",
+    "question": "What realistic case would most expose the weakest assumption in this approach, and what should the skill do then?",
+    "purpose": "Turn an unresolved design assumption into a concrete boundary or failure case before building.",
+    "ask_when": "Purpose, intended output and success are concrete, but a consequential assumption or interacting requirement remains untested. First propose a grounded case when available rather than making the user invent one.",
+    "skip_when": "Representative failures already resolve the relevant risk, the task is simple and settled, or the user requests a quick provisional draft. Do not ask for more edge cases merely to prolong the interview.",
+    "dependencies": [
+      "q-purpose",
+      "q-output",
+      "q-success"
+    ],
+    "affects": [
+      "boundaries",
+      "assumptions",
+      "failure_behavior",
+      "acceptance",
+      "alternative_approach"
+    ],
+    "tags": [
+      "challenge",
+      "counterexample",
+      "grill",
+      "assumptions",
+      "failure",
+      "tradeoff",
+      "thorough",
+      "risk",
+      "refinement"
+    ],
+    "evidence": "User-requested improvement on 2026-10-17: continue focused questioning and constructive critique until the idea is usefully refined. A concrete counterexample tests the design, unlike repeating general quality questions.",
+    "history": [
+      {
+        "version": "0.2.0",
+        "action": "accepted-on-gate-pass",
+        "reason": "Candidate question earns its place only through frozen behavioral checks; skip covered or immaterial challenges."
       }
     ]
   }
