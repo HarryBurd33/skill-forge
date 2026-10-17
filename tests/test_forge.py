@@ -122,6 +122,36 @@ print(json.dumps({q: [x['id'] for x in m.search_questions(skill, q)] for q in ['
         self.assertEqual(forge.rollback(run)["restored_hash"], manifest["baseline_hash"])
         self.assertTrue(Path(result["candidate_preserved"]).exists())
 
+    def test_nested_finder_survives_portable_export_and_install(self):
+        finder = self.skill / "subskills" / "skill-finder"
+        finder.mkdir(parents=True)
+        (finder / "SKILL.md").write_text("---\nname: skill-finder\ndescription: Inspect candidate foundations.\n---\nCheck the actual license before reuse.\n")
+        (finder / "LICENSE").write_text("MIT License\nNested resource notice\n")
+        with (self.skill / "SKILL.md").open("a") as stream:
+            stream.write("\n[Finder](subskills/skill-finder/SKILL.md)\n")
+        text = forge.portable_text(self.skill)
+        self.assertIn("Check the actual license before reuse.", text)
+        self.assertIn("Nested resource notice", text)
+        self.assertIn("#resource-subskills-skill-finder-skill-md", text)
+        destination = self.root / "personal" / "skill-forge"
+        forge.install(self.skill, destination)
+        self.assertEqual((destination / "subskills/skill-finder/SKILL.md").read_bytes(), (finder / "SKILL.md").read_bytes())
+        self.assertEqual(forge.validate(destination)["status"], "pass")
+
+    def test_session_keeps_distribution_separate_from_domain_output(self):
+        path = Path(forge.session_init(self.state, "Delivery choices")["session"])
+        record = forge.read_json(path)
+        self.assertIn("skill_delivery", record)
+        self.assertIn("skill_finder", record)
+        record["skill_delivery"].update({"format": "skill-folder", "destination": "local", "publication_authorized": False})
+        record["skill_finder"].update({"status": "complete", "brief_fingerprint": "fixture-brief", "report": "finder-report.json"})
+        record["domain_output_contract"] = {"format": "spreadsheet"}
+        forge.write_json(path, record)
+        resumed = forge.read_json(path)
+        self.assertFalse(resumed["skill_delivery"]["publication_authorized"])
+        self.assertEqual(resumed["domain_output_contract"]["format"], "spreadsheet")
+        self.assertEqual(resumed["skill_finder"]["brief_fingerprint"], "fixture-brief")
+
     def test_failed_candidate_is_preserved_and_baseline_stays_active(self):
         manifest, run, candidate = self.prepare_candidate()
         path, evidence = self.evidence(manifest, candidate)
@@ -254,7 +284,7 @@ print(json.dumps({q: [x['id'] for x in m.search_questions(skill, q)] for q in ['
         help_result = subprocess.run([sys.executable, str(SCRIPT), "--help"], text=True, capture_output=True, check=True)
         self.assertIn("prepare", help_result.stdout)
         version_result = subprocess.run([sys.executable, str(SCRIPT), "--version"], text=True, capture_output=True, check=True)
-        self.assertEqual(version_result.stdout.strip(), "0.1.0")
+        self.assertEqual(version_result.stdout.strip(), (SCRIPT.parents[3] / "VERSION").read_text().strip())
 
 
 if __name__ == "__main__":
