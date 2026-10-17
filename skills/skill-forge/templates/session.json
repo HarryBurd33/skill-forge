@@ -20,10 +20,34 @@
   "asked_question_ids": [],
   "evidence": [],
   "effort_limit": {
-    "active_minutes": 30,
+    "wall_clock_minutes": 30,
     "max_candidates": 3,
     "candidates_used": 0
   },
   "next_action": "",
-  "updated_at": null
+  "updated_at": null,
+  "skill_delivery": {
+    "format": null,
+    "destination": null,
+    "publication_authorized": false,
+    "authorization_basis": null,
+    "owner": null,
+    "repository": null,
+    "visibility": null
+  },
+  "domain_output_contract": {},
+  "refinement_status": {
+    "open_material_decisions": [],
+    "next_question": null,
+    "ready_to_build": false,
+    "ready_reason": null,
+    "challenges": []
+  },
+  "skill_finder": {
+    "status": "not-started",
+    "brief_fingerprint": null,
+    "report": null,
+    "selected_foundations": [],
+    "skip_reason": null
+  }
 }
