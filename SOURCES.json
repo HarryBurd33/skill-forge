@@ -169,5 +169,28 @@
       "reuse": "Read as primary documentation; original summary only; no copied assets or text.",
       "license": "No reuse license assumed; documentation consulted only."
     }
+  ],
+  "verification_updates": [
+    {
+      "date": "2026-10-17",
+      "source": "mattpocock-skills",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "inspected": [
+        "skills/productivity/grill-me/SKILL.md",
+        "skills/productivity/grilling/SKILL.md",
+        "LICENSE"
+      ],
+      "result": "Current wrapper still delegates to grilling. Dependency-frontier questioning adapted conceptually; no upstream prose or code copied."
+    },
+    {
+      "date": "2026-10-17",
+      "urls": [
+        "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+        "https://huggingface.co/docs/huggingface_hub/guides/search",
+        "https://huggingface.co/docs/hub/repositories-licenses",
+        "https://huggingface.co/docs/hub/agents-skills"
+      ],
+      "result": "Primary guidance for bounded source discovery, actual source/license inspection and scoped model/dataset/code reuse. Original Finder implementation; no source prose distributed."
+    }
   ]
 }
