@@ -8,7 +8,7 @@ Store session and run records in a user-controlled private directory outside any
 
 ## Candidate procedure
 
-1. Record observation, reproducible input, affected outcome and hypothesis. Set effort limit (default 30 active minutes) and max candidates (default 3). Snapshot baseline including notices and customizations.
+1. Record observation, reproducible input, affected outcome and hypothesis. Set effort limit (default 30 wall-clock minutes) and max candidates (default 3). Snapshot baseline including notices and customizations.
 2. Before patching, freeze acceptance criteria and evaluator in the private run directory. Identify regression and held-out cases, evidence kind and the minimum observable benefit. Criteria cannot be weakened by a candidate. Each attempt counts toward the limit, including rejected or inconclusive attempts.
 3. Patch an isolated copy. Run baseline and candidate under comparable conditions. Capture actual output artifacts and hashes; use independent grading where available. A self-reported pass without artifacts is insufficient.
 4. If all required checks pass and benefit is demonstrated, automatically replace the active writable target, record the change and keep the prior version. Otherwise leave the active version unchanged and retain candidate/evidence for later. Read-only installations receive a candidate package and installation handoff, never a false adoption claim.
