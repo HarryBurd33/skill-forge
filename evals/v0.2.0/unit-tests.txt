@@ -1,0 +1,39 @@
+test_adoption_preserves_concurrent_target_change (test_forge.ForgeTests) ... ok
+test_broken_and_escaping_link (test_forge.ForgeTests) ... ok
+test_bundle_contains_resources_and_detects_drift (test_forge.ForgeTests) ... {
+  "status": "error",
+  "message": "Portable prompt has drifted or is missing"
+}
+ok
+test_cli_help_and_version (test_forge.ForgeTests) ... ok
+test_failed_candidate_is_preserved_and_baseline_stays_active (test_forge.ForgeTests) ... ok
+test_frozen_criteria_cannot_be_weakened (test_forge.ForgeTests) ... ok
+test_managed_install_update_and_customization_refusal (test_forge.ForgeTests) ... ok
+test_nested_finder_survives_portable_export_and_install (test_forge.ForgeTests) ... ok
+test_no_benefit_and_hash_mismatch_rejected (test_forge.ForgeTests) ... ok
+test_package_notices_links_and_private_exclusion (test_forge.ForgeTests) ... ok
+test_private_session_outside_repo_and_snapshot (test_forge.ForgeTests) ... ok
+test_question_schema_and_duplicate_id (test_forge.ForgeTests) ... ok
+test_real_executed_candidate_adopts_and_rolls_back (test_forge.ForgeTests) ... ok
+test_rollback_preserves_later_customization (test_forge.ForgeTests) ... ok
+test_round_limit_and_time_limit (test_forge.ForgeTests) ... ok
+test_session_keeps_distribution_separate_from_domain_output (test_forge.ForgeTests) ... ok
+test_simulation_and_format_only_behavior_evidence_rejected (test_forge.ForgeTests) ... ok
+test_source_manifest_allowlist_and_portable_bundle (test_forge.ForgeTests) ... ok
+test_symlink_is_not_followed (test_forge.ForgeTests) ... ok
+test_validation_and_query (test_forge.ForgeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.819s
+
+OK
+{
+  "status": "pass",
+  "output": "[temporary-path]",
+  "checked": false
+}
+{
+  "status": "pass",
+  "output": "[temporary-path]",
+  "checked": true
+}

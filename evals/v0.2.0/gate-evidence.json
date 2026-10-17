@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "baseline_hash": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "criteria_hash": "373e01b58b1054ebcd392ac1771f029486030eea34d96a1c91f31f0c4c035f2d",
+  "evaluator_hash": "fd04b70fae127306570e66a88bda581c82af742ce9abee05b1baf627e8f07dcd",
+  "candidate_hash": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+  "execution": {
+    "kind": "model_execution",
+    "coverage": "behavior",
+    "model": "Inherited Codex model; exact runtime identifier/build/settings unavailable",
+    "host": "Codex desktop on macOS",
+    "conditions": "Final eligible cases executed in independent case contexts; multi-turn followups staged after saved turns. Same original inputs/capabilities. H03 one predeclared unassisted paired retry resolves unavailable retrieval; original/assisted and superseded protocol results retained and excluded. Independent visible-label grader. Narrow sample only."
+  },
+  "results": [
+    {
+      "id": "D01",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D02",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D03",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D04",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D05",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D06",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D07",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D08",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "H01",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "H02",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "H03",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "H04",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "REG-NO-EXPANSION",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    }
+  ],
+  "benefit": {
+    "metric": "satisfied_required_behavior_conditions",
+    "baseline": 43,
+    "candidate": 50
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "id": "A1",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "A2",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "A3",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "N1",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "id": "N2",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "id": "N3",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    }
+  ],
+  "limitation": "Six description-only routing judgments in one separate context. Native nested-skill discovery and domain output quality not tested. Exact runtime model identifier not exposed."
+}

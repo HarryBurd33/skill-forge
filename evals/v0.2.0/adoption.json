@@ -1,0 +1,16 @@
+{
+  "round": 1,
+  "time": "2026-10-17T21:17:04.854181+00:00",
+  "candidate_hash": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+  "status": "adopted",
+  "reason": "All frozen checks passed and predefined benefit was demonstrated",
+  "benefit_delta": 7,
+  "validation": {
+    "status": "pass",
+    "name": "skill-forge",
+    "files": 16,
+    "relative_links": 10,
+    "questions": 11,
+    "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "status": "not adopted",
+  "candidate_hash": "886364a11d2bda2662b0572f3a38c7428464819a9ce0a8e2302ec653bce49a51",
+  "reason": "Independent development review found bundled user decisions in D03 and D05; active v0.1.0 was preserved. Usage limits interrupted the run before submission; the expired helper window was not extended.",
+  "context_limit": "Initial executors inherited parent history. Only development failure diagnosis is claimed; final comparison uses fresh history-free contexts.",
+  "review": {
+    "status": "preliminary; D03 and D05 only",
+    "evaluator_context": "Independent case author; no candidate implementation read; actual saved model response text inspected. Arms are identified, so grading is not blind.",
+    "fixed_inputs_note": "Used current frozen corrected D03 60 study+16 training table documented as corrected before execution. Did not alter criteria, tables, responses or implementation.",
+    "atomic_decision_rule": "Count independently answerable user choices/facts that can independently change the workflow. Supplying/pasting one concrete example solely as evidence for the same decision is not an additional design decision. Identifying constraints and their consequences is one evidence-grounded classification task; selecting a reduction priority and setting a protected minimum are distinct. Audience and desired reader outcome are distinct. A future suggestion to choose another allowance is not counted unless a current answer is requested. Apply identically to both arms.",
+    "results": [
+      {
+        "case": "D03",
+        "arm": "baseline",
+        "case_result": "pass",
+        "must_checks": [
+          {
+            "condition": "First asks a focused prerequisite question or requests a concrete week to distinguish fixed commitments/capacity before selecting output packaging or optimizing a schedule.",
+            "result": "pass",
+            "evidence": "Turn1 requests a concrete commitment/conflict and consequences before packaging or scheduling."
+          },
+          {
+            "condition": "After answer 1 surfaces the capacity/sleep conflict concretely and asks for a consequential priority/constraint decision rather than silently fitting impossible work.",
+            "result": "pass",
+            "evidence": "Turn2 calculates 175 requested hours against 168; preserves sleep/classes/shift and asks what flexible requirement may change."
+          },
+          {
+            "condition": "After answer 2 preserves the firm commitments/sleep and probes or drafts around the remaining gap, reflecting resolved answers in a compact brief.",
+            "result": "pass",
+            "evidence": "Turn3 retains sleep, classes and Saturday shift, treats 4 training hours as this-week exception, gives compact brief and asks about everyday capacity."
+          },
+          {
+            "condition": "Questions/critique remain tied to an actionable skill and allow the user to stop or draft.",
+            "result": "pass",
+            "evidence": "Critique targets overload and useful planner rules, and turn3 honors requested brief instead of demanding a complete questionnaire."
+          }
+        ],
+        "failure_conditions": [
+          {
+            "condition": "Assumes sleep can be reduced.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Silently removes a fixed commitment or required work.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Repeats resolved sleep/commitment questions.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Demands all generic checklist answers before showing useful progress.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          }
+        ],
+        "turns": [
+          {
+            "turn": 1,
+            "user_decisions": 1,
+            "decision_units": [
+              "Identify real fixed constraints using a concrete example and the consequence of moving them."
+            ],
+            "evidence": "Baseline asks which commitments are hardest to move and consequences; candidate asks for competing commitments and which carry a consequence. These request evidence for one constraint-classification decision.",
+            "unnecessary_settled_decisions": 0
+          },
+          {
+            "turn": 2,
+            "user_decisions": 1,
+            "decision_units": [
+              "Select which flexible demand may change."
+            ],
+            "evidence": "Baseline: \"which may change: the study target, the training target, or both?\" Candidate: \"what should the planner reduce first: study, training, or a combination\u2014and is there a minimum it must protect?\" Priority and a minimum can be answered independently and can independently change the resulting skill.",
+            "unnecessary_settled_decisions": 0
+          },
+          {
+            "turn": 3,
+            "user_decisions": 1,
+            "decision_units": [
+              "Set the combined everyday-activity time allowance."
+            ],
+            "evidence": "Both request one combined weekly allowance for everyday needs. Baseline also proposes choosing flexibility later; it does not require a second current answer. Candidate similarly requests a combined total, not separate values for every activity.",
+            "unnecessary_settled_decisions": 0
+          }
+        ],
+        "user_decisions_total": 3,
+        "question_budget": {
+          "per_turn": 1,
+          "total_through_followups": 3
+        },
+        "question_budget_pass": true,
+        "reason": "All substantive conditions pass; one decision per turn, total3 fits the frozen budget.",
+        "sources": [
+          {
+            "path": "[evaluation-workspace]/base-D03/turn1.md",
+            "sha256": "f5aa4b7c67595cfe729c1afcffe6676b282bcf581626d22df73712af8796a236"
+          },
+          {
+            "path": "[evaluation-workspace]/base-D03/turn2.md",
+            "sha256": "34ad056e00df244a6e32837f93f41d1ca04150621fc9cd41e4203cbcc4bf5530"
+          },
+          {
+            "path": "[evaluation-workspace]/base-D03/turn3.md",
+            "sha256": "257fc8f04dd9eed660ea2f4e4eab89e241c69d8aa1f3bfc62e0ecf57b5c398b4"
+          }
+        ]
+      },
+      {
+        "case": "D05",
+        "arm": "baseline",
+        "case_result": "pass",
+        "must_checks": [
+          {
+            "condition": "First asks at most one focused high-impact question about intended audience, concrete use or success.",
+            "result": "pass",
+            "evidence": "Baseline asks one concrete improvement decision; candidate asks both audience and intended outcome at once."
+          },
+          {
+            "condition": "On followup immediately gives an actionable draft or brief with labeled assumptions and the stated local Markdown format.",
+            "result": "pass",
+            "evidence": "Turn2 supplies complete SKILL.md contents, labels initial audience/style assumptions, and gives a local save path/invocation."
+          },
+          {
+            "condition": "Leaves unresolved questions for later without inventing answers or continuing a mandatory interrogation.",
+            "result": "pass",
+            "evidence": "Turn2 proceeds without mandatory follow-up questions, records pending real examples/tests, and distinguishes assumptions from confirmed facts."
+          }
+        ],
+        "failure_conditions": [
+          {
+            "condition": "After draft now asks another required question before drafting.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Claims maximum refinement is impossible so refuses to draft.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Treats assumptions as confirmed personal facts.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          }
+        ],
+        "turns": [
+          {
+            "turn": 1,
+            "user_decisions": 1,
+            "decision_units": [
+              "Identify the desired improvement in a concrete project update."
+            ],
+            "evidence": "Baseline requests an example plus \"what you wish it did better\" (one outcome decision). Candidate requests an example, \"who was it for\", and \"what did you want that reader to understand or do\" (audience and intended outcome are independently answerable decisions).",
+            "unnecessary_settled_decisions": 0
+          },
+          {
+            "turn": 2,
+            "user_decisions": 0,
+            "decision_units": [],
+            "evidence": "Both immediately supply a complete local Markdown skill after draft-now; neither requires a further answer.",
+            "unnecessary_settled_decisions": 0
+          }
+        ],
+        "user_decisions_total": 1,
+        "question_budget": {
+          "per_turn": 1,
+          "after_stop_command": 0
+        },
+        "question_budget_pass": true,
+        "reason": "Draft-now behavior passes in both arms; baseline first turn fits one decision.",
+        "sources": [
+          {
+            "path": "[evaluation-workspace]/base-D05/turn1.md",
+            "sha256": "2749a38a6856a8b323770bc5ead94e7003ee4ffb8c2add3e89f17a9c0a0c5ec8"
+          },
+          {
+            "path": "[evaluation-workspace]/base-D05/turn2.md",
+            "sha256": "141a405b10305c7a5248f4e43266d4d867a6152da340dc0c3e19e42ad50a3b6b"
+          }
+        ]
+      },
+      {
+        "case": "D03",
+        "arm": "candidate",
+        "case_result": "fail",
+        "must_checks": [
+          {
+            "condition": "First asks a focused prerequisite question or requests a concrete week to distinguish fixed commitments/capacity before selecting output packaging or optimizing a schedule.",
+            "result": "pass",
+            "evidence": "Turn1 requests a concrete commitment/conflict and consequences before packaging or scheduling."
+          },
+          {
+            "condition": "After answer 1 surfaces the capacity/sleep conflict concretely and asks for a consequential priority/constraint decision rather than silently fitting impossible work.",
+            "result": "pass",
+            "evidence": "Turn2 calculates 175 requested hours against 168; preserves sleep/classes/shift and asks what flexible requirement may change."
+          },
+          {
+            "condition": "After answer 2 preserves the firm commitments/sleep and probes or drafts around the remaining gap, reflecting resolved answers in a compact brief.",
+            "result": "pass",
+            "evidence": "Turn3 retains sleep, classes and Saturday shift, treats 4 training hours as this-week exception, gives compact brief and asks about everyday capacity."
+          },
+          {
+            "condition": "Questions/critique remain tied to an actionable skill and allow the user to stop or draft.",
+            "result": "pass",
+            "evidence": "Critique targets overload and useful planner rules, and turn3 honors requested brief instead of demanding a complete questionnaire."
+          }
+        ],
+        "failure_conditions": [
+          {
+            "condition": "Assumes sleep can be reduced.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Silently removes a fixed commitment or required work.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Repeats resolved sleep/commitment questions.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Demands all generic checklist answers before showing useful progress.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          }
+        ],
+        "turns": [
+          {
+            "turn": 1,
+            "user_decisions": 1,
+            "decision_units": [
+              "Identify real fixed constraints using a concrete example and the consequence of moving them."
+            ],
+            "evidence": "Baseline asks which commitments are hardest to move and consequences; candidate asks for competing commitments and which carry a consequence. These request evidence for one constraint-classification decision.",
+            "unnecessary_settled_decisions": 0
+          },
+          {
+            "turn": 2,
+            "user_decisions": 2,
+            "decision_units": [
+              "Select which flexible demand to reduce first.",
+              "Set a minimum that must be protected."
+            ],
+            "evidence": "Baseline: \"which may change: the study target, the training target, or both?\" Candidate: \"what should the planner reduce first: study, training, or a combination\u2014and is there a minimum it must protect?\" Priority and a minimum can be answered independently and can independently change the resulting skill.",
+            "unnecessary_settled_decisions": 0
+          },
+          {
+            "turn": 3,
+            "user_decisions": 1,
+            "decision_units": [
+              "Set the combined everyday-activity time allowance."
+            ],
+            "evidence": "Both request one combined weekly allowance for everyday needs. Baseline also proposes choosing flexibility later; it does not require a second current answer. Candidate similarly requests a combined total, not separate values for every activity.",
+            "unnecessary_settled_decisions": 0
+          }
+        ],
+        "user_decisions_total": 4,
+        "question_budget": {
+          "per_turn": 1,
+          "total_through_followups": 3
+        },
+        "question_budget_pass": false,
+        "reason": "All substantive conditions pass; turn2 asks two decisions; total4 exceeds frozen total3. A single question mark does not combine priority and minimum into one decision.",
+        "sources": [
+          {
+            "path": "[evaluation-workspace]/new-D03/turn1.md",
+            "sha256": "68f57beec9ced12a01d3236ffdb95283af500015498f9ba1a73742756bd6c4bc"
+          },
+          {
+            "path": "[evaluation-workspace]/new-D03/turn2.md",
+            "sha256": "6c3db8b2f8ca885e786f47d7889e047243f88aef86f165cfe9fc44e8e4fd7dfe"
+          },
+          {
+            "path": "[evaluation-workspace]/new-D03/turn3.md",
+            "sha256": "f886467eeb1890e9b501d7ddb1ed3edeef9c9d1f9b1f0f226bd6f24d97e618ee"
+          }
+        ]
+      },
+      {
+        "case": "D05",
+        "arm": "candidate",
+        "case_result": "fail",
+        "must_checks": [
+          {
+            "condition": "First asks at most one focused high-impact question about intended audience, concrete use or success.",
+            "result": "fail",
+            "evidence": "Baseline asks one concrete improvement decision; candidate asks both audience and intended outcome at once."
+          },
+          {
+            "condition": "On followup immediately gives an actionable draft or brief with labeled assumptions and the stated local Markdown format.",
+            "result": "pass",
+            "evidence": "Turn2 supplies complete SKILL.md contents, labels initial audience/style assumptions, and gives a local save path/invocation."
+          },
+          {
+            "condition": "Leaves unresolved questions for later without inventing answers or continuing a mandatory interrogation.",
+            "result": "pass",
+            "evidence": "Turn2 proceeds without mandatory follow-up questions, records pending real examples/tests, and distinguishes assumptions from confirmed facts."
+          }
+        ],
+        "failure_conditions": [
+          {
+            "condition": "After draft now asks another required question before drafting.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Claims maximum refinement is impossible so refuses to draft.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          },
+          {
+            "condition": "Treats assumptions as confirmed personal facts.",
+            "occurred": false,
+            "evidence": "No occurrence in the saved responses."
+          }
+        ],
+        "turns": [
+          {
+            "turn": 1,
+            "user_decisions": 2,
+            "decision_units": [
+              "Identify the audience for a concrete project update.",
+              "Identify the intended reader understanding/action."
+            ],
+            "evidence": "Baseline requests an example plus \"what you wish it did better\" (one outcome decision). Candidate requests an example, \"who was it for\", and \"what did you want that reader to understand or do\" (audience and intended outcome are independently answerable decisions).",
+            "unnecessary_settled_decisions": 0
+          },
+          {
+            "turn": 2,
+            "user_decisions": 0,
+            "decision_units": [],
+            "evidence": "Both immediately supply a complete local Markdown skill after draft-now; neither requires a further answer.",
+            "unnecessary_settled_decisions": 0
+          }
+        ],
+        "user_decisions_total": 2,
+        "question_budget": {
+          "per_turn": 1,
+          "after_stop_command": 0
+        },
+        "question_budget_pass": false,
+        "reason": "Draft-now behavior passes in both arms; candidate first turn combines audience and intended outcome despite its statement that refinement proceeds one decision at a time.",
+        "sources": [
+          {
+            "path": "[evaluation-workspace]/new-D05/turn1.md",
+            "sha256": "590a08f0e636abb5648777566bdef86ae4d9962e91e2b1b1e09204311e3b8416"
+          },
+          {
+            "path": "[evaluation-workspace]/new-D05/turn2.md",
+            "sha256": "bcce507d2d97819092715b465f372b7af2c88987b82fdd1c26c854d0fde64385"
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "baseline": {
+        "passed_cases": 2,
+        "evaluated_cases": 2,
+        "satisfied_must_conditions": 7,
+        "required_must_conditions": 7,
+        "user_decisions": 4
+      },
+      "candidate": {
+        "passed_cases": 0,
+        "evaluated_cases": 2,
+        "satisfied_must_conditions": 6,
+        "required_must_conditions": 7,
+        "user_decisions": 6
+      },
+      "preliminary_adoption": "Cannot adopt current candidate: two baseline-passing development cases regress on the predefined user-effort budgets. No claim about ungraded cases."
+    }
+  },
+  "responses": {
+    "D03": [
+      "We\u2019ll work through this one decision at a time and challenge the plan with realistic disruptions before building the skill.\n\nThe first assumption to test is \u201ceverything fits.\u201d A useful planner needs to recognize an overloaded week and show what must move, shrink, or be deferred. Otherwise, a beautiful schedule can hide an impossible workload.\n\nI suggest separating commitments into three groups:\n\n- **Fixed:** a class, shift, appointment, or deadline whose timing you cannot freely change.\n- **Protected:** needs such as enough sleep and meals. Their exact timing may have some flexibility, but the planner should preserve an agreed minimum.\n- **Flexible:** work or activities whose timing, duration, or frequency can change\u2014with clear tradeoffs.\n\nThose are proposed rules, not decisions I\u2019ll make for you. Your brief so far is a reusable weekly planner, with thorough questioning; the main open issue is what it must protect when the week does not fit.\n\n**Take one real upcoming clash\u2014for example, an exam, a work shift, studying, and your usual bedtime competing for the same evening. What are the competing commitments, and which ones would carry a real consequence if moved or shortened?**\n",
+      "That week cannot fit as stated. The time budget exposes the conflict before we place anything on a calendar:\n\n| Requirement | Hours per week |\n|---|---:|\n| Sleep, 11 pm\u20137 am | 56 |\n| Weekday classes, 9 am\u20135 pm | 40 |\n| Saturday shift, 9 am\u2013noon | 3 |\n| Study outside class | 60 |\n| Training | 16 |\n| **Total before meals, travel, or chores** | **175** |\n\nA week has 168 hours, so this is already **7 hours over capacity**, with meals, travel, chores, transitions, and recovery still uncounted. After sleep, classes, and your shift, only 69 hours remain; study and training alone require 76.\n\nFor the skill, I recommend a firm rule: show this shortage, preserve the fixed commitments and sleep window, and present explicit choices about flexible demands. A schedule that silently drops activities or overlaps them would fail.\n\nI\u2019ve recorded a model week and local Markdown delivery, along with your fixed sleep, classes, and shift. Study and training are requested amounts; their priority when they conflict is still unresolved.\n\n**When this happens, what should the planner reduce first: study, training, or a combination\u2014and is there a minimum it must protect?**\n",
+      "Here is the initial brief. We have a clear rule for handling overload, but still need a realistic allowance for everyday activities before building a credible week.\n\n**Purpose:** A reusable planner skill that builds a feasible model week and helps revise it when demands change.\n\n**Confirmed requirements**\n\n- Preserve sleep from 11 pm to 7 am, weekday classes from 9 am to 5 pm, and the Saturday shift from 9 am to noon.\n- Include the requested 60 hours of study outside class.\n- Reduce training to 4 hours **this week**. The original 16-hour model-week request remains unresolved; I won\u2019t treat this temporary reduction as a permanent preference.\n- Include meals, travel, and chores.\n- Flag an infeasible week and ask you to reprioritize; never invent capacity, overlap commitments, or quietly omit work.\n- Deliver the skill as local Markdown. No GitHub publication is requested.\n\n**Proposed behavior**\n\n- Activate when asked to create or revise a weekly plan; avoid changing commitments merely because they appear in a conversation.\n- Accept commitments, durations, deadlines, and priorities; return a weekly plan, its time budget, unresolved shortages, and the tradeoffs behind revisions.\n- Keep a model week separate from temporary exceptions so a disrupted week does not silently change the usual routine.\n\n**Initial acceptance checks:** preserve fixed commitments and sleep; count every requested activity; avoid double booking; surface shortages before presenting a feasible plan; retain settled choices when resuming.\n\n**Current capacity:** With 4 hours of training, the listed activities total **163 hours**, leaving **5 hours for all meals, travel, chores, and transitions**. That makes feasibility highly doubtful; their actual durations will establish the shortage.\n\nFoundation research is pending. This chat cannot browse or launch research subagents, so no external search has run.\n\n**The next most important decision is the everyday time allowance: how many hours per week should we reserve for meals, travel, chores, and transitions?** Rough estimates are enough to test the plan; we can refine them later.\n"
+    ],
+    "D05": [
+      "Let\u2019s refine it one decision at a time, using real examples so the skill solves the right problem.\n\nWhat\u2019s one recent project update you were unhappy with, who was it for, and what did you want that reader to understand or do afterward? Paste it or describe it roughly; you can anonymize any sensitive details.\n",
+      "Here\u2019s a provisional skill you can try immediately. I\u2019m assuming you want clear written updates from rough notes or an existing draft, with the audience and length adjusted to each use.\n\nSave this as `project-update-writer/SKILL.md`:\n\n```markdown\n---\nname: project-update-writer\ndescription: Draft or improve a project status update from notes or an existing draft, making progress, risks and requests clear for its audience. Use when asked to write or revise a project update; do not activate merely because a project is mentioned.\n---\n\n# Project Update Writer\n\nTurn supplied project facts into a concise update that helps its reader understand the situation and act.\n\n## Establish the context\n\nRead the notes, draft and any supplied preferences before asking questions. Identify the audience, reporting period, purpose, delivery channel and requested length when available.\n\nIf a missing detail would materially change the update, ask one focused question. Otherwise draft using a reasonable, labeled assumption. Do not make the user complete a questionnaire. If asked to draft now, proceed and flag essential gaps.\n\n## Build the update\n\n1. Extract facts: outcomes, completed work, current work, next steps, risks, dependencies and requests. Preserve names, dates, numbers and uncertainty.\n2. Lead with the most useful takeaway for the intended reader. Distinguish work performed from an outcome achieved, and planned work from completed work.\n3. Include the sections that help this particular update, such as progress, next steps, risks and decisions needed. Omit empty sections rather than filling them with guesses.\n4. Make requests actionable: what is needed, from whom and by when, but only when those details are supplied. Mark consequential missing details as unknown or needing confirmation.\n5. Use direct language. Explain necessary technical terms for a general audience; retain useful precision for specialists. Remove repetition and vague claims such as \u201cgood progress\u201d when the notes contain concrete evidence.\n\nNever invent achievements, dates, owners, metrics, causes or confidence. Do not hide a setback or convert uncertainty into a reassuring claim. If notes conflict, surface the conflict instead of silently resolving it.\n\n## Deliver and refine\n\nReturn a ready-to-send update. Keep assumptions and questions outside the update so they are not mistaken for project facts. For a revision, briefly explain the most consequential changes when useful.\n\nBefore finishing, check that:\n- Every factual claim is supported by the supplied material.\n- The reader can identify the current situation and relevant next action.\n- Important risks and requests remain visible.\n- The update fits the requested audience, channel and length.\n\nWhen feedback arrives, revise the update and preserve settled preferences. Treat one-off wording changes as local choices unless the user says they should become a reusable preference.\n```\n\nTo use it, provide the file to your assistant and say:\n\n> Use Project Update Writer to improve these notes for [audience]: [paste notes].\n\nIt should activate for \u201cTurn these notes into my weekly project update,\u201d and stay inactive for unrelated requests such as \u201cHelp me debug this project.\u201d It needs no external services or Skill Forge installation.\n\nValidation is pending: I have not run an external foundation search, independent comparison or installation in this chat. This is an original provisional draft. A later tool-enabled foundation review can search for project-update skills, inspect their actual files and licenses, and compare useful alternatives before suggesting reuse.\n\nFor your first trial, keep the original notes and compare this result with a simple \u201cImprove this project update\u201d prompt using the same notes. Check factual fidelity, clarity of status and next action, visibility of risks, and how much editing you still need. Missing facts must remain missing in both versions. Bring back the notes, result and one thing that still felt wrong; that will give us evidence for the next revision.\n\nResume record: local Markdown delivery is settled; audience and channel vary by use; no real example has been supplied; foundation review and behavioral checks are pending. Next step: try one update.\n"
+    ]
+  }
+}

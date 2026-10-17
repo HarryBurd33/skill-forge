@@ -1,0 +1,4 @@
+{
+  "excluded_context": "v020_round3_multis",
+  "reason": "Expected observation annotations inadvertently present in scripted followup dictionaries; context interrupted and excluded. Fresh executor uses sanitized user text only."
+}

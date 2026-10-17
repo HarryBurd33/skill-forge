@@ -1,0 +1,36 @@
+{
+  "authored_before_routing_execution": true,
+  "scope": "Description routing only, not native discovery or output quality",
+  "cases": [
+    {
+      "id": "A1",
+      "request": "The brief is refined. Find licensed existing agent skills to use as a foundation before we implement it.",
+      "expected_activate": true
+    },
+    {
+      "id": "A2",
+      "request": "Review this repository as a possible foundation for the skill we are building; inspect actual instructions and reuse rights.",
+      "expected_activate": true
+    },
+    {
+      "id": "A3",
+      "request": "Find useful models or datasets on Hugging Face for the agreed image-caption skill and report integration gaps.",
+      "expected_activate": true
+    },
+    {
+      "id": "N1",
+      "request": "What is the capital of France?",
+      "expected_activate": false
+    },
+    {
+      "id": "N2",
+      "request": "Run my weekly planner and move Tuesday's reading session.",
+      "expected_activate": false
+    },
+    {
+      "id": "N3",
+      "request": "Research recent papers on star formation and write a literature review.",
+      "expected_activate": false
+    }
+  ]
+}

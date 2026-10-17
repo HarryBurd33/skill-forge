@@ -1,0 +1,36 @@
+{
+  "model_id": "unknownhonestly",
+  "probe_type": "description-only model routing judgments; no native host discovery was observed",
+  "results": [
+    {
+      "id": "A1",
+      "activate": true,
+      "reason": "This explicitly requests existing licensed agent skills as foundations for a refined brief before implementation."
+    },
+    {
+      "id": "A2",
+      "activate": true,
+      "reason": "Assessing a repository, its instructions, and reuse rights as a skill foundation is a targeted foundation review."
+    },
+    {
+      "id": "A3",
+      "activate": true,
+      "reason": "Finding models or datasets for the agreed skill and assessing integration gaps fits assessing primary resources as skill foundations."
+    },
+    {
+      "id": "N1",
+      "activate": false,
+      "reason": "A general geography fact does not require finding or assessing foundations for a skill."
+    },
+    {
+      "id": "N2",
+      "activate": false,
+      "reason": "Running a planner and moving a session performs the domain task rather than reviewing skill foundations."
+    },
+    {
+      "id": "N3",
+      "activate": false,
+      "reason": "Researching star-formation papers and writing a literature review is unrelated research and domain work."
+    }
+  ]
+}
