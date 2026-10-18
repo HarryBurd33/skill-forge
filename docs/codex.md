@@ -1,59 +1,97 @@
 # Use Skill Forge in Codex
 
-Skill Forge works as an ordinary local skill. You need Codex and the downloaded repository (or the skill archive). Python is optional for the interview and required only for the bundled helpers. See [the README](../README.md) for downloads and [compatibility](compatibility.md) for what has actually been tested.
+You need Codex and the downloaded [repository or skill ZIP](../README.md). The same Skill Forge folder works on macOS, Windows and Linux. Intel/x64 and ARM64 describe processors, separate from operating systems. Choose a compatible Codex host from its [CLI setup](https://learn.chatgpt.com/docs/codex/cli) or [Windows guide](https://learn.chatgpt.com/docs/windows/windows-sandbox). Native Windows PowerShell is supported; WSL is an alternative, not a Skill Forge requirement.
 
-## Install
+Python is optional for the interview, implementation spec and skill-file output. Only the optional helpers need Python 3.9 or later. See [compatibility](compatibility.md) for documented support versus executed tests.
 
-Choose **personal** for all your projects, or **project** for one repository. From the downloaded Skill Forge repository directory, run one command:
+## Install without commands
 
-Personal:
+1. Extract the download. Find the complete `skills/skill-forge` folder in the repository, or `skill-forge` in the skill ZIP.
+2. Choose **personal** for local projects or **project** for one working repository. Create missing parent folders.
+3. Copy the entire folder to one destination below. Keep its references, templates, scripts, license and nested Skill Finder; copying only `SKILL.md` is incomplete.
+4. Open Codex and select Skill Forge. Changes are normally detected automatically; restart if it is missing.
+
+| Scope | macOS/Linux | Windows |
+| --- | --- | --- |
+| Personal | `~/.agents/skills/skill-forge` | `%USERPROFILE%/.agents/skills/skill-forge` |
+| Project | `<project>/.agents/skills/skill-forge` | `<project>/.agents/skills/skill-forge` |
+
+Here `~` or `%USERPROFILE%` means your home folder; replace `<project>` with your repository path. Windows tools also accept native backslash paths. Choose one scope to avoid duplicate same-name entries. This installs on that machine, not across your account, other devices or every cloud environment. [Official discovery reference](https://learn.chatgpt.com/docs/build-skills).
+
+## Optional managed installation
+
+From the **downloaded repository directory**, choose your shell and one scope. Replace sample project paths.
+
+macOS/Linux:
 
 ```sh
+# Personal
 python3 skills/skill-forge/scripts/forge.py install skills/skill-forge "$HOME/.agents/skills/skill-forge"
+# Or project
+python3 skills/skill-forge/scripts/forge.py install skills/skill-forge "/path/to/project/.agents/skills/skill-forge"
 ```
 
-Project: replace `/absolute/path/to/your-project` with the project folder you use in Codex.
+Windows PowerShell:
 
-```sh
-python3 skills/skill-forge/scripts/forge.py install skills/skill-forge /absolute/path/to/your-project/.agents/skills/skill-forge
+```powershell
+# Personal
+py -3 skills/skill-forge/scripts/forge.py install skills/skill-forge "$HOME/.agents/skills/skill-forge"
+# Or project
+py -3 skills/skill-forge/scripts/forge.py install skills/skill-forge "C:/path/to/project/.agents/skills/skill-forge"
 ```
 
-The helper refuses to overwrite an existing destination. You can also copy the entire `skills/skill-forge` folder manually into the chosen `skills` directory. For the standalone archive, its `skill-forge` directory is the folder to copy; do not copy only `SKILL.md`.
-
-Current official documentation places personal skills under `~/.agents/skills`; project skills use `.agents/skills`. Codex searches project ancestors up to the repository root and supports symlinked skill directories. Changes are detected automatically; restart if a skill is missing. Multiple same-name skills can appear, so choose one installation scope. [Official setup reference](https://learn.chatgpt.com/docs/build-skills).
+Use `python` instead of `py -3` if that is your working Python command. Keep paths with spaces quoted. For the standalone skill ZIP, run from its extracted parent and substitute `skill-forge/scripts/forge.py` for the script and `skill-forge` for the source. The helper refuses an existing destination.
 
 ## First use
 
-In Codex CLI or the IDE extension, select the skill with `/skills` or type `$skill-forge`. In the desktop app, use its skill selector; interfaces can differ. Try:
+In Codex CLI or the IDE extension type `$skill-forge` or select it with `/skills`. In the desktop app use its skill selector; presentation may differ.
 
 ```text
-$skill-forge Create a skill that turns my rough meeting notes into an action list.
-Keep unknown owners and dates explicit. Draft now; use your judgment.
+$skill-forge Create a skill that turns rough meeting notes into an action list.
+Keep unknown owners and dates explicit. Use your judgment.
 ```
 
-Expect a compact brief, a usable skill draft, sample invocations, and a report distinguishing checks actually run from checks still needed. Ask for “quick,” “thorough,” or “expert challenge” to change the interview pace. To continue later, supply the saved session record and say “resume.”
+Expect focused questions where needed, a compact brief, bounded foundation research, and an implementation spec with planned checks **before** target implementation. The spec is shown for correction; say “review first” to pause there, otherwise already-authorized building continues. Useful available subagents can build independent components, review or run checks. Delivery includes skill files, sample invocations and an honest validation report.
+
+Use “quick,” “thorough,” “expert challenge,” “draft now,” “skip” or “resume” to steer the interview. You can also ask:
+
+```text
+$skill-forge Based on this conversation, build me a reusable skill.
+Use the final corrections and show any assumptions.
+```
+
+Only visible context and supplied or authorized retrieved project material can be used. Supply missing context; Skill Forge cannot see unrelated chats automatically. To resume later provide the saved session or handoff.
 
 ## Update and remove
 
-Keep the downloaded repository as your canonical working copy. After retrieving a newer release and reviewing its changes, run the install command with `--update`:
+Keep one canonical working source. From a newer downloaded repository, update a helper-managed personal copy:
 
 ```sh
 python3 skills/skill-forge/scripts/forge.py install skills/skill-forge "$HOME/.agents/skills/skill-forge" --update
 ```
 
-For project scope, use the project destination instead. This updates a helper-managed copy only when it still matches its recorded installation; locally modified copies require reconciliation. Preserve your customizations in the canonical copy and rerun the relevant checks before syncing. Do not replace private session state with release contents.
+Windows PowerShell:
 
-An alternative on macOS/Linux is a symbolic link to one canonical skill folder. Create the parent directory, then link an **absolute** source path into the same personal/project destination. An existing destination must first be backed up and reconciled. This avoids copied versions drifting, but deleting or moving the source breaks the link.
+```powershell
+py -3 skills/skill-forge/scripts/forge.py install skills/skill-forge "$HOME/.agents/skills/skill-forge" --update
+```
 
-To remove Skill Forge, move its installed folder or link outside the discovered `skills` directory, or delete that one installation after saving wanted changes. Restart Codex if its selector is stale. Keep your session records separately if you want to resume later. No changes to global settings are needed.
+For project scope substitute the project destination used to install. The helper refuses customized installed copies: reconcile wanted changes into the canonical source, run relevant checks, then synchronize. For a manual installation, back up the old folder outside the discovered `skills` directory before comparing customizations and copying the complete replacement. Keep private sessions separately. Symlinks are optional, not a Windows prerequisite.
+
+Remove by moving only the installation outside the discovered `skills` directory. Choose an unused backup destination, or move it in your file manager. Personal examples:
+
+```sh
+mv "$HOME/.agents/skills/skill-forge" "$HOME/skill-forge-backup"
+```
+
+```powershell
+Move-Item -LiteralPath "$HOME/.agents/skills/skill-forge" -Destination "$HOME/skill-forge-backup"
+```
+
+For project scope move that project's installation instead. Start a new Codex chat if already-loaded instructions remain. No global settings change is needed.
 
 ## Tools and permissions
 
-The common instructions do not require Codex-specific calls. File access, browsing, scripts, separate evaluator contexts, and GitHub writes depend on the current environment. The builder can draft without them, but must report unavailable checks and cannot claim a saved update or publication without doing it. Native discovery and UI invocation are documentation-supported; consult [the release evidence](../evals/v0.2.0/REPORT.md) for executed tests.
+Installation does not grant file, network, execution, subagent or publication access. The nested [Skill Finder](skill-finder.md) needs no second installation; independent discovery of its nested directory is not assumed. Without a launch tool the parent works directly and says so; without browsing it uses supplied material and marks external research unavailable.
 
-
-## Skill Finder and updated sessions
-
-The installed Skill Forge folder includes its nested Skill Finder component. Skill Forge loads it after refinement and before implementation; no second installation is required. Independent host discovery of the nested component is not assumed. With subagents, research is delegated; without them, it runs in the current context when browsing is available. See [Skill Finder](skill-finder.md) for limits and provenance.
-
-Existing session records can resume with the new optional delivery and research fields added around settled answers. A successful tested update can sync a helper-managed installation using `--update`; customized installations still require reconciliation.
+Host setup and paths were checked against official documentation on **2026-10-18**. Executed behavior and helper evidence are recorded separately in [compatibility](compatibility.md).
