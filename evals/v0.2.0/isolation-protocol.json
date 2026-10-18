@@ -1,0 +1,24 @@
+{
+  "authored_before_reexecution": true,
+  "reason": "Correct batched-case contexts and initial future-followup exposure. Same immutable candidate, baseline, user inputs, criteria, evaluator and thresholds. No further patch.",
+  "single_turn_pairs": [
+    "D01",
+    "D02",
+    "D04",
+    "D06",
+    "D08",
+    "H01"
+  ],
+  "candidate_multi": [
+    "D03",
+    "D05",
+    "H02"
+  ],
+  "candidate_direct": [
+    "H04"
+  ],
+  "multi_protocol": "Each case fresh fork_turns none; initial prompt file only, later followups sent only after previous response is saved.",
+  "retention": "All prior batched, initial inconclusive and assisted evidence retained; only these fresh case-context outputs are eligible for same-script final suite. No favorable-output selection from repeated successful samples.",
+  "candidate_hash": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+  "limit": "One reexecution for protocol correction only; no patches or further retries."
+}

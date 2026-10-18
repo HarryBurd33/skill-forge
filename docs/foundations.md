@@ -22,3 +22,12 @@ The first release deliberately avoids a hosted service, paid evaluator requireme
 Pinned source files and skill-local licenses were fetched, not inferred from GitHub visibility. Matt Pocock's repository has MIT terms. Anthropic's and OpenAI's inspected skill-creator directories each contain Apache-2.0 terms; neither was assumed MIT because other files might use different terms. Recursive repository inventories showed no additional `NOTICE` file in either inspected creator directory. The records cover only the listed material, not every file in those repositories.
 
 No third-party prose, code, templates, or assets are incorporated into this release. The original Skill Forge material is MIT. Future copying must preserve the relevant license, copyright, modification, and notice requirements; a source link alone is not a substitute.
+
+
+## Refinement and discovery update — 0.2.0
+
+Re-inspected the actual Matt Pocock wrapper, grilling implementation and MIT license on 2026-10-17 at the same pinned commit in the source ledger. The adapted loop now keeps a frontier of unresolved decisions, follows prerequisite questions, challenges assumptions with examples, updates the brief, and continues until material gaps close or the user requests a draft. A round asks for one decision rather than hiding several independent requests behind one question mark. The workflow preserves pace controls and avoids an unbounded claim of perfect refinement.
+
+Skill Finder adds a distinct pre-implementation research handoff: one delegated researcher receives the refined sanitized brief, searches relevant primary resources, inspects actual instructions/code and reuse terms, and returns a justified integration plan. GitHub is useful for skills and code; Hugging Face is useful when its skills, models, datasets or Spaces fit the task. Search does not force reuse. Without a researcher, the parent searches directly; without browsing, it returns an honest pending research task and can draft original provisional files.
+
+The implementation is original. [GitHub licensing guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) and [Hugging Face license guidance](https://huggingface.co/docs/hub/repositories-licenses) inform the distinction between public visibility, source verification and applicable reuse rights. The existing third-party notices remain accurate: no upstream skill prose, templates or implementation code were copied into Skill Forge.

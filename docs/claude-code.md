@@ -51,4 +51,11 @@ Claude Code watches `SKILL.md` changes in established skills directories. Use `/
 
 The common skill intentionally omits Claude-specific substitutions, shell injection, hooks, and tool permission declarations. The installation itself does not grant file, network, or publication access. Do not edit cloud-synced or vendor-managed skill caches as though they were your canonical source. Use a writable local copy for candidate work.
 
-Claude Code installation and invocation are **supported by documentation, not runtime-tested in this release environment**. The host-independent helpers and model behavior checks are reported separately in [the release evidence](../evals/REPORT.md).
+Claude Code installation and invocation are **supported by documentation, not runtime-tested in this release environment**. The host-independent helpers and model behavior checks are reported separately in [the release evidence](../evals/v0.2.0/REPORT.md).
+
+
+## Skill Finder and updated sessions
+
+The installed Skill Forge folder includes its nested Skill Finder component. Skill Forge loads it after refinement and before implementation; no second installation is required. Independent host discovery of the nested component is not assumed. With subagents, research is delegated; without them, it runs in the current context when browsing is available. See [Skill Finder](skill-finder.md) for limits and provenance.
+
+Existing session records can resume with the new optional delivery and research fields added around settled answers. A successful tested update can sync a helper-managed installation using `--update`; customized installations still require reconciliation.

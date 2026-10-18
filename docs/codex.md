@@ -49,4 +49,11 @@ To remove Skill Forge, move its installed folder or link outside the discovered 
 
 ## Tools and permissions
 
-The common instructions do not require Codex-specific calls. File access, browsing, scripts, separate evaluator contexts, and GitHub writes depend on the current environment. The builder can draft without them, but must report unavailable checks and cannot claim a saved update or publication without doing it. Native discovery and UI invocation are documentation-supported; consult [the release evidence](../evals/REPORT.md) for executed tests.
+The common instructions do not require Codex-specific calls. File access, browsing, scripts, separate evaluator contexts, and GitHub writes depend on the current environment. The builder can draft without them, but must report unavailable checks and cannot claim a saved update or publication without doing it. Native discovery and UI invocation are documentation-supported; consult [the release evidence](../evals/v0.2.0/REPORT.md) for executed tests.
+
+
+## Skill Finder and updated sessions
+
+The installed Skill Forge folder includes its nested Skill Finder component. Skill Forge loads it after refinement and before implementation; no second installation is required. Independent host discovery of the nested component is not assumed. With subagents, research is delegated; without them, it runs in the current context when browsing is available. See [Skill Finder](skill-finder.md) for limits and provenance.
+
+Existing session records can resume with the new optional delivery and research fields added around settled answers. A successful tested update can sync a helper-managed installation using `--update`; customized installations still require reconciliation.

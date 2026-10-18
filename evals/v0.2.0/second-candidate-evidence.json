@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "baseline_hash": "c6fdd79234d49c68d8b23728f8b2f3af0bbe52607247fc73e3be0f877b8d9cc2",
+  "criteria_hash": "c33397631fa678cf7a4380a3936caa9615d154ebb14ff26868fbf91e0518ac33",
+  "evaluator_hash": "6025ebf7fa547398e7e824899f4d8afe3cafaa770ba24fa420eb031a2299935e",
+  "candidate_hash": "98a95506ab98795a62a78d99ccb788971e72a21916a563f2cc89b0fe3223b4d1",
+  "execution": {
+    "kind": "model_execution",
+    "coverage": "behavior",
+    "model": "Inherited Codex model; exact runtime build not exposed",
+    "host": "Codex desktop",
+    "conditions": "Six single-turn cases per arm were batched in one executor context; multiturm/research cases had independent contexts. This is disclosed as a limitation against the evaluator preference for fresh case contexts. One run per arm supports only these narrow case-level observations. Six simple single-turn cases were batched per arm rather than each run in a fresh context. No broad performance claim is supported. H03 is consumed regression evidence once it informs a repair; additional H04 stays frozen and hidden until execution."
+  },
+  "results": [
+    {
+      "id": "D01",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D02",
+      "baseline": "fail",
+      "candidate": "fail",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D03",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D04",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D05",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D06",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D07",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "D08",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "H01",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "H02",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "H03",
+      "baseline": "fail",
+      "candidate": "fail",
+      "artifact": "grades.json"
+    },
+    {
+      "id": "REG-NO-EXPANSION",
+      "baseline": "pass",
+      "candidate": "fail",
+      "artifact": "grades.json"
+    }
+  ],
+  "benefit": {
+    "metric": "satisfied_required_behavior_conditions",
+    "baseline": 38,
+    "candidate": 42
+  }
+}

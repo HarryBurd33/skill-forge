@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0 — 2026-10-17
+
+- Ask how to deliver the generated skill: local Markdown, folder/ZIP, GitHub repository, or another destination; preserve settled choices and publication scope.
+- Continue dependency-aware refinement through questions, examples and critique, while preserving draft-now, quick and resume controls.
+- Add bundled Skill Finder: delegated research after refinement and before implementation, inspected provenance/licenses, an integration recommendation and truthful limited-tool fallbacks.
+- Persist delivery, domain output, refinement and research state separately; include Finder in portable bundles and managed installations.
+- Tighten focused questioning after a candidate bundled independent decisions. Evaluation results and retained failures are recorded in [the versioned report](evals/v0.2.0/REPORT.md).
+
 ## 0.1.0 — 2026-10-16
 
 First usable release of the original Skill Forge builder.

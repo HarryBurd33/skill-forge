@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "candidate_hash": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+  "checks": [
+    {
+      "path_shape": "Codex personal",
+      "status": "pass",
+      "method": "Documented helper install, validate, source hash and portable rebuild; native host discovery not tested"
+    },
+    {
+      "path_shape": "Codex project",
+      "status": "pass",
+      "method": "Documented helper install, validate, source hash and portable rebuild; native host discovery not tested"
+    },
+    {
+      "path_shape": "Claude personal",
+      "status": "pass",
+      "method": "Documented helper install, validate, source hash and portable rebuild; native host discovery not tested"
+    },
+    {
+      "path_shape": "Claude project",
+      "status": "pass",
+      "method": "Documented helper install, validate, source hash and portable rebuild; native host discovery not tested"
+    }
+  ],
+  "skill_package_has_nested_finder": true,
+  "portable_byte_consistency": true,
+  "private_sentinel_excluded": true,
+  "limits": "Temporary filesystem/package checks only; native host execution remains unverified. Exact source package is checked again after publication."
+}

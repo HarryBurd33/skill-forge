@@ -19,7 +19,7 @@ import tempfile
 import uuid
 import zipfile
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 SCHEMA = 1
 MARKER = ".skill-forge-managed.json"
 SKIP_DIRS = {".git", "__pycache__", ".pytest_cache"}
@@ -223,9 +223,9 @@ def portable_text(skill):
     validate(skill)
     sections = []
     sources = [skill / "SKILL.md"]
-    for folder in ("references", "templates", "questions"):
+    for folder in ("references", "templates", "questions", "subskills"):
         if (skill / folder).exists():
-            sources.extend(p for p in files(skill / folder) if p.suffix in (".md", ".json", ".txt"))
+            sources.extend(p for p in files(skill / folder) if p.suffix in (".md", ".json", ".txt") or p.name in ("LICENSE", "NOTICE"))
     sources.extend(skill / name for name in ("LICENSE", "THIRD_PARTY_NOTICES.md") if (skill / name).is_file())
     source_names = {p.resolve(): p.relative_to(skill).as_posix() for p in sources}
     def anchor(name):
@@ -255,8 +255,8 @@ Without executable checks, retain behavior changes as unverified candidates.
 Executable helpers are optional and are distributed with the full skill package;
 their references below describe capabilities, not tools available in plain chat.
 
-Generated from canonical instructions and all reference, template, and question
-resources. Edit those sources and regenerate this file; do not edit this bundle.
+Generated from canonical instructions and all reference, template, question,
+and bundled sub-skill resources. Edit those sources and regenerate this file; do not edit this bundle.
 
 Source SHA-256: `{}`
 
@@ -270,6 +270,14 @@ def session_init(state, name):
     folder = root / (safe + "-" + uuid.uuid4().hex[:8])
     folder.mkdir(mode=0o700)
     record = {"schema_version": SCHEMA, "id": folder.name, "created": now(), "workflow": None, "confirmed": [], "defaults": [], "assumptions": [], "examples": [], "acceptance": [], "unresolved": [], "next_step": "Read supplied context and resolve the most consequential uncertainty.", "private_personalization": {}, "round_limit": 3}
+    record.update({
+        "skill_delivery": {"format": None, "destination": None, "publication_authorized": False,
+                           "owner": None, "repository": None, "visibility": None},
+        "domain_output_contract": {},
+        "refinement_status": {"open_material_decisions": [], "next_question": None, "ready_to_build": False},
+        "skill_finder": {"status": "not-started", "brief_fingerprint": None, "report": None, "skip_reason": None},
+        "effort_limit": {"wall_clock_minutes": 30, "max_candidates": 3}
+    })
     write_json(folder / "session.json", record)
     return {"session": str(folder / "session.json"), "privacy": "Private local state; do not add it to source or release packages."}
 

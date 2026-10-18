@@ -1,0 +1,11 @@
+{
+  "authored_before_retry_execution": true,
+  "case": "H03",
+  "reason": "Initial inspection of a required second primary source was unavailable; assisted recovery cannot establish same-script comparison. One paired unassisted retrieval retry, not a patch or additional candidate, is permitted to resolve unavailable evidence.",
+  "maximum_paired_retries": 1,
+  "inputs": "Unchanged H03 user prompt and capabilities; no corrected URLs, hints, prior outputs or expected results given to either executor.",
+  "versions": "Same frozen baseline and candidate hashes. Fresh fork_turns none context for each arm.",
+  "gate": "Apply all original H03 musts, failure conditions and question budget unchanged. Candidate must pass unassisted. If failed or unavailable retain prior active version and publish candidate branch only. No further retries or patches.",
+  "reporting": "Preserve initial unavailable outcome, assisted supplement, and both retry outputs. Do not count assisted results in comparative benefit or claim repeated-sample robustness. Do not weaken criteria/evaluator or erase failure history.",
+  "candidate_hash": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af"
+}

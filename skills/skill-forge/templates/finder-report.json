@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "brief_fingerprint": null,
+  "retrieved_at": null,
+  "execution": {
+    "mode": null,
+    "capabilities": {},
+    "effort_minutes": 5,
+    "queries": [],
+    "skipped_sources": [],
+    "limitations": []
+  },
+  "candidates": [
+    {
+      "name": "",
+      "resource_type": "",
+      "source_url": "",
+      "revision": null,
+      "inspected_files": [],
+      "license": {
+        "root": null,
+        "file_level": [],
+        "notices": [],
+        "reuse_scope": "",
+        "verification": "pending"
+      },
+      "requirement_fit": [],
+      "gaps_and_costs": [],
+      "disposition": "reference",
+      "reason": ""
+    }
+  ],
+  "selected_foundations": [],
+  "integration_plan": [],
+  "validation_checks": [],
+  "unresolved_decisions": [],
+  "private_material_excluded": true
+}

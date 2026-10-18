@@ -1,0 +1,12 @@
+{
+  "reason": "Execution interrupted between turns; user explicitly requested continuation. Earlier wall-clock gate expired without submit. New bounded continuation retains identical candidate, fixed criteria/evaluator and all actual completed results; no new patch/candidate round.",
+  "prior_run": "run-057b89905be4",
+  "continuation_run": "run-8728ae951a58",
+  "created": "2026-10-17T20:51:56Z",
+  "effort_minutes": 35,
+  "candidate_hash": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+  "criteria_hash": "373e01b58b1054ebcd392ac1771f029486030eea34d96a1c91f31f0c4c035f2d",
+  "evaluator_hash": "fd04b70fae127306570e66a88bda581c82af742ce9abee05b1baf627e8f07dcd",
+  "distinct_candidate_cap": 3,
+  "current_distinct_candidate": 3
+}

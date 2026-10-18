@@ -5,7 +5,9 @@
 Describe a workflow in ordinary language. Skill Forge asks only questions that matter, drafts a skill, tries examples, and leaves you an installable folder. It also improves existing skills and evaluates improvements to its own interview and tools.
 
 - Simple, clear ideas can go straight to a draft. Complex uncertainty gets deeper questions.
-- Say **quick**, **thorough**, **expert challenge**, **draft now**, **skip**, or **resume** to control the pace.
+- Refine through focused questions, examples and constructive challenge until material gaps close. Say **quick**, **thorough**, **expert challenge**, **draft now**, **skip**, or **resume** to control the pace.
+- Choose how to receive the skill itself: local Markdown, an installable folder/ZIP, a GitHub repository, or another destination. Settled choices are remembered.
+- Before implementation, [Skill Finder](docs/skill-finder.md) delegates a bounded search for useful foundations, inspecting actual source, licenses and fit. It has honest fallbacks when browsing or subagents are unavailable.
 - Successful updates are applied automatically after predefined checks, with history and rollback. Failed or untested candidates stay separate.
 - Private preferences and conversations stay outside published source by default.
 
@@ -19,7 +21,7 @@ Choose one route. No paid API or custom service is required for the core convers
 | Claude Code | [Install for yourself or a project](docs/claude-code.md) |
 | Another capable chat model | Paste or upload [the self-contained prompt](portable/skill-forge-prompt.md), then describe your idea |
 
-Download the [v0.1.0 release](https://github.com/HarryBurd33/skill-forge/releases/tag/v0.1.0): the **skill ZIP** contains an installable `skill-forge/` folder; the **portable ZIP** contains the standalone prompt and license; the **source ZIP** contains examples, tests and documentation. See [compatibility](docs/compatibility.md) for what was actually tested.
+Download the [latest release](https://github.com/HarryBurd33/skill-forge/releases/latest): the **skill ZIP** contains an installable `skill-forge/` folder; the **portable ZIP** contains the standalone prompt and license; the **source ZIP** contains examples, tests and documentation. See [compatibility](docs/compatibility.md) for what was actually tested.
 
 After installation, try:
 
@@ -37,11 +39,13 @@ Or improve the builder:
 
 ## What happens during a session
 
-The builder maintains a compact brief of confirmed needs, proposed defaults, assumptions, examples, acceptance checks and open questions. It inspects available facts before asking you. It shows the brief for correction without making you approve every routine step. An early example reveals gaps more efficiently than a long fixed questionnaire.
+The builder maintains a compact brief of confirmed needs, proposed defaults, assumptions, examples, acceptance checks, open questions, skill delivery and research status. It inspects available facts before asking you. It shows the brief for correction without making you approve every routine step. Each answer or example updates the brief and can reveal the next dependent question. Refinement continues while it can materially improve the skill; a request to draft now produces a provisional artifact. The skill’s own delivery choice is separate from the document, spreadsheet or other output it will later produce.
+
+Once the brief is ready, Skill Finder sends a researcher a sanitized task. It searches GitHub, Hugging Face when relevant, and other primary resources; checks actual files, revision and reuse rights; and recommends a foundation or original implementation. Findings can reopen a specific design decision. Research is bounded, can be declined, and does not authorize installing fetched code or publishing your materials.
 
 When a session pauses, save its private record or copy its handoff into the next chat. Improvement means revised files and recorded evidence; it does not retrain a model or promise memory across unrelated conversations.
 
-[Worked examples](examples/README.md) cover research and writing, an adaptive prompt builder, a planner handling an exam, and a correction to an existing skill. The public inputs are fictional. Authored demonstrations are labeled separately from [executed evaluation results](evals/REPORT.md).
+[Worked examples](examples/README.md) cover research and writing, an adaptive prompt builder, a planner handling an exam, and a correction to an existing skill. The public inputs are fictional. Authored demonstrations are labeled separately from [executed evaluation results](evals/v0.2.0/REPORT.md).
 
 ## Evidence and automatic updates
 
@@ -57,7 +61,7 @@ python3 -m unittest discover -s tests -v
 python3 skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --output portable/skill-forge-prompt.md --check
 ```
 
-Before installing a generated skill, verify that its innermost folder matches the `name` in its metadata. See [the release report](evals/REPORT.md) for observed text-only limitations and exact test results.
+Before installing a generated skill, verify that its innermost folder matches the `name` in its metadata. See [the release report](evals/v0.2.0/REPORT.md) for observed text-only limitations and exact test results.
 
 The canonical builder lives in `skills/skill-forge/`. The portable prompt is generated from it, so edits cannot quietly drift. Managed installations refuse to overwrite customized copies; keep personal settings outside the shared skill.
 
