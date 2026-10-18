@@ -168,6 +168,101 @@
       "commit": null,
       "reuse": "Read as primary documentation; original summary only; no copied assets or text.",
       "license": "No reuse license assumed; documentation consulted only."
+    },
+    {
+      "id": "openai-subagents",
+      "type": "documentation",
+      "title": "Subagents",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+      "retrieved_date": "2026-10-18",
+      "commit": null,
+      "reuse": "Primary documentation consulted; original summary only. No source prose, code, templates or assets copied.",
+      "license": "No reuse license assumed; documentation consulted only."
+    },
+    {
+      "id": "openai-cli-setup",
+      "type": "documentation",
+      "title": "Codex CLI",
+      "url": "https://learn.chatgpt.com/docs/codex/cli",
+      "retrieved_date": "2026-10-18",
+      "commit": null,
+      "reuse": "Primary documentation consulted; original summary only. No source prose, code, templates or assets copied.",
+      "license": "No reuse license assumed; documentation consulted only."
+    },
+    {
+      "id": "openai-windows-sandbox",
+      "type": "documentation",
+      "title": "Windows sandbox",
+      "url": "https://learn.chatgpt.com/docs/windows/windows-sandbox",
+      "retrieved_date": "2026-10-18",
+      "commit": null,
+      "reuse": "Primary documentation consulted; original summary only. No source prose, code, templates or assets copied.",
+      "license": "No reuse license assumed; documentation consulted only."
+    },
+    {
+      "id": "claude-code-setup",
+      "type": "documentation",
+      "title": "Advanced setup",
+      "url": "https://code.claude.com/docs/en/setup",
+      "retrieved_date": "2026-10-18",
+      "commit": null,
+      "reuse": "Primary documentation consulted; original summary only. No source prose, code, templates or assets copied.",
+      "license": "No reuse license assumed; documentation consulted only."
+    },
+    {
+      "id": "claude-code-subagents",
+      "type": "documentation",
+      "title": "Create custom subagents",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "retrieved_date": "2026-10-18",
+      "commit": null,
+      "reuse": "Primary documentation consulted; original summary only. No source prose, code, templates or assets copied.",
+      "license": "No reuse license assumed; documentation consulted only."
+    },
+    {
+      "id": "python-windows-setup",
+      "type": "documentation",
+      "title": "Using Python on Windows",
+      "url": "https://docs.python.org/3/using/windows.html",
+      "retrieved_date": "2026-10-18",
+      "commit": null,
+      "reuse": "Primary documentation consulted; original summary only. No source prose, code, templates or assets copied.",
+      "license": "No reuse license assumed; documentation consulted only."
+    },
+    {
+      "id": "openai-codex-platform-source",
+      "type": "repository",
+      "repository_url": "https://github.com/openai/codex",
+      "retrieved_date": "2026-10-18",
+      "commit": "8c076942cb70fba8e5c4732c23f1faabc4aed484",
+      "commit_date": "2026-10-18T01:58:02Z",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/openai/codex/blob/8c076942cb70fba8e5c4732c23f1faabc4aed484/LICENSE",
+      "reuse": "README, LICENSE and NOTICE inspected for platform facts and rights. No source prose, code, templates or assets copied.",
+      "additional_notice_files_found_in_inspected_scope": [
+        "NOTICE"
+      ],
+      "notice": "Root NOTICE records Ratatui-derived code under MIT. Consulted only; no Codex source is distributed by Skill Forge.",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+          "bytes": 3334,
+          "url": "https://github.com/openai/codex/blob/8c076942cb70fba8e5c4732c23f1faabc4aed484/README.md"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+          "bytes": 10926,
+          "url": "https://github.com/openai/codex/blob/8c076942cb70fba8e5c4732c23f1faabc4aed484/LICENSE"
+        },
+        {
+          "path": "NOTICE",
+          "sha256": "9d71575ecfd9a843fc1677b0efb08053c6ba9fd686a0de1a6f5382fd3c220915",
+          "bytes": 242,
+          "url": "https://github.com/openai/codex/blob/8c076942cb70fba8e5c4732c23f1faabc4aed484/NOTICE"
+        }
+      ]
     }
   ],
   "verification_updates": [
@@ -191,6 +286,21 @@
         "https://huggingface.co/docs/hub/agents-skills"
       ],
       "result": "Primary guidance for bounded source discovery, actual source/license inspection and scoped model/dataset/code reuse. Original Finder implementation; no source prose distributed."
+    },
+    {
+      "date": "2026-10-18",
+      "urls": [
+        "https://learn.chatgpt.com/docs/build-skills",
+        "https://agentskills.io/specification",
+        "https://code.claude.com/docs/en/skills",
+        "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+        "https://learn.chatgpt.com/docs/codex/cli",
+        "https://learn.chatgpt.com/docs/windows/windows-sandbox",
+        "https://code.claude.com/docs/en/setup",
+        "https://code.claude.com/docs/en/sub-agents",
+        "https://docs.python.org/3/using/windows.html"
+      ],
+      "result": "Refreshed local skill discovery, invocation, updating/removal, available subagents, native Windows alternatives and Python Windows commands. Official Codex platform source separately pinned above. Documentation-supported host capabilities are distinct from actual runtime tests. Original v0.3.0 spec/delegation/conversation workflow implementation; no third-party material copied."
     }
   ]
 }
