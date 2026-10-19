@@ -12,7 +12,7 @@ their references below describe capabilities, not tools available in plain chat.
 Generated from canonical instructions and all reference, template, question,
 and bundled sub-skill resources. Edit those sources and regenerate this file; do not edit this bundle.
 
-Source SHA-256: `9f33472eabf13160203fbbc48073569a22e76a6acbe4b2787c5515c6636f018d`
+Source SHA-256: `4d2eca65cb0bf0992dc8445b5fb0d984e4287c345ab1b81b20b0b6d33433a95d`
 
 <a id="resource-skill-md"></a>
 
@@ -30,7 +30,14 @@ metadata:
 
 Turn a useful workflow into an independently usable skill. Understand and challenge the idea, find useful foundations, show an implementation spec and how it will be checked, then build with useful available help. Keep improvements only when observed results justify them. Use plain language suited to the person.
 
-At the build boundary, use this visible order: **implementation plan and concrete checks → requested review pause, if any → generated skill contents or file writes**. This also applies to quick, draft-now and Markdown-only delivery. Keep the short plan outside the generated file; file-only delivery identifies what to save. A plan hidden in an HTML comment, inside the completed skill, or after the artifact does not let the user inspect the approach before building. If no pause is requested and no material decision blocks work, show the plan and continue in the same response.
+At the build boundary, show a compact, visible plan **before** complete target contents or writes. Even a tiny draft needs these concrete parts, each as short as the task permits:
+
+- Purpose, activation/exclusions and the input/output contract.
+- Intended file paths, resources/dependencies, proposed defaults and relevant limits.
+- **Implementation steps in order**, such as author the requested file, check metadata and cases, then deliver it. Describing the finished behavior alone is not an implementation sequence.
+- Verification inputs, expected outcomes and failure conditions; distinguish available checks from unexecuted ones.
+
+Then pause only if requested or a material decision blocks work; otherwise proceed in the same response. This order also applies to quick, draft-now and Markdown-only delivery. Keep the plan outside the generated file: file-only delivery identifies what to save. A plan hidden in a comment, inside the completed skill, or after the artifact does not provide a pre-build review opportunity.
 
 ## Start from the request
 
@@ -75,6 +82,8 @@ Read [authoring guidance](#resource-references-authoring-md). Produce concise `S
 Compare new work with an appropriate direct-prompt or existing-creator baseline; compare updates with the prior version. Run actual examples where possible, preferably in a separate context with a fixed evaluator. Distinguish static checks, illustrations, actual model runs and unavailable checks. Confidence or a narrated success is not evidence. Reconcile actual independent findings before claiming completion.
 
 Deliver the agreed package, sample invocations, installation/export steps, concise validation evidence and limitations. Publish only to an authorized destination. Source access does not authorize overwriting an upstream repository.
+
+For generated-skill file-text delivery, explicitly tell the user what to save and where, using a valid `skill-name/SKILL.md` path and clearly delimited contents. After the artifact, give a short validation note and a **compact resume handoff**: settled goal/input/output/delivery, important assumptions, checks completed or pending, and the next unresolved step. Keep this handoff outside the installable skill and label private state accordingly; a comment inside the artifact or an internal harness record is not a user-visible handoff. With no file tools, say the user must save the contents/handoff; never claim files or memory were saved. A simple skill needs only a few lines, without extra questions or an approval turn.
 
 ## Improve without losing what worked
 
@@ -521,6 +530,8 @@ Keep this visible prelude separate from the installable artifact, including when
 
 Use the [template](#resource-templates-implementation-spec-md) selectively. A single-file skill may need five concise bullets; a complex integration needs enough detail to expose dependent choices. Cover the reusable purpose and activation/exclusions; confirmed inputs/output and examples; assumptions and preservation requirements; files/resources, foundations and dependencies; implementation order and useful delegated roles; private/public boundaries and delivery; observable acceptance and failure cases; and checks the host cannot execute. Do not force empty sections or technical vocabulary on beginners.
 
+State the actual implementation sequence, even for one file: author the specified instructions, check the named format/examples with available methods, then deliver the file and handoff. A description of how the generated skill will behave is not a substitute for the builder's steps. Reuse an approved plan without adding another approval turn.
+
 Make implementation choices explicit. If a language, framework, data schema or dependency was not supplied, call it a proposed default or assumption and explain it only when consequential. A spec does not turn guesses into user decisions. Resolve a blocking contradiction before implementation; a provisional draft can use labeled assumptions when the user requests it.
 
 The verification plan comes before the build, not as an afterthought. Define realistic inputs, expected outcomes, unacceptable failures and the actual method/tool that can check each. Include activation/non-activation separately from task quality, a normal case, a boundary/failure, and relevant existing regressions. Name the baseline and independent evaluator when available. Show unavailable checks and what evidence would be needed; do not mark planned work passed. For an improvement, preserve prior acceptance criteria and freeze the evaluator/cases before candidate evaluation.
@@ -591,12 +602,14 @@ Present this plan and its checks visibly before any complete target contents or 
 - Examples and failures: [representative input/output and counterexample].
 - Files, resources and dependencies: [only what is needed; platform/tool limits].
 - Foundations and rights: [finder report or reason for original work/pending research].
-- Implementation order and useful agents: [bounded roles, write ownership, integration].
+- Implementation order and useful agents: [explicit author → check → deliver sequence; bounded useful roles, write ownership, integration].
 - Privacy and delivery: [local/private configuration versus publishable content; authorized destination].
 - Verification before build: [case input → expected outcome → failure condition → actual check method; activation separately; relevant regression, baseline and evaluator. For each material correction, name the old → final behavior and a case that fails if the old contract returns].
 - Unavailable checks and completion criteria: [what remains unverified and when done].
 
 [Offer corrections or an optional pause. Wait only if review-first/pause is requested or a consequential decision blocks implementation; otherwise proceed with already-authorized work.]
+
+Delivery reminder: name the exact save/install path, delimit file contents, report actual versus pending checks, and provide a compact private resume note outside the skill. With no file tools, saving is the user's remaining step.
 
 <a id="resource-templates-improvement-json"></a>
 
