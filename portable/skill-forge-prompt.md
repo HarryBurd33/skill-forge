@@ -12,7 +12,7 @@ their references below describe capabilities, not tools available in plain chat.
 Generated from canonical instructions and all reference, template, question,
 and bundled sub-skill resources. Edit those sources and regenerate this file; do not edit this bundle.
 
-Source SHA-256: `0aa5cf1205564e9dbf9e8c75533d262e108eafa0a88a95ef8aa031eb26130b7c`
+Source SHA-256: `9f33472eabf13160203fbbc48073569a22e76a6acbe4b2787c5515c6636f018d`
 
 <a id="resource-skill-md"></a>
 
@@ -29,6 +29,8 @@ metadata:
 # Skill Forge
 
 Turn a useful workflow into an independently usable skill. Understand and challenge the idea, find useful foundations, show an implementation spec and how it will be checked, then build with useful available help. Keep improvements only when observed results justify them. Use plain language suited to the person.
+
+At the build boundary, use this visible order: **implementation plan and concrete checks → requested review pause, if any → generated skill contents or file writes**. This also applies to quick, draft-now and Markdown-only delivery. Keep the short plan outside the generated file; file-only delivery identifies what to save. A plan hidden in an HTML comment, inside the completed skill, or after the artifact does not let the user inspect the approach before building. If no pause is requested and no material decision blocks work, show the plan and continue in the same response.
 
 ## Start from the request
 
@@ -61,6 +63,8 @@ Once the brief is ready, before implementation, run the nested [Skill Finder](#r
 Before target implementation, present a readable [implementation spec](#resource-references-specification-md) with a [right-sized template](#resource-templates-implementation-spec-md): behavior and boundaries, input/output contract, files and foundations, assumptions/dependencies, ordered work and delegated roles, privacy/delivery, and a concrete verification plan. Label any unprovided language/framework choice as a proposed default. Make the entire intended approach reviewable before producing or replacing the target; a small skill may need only a short plan.
 
 Work out verification **before building**: concrete input, expected outcome and failure conditions, activation/non-activation, a representative failure, relevant regressions, baseline, evaluator, tools and unavailable checks. Then freeze the candidate's acceptance checks before evaluation. Use [evaluation guidance](#resource-references-evaluation-md). A promise to “test later” is insufficient. Planned checks are not passed checks.
+
+For a material correction, name the superseded and final behavior in the pre-build checks. Include an input and expected result that would fail if the old output contract or discarded assumption returned; a generic “check accuracy” cannot establish that a correction survived.
 
 Offer the user a chance to edit the spec or request a pause. **Wait when the user says review first, spec only, pause or equivalent**, and retain that state when resuming. Otherwise proceed with authorized implementation without demanding approval. “Draft now” or “build now” allows a compact spec/check plan followed by the artifact in the same response; it does not authorize invented requirements or publication. Incorporate corrections into the spec and affected checks before building. If supplied context already contains an approved/current spec, reuse it and summarize the applicable checks rather than re-interviewing.
 
@@ -513,11 +517,15 @@ For any capable plain-chat model, supply the generated portable prompt and relev
 
 The implementation spec is an editable description of what will be built and how the result will be checked. It is an output for the user, not hidden planning. Present it before writing the target skill or changing its implementation. Research, source inspection and a disposable illustrative snippet can help develop the spec; they are not permission to build the full target ahead of review.
 
+Keep this visible prelude separate from the installable artifact, including when delivery is only a `SKILL.md` file. Show the plan and checks first, then clearly mark the file contents to save. Do not hide the plan in a comment, make it an instruction inside the generated skill, or append it after implementation. A compact plan can accompany a draft in one response without an approval question.
+
 Use the [template](#resource-templates-implementation-spec-md) selectively. A single-file skill may need five concise bullets; a complex integration needs enough detail to expose dependent choices. Cover the reusable purpose and activation/exclusions; confirmed inputs/output and examples; assumptions and preservation requirements; files/resources, foundations and dependencies; implementation order and useful delegated roles; private/public boundaries and delivery; observable acceptance and failure cases; and checks the host cannot execute. Do not force empty sections or technical vocabulary on beginners.
 
 Make implementation choices explicit. If a language, framework, data schema or dependency was not supplied, call it a proposed default or assumption and explain it only when consequential. A spec does not turn guesses into user decisions. Resolve a blocking contradiction before implementation; a provisional draft can use labeled assumptions when the user requests it.
 
 The verification plan comes before the build, not as an afterthought. Define realistic inputs, expected outcomes, unacceptable failures and the actual method/tool that can check each. Include activation/non-activation separately from task quality, a normal case, a boundary/failure, and relevant existing regressions. Name the baseline and independent evaluator when available. Show unavailable checks and what evidence would be needed; do not mark planned work passed. For an improvement, preserve prior acceptance criteria and freeze the evaluator/cases before candidate evaluation.
+
+Make correction checks specific: identify the former requirement, its final replacement, and an example whose expected result rules out the superseded behavior. Check the final fields, format and destination when they changed. Do not substitute an unrelated failure example or a generic quality check for this regression.
 
 Review is optional. Offer an edit/pause opportunity without forcing another approval when implementation is already authorized. If the user explicitly requests review first, spec only or a pause, end at the spec and wait; no full implementation or target writes until they proceed. If they say draft now/build now, show the compact spec and checks first and then produce the authorized draft. If no pause is requested and no consequential decision blocks progress, proceed. A prior approved spec can be reused when current; do not make the user reapprove unchanged work.
 
@@ -574,6 +582,8 @@ Record spec revision or content hash, review preference/state and corrections in
 
 Revision: [id/hash]. Review preference: [continue / review first]. Status: [proposed / corrected / building].
 
+Present this plan and its checks visibly before any complete target contents or writes. Keep the plan outside the generated skill file, even for Markdown-only delivery; do not hide it in a comment.
+
 - Purpose, users and activation/exclusions: [repeated workflow and boundaries].
 - Inputs and outputs: [contract, required fields, destination, missing-data treatment].
 - Confirmed requirements and preservation: [source-backed decisions].
@@ -583,7 +593,7 @@ Revision: [id/hash]. Review preference: [continue / review first]. Status: [prop
 - Foundations and rights: [finder report or reason for original work/pending research].
 - Implementation order and useful agents: [bounded roles, write ownership, integration].
 - Privacy and delivery: [local/private configuration versus publishable content; authorized destination].
-- Verification before build: [case input → expected outcome → failure condition → actual check method; activation separately; relevant regression, baseline and evaluator].
+- Verification before build: [case input → expected outcome → failure condition → actual check method; activation separately; relevant regression, baseline and evaluator. For each material correction, name the old → final behavior and a case that fails if the old contract returns].
 - Unavailable checks and completion criteria: [what remains unverified and when done].
 
 [Offer corrections or an optional pause. Wait only if review-first/pause is requested or a consequential decision blocks implementation; otherwise proceed with already-authorized work.]
