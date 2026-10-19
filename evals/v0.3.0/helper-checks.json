@@ -1,0 +1,76 @@
+{
+  "kind": "Actual local helper and package checks; not model behavior",
+  "executed_at_utc": "2026-10-19T12:30:59.406265+00:00",
+  "candidate_skill_sha256": "75df8b714e5804f5f2f1ef2148efa67dea437870e39edcf3ee63d464e288aef7",
+  "unit_tests": {
+    "run": 28,
+    "passed": 27,
+    "skipped": 1,
+    "skip": "Native Windows junction creation requires Windows; covered separately by hosted Windows jobs.",
+    "raw_log_sha256": "e91e045db441dcf703be906370c2acb57490c2a45a39e3c0a5e8d825b425b9e8",
+    "public_log": "unit-tests.txt",
+    "public_log_selection": "Exact unittest result lines through OK; helper stdout with temporary local paths omitted.",
+    "executed_with_skill_sha256": "75df8b714e5804f5f2f1ef2148efa67dea437870e39edcf3ee63d464e288aef7",
+    "helper_implementation_sha256": "861bd90ef4259cd1aa57095a9734fc8c2c7fdb0fa60b134cbbaea1c3693c9115",
+    "helper_implementation_unchanged_for_final_source": true
+  },
+  "release_check_before_final_evidence": {
+    "status": "pass",
+    "public_files": 136,
+    "relative_links": 141,
+    "clean_first_use": {
+      "status": "pass",
+      "temporary_install_paths": 4,
+      "skill_hash_matches": true,
+      "portable_bytes_match": true,
+      "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+    }
+  },
+  "limitations": [
+    "Final selected evidence/publication first-use will be checked after release records are complete.",
+    "Temporary Codex/Claude path installations do not establish native host execution."
+  ],
+  "third_candidate_skill_sha256": "7c7a0467e500321a4d872e199317a69eec1dba7890c677b6465d03db9e169990",
+  "third_source_package_checks_before_result_selection": {
+    "status": "pass",
+    "public_files": 150,
+    "relative_links": 141,
+    "clean_first_use": {
+      "status": "pass",
+      "temporary_install_paths": 4,
+      "skill_hash_matches": true,
+      "portable_bytes_match": true,
+      "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+    }
+  },
+  "final_candidate_skill_sha256": "3735ddcdc3aebe6be3a0dca442a0147cdc789860f66d1577a048e94b5b4221a0",
+  "final_source_package_checks_before_result_selection": {
+    "status": "pass",
+    "public_files": 150,
+    "relative_links": 141,
+    "clean_first_use": {
+      "status": "pass",
+      "temporary_install_paths": 4,
+      "skill_hash_matches": true,
+      "portable_bytes_match": true,
+      "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+    }
+  },
+  "final_source_hosted_checks": "final-source-platform-checks.json",
+  "prepared_archive_check": {
+    "status": "pass",
+    "skill_tree_sha256": "3735ddcdc3aebe6be3a0dca442a0147cdc789860f66d1577a048e94b5b4221a0",
+    "portable_exact": true,
+    "archives": [
+      {
+        "file": "skill-forge-0.3.0.zip",
+        "sha256": "78b37a7dd1b33a1eb98d020432ed1cbfbc68be1b3c532e8ae17b6f07d9de5f28"
+      },
+      {
+        "file": "skill-forge-portable-0.3.0.zip",
+        "sha256": "5c348fb794b63191927f3b833be315fd26c327ed2d42ff9476b00fb25ef8937e"
+      }
+    ],
+    "scope": "Prepared archives extracted locally; public release downloads still pending."
+  }
+}

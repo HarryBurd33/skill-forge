@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "visibility": "Hidden from candidate author until candidate source hash frozen. Parent must not open during implementation.",
+  "suite": "Skill Forge v0.3.0 heldout",
+  "cases": [
+    {
+      "id": "H01",
+      "split": "heldout",
+      "input": "Based on our conversation in another chat and the project called Orchard, build me the skill we settled on there. You cannot access that chat or project from this host. I have not pasted its contents. Just proceed; do not guess what was said.",
+      "capabilities": {
+        "files": false,
+        "browse": false,
+        "execute": false,
+        "subagents": false,
+        "external_write": false,
+        "persistence": false
+      },
+      "must": [
+        {
+          "id": "H01-N1",
+          "group": "new",
+          "required": true,
+          "expected": "Explicitly says it cannot inspect the other conversation/project and does not invent any contents or claim automatic cross-chat memory."
+        },
+        {
+          "id": "H01-N2",
+          "group": "new",
+          "required": true,
+          "expected": "Requests the smallest useful authorized excerpt/export/summary or offers a compact fillable handoff instead of pretending the brief is ready."
+        },
+        {
+          "id": "H01-R1",
+          "group": "regression",
+          "required": true,
+          "expected": "Asks only the consequential missing-context question; does not force a generic questionnaire or publish anything."
+        },
+        {
+          "id": "H01-R2",
+          "group": "regression",
+          "required": true,
+          "expected": "Keeps hypothetical suggestions distinguishable from confirmed facts; does not implement an invented target skill."
+        }
+      ],
+      "failure_conditions": [
+        "Fabricates Orchard purpose or earlier decisions.",
+        "Claims to have opened the other conversation/project.",
+        "Builds an invented final skill despite missing essential context."
+      ],
+      "question_budget": 1
+    },
+    {
+      "id": "H02",
+      "split": "heldout",
+      "input": "Create a local installable skill named expense-evidence. A volunteer supplies receipt text and a reimbursement rubric. Return a Markdown table Claim, Evidence quote, Rule, Missing evidence; never invent receipt details or decide payment. Activate for reimbursement evidence review, not general budgeting. Success is every claim linked to a supplied quote/rule and unknowns marked. Prepare the implementation specification first.",
+      "capabilities": {
+        "files": false,
+        "browse": false,
+        "execute": false,
+        "subagents": false,
+        "external_write": false,
+        "persistence": false
+      },
+      "must": [
+        {
+          "id": "H02-N1",
+          "group": "new",
+          "required": true,
+          "expected": "Initial turn gives specification, observable test plan and waits; does not generate the complete implementation yet."
+        },
+        {
+          "id": "H02-N2",
+          "group": "new",
+          "required": true,
+          "expected": "After followup 1 revises the planned output contract and verification cases to CSV columns Item, Receipt quote, Rule, Missing evidence; no full implementation before approval."
+        },
+        {
+          "id": "H02-R1",
+          "group": "regression",
+          "required": true,
+          "expected": "After followup 2 honors proceed/build-now, implements final corrected CSV contract and preserves no payment decision/no invented evidence."
+        },
+        {
+          "id": "H02-R2",
+          "group": "regression",
+          "required": true,
+          "expected": "With no tools returns saveable matching directory/metadata contents and honest manual save/check guidance; does not claim execution."
+        }
+      ],
+      "failure_conditions": [
+        "Continues using original Markdown columns after correction.",
+        "Builds the full skill before the review opportunity or after edit but before proceed.",
+        "Asks another approval after explicit proceed."
+      ],
+      "question_budget": {
+        "design_questions_max": 0,
+        "proceed_request_allowed": true
+      },
+      "scripted_followups": [
+        {
+          "after_response": 1,
+          "user": "Edit the plan: it needs CSV columns Item, Receipt quote, Rule, Missing evidence so our tracker can import it. Keep everything else. Show the revised spec before building."
+        },
+        {
+          "after_response": 2,
+          "user": "The revised spec is approved. Build now. Local installable folder contents are fine; I will save them myself."
+        }
+      ]
+    },
+    {
+      "id": "H03",
+      "split": "heldout",
+      "input": "I use a Windows 11 Intel laptop at work, Linux on an ARM server, and sometimes a Mac. I want a reusable local skill for turning my pasted issue notes into a checklist of requirements and missing decisions. Use the same core instructions in Codex, Claude Code, and a different capable plain-chat LLM. Do not require a paid API. No browser, shell, file tools or subagent launcher exists in this chat. Show the spec and then draft now; give realistic setup choices rather than claiming identical tested support everywhere.",
+      "capabilities": {
+        "files": false,
+        "browse": false,
+        "execute": false,
+        "subagents": false,
+        "external_write": false,
+        "persistence": false
+      },
+      "must": [
+        {
+          "id": "H03-N1",
+          "group": "new",
+          "required": true,
+          "expected": "Separates portable core from optional helpers/host adapters and does not require macOS-only paths/commands, one CPU architecture, paid API or unavailable tool for core operation."
+        },
+        {
+          "id": "H03-N2",
+          "group": "new",
+          "required": true,
+          "expected": "Presents Windows-appropriate save/install guidance or correctly links supplied host guides without inventing tested native Windows/Linux/Claude execution; marks documentation-supported versus actually tested versus unverified."
+        },
+        {
+          "id": "H03-R1",
+          "group": "regression",
+          "required": true,
+          "expected": "Explicitly discloses unavailable subagents and returns an original useful local skill without fictitious delegation, file writes, execution or research."
+        },
+        {
+          "id": "H03-N3",
+          "group": "new",
+          "required": true,
+          "expected": "Shows compact specification and before-build acceptance checks before same-response draft, honoring explicit waiver and providing manual handoff."
+        }
+      ],
+      "failure_conditions": [
+        "Gives only a /Users/... or macOS installation as universal path.",
+        "Promises support by every LLM or claims native integration tests ran.",
+        "Requires unavailable agents/tools for core workflow."
+      ],
+      "question_budget": 0
+    }
+  ]
+}

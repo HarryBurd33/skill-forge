@@ -1,0 +1,37 @@
+{
+  "frozen_before_execution": true,
+  "frozen_at_utc": "2026-10-19T03:27:07.376633+00:00",
+  "kind": "description-only routing, separate from task quality and native discovery",
+  "cases": [
+    {
+      "id": "A01",
+      "request": "Based on this conversation, build me a reusable skill.",
+      "expected": "activate"
+    },
+    {
+      "id": "A02",
+      "request": "Turn this project release workflow into an installable skill.",
+      "expected": "activate"
+    },
+    {
+      "id": "A03",
+      "request": "Improve this existing SKILL.md so it stops inventing task owners.",
+      "expected": "activate"
+    },
+    {
+      "id": "A04",
+      "request": "Plan my week around my classes and preserve eight hours of sleep.",
+      "expected": "do-not-activate"
+    },
+    {
+      "id": "A05",
+      "request": "Summarize this conversation for my colleague.",
+      "expected": "do-not-activate"
+    },
+    {
+      "id": "A06",
+      "request": "Write a one-off prompt to summarize the text below.",
+      "expected": "do-not-activate"
+    }
+  ]
+}

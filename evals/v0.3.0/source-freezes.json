@@ -1,0 +1,167 @@
+{
+  "round1": {
+    "frozen_at_utc": "2026-10-18T22:24:21.466701+00:00",
+    "candidate_round": 1,
+    "baseline_skill_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "candidate_skill_sha256": "3fbcb24e5f81d9c622d41a33c514fa29f9adeb45d6f7e5a03da02c1c8db475cf",
+    "candidate_spec_review": "User approved spec with optional pause; no mandatory review for authorized builds.",
+    "source": "<workspace>/skill-forge-v030-candidate/skills/skill-forge",
+    "gate_run": "<workspace>/.skill-forge-private/run-8db83290ec33",
+    "baseline_prompt_sha256": "699ab126073dec1f27b967f9e2a089a34590e3d4e36f7eec59f88da9150ea847",
+    "candidate_prompt_sha256": "6dc3fc4976bbe3595b811387e9c675d423945701c700af3abaa6c7958226d721",
+    "criteria_sha256": "9a2d9523d24b5d7084a9c544166c3a790c83ba4712aafd4ac427064200094fe1",
+    "evaluator_sha256": "bf64679f1b0aaf10636719170757ceee96402a85efe7848335fddd68359ad920"
+  },
+  "round2": {
+    "frozen_at_utc": "2026-10-19T12:26:08.857420+00:00",
+    "global_candidate_patch": 2,
+    "candidate_source_tree_sha256": "75df8b714e5804f5f2f1ef2148efa67dea437870e39edcf3ee63d464e288aef7",
+    "baseline_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "candidate_prompt_sha256": "5f2b31f132cc4f588ff817ccecc563875c5f16866394ec479865ce5874dc34b0",
+    "gate_run": "run-8eb9b9e5429e",
+    "effective_gate_deadline_utc": "2026-10-19T13:53:22.732849Z",
+    "criteria_hash": "428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9",
+    "evaluator_hash": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "loader": "Frozen canonical SKILL.md first; read only conditionally relevant frozen resources. Both fresh arms same source-access method. Existing baseline records used per preregistered policy, with prior full-export loading disclosed.",
+    "benefit_conservative_policy": "At minimum demonstrate delta>=1 on comparable fresh original D01/D02/H03 new-feature conditions; also report full original20 metric. Added fresh heldouts cannot inflate adoption benefit.",
+    "fresh_baseline_cases": [
+      "D01",
+      "D02",
+      "H03",
+      "J01",
+      "J02",
+      "J03"
+    ],
+    "reused_baseline_cases": [
+      "D03",
+      "D04",
+      "D05",
+      "D06",
+      "D07",
+      "D08",
+      "D09",
+      "H01",
+      "H02"
+    ],
+    "retry_policy": "One execution per current case/arm; ordinary failures remain failures. Any protocol/transient interruption must be preserved and paired retry preregistered, never favorable selection.",
+    "host": "Codex desktop, inherited default model; exact serving identifier/build unavailable",
+    "prior_quota_interruption": "Original round1 rejected; H03/activation interrupted; prepared round2 expired before source patch. User explicitly continued. Global patch cap3 unchanged, this is patch2."
+  },
+  "round3": {
+    "frozen_at_utc": "2026-10-19T12:37:21.001284+00:00",
+    "global_candidate_patch": 3,
+    "candidate_source_tree_sha256": "7c7a0467e500321a4d872e199317a69eec1dba7890c677b6465d03db9e169990",
+    "baseline_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "candidate_prompt_sha256": "719a3e601777b9da1c673b98ae052810cfe310dc579b6e8824f1b8441fc5d97a",
+    "gate_run": "run-8eb9b9e5429e",
+    "gate_attempt": 2,
+    "effective_gate_deadline_utc": "2026-10-19T13:53:22.732849Z",
+    "criteria_hash": "428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9",
+    "evaluator_hash": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "loader": "Canonical first with only relevant frozen resources, same method for fresh arms. Old cached baseline full-export loading disclosed.",
+    "reuse_policy": {
+      "round2_baseline": [
+        "D01",
+        "D02"
+      ],
+      "original_baseline": [
+        "D03",
+        "D04",
+        "D05-retry1",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "H01",
+        "H02"
+      ],
+      "fresh_baseline": [
+        "H03",
+        "J01",
+        "J02",
+        "J03"
+      ],
+      "candidate": "All15cases fresh."
+    },
+    "unconsumed_holdouts": "J01-J03 never dispatched in earlier rounds; independently authored and author never read prompts. Digest b74e9a9326dd17e447c3467bb2ce8d0e49354fa273998a58873a70edd8d8cfac unchanged.",
+    "constraints": "No fourth patch; no behavior retries or weakened criteria; full60conditions and no regression loss. Original20 new metric delta>=1, plus positive comparable D01/D02/H03 original subset delta."
+  },
+  "round4": {
+    "frozen_at_utc": "2026-10-19T18:25:30.543203+00:00",
+    "global_candidate_patch": 4,
+    "candidate_source_tree_sha256": "3735ddcdc3aebe6be3a0dca442a0147cdc789860f66d1577a048e94b5b4221a0",
+    "baseline_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "effective_gate_deadline_utc": "2026-10-19T19:53:52.244092Z",
+    "criteria_hash": "428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9",
+    "evaluator_hash": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "source_origins": {
+      "A": "<workspace>/skill-forge-v030-candidate/skills/skill-forge",
+      "B": "<workspace>/skill-forge/skills/skill-forge"
+    },
+    "loader": "Canonical SKILL.md first; conditional same-tree resources only; original cached baseline full-export loading disclosed",
+    "reuse_policy": {
+      "canonical_round2_B": [
+        "D01",
+        "D02"
+      ],
+      "original_B": [
+        "D03",
+        "D04",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "H01",
+        "H02"
+      ],
+      "fresh_B": [
+        "D05",
+        "H03",
+        "J01",
+        "J02",
+        "J03"
+      ],
+      "A": "All15 freshly executed"
+    },
+    "constraints": "Only fourth candidate authorized, no fifth patch, no ordinary behavior retries; neutral runner performs no grading"
+  },
+  "round5": {
+    "frozen_at_utc": "2026-10-19T18:56:48.929886+00:00",
+    "global_candidate_patch": 5,
+    "candidate_source_tree_sha256": "18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb",
+    "baseline_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "effective_gate_deadline_utc": "2026-10-19T20:25:32Z",
+    "criteria_hash": "428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9",
+    "evaluator_hash": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "source_origins": {
+      "A": "<workspace>/skill-forge-v030-candidate/skills/skill-forge",
+      "B": "<workspace>/skill-forge/skills/skill-forge"
+    },
+    "loader": "Canonical SKILL.md first; conditional same-tree resources only; original cached baseline full-export loading disclosed",
+    "reuse_policy": {
+      "canonical_round2_B": [
+        "D01",
+        "D02"
+      ],
+      "original_B": [
+        "D03",
+        "D04",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "H01",
+        "H02"
+      ],
+      "fresh_B": [
+        "D05",
+        "H03",
+        "J01",
+        "J02",
+        "J03"
+      ],
+      "A": "All15 freshly executed"
+    },
+    "constraints": "Focused authorization: global candidates5and6 only; current source5, no ordinary behavior retries; neutral runner performs no grading"
+  }
+}

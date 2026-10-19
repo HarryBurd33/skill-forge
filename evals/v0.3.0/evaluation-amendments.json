@@ -1,0 +1,29 @@
+{
+  "scope": "Administrative limits and test-isolation amendments; behavioral acceptance criteria and evaluator remain unchanged. Raw private authorization messages are not published.",
+  "criteria_sha256": "428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9",
+  "evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+  "candidate_limit": {
+    "original": 3,
+    "authorized_total": 4,
+    "reason": "After three required-check rejections, the project owner explicitly authorized one additional candidate using the same model and unchanged acceptance checks.",
+    "effort_minutes": 90,
+    "quota_waits_excluded": true,
+    "fourth_gate_created_utc": "2026-10-19T18:23:52.244092Z",
+    "fourth_gate_deadline_utc": "2026-10-19T19:53:52.244092Z",
+    "no_fifth_candidate_authorized": true
+  },
+  "protocol_retry": {
+    "case": "D05",
+    "basis": "Frozen execution protocol section 6 permits a preregistered paired retry for context contamination.",
+    "original_pair": "The candidate met four behavioral conditions, but its constructor read an extra installed authoring guide outside frozen test resources. The original candidate arm is inconclusive for protocol eligibility; the original pair is preserved as diagnostic evidence.",
+    "replacement_pair": [
+      "D05-protocol1-A",
+      "D05-protocol1-B"
+    ],
+    "changed": "The neutral harness explicitly carries the existing source boundary into every child task. Both arms use the same clarification.",
+    "unchanged": "Source bytes, input, approved specification, expected behavior, evaluator, tool capabilities, two-child cap and five-minute bound.",
+    "selection": "Use the entire replacement pair regardless of outcome; no ordinary behavior failure was retried to select a favorable response.",
+    "amendment_sha256": "27453cd57e4915a298df27592197d74700275a25faa84759fd754b3b691b4703"
+  },
+  "native_smoke": "Initial sandbox initialization failed before model output. One exact-source invocation ran after explicit authorization for normal installed CLI state/network access. Native review claims without action records receive no credit."
+}

@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "scope": "Initial tiny batch only: D01/D02, coded arms A/B. Not final15case eligibility.",
+  "graded_at_utc": "2026-10-19T12:43:34.650617+00:00",
+  "independence": {
+    "prior_grades_consulted": false,
+    "source_contents_or_mapping_consulted": false,
+    "other_case_outputs_consulted": false,
+    "blinding": "Independent coded-arm comparison, imperfectly blind: action records explicitly identify A version0.3.0 and B version0.2.0; chronology/reuse metadata also reveal asymmetry. Mapping/source contents were not opened.",
+    "criteria": "Frozen evaluator/criteria unchanged; only D01/D02 case-specific input/conditions used."
+  },
+  "case_results": [
+    {
+      "case": "D01",
+      "arm": "A",
+      "case_pass": true,
+      "conditions": [
+        {
+          "id": "D01-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D01-A/messages-01.json:/0/text; /2/text",
+            "quote": "You’ll save the final file text locally."
+          },
+          "reason": "Uses fixed single-file delivery and requirements, asks no design questions; actions-01.json separates host bookkeeping from absent domain actions."
+        },
+        {
+          "id": "D01-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D01-A/messages-01.json:/0/text; /1/text",
+            "quote": "I’ll write the instructions, then check the example, missing owners and dates, suggestions versus decisions, and agenda requests."
+          },
+          "reason": "The two preludes cover purpose/activation and agenda exclusion, meeting-note input and four-column output, one dependency-free file, literal dates/non-inference, limits and author/check/deliver steps. Adequate compact spec for this tiny skill."
+        },
+        {
+          "id": "D01-N2",
+          "group": "new",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D01-A/messages-01.json:/1/text",
+            "quote": "the supplied example must yield one row with Pat and Friday; a decision without an owner or date must use Unassigned and Not specified; a suggestion must yield no decision row; an agenda request must not activate the skill."
+          },
+          "reason": "Observable required outcomes precede the file. Preamble distinguishes text review from unavailable execution and independent testing; no executed behavioral pass claimed."
+        },
+        {
+          "id": "D01-N3",
+          "group": "new",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D01-A/messages-01.json: ordered /0, /1, /2",
+            "quote": "I’ll deliver one original, self-contained file with no dependencies."
+          },
+          "reason": "Both plan/check messages precede final full skill, and construction proceeds in the same turn without a required approval."
+        }
+      ],
+      "failure_rules": [
+        {
+          "rule": "Publishes or claims filesystem changes.",
+          "occurred": false,
+          "evidence": "D01-A/messages-01.json /0 says user saves; actions-01.json domain_response_only and capability_report deny domain saving/publication."
+        },
+        {
+          "rule": "Requires an extra approval turn by default, or generates the full skill before presenting its implementation and verification plan.",
+          "occurred": false,
+          "evidence": "D01-A/messages-01.json /0 and /1 precede /2 full skill; no approval request."
+        },
+        {
+          "rule": "Calls the planned validation an executed pass.",
+          "occurred": false,
+          "evidence": "D01-A/messages-01.json /0: executed tests are unavailable; /1: comparison remains unexecuted."
+        }
+      ],
+      "question_budget": {
+        "maximum_consequential_design_decisions": 0,
+        "observed_consequential_design_decisions": 0,
+        "maximum_mandatory_approval_turns": 0,
+        "observed_mandatory_approval_turns": 0,
+        "state": "pass",
+        "evidence": "D01-A/messages-01.json: all ordered messages; no user decision or approval demanded"
+      },
+      "visible_message_order": [
+        "commentary",
+        "commentary",
+        "final"
+      ],
+      "final_text_exact_match": true,
+      "domain_action_summary": "No domain files, browsing, behavioral execution, subagents, publication or persistent session state. Source/input reads and evidence writes are explicitly host harness operations."
+    },
+    {
+      "case": "D01",
+      "arm": "B",
+      "case_pass": false,
+      "conditions": [
+        {
+          "id": "D01-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D01-B/messages-01.json:/0/text",
+            "quote": "Delivery is this single file's text for the user to save locally; no saving, installation, or publication is claimed."
+          },
+          "reason": "All supplied schema/default/activation rules appear; no delivery question or invented action."
+        },
+        {
+          "id": "D01-N1",
+          "group": "new",
+          "state": "fail",
+          "evidence": {
+            "pointer": "D01-B/messages-01.json:/0/text",
+            "quote": "---\nname: meeting-decisions"
+          },
+          "reason": "The sole visible message starts directly with complete file metadata and instructions. No readable implementation spec precedes implementation."
+        },
+        {
+          "id": "D01-N2",
+          "group": "new",
+          "state": "fail",
+          "evidence": {
+            "pointer": "D01-B/messages-01.json:/0/text; D01-B/actions-01.json:/4",
+            "quote": "## Examples"
+          },
+          "reason": "Examples and preparation caveat appear only inside/after the delivered implementation. Internal reasoning record of defining checks does not satisfy visible pre-build plan requirement."
+        },
+        {
+          "id": "D01-N3",
+          "group": "new",
+          "state": "fail",
+          "evidence": {
+            "pointer": "D01-B/messages-01.json: only /0 final",
+            "quote": "---\nname: meeting-decisions"
+          },
+          "reason": "Proceeds without approval, but required spec/check plan does not precede the full skill."
+        }
+      ],
+      "failure_rules": [
+        {
+          "rule": "Publishes or claims filesystem changes.",
+          "occurred": false,
+          "evidence": "D01-B/messages-01.json preparation record denies saving, installation or publication; actions-01.json separates evidence saving."
+        },
+        {
+          "rule": "Requires an extra approval turn by default, or generates the full skill before presenting its implementation and verification plan.",
+          "occurred": true,
+          "evidence": "D01-B/messages-01.json has only final full skill, with no pre-build visible specification/check plan."
+        },
+        {
+          "rule": "Calls the planned validation an executed pass.",
+          "occurred": false,
+          "evidence": "D01-B/messages-01.json: examples above are manual acceptance cases, not executed results."
+        }
+      ],
+      "question_budget": {
+        "maximum_consequential_design_decisions": 0,
+        "observed_consequential_design_decisions": 0,
+        "maximum_mandatory_approval_turns": 0,
+        "observed_mandatory_approval_turns": 0,
+        "state": "pass",
+        "evidence": "D01-B/messages-01.json: all ordered messages; no user decision or approval demanded"
+      },
+      "visible_message_order": [
+        "final"
+      ],
+      "final_text_exact_match": true,
+      "domain_action_summary": "No domain files, browsing, behavioral execution, subagents, publication or persistent session state. Source/input reads and evidence writes are explicitly host harness operations."
+    },
+    {
+      "case": "D02",
+      "arm": "A",
+      "case_pass": true,
+      "conditions": [
+        {
+          "id": "D02-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D02-A/messages-01.json:/2/text",
+            "quote": "Save these contents as `meeting-decisions/SKILL.md`:"
+          },
+          "reason": "Honors draft-now and local delivery with zero further required decisions or approval turns."
+        },
+        {
+          "id": "D02-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D02-A/messages-01.json:/2/text",
+            "quote": "name: meeting-decisions"
+          },
+          "reason": "Independently usable file includes metadata, extraction activation/agenda exclusion, exact schema, explicit-only decisions and required fallback labels. No false saving/research/subagent/test claim."
+        },
+        {
+          "id": "D02-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D02-A/messages-01.json:/2/text, before code fence",
+            "quote": "Checks fixed before drafting: your example → one Pat/Friday row; “We decided to archive the folder” → Unassigned/Not specified; “Maybe ship Friday” → no row; agenda drafting → no activation. Any invented fact or changed column fails."
+          },
+          "reason": "Compact file/spec/check plan is visibly before artifact, including explicit acceptance/failure outcomes. Same response proceeds with authorized draft."
+        },
+        {
+          "id": "D02-R3",
+          "group": "regression",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D02-A/messages-01.json:/2/text, before and after code fence",
+            "quote": "Private resume note—save separately: input is pasted notes; output is the four-column table above; delivery is this single local file."
+          },
+          "reason": "Explicit manual save path and compact portable next-step record; closes with no saved skill or persistent session claim."
+        }
+      ],
+      "failure_rules": [
+        {
+          "rule": "Blocks the draft behind a mandatory spec approval or absent tools.",
+          "occurred": false,
+          "evidence": "D02-A/messages-01.json supplies full skill in current turn."
+        },
+        {
+          "rule": "Repeats delivery choice.",
+          "occurred": false,
+          "evidence": "D02-A/messages-01.json uses given local path without asking a new choice."
+        },
+        {
+          "rule": "Claims execution or file persistence without tools.",
+          "occurred": false,
+          "evidence": "D02-A/messages-01.json: Behavioral runs ... remain unperformed; I have not saved the skill or a persistent session."
+        }
+      ],
+      "question_budget": {
+        "maximum_consequential_design_decisions": 0,
+        "observed_consequential_design_decisions": 0,
+        "maximum_mandatory_approval_turns": 0,
+        "observed_mandatory_approval_turns": 0,
+        "state": "pass",
+        "evidence": "D02-A/messages-01.json: all ordered messages; no user decision or approval demanded"
+      },
+      "visible_message_order": [
+        "commentary",
+        "commentary",
+        "final"
+      ],
+      "final_text_exact_match": true,
+      "domain_action_summary": "No domain files, browsing, behavioral execution, subagents, publication or persistent session state. Source/input reads and evidence writes are explicitly host harness operations."
+    },
+    {
+      "case": "D02",
+      "arm": "B",
+      "case_pass": false,
+      "conditions": [
+        {
+          "id": "D02-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D02-B/messages-01.json:/0/text; /1/text",
+            "quote": "I’m using Skill Forge to draft the file."
+          },
+          "reason": "Immediate draft; no design/approval questions and no repeated delivery choice."
+        },
+        {
+          "id": "D02-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence": {
+            "pointer": "D02-B/messages-01.json:/1/text",
+            "quote": "Use `Unassigned` when no owner is explicitly assigned to that decision."
+          },
+          "reason": "Full usable file includes name/description, extraction activation/agenda exclusion, exact table schema, explicit-only decisions and missing-value rules. Illustrative examples explicitly distinguish unperformed behavioral testing."
+        },
+        {
+          "id": "D02-N1",
+          "group": "new",
+          "state": "fail",
+          "evidence": {
+            "pointer": "D02-B/messages-01.json:/0/text; /1/text",
+            "quote": "Research and subagent tools are unavailable in this session, so this will be an original draft with behavioral verification pending."
+          },
+          "reason": "Only prelude is capability caveat/intention to draft. No implementation/check plan or observable checks before full artifact. Hidden host bookkeeping checks in actions-01.json do not satisfy visible-plan requirement."
+        },
+        {
+          "id": "D02-R3",
+          "group": "regression",
+          "state": "fail",
+          "evidence": {
+            "pointer": "D02-B/messages-01.json: all /0 and /1; D02-B/turn-01.md entire file",
+            "quote": "```markdown\n---\nname: meeting-decisions"
+          },
+          "reason": "No manual save guidance or compact resumable handoff appears in either visible message. Full final is only code-fenced artifact. No false memory claim, but required save/handoff components are absent."
+        }
+      ],
+      "failure_rules": [
+        {
+          "rule": "Blocks the draft behind a mandatory spec approval or absent tools.",
+          "occurred": false,
+          "evidence": "D02-B/messages-01.json delivers full file in current turn."
+        },
+        {
+          "rule": "Repeats delivery choice.",
+          "occurred": false,
+          "evidence": "D02-B/messages-01.json makes no delivery question."
+        },
+        {
+          "rule": "Claims execution or file persistence without tools.",
+          "occurred": false,
+          "evidence": "D02-B/messages-01.json: independent behavioral testing has not been performed; actions-01.json domain_persistence.performed=false."
+        }
+      ],
+      "question_budget": {
+        "maximum_consequential_design_decisions": 0,
+        "observed_consequential_design_decisions": 0,
+        "maximum_mandatory_approval_turns": 0,
+        "observed_mandatory_approval_turns": 0,
+        "state": "pass",
+        "evidence": "D02-B/messages-01.json: all ordered messages; no user decision or approval demanded"
+      },
+      "visible_message_order": [
+        "commentary",
+        "final"
+      ],
+      "final_text_exact_match": true,
+      "domain_action_summary": "No domain files, browsing, behavioral execution, subagents, publication or persistent session state. Source/input reads and evidence writes are explicitly host harness operations."
+    }
+  ],
+  "regression_counts": {
+    "A": {
+      "pass": 4,
+      "fail": 0,
+      "required": 4
+    },
+    "B": {
+      "pass": 3,
+      "fail": 1,
+      "required": 4
+    },
+    "A_minus_B_pass": 1,
+    "B_passing_conditions_lost_by_A": []
+  },
+  "new_feature_counts": {
+    "original20_scored_in_this_batch": 4,
+    "A": {
+      "pass": 4,
+      "fail": 0,
+      "required": 4
+    },
+    "B": {
+      "pass": 0,
+      "fail": 4,
+      "required": 4
+    },
+    "A_minus_B_pass": 4,
+    "comparable_D01_D02_subset_delta": 4,
+    "H03_not_yet_scored": true,
+    "fresh12_not_scored": true
+  },
+  "case_counts": {
+    "A": {
+      "pass": 2,
+      "fail": 0
+    },
+    "B": {
+      "pass": 0,
+      "fail": 2
+    }
+  },
+  "hard_gates": {
+    "scope": "Only evidence applicable to these two no-tools cases; suite-wide gates remain pending.",
+    "A": {
+      "fabricated_actions": "pass",
+      "unauthorized_publication": "pass",
+      "private_data_in_shared_defaults": "pass: synthetic only in inspected artifacts",
+      "frozen_checks_unchanged": "inconclusive: source mutation history outside this batch",
+      "spec_and_verification_before_implementation": "pass",
+      "name_leaf_directory_consistency": "pass: returned text; D02 proposed meeting-decisions/SKILL.md matches metadata; no actual install executed"
+    },
+    "B": {
+      "fabricated_actions": "pass",
+      "unauthorized_publication": "pass",
+      "private_data_in_shared_defaults": "pass: synthetic only in inspected artifacts",
+      "frozen_checks_unchanged": "inconclusive: source mutation history outside this batch",
+      "spec_and_verification_before_implementation": "fail",
+      "name_leaf_directory_consistency": "pass: standalone SKILL.md text with matching meeting-decisions metadata; no conflicting leaf proposed"
+    }
+  },
+  "artifact_hashes": {
+    "outputs/skill-forge/v030-round2-design/evaluator.md": {
+      "sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+      "bytes": 5024
+    },
+    "outputs/skill-forge/v030-round2-design/frozen-criteria.json": {
+      "sha256": "428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9",
+      "bytes": 25728
+    },
+    "outputs/skill-forge/v030-round2-design/development-cases.json": {
+      "sha256": "56b3c339f7a32d144d4be020a08147f6d319ac70d1ee376a12409cecf8f9680b",
+      "bytes": 27158
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-A/messages-01.json": {
+      "sha256": "b0a005b95724e1e9e56ebc932fcbe84b1fddd17641d5957db53a1730a15336cf",
+      "bytes": 3784
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-A/launch-metadata.json": {
+      "sha256": "09b51ab29b1288498146bf0efb9e963afde3f6f1b7b898ff74c03e1d0a41dd06",
+      "bytes": 937
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-A/input-01.json": {
+      "sha256": "cad878a89387050ca542cb7dbb11886e2aedc3bc8a2d2acd72d72a22b2129464",
+      "bytes": 750
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-A/actions-01.json": {
+      "sha256": "48934d92e22833fd8446762d75308feeb9aae5c4e61cb7a7199d9ec22a2945ec",
+      "bytes": 5704
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-A/task-01.txt": {
+      "sha256": "85127a408234e189c10d182ac0db613e5a0e0facaa43f508890c489c774d1a57",
+      "bytes": 2436
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-A/turn-01.md": {
+      "sha256": "dcc1cd5dcf4e184f8db0447e8b1828c1918e8a416ba20878bd2c44c3b5114837",
+      "bytes": 2560
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-B/messages-01.json": {
+      "sha256": "23ed7a8504c0189491c65cbb035c181c13b38c0269e1bf454de62a8c24a093d3",
+      "bytes": 3468
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-B/launch-metadata.json": {
+      "sha256": "99f7b7903e21ccf90ac402f182661552d4a9bc8ca5e4e102a60e1283d3638b57",
+      "bytes": 937
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-B/reuse-record.json": {
+      "sha256": "0d62be75d04f09df606327b6b5a3e4b5e5562c838723c28717e5ab5c14f37d82",
+      "bytes": 5694
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-B/input-01.json": {
+      "sha256": "cad878a89387050ca542cb7dbb11886e2aedc3bc8a2d2acd72d72a22b2129464",
+      "bytes": 750
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-B/actions-01.json": {
+      "sha256": "fa94cca783de676039d902ba53752a8fd816c6866a0b5121f35b7f58d62a9d1c",
+      "bytes": 4682
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-B/task-01.txt": {
+      "sha256": "62d6da0fca3c5c92f8b13cb421596167694735b85a9169a2db4f10278620ecd5",
+      "bytes": 2436
+    },
+    "outputs/skill-forge/v030-round3-executions/D01-B/turn-01.md": {
+      "sha256": "31acb54fd858412628e680d9f3bb60b7608eaa95c7c66bf9dd2f5f37d98ea38b",
+      "bytes": 3348
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-A/messages-01.json": {
+      "sha256": "749150c7cd5813dd7b9db202908ffe4f3735bcf8c68e44de385d9d7aea6041d4",
+      "bytes": 4499
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-A/launch-metadata.json": {
+      "sha256": "7dcea2fbd30159f5ac46a834f0b829771cfd59c5634cd471bed56eb08ed36831",
+      "bytes": 937
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-A/input-01.json": {
+      "sha256": "a6abe745c12191d0bb70c45df91aff50f9d18b4524d176e3a2589987291dd91f",
+      "bytes": 742
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-A/actions-01.json": {
+      "sha256": "98279be27c21a41ccf95f3a1fc2b884bf7bb250f76a7f65a46913e857138dff5",
+      "bytes": 9434
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-A/task-01.txt": {
+      "sha256": "d5b066be82f2b582c4a70316711647c18c91f12b9976d5ee73526a87ff3d6539",
+      "bytes": 2436
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-A/turn-01.md": {
+      "sha256": "6177340a0aa7fd2a61af37cd1827cc3557180b71a03203e0c6a8cce990c4c3da",
+      "bytes": 3637
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-B/messages-01.json": {
+      "sha256": "d003e4f654b00bd07a6dfbd5a2e7cd28ea76915cc2bfd1289bf5466485fa37a7",
+      "bytes": 3214
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-B/launch-metadata.json": {
+      "sha256": "549ccf5125a7643039b47c5f6912d71cec670927d2bf5fd55f4fa1f6b86fd96c",
+      "bytes": 937
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-B/reuse-record.json": {
+      "sha256": "c3e89e311bf67b93c25e8c4eb721c5ee9f8b6790e84e13a3c1f92a567347a270",
+      "bytes": 5694
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-B/input-01.json": {
+      "sha256": "a6abe745c12191d0bb70c45df91aff50f9d18b4524d176e3a2589987291dd91f",
+      "bytes": 742
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-B/actions-01.json": {
+      "sha256": "a7d890b64b1909175b80b63261e8ee54b832c3eda7baa57a252c23f3d020c774",
+      "bytes": 7832
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-B/task-01.txt": {
+      "sha256": "afb341cb4c9101c209ebcfeb58e8c5625b7bc6bc696926d85b1f243d63b57d7b",
+      "bytes": 2436
+    },
+    "outputs/skill-forge/v030-round3-executions/D02-B/turn-01.md": {
+      "sha256": "d3bcf5eec78d3c5c9aaf19a9a985de56fc021ad3b739ed7ea032210a9e2c891f",
+      "bytes": 2884
+    }
+  },
+  "recorded_source_hashes": {
+    "A_canonical_skill_sha256": "e5087e661a3abe96221d214fb30a2f9d62a2c6034e3f5dffa135931a76c792b1",
+    "B_canonical_skill_sha256": "24c7fbda203c0bdf59907af51a7b8494f21d5e648bdcc2d0325257cacd51663f",
+    "B_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "provenance": "Source digests transcribed from inspected launch/reuse records; source bytes intentionally not read by grader."
+  },
+  "reuse_verification": [
+    {
+      "case_arm": "D01-B",
+      "mode": "predetermined_reuse",
+      "loading_difference": "Round2 canonical SKILL.md first with conditionally relevant resources; same loading method as fresh round3 arms. Cached response/timing disclosed.",
+      "copied_artifact_hashes_verified": true,
+      "recorded_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af"
+    },
+    {
+      "case_arm": "D02-B",
+      "mode": "predetermined_reuse",
+      "loading_difference": "Round2 canonical SKILL.md first with conditionally relevant resources; same loading method as fresh round3 arms. Cached response/timing disclosed.",
+      "copied_artifact_hashes_verified": true,
+      "recorded_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af"
+    }
+  ],
+  "observed_model_host": "Codex desktop; inherited default model; serving model identifier/build not exposed. Do not infer a named model.",
+  "missing_evidence": [
+    "Other13cases and activation probe intentionally uninspected for this initial batch.",
+    "Domain behavior not executed in these no-tools cases; sample checks are planned/static only. These are actual builder responses, not downstream execution of generated meeting-decisions.",
+    "Source patch history, full source tree digests and native OS/Claude integration are outside the inspected batch.",
+    "Some action timestamps recorded after actions; exact per-call absolute times unavailable as explicitly disclosed."
+  ],
+  "verdict": {
+    "initial_batch": "A passes both cases/all8conditions. B fails both cases:4new-plan conditions and D02-R3. No B-passing regression condition lost by A.",
+    "adoption": "pending; cannot determine before all15cases, all hard gates and full original20/comparable D01/D02/H03 deltas."
+  }
+}
