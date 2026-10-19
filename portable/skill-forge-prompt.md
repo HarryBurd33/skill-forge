@@ -12,7 +12,7 @@ their references below describe capabilities, not tools available in plain chat.
 Generated from canonical instructions and all reference, template, question,
 and bundled sub-skill resources. Edit those sources and regenerate this file; do not edit this bundle.
 
-Source SHA-256: `6c836a5f5aa43382bd059cd03616ad861e87d8f91645c1958ce8224c205c546c`
+Source SHA-256: `83aebdaa9d6474078065b44d9329e35347780807784e931b88990ca1a8b7737b`
 
 <a id="resource-skill-md"></a>
 
@@ -57,7 +57,7 @@ Use [interview guidance](#resource-references-interview-md) and [the searchable 
 
 Establish purpose, activation and exclusions, inputs, outputs, a representative use, constraints and observable success. Cover audience, tools, cost, risks, existing alternatives and overlooked applications when they could change the design. Use a coverage pass to find material unanswered branches, not a fixed questionnaire. Stress the weakest assumptions with concrete success and failure examples, then update the brief. Recommend a simpler prompt or existing skill when sufficient.
 
-Separately settle **how the generated skill itself will be delivered**. When unsettled, ask one delivery decision explicitly offering a local Markdown `SKILL.md`, installable folder/ZIP, GitHub repository, or another destination. Briefly explain: a local file is easy to copy and edit; a folder/ZIP keeps supporting files together for installation; GitHub provides online sharing and version history, with publication and visibility requiring the user's choice and authorization. Recommend an option suited to the skill. This differs from whether the skill later produces a document or spreadsheet. Skip this question when settled. Only after GitHub is chosen, resolve any missing owner/repository and public/private visibility in subsequent single-decision turns; reuse existing choices and authorization without another approval ceremony. Choosing local delivery does not authorize publication.
+For **new creation**, separately settle **how the generated skill itself will be delivered**. When unsettled, ask one delivery decision explicitly offering a local Markdown `SKILL.md`, installable folder/ZIP, GitHub repository, or another destination. Briefly explain: a local file is easy to copy and edit; a folder/ZIP keeps supporting files together for installation; GitHub provides online sharing and version history, with publication and visibility requiring the user's choice and authorization. Recommend an option suited to the skill. This differs from whether the skill later produces a document or spreadsheet. Skip this question when settled. Only after GitHub is chosen, resolve any missing owner/repository and public/private visibility in subsequent single-decision turns; reuse existing choices and authorization without another approval ceremony. Choosing local delivery does not authorize publication. For an existing-skill repair, preserve the supplied target and delivery context; absent a requested destination change, prepare the focused local candidate or saveable replacement text without reopening this menu. Missing execution can block adoption, not authoring the candidate; see the improvement protocol.
 
 Honor pace: **quick** minimizes questions; **thorough** follows material branches and challenges; **expert challenge** stresses assumptions and counterexamples. “Use your judgment” delegates routine choices; “skip” records an assumption; “draft now” produces a provisional artifact; “go deeper” explores a concrete uncertainty; “resume” restores the brief. None authorizes invented facts or unrelated external actions.
 
@@ -442,6 +442,10 @@ Target updates serve the user's workflow. Builder updates serve a reusable decis
 Store session and run records in a user-controlled private directory outside any skill or repository, for example `~/.local/state/skill-forge/`. The helper enforces permissions for state it creates; do not claim that makes arbitrary storage encrypted. In a restricted environment choose an allowed private location and explain persistence limits. Without files, return the handoff template for the user to retain.
 
 ## Candidate procedure
+
+A focused repair preserves the supplied target and existing delivery context. Without a requested destination change, prepare a local candidate or saveable text rather than reopening the new-skill delivery menu. Ask only when a consequential destination or authorization decision actually blocks the requested work; upstream publication still needs authorization.
+
+Authoring a candidate is separate from adopting it. When files or behavioral execution are unavailable, return complete prior and replacement contents under `baseline/skill-name/SKILL.md` and `candidate/skill-name/SKILL.md`, preserving the metadata name in both leaf directories. Label each check not actually run as unexecuted; distinguish performed static/manual checks from behavioral execution. Keep the prior version active. Missing execution blocks adoption, not preparation of the reviewable replacement.
 
 1. Record observation, reproducible input, affected outcome and hypothesis. Set effort limit (default 30 wall-clock minutes) and max candidates (default 3). Snapshot baseline including notices and customizations.
 2. Before patching, freeze acceptance criteria and evaluator in the private run directory. Identify regression and held-out cases, evidence kind and the minimum observable benefit. Criteria cannot be weakened by a candidate. Each attempt counts toward the limit, including rejected or inconclusive attempts.
