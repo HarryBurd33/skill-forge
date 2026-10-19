@@ -11,11 +11,11 @@ The core is Markdown/JSON text with no OS-specific executable. Optional Python h
 | Surface | Evidence status | Boundary |
 | --- | --- | --- |
 | Agent Skills format | Supported by [the specification](https://agentskills.io/specification); repository validators check structure | Valid format does not prove behavior. |
-| Codex installation/discovery | Supported by [official docs](https://learn.chatgpt.com/docs/build-skills); personal Skill Forge and nested Finder appeared in this development host's skill catalog | Native selector UI, project discovery and each OS combination require their own checks. Installation is local, not account-wide. |
-| Codex model behavior | Real evidence is release-specific; [v0.2.0 report](../evals/v0.2.0/REPORT.md) retains earlier results | A requested model role does not establish the executing model/build. Use recorded environment details. |
+| Codex installation/discovery | Supported by [official docs](https://learn.chatgpt.com/docs/build-skills); personal installation appears in the desktop catalog; native Codex CLI 0.163.0-alpha.10.2 discovered the v0.3.0 project copy and produced a plan/draft | Selector UI and native Codex execution on Windows/Linux remain separate, unverified integrations. Installation is local, not account-wide. |
+| Codex model behavior | Real evidence is release-specific; [v0.3.0 report](../evals/v0.3.0/REPORT.md) records the current comparison and native smoke check, and earlier reports retain previous results | A requested model role does not establish the executing model/build. Use recorded environment details. |
 | Claude Code | Local paths/invocation supported by [official docs](https://code.claude.com/docs/en/skills); native execution unverified here | Helper success does not establish a Claude model run; personal local installation does not automatically reach cloud/Cowork. |
 | Portable prompt | Generated from canonical files; resource completeness/drift checks are available | Use a capable model; no universal performance promise. See [other LLMs](other-llms.md). |
-| Python helpers across OSes | Prior evidence records macOS development execution; Windows/Linux/macOS CI is configured for Python 3.9 and 3.13 | Configuration is not a passed check. Release evidence must identify actual completed jobs, OS/CPU and runtime. Native LLM execution is separate. |
+| Python helpers across OSes | [Six hosted jobs passed](https://github.com/HarryBurd33/skill-forge/actions/runs/39172698041) for Windows and Ubuntu on Python 3.9/3.13, Intel macOS on 3.9 and ARM macOS on 3.13 | These are actual helper, packaging and temporary-install checks. Native LLM execution is separate; other OS/CPU/Python combinations need their own evidence. |
 | Other OS, CPU or models | Unverified unless release evidence explicitly records them | Test a representative workflow before relying on a combination. |
 
 Host documentation was rechecked on **2026-10-18**. [Codex](codex.md) and [Claude Code](claude-code.md) guides cover personal/project install, invocation, updates and removal. One local copy does not install on every device or grant another account access.
@@ -36,3 +36,9 @@ Host documentation was rechecked on **2026-10-18**. [Codex](codex.md) and [Claud
 Before building, Skill Forge shows its implementation spec and plans checks. Users can request a review pause; otherwise authorized work continues. Workers cannot bypass that boundary or expand publication permission. Tool, account and platform restrictions still apply.
 
 Improvement persists through revised files and explicit evidence/session records, not model retraining or guaranteed memory across chats. A helper verifies hashes, snapshots and evidence structure; it cannot prove an evaluator truthful or infer quality from formatting alone. Failed, inconclusive or unavailable required checks leave the prior version active. Keep private preferences and raw transcripts outside public source. Installation creates no background automation.
+
+## Actual hosted runtime samples — 2026-10-18
+
+Visible job logs record Windows build 10.0.26100 on AMD64/Python 3.9.13; Linux 6.17 x86_64/Python 3.13.16; macOS 15.7.9 x86_64/Python 3.9.25; and macOS 26.6.2 arm64/Python 3.13.16. The six-cell job results include the second Windows/Linux Python versions. These observations establish those helper executions, not every operating-system version or native Claude/model combination.
+
+On POSIX, the helper requests owner-only state-directory mode. On Windows, directory access inherits Windows ACLs; `chmod(0700)` is not an ACL privacy guarantee. Keep private state under your user profile outside repositories and use an appropriately private parent directory.
