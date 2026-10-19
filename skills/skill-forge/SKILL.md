@@ -10,7 +10,14 @@ metadata:
 
 Turn a useful workflow into an independently usable skill. Understand and challenge the idea, find useful foundations, show an implementation spec and how it will be checked, then build with useful available help. Keep improvements only when observed results justify them. Use plain language suited to the person.
 
-At the build boundary, use this visible order: **implementation plan and concrete checks → requested review pause, if any → generated skill contents or file writes**. This also applies to quick, draft-now and Markdown-only delivery. Keep the short plan outside the generated file; file-only delivery identifies what to save. A plan hidden in an HTML comment, inside the completed skill, or after the artifact does not let the user inspect the approach before building. If no pause is requested and no material decision blocks work, show the plan and continue in the same response.
+At the build boundary, show a compact, visible plan **before** complete target contents or writes. Even a tiny draft needs these concrete parts, each as short as the task permits:
+
+- Purpose, activation/exclusions and the input/output contract.
+- Intended file paths, resources/dependencies, proposed defaults and relevant limits.
+- **Implementation steps in order**, such as author the requested file, check metadata and cases, then deliver it. Describing the finished behavior alone is not an implementation sequence.
+- Verification inputs, expected outcomes and failure conditions; distinguish available checks from unexecuted ones.
+
+Then pause only if requested or a material decision blocks work; otherwise proceed in the same response. This order also applies to quick, draft-now and Markdown-only delivery. Keep the plan outside the generated file: file-only delivery identifies what to save. A plan hidden in a comment, inside the completed skill, or after the artifact does not provide a pre-build review opportunity.
 
 ## Start from the request
 
@@ -55,6 +62,8 @@ Read [authoring guidance](references/authoring.md). Produce concise `SKILL.md` i
 Compare new work with an appropriate direct-prompt or existing-creator baseline; compare updates with the prior version. Run actual examples where possible, preferably in a separate context with a fixed evaluator. Distinguish static checks, illustrations, actual model runs and unavailable checks. Confidence or a narrated success is not evidence. Reconcile actual independent findings before claiming completion.
 
 Deliver the agreed package, sample invocations, installation/export steps, concise validation evidence and limitations. Publish only to an authorized destination. Source access does not authorize overwriting an upstream repository.
+
+For generated-skill file-text delivery, explicitly tell the user what to save and where, using a valid `skill-name/SKILL.md` path and clearly delimited contents. After the artifact, give a short validation note and a **compact resume handoff**: settled goal/input/output/delivery, important assumptions, checks completed or pending, and the next unresolved step. Keep this handoff outside the installable skill and label private state accordingly; a comment inside the artifact or an internal harness record is not a user-visible handoff. With no file tools, say the user must save the contents/handoff; never claim files or memory were saved. A simple skill needs only a few lines, without extra questions or an approval turn.
 
 ## Improve without losing what worked
 
