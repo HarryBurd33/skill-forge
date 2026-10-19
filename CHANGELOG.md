@@ -1,11 +1,12 @@
 # Changelog
 
-## 0.3.0 — 2026-10-18
+## 0.3.0 — 2026-10-19
 
 - Add conversation/project intake that preserves final corrections, reports source coverage, and keeps private context out of shared skills.
 - Present an implementation spec and observable verification plan before building. Offer an optional review pause and preserve explicit review-first requests on resume.
 - Automatically use useful available construction, resource and independent review/evaluation subagents with bounded tasks and clear ownership.
 - Strengthen comprehensive adaptive interviewing, explicit implementation assumptions, and metadata-consistent version folders.
+- Keep plans visible before file contents, state implementation steps, and include manual-save instructions plus a private resume handoff for text-only delivery.
 - Add Windows PowerShell/manual setup and other-LLM instructions, cross-platform helper fixes and Windows/Linux/macOS CI. Tested configurations and unavailable native hosts are reported separately.
 - Preserve prior release evidence; record the new comparison and exact historical regression rechecks in the v0.3.0 evaluation report.
 
