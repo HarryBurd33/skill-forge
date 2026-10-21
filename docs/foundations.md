@@ -43,3 +43,13 @@ Dependency-aware interviewing remains useful, but a long questionnaire is not a 
 Current [Codex subagent guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents) supports delegation requested by applicable skill instructions; [Claude Code subagent guidance](https://code.claude.com/docs/en/sub-agents) describes separate worker contexts and task matching. Adapt the idea into bounded useful research, implementation, review or evaluation tasks, with separate write ownership and a parent responsible for integration. Do not require permanent custom-agent files or host-specific calls in the common skill. A missing launch tool requires direct work and an honest limitation, not imagined delegation.
 
 The earlier pinned grilling and creator records remain the conceptual foundation; no upstream prose, code, templates or assets were copied. Hugging Face was skipped for this update because no model, dataset or hosted resource materially improves an instruction workflow and optional standard-library helpers. The portable prompt and [other-LLM guide](other-llms.md) offer the same core workflow with explicit file, browsing, execution, persistence and publication limits.
+
+## Combining Skill Forge with Codex’s skill creator
+
+Skill Forge can manage the interview, implementation spec, evidence and reversible update. Codex’s built-in skill creator supplies host-specific authoring guidance and an independent forward-testing approach. They can be used together on the same working files; neither needs to wrap or replace the other. For example:
+
+> Use Skill Forge to refine this workflow and show its spec. Then use Codex’s skill creator to review the generated skill’s instructions and resources. Compare the revision against the prior version using the fixed Skill Forge checks.
+
+Improvements to the generated skill and to Skill Forge are separate candidates with separate evidence. Keep generalizable lessons in Forge and personal choices in private configuration. A useful review can also produce a proposed improvement for the built-in creator, but editing a vendor-managed cache is not a durable upstream update. Preserve a local patch or contribution; publishing to someone else’s repository needs appropriate authorization and access. The installed creator was inspected locally during this maintenance; its capabilities can evolve beyond the pinned research version described above.
+
+Core setup and discovery pages were rechecked on2026-10-21; exact URLs and scope are recorded in the source ledger. These checks support the guides, not equivalent performance across models or native-host tests.

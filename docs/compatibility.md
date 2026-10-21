@@ -15,10 +15,10 @@ The core is Markdown/JSON text with no OS-specific executable. Optional Python h
 | Codex model behavior | Real evidence is release-specific; [v0.3.0 report](../evals/v0.3.0/REPORT.md) records the current comparison and native smoke check, and earlier reports retain previous results | A requested model role does not establish the executing model/build. Use recorded environment details. |
 | Claude Code | Local paths/invocation supported by [official docs](https://code.claude.com/docs/en/skills); native execution unverified here | Helper success does not establish a Claude model run; personal local installation does not automatically reach cloud/Cowork. |
 | Portable prompt | Generated from canonical files; resource completeness/drift checks are available | Use a capable model; no universal performance promise. See [other LLMs](other-llms.md). |
-| Python helpers across OSes | [Six hosted jobs passed](https://github.com/HarryBurd33/skill-forge/actions/runs/39302710484) for Windows and Ubuntu on Python 3.9/3.13, Intel macOS on 3.9 and ARM macOS on 3.13 | These are actual helper, packaging and temporary-install checks. Native LLM execution is separate; other OS/CPU/Python combinations need their own evidence. |
+| Python helpers across OSes | [Six hosted jobs passed](https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465) for Windows and Ubuntu on Python 3.9/3.13, Intel macOS on 3.9 and ARM macOS on 3.13 | These are actual helper, packaging and temporary-install checks. Native LLM execution is separate; other OS/CPU/Python combinations need their own evidence. |
 | Other OS, CPU or models | Unverified unless release evidence explicitly records them | Test a representative workflow before relying on a combination. |
 
-Host documentation was rechecked on **2026-10-18**. [Codex](codex.md) and [Claude Code](claude-code.md) guides cover personal/project install, invocation, updates and removal. One local copy does not install on every device or grant another account access.
+Core installation/discovery documentation was rechecked on **2026-10-21**. [Codex](codex.md) and [Claude Code](claude-code.md) guides cover personal/project install, invocation, updates and removal. One local copy does not install on every device or grant another account access.
 
 ## Capabilities are separate from installation
 

@@ -85,4 +85,4 @@ Use your project path for project scope. Claude watches established skill direct
 
 The common skill requires no Claude-specific substitutions, shell injection, hooks or permission declarations. Installation grants no browsing, file, execution, subagent or GitHub access. The nested [Skill Finder](skill-finder.md) is included with direct-work/no-tools fallbacks. Useful build/review delegation also depends on an available launch tool.
 
-Improve a writable local source rather than vendor-managed or account-synced caches. See [compatibility](compatibility.md) and [other capable LLMs](other-llms.md). Setup references were checked on **2026-10-18**.
+Improve a writable local source rather than vendor-managed or account-synced caches. See [compatibility](compatibility.md) and [other capable LLMs](other-llms.md). Setup references were checked on **2026-10-21**.

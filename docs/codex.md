@@ -94,4 +94,4 @@ For project scope move that project's installation instead. Start a new Codex ch
 
 Installation does not grant file, network, execution, subagent or publication access. The nested [Skill Finder](skill-finder.md) needs no second installation; independent discovery of its nested directory is not assumed. Without a launch tool the parent works directly and says so; without browsing it uses supplied material and marks external research unavailable.
 
-Host setup and paths were checked against official documentation on **2026-10-18**. Executed behavior and helper evidence are recorded separately in [compatibility](compatibility.md).
+Host setup and paths were checked against official documentation on **2026-10-21**. Executed behavior and helper evidence are recorded separately in [compatibility](compatibility.md).
