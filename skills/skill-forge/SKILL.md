@@ -12,8 +12,8 @@ Turn a useful workflow into an independently usable skill. Understand and challe
 
 At the build boundary, show a compact, visible plan **before** complete target contents or writes. Even a tiny draft needs these concrete parts, each as short as the task permits:
 
-- Purpose, activation/exclusions and the input/output contract.
-- Intended file paths, resources/dependencies, proposed defaults and relevant limits.
+- Purpose, activation/exclusions, current input/output rules, and material constraints and final corrections.
+- Intended file paths, resources/dependencies, proposed defaults, relevant limits, privacy and skill delivery.
 - **Implementation steps in order**, such as author the requested file, check metadata and cases, then deliver it. Describing the finished behavior alone is not an implementation sequence.
 - Verification inputs, expected outcomes and failure conditions; distinguish available checks from unexecuted ones.
 
@@ -41,6 +41,8 @@ For **new creation**, separately settle **how the generated skill itself will be
 
 Honor pace: **quick** minimizes questions; **thorough** follows material branches and challenges; **expert challenge** stresses assumptions and counterexamples. “Use your judgment” delegates routine choices; “skip” records an assumption; “draft now” produces a provisional artifact; “go deeper” explores a concrete uncertainty; “resume” restores the brief. None authorizes invented facts or unrelated external actions.
 
+Honor “draft now” through the end of the response: if the skill's delivery is still unsettled, return provisional saveable text and record that choice as pending without appending a delivery decision or approval question. Resolve it when the user resumes finalization. Do not turn a one-off reusable-prompt request into a required skill-packaging interview; offer an installable form only when useful. Settled delivery and existing-skill repair context remain settled.
+
 Aim for the most useful refinement within the user's pace and effort limits. Continue while another answer, challenge or example could materially change the skill or its acceptance checks. Stop at material closure or the user's draft/stop instruction, not an impossible claim of absolute perfection. Show the ready brief and spec for correction. Review pauses are optional; preserve an explicit request to review first without adding approvals to already-authorized work.
 
 ## Find foundations, build and check
@@ -51,9 +53,11 @@ Before target implementation, present a readable [implementation spec](reference
 
 Work out verification **before building**: concrete input, expected outcome and failure conditions, activation/non-activation, a representative failure, relevant regressions, baseline, evaluator, tools and unavailable checks. Then freeze the candidate's acceptance checks before evaluation. Use [evaluation guidance](references/evaluation.md). A promise to “test later” is insufficient. Planned checks are not passed checks.
 
+Make a compact coverage map from material confirmed requirements and supplied acceptance examples to observable checks. Carry supplied inputs and expected outcomes into the plan unchanged; extra or simpler examples supplement them, never replace them. Where the contract distinguishes missing values from valid zero/empty values or depends on order, include inputs that expose those differences. For each supporting resource that controls behavior, plan an independent inspection or use against the final contract, including stale or conflicting instructions; agreement between files or a working link alone does not establish correct behavior. Fill coverage gaps from settled context before asking another question.
+
 For a material correction, name the superseded and final behavior in the pre-build checks. Include an input and expected result that would fail if the old output contract or discarded assumption returned; a generic “check accuracy” cannot establish that a correction survived.
 
-Offer the user a chance to edit the spec or request a pause. **Wait when the user says review first, spec only, pause or equivalent**, and retain that state when resuming. Otherwise proceed with authorized implementation without demanding approval. “Draft now” or “build now” allows a compact spec/check plan followed by the artifact in the same response; it does not authorize invented requirements or publication. Incorporate corrections into the spec and affected checks before building. If supplied context already contains an approved/current spec, reuse it and summarize the applicable checks rather than re-interviewing.
+Offer the user a chance to edit the spec or request a pause. **Wait when the user says review first, spec only, pause or equivalent**, and retain that state when resuming. Otherwise proceed with authorized implementation without demanding approval. “Draft now” or “build now” allows a compact spec/check plan followed by the artifact in the same response; it does not authorize invented requirements or publication. Incorporate corrections into the spec and affected checks before building. If supplied context already contains an approved/current spec, reuse settled decisions without re-interviewing or renewed approval, but still show the substantive current contract and applicable checks before target artifacts. An approval label or pointer to files is insufficient.
 
 Use [delegation guidance](references/delegation.md) to **automatically launch useful available subagents** for construction, separable resources, independent review or evaluation. When construction delegation is useful or explicitly requested, assign a worker a named implementation deliverable before implementing that portion yourself, then inspect and integrate its actual return. Research or tests of an already completed artifact do not count as construction. Bound effort and workers, assign nonoverlapping write scopes, wait for results and integrate them. Do simple work directly when delegation adds no value, unless construction delegation is explicitly required by the user or agreed checks; disclose missing launch capability rather than claiming imaginary agents. The parent owns the final requirements, artifacts and evidence.
 
@@ -63,7 +67,7 @@ Compare new work with an appropriate direct-prompt or existing-creator baseline;
 
 Deliver the agreed package, sample invocations, installation/export steps, concise validation evidence and limitations. Publish only to an authorized destination. Source access does not authorize overwriting an upstream repository.
 
-For generated-skill file-text delivery, explicitly tell the user what to save and where, using a valid `skill-name/SKILL.md` path and clearly delimited contents. After the artifact, give a short validation note and a **compact resume handoff**: settled goal/input/output/delivery, important assumptions, checks completed or pending, and the next unresolved step. Keep this handoff outside the installable skill and label private state accordingly; a comment inside the artifact or an internal harness record is not a user-visible handoff. With no file tools, say the user must save the contents/handoff; never claim files or memory were saved. A simple skill needs only a few lines, without extra questions or an approval turn.
+For generated-skill file-text delivery, explicitly tell the user what to save and where, using a valid `skill-name/SKILL.md` path and clearly delimited contents. After the artifact, give a short validation note and a **compact resume handoff**: settled goal/input/output/delivery, material constraints and final corrections, important assumptions, checks completed or pending, and the next unresolved step. State decisions and corrections concretely; an “approved spec” label or pointer to files not carried forward is insufficient. Keep this handoff outside the installable skill and label private state accordingly; a comment inside the artifact or an internal harness record is not a user-visible handoff. With no file tools, say the user must save the contents/handoff; never claim files or memory were saved. A simple skill needs only a few lines, without extra questions or an approval turn.
 
 ## Improve without losing what worked
 
