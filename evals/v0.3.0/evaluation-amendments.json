@@ -1,5 +1,5 @@
 {
-  "scope": "Administrative limits and test-isolation amendments; behavioral acceptance criteria and evaluator remain unchanged. Raw private authorization messages are not published.",
+  "scope": "Administrative effort/candidate limits and protocol-isolation amendments, plus additive independently frozen heldouts. Every original condition and evaluator remains unchanged; raw private authorization messages are not published.",
   "criteria_sha256": "428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9",
   "evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
   "candidate_limit": {
@@ -10,7 +10,7 @@
     "quota_waits_excluded": true,
     "fourth_gate_created_utc": "2026-10-19T18:23:52.244092Z",
     "fourth_gate_deadline_utc": "2026-10-19T19:53:52.244092Z",
-    "no_fifth_candidate_authorized": true
+    "no_fifth_candidate_authorized_in_fourth_run": true
   },
   "protocol_retry": {
     "case": "D05",
@@ -25,5 +25,232 @@
     "selection": "Use the entire replacement pair regardless of outcome; no ordinary behavior failure was retried to select a favorable response.",
     "amendment_sha256": "27453cd57e4915a298df27592197d74700275a25faa84759fd754b3b691b4703"
   },
-  "native_smoke": "Initial sandbox initialization failed before model output. One exact-source invocation ran after explicit authorization for normal installed CLI state/network access. Native review claims without action records receive no credit."
+  "native_smoke": "Initial sandbox initialization failed before model output. One exact-source invocation ran after explicit authorization for normal installed CLI state/network access. Native review claims without action records receive no credit.",
+  "focused_repair_run": {
+    "authorized_global_candidate_numbers": [
+      5,
+      6
+    ],
+    "authorized_additional_candidates": 2,
+    "effort_minutes": 90,
+    "quota_waits_excluded": true,
+    "reason": "After candidate4 failed the existing text-only repair regression, the project owner authorized a focused repair run, keeping every acceptance check and the current model unchanged.",
+    "candidate5_source_sha256": "18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb",
+    "initial_gate_created_utc": "2026-10-19T18:55:32.095722Z",
+    "initial_gate_submissions": 0,
+    "quota_interruption": "The first D06 actor stopped at the usage limit before any response. Its error and empty response record were retained. One preregistered fresh restart of this arm reused the existing baseline; no behavioral output was retried.",
+    "resume": "The unused gate expired during the owner-authorized quota wait. A new gate reserved10minutes for pre-wait work, leaving80minutes. No timestamp was backdated and source, criteria, evaluator and candidate cap remained unchanged.",
+    "resumed_gate_created_utc": "2026-10-19T23:45:37.692713Z",
+    "resumed_gate_deadline_utc": "2026-10-20T01:05:37.692713Z",
+    "second_quota_resume": {
+      "actual_block": "Coordinator and two active actors reported usage-limit errors. Completed responses retained without replay.",
+      "conservative_active_minutes_charged": 60,
+      "remaining_active_minutes": 30,
+      "resumed_control_created_utc": "2026-10-20T04:46:16.756264Z",
+      "resumed_control_deadline_utc": "2026-10-20T05:16:16.756264Z",
+      "no_backdating_extra_patch_or_model_change": true,
+      "continuation": "D03 had saved its final before the interruption; its same-context completion returned the identical final after reset. D04 resumed its pending initial turn without a saved response."
+    },
+    "active_effort_extension": {
+      "owner_authorized_additional_active_minutes": 45,
+      "total_active_minutes_authorized": 135,
+      "recorded_at_utc": "2026-10-20T05:03:04.080546Z",
+      "current_control_created_utc": "2026-10-20T05:03:04.104729Z",
+      "current_control_deadline_utc": "2026-10-20T06:01:04.104729Z",
+      "accounting": "45minutes plus floor of13.211remaining from prior zero-submission control. Fractional minute conservatively reserved for registration. Actual timestamps; no backdating.",
+      "unchanged": "Same inherited model, all acceptance checks/evaluator, predetermined baseline policy, maximum global candidate6, no ordinary behavior retries, quota waits excluded.",
+      "new_source_patch": false
+    },
+    "third_quota_resume": {
+      "registered_at_utc": "2026-10-20T15:35:36.575605+00:00",
+      "basis": "Owner authorized keeping current model, waiting for quota resets, and45additional active minutes, total135, global maximum candidate6. Existing coordinator and grader actually reported usage-limit errors.",
+      "previous_control": "run-1b6b5f54bae9",
+      "previous_control_rounds": 0,
+      "previous_control_minutes": 58,
+      "conservatively_charged_active_minutes_before_wait": 15,
+      "resume_housekeeping_minutes_charged": 2,
+      "remaining_active_minutes": 41,
+      "new_control": "run-158270c90192",
+      "new_created_utc": "2026-10-20T15:35:36.650752+00:00",
+      "new_deadline_utc": "2026-10-20T16:16:36.650752+00:00",
+      "no_backdating": true,
+      "source_A_sha256": "18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb",
+      "source_B_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+      "criteria_sha256": "428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9",
+      "evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+      "source_patch": false,
+      "global_candidate_cap": 6,
+      "current_candidate": 5,
+      "model_policy": "Same inherited current model, no override/reset/spending/automation. Ordinary usage currently allowed.",
+      "grading_continuation": "Prior batch04 grader reported preliminary H02/H03/J01A12of12, then quota errored before saving final grade. No pass credited solely from preliminary message. A new independent context will grade the same preserved actual artifacts under fixed checks; no model behavior rerun.",
+      "execution_continuation": "Prior agent graph unavailable after wait. Neutral coordinator must inspect existing exact saved/native evidence and register any necessary administrative continuation before new output. Never overwrite or replay a completed behavioral response. For interrupted pending turns only, restore the same case and arm with exact saved prior context, current input, frozen source and allowed tools, withholding future turns and all criteria/answers. Record graph-loss/context-restoration limitation. If a completed final exists only in files, verify native provenance before returning identical saved final for administrative completion; never invent a past ended event.",
+      "heldout_policy": "J cases consumed. Any source6 patch requires new independent heldouts before patch while every original check stays required."
+    }
+  },
+  "candidate5_capture_protocol_retry": {
+    "registered_before_new_output": true,
+    "registered_at_utc": "2026-10-20T00:31:48Z",
+    "original_pair": [
+      "D05-A",
+      "D05-B"
+    ],
+    "replacement_pair": [
+      "D05-capture1-A",
+      "D05-capture1-B"
+    ],
+    "basis": "Frozen execution protocol sections5and6 require raw child tasks/returns. Original action records summarized assignments; native task payloads were opaque encrypted. Actual construction and evaluation were evidenced, but eligibility remained inconclusive.",
+    "clarification": "Save exact full plaintext child assignments before launch and full actual returned messages afterward, with hashes/timestamps. Same input, source, envelope, five-minute/two-child bounds and evaluator; no role or answer coaching.",
+    "selection": "Entire replacement pair selected prospectively regardless of outcome. Original pair and grades retained as diagnostic evidence. No ordinary behavior failure retried.",
+    "source_patch": false
+  },
+  "candidate5_actual_outcome": {
+    "source_sha256": "18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb",
+    "candidate_passes": 58,
+    "baseline_passes": 44,
+    "conditions_per_arm": 60,
+    "original48_candidate_passes": 48,
+    "original48_baseline_passes": 36,
+    "failures": [
+      "J03-N1",
+      "J03-R2"
+    ],
+    "baseline_passing_regression_loss": [
+      "J03-R2"
+    ],
+    "gate_status": "rejected",
+    "prior_active_source_retained": true,
+    "grade_file": "round5-grades.json"
+  },
+  "candidate6_additive_holdout_extension": {
+    "frozen_before_patch_utc": "2026-10-20T15:54:37.572414Z",
+    "source_sha256": "b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee",
+    "fixture_sha256": "ec55d11bb526e4f6898109dd361a930f15411d1ca213fc030b154102dfa646b9",
+    "criteria_sha256": "f50393e41ff2052488e576fdfc8ac2495aef87c67b46e5a6fda70ec00f887dc8",
+    "cases": [
+      "K01",
+      "K02",
+      "K03"
+    ],
+    "new_required_conditions": 12,
+    "original_required_conditions_preserved": 60,
+    "total_cases": 18,
+    "total_conditions_per_arm": 72,
+    "benefit_policy": "Only original20 new-feature conditions count; J/K additions cannot inflate benefit. All original and added checks plus separate activation remain mandatory.",
+    "execution_policy": "All18candidate arms and3Kbaseline arms fresh; all15otherbaseline records selected before output regardless of score. Actual protocol interruptions retained; no ordinary behavior retry.",
+    "source_frozen_no_further_revision": true,
+    "actual_selected_after_quota_pair_retry": "22fresh records and14predetermined Bcaches; the prospectively registered entireD05pair replaced its onecachedcounterpart. Actorresponses never retried for ordinarybehaviorfailure."
+  },
+  "candidate6_final_testing_extension": {
+    "registered_at_utc": "2026-10-20T16:02:31.256507+00:00",
+    "authorization": "Owner explicitly chose Finish the final tests, granting up to60additional active minutes for written final candidate6, same model/checks, no further source revision. Raw private reply not copied into public source.",
+    "additional_active_minutes": 60,
+    "total_active_minutes_authorized": 195,
+    "global_final_candidate": 6,
+    "no_further_source_revision": true,
+    "frozen_source6_sha256": "b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee",
+    "old_control": "run-43e4db2fb3bf",
+    "old_zero_submissions": true,
+    "old_deadline_utc": "2026-10-20T16:16:29.183491+00:00",
+    "prior_minutes_remaining": 13.965449733333333,
+    "new_effort_minutes": 73,
+    "new_control": "run-f2c5cea96ebd",
+    "new_created_utc": "2026-10-20T16:02:31.296927+00:00",
+    "new_deadline_utc": "2026-10-20T17:15:31.296927+00:00",
+    "max_rounds": 1,
+    "criteria_sha256": "f50393e41ff2052488e576fdfc8ac2495aef87c67b46e5a6fda70ec00f887dc8",
+    "evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "baseline_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "accounting": "60minutes plus floor of prior remaining minutes. Actual current timestamps; fractional minute conservatively reserved; no backdating, new source patch or cap reset.",
+    "unchanged": "All original60conditions plus12freshK; original20benefit only, all regressions, activation separately, current inherited model/no override/reset/spending, quota waits excluded.",
+    "publication": "Existing authorized destination after actual passing gate; separate bounded publication phase."
+  },
+  "candidate6_quota_resume": {
+    "registered_at_utc": "2026-10-20T20:36:01.762063+00:00",
+    "basis": "Actual usage-limit errors in coordinator, D05 actor and constructor. Owner already authorized waiting for quota resets using unchanged model; no source revision or additional total effort authorized.",
+    "previous_control": "run-f2c5cea96ebd",
+    "previous_control_rounds": 0,
+    "previous_control_minutes": 73,
+    "conservatively_charged_prior_active_minutes": 15,
+    "resume_housekeeping_minutes_charged": 3,
+    "remaining_active_minutes": 55,
+    "new_control": "run-9bc00790de95",
+    "new_created_utc": "2026-10-20T20:36:01.761042+00:00",
+    "new_deadline_utc": "2026-10-20T21:31:01.761042+00:00",
+    "candidate": 6,
+    "maximum_global_candidate": 6,
+    "no_further_source_revision": true,
+    "candidate_source_sha256": "b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee",
+    "baseline_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "criteria_sha256": "f50393e41ff2052488e576fdfc8ac2495aef87c67b46e5a6fda70ec00f887dc8",
+    "evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "preservation": "J03 complete and graded; never replay. D05 stopped before a response/child return, fixed host window elapsed during quota wait; retain interrupted records. Any paired protocol retry must be registered before new output and selected regardless of outcome.",
+    "model_policy": "Inherited model retained; no overrides, resets, spending or automation. Ordinary usage now allowed.",
+    "accounting": "Original73 minutes minus15 charged pre-wait and3 resume housekeeping =55. Actual new timestamps, no backdating; quota wait excluded."
+  },
+  "candidate6_quota_paired_retry": {
+    "registered_at_utc": "2026-10-20T20:36:31.183761+00:00",
+    "basis": "Frozen execution-protocol section6 quota interruption and expired D05host window; explicit root instruction before any new output.",
+    "source_unchanged": true,
+    "case_input_unchanged": true,
+    "checks_unchanged": true,
+    "candidate_sha256": "b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee",
+    "baseline_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "retries_allowed": 1,
+    "replacement_pair": [
+      "D05-quota1-A",
+      "D05-quota1-B"
+    ],
+    "selection": "Use entire fresh retry pair regardless of output/outcome. Original interrupted D05-A diagnostic/inconclusive and original cached D05-B retained historically but excluded from selected pair. No favorable output selection or ordinary behavior retry.",
+    "envelope": "Fresh forknone A and B, each alone with descendant slot,5minutes/max2children/no browsing/external writes, same frozen-source-only boundary.",
+    "new_output_seen_before_registration": false,
+    "old_actor_restarted": false
+  },
+  "candidate6_second_quota_resume": {
+    "registered_at_utc": "2026-10-21T01:40:44.453587+00:00",
+    "basis": "Actual usage-limit errors in coordinator and pending K02-A actor. Owner already authorized keeping same model and excluding quota waits. Ordinary usage now allowed.",
+    "previous_control": "run-9bc00790de95",
+    "previous_control_zero_submissions": true,
+    "previous_minutes": 55,
+    "conservatively_charged_active_minutes_before_wait": 30,
+    "resume_housekeeping_minutes_charged": 2,
+    "remaining_active_minutes": 23,
+    "new_control": "run-3ba3c8900873",
+    "new_created_utc": "2026-10-21T01:40:44.452547+00:00",
+    "new_deadline_utc": "2026-10-21T02:03:44.452547+00:00",
+    "candidate": 6,
+    "maximum_global_candidate": 6,
+    "no_further_source_revision": true,
+    "source_sha256": "b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee",
+    "baseline_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "criteria_sha256": "f50393e41ff2052488e576fdfc8ac2495aef87c67b46e5a6fda70ec00f887dc8",
+    "evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "completed_cases": "D01,D03,D05freshpair,H02,J02,J03,K01pair,K03pair actual records retained; never replay completed turns.",
+    "pending": "K02-A interrupted before any saved final/messages/actions. Resume same existing actor context/current task only; no new case inputs or expected answers.",
+    "grading": "Prior batch03 grader accidentally saw embedded source-read output. Uncredited incident retained. Fresh clean grader will assess same ended raw model responses using source-body-filtered derived action views, with raw hashes/provenance retained. No actor rerun or score relaxation.",
+    "accounting": "55 minus30prewait minus2housekeeping =23. Actual timestamps; no backdating, new candidate, model change, spending or automation."
+  },
+  "candidate6_clean_grading_context": {
+    "registered_at_utc": "2026-10-21T01:41:44.017928+00:00",
+    "incident": "Prior grader printed actions02 host_source_read result bodies and breached assigned source-blind boundary. Its batch03 preliminary findings are uncredited; existingD05,batch02,J03 saved scores predate exposure.",
+    "selection": "Fresh independent grader regrades SAME ended J02/K03 records plus completed K01; no actor behavior rerun, no source revision, no score selection. Use clean grade regardless outcome; keep incident record.",
+    "source_blinding": "Derived action views replace only host_source_read result bodies with hashes/lengths while retaining read paths/arguments, all domain/check actions and originalrawhash binding. Raw model messages/returns/inputs untouched. Grader verifies raw hashes using bytes without printing forbidden source bodies.",
+    "unchanged": "All72conditions/evaluator/budgets/regressions/original20benefit, originalselected executionpairs, currentmodel/total195active budget and finalcandidate6limit.",
+    "new_output_or_new_grade_seen_before_registration": false
+  },
+  "candidate7_stopped_run": {
+    "owner_authorized_one_focused_candidate": true,
+    "source_sha256": "8557ea0c92c2d2e1ba1978d31655cfeb5152d190a8420e4579d92ebb786f8f2e",
+    "criteria_sha256": "bee8d03b0c7573f26b7d9a0855f55b3f573f05bcb63fa81c595f8629fb13a961",
+    "evaluator_unchanged": true,
+    "required_conditions_per_arm": 84,
+    "independent_L_frozen_before_patch": true,
+    "capture_audit": "Metadata-only audit replaced every cache without full ended return before new baseline dispatch, regardless of score:38fresh/4cache planned. Original12cachedrecords retained privately as excluded diagnostics.",
+    "interruptions": "Actual owner/session and quota interruptions resumed same pending actor contexts; no completed response replay. Waits excluded from authorized active effort without resetting allowance.",
+    "source_read_bookkeeping": "Unlaunched actors record source path/status/hash/bytes rather than duplicate source body; full domain responses/actions/tasks/returns retained. Source reads removed from derived grader views with anchors audited; raw artifacts unchanged.",
+    "stop": "18/42records completed;24fresharms and activation notrun after required failure. All actors ended.",
+    "grading": "Three pairs graded in independent context; all unknowns remain inconclusive/unavailable. No global benefit claim.",
+    "test_validity": "K02-N2 requires numeric8/6example absentinput; fixedscoreunchanged, caveat explicit. K02-N1 exactschema/header omission independently rejects.",
+    "adopted": false,
+    "further_source_candidates_authorized": 0
+  }
 }

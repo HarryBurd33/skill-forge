@@ -163,5 +163,46 @@
       "A": "All15 freshly executed"
     },
     "constraints": "Focused authorization: global candidates5and6 only; current source5, no ordinary behavior retries; neutral runner performs no grading"
+  },
+  "round6": {
+    "frozen_at_utc": "2026-10-20T16:03:00.388131+00:00",
+    "global_candidate_patch": 6,
+    "candidate_source_tree_sha256": "b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee",
+    "baseline_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "effective_gate_deadline_utc": "2026-10-20T17:15:31.296927+00:00",
+    "criteria_hash": "f50393e41ff2052488e576fdfc8ac2495aef87c67b46e5a6fda70ec00f887dc8",
+    "original_criteria_hash": "428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9",
+    "evaluator_hash": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "fresh_K_fixture_sha256": "ec55d11bb526e4f6898109dd361a930f15411d1ca213fc030b154102dfa646b9",
+    "source_origins": {
+      "A": "<workspace>/skill-forge-v030-candidate/skills/skill-forge",
+      "B": "<workspace>/skill-forge/skills/skill-forge"
+    },
+    "root_confirmation_sha256": "0a5ec9b09afef8b971afdf5add9d703f75e974591dd8d2205d3637e00ecb13d6",
+    "loader": "Canonical SKILL.md first; conditional same-tree resources only; cached loaders retained and disclosed",
+    "reuse_policy": "All15 prospectively selected B source5 records; all18A fresh plus K01-K03B fresh",
+    "constraints": "Final global candidate6; one gate round; no further patch, ordinary behavior retry or time extension; neutral runner performs no grading"
+  },
+  "round7": {
+    "frozen_at_utc": "2026-10-21T16:31:33.016114+00:00",
+    "global_candidate": 7,
+    "candidate_source_tree_sha256": "8557ea0c92c2d2e1ba1978d31655cfeb5152d190a8420e4579d92ebb786f8f2e",
+    "baseline_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "criteria_hash": "bee8d03b0c7573f26b7d9a0855f55b3f573f05bcb63fa81c595f8629fb13a961",
+    "original72_criteria_hash": "f50393e41ff2052488e576fdfc8ac2495aef87c67b46e5a6fda70ec00f887dc8",
+    "evaluator_hash": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "fresh_L_fixture_sha256": "9fd126051d818d6abc99c6d6df35be74f6b7920971c6cc389b19285c0e7b537c",
+    "effective_control": "<workspace>/.skill-forge-private/run-afe7392c2ad0",
+    "effective_gate_deadline_utc": "2026-10-21T17:41:01.244803+00:00",
+    "source_origins": {
+      "A": "<workspace>/skill-forge-v030-candidate7/skills/skill-forge",
+      "B": "<workspace>/skill-forge/skills/skill-forge"
+    },
+    "root_confirmation_sha256": "02503fded1f8e94e53a23caad62656db64e47f8ee53ec666a06596ad9fc0d4c5",
+    "control_sha256": "3513993b2f1af24439e770a5da14fd2412d5e80b5cc12546ca8366243bef7318",
+    "prospective_plan_sha256": "935fe36c6d4c55cdbe13aca56b3f63b9beb9eff7f03e37d1a484c0b0641051eb",
+    "loader": "Canonical SKILL.md first; conditional same-tree resources only. Exact historical cached loaders and capture limits retained.",
+    "reuse_policy": "Exact12source6selectedBfixedprospectively; all21Afresh, sixoriginalBfresh plusL01-L03Bfresh.30fresh+12caches=42.",
+    "neutral_role": "Execution only; no source authoring or behavioral grading."
   }
 }

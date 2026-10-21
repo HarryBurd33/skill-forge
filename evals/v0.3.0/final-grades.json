@@ -1,0 +1,1993 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-21T22:05:51.703734+00:00",
+  "kind": "Stopped candidate7 result; partial independent grading, not a complete passing suite",
+  "candidate_hash": "8557ea0c92c2d2e1ba1978d31655cfeb5152d190a8420e4579d92ebb786f8f2e",
+  "baseline_hash": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+  "criteria_hash": "bee8d03b0c7573f26b7d9a0855f55b3f573f05bcb63fa81c595f8629fb13a961",
+  "evaluator_hash": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+  "execution_index_sha256": "4093d44673b264802ef188f4f33b58dd2259d2ff9be69aa2123e86fb08d62483",
+  "focus_grade_sha256": "10076af3648a58d9514c8bdee07b4e815eb5ae552a08f9659bd478311fb4450b",
+  "case_results": [
+    {
+      "case": "D01",
+      "coded_arm": "A",
+      "case_arm": "D01-A",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "D01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D01-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D01-N2",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D01-N3",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D01",
+      "coded_arm": "B",
+      "case_arm": "D01-B",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "D01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D01-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D01-N2",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D01-N3",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D02",
+      "coded_arm": "A",
+      "case_arm": "D02-A",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "D02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D02-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D02-R3",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D02",
+      "coded_arm": "B",
+      "case_arm": "D02-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "D02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D02-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D02-R3",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D03",
+      "coded_arm": "A",
+      "case_arm": "D03-A",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "D03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D03-R3",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D03-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D03",
+      "coded_arm": "B",
+      "case_arm": "D03-B",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "D03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D03-R3",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D03-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D04",
+      "coded_arm": "A",
+      "case_arm": "D04-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "D04-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D04-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D04-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D04-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D04",
+      "coded_arm": "B",
+      "case_arm": "D04-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "D04-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D04-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D04-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D04-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D05",
+      "coded_arm": "A",
+      "case_arm": "D05-A",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "D05-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D05-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D05-N2",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D05-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D05",
+      "coded_arm": "B",
+      "case_arm": "D05-B",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "D05-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D05-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D05-N2",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "D05-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D06",
+      "coded_arm": "A",
+      "case_arm": "D06-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "D06-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D06-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D06-R3",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D06-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D06",
+      "coded_arm": "B",
+      "case_arm": "D06-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "D06-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D06-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D06-R3",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D06-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D07",
+      "coded_arm": "A",
+      "case_arm": "D07-A",
+      "conditions": [
+        {
+          "id": "D07-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
+              "line": 13,
+              "quote": "Reviewers consume a GitHub repository containing a README, data dictionary, and reproducible script."
+            }
+          ],
+          "reason": "Repository target and public CSV/internal analysts are explicit; required row-count and missing-value rules retained."
+        },
+        {
+          "id": "D07-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
+              "line": 1,
+              "quote": "Python 3 is a proposed default when no stack is already agreed."
+            }
+          ],
+          "reason": "Language is qualified in visible prelude and draft; analysis question remains supplied context, no settled questions reopened."
+        },
+        {
+          "id": "D07-R3",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
+              "line": 34,
+              "quote": "Do not create a remote repository, push, publish, or share anything."
+            }
+          ],
+          "reason": "Complete usable copyable prompt delivered with truthful no-tools limits and no external action."
+        },
+        {
+          "id": "D07-N1",
+          "group": "new",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
+              "line": 3,
+              "quote": "I’ll write the prompt, inspect it against these checks, then deliver it here:"
+            }
+          ],
+          "reason": "Visible compact purpose/input/output/default/steps and four observable cases precede target; same-turn draft without approval."
+        }
+      ],
+      "question_budget": 0,
+      "observed_independent_design_decisions_per_turn": [
+        0
+      ],
+      "observed_design_decisions_total": 0,
+      "observed_mandatory_review_approval_turns": 0,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "pass",
+      "case_pass": true,
+      "notes": "All four required conditions and zero-question budget pass.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": null,
+        "coordinator_launch_utc": "2026-10-21T21:51:14.090126+00:00",
+        "last_ended_return_utc": "2026-10-21T21:53:10.324481+00:00",
+        "elapsed_launch_to_end_seconds": 116.234355,
+        "actor_imposed_limit_state": "not_applicable",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "D07",
+      "coded_arm": "B",
+      "case_arm": "D07-B",
+      "conditions": [
+        {
+          "id": "D07-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
+              "line": 14,
+              "quote": "Use the supplied public CSV, analysis instructions or existing analysis, and settled review checks."
+            }
+          ],
+          "reason": "Target contains README, dictionary, reproducible script, row counts and explicit missing handling."
+        },
+        {
+          "id": "D07-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
+              "line": 40,
+              "quote": "Python is a provisional default."
+            }
+          ],
+          "reason": "Final qualification supplies assumption label for Python; does not reopen settled audience/data/checks. Delivery question is separately counted against budget."
+        },
+        {
+          "id": "D07-R3",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
+              "line": 38,
+              "quote": "Nothing has been saved, installed, executed, or published for the task."
+            }
+          ],
+          "reason": "Usable provisional skill returned promptly; no publication or fabricated task actions."
+        },
+        {
+          "id": "D07-N1",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
+              "line": 1,
+              "quote": "Here’s a provisional reusable prompt that treats “report” as a reviewable repository."
+            }
+          ],
+          "reason": "Only one introductory sentence precedes complete target; manual cases occur after it. No pre-target implementation specification and observable checks."
+        }
+      ],
+      "question_budget": 0,
+      "observed_independent_design_decisions_per_turn": [
+        1
+      ],
+      "observed_design_decisions_total": 1,
+      "observed_mandatory_review_approval_turns": 0,
+      "question_budget_state": "fail",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "fail",
+      "case_pass": false,
+      "notes": "Extra delivery decision after draft exceeds budget 0: “Would you prefer a local Markdown SKILL.md ... installable folder/ZIP ... GitHub repository ... another destination?” This independently prevents full-case eligibility.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": null,
+        "coordinator_launch_utc": "2026-10-21T21:54:29.679612+00:00",
+        "last_ended_return_utc": "2026-10-21T21:56:46.921676+00:00",
+        "elapsed_launch_to_end_seconds": 137.242064,
+        "actor_imposed_limit_state": "not_applicable",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "D08",
+      "coded_arm": "A",
+      "case_arm": "D08-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "D08-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D08-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D08-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D08-R3",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D08",
+      "coded_arm": "B",
+      "case_arm": "D08-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "D08-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D08-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D08-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D08-R3",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D09",
+      "coded_arm": "A",
+      "case_arm": "D09-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "D09-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D09-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D09-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D09-R3",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "D09",
+      "coded_arm": "B",
+      "case_arm": "D09-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "D09-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D09-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D09-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "D09-R3",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "H01",
+      "coded_arm": "A",
+      "case_arm": "H01-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "H01-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H01-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H01-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "H01",
+      "coded_arm": "B",
+      "case_arm": "H01-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "H01-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H01-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H01-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "H02",
+      "coded_arm": "A",
+      "case_arm": "H02-A",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "H02-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "H02-N2",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "H02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "H02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "H02",
+      "coded_arm": "B",
+      "case_arm": "H02-B",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "H02-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "H02-N2",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "H02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "H02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "H03",
+      "coded_arm": "A",
+      "case_arm": "H03-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "H03-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H03-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H03-N3",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "H03",
+      "coded_arm": "B",
+      "case_arm": "H03-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "H03-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H03-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "H03-N3",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "J01",
+      "coded_arm": "A",
+      "case_arm": "J01-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "J01-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J01-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J01-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "J01",
+      "coded_arm": "B",
+      "case_arm": "J01-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "J01-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J01-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J01-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "J02",
+      "coded_arm": "A",
+      "case_arm": "J02-A",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "J02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "J02-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "J02-N2",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "J02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "J02",
+      "coded_arm": "B",
+      "case_arm": "J02-B",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "J02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "J02-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "J02-N2",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "J02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "J03",
+      "coded_arm": "A",
+      "case_arm": "J03-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "J03-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J03-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "J03",
+      "coded_arm": "B",
+      "case_arm": "J03-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "J03-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J03-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "J03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "K01",
+      "coded_arm": "A",
+      "case_arm": "K01-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "K01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "K01-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "K01-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "K01-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "K01",
+      "coded_arm": "B",
+      "case_arm": "K01-B",
+      "eligible_case_state": "inconclusive",
+      "conditions": [
+        {
+          "id": "K01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "K01-R2",
+          "group": "regression",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "K01-N1",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        },
+        {
+          "id": "K01-N2",
+          "group": "new",
+          "required": true,
+          "state": "inconclusive",
+          "reason": "Executed record exists but independent grading was stopped after a required failure."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "K02",
+      "coded_arm": "A",
+      "case_arm": "K02-A",
+      "conditions": [
+        {
+          "id": "K02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
+              "line": 1,
+              "quote": "I’ll write `component-count-delta/SKILL.md`, review its metadata and CSV rules, then deliver the text for you to save."
+            }
+          ],
+          "reason": "No user decision/approval, interview/research blockage or unavailable tool dependency."
+        },
+        {
+          "id": "K02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
+              "line": 27,
+              "quote": "Calculate Delta as Observed minus Expected only when both counts are supplied numeric values."
+            }
+          ],
+          "reason": "Complete named single-file target preserves exact header/name matching/manifest order/blanks/exclusions/no dependencies and truthfully limits checks."
+        },
+        {
+          "id": "K02-N1",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
+              "line": 1,
+              "quote": "It will use only the supplied lists, preserve manifest order, and exclude prices, replacement purchases, and authenticity judgments."
+            }
+          ],
+          "reason": "Pre-target prelude covers purpose/file/no-dependencies/default and write-review-deliver sequence, but does not identify both list schemas or give exact CSV header/result contract. These appear first inside full target. Required substantive pre-target specification is incomplete."
+        },
+        {
+          "id": "K02-N2",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
+              "line": 3,
+              "quote": "Checks planned before drafting: manifest `B:2, A:3, C:blank` with observed `A:0, C:4, Extra:7` must produce rows `B,2,,`, `A,3,0,-3`, `C,,4,` in that order."
+            }
+          ],
+          "reason": "Plan correctly covers missing/zero/order/exclusions, but never defines required Expected=8/Observed=6 → Delta=-2 case. Fixed required case cannot be replaced with A,3,0,-3; full target arithmetic does not supply missing pre-build check.",
+          "criterion_validity_caveat": "The fixed criterion requires particular Expected=8/Observed=6/Delta=-2 values that are absent from the actual K02 user input. The input supplies the general arithmetic contract, not this example. This exact-case omission establishes noncompliance with fixed evaluator text, not failure to preserve a user-supplied numerical example. No criterion relaxation, retest or source change is made.",
+          "conjuncts": {
+            "fixed_8_6_minus2_case": "fail: omitted; alternative 3/0/-3 example present",
+            "absent_observed_blank_and_delta_blank": "pass: B,2,, before target",
+            "differing_orders_manifest_order": "pass: manifest B,A,C; count sheet A,C,Extra; planned B,A,C output",
+            "excluded_price_nonactivation": "pass: price requests excluded in visible pre-target plan",
+            "planned_not_executed": "pass: explicitly planned and behavioral tests unexecuted",
+            "rules_carried_into_target": "pass"
+          }
+        }
+      ],
+      "question_budget": {
+        "consequential_design_questions_max": 0,
+        "mandatory_approval_turns_max": 0
+      },
+      "observed_independent_design_decisions_per_turn": [
+        0
+      ],
+      "observed_design_decisions_total": 0,
+      "observed_mandatory_review_approval_turns": 0,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "fail",
+      "case_pass": false,
+      "notes": "Correct target behavior does not replace the omitted exact pre-build evidence. Two required new conditions fail.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": null,
+        "coordinator_launch_utc": "2026-10-21T21:52:34.115891+00:00",
+        "last_ended_return_utc": "2026-10-21T21:54:20.520510+00:00",
+        "elapsed_launch_to_end_seconds": 106.404619,
+        "actor_imposed_limit_state": "not_applicable",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "K02",
+      "coded_arm": "B",
+      "case_arm": "K02-B",
+      "conditions": [
+        {
+          "id": "K02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
+              "line": 1,
+              "quote": "Save as `component-count-delta/SKILL.md`:"
+            }
+          ],
+          "reason": "Prompt local draft with zero questions/approval, no detour blocks use."
+        },
+        {
+          "id": "K02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
+              "line": 26,
+              "quote": "Calculate Delta as Observed minus Expected only when both counts are supplied."
+            }
+          ],
+          "reason": "Full target includes exact requested CSV header/rules/order/activation/exclusions and no fabricated tools/persistence."
+        },
+        {
+          "id": "K02-N1",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
+              "line": 1,
+              "quote": "Save as `component-count-delta/SKILL.md`:"
+            }
+          ],
+          "reason": "Full target begins immediately after save path; commentary says preparation but lacks substantive implementation specification before full text."
+        },
+        {
+          "id": "K02-N2",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
+              "line": 48,
+              "quote": "Manual check **(unexecuted)**: manifest rows Pawn = 3, Token = blank, Die = 0; observed counts Pawn = 2, Die = 0, Extra = 9."
+            }
+          ],
+          "reason": "Manual check appears after full target, not before; lacks fixed 8/6=-2 example and distinguishable pre-target order/price cases. Internal action acceptance plans are not visible pre-target plans."
+        }
+      ],
+      "question_budget": {
+        "consequential_design_questions_max": 0,
+        "mandatory_approval_turns_max": 0
+      },
+      "observed_independent_design_decisions_per_turn": [
+        0
+      ],
+      "observed_design_decisions_total": 0,
+      "observed_mandatory_review_approval_turns": 0,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [
+        "Emits complete target files before visible substantive specification/checks."
+      ],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "fail",
+      "case_pass": false,
+      "notes": "B is predetermined source6 reuse; no benefit inflation permitted from K conditions.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": null,
+        "coordinator_launch_utc": "2026-10-21T01:41:32.193791+00:00",
+        "last_ended_return_utc": "2026-10-21T01:43:58.055674+00:00",
+        "elapsed_launch_to_end_seconds": 145.861883,
+        "actor_imposed_limit_state": "not_applicable",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "K03",
+      "coded_arm": "A",
+      "case_arm": "K03-A",
+      "conditions": [
+        {
+          "id": "K03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-01.txt",
+              "line": 7,
+              "quote": "Should Readiness require a supplied status (recommended), or be derived solely from completeness?"
+            }
+          ],
+          "reason": "One initial consequential choice; turn2 incorporates supplied-only/Unspecified/CSV correction and waits; turn3 drafts immediately after approval, no reopening."
+        },
+        {
+          "id": "K03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-03.txt",
+              "line": 5,
+              "quote": "The installable folder name remains `cue-ledger` under both parents."
+            }
+          ],
+          "reason": "Turn3 supplies four complete baseline/candidate blocks, both notices, valid same-name leaves, resource division, corrected rules and no specimen defaults; no invented saving/testing/adoption."
+        },
+        {
+          "id": "K03-N1",
+          "group": "new",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-02.txt",
+              "line": 3,
+              "quote": "The revised contract is raw CSV with the exact header `Cue,Trigger,Effect,Readiness`."
+            }
+          ],
+          "reason": "Turn2 visibly specifies purpose/inputs/contract/files/resource relation/absence risks/steps and concrete checks; no complete files until approved turn3."
+        },
+        {
+          "id": "K03-N2",
+          "group": "new",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-02.txt",
+              "line": 31,
+              "quote": "| Independent resource and preservation | Inspect each candidate file against the final contract, separately |"
+            }
+          ],
+          "reason": "Turn2 defines omitted Effect/absent and explicit Readiness/order plus separate-file stale-Markdown checks; turn3 consistently updates both files and labels static review vs pending behavior."
+        }
+      ],
+      "question_budget": {
+        "per_turn_independent_user_decisions": 1,
+        "max_initial_and_followups": 1,
+        "mandatory_approval_turns_max": 1
+      },
+      "observed_independent_design_decisions_per_turn": [
+        1,
+        0,
+        0
+      ],
+      "observed_design_decisions_total": 1,
+      "observed_mandatory_review_approval_turns": 1,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "pass",
+      "case_pass": true,
+      "notes": "Review pause explicitly requested and used once; approved result provisional with no execution claim.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": 30,
+        "coordinator_launch_utc": "2026-10-21T21:53:20.492364+00:00",
+        "last_ended_return_utc": "2026-10-21T21:59:42.647483+00:00",
+        "elapsed_launch_to_end_seconds": 382.155119,
+        "actor_imposed_limit_state": "pass",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "K03",
+      "coded_arm": "B",
+      "case_arm": "K03-B",
+      "conditions": [
+        {
+          "id": "K03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-01.txt",
+              "line": 3,
+              "quote": "Which rule should the revised skill use?"
+            }
+          ],
+          "reason": "Only one initial Readiness decision; final correction accepted; turn2 pauses and turn3 immediately drafts after approval."
+        },
+        {
+          "id": "K03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-03.txt",
+              "line": 91,
+              "quote": "The candidate needs both files together and has no additional runtime dependencies."
+            }
+          ],
+          "reason": "Turn3 supplies complete prior/candidate same-leaf cue-ledger skill/resource texts, preserved notices/scope/order/absence rules, no specimen defaults or fabricated tools."
+        },
+        {
+          "id": "K03-N1",
+          "group": "new",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-02.txt",
+              "line": 3,
+              "quote": "Proposed changes:"
+            }
+          ],
+          "reason": "Turn2 substantive file-by-file revised plan and concrete cases precede full text; requested pause respected."
+        },
+        {
+          "id": "K03-N2",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-02.txt",
+              "line": 19,
+              "quote": "| Structure and preservation | Exact four-column header; one parsed record per source row; original order, notices, name, and working relative resource link preserved. |"
+            }
+          ],
+          "reason": "Missing explicit independent inspection/use of formatting resource against final CSV contract and stale Markdown instructions in pre-build verification plan. General broken-resource-contract failure and file-edit proposal do not establish that distinct planned check; final files themselves are consistent."
+        }
+      ],
+      "question_budget": {
+        "per_turn_independent_user_decisions": 1,
+        "max_initial_and_followups": 1,
+        "mandatory_approval_turns_max": 1
+      },
+      "observed_independent_design_decisions_per_turn": [
+        1,
+        0,
+        0
+      ],
+      "observed_design_decisions_total": 1,
+      "observed_mandatory_review_approval_turns": 1,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "fail",
+      "case_pass": false,
+      "notes": "Behavioral plan omissions are graded under new conditions; regression preservation remains intact.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": 30,
+        "coordinator_launch_utc": "2026-10-20T20:58:21.613577+00:00",
+        "last_ended_return_utc": "2026-10-20T21:03:41.520221+00:00",
+        "elapsed_launch_to_end_seconds": 319.906644,
+        "actor_imposed_limit_state": "pass",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "L01",
+      "coded_arm": "A",
+      "case_arm": "L01-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "L01-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L01-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L01-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "L01",
+      "coded_arm": "B",
+      "case_arm": "L01-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "L01-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L01-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L01-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L01-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "L02",
+      "coded_arm": "A",
+      "case_arm": "L02-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "L02-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L02-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "L02",
+      "coded_arm": "B",
+      "case_arm": "L02-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "L02-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L02-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "L03",
+      "coded_arm": "A",
+      "case_arm": "L03-A",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "L03-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L03-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    },
+    {
+      "case": "L03",
+      "coded_arm": "B",
+      "case_arm": "L03-B",
+      "eligible_case_state": "unavailable",
+      "conditions": [
+        {
+          "id": "L03-N1",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L03-N2",
+          "group": "new",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        },
+        {
+          "id": "L03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
+        }
+      ],
+      "grade_source": null
+    }
+  ],
+  "condition_counts": {
+    "A": {
+      "inconclusive": 24,
+      "unavailable": 48,
+      "pass": 10,
+      "fail": 2
+    },
+    "B": {
+      "inconclusive": 24,
+      "unavailable": 48,
+      "pass": 8,
+      "fail": 4
+    }
+  },
+  "case_counts": {
+    "A": {
+      "inconclusive": 6,
+      "unavailable": 12,
+      "pass": 2,
+      "fail": 1
+    },
+    "B": {
+      "inconclusive": 6,
+      "unavailable": 12,
+      "fail": 3
+    }
+  },
+  "independent_graded_conditions_per_arm": 12,
+  "required_conditions_per_arm": 84,
+  "required_cases_per_arm": 21,
+  "primary_material_failure": "K02-N1: visible pre-target plan omits exact input field schemas and CSV header. Target file correctness cannot supply missing pre-build preview.",
+  "test_design_caveat": "K02-N2 demanded8/6numericexample absentuserinput; fixedscoreunchanged but this specific omission doesnot establishfailuretopreserveasuppliedexample. OtherAN2conjunctspassed. N1independentlyrejects.",
+  "benefit": {
+    "metric": "satisfied_new_feature_conditions",
+    "state": "inconclusive",
+    "full_candidate": null,
+    "full_baseline": null,
+    "reason": "Original20conditions notallindependentlygraded; no globalbenefitclaim. NewJ/K/L cannotinflate."
+  },
+  "activation": {
+    "state": "unavailable",
+    "reason": "Fresh probe notrun after requiredfailure stop; prior source6 probe remains historical."
+  },
+  "execution_counts": {
+    "fresh_actors_launched": 14,
+    "fresh_turns_saved": 28,
+    "fresh_completed_cases": 14,
+    "fresh_partial_cases": 0,
+    "fresh_not_dispatched": 24,
+    "reused": 4,
+    "eligible_records": 18,
+    "planned_records": 42,
+    "fresh_arm_counts": {
+      "A": 9,
+      "B": 5
+    }
+  },
+  "verdict": "reject; requiredK02N1actualfailure plus fixedN2failure, and incompletefullcoverage; stable0.2retained",
+  "source_unchanged": true,
+  "further_source_revision_authorized": false,
+  "grade_source": "focus-grading.json, independent source-blind context with raw audit0errors"
+}
