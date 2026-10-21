@@ -301,6 +301,18 @@
         "https://docs.python.org/3/using/windows.html"
       ],
       "result": "Refreshed local skill discovery, invocation, updating/removal, available subagents, native Windows alternatives and Python Windows commands. Official Codex platform source separately pinned above. Documentation-supported host capabilities are distinct from actual runtime tests. Original v0.3.0 spec/delegation/conversation workflow implementation; no third-party material copied."
+    },
+    {
+      "date": "2026-10-21",
+      "urls": [
+        "https://learn.chatgpt.com/docs/build-skills",
+        "https://learn.chatgpt.com/docs/codex/cli",
+        "https://learn.chatgpt.com/docs/windows/windows-sandbox",
+        "https://code.claude.com/docs/en/setup",
+        "https://code.claude.com/docs/en/skills"
+      ],
+      "method": "Actual primary pages opened through web; relevant discovery/path/update and OS-support sections inspected.",
+      "result": "Codex user/project .agents/skills and automatic detection; Claude user/project .claude/skills, /skill-name, personal precedence and reload behavior; native Windows alternatives remain documented. No native-host execution claimed, no source material copied."
     }
   ]
 }

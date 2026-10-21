@@ -1,5 +1,7 @@
 # Skill Forge
 
+> **Development branch: v0.3.0 is not released.** Candidate 7 failed a required pre-build planning check on 2026-10-21 and was rejected automatically. Use [stable v0.2.0](https://github.com/HarryBurd33/skill-forge/tree/main) for installation. The instructions below describe the proposed behavior; see the [evaluation report](evals/v0.3.0/REPORT.md) for actual results and limits.
+
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
 
 Describe a workflow in ordinary language, or say **“Based on this conversation, build me a skill.”** Skill Forge extracts what is settled, asks and challenges what matters, shows an implementation spec and verification plan, then builds and checks an installable skill. It also improves existing skills and evaluates improvements to its own interview and tools.
@@ -49,11 +51,11 @@ Or improve the builder:
 
 ## What happens during a session
 
-The builder maintains a compact brief of confirmed needs, proposed defaults, assumptions, examples, acceptance checks, open questions, skill delivery, source coverage and research status. It inspects available facts before asking you. Each answer or example can reveal the next dependent question. A coverage pass checks consequential gaps and weak assumptions without a fixed questionnaire. The skill’s own delivery choice is separate from the document, spreadsheet or other output it will later produce.
+The builder maintains a compact brief of confirmed needs, proposed defaults, assumptions, examples, acceptance checks, open questions, skill delivery, source coverage and research status. It inspects available facts before asking you. Each answer or example can reveal the next dependent question. A coverage pass checks consequential gaps and weak assumptions without a fixed questionnaire. The skill’s own delivery choice is separate from the document, spreadsheet or other output it will later produce. Repairs preserve an existing skill’s delivery context unless you ask to change it. Without file access, the builder returns complete prior and replacement contents for you to save; unavailable execution prevents adoption, not drafting the repair.
 
 Once the brief is ready, Skill Finder sends a researcher a sanitized task. It searches GitHub, Hugging Face when relevant, and other primary resources; checks actual files, revision and reuse rights; and recommends a foundation or original implementation. Findings can reopen a specific design decision. Research is bounded, can be declined, and does not authorize installing fetched code or publishing your materials.
 
-Before building, it presents an [implementation spec](skills/skill-forge/templates/implementation-spec.md): intended behavior, files/dependencies, assumptions, work and delegated roles, delivery/privacy, concrete acceptance inputs, expected outcomes, failure conditions and unavailable checks. Review pauses are optional: **review first** or **spec only** waits for you; otherwise authorized work proceeds. **Draft now** shows a compact plan and draft in the same response. User edits update the spec and affected checks before building.
+Before building, it presents an [implementation spec](skills/skill-forge/templates/implementation-spec.md): intended behavior, files/dependencies, assumptions, work and delegated roles, delivery/privacy, concrete acceptance inputs, expected outcomes, failure conditions and unavailable checks. Review pauses are optional: **review first** or **spec only** waits for you; otherwise authorized work proceeds. **Draft now** shows a compact plan and draft in the same response. If delivery is undecided, it returns provisional saveable text and leaves that choice for finalization without appending another required question. User edits update the spec and affected checks before building. Supplied acceptance examples keep their exact inputs and expected results; supporting resources receive their own checks against the final behavior.
 
 For useful separable work it automatically launches available constructors, resource authors, reviewers or evaluators with bounded tasks and clear file ownership. It waits for results and integrates them; a promise that a subagent or test ran is not evidence. Tools, permissions and model capability still determine what can actually execute.
 

@@ -1,14 +1,18 @@
 # Changelog
 
-## 0.3.0 — 2026-10-19
+## 0.3.0 — unreleased
+
+Candidate 7 was rejected on 2026-10-21. A required visible planning detail was missing; a separate test-input flaw is recorded without retroactive rescoring. Stable 0.2.0 remains active. These changes are proposals, not a released update.
 
 - Add conversation/project intake that preserves final corrections, reports source coverage, and keeps private context out of shared skills.
 - Present an implementation spec and observable verification plan before building. Offer an optional review pause and preserve explicit review-first requests on resume.
 - Automatically use useful available construction, resource and independent review/evaluation subagents with bounded tasks and clear ownership.
 - Strengthen comprehensive adaptive interviewing, explicit implementation assumptions, and metadata-consistent version folders.
 - Keep plans visible before file contents, state implementation steps, and include manual-save instructions plus a private resume handoff for text-only delivery.
+- Preserve the delivery context during an existing-skill repair and return complete prior/replacement contents when file access is unavailable; missing execution keeps adoption pending.
 - Add Windows PowerShell/manual setup and other-LLM instructions, cross-platform helper fixes and Windows/Linux/macOS CI. Tested configurations and unavailable native hosts are reported separately.
-- Preserve prior release evidence; record the new comparison and exact historical regression rechecks in the v0.3.0 evaluation report.
+- Preserve supplied acceptance examples, check behavior-bearing resources independently, and avoid reopening delivery after an immediate draft.
+- Preserve prior release evidence; record rejected candidates and the new comparison in the v0.3.0 evaluation report.
 
 ## 0.2.0 — 2026-10-17
 
