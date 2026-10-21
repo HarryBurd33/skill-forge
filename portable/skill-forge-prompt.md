@@ -12,7 +12,7 @@ their references below describe capabilities, not tools available in plain chat.
 Generated from canonical instructions and all reference, template, question,
 and bundled sub-skill resources. Edit those sources and regenerate this file; do not edit this bundle.
 
-Source SHA-256: `83aebdaa9d6474078065b44d9329e35347780807784e931b88990ca1a8b7737b`
+Source SHA-256: `c43324b6abf220ef429b1e07078eae897ec950dfac7eb8f35e911de48c05cd80`
 
 <a id="resource-skill-md"></a>
 
@@ -32,8 +32,8 @@ Turn a useful workflow into an independently usable skill. Understand and challe
 
 At the build boundary, show a compact, visible plan **before** complete target contents or writes. Even a tiny draft needs these concrete parts, each as short as the task permits:
 
-- Purpose, activation/exclusions and the input/output contract.
-- Intended file paths, resources/dependencies, proposed defaults and relevant limits.
+- Purpose, activation/exclusions, current input/output rules, and material constraints and final corrections.
+- Intended file paths, resources/dependencies, proposed defaults, relevant limits, privacy and skill delivery.
 - **Implementation steps in order**, such as author the requested file, check metadata and cases, then deliver it. Describing the finished behavior alone is not an implementation sequence.
 - Verification inputs, expected outcomes and failure conditions; distinguish available checks from unexecuted ones.
 
@@ -61,6 +61,8 @@ For **new creation**, separately settle **how the generated skill itself will be
 
 Honor pace: **quick** minimizes questions; **thorough** follows material branches and challenges; **expert challenge** stresses assumptions and counterexamples. “Use your judgment” delegates routine choices; “skip” records an assumption; “draft now” produces a provisional artifact; “go deeper” explores a concrete uncertainty; “resume” restores the brief. None authorizes invented facts or unrelated external actions.
 
+Honor “draft now” through the end of the response: if the skill's delivery is still unsettled, return provisional saveable text and record that choice as pending without appending a delivery decision or approval question. Resolve it when the user resumes finalization. Do not turn a one-off reusable-prompt request into a required skill-packaging interview; offer an installable form only when useful. Settled delivery and existing-skill repair context remain settled.
+
 Aim for the most useful refinement within the user's pace and effort limits. Continue while another answer, challenge or example could materially change the skill or its acceptance checks. Stop at material closure or the user's draft/stop instruction, not an impossible claim of absolute perfection. Show the ready brief and spec for correction. Review pauses are optional; preserve an explicit request to review first without adding approvals to already-authorized work.
 
 ## Find foundations, build and check
@@ -71,9 +73,11 @@ Before target implementation, present a readable [implementation spec](#resource
 
 Work out verification **before building**: concrete input, expected outcome and failure conditions, activation/non-activation, a representative failure, relevant regressions, baseline, evaluator, tools and unavailable checks. Then freeze the candidate's acceptance checks before evaluation. Use [evaluation guidance](#resource-references-evaluation-md). A promise to “test later” is insufficient. Planned checks are not passed checks.
 
+Make a compact coverage map from material confirmed requirements and supplied acceptance examples to observable checks. Carry supplied inputs and expected outcomes into the plan unchanged; extra or simpler examples supplement them, never replace them. Where the contract distinguishes missing values from valid zero/empty values or depends on order, include inputs that expose those differences. For each supporting resource that controls behavior, plan an independent inspection or use against the final contract, including stale or conflicting instructions; agreement between files or a working link alone does not establish correct behavior. Fill coverage gaps from settled context before asking another question.
+
 For a material correction, name the superseded and final behavior in the pre-build checks. Include an input and expected result that would fail if the old output contract or discarded assumption returned; a generic “check accuracy” cannot establish that a correction survived.
 
-Offer the user a chance to edit the spec or request a pause. **Wait when the user says review first, spec only, pause or equivalent**, and retain that state when resuming. Otherwise proceed with authorized implementation without demanding approval. “Draft now” or “build now” allows a compact spec/check plan followed by the artifact in the same response; it does not authorize invented requirements or publication. Incorporate corrections into the spec and affected checks before building. If supplied context already contains an approved/current spec, reuse it and summarize the applicable checks rather than re-interviewing.
+Offer the user a chance to edit the spec or request a pause. **Wait when the user says review first, spec only, pause or equivalent**, and retain that state when resuming. Otherwise proceed with authorized implementation without demanding approval. “Draft now” or “build now” allows a compact spec/check plan followed by the artifact in the same response; it does not authorize invented requirements or publication. Incorporate corrections into the spec and affected checks before building. If supplied context already contains an approved/current spec, reuse settled decisions without re-interviewing or renewed approval, but still show the substantive current contract and applicable checks before target artifacts. An approval label or pointer to files is insufficient.
 
 Use [delegation guidance](#resource-references-delegation-md) to **automatically launch useful available subagents** for construction, separable resources, independent review or evaluation. When construction delegation is useful or explicitly requested, assign a worker a named implementation deliverable before implementing that portion yourself, then inspect and integrate its actual return. Research or tests of an already completed artifact do not count as construction. Bound effort and workers, assign nonoverlapping write scopes, wait for results and integrate them. Do simple work directly when delegation adds no value, unless construction delegation is explicitly required by the user or agreed checks; disclose missing launch capability rather than claiming imaginary agents. The parent owns the final requirements, artifacts and evidence.
 
@@ -83,7 +87,7 @@ Compare new work with an appropriate direct-prompt or existing-creator baseline;
 
 Deliver the agreed package, sample invocations, installation/export steps, concise validation evidence and limitations. Publish only to an authorized destination. Source access does not authorize overwriting an upstream repository.
 
-For generated-skill file-text delivery, explicitly tell the user what to save and where, using a valid `skill-name/SKILL.md` path and clearly delimited contents. After the artifact, give a short validation note and a **compact resume handoff**: settled goal/input/output/delivery, important assumptions, checks completed or pending, and the next unresolved step. Keep this handoff outside the installable skill and label private state accordingly; a comment inside the artifact or an internal harness record is not a user-visible handoff. With no file tools, say the user must save the contents/handoff; never claim files or memory were saved. A simple skill needs only a few lines, without extra questions or an approval turn.
+For generated-skill file-text delivery, explicitly tell the user what to save and where, using a valid `skill-name/SKILL.md` path and clearly delimited contents. After the artifact, give a short validation note and a **compact resume handoff**: settled goal/input/output/delivery, material constraints and final corrections, important assumptions, checks completed or pending, and the next unresolved step. State decisions and corrections concretely; an “approved spec” label or pointer to files not carried forward is insufficient. Keep this handoff outside the installable skill and label private state accordingly; a comment inside the artifact or an internal harness record is not a user-visible handoff. With no file tools, say the user must save the contents/handoff; never claim files or memory were saved. A simple skill needs only a few lines, without extra questions or an approval turn.
 
 ## Improve without losing what worked
 
@@ -138,7 +142,7 @@ Build a brief containing purpose, users, triggers/exclusions, inputs, output con
 
 Separate reusable behavior from private values. Replace client/person names, local paths, schedules and incidents with safe abstractions or synthetic examples unless explicitly needed and authorized for the chosen destination. Keep private personalization in a local session/configuration, raw transcripts outside source, and credentials out of all exports. A request to build from a conversation does not authorize publishing that conversation or installing every tool it mentions.
 
-Show the extracted brief and implementation spec with source-coverage limits, then follow the user's review preference. With draft-now/build-now, give a compact spec/check plan followed by the provisional artifact. With review-first, wait. Define checks that would catch the observed failure or final correction being lost. If no file tools exist, return complete named file contents plus a handoff the user can save. Never claim automatic recall in a different conversation; the next invocation needs the saved record or supplied context.
+Show the extracted brief and implementation spec with source-coverage limits, then follow the user's review preference. With draft-now/build-now, give a compact spec/check plan followed by the provisional artifact. With review-first, wait. Define checks that would catch the observed failure or final correction being lost. If no file tools exist, return complete named file contents plus a handoff the user can save. Carry material settled decisions and final corrections concretely in that record; an “approved spec” label or reference to files not carried forward is insufficient. Keep private values outside reusable exports and state actual execution/persistence limits. Never claim automatic recall in a different conversation; the next invocation needs the saved record or supplied context.
 
 <a id="resource-references-delegation-md"></a>
 
@@ -165,6 +169,8 @@ If the user requests spec review first, delegate research or spec review only un
 # Evidence proportional to the change
 
 Before building, put concrete checks, expected outcomes, failure conditions, baseline and unavailable checks into the user-visible implementation spec. Preserve any review-first request. Before running candidates, freeze a small case table: id, input, expected observable outcome, failure conditions, required tools, maximum unnecessary questions, split, and evaluator. Separate development cases from regression cases; use held-out inputs not used to craft general changes. Reusing a known test is regression evidence, not held-out evidence.
+
+Trace material requirements and supplied acceptance examples to checks before construction. Preserve the exact supplied inputs and expected results; a convenient substitute cannot establish that an agreed case was covered. Add discriminating cases where order or missing-versus-valid values affect behavior. Check each behavior-bearing supporting resource independently against the final contract, including stale instructions; final artifact correctness does not supply a missing pre-build verification plan. Count user decisions across the whole response, including questions appended after a draft.
 
 Evaluate activation independently: should a request select this skill at all? Then evaluate task quality: requirements preserved, usable artifact, uncertainty handled honestly, effort requested, and completion. Choose a few observable binary checks and a qualitative 0–2 rubric (0 fails, 1 partial, 2 meets criteria). Define critical failures that cannot be averaged away, such as invented citations or violated fixed constraints.
 
@@ -514,7 +520,7 @@ Skill Finder is nested supporting skill content; hosts do not all discover or in
 
 Return each generated file in a separate fenced block headed with its relative path. Include all needed content. The user saves files under the agreed skill folder; a single-file skill is `skill-name/SKILL.md`. When delivery is unresolved, ask one decision explicitly offering a local Markdown file, installable folder/ZIP, GitHub repository or another destination, even if the domain output format is known. Explain copying/editing a local file, bundling supporting files for installation, and GitHub's online sharing/version history; online/public publication requires the user's choice and authorization. Skip settled delivery questions; ask any missing GitHub owner/repository or visibility decision only after GitHub is chosen, one at a time, reusing existing authorization. Give a small manual test, marked unexecuted until results arrive. Do not claim saving, installation, adoption or publication when the host cannot perform it.
 
-At pause/resume, return a compact handoff: purpose and pace; confirmed decisions; assumptions/defaults; domain output and skill delivery, including any specific publication authorization; current files/version; examples and acceptance checks; unresolved questions; finder status and verified report; tests actually performed; private preferences kept separately; next action. A later chat needs this record or saved files. Exclude credentials and let the user decide what sensitive material to carry forward.
+At pause/resume, return a compact handoff: purpose and pace; confirmed decisions; assumptions/defaults; domain output and skill delivery, including any specific publication authorization; current files/version; examples and acceptance checks; unresolved questions; finder status and verified report; tests actually performed; private preferences kept separately; next action. Carry material settled decisions and final corrections concretely; an “approved spec” label or reference to files not carried forward is insufficient. State actual execution/persistence limits. A later chat needs this record or saved files. Keep private values outside reusable exports, exclude credentials and let the user decide what sensitive material to carry forward.
 
 The self-contained portable prompt is generated from canonical instructions, references, questions, templates and nested Skill Finder. Embedded sections are the core's resources. Script commands are optional for tool-enabled hosts; a plain-chat model works from embedded instructions. Outputting complete file contents is useful delivery, but is not installation, execution or publication.
 
@@ -542,11 +548,15 @@ Make implementation choices explicit. If a language, framework, data schema or d
 
 The verification plan comes before the build, not as an afterthought. Define realistic inputs, expected outcomes, unacceptable failures and the actual method/tool that can check each. Include activation/non-activation separately from task quality, a normal case, a boundary/failure, and relevant existing regressions. Name the baseline and independent evaluator when available. Show unavailable checks and what evidence would be needed; do not mark planned work passed. For an improvement, preserve prior acceptance criteria and freeze the evaluator/cases before candidate evaluation.
 
+Use a compact requirement/example → expected result → check method map. Preserve each supplied acceptance input and outcome exactly; additional examples cannot replace an agreed case. Use discriminating inputs for material order rules and missing-versus-zero/empty distinctions. For behavior-bearing resources, include a separate inspection or use of each resource against the current contract and for stale instructions. Checking only links or agreement between files can leave two consistently wrong files unchecked. Keep this map proportional and derive it from supplied context rather than reopening settled questions.
+
 Make correction checks specific: identify the former requirement, its final replacement, and an example whose expected result rules out the superseded behavior. Check the final fields, format and destination when they changed. Do not substitute an unrelated failure example or a generic quality check for this regression.
 
-Review is optional. Offer an edit/pause opportunity without forcing another approval when implementation is already authorized. If the user explicitly requests review first, spec only or a pause, end at the spec and wait; no full implementation or target writes until they proceed. If they say draft now/build now, show the compact spec and checks first and then produce the authorized draft. If no pause is requested and no consequential decision blocks progress, proceed. A prior approved spec can be reused when current; do not make the user reapprove unchanged work.
+Review is optional. Offer an edit/pause opportunity without forcing another approval when implementation is already authorized. If the user explicitly requests review first, spec only or a pause, end at the spec and wait; no full implementation or target writes until they proceed. If they say draft now/build now, show the compact spec and checks first and then produce the authorized draft. If no pause is requested and no consequential decision blocks progress, proceed. A prior approved spec can be reused when current; do not make the user reapprove unchanged work. Still show a substantive visible summary of the current purpose/activation, input/output rules, material constraints and final corrections, files/build sequence, privacy/delivery and concrete checks before target artifacts. A generic acknowledgment or content inside target files is insufficient. Combine related facts compactly; do not repeat settled questions.
 
 Record spec revision or content hash, review preference/state and corrections in private session state. At resume, retain an outstanding pause and apply final corrections before building. If a correction changes scope, update dependent files, responsibilities and checks. Successful maintenance updates within already-authorized scope still adopt automatically after their frozen checks; the optional spec review is not a new approval on every successful test.
+
+After an immediate-draft request, do not reopen delivery as a required decision at the end. If necessary, label the returned text provisional and carry delivery forward as pending for finalization. A draft can be complete for its present purpose while installation or publication remains unresolved.
 
 <a id="resource-templates-finder-report-json"></a>
 
@@ -610,12 +620,14 @@ Present this plan and its checks visibly before any complete target contents or 
 - Foundations and rights: [finder report or reason for original work/pending research].
 - Implementation order and useful agents: [explicit author → check → deliver sequence; bounded useful roles, write ownership, integration].
 - Privacy and delivery: [local/private configuration versus publishable content; authorized destination].
-- Verification before build: [case input → expected outcome → failure condition → actual check method; activation separately; relevant regression, baseline and evaluator. For each material correction, name the old → final behavior and a case that fails if the old contract returns].
+- Verification before build: [material requirement/supplied example → unchanged input and expected outcome → failure condition → actual check method; activation separately; relevant regression, baseline and evaluator. Include discriminating order/missing-value cases when relevant and an independent final-contract/stale-instruction check for each behavior-bearing resource. For each material correction, name the old → final behavior and a case that fails if the old contract returns].
 - Unavailable checks and completion criteria: [what remains unverified and when done].
 
 [Offer corrections or an optional pause. Wait only if review-first/pause is requested or a consequential decision blocks implementation; otherwise proceed with already-authorized work.]
 
 Delivery reminder: name the exact save/install path, delimit file contents, report actual versus pending checks, and provide a compact private resume note outside the skill. With no file tools, saving is the user's remaining step.
+
+For draft-now delivery that remains undecided, provide provisional saveable text and record final delivery as pending; do not append a required choice or approval question.
 
 <a id="resource-templates-improvement-json"></a>
 
