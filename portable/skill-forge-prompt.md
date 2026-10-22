@@ -12,7 +12,7 @@ their references below describe capabilities, not tools available in plain chat.
 Generated from canonical instructions and all reference, template, question,
 and bundled sub-skill resources. Edit those sources and regenerate this file; do not edit this bundle.
 
-Source SHA-256: `c43324b6abf220ef429b1e07078eae897ec950dfac7eb8f35e911de48c05cd80`
+Source SHA-256: `d1d88cf64cb0d6e3c242177e044f8ea73357e6cfbf22dd12ce2d017151723622`
 
 <a id="resource-skill-md"></a>
 
@@ -32,12 +32,12 @@ Turn a useful workflow into an independently usable skill. Understand and challe
 
 At the build boundary, show a compact, visible plan **before** complete target contents or writes. Even a tiny draft needs these concrete parts, each as short as the task permits:
 
-- Purpose, activation/exclusions, current input/output rules, and material constraints and final corrections.
+- Purpose, activation/exclusions, current input/output rules, and material constraints and final corrections. State supplied field names, column order and exact headers or other fixed formats here; a reference to “the supplied inputs” or “the output rules” is insufficient.
 - Intended file paths, resources/dependencies, proposed defaults, relevant limits, privacy and skill delivery.
 - **Implementation steps in order**, such as author the requested file, check metadata and cases, then deliver it. Describing the finished behavior alone is not an implementation sequence.
 - Verification inputs, expected outcomes and failure conditions; distinguish available checks from unexecuted ones.
 
-Then pause only if requested or a material decision blocks work; otherwise proceed in the same response. This order also applies to quick, draft-now and Markdown-only delivery. Keep the plan outside the generated file: file-only delivery identifies what to save. A plan hidden in a comment, inside the completed skill, or after the artifact does not provide a pre-build review opportunity.
+Before proceeding, compare the visible plan with the settled contract and fill omissions from that context without another question. Then pause only if requested or a material decision blocks work; otherwise proceed in the same response. This order also applies to quick, draft-now and Markdown-only delivery. Keep the plan outside the generated file: file-only delivery identifies what to save. A plan hidden in a comment, inside the completed skill, or after the artifact does not provide a pre-build review opportunity.
 
 ## Start from the request
 
@@ -538,7 +538,7 @@ For any capable plain-chat model, supply the generated portable prompt and relev
 
 The implementation spec is an editable description of what will be built and how the result will be checked. It is an output for the user, not hidden planning. Present it before writing the target skill or changing its implementation. Research, source inspection and a disposable illustrative snippet can help develop the spec; they are not permission to build the full target ahead of review.
 
-Keep this visible prelude separate from the installable artifact, including when delivery is only a `SKILL.md` file. Show the plan and checks first, then clearly mark the file contents to save. Do not hide the plan in a comment, make it an instruction inside the generated skill, or append it after implementation. A compact plan can accompany a draft in one response without an approval question.
+Keep this visible prelude separate from the installable artifact, including when delivery is only a `SKILL.md` file. State supplied field names, order, exact headers and other fixed formats in the prelude itself, before clearly marking the file contents to save. Compare it against the settled contract before building; details first appearing in the completed file do not fill a missing plan. Do not hide the plan in a comment, make it an instruction inside the generated skill, or append it after implementation. A compact plan can accompany a draft in one response without an approval question.
 
 Use the [template](#resource-templates-implementation-spec-md) selectively. A single-file skill may need five concise bullets; a complex integration needs enough detail to expose dependent choices. Cover the reusable purpose and activation/exclusions; confirmed inputs/output and examples; assumptions and preservation requirements; files/resources, foundations and dependencies; implementation order and useful delegated roles; private/public boundaries and delivery; observable acceptance and failure cases; and checks the host cannot execute. Do not force empty sections or technical vocabulary on beginners.
 
@@ -612,7 +612,7 @@ Revision: [id/hash]. Review preference: [continue / review first]. Status: [prop
 Present this plan and its checks visibly before any complete target contents or writes. Keep the plan outside the generated skill file, even for Markdown-only delivery; do not hide it in a comment.
 
 - Purpose, users and activation/exclusions: [repeated workflow and boundaries].
-- Inputs and outputs: [contract, required fields, destination, missing-data treatment].
+- Inputs and outputs: [material contract with supplied field names, column order, exact headers/format, destination and missing-data treatment; state these here rather than referring to the completed file].
 - Confirmed requirements and preservation: [source-backed decisions].
 - Proposed defaults, assumptions and unresolved blockers: [clearly separated].
 - Examples and failures: [representative input/output and counterexample].
