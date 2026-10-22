@@ -1,6 +1,6 @@
 # Skill Forge
 
-> **Development branch: v0.3.0 is not released.** Candidate 7 failed a required pre-build planning check on 2026-10-21 and was rejected automatically. Use [stable v0.2.0](https://github.com/HarryBurd33/skill-forge/tree/main) for installation. The instructions below describe the proposed behavior; see the [evaluation report](evals/v0.3.0/REPORT.md) for actual results and limits.
+> **Development branch: v0.3.0 is not released.** Candidate 8 was rejected automatically after a required verification-planning failure; candidate 7 also failed. Use [stable v0.2.0](https://github.com/HarryBurd33/skill-forge/tree/main) for installation. The instructions below describe the proposed behavior; see the [evaluation report](evals/v0.3.0/REPORT.md) for actual results and limits.
 
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
 

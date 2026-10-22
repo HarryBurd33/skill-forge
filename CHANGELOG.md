@@ -2,7 +2,7 @@
 
 ## 0.3.0 — unreleased
 
-Candidate 7 was rejected on 2026-10-21. A required visible planning detail was missing; a separate test-input flaw is recorded without retroactive rescoring. Stable 0.2.0 remains active. These changes are proposals, not a released update.
+Candidate 8 was rejected after a required verification-planning failure. Candidate 7 and its historical test-input flaw remain recorded without rescoring. Stable 0.2.0 remains active. These changes are proposals, not a released update.
 
 - Add conversation/project intake that preserves final corrections, reports source coverage, and keeps private context out of shared skills.
 - Present an implementation spec and observable verification plan before building. Offer an optional review pause and preserve explicit review-first requests on resume.
@@ -12,6 +12,7 @@ Candidate 7 was rejected on 2026-10-21. A required visible planning detail was m
 - Preserve the delivery context during an existing-skill repair and return complete prior/replacement contents when file access is unavailable; missing execution keeps adoption pending.
 - Add Windows PowerShell/manual setup and other-LLM instructions, cross-platform helper fixes and Windows/Linux/macOS CI. Tested configurations and unavailable native hosts are reported separately.
 - Preserve supplied acceptance examples, check behavior-bearing resources independently, and avoid reopening delivery after an immediate draft.
+- State supplied fields, order and exact output formats visibly before implementation; preserve the rejected candidate and incomplete checks when validation fails.
 - Preserve prior release evidence; record rejected candidates and the new comparison in the v0.3.0 evaluation report.
 
 ## 0.2.0 — 2026-10-17
