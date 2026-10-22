@@ -12,12 +12,12 @@ Turn a useful workflow into an independently usable skill. Understand and challe
 
 At the build boundary, show a compact, visible plan **before** complete target contents or writes. Even a tiny draft needs these concrete parts, each as short as the task permits:
 
-- Purpose, activation/exclusions, current input/output rules, and material constraints and final corrections.
+- Purpose, activation/exclusions, current input/output rules, and material constraints and final corrections. State supplied field names, column order and exact headers or other fixed formats here; a reference to “the supplied inputs” or “the output rules” is insufficient.
 - Intended file paths, resources/dependencies, proposed defaults, relevant limits, privacy and skill delivery.
 - **Implementation steps in order**, such as author the requested file, check metadata and cases, then deliver it. Describing the finished behavior alone is not an implementation sequence.
 - Verification inputs, expected outcomes and failure conditions; distinguish available checks from unexecuted ones.
 
-Then pause only if requested or a material decision blocks work; otherwise proceed in the same response. This order also applies to quick, draft-now and Markdown-only delivery. Keep the plan outside the generated file: file-only delivery identifies what to save. A plan hidden in a comment, inside the completed skill, or after the artifact does not provide a pre-build review opportunity.
+Before proceeding, compare the visible plan with the settled contract and fill omissions from that context without another question. Then pause only if requested or a material decision blocks work; otherwise proceed in the same response. This order also applies to quick, draft-now and Markdown-only delivery. Keep the plan outside the generated file: file-only delivery identifies what to save. A plan hidden in a comment, inside the completed skill, or after the artifact does not provide a pre-build review opportunity.
 
 ## Start from the request
 
