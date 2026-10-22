@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "grader": "G00",
+  "created_at_utc": "2026-10-22T04:37:55.518889+00:00",
+  "scope": [
+    "K02-A",
+    "K02-B"
+  ],
+  "protocol": "Source-body blind independent observable-output review. Raw action/native streams were never decoded or printed. No builder/installed skill/proposed patch/prior grade or other case output inspected. Frozen full index metadata was initially printed, exposing identity mapping and other-case administrative metadata; no other-case actual output was read.",
+  "identity_blindness": "Imperfect: frozen execution-index/source-freeze explicitly expose arm identities. Judgments are coded A/B and grounded in this assigned current case only.",
+  "administrative_supplement": "Root supplied exact immutable source-blind-view-index.json under existing packet view_index_sha256; digest verified, no content/criteria/actor change. Root also supplied pre-existing immutable batch-G00/source-after-hashes.json snapshot to frozen packet; expected independent-index digest verified. Mutable live metadata timestamp regeneration is retained as a diagnostic, not treated as a per-case output change.",
+  "packet_hash_checks": [
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/execution-index.json",
+      "sha256": "65e0cf74841b722dace3db82311fc74f78c4458d5dcfb11e34ba0222ce6893c5",
+      "bytes": 218624,
+      "packet_sha256": "65e0cf74841b722dace3db82311fc74f78c4458d5dcfb11e34ba0222ce6893c5",
+      "pass": true
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/independent-hash-index.json",
+      "sha256": "f7b0b415b956fca3065d2402fe8722723cd3a9e99cee5a0995f868e8daff4ec1",
+      "bytes": 80050,
+      "packet_sha256": "f7b0b415b956fca3065d2402fe8722723cd3a9e99cee5a0995f868e8daff4ec1",
+      "pass": true
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/source-blind-view-index.json",
+      "sha256": "61682fa10b7f1e67d3cc91f2ce424f05ea25e07926af0eb202ae802154e9adcb",
+      "bytes": 21944,
+      "packet_sha256": "61682fa10b7f1e67d3cc91f2ce424f05ea25e07926af0eb202ae802154e9adcb",
+      "pass": true
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/candidate8-criteria.json",
+      "sha256": "c4305d513728b90b9c59c5d61e60ce64d5e363a0f670edfe817b493479507ef1",
+      "bytes": 35136,
+      "packet_sha256": "c4305d513728b90b9c59c5d61e60ce64d5e363a0f670edfe817b493479507ef1",
+      "pass": true
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/evaluator.md",
+      "sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+      "bytes": 5024,
+      "packet_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+      "pass": true
+    },
+    {
+      "check": "independent index binds frozen execution index",
+      "pass": true
+    },
+    {
+      "check": "view index binds execution index",
+      "pass": true
+    },
+    {
+      "check": "source-after hash metadata bound by independent index",
+      "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/source-after-hashes.json",
+      "sha256": "7696d57fea376a664721f6127c66a4ae2f285c1a268a039e40915be0cfcefc16",
+      "bytes": 13970,
+      "pass": true
+    }
+  ],
+  "artifact_checks": [
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actions-01.json",
+      "sha256": "b8476b0f93786735ce9ed3fbe1749804b0ae0271ea6b8d6b532aeb8270abdcc3",
+      "bytes": 14436,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "bytes/hash/length only; never decoded"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+      "sha256": "eff759f7446e8a36a8f15352653a51f618c70ecaa2079dc0960647a0c2091435",
+      "bytes": 3647,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-spawn-return.json",
+      "sha256": "0a9939f76047aaeea1c5789d10e39ee28dd3160752464ae5a60794ba8d32b5a9",
+      "bytes": 51,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/dispatch-message-01.txt",
+      "sha256": "3d89e719b2d57df5410ab36ed2cc3c4fc9375099cbef19fcd5c20066c7cc5bbd",
+      "bytes": 398,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/dispatcher-return-01.json",
+      "sha256": "d45df897c648aca1fd6db472a2b16a3d7d9db7b6329eae1039c917727717db9f",
+      "bytes": 522,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/input-01.json",
+      "sha256": "b2ef64e19106bc2c557478697507a7164066e4874ef4c17847e84ff8e4329914",
+      "bytes": 1385,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/launch-metadata.json",
+      "sha256": "0521a87e242be1f1eb212ff391546a7d41e36ed459a9e6a14b635e01528bf848",
+      "bytes": 1141,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/messages-01.json",
+      "sha256": "f35020b8a7e0dc4888a2af7ecb7bec87de2e720b0abb986c3490e892969c2e6a",
+      "bytes": 3975,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/task-01.txt",
+      "sha256": "b8ecd5ecf43c7270388b88ed0e97b92081a6e0d01cd98c13ed2bed38310b6ba5",
+      "bytes": 4071,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/turn-01.md",
+      "sha256": "31e9489da275d5f5cc096e16a790d9129cb3bdcc9773b9ed403e372e965702d6",
+      "bytes": 3646,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/workspace-location.json",
+      "sha256": "080a8f5d16085c4b5f3646a1316b28e9b0b418d10b78f172de1ec1c17e384aa3",
+      "bytes": 221,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actions-01.json",
+      "sha256": "c4098b42076bf9cfc6731655a5cda20d528fdcb5f83c1619c11c878793c6dfe3",
+      "bytes": 10902,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "bytes/hash/length only; never decoded"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+      "sha256": "ece58cda424c13582add412efb3ae592e31a21ad4ed5423308015a52d23f8232",
+      "bytes": 2614,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-spawn-return.json",
+      "sha256": "ee6f1d71e6ef65b61ad52b27d54ed4124177c9dafd17ba8ea1ec638fa8e9d4bb",
+      "bytes": 51,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/dispatch-message-01.txt",
+      "sha256": "759d28aa3d72845c420c293155b40036ca81245faa6e8b3863d26d3fc99078a3",
+      "bytes": 398,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/dispatcher-return-01.json",
+      "sha256": "fce4292d92c37b3c0cf6ecc90790aba76f2f063ae79549d50444b4b45e7886d8",
+      "bytes": 522,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/input-01.json",
+      "sha256": "b2ef64e19106bc2c557478697507a7164066e4874ef4c17847e84ff8e4329914",
+      "bytes": 1385,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/launch-metadata.json",
+      "sha256": "cf4e780915d00c011f34b2b17c9a571e6428736497ae317b1c94853e1acc5057",
+      "bytes": 1141,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/messages-01.json",
+      "sha256": "5555ac89cdd9dac053b4b77159f0d2d41d35b195e39ef3e9a3b6482aa02547e7",
+      "bytes": 2920,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/task-01.txt",
+      "sha256": "7b684ffb068f5e04c75a48ff694104a2e181e2f9672d599f3c7dc9503e6e7678",
+      "bytes": 4071,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/turn-01.md",
+      "sha256": "c9c398b7ab5b9f44dcc81e48447678687cd5a874da5c50092573c668ecc8d95d",
+      "bytes": 2613,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    },
+    {
+      "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/workspace-location.json",
+      "sha256": "2e2f1528094f7b0f4116bc327ea439f7574749deeb00d5e3529ca002ba997cb8",
+      "bytes": 221,
+      "matches_assigned": true,
+      "matches_frozen_execution_index": true,
+      "matches_independent_index": true,
+      "read_mode": "current selected evidence"
+    }
+  ],
+  "arms": [
+    {
+      "case": "K02",
+      "coded_arm": "A",
+      "views": {
+        "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-A/actions-01.json",
+        "sha256": "1d1af80a67602de27d596822118870bb00212cf63e323bf531ded36b116813dc",
+        "bytes": 14437,
+        "hash_bytes_match_assigned": true,
+        "matches_frozen_view_index": true,
+        "raw_hash_bytes_match_both_indices": true,
+        "source_body_omissions": []
+      },
+      "input_and_launch_binding": {
+        "input_user_exact_assigned_case": true,
+        "capabilities_exact_assigned_case": true,
+        "launch_capabilities_exact": true,
+        "launch_input_hash": true,
+        "launch_task_hash": true,
+        "launch_dispatch_hash": true,
+        "fresh_execution": true,
+        "completed_execution": true,
+        "required_turns_present": true
+      },
+      "message_order_and_ended_return": {
+        "channels": [
+          "commentary",
+          "final"
+        ],
+        "message_count": 2,
+        "final_last": true,
+        "actual_return_equals_message_final": false,
+        "actual_return_equals_final_plus_serialization_newline": true,
+        "turn_equals_message_final": true,
+        "turn_equals_message_final_plus_serialization_newline": false,
+        "ended_return_observed": true,
+        "ended_return_hash_exact": true,
+        "dispatcher_agent_matches": true,
+        "full_return_preserved": true,
+        "full_ordered_messages_preserved": true
+      },
+      "source_anchor_checks": {
+        "canonical_read_observed": true,
+        "canonical_hash_matches_launch": true,
+        "tree_hash_matches_both_indices_and_assigned": true,
+        "all_anchors_match_bound_metadata": true,
+        "limitations": "A first canonical read and intake have unavailable absolute timestamps. Source status/hash/path anchors retained; no source body inspected.",
+        "frozen_metadata_path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/source-after-hashes.json",
+        "frozen_metadata_sha256": "7696d57fea376a664721f6127c66a4ae2f285c1a268a039e40915be0cfcefc16"
+      },
+      "source_anchors": [
+        {
+          "view_json_pointer": "/records/1",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/A/skill-forge/SKILL.md",
+          "relative_path": "SKILL.md",
+          "status": "success",
+          "sha256": "748bcc4006589cdc6e6724d28cc64c467149f2519743132c5bcaebb0392ade4c",
+          "bytes": 16871,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": null
+        },
+        {
+          "view_json_pointer": "/records/3",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/A/skill-forge/references/portability.md",
+          "relative_path": "references/portability.md",
+          "status": "success",
+          "sha256": "3d1e4fe40cfc4cf43a2ddd1046876e0da26926c4a2ad11ecc0a1b58b2f1c3e2b",
+          "bytes": 4952,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:09.508608+00:00"
+        },
+        {
+          "view_json_pointer": "/records/4",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/A/skill-forge/subskills/skill-finder/SKILL.md",
+          "relative_path": "subskills/skill-finder/SKILL.md",
+          "status": "success",
+          "sha256": "d53d6a412b39d58a6ae9bd0e7fe4bba559e50d7e195de99a16f0d25fd1d1cb80",
+          "bytes": 6097,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:09.509064+00:00"
+        },
+        {
+          "view_json_pointer": "/records/5",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/A/skill-forge/references/specification.md",
+          "relative_path": "references/specification.md",
+          "status": "success",
+          "sha256": "f8a28aea76e4adce8e19a7a503b9c3c812b970a40b9d91a11ed98494e1ee9c9a",
+          "bytes": 5585,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:09.509247+00:00"
+        },
+        {
+          "view_json_pointer": "/records/6",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/A/skill-forge/templates/implementation-spec.md",
+          "relative_path": "templates/implementation-spec.md",
+          "status": "success",
+          "sha256": "1da4e3c8e5c06e01eb8dd434ae7189ca33a201d14a5800a8643b0d193fb832d9",
+          "bytes": 2453,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:09.509481+00:00"
+        },
+        {
+          "view_json_pointer": "/records/7",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/A/skill-forge/references/evaluation.md",
+          "relative_path": "references/evaluation.md",
+          "status": "success",
+          "sha256": "7ac407af5820eaa14ec754d8aac0c4c54481dbf5acf4fc7674c2583ae8e18fa9",
+          "bytes": 3464,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:09.509755+00:00"
+        },
+        {
+          "view_json_pointer": "/records/8",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/A/skill-forge/references/authoring.md",
+          "relative_path": "references/authoring.md",
+          "status": "success",
+          "sha256": "c62a92803415d4966c2bcb4a17cffa3f36befa50e65017e0f3a2937c9d4208a2",
+          "bytes": 3426,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:09.509972+00:00"
+        },
+        {
+          "view_json_pointer": "/records/10",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/A/skill-forge/SKILL.md",
+          "relative_path": "SKILL.md",
+          "status": "success",
+          "sha256": "748bcc4006589cdc6e6724d28cc64c467149f2519743132c5bcaebb0392ade4c",
+          "bytes": 16871,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:58.362821+00:00"
+        }
+      ],
+      "domain_behavior_evidence": {
+        "tool_calls": [],
+        "child_launches": [],
+        "behavioral_tests_executed": false,
+        "baseline_comparison_executed": false,
+        "target_file_saved": false,
+        "available_result": "Complete SKILL.md text in actual ended return; user to save",
+        "manual_static_review_claim": "Supported only as in-context review, not behavioral execution"
+      },
+      "model_host": "Codex desktop; inherited current model; no override/serving build exposed"
+    },
+    {
+      "case": "K02",
+      "coded_arm": "B",
+      "views": {
+        "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-B/actions-01.json",
+        "sha256": "8afff7d53201481a18e695a42286ff6c034b72b60b1130217dc7f89f46f5c634",
+        "bytes": 10903,
+        "hash_bytes_match_assigned": true,
+        "matches_frozen_view_index": true,
+        "raw_hash_bytes_match_both_indices": true,
+        "source_body_omissions": []
+      },
+      "input_and_launch_binding": {
+        "input_user_exact_assigned_case": true,
+        "capabilities_exact_assigned_case": true,
+        "launch_capabilities_exact": true,
+        "launch_input_hash": true,
+        "launch_task_hash": true,
+        "launch_dispatch_hash": true,
+        "fresh_execution": true,
+        "completed_execution": true,
+        "required_turns_present": true
+      },
+      "message_order_and_ended_return": {
+        "channels": [
+          "commentary",
+          "final"
+        ],
+        "message_count": 2,
+        "final_last": true,
+        "actual_return_equals_message_final": false,
+        "actual_return_equals_final_plus_serialization_newline": true,
+        "turn_equals_message_final": true,
+        "turn_equals_message_final_plus_serialization_newline": false,
+        "ended_return_observed": true,
+        "ended_return_hash_exact": true,
+        "dispatcher_agent_matches": true,
+        "full_return_preserved": true,
+        "full_ordered_messages_preserved": true
+      },
+      "source_anchor_checks": {
+        "canonical_read_observed": true,
+        "canonical_hash_matches_launch": true,
+        "tree_hash_matches_both_indices_and_assigned": true,
+        "all_anchors_match_bound_metadata": true,
+        "limitations": "Source hash/path/status anchors retained; no source body inspected.",
+        "frozen_metadata_path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/source-after-hashes.json",
+        "frozen_metadata_sha256": "7696d57fea376a664721f6127c66a4ae2f285c1a268a039e40915be0cfcefc16"
+      },
+      "source_anchors": [
+        {
+          "view_json_pointer": "/records/0",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/B/skill-forge/SKILL.md",
+          "relative_path": "SKILL.md",
+          "status": "success",
+          "sha256": "24c7fbda203c0bdf59907af51a7b8494f21d5e648bdcc2d0325257cacd51663f",
+          "bytes": 9315,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:00.114540+00:00"
+        },
+        {
+          "view_json_pointer": "/records/3",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/B/skill-forge/references/portability.md",
+          "relative_path": "references/portability.md",
+          "status": "success",
+          "sha256": "82e5b0ce926ac8db43a3b093eeeeb30dc4b5c7906476849570bd373587b36279",
+          "bytes": 3562,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:15.415389+00:00"
+        },
+        {
+          "view_json_pointer": "/records/4",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/B/skill-forge/references/authoring.md",
+          "relative_path": "references/authoring.md",
+          "status": "success",
+          "sha256": "bfb20840adb29aa4d48ed8853080f5c2c579f6035167cb8e6b2916b6c31024c2",
+          "bytes": 3041,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:15.415584+00:00"
+        },
+        {
+          "view_json_pointer": "/records/5",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/B/skill-forge/subskills/skill-finder/SKILL.md",
+          "relative_path": "subskills/skill-finder/SKILL.md",
+          "status": "success",
+          "sha256": "b1b8ff020afff2bfc39655befc06736cce8cc07278b3fbb5c7d815ab2f661020",
+          "bytes": 6097,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:15.416065+00:00"
+        },
+        {
+          "view_json_pointer": "/records/6",
+          "source_path": "<workspace>/outputs/skill-forge/v030-round8-executions/sources/B/skill-forge/references/evaluation.md",
+          "relative_path": "references/evaluation.md",
+          "status": "success",
+          "sha256": "1fa94864ca6f178f9b0e538d5a176b452d6883221bcb5eaffc2bcbf73cced784",
+          "bytes": 2674,
+          "matches_bound_source_hash_metadata": true,
+          "source_body_read_by_grader": false,
+          "timestamp": "2026-10-22T04:32:15.416281+00:00"
+        }
+      ],
+      "domain_behavior_evidence": {
+        "tool_calls": [],
+        "child_launches": [],
+        "behavioral_tests_executed": false,
+        "baseline_comparison_executed": false,
+        "target_file_saved": false,
+        "available_result": "Complete SKILL.md text in actual ended return; user to save",
+        "manual_static_review_claim": "Supported only as in-context review, not behavioral execution"
+      },
+      "model_host": "Codex desktop; inherited current model; no override/serving build exposed"
+    }
+  ],
+  "raw_actions_read_only": true,
+  "all_selected_raw_artifacts_match_both_frozen_indices": true,
+  "all_packet_hash_checks_pass": true,
+  "no_execution_reruns": true,
+  "no_source_edits": true,
+  "full_domain_outputs_preserved_at_original_paths": true,
+  "missing_evidence": [
+    "No native serving build/model revision exposed; inherited current model only.",
+    "No independent native OS/Claude integration run in this no-tools case; not claimed."
+  ],
+  "global_eligibility": "This pair alone cannot establish suite eligibility or adoption.",
+  "mutable_live_metadata_observation": {
+    "check": "source-after hash metadata bound by independent index",
+    "path": "<workspace>/outputs/skill-forge/v030-round8-executions/source-after-hashes.json",
+    "sha256": "5644c8ec3009a9ae0f4ae8fb4cd566e60eea4a66dfb8f04c3976bf6f31cdb270",
+    "bytes": 13970,
+    "pass": false,
+    "finding": "Later live source-after-hashes.json regenerated after packet freeze. Not used as authoritative frozen source-anchor metadata. Root supplied pre-existing batch-G00 immutable exact-byte snapshot; no actor replay, source edit or rubric change."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "kind": "Separate activation execution unavailable",
+  "state": "not_executed",
+  "source": "v030-round8-executions",
+  "reason": "Required behavioral failure stopped this candidate before the activation probe. Historical probes do not establish this source's activation behavior."
+}

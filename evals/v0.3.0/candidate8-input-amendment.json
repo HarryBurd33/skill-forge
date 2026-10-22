@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "prospective input-only correction; no source patch or execution yet",
+  "case": "K02",
+  "original_file": "outputs/skill-forge/v030-round7-design/fresh-heldout-K.HIDDEN.json",
+  "original_sha256": "ec55d11bb526e4f6898109dd361a930f15411d1ca213fc030b154102dfa646b9",
+  "corrected_file": "outputs/skill-forge/v030-round8-design/fresh-heldout-K.CORRECTED-input-v2.json",
+  "corrected_sha256": "9de8dd75475d05e18b9d0bb2ac597387c0e6a05b6dc9d55d5636216c0040d210",
+  "changed_field": "cases[id=K02].input",
+  "exact_append": " Acceptance example: for an item with Expected=8 and Observed=6, Delta must be -2.",
+  "reason": "The existing N2 criterion names Expected8/Observed6/Delta-2, but the original user input supplies no numerical example. Make the example explicit prospectively; do not hardcode it into shared skill instructions.",
+  "preservation": {
+    "K01_and_K03_objects_identical": true,
+    "K02_other_fields_identical": true,
+    "original_criteria_sha256": "bee8d03b0c7573f26b7d9a0855f55b3f573f05bcb63fa81c595f8629fb13a961",
+    "unchanged_evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "required_conditions_per_arm": 84,
+    "required_cases_per_arm": 21,
+    "benefit_metric_original_conditions": 20,
+    "criteria_evaluator_budgets_failure_rules_changed": false
+  },
+  "comparison": "Run fresh baseline and candidate K02 under this exact corrected input and identical capabilities/protocol. Prior-input executions do not qualify for this comparison. Other fixtures stay unchanged.",
+  "historical_results": "Candidate7 frozen scores and rejection remain unchanged. K cases are now known regression/development evidence, not fresh heldouts.",
+  "heldout_policy": "L fixtures were not read or copied by this preparation. Preserve existing independent separation; root/coordinator can bind their prior frozen paths/hashes without exposing content to source author.",
+  "authorization_file": "outputs/skill-forge/v030-candidate8-authorization.json"
+}

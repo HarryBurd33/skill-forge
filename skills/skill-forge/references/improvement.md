@@ -8,6 +8,10 @@ Store session and run records in a user-controlled private directory outside any
 
 ## Candidate procedure
 
+A focused repair preserves the supplied target and existing delivery context. Without a requested destination change, prepare a local candidate or saveable text rather than reopening the new-skill delivery menu. Ask only when a consequential destination or authorization decision actually blocks the requested work; upstream publication still needs authorization.
+
+Authoring a candidate is separate from adopting it. When files or behavioral execution are unavailable, return complete prior and replacement contents under `baseline/skill-name/SKILL.md` and `candidate/skill-name/SKILL.md`, preserving the metadata name in both leaf directories. Label each check not actually run as unexecuted; distinguish performed static/manual checks from behavioral execution. Keep the prior version active. Missing execution blocks adoption, not preparation of the reviewable replacement.
+
 1. Record observation, reproducible input, affected outcome and hypothesis. Set effort limit (default 30 wall-clock minutes) and max candidates (default 3). Snapshot baseline including notices and customizations.
 2. Before patching, freeze acceptance criteria and evaluator in the private run directory. Identify regression and held-out cases, evidence kind and the minimum observable benefit. Criteria cannot be weakened by a candidate. Each attempt counts toward the limit, including rejected or inconclusive attempts.
 3. Patch an isolated copy. Run baseline and candidate under comparable conditions. Capture actual output artifacts and hashes; use independent grading where available. A self-reported pass without artifacts is insufficient.

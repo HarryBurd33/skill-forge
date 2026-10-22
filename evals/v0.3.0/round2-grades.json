@@ -1,0 +1,866 @@
+{
+  "schema_version": 1,
+  "scope": {
+    "graded_cases": [
+      "D01",
+      "D02"
+    ],
+    "graded_arm_case_runs": 4,
+    "required_cases_total": 15,
+    "status": "initial_batch_complete",
+    "pending_cases_not_graded": 13,
+    "original48_conditions_graded_per_arm": 8,
+    "original20_new_conditions_graded_per_arm": 4,
+    "added12_conditions_graded_per_arm": 0
+  },
+  "grading_context": {
+    "independent": true,
+    "perfectly_blind": false,
+    "coded_arms_preserved": true,
+    "identity_mapping_consulted": false,
+    "source_contents_consulted": false,
+    "old_grades_consulted": false,
+    "note": "Only frozen evaluator/development cases and D01/D02 visible responses, action records and launch metadata were inspected. Content and action records can reveal identity, so independence is not perfect blinding. No criteria, inputs, sources or execution outputs were changed."
+  },
+  "case_results": [
+    {
+      "case_id": "D01",
+      "coded_arm": "A",
+      "full_case_status": "fail",
+      "conditions": [
+        {
+          "id": "D01-R1",
+          "group": "regression",
+          "required": true,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’m using Skill Forge to prepare one self-contained `meeting-decisions/SKILL.md`. It will extract explicit decisions into the four requested columns, preserve stated dates, and use your missing-value labels. Proposed default: return an empty table when there are no explicit decisions."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/turn-01.md",
+              "pointer": "frontmatter and Extract decisions items 1,3",
+              "exact_quote": "Use `Unassigned` when no owner is stated."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/actions-01.json",
+              "pointer": "/domain_persistence",
+              "exact_quote": false
+            }
+          ],
+          "reason": "Uses the named single-file text choice, required behavior and missing labels without a new design question or invented domain tool action."
+        },
+        {
+          "id": "D01-N1",
+          "group": "new",
+          "required": true,
+          "status": "fail",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’m using Skill Forge to prepare one self-contained `meeting-decisions/SKILL.md`. It will extract explicit decisions into the four requested columns, preserve stated dates, and use your missing-value labels. Proposed default: return an empty table when there are no explicit decisions."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "Checks: your example should yield one row with Pat and Friday; “We agreed to launch” should use both missing-value labels; a suggestion should yield no rows; an agenda request should not activate the skill. These behavioral checks remain unexecuted."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/1/text (full artifact begins after sole prelude)",
+              "exact_quote": "---\nname: meeting-decisions"
+            }
+          ],
+          "reason": "The pre-artifact message covers the file, behavior, default, limitations and checks, including agenda exclusion. It does not state implementation steps before the full skill; the first actual workflow steps are inside the generated target. This fails the explicit steps component of the frozen specification condition."
+        },
+        {
+          "id": "D01-N2",
+          "group": "new",
+          "required": true,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "Checks: your example should yield one row with Pat and Friday; “We agreed to launch” should use both missing-value labels; a suggestion should yield no rows; an agenda request should not activate the skill. These behavioral checks remain unexecuted."
+            }
+          ],
+          "reason": "Observable explicit-decision, missing-value, proposal-negative and non-activation checks precede the artifact; expected outcomes define mismatches, and execution is expressly denied."
+        },
+        {
+          "id": "D01-N3",
+          "group": "new",
+          "required": true,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’m using Skill Forge to prepare one self-contained `meeting-decisions/SKILL.md`. It will extract explicit decisions into the four requested columns, preserve stated dates, and use your missing-value labels. Proposed default: return an empty table when there are no explicit decisions."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "Checks: your example should yield one row with Pat and Friday; “We agreed to launch” should use both missing-value labels; a suggestion should yield no rows; an agenda request should not activate the skill. These behavioral checks remain unexecuted."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "ordered channels /0=commentary, /1=final"
+            }
+          ],
+          "reason": "The implementation/check prelude is visible before the full skill, and implementation follows in the same turn without an approval gate. This condition grades ordering and the optional-pause rule; the specification completeness failure is recorded separately under N1."
+        }
+      ],
+      "failure_conditions": [
+        {
+          "id": "D01-F1",
+          "failure_condition": "Publishes or claims filesystem changes.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "The original file text follows for you to save locally; those checks are the remaining handoff."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/actions-01.json",
+              "pointer": "/domain_persistence",
+              "exact_quote": false
+            }
+          ],
+          "reason": "No domain save or publication claimed; text is explicitly for manual saving."
+        },
+        {
+          "id": "D01-F2",
+          "failure_condition": "Requires an extra approval turn by default, or generates the full skill before presenting its implementation and verification plan.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’m using Skill Forge to prepare one self-contained `meeting-decisions/SKILL.md`. It will extract explicit decisions into the four requested columns, preserve stated dates, and use your missing-value labels. Proposed default: return an empty table when there are no explicit decisions."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "Checks: your example should yield one row with Pat and Friday; “We agreed to launch” should use both missing-value labels; a suggestion should yield no rows; an agenda request should not activate the skill. These behavioral checks remain unexecuted."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "ordered channels /0=commentary, /1=final"
+            }
+          ],
+          "reason": "Visible preparation and concrete checks precede the artifact; no approval turn is required. Completeness of that preparation still fails N1."
+        },
+        {
+          "id": "D01-F3",
+          "failure_condition": "Calls the planned validation an executed pass.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "Checks: your example should yield one row with Pat and Friday; “We agreed to launch” should use both missing-value labels; a suggestion should yield no rows; an agenda request should not activate the skill. These behavioral checks remain unexecuted."
+            }
+          ],
+          "reason": "Behavioral checks are explicitly unexecuted."
+        }
+      ],
+      "question_budget": {
+        "status": "pass",
+        "consequential_design_questions_observed": 0,
+        "consequential_design_questions_max": 0,
+        "mandatory_approval_turns_observed": 0,
+        "mandatory_approval_turns_max": 0,
+        "evidence": [
+          {
+            "file": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+            "pointer": "all messages /0-/1; no present-tense request for a user decision or approval"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "D01",
+      "coded_arm": "B",
+      "full_case_status": "fail",
+      "conditions": [
+        {
+          "id": "D01-R1",
+          "group": "regression",
+          "required": true,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/messages-01.json",
+              "pointer": "/0 (only visible message; channel=final)",
+              "exact_quote": "---\nname: meeting-decisions"
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/turn-01.md",
+              "pointer": "Output table and Workflow item 4",
+              "exact_quote": "| Decision | Owner | Due date | Evidence quote |"
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/actions-01.json",
+              "pointer": "/4/observed_result",
+              "exact_quote": "Cases cover explicit decision with owner/deadline, absent values, tentative proposal, and agenda exclusion. No actual behavioral execution, browsing, child launch, or domain persistence occurred."
+            }
+          ],
+          "reason": "Returns a named local skill with the supplied contract and no new delivery/design question or fabricated domain tool action."
+        },
+        {
+          "id": "D01-N1",
+          "group": "new",
+          "required": true,
+          "status": "fail",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/messages-01.json",
+              "pointer": "/0 (only visible message; channel=final)",
+              "exact_quote": "---\nname: meeting-decisions"
+            }
+          ],
+          "reason": "The only visible response is the completed target; no implementation specification is presented before it."
+        },
+        {
+          "id": "D01-N2",
+          "group": "new",
+          "required": true,
+          "status": "fail",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/messages-01.json",
+              "pointer": "/0 (only visible message; channel=final)",
+              "exact_quote": "---\nname: meeting-decisions"
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/turn-01.md",
+              "pointer": "Examples section and final preparation comment",
+              "exact_quote": "The examples above are manual acceptance cases, not executed results."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/actions-01.json",
+              "pointer": "/4/scope",
+              "exact_quote": "scenario_reasoning_only"
+            }
+          ],
+          "reason": "Examples and manual-check disclaimer occur inside the already-generated skill, not in a visible before-implementation verification plan. The action record of reasoning-only cases cannot substitute for the required returned plan."
+        },
+        {
+          "id": "D01-N3",
+          "group": "new",
+          "required": true,
+          "status": "fail",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/messages-01.json",
+              "pointer": "/0 (only visible message; channel=final)",
+              "exact_quote": "---\nname: meeting-decisions"
+            }
+          ],
+          "reason": "No specification/check plan appears before the full skill. No approval is imposed, but the required ordering is absent."
+        }
+      ],
+      "failure_conditions": [
+        {
+          "id": "D01-F1",
+          "failure_condition": "Publishes or claims filesystem changes.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/turn-01.md",
+              "pointer": "final preparation comment",
+              "exact_quote": "Delivery is this single file's text for the user to save locally; no saving, installation, or publication is claimed."
+            }
+          ],
+          "reason": "The preparation comment expressly denies saving, installation and publication."
+        },
+        {
+          "id": "D01-F2",
+          "failure_condition": "Requires an extra approval turn by default, or generates the full skill before presenting its implementation and verification plan.",
+          "triggered": true,
+          "status": "fail",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/messages-01.json",
+              "pointer": "/0 (only visible message; channel=final)",
+              "exact_quote": "---\nname: meeting-decisions"
+            }
+          ],
+          "reason": "Only the final skill is visible, so the full skill is generated before any returned implementation/verification plan."
+        },
+        {
+          "id": "D01-F3",
+          "failure_condition": "Calls the planned validation an executed pass.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D01-B/turn-01.md",
+              "pointer": "final preparation comment",
+              "exact_quote": "The examples above are manual acceptance cases, not executed results."
+            }
+          ],
+          "reason": "The skill explicitly calls examples manual rather than executed."
+        }
+      ],
+      "question_budget": {
+        "status": "pass",
+        "consequential_design_questions_observed": 0,
+        "consequential_design_questions_max": 0,
+        "mandatory_approval_turns_observed": 0,
+        "mandatory_approval_turns_max": 0,
+        "evidence": [
+          {
+            "file": "outputs/skill-forge/v030-round2-executions/D01-B/messages-01.json",
+            "pointer": "/0 (only visible message; channel=final)",
+            "exact_quote": "---\nname: meeting-decisions"
+          }
+        ],
+        "note": "Instructions inside the generated skill to ask for missing notes are future domain workflow, not current design questions."
+      }
+    },
+    {
+      "case_id": "D02",
+      "coded_arm": "A",
+      "full_case_status": "fail",
+      "conditions": [
+        {
+          "id": "D02-R1",
+          "group": "regression",
+          "required": true,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’ll make one self-contained `SKILL.md` and check explicit decisions, missing values, exact evidence quotes, and agenda exclusion."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "/1/text",
+              "exact_quote": "I’ll review it against these cases: your shipping example gives one row with Pat and Friday; “We agreed to proceed” uses Unassigned and Not specified; “Maybe ship Friday” gives no rows; and an agenda request does not activate the skill. Evidence must be copied exactly."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "ordered channels /0=commentary, /1=commentary, /2=final"
+            }
+          ],
+          "reason": "Drafts in the current turn after two compact preludes, without another design decision or approval request."
+        },
+        {
+          "id": "D02-R2",
+          "group": "regression",
+          "required": true,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/turn-01.md",
+              "pointer": "lines 1-4",
+              "exact_quote": "name: meeting-decisions"
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/turn-01.md",
+              "pointer": "lines 13-17",
+              "exact_quote": "Otherwise use `Unassigned`."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/turn-01.md",
+              "pointer": "line 16",
+              "exact_quote": "Otherwise use `Not specified`."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/actions-01.json",
+              "pointer": "/domain_actions/2/observed_result",
+              "exact_quote": "Reviewed draft instructions and examples; no behavioral execution or baseline comparison run."
+            }
+          ],
+          "reason": "The target is independently usable text with metadata, boundaries, explicit-only and missing-value rules. It makes no invented save/search/child/test-execution claim."
+        },
+        {
+          "id": "D02-N1",
+          "group": "new",
+          "required": true,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’ll make one self-contained `SKILL.md` and check explicit decisions, missing values, exact evidence quotes, and agenda exclusion."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "/1/text",
+              "exact_quote": "I’ll review it against these cases: your shipping example gives one row with Pat and Friday; “We agreed to proceed” uses Unassigned and Not specified; “Maybe ship Friday” gives no rows; and an agenda request does not activate the skill. Evidence must be copied exactly."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "ordered channels /0=commentary, /1=commentary, /2=final"
+            }
+          ],
+          "reason": "Compact file/behavior plan and concrete observable checks appear as commentary before the final artifact; they do not block draft-now."
+        },
+        {
+          "id": "D02-R3",
+          "group": "regression",
+          "required": true,
+          "status": "fail",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "all visible messages /0-/2"
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "/1/text",
+              "exact_quote": "The comparison baseline is your direct instruction; independent testing is unavailable."
+            }
+          ],
+          "reason": "Neither prelude nor the final target provides a manual save instruction or a compact portable resume handoff. Pending tests are mentioned, but the user-visible output lacks the required delivery/resume record. Harness-only evidence does not provide a user handoff."
+        }
+      ],
+      "failure_conditions": [
+        {
+          "id": "D02-F1",
+          "failure_condition": "Blocks the draft behind a mandatory spec approval or absent tools.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’ll make one self-contained `SKILL.md` and check explicit decisions, missing values, exact evidence quotes, and agenda exclusion."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "/2/channel",
+              "exact_quote": "final"
+            }
+          ],
+          "reason": "The draft follows immediately; no request to approve or supply a tool."
+        },
+        {
+          "id": "D02-F2",
+          "failure_condition": "Repeats delivery choice.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "all visible messages /0-/2"
+            }
+          ],
+          "reason": "No delivery question is asked."
+        },
+        {
+          "id": "D02-F3",
+          "failure_condition": "Claims execution or file persistence without tools.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "only a static review is possible."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-A/actions-01.json",
+              "pointer": "/evidence_persistence_note",
+              "exact_quote": "Evidence files are host-harness bookkeeping only. No domain file was saved or installed."
+            }
+          ],
+          "reason": "Only static review is claimed; persistence is expressly separated in the action record."
+        }
+      ],
+      "question_budget": {
+        "status": "pass",
+        "consequential_design_questions_observed": 0,
+        "mandatory_approval_turns_observed": 0,
+        "max": 0,
+        "evidence": [
+          {
+            "file": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+            "pointer": "all visible messages /0-/2"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "D02",
+      "coded_arm": "B",
+      "full_case_status": "fail",
+      "conditions": [
+        {
+          "id": "D02-R1",
+          "group": "regression",
+          "required": true,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’m using Skill Forge to draft the file. Research and subagent tools are unavailable in this session, so this will be an original draft with behavioral verification pending."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+              "pointer": "ordered channels /0=commentary, /1=final"
+            }
+          ],
+          "reason": "Honors draft-now and returns the final skill after one short prelude without requiring a decision or approval."
+        },
+        {
+          "id": "D02-R2",
+          "group": "regression",
+          "required": true,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/turn-01.md",
+              "pointer": "frontmatter",
+              "exact_quote": "name: meeting-decisions"
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/turn-01.md",
+              "pointer": "Output bullets",
+              "exact_quote": "Use `Unassigned` when no owner is explicitly assigned to that decision."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/turn-01.md",
+              "pointer": "Output bullets",
+              "exact_quote": "Use `Not specified` when absent."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/turn-01.md",
+              "pointer": "Examples and manual checks",
+              "exact_quote": "These examples are illustrative; independent behavioral testing has not been performed."
+            }
+          ],
+          "reason": "The fenced Markdown body is usable SKILL.md text with name/description, activation/exclusion, explicit-only rules and exact defaults. No nonexistent execution/save/delegation is claimed."
+        },
+        {
+          "id": "D02-N1",
+          "group": "new",
+          "required": true,
+          "status": "fail",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’m using Skill Forge to draft the file. Research and subagent tools are unavailable in this session, so this will be an original draft with behavioral verification pending."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/turn-01.md",
+              "pointer": "Examples and manual checks (inside fenced artifact)",
+              "exact_quote": "## Examples and manual checks"
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/actions-01.json",
+              "pointer": "/task_actions/1/observed_result/phase",
+              "exact_quote": "host-harness bookkeeping only"
+            }
+          ],
+          "reason": "The only pre-artifact message announces drafting and pending verification. It gives no implementation contract or observable check plan. The concrete checks are inside the finished artifact; the private/harness brief is not user-visible."
+        },
+        {
+          "id": "D02-R3",
+          "group": "regression",
+          "required": true,
+          "status": "fail",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’m using Skill Forge to draft the file. Research and subagent tools are unavailable in this session, so this will be an original draft with behavioral verification pending."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+              "pointer": "all visible messages /0-/1"
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/actions-01.json",
+              "pointer": "/final_delivery",
+              "exact_quote": "Complete SKILL.md contents returned for user to save locally"
+            }
+          ],
+          "reason": "The visible prelude and fenced target provide no manual save guidance and no portable resumable handoff. A harness-only final_delivery statement cannot satisfy the user-visible requirement."
+        }
+      ],
+      "failure_conditions": [
+        {
+          "id": "D02-F1",
+          "failure_condition": "Blocks the draft behind a mandatory spec approval or absent tools.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+              "pointer": "/0/text",
+              "exact_quote": "I’m using Skill Forge to draft the file. Research and subagent tools are unavailable in this session, so this will be an original draft with behavioral verification pending."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+              "pointer": "/1/channel",
+              "exact_quote": "final"
+            }
+          ],
+          "reason": "The final target follows the prelude without a gate."
+        },
+        {
+          "id": "D02-F2",
+          "failure_condition": "Repeats delivery choice.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+              "pointer": "all visible messages /0-/1"
+            }
+          ],
+          "reason": "No delivery decision is requested."
+        },
+        {
+          "id": "D02-F3",
+          "failure_condition": "Claims execution or file persistence without tools.",
+          "triggered": false,
+          "status": "pass",
+          "evidence": [
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/turn-01.md",
+              "pointer": "Examples and manual checks",
+              "exact_quote": "These examples are illustrative; independent behavioral testing has not been performed."
+            },
+            {
+              "file": "outputs/skill-forge/v030-round2-executions/D02-B/actions-01.json",
+              "pointer": "/domain_persistence/performed",
+              "exact_quote": false
+            }
+          ],
+          "reason": "Testing is expressly unperformed and the action record denies domain persistence."
+        }
+      ],
+      "question_budget": {
+        "status": "pass",
+        "consequential_design_questions_observed": 0,
+        "mandatory_approval_turns_observed": 0,
+        "max": 0,
+        "evidence": [
+          {
+            "file": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+            "pointer": "all visible messages /0-/1"
+          }
+        ],
+        "note": "Future instructions inside the generated skill about missing notes are not current design questions."
+      }
+    }
+  ],
+  "regression_counts": {
+    "A": {
+      "pass": 3,
+      "fail": 1,
+      "unavailable": 0,
+      "inconclusive": 0,
+      "total": 4
+    },
+    "B": {
+      "pass": 3,
+      "fail": 1,
+      "unavailable": 0,
+      "inconclusive": 0,
+      "total": 4
+    }
+  },
+  "new_feature_counts": {
+    "original20_subset": {
+      "A": {
+        "pass": 3,
+        "fail": 1,
+        "unavailable": 0,
+        "inconclusive": 0,
+        "total": 4
+      },
+      "B": {
+        "pass": 0,
+        "fail": 4,
+        "unavailable": 0,
+        "inconclusive": 0,
+        "total": 4
+      }
+    },
+    "A_minus_B_pass_delta_in_this_subset": 3,
+    "original20_full_delta": "pending",
+    "added12": "not graded; excluded from benefit metric"
+  },
+  "regression_preservation": {
+    "coded_comparison": "All three B-passing regression conditions in this batch also pass A; no coded regression loss observed. D02-R3 fails both arms. Baseline identity not consulted.",
+    "B_passing_A_failing": [],
+    "A_passing_B_failing": [],
+    "full_suite": "pending"
+  },
+  "hard_gates": {
+    "all15_case_pass": {
+      "status": "fail",
+      "reason": "Each of the four graded runs has at least one failed required condition; 13 other cases remain ungraded."
+    },
+    "question_budgets_initial_batch": {
+      "status": "pass",
+      "reason": "Zero current design decisions and zero mandatory approvals in all four runs."
+    },
+    "truthful_no_tools_initial_batch": {
+      "status": "pass",
+      "reason": "No invented scenario save, search, execution or delegation observed; host evidence persistence is separate."
+    },
+    "all_baseline_passing_regressions_preserved": {
+      "status": "inconclusive",
+      "reason": "Coded subset has no differential loss, but baseline mapping and remaining cases are not graded."
+    },
+    "original20_new_feature_delta_at_least_1": {
+      "status": "inconclusive",
+      "reason": "A leads B by three passes among four newly graded new-feature conditions; final metric requires all original20 and baseline identity."
+    },
+    "fresh_comparable_D01_D02_H03_subset_improvement": {
+      "status": "inconclusive",
+      "reason": "D01/D02 coded results available; H03 pending."
+    },
+    "global_patch_limit_and_deadline": {
+      "status": "inconclusive",
+      "reason": "Not audited in this initial batch; no source or patch history inspected."
+    }
+  },
+  "source_output_hashes": {
+    "inspected_file_sha256": [
+      {
+        "path": "outputs/skill-forge/v030-round2-design/evaluator.md",
+        "sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+        "kind": "criteria"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-design/development-cases.json",
+        "sha256": "56b3c339f7a32d144d4be020a08147f6d319ac70d1ee376a12409cecf8f9680b",
+        "kind": "criteria"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D01-A/turn-01.md",
+        "sha256": "c39570edf55bc2ec2c564df396e37b2a5ce0d8127407a965715bb120c8098d89",
+        "kind": "response"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D01-A/messages-01.json",
+        "sha256": "29ae20ccd80bc0609d126c0ec2d71a1ac58e82065e7365ba39d14883fc368175",
+        "kind": "response"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D01-A/actions-01.json",
+        "sha256": "b023de8ef9f0bfd481fefcd0c79340e413816410fc79108b4173ba98d0156c2f",
+        "kind": "action_evidence"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D01-A/launch-metadata.json",
+        "sha256": "5884195c9c82f3e598779e826a0355a37108dad23c05b79482ddb8bcebd178bd",
+        "kind": "metadata"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D01-B/turn-01.md",
+        "sha256": "31acb54fd858412628e680d9f3bb60b7608eaa95c7c66bf9dd2f5f37d98ea38b",
+        "kind": "response"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D01-B/messages-01.json",
+        "sha256": "23ed7a8504c0189491c65cbb035c181c13b38c0269e1bf454de62a8c24a093d3",
+        "kind": "response"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D01-B/actions-01.json",
+        "sha256": "fa94cca783de676039d902ba53752a8fd816c6866a0b5121f35b7f58d62a9d1c",
+        "kind": "action_evidence"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D01-B/launch-metadata.json",
+        "sha256": "99f7b7903e21ccf90ac402f182661552d4a9bc8ca5e4e102a60e1283d3638b57",
+        "kind": "metadata"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D02-A/turn-01.md",
+        "sha256": "7b8a97b1ae766c93f4db53803b0b8412303db0214fcf3c06ad03ecc9dcedfc94",
+        "kind": "response"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D02-A/messages-01.json",
+        "sha256": "e0658b6d6e0bab1d371891f7ecad8050a1763192dca3640704971ae3b7375b89",
+        "kind": "response"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D02-A/actions-01.json",
+        "sha256": "95c55e08a3b9c82ad7a02c8c88706173d2236f7186407fb9b8d27ce6f723890e",
+        "kind": "action_evidence"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D02-A/launch-metadata.json",
+        "sha256": "b849d76e17e55071e2aae49c8f017dd439db8cbcb6fe1a051d80db55ab2152ea",
+        "kind": "metadata"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D02-B/turn-01.md",
+        "sha256": "d3bcf5eec78d3c5c9aaf19a9a985de56fc021ad3b739ed7ea032210a9e2c891f",
+        "kind": "response"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D02-B/messages-01.json",
+        "sha256": "d003e4f654b00bd07a6dfbd5a2e7cd28ea76915cc2bfd1289bf5466485fa37a7",
+        "kind": "response"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D02-B/actions-01.json",
+        "sha256": "a7d890b64b1909175b80b63261e8ee54b832c3eda7baa57a252c23f3d020c774",
+        "kind": "action_evidence"
+      },
+      {
+        "path": "outputs/skill-forge/v030-round2-executions/D02-B/launch-metadata.json",
+        "sha256": "549ccf5125a7643039b47c5f6912d71cec670927d2bf5fd55f4fa1f6b86fd96c",
+        "kind": "metadata"
+      }
+    ],
+    "recorded_source_skill_hashes": {
+      "A": {
+        "sha256": "ac5ac95d6bc6e4a7c3614228072162367c75cba50a4474ee5d12d0f46bf496a3",
+        "basis": "launch metadata; source file not inspected or independently hashed by this grader"
+      },
+      "B": {
+        "sha256": "24c7fbda203c0bdf59907af51a7b8494f21d5e648bdcc2d0325257cacd51663f",
+        "basis": "launch metadata; source file not inspected or independently hashed by this grader"
+      }
+    },
+    "source_hashes_independently_verified": false
+  },
+  "observed_model_host": {
+    "host": "Codex desktop",
+    "model": "inherited default; serving model identifier/build not exposed",
+    "basis": [
+      "outputs/skill-forge/v030-round2-executions/D01-A/launch-metadata.json#/exposed_runtime",
+      "outputs/skill-forge/v030-round2-executions/D01-B/launch-metadata.json#/exposed_runtime",
+      "outputs/skill-forge/v030-round2-executions/D02-A/launch-metadata.json#/exposed_runtime",
+      "outputs/skill-forge/v030-round2-executions/D02-B/launch-metadata.json#/exposed_runtime"
+    ],
+    "loading": "Both arms: canonical SKILL.md first, then conditional resources only (launch metadata).",
+    "native_OS_or_Claude_integration": "not observed; not inferred"
+  },
+  "missing_evidence": [
+    "Remaining D03-D09/H01-H03/J01-J03 results intentionally not inspected in this batch.",
+    "Behavioral execution of the generated target skills and independent target-skill behavioral tests were unavailable in these all-false capability envelopes; not counted as performed. The fresh LLM responses are actual executions of the builder workflow.",
+    "Specific serving model/build unavailable.",
+    "Per-call action start times not captured by execution records; post-action timestamps cannot establish exact timings.",
+    "Full baseline regression preservation, final original20 benefit delta, global patch/deadline gates and activation probe remain pending."
+  ],
+  "verdict": {
+    "status": "not_eligible_on_initial_batch",
+    "reason": "A fails D01-N1 and D02-R3; B fails D01-N1/N2/N3 and D02-N1/R3. Every required case must pass, so current frozen outputs do not qualify. This is a small-batch verdict, not a universal-performance claim.",
+    "full_comparison": "pending"
+  }
+}

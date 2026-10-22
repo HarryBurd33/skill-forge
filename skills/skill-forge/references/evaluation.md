@@ -1,6 +1,8 @@
 # Evidence proportional to the change
 
-Before running candidates, freeze a small case table: id, input, expected observable outcome, failure conditions, required tools, maximum unnecessary questions, split, and evaluator. Separate development cases from regression cases; use held-out inputs not used to craft general changes. Reusing a known test is regression evidence, not held-out evidence.
+Before building, put concrete checks, expected outcomes, failure conditions, baseline and unavailable checks into the user-visible implementation spec. Preserve any review-first request. Before running candidates, freeze a small case table: id, input, expected observable outcome, failure conditions, required tools, maximum unnecessary questions, split, and evaluator. Separate development cases from regression cases; use held-out inputs not used to craft general changes. Reusing a known test is regression evidence, not held-out evidence.
+
+Trace material requirements and supplied acceptance examples to checks before construction. Preserve the exact supplied inputs and expected results; a convenient substitute cannot establish that an agreed case was covered. Add discriminating cases where order or missing-versus-valid values affect behavior. Check each behavior-bearing supporting resource independently against the final contract, including stale instructions; final artifact correctness does not supply a missing pre-build verification plan. Count user decisions across the whole response, including questions appended after a draft.
 
 Evaluate activation independently: should a request select this skill at all? Then evaluate task quality: requirements preserved, usable artifact, uncertainty handled honestly, effort requested, and completion. Choose a few observable binary checks and a qualitative 0–2 rubric (0 fails, 1 partial, 2 meets criteria). Define critical failures that cannot be averaged away, such as invented citations or violated fixed constraints.
 

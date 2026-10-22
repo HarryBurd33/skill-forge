@@ -31,3 +31,25 @@ Re-inspected the actual Matt Pocock wrapper, grilling implementation and MIT lic
 Skill Finder adds a distinct pre-implementation research handoff: one delegated researcher receives the refined sanitized brief, searches relevant primary resources, inspects actual instructions/code and reuse terms, and returns a justified integration plan. GitHub is useful for skills and code; Hugging Face is useful when its skills, models, datasets or Spaces fit the task. Search does not force reuse. Without a researcher, the parent searches directly; without browsing, it returns an honest pending research task and can draft original provisional files.
 
 The implementation is original. [GitHub licensing guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) and [Hugging Face license guidance](https://huggingface.co/docs/hub/repositories-licenses) inform the distinction between public visibility, source verification and applicable reuse rights. The existing third-party notices remain accurate: no upstream skill prose, templates or implementation code were copied into Skill Forge.
+
+## Specification, context and delegation update — 0.3.0
+
+Primary host documentation was rechecked on **2026-10-18**; the source ledger records the exact URLs and a pinned Codex platform README, LICENSE and NOTICE. Codex and Claude Code both document native Windows alternatives as well as macOS/Linux hosts; Intel/x64 and ARM64 are processor architectures rather than operating systems. These facts support setup instructions, not claims that every host/model combination was executed. The [compatibility record](compatibility.md) keeps actual checks separate.
+
+The original workflow now makes the proposed implementation concrete before building: show a right-sized spec, including files, assumptions, dependencies, examples, delivery and planned observable checks. A user can request a review pause; otherwise the already-authorized work continues. This preserves the user's opportunity to correct the plan without requiring confirmation after every passing maintenance update.
+
+Dependency-aware interviewing remains useful, but a long questionnaire is not a quality measure. Supplied conversation/project material can already settle decisions. Extract the reusable procedure, distinguish accepted requirements from assistant proposals, preserve later corrections, and ask only about material gaps or conflicts. Raw transcripts and private preferences are not shared defaults. The agent must disclose missing or inaccessible context.
+
+Current [Codex subagent guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents) supports delegation requested by applicable skill instructions; [Claude Code subagent guidance](https://code.claude.com/docs/en/sub-agents) describes separate worker contexts and task matching. Adapt the idea into bounded useful research, implementation, review or evaluation tasks, with separate write ownership and a parent responsible for integration. Do not require permanent custom-agent files or host-specific calls in the common skill. A missing launch tool requires direct work and an honest limitation, not imagined delegation.
+
+The earlier pinned grilling and creator records remain the conceptual foundation; no upstream prose, code, templates or assets were copied. Hugging Face was skipped for this update because no model, dataset or hosted resource materially improves an instruction workflow and optional standard-library helpers. The portable prompt and [other-LLM guide](other-llms.md) offer the same core workflow with explicit file, browsing, execution, persistence and publication limits.
+
+## Combining Skill Forge with Codex’s skill creator
+
+Skill Forge can manage the interview, implementation spec, evidence and reversible update. Codex’s built-in skill creator supplies host-specific authoring guidance and an independent forward-testing approach. They can be used together on the same working files; neither needs to wrap or replace the other. For example:
+
+> Use Skill Forge to refine this workflow and show its spec. Then use Codex’s skill creator to review the generated skill’s instructions and resources. Compare the revision against the prior version using the fixed Skill Forge checks.
+
+Improvements to the generated skill and to Skill Forge are separate candidates with separate evidence. Keep generalizable lessons in Forge and personal choices in private configuration. A useful review can also produce a proposed improvement for the built-in creator, but editing a vendor-managed cache is not a durable upstream update. Preserve a local patch or contribution; publishing to someone else’s repository needs appropriate authorization and access. The installed creator was inspected locally during this maintenance; its capabilities can evolve beyond the pinned research version described above.
+
+Core setup and discovery pages were rechecked on2026-10-21; exact URLs and scope are recorded in the source ledger. These checks support the guides, not equivalent performance across models or native-host tests.

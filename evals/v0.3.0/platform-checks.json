@@ -1,0 +1,76 @@
+{
+  "kind": "Actual hosted helper, package, and temporary-install checks; not native LLM execution",
+  "checked_date": "2026-10-18",
+  "workflow_run": "https://github.com/HarryBurd33/skill-forge/actions/runs/39194884082",
+  "commit": "d7b13b784eea9b4f110078b89ec475e943dbfb4d",
+  "workflow_actions": {
+    "checkout": "v7.0.1",
+    "setup_python": "v7.0.0"
+  },
+  "jobs": [
+    {
+      "name": "check (windows-latest, 3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39194884082/job/117875392693"
+    },
+    {
+      "name": "check (macos-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39194884082/job/117875392867"
+    },
+    {
+      "name": "check (ubuntu-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39194884082/job/117875392891"
+    },
+    {
+      "name": "check (windows-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39194884082/job/117875392913"
+    },
+    {
+      "name": "check (macos-15-intel, 3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39194884082/job/117875392956"
+    },
+    {
+      "name": "check (ubuntu-latest, 3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39194884082/job/117875393040"
+    }
+  ],
+  "runtime_log_source": "https://github.com/HarryBurd33/skill-forge/actions/runs/39172698041",
+  "runtime_samples": [
+    {
+      "os": "Windows build 10.0.26100",
+      "machine": "AMD64",
+      "python": "3.9.13"
+    },
+    {
+      "os": "Linux 6.17, glibc 2.39",
+      "machine": "x86_64",
+      "python": "3.13.16"
+    },
+    {
+      "os": "macOS 15.7.9",
+      "machine": "x86_64",
+      "python": "3.9.25"
+    },
+    {
+      "os": "macOS 26.6.2",
+      "machine": "arm64",
+      "python": "3.13.16"
+    }
+  ],
+  "limitations": [
+    "Runtime samples were read from visible logs of the earlier full-source matrix run; latest action-version job conclusions are listed separately.",
+    "Temporary directory-shape installations test helper behavior, not native Claude/Codex execution on each OS.",
+    "Other OS versions, CPU architectures and models remain unverified unless separately recorded."
+  ]
+}

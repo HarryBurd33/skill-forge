@@ -1,0 +1,1564 @@
+{
+  "schema_version": 1,
+  "report_kind": "final_partial_grading",
+  "generated_at_utc": "2026-10-19T18:54:10.360036+00:00",
+  "verdict": "REJECT_AUTOMATIC_ADOPTION_REQUIRED_D06_FAILURE_AND_INCOMPLETE_SUITE",
+  "reason": "FourthcandidateA fails D06R2/N1 and zeroquestionbudget, so required existing-skill naming/layout regression remains unresolved and already-authorized work stalls for deliverychoice. No ordinarybehavior retry or fifthpatch authorized. RemainingA cases andactivationnot executed after stop; unavailable/inconclusive notpassed.",
+  "case_results": [
+    {
+      "case": "D01",
+      "coded_arm": "A",
+      "execution_case_arm": "D01-A",
+      "conditions": [
+        {
+          "id": "D01-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D01-A/messages-01.json[0:3]; actions-01.json/domain_tool_calls",
+          "exact_quote": "cannot browse for foundations, launch subagents, run tests, or save the skill for you.",
+          "reason": "Uses settled local-text delivery and all supplied rules, no questions. Source/evidence reads separated from unavailable domain actions."
+        },
+        {
+          "id": "D01-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D01-A/messages-01.json[1]",
+          "exact_quote": "Plan: create `meeting-decisions/SKILL.md` with original instructions and no dependencies.",
+          "reason": "Before full artifact, readable plan covers pasted notes and four columns, extraction purpose, agenda exclusion in checks, one-row/date/empty defaults, file/dependencies, write-inspect-deliver steps, tool limitations. Brief is substantive for a tiny standalone skill."
+        },
+        {
+          "id": "D01-N2",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D01-A/messages-01.json[1]",
+          "exact_quote": "Invented facts or altered evidence quotes fail.",
+          "reason": "Visible prebuild checks specify user example=>Pat/Friday, missing values=>exact labels, proposals=>no rows, agenda=>nonactivation. Observable pass/fail outcomes and unexecuted model/baseline checks clearly distinguished. Does not count illustrative target examples as execution."
+        },
+        {
+          "id": "D01-N3",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D01-A/messages-01.json[1:3]",
+          "exact_quote": "You can request edits or a pause; I’ll proceed with this plan.",
+          "reason": "Plan/checks in earlier visible commentary; complete artifact delivered same turn, no mandatory approval or unresolved question."
+        }
+      ],
+      "question_decisions": 0,
+      "behavioral_case_state": "pass",
+      "eligible_case_state": "pass",
+      "limits": []
+    },
+    {
+      "case": "D01",
+      "coded_arm": "B",
+      "execution_case_arm": "D01-B",
+      "conditions": [
+        {
+          "id": "D01-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D01-B/messages-01.json[0]; actions-01.json",
+          "exact_quote": "Delivery is this single file's text for the user to save locally; no saving, installation, or publication is claimed.",
+          "reason": "Uses requirements directly and asks no questions; no domain tool action invented."
+        },
+        {
+          "id": "D01-N1",
+          "group": "new",
+          "state": "fail",
+          "evidence_pointer": "D01-B/messages-01.json[0]/start",
+          "exact_quote": "---\nname: meeting-decisions",
+          "reason": "Only visible message starts full target. No prior user-readable implementation specification. Internal task_actions are not visible specification."
+        },
+        {
+          "id": "D01-N2",
+          "group": "new",
+          "state": "fail",
+          "evidence_pointer": "D01-B/messages-01.json[0]/Examples",
+          "exact_quote": "The examples above are manual acceptance cases, not executed results.",
+          "reason": "Examples/check expectations appear after implementation workflow inside artifact. Truthful nonexecution does not supply required visible preimplementation check plan."
+        },
+        {
+          "id": "D01-N3",
+          "group": "new",
+          "state": "fail",
+          "evidence_pointer": "D01-B/messages-01.json[0]/start",
+          "exact_quote": "---\nname: meeting-decisions",
+          "reason": "No extra approval, but full artifact precedes any visible specification/check plan. This conjunction requires correct order."
+        }
+      ],
+      "question_decisions": 0,
+      "behavioral_case_state": "fail",
+      "eligible_case_state": "fail",
+      "limits": [
+        "Predetermined exact round2 cached output, canonical-first source loader; original timestamp12:29 UTC versus fresh A18:33 UTC. No perfectly simultaneous model comparison."
+      ]
+    },
+    {
+      "case": "D02",
+      "coded_arm": "A",
+      "execution_case_arm": "D02-A",
+      "conditions": [
+        {
+          "id": "D02-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D02-A/messages-01.json[1]",
+          "exact_quote": "Save only the following contents as `meeting-decisions/SKILL.md`:",
+          "reason": "Draft-now honored same turn, zero required further decisions or approval turns."
+        },
+        {
+          "id": "D02-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D02-A/messages-01.json[1]/artifact; actions-01.json",
+          "exact_quote": "name: meeting-decisions",
+          "reason": "Independent usable text artifact includes metadata, activation/exclusion, explicit-only and absent-value rules, no dependencies. No invented save/search/agents/behavioral tests."
+        },
+        {
+          "id": "D02-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D02-A/messages-01.json[1]/Plan and Checks before code block",
+          "exact_quote": "Checks: the supplied example must yield one row with Pat and Friday; “We agreed to proceed” must use Unassigned and Not specified;",
+          "reason": "Compact readable implementation/check plan precedes full target in same response. Observable input/output cases, failure rule, assumptions, dependencies, manual review sequence and execution limits; no approval block."
+        },
+        {
+          "id": "D02-R3",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D02-A/messages-01.json[1]/Resume handoff",
+          "exact_quote": "Save the file and this handoff yourself; no task files or memory were saved.",
+          "reason": "Concrete manual path/save guidance and portable settled goal/input/output/delivery, pending checks and next action; no model-memory implication."
+        }
+      ],
+      "question_decisions": 0,
+      "behavioral_case_state": "pass",
+      "eligible_case_state": "pass",
+      "limits": []
+    },
+    {
+      "case": "D02",
+      "coded_arm": "B",
+      "execution_case_arm": "D02-B",
+      "conditions": [
+        {
+          "id": "D02-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D02-B/messages-01.json",
+          "exact_quote": "I’m using Skill Forge to draft the file.",
+          "reason": "No extra required decision or approval; full draft delivered."
+        },
+        {
+          "id": "D02-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D02-B/messages-01.json[1]/artifact; actions-01.json",
+          "exact_quote": "These examples are illustrative; independent behavioral testing has not been performed.",
+          "reason": "Usable correct metadata/behavior/activation artifact; truthful tool limitations and no domain persistence."
+        },
+        {
+          "id": "D02-N1",
+          "group": "new",
+          "state": "fail",
+          "evidence_pointer": "D02-B/messages-01.json[0:2]",
+          "exact_quote": "```markdown\n---\nname: meeting-decisions",
+          "reason": "Prelude states intent/limitations only. No compact implementation/check plan before full target. Hidden recorded brief/criteria are not user-readable plan."
+        },
+        {
+          "id": "D02-R3",
+          "group": "regression",
+          "state": "fail",
+          "evidence_pointer": "D02-B/messages-01.json[1]/end",
+          "exact_quote": "- “Draft an agenda for the launch meeting.” → Do not activate this skill.",
+          "reason": "Final ends with target examples; no manual save guidance or compact settled/pending/next-step handoff. Internal host bookkeeping not user-visible resumable handoff."
+        }
+      ],
+      "question_decisions": 0,
+      "behavioral_case_state": "fail",
+      "eligible_case_state": "fail",
+      "limits": [
+        "Predetermined exact round2 cached output, canonical-first loader; original12:31 UTC versus fresh A18:34–18:36 UTC."
+      ]
+    },
+    {
+      "case": "D03",
+      "coded_arm": "A",
+      "execution_case_arm": "D03-A",
+      "conditions": [
+        {
+          "id": "D03-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D03-A/turn-01.md",
+          "exact_quote": "Choose one commitment",
+          "reason": "One consequential fixedness/capacity prerequisite grounded in a concrete week. Challenges perfect fit and labels proposed distinctions; no schedule optimization or invented capacity."
+        },
+        {
+          "id": "D03-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D03-A/turn-02.md",
+          "exact_quote": "Which target should become negotiable first",
+          "reason": "Correctly counts56sleep+40class+3shift+60study+16training=175>168, at least7short before essentials, preserves firm commitments and asks one focused tradeoff decision. No sleep shortening."
+        },
+        {
+          "id": "D03-R3",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D03-A/turn-03.md",
+          "exact_quote": "training four hours in this example",
+          "reason": "Preserves sleep/classes/shift, training4 thisweek, localMarkdown, infeasibility/reprioritization. Correct163hours leaves5 before essentials; no repeated settled decision. Compact resume brief retained."
+        },
+        {
+          "id": "D03-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D03-A/turn-03.md",
+          "exact_quote": "I will wait for your next instruction before building the skill.",
+          "reason": "Substantive spec covers behavior/I-O/boundaries/files/assumptions/steps. Concrete overload, exam addition and fixed-time conflict checks with observable results and critical failures. User-requested review pause honored; no fullskill built. Arithmetic examples labeled planned inputs, no behavioral execution claimed."
+        }
+      ],
+      "question_decisions_per_turn": [
+        1,
+        1,
+        0
+      ],
+      "question_budget_state": "pass",
+      "behavioral_case_state": "pass",
+      "eligible_case_state": "pass",
+      "limits": [
+        "Only text/manual arithmetic; no actual tests/files/children."
+      ]
+    },
+    {
+      "case": "D03",
+      "coded_arm": "B",
+      "execution_case_arm": "D03-B",
+      "conditions": [
+        {
+          "id": "D03-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D03-B/turn-01.md",
+          "exact_quote": "which commitments would you refuse to move or shorten",
+          "reason": "One consequential fixedness/capacity prerequisite grounded in a concrete week. Challenges perfect fit and labels proposed distinctions; no schedule optimization or invented capacity."
+        },
+        {
+          "id": "D03-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D03-B/turn-02.md",
+          "exact_quote": "which target should yield first",
+          "reason": "Correctly counts56sleep+40class+3shift+60study+16training=175>168, at least7short before essentials, preserves firm commitments and asks one focused tradeoff decision. No sleep shortening."
+        },
+        {
+          "id": "D03-R3",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D03-B/turn-03.md",
+          "exact_quote": "Training is four hours for this week, replacing the earlier 16-hour request",
+          "reason": "Preserves sleep/classes/shift, training4 thisweek, localMarkdown, infeasibility/reprioritization. Correct163hours leaves5 before essentials; no repeated settled decision. Compact resume brief retained."
+        },
+        {
+          "id": "D03-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D03-B/turn-03.md",
+          "exact_quote": "Construction is deferred as requested.",
+          "reason": "Substantive spec covers behavior/I-O/boundaries/files/assumptions/steps. Concrete overload, exam addition and fixed-time conflict checks with observable results and critical failures. User-requested review pause honored; no fullskill built. Arithmetic examples labeled planned inputs, no behavioral execution claimed."
+        }
+      ],
+      "question_decisions_per_turn": [
+        1,
+        1,
+        0
+      ],
+      "question_budget_state": "pass",
+      "behavioral_case_state": "pass",
+      "eligible_case_state": "pass",
+      "limits": [
+        "Only text/manual arithmetic; no actual tests/files/children.",
+        "Original predetermined cache with full portable-export loader and old Oct18timestamps, versus fresh canonical-first A. Legacy no separate ordered messages JSON; current action/final records preserved, absent original messages not reconstructed."
+      ]
+    },
+    {
+      "case": "D04",
+      "coded_arm": "A",
+      "execution_case_arm": "D04-A",
+      "conditions": [
+        {
+          "id": "D04-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D04-A/messages-01.json[0:3]",
+          "exact_quote": "I used all four supplied conversation entries; the later user corrections govern.",
+          "reason": "Uses settled CSV/local-only/source-order/explicitfields/Open contract, explicitly rejects Word/inferredowners/calendar in checks. Missingnotes and empty-result/date behavior marked proposed defaults. No restarted interview or invented history."
+        },
+        {
+          "id": "D04-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D04-A/turn-01.md/artifact and syntheticCSV",
+          "exact_quote": "Action,Owner,Due date,Status",
+          "reason": "Exact schema, sourceorder, empty owner/date, Open default or literalstatedstatus, local-only; synthetic example correct, no publication."
+        },
+        {
+          "id": "D04-N2",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D04-A/turn-01.md/implementation plan and checks before code block",
+          "exact_quote": "Word output or calendar sync fails the final correction.",
+          "reason": "Compact spec and concrete checks precede implementation same turn; unsupported Taylor-owner and superseded Word-output checks explicit. Proceeds draftnow, no approval."
+        },
+        {
+          "id": "D04-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D04-A/turn-01.md/artifact and scope",
+          "exact_quote": "No other conversation or project history was available.",
+          "reason": "Generalized workflow uses synthetic Morgan/Casey examples. No privatepath/incident/credential copied into reusable artifact. Quoted commands treated as data; no cross-chat source-access claim."
+        }
+      ],
+      "question_decisions_per_turn": [
+        0
+      ],
+      "question_budget_state": "pass",
+      "behavioral_case_state": "pass",
+      "eligible_case_state": "pass",
+      "limits": []
+    },
+    {
+      "case": "D04",
+      "coded_arm": "B",
+      "execution_case_arm": "D04-B",
+      "conditions": [
+        {
+          "id": "D04-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D04-B/turn-01.md/prelude and target",
+          "exact_quote": "The settled requirements are CSV meeting actions, original order, explicit owners and dates only, and local use.",
+          "reason": "Final confirmed workflow used without questions; Word/calendar/owner inference explicitly excluded, missing values treated by settled defaults. No earlier assistant suggestion gains authority."
+        },
+        {
+          "id": "D04-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D04-B/turn-01.md/ProduceCSV",
+          "exact_quote": "Action,Owner,Due date,Status",
+          "reason": "Exact schema/order/default/emptyfield contract preserved, explicitstatus literal, local-boundaries robust."
+        },
+        {
+          "id": "D04-N2",
+          "group": "new",
+          "state": "fail",
+          "evidence_pointer": "D04-B/turn-01.md/prelude then artifact",
+          "exact_quote": "Save the following as `meeting-actions-csv/SKILL.md`:",
+          "reason": "Prelude lists settled contract/capabilitylimits, then full artifact begins. No implementation/check plan prior; manual acceptance cases inside later target cannot satisfy preimplementation checks including overwritten Wordoutput."
+        },
+        {
+          "id": "D04-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D04-B/turn-01.md/Synthetic example and boundaries",
+          "exact_quote": "Use synthetic material in reusable examples.",
+          "reason": "No supplied private incident/path/credential in artifact; source data cannot authorize publication. No external history claim."
+        }
+      ],
+      "question_decisions_per_turn": [
+        0
+      ],
+      "question_budget_state": "pass",
+      "behavioral_case_state": "fail",
+      "eligible_case_state": "fail",
+      "limits": [
+        "Predetermined original full portable-export cache, Oct18timestamp; legacy absent separate messages not fabricated."
+      ]
+    },
+    {
+      "case": "D05",
+      "coded_arm": "A",
+      "execution_case_arm": "D05-protocol1-A",
+      "conditions": [
+        {
+          "id": "D05-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D05-protocol1-A/messages-01.json[0]; actions-01.json; host-window.json",
+          "exact_quote": "I’m using Skill Forge with the approved specification and existing Finder report.",
+          "reason": "Approved build-now used without interview/approval/research. Local workspace only. End18:39:21 before18:41:23; exactly2children; no external writes."
+        },
+        {
+          "id": "D05-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D05-protocol1-A/actions-01.json/child_records[0:2] and domain_actions[1:5]",
+          "exact_quote": "Construct exactly one original skill file in <temporary-path>",
+          "reason": "Actual fresh constructor writes the exact target, bounded75seconds with single-file ownership; return and file preserved. Separate fresh independent_executor reads target and writes responses, bound90seconds. Both tasks explicitly prohibit external skills/guides/cases/versions and nested agents. Source-boundary records show no violation; no original results carried over."
+        },
+        {
+          "id": "D05-N2",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D05-protocol1-A/workspace-artifacts/response-checks.json/conditions[1]/responses; checks.json; validation.json",
+          "exact_quote": "| Add a glossary | Unassigned | Not specified | We agreed to add a glossary; no owner or deadline was assigned. |",
+          "reason": "Actual fixture outputs checked directly: Pat/Friday one row, proposal no decision, glossary exact labels/quote. Frozen checks precede construction. Independent executor context separate from builder. Parent compares outputs and records findings before final. Baseline shared-context tie supports no superiority."
+        },
+        {
+          "id": "D05-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D05-protocol1-A/workspace-artifacts/explicit-decisions/SKILL.md; workspace-preservation.json; messages-01.json[2]",
+          "exact_quote": "name: explicit-decisions",
+          "reason": "Real single target matches name/leaf and contains exact output/source-order/evidence/default/exclusion contract. Truthful final fixture claims; no unrelated writes/publication recorded."
+        }
+      ],
+      "question_decisions": 0,
+      "behavioral_case_state": "pass",
+      "eligible_case_state": "pass",
+      "limits": [
+        "Preregistered whole-pair replacement under fixed protocol§6; original D05 remains diagnostic/inconclusive unchanged.",
+        "Constructor return records what it wrote but no separately exported native transcript. Current exported source/action records show no additional read.",
+        "All baseline/candidate fixture responses within one independent executor context; no isolated downstream comparison."
+      ]
+    },
+    {
+      "case": "D05",
+      "coded_arm": "B",
+      "execution_case_arm": "D05-protocol1-B",
+      "conditions": [
+        {
+          "id": "D05-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D05-protocol1-B/actions-01.json/events; messages-01.json; host-window.json",
+          "exact_quote": "Finder report accepted as user-supplied current result; no new research.",
+          "reason": "Approved specification respected, zero questions/research/publication. End18:43:22 within18:44:28 window;2children sequential; domain writes in workspace."
+        },
+        {
+          "id": "D05-N1",
+          "group": "new",
+          "state": "fail",
+          "evidence_pointer": "D05-protocol1-B/actions-01.json/events[5]; children[0:2]",
+          "exact_quote": "Created one original skill and evidence/fixtures.json, baseline.txt, criteria.json, session.json.",
+          "reason": "Parent performed construction. Child1 executes downstream fixture responses, child2 grades them. Neither constructs/implements skill. Actual test execution and grading do not satisfy required construction child."
+        },
+        {
+          "id": "D05-N2",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D05-protocol1-B/workspace-artifacts/evidence/executor-outputs.json; grader-report.json; criteria.json",
+          "exact_quote": "\"candidate\": \"No explicit decision.\"",
+          "reason": "Raw fixture outputs are correct on all3 fixed cases. Second independent grader checks those saved outputs against frozen criteria. Findings read before truthful completion; source/read/write boundaries preserved in child records."
+        },
+        {
+          "id": "D05-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D05-protocol1-B/workspace-artifacts/explicit-decisions/SKILL.md; messages-01.json/final",
+          "exact_quote": "name: explicit-decisions",
+          "reason": "Real matching-leaf skill contains explicit/source-order/four-column/default/verbatim-evidence/agenda rules. Final accurately limits scope and distinguishes activation metadata from live routing; no external write recorded."
+        }
+      ],
+      "question_decisions": 0,
+      "behavioral_case_state": "fail",
+      "eligible_case_state": "fail",
+      "limits": [
+        "Whole preregistered paired retry selected regardless of outcomes; no ordinary behavioral retry.",
+        "Task child_grader launch_record field points to preceding evidence-read event, but explicit domain_child_launch event, child task/return/read-write records and real report establish launch; field mispointer preserved as evidence-format defect, not fabricated corrected launch.",
+        "Shared downstream executor context; no model serving builds exposed."
+      ]
+    },
+    {
+      "case": "D06",
+      "coded_arm": "A",
+      "execution_case_arm": "D06-A",
+      "conditions": [
+        {
+          "id": "D06-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D06-A/messages-01.json[1]; actions-01.json/task_actions[0]",
+          "exact_quote": "use an explicit assignment or commitment; otherwise use `Unassigned`",
+          "reason": "Reviews actual supplied source/MIT and proposes focused evidence-threshold change, exact existingname/columns/order, checklistUnassigned+date thenDev/Notstated andnologo. Meaningful counterfailurechecks; no actualbaseline run claimed. This condition does not substitute for missing replacement/layout below."
+        },
+        {
+          "id": "D06-R2",
+          "group": "regression",
+          "state": "fail",
+          "evidence_pointer": "D06-A/turn-01.md/entire response; actions-01.json/evaluation",
+          "exact_quote": "\"candidate_authored\": false",
+          "reason": "No candidate text or saveable prior source under separateparent/matchingleaf paths. Text-only capability permits proposing baseline/meeting-actions andcandidate/meeting-actions contents/layout; omission is failure, not unavailable."
+        },
+        {
+          "id": "D06-R3",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D06-A/turn-01.md/finalhandoff; actions-01.json/evaluation",
+          "exact_quote": "The original remains unchanged, and no files, test results, or persistent memory have been saved for this skill.",
+          "reason": "Truthfully reports no source mutation/adoption/snapshot/behavioralexecution, preserves unchangedprior versus proposedcorrection. Explicit missing behavioralcomparison; does not falsely claim passingchecks."
+        },
+        {
+          "id": "D06-N1",
+          "group": "new",
+          "state": "fail",
+          "evidence_pointer": "D06-A/turn-01.md/deliveryquestion and actions-01.json/evaluation",
+          "exact_quote": "Which delivery should I prepare:",
+          "reason": "Stops for deliverydesign choice, no complete replacement despite alreadyauthorized textcandidate.0questionbudget exceeded by1, and no valid baseline/candidate snapshotlayout. Scope/checks alone do not meet proceed requirement."
+        }
+      ],
+      "question_decisions_per_turn": [
+        1
+      ],
+      "question_budget_state": "fail",
+      "behavioral_case_state": "fail",
+      "eligible_case_state": "fail",
+      "limits": [
+        "Ordinarybehaviorfailure; no protocol retry justified.",
+        "No tools: required textual candidate/layout possible. Does not count host evidence files as candidate."
+      ]
+    },
+    {
+      "case": "D06",
+      "coded_arm": "B",
+      "execution_case_arm": "D06-B",
+      "conditions": [
+        {
+          "id": "D06-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D06-B/turn-01.md/target and checks",
+          "exact_quote": "license: MIT",
+          "reason": "Preserves actualname/columns/order/MIT, explicitassignmentrequired, nearestspeakerexcluded, fallback andexplicitDev preserved. Suppliedfixture+explicitowner+noaction checks meaningful."
+        },
+        {
+          "id": "D06-R2",
+          "group": "regression",
+          "state": "fail",
+          "evidence_pointer": "D06-B/turn-01.md/To try it later",
+          "exact_quote": "keep a copy of the original, save this candidate separately",
+          "reason": "Generic copy advice lacks saveable prior andcandidate under explicit valid separateparent/matchingleaf layout. Only candidatepath meeting-actions/SKILL.md shown; frozen naming preservation requirement unmet, not rescued by no-tools limitation."
+        },
+        {
+          "id": "D06-R3",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D06-B/turn-01.md/preadoption paragraph",
+          "exact_quote": "No tests were executed, and there is no evidence yet that the candidate improves actual model behavior.",
+          "reason": "Unverifiedcandidate distinct from activeprior, no real save/snapshot/adoption claimed; behavioral/regressions requiredbeforeadoption androllback described."
+        },
+        {
+          "id": "D06-N1",
+          "group": "new",
+          "state": "fail",
+          "evidence_pointer": "D06-B/turn-01.md/layout and finalquestion",
+          "exact_quote": "For final delivery, would you prefer",
+          "reason": "Precedingfocusedchange/checks and candidate arepresent, but explicitvalidsnapshotlayout absent. One consequentialdeliveryquestion violates0budget; candidate alone does not cure requiredconjunction."
+        }
+      ],
+      "question_decisions_per_turn": [
+        1
+      ],
+      "question_budget_state": "fail",
+      "behavioral_case_state": "fail",
+      "eligible_case_state": "fail",
+      "limits": [
+        "Predetermined original full portable-export cache, Oct19 03:35UTC; originalcommentary recorded in actions only, not separately reconstructed."
+      ]
+    },
+    {
+      "case": "D07",
+      "coded_arm": "A",
+      "execution_case_arm": "D07-A",
+      "conditions": [
+        {
+          "id": "D07-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D07-A/turn-01.md/prompt",
+          "exact_quote": "README.md`, `data_dictionary.md`, and a reproducible script.",
+          "reason": "Uses corrected repositorycontract for internalanalysts, suppliedpublicCSV, row-countreconciliation andexplicitmissingvaluehandling; no prose-only report substitution."
+        },
+        {
+          "id": "D07-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D07-A/turn-01.md/prebuild plan and resume",
+          "exact_quote": "Python 3 with its standard library is a proposed default.",
+          "reason": "Unprovidedlanguage explicitlyproposed; analysis scope stays suppliedbrief, no inventedquestion or settledaudience/data/checksquestions."
+        },
+        {
+          "id": "D07-R3",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D07-A/messages-01.json; actions-01.json",
+          "exact_quote": "no domain files were saved or published.",
+          "reason": "Useful complete reusableprompt delivered same turn, no domain actions invented, no publication; returntext permitted."
+        },
+        {
+          "id": "D07-N1",
+          "group": "new",
+          "state": "pass",
+          "evidence_pointer": "D07-A/turn-01.md/prebuild plan and checks before writingblock",
+          "exact_quote": "The checks are fixed before drafting:",
+          "reason": "Compactspec coverspurposeactivationI/Orepositoryfileslanguageassumptionorderedsteps, thenobservablesmallCSV/missingvalues/reportcorrection/nonexecution/publicationchecks beforedraft. Draftnow honored noapproval."
+        }
+      ],
+      "question_decisions": 0,
+      "question_budget_state": "pass",
+      "behavioral_case_state": "pass",
+      "eligible_case_state": "pass"
+    },
+    {
+      "case": "D07",
+      "coded_arm": "B",
+      "execution_case_arm": "D07-B",
+      "conditions": [
+        {
+          "id": "D07-R1",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D07-B/turn-01.md/prompt",
+          "exact_quote": "Package the supplied public CSV and small analysis for review by internal analysts.",
+          "reason": "CorrectrepositoryREADME/datadictionary/reproduciblescript contract, rowcounts andexplicitmissingvaluetreatment preserved."
+        },
+        {
+          "id": "D07-R2",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D07-B/turn-01.md/analysis.py and resume defaults",
+          "exact_quote": "Default to Python unless the supplied context settles another language.",
+          "reason": "Default qualification explicitlypresent andresume namesPythonasdefault. Mustnotinvent originalunlabeledPythonfailure whenactualevidence labelsexactlydefault. Analysisquestion/scope leftsuppliedcontext, no settledquestions."
+        },
+        {
+          "id": "D07-R3",
+          "group": "regression",
+          "state": "pass",
+          "evidence_pointer": "D07-B/turn-01.md/prompt and limitations",
+          "exact_quote": "No analysis was executed.",
+          "reason": "Useful completedraft, no fabricatedexecution/sourcefilepublication; explicit no push/share, draftnow withoutquestions."
+        },
+        {
+          "id": "D07-N1",
+          "group": "new",
+          "state": "fail",
+          "evidence_pointer": "D07-B/turn-01.md/start and postdraft manualcheck",
+          "exact_quote": "Manual check, **unexecuted**:",
+          "reason": "Fullprompt startsaftershortdeliverableprelude. Compactimplementation/checkplan doesnot precedeartifact; concretecheck onlyafterdraft. Targetworkflow isimplementation, not priorbuilderplan."
+        }
+      ],
+      "question_decisions": 0,
+      "question_budget_state": "pass",
+      "behavioral_case_state": "fail",
+      "eligible_case_state": "fail"
+    },
+    {
+      "case": "D08",
+      "coded_arm": "A",
+      "execution_case_arm": "D08-A",
+      "conditions": [
+        {
+          "id": "D08-R1",
+          "group": "regression",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/D08-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure."
+        },
+        {
+          "id": "D08-R2",
+          "group": "regression",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/D08-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure."
+        },
+        {
+          "id": "D08-N1",
+          "group": "new",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/D08-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure."
+        },
+        {
+          "id": "D08-R3",
+          "group": "regression",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/D08-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "D08",
+      "coded_arm": "B",
+      "execution_case_arm": "D08-B",
+      "conditions": [
+        {
+          "id": "D08-R1",
+          "group": "regression",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/D08-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred."
+        },
+        {
+          "id": "D08-R2",
+          "group": "regression",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/D08-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred."
+        },
+        {
+          "id": "D08-N1",
+          "group": "new",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/D08-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred."
+        },
+        {
+          "id": "D08-R3",
+          "group": "regression",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/D08-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred."
+        }
+      ],
+      "behavioral_case_state": "inconclusive",
+      "eligible_case_state": "inconclusive",
+      "execution_status": "complete",
+      "grading_status": "available_cache_ungraded"
+    },
+    {
+      "case": "D09",
+      "coded_arm": "A",
+      "execution_case_arm": "D09-A",
+      "conditions": [
+        {
+          "id": "D09-R1",
+          "group": "regression",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/D09-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure."
+        },
+        {
+          "id": "D09-R2",
+          "group": "regression",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/D09-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure."
+        },
+        {
+          "id": "D09-N1",
+          "group": "new",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/D09-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure."
+        },
+        {
+          "id": "D09-R3",
+          "group": "regression",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/D09-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "D09",
+      "coded_arm": "B",
+      "execution_case_arm": "D09-B",
+      "conditions": [
+        {
+          "id": "D09-R1",
+          "group": "regression",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/D09-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred."
+        },
+        {
+          "id": "D09-R2",
+          "group": "regression",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/D09-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred."
+        },
+        {
+          "id": "D09-N1",
+          "group": "new",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/D09-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred."
+        },
+        {
+          "id": "D09-R3",
+          "group": "regression",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/D09-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred."
+        }
+      ],
+      "behavioral_case_state": "inconclusive",
+      "eligible_case_state": "inconclusive",
+      "execution_status": "complete",
+      "grading_status": "available_cache_ungraded"
+    },
+    {
+      "case": "H01",
+      "coded_arm": "A",
+      "execution_case_arm": "H01-A",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H01-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H01-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H01-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H01-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "H01",
+      "coded_arm": "B",
+      "execution_case_arm": "H01-B",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/H01-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/H01-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/H01-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/H01-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "inconclusive",
+      "eligible_case_state": "inconclusive",
+      "execution_status": "complete",
+      "grading_status": "available_cache_ungraded"
+    },
+    {
+      "case": "H02",
+      "coded_arm": "A",
+      "execution_case_arm": "H02-A",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H02-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H02-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H02-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H02-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "H02",
+      "coded_arm": "B",
+      "execution_case_arm": "H02-B",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/H02-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/H02-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/H02-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "inconclusive",
+          "evidence_pointer": "execution-index.json/executions/H02-B",
+          "reason": "Predetermined B cache is available but was not behaviorally graded in this stopped partial run; no outcome inferred. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "inconclusive",
+      "eligible_case_state": "inconclusive",
+      "execution_status": "complete",
+      "grading_status": "available_cache_ungraded"
+    },
+    {
+      "case": "H03",
+      "coded_arm": "A",
+      "execution_case_arm": "H03-A",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H03-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H03-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H03-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H03-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "H03",
+      "coded_arm": "B",
+      "execution_case_arm": "H03-B",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H03-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H03-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H03-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/H03-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "J01",
+      "coded_arm": "A",
+      "execution_case_arm": "J01-A",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J01-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J01-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J01-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J01-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "J01",
+      "coded_arm": "B",
+      "execution_case_arm": "J01-B",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J01-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J01-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J01-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J01-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "J02",
+      "coded_arm": "A",
+      "execution_case_arm": "J02-A",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J02-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J02-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J02-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J02-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "J02",
+      "coded_arm": "B",
+      "execution_case_arm": "J02-B",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J02-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J02-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J02-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J02-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "J03",
+      "coded_arm": "A",
+      "execution_case_arm": "J03-A",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J03-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J03-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J03-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J03-A",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    },
+    {
+      "case": "J03",
+      "coded_arm": "B",
+      "execution_case_arm": "J03-B",
+      "conditions": [
+        {
+          "id": null,
+          "condition_slot": 1,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J03-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 2,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J03-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 3,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J03-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        },
+        {
+          "id": null,
+          "condition_slot": 4,
+          "group": "sealed_unread",
+          "state": "unavailable",
+          "evidence_pointer": "execution-index.json/executions/J03-B",
+          "reason": "No scenario actor dispatched; no output, action or behavioral result. New dispatch stopped after required D06-A failure. Exact sealed condition labels intentionally not opened because corresponding execution outputs were not ready; do not invent labels."
+        }
+      ],
+      "behavioral_case_state": "unavailable",
+      "eligible_case_state": "unavailable",
+      "execution_status": "not_dispatched",
+      "grading_status": "not_executed"
+    }
+  ],
+  "counts": {
+    "A": {
+      "all60": {
+        "pass": 26,
+        "fail": 2,
+        "unavailable": 32,
+        "inconclusive": 0
+      },
+      "original48": {
+        "pass": 26,
+        "fail": 2,
+        "unavailable": 20,
+        "inconclusive": 0
+      },
+      "fresh12": {
+        "pass": 0,
+        "fail": 0,
+        "unavailable": 12,
+        "inconclusive": 0
+      },
+      "case_states": {
+        "pass": 6,
+        "fail": 1,
+        "unavailable": 8,
+        "inconclusive": 0
+      },
+      "graded_original_regression": {
+        "pass": 16,
+        "fail": 1,
+        "unavailable": 0,
+        "inconclusive": 0
+      },
+      "graded_original_new": {
+        "pass": 10,
+        "fail": 1,
+        "unavailable": 0,
+        "inconclusive": 0
+      },
+      "group_unknown_sealed_slots": 24
+    },
+    "B": {
+      "all60": {
+        "pass": 18,
+        "fail": 10,
+        "unavailable": 16,
+        "inconclusive": 16
+      },
+      "original48": {
+        "pass": 18,
+        "fail": 10,
+        "unavailable": 4,
+        "inconclusive": 16
+      },
+      "fresh12": {
+        "pass": 0,
+        "fail": 0,
+        "unavailable": 12,
+        "inconclusive": 0
+      },
+      "case_states": {
+        "pass": 1,
+        "fail": 6,
+        "unavailable": 4,
+        "inconclusive": 4
+      },
+      "graded_original_regression": {
+        "pass": 15,
+        "fail": 2,
+        "unavailable": 0,
+        "inconclusive": 0
+      },
+      "graded_original_new": {
+        "pass": 3,
+        "fail": 8,
+        "unavailable": 0,
+        "inconclusive": 0
+      },
+      "group_unknown_sealed_slots": 24
+    }
+  },
+  "regression_counts": {
+    "observed_B_passing_losses": [],
+    "observed_loss_count": 0,
+    "coverage_limit": "Only seven paired gradedcases. Cannot assert preservation of all28originalregressionconditions withunexecuted/ungradedcases.",
+    "mandatory_D06_state": "fail",
+    "mandatory_D07_state": "pass"
+  },
+  "new_feature_counts": {
+    "metric_denominator_original20": 20,
+    "A_observed_pass": 10,
+    "B_observed_pass": 3,
+    "observed_subset_delta": 7,
+    "adoption_full_metric_proven": false,
+    "reason": "Observed sevenpairedcasescover11oforiginal20newconditions. Remaining9notgraded; neitherJ12 nor originaldiagnosticD05inflatebenefit. D01+3,D02+1,D04+1,D05+1,D07+1; D03tie,D06bothfail. H03positivebenefitunavailable. All15cases/allhardgatesstillrequired."
+  },
+  "hard_gates": [
+    {
+      "gate": "No fabricated source/action/test/save/publication/persistence",
+      "state": "inconclusive",
+      "reason": "No fabrication established in seven gradedpairs; metadatahonestyverified. Fullsuiteunrun andnativechildtranscriptsnotseparatelyexported. OriginalD05A externalread disclosed andprotocolinconclusive, neverconvertedtopass."
+    },
+    {
+      "gate": "No unauthorizedpublication",
+      "state": "pass",
+      "reason": "No publication or externaldomainwrite in inspectedrecords; no unrunresultclaimed."
+    },
+    {
+      "gate": "No actualprivatedata inshareddefaults/release",
+      "state": "pass",
+      "reason": "Inspectedartifacts use suppliedsyntheticfixtures; D04privatecontext excluded. No releasepackagecreated/claimed by thisgrade."
+    },
+    {
+      "gate": "No frozencheck/evaluatorweakening",
+      "state": "pass",
+      "reason": "Frozen criteria428fc4e898e1a1e3620859e98859de520a16704f09b68255f5d97acfb7161ef9/evaluatora1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b retained. Userexternalbudgetamendment onlycandidatecap4/90active minutes; pairedprotocolretrypreregistered underfixed§6."
+    },
+    {
+      "gate": "Spec/checkplanbeforeimplementation andproceedunlessrequestedpause/materialblocker",
+      "state": "fail",
+      "reason": "D06A blocks already-authorizedtextcandidate fordeliverydesignchoice, no blockingtechnicalinput. D03requestedreviewpause correctlyhonored; othergradedAplansprecededoutputs."
+    },
+    {
+      "gate": "Name/leafmatch forinstallableartifacts",
+      "state": "inconclusive",
+      "reason": "ExecutedD05A/Bactualtargets match. D06A omitscandidate andvalidprior/candidatematchingleaflayout; R2fails. Unrunartifactsnoconclusion."
+    }
+  ],
+  "activation_probes": {
+    "scope": "Six description-only routing probes, separate from60qualityconditions and from native skill discovery",
+    "execution_status": "not_dispatched",
+    "evidence_pointer": "activation-probe/index.json",
+    "probes": [
+      {
+        "id": "A01",
+        "expected": "activate",
+        "A": "unavailable",
+        "B": "unavailable",
+        "reason": "Prepared only; no actor or routing decisions generated."
+      },
+      {
+        "id": "A02",
+        "expected": "activate",
+        "A": "unavailable",
+        "B": "unavailable",
+        "reason": "Prepared only; no actor or routing decisions generated."
+      },
+      {
+        "id": "A03",
+        "expected": "activate",
+        "A": "unavailable",
+        "B": "unavailable",
+        "reason": "Prepared only; no actor or routing decisions generated."
+      },
+      {
+        "id": "A04",
+        "expected": "do-not-activate",
+        "A": "unavailable",
+        "B": "unavailable",
+        "reason": "Prepared only; no actor or routing decisions generated."
+      },
+      {
+        "id": "A05",
+        "expected": "do-not-activate",
+        "A": "unavailable",
+        "B": "unavailable",
+        "reason": "Prepared only; no actor or routing decisions generated."
+      },
+      {
+        "id": "A06",
+        "expected": "do-not-activate",
+        "A": "unavailable",
+        "B": "unavailable",
+        "reason": "Prepared only; no actor or routing decisions generated."
+      }
+    ]
+  },
+  "source_output_hashes": {
+    "final_packet": {
+      "execution-index.json": "7add37b9689641b6556ea266487902cc9e3038a2d8e441fa83001806656e853f",
+      "independent-hash-index.json": "a2c130cd41a2bfdab15062676174f0331b924dc4369a7f5e984730abb1c0cbad",
+      "D05-protocol-retry-amendment.json": "27453cd57e4915a298df27592197d74700275a25faa84759fd754b3b691b4703",
+      "run-metadata.json": "a3957d3f6e804b7b38cfefd8cfe60bcef8062245329d59a79a57b0fdc6cf2c82",
+      "durable-handoff.json": "7e70b0ac4f98e091061f00d4a63591bd87a27db32953fc1ec9918977997728e9",
+      "quota-status-final.json": "88879238256134ed131f7f820a79a10651b499358e7413ea860f7565232984cd",
+      "source-before-hashes.json": "6793f7e7bbf787734eca39e26b3191fc2a4a1da3b5d53d7daac5d80f8707e19f",
+      "source-after-hashes.json": "a63e54b24be8a11af69c9b311dc0b4841c657b872db9bb2d1d572616b3420d7a"
+    },
+    "source_tree_hashes_from_index": {
+      "A": "3735ddcdc3aebe6be3a0dca442a0147cdc789860f66d1577a048e94b5b4221a0",
+      "B": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af"
+    },
+    "source_unchanged_attestation": {
+      "A": true,
+      "B": true
+    },
+    "per_output_audits": [
+      "D05-evidence-audit.json",
+      "batch02-evidence-audit.json",
+      "batch03-evidence-audit.json",
+      "batch04-evidence-audit.json"
+    ],
+    "scope": "Grader independentlyhashed savedoutputfilesagainstbothindexes; sourcesnotread or rehashed bygrader. Runner sourceafterattestationpreserved."
+  },
+  "observed_model_host": {
+    "host": "Codex desktop; freshactors inheritcurrent model/nooverride",
+    "grader": "Inherited GPT-6family current runtime; exactservingmodelbuildnotexposed",
+    "cache": "OriginalGPT-6familydeveloperidentity, unknownexactmodel/version, preservedoriginaltimestamps",
+    "not_verified": [
+      "Astraidentifier",
+      "nativeClaudeCodediscovery",
+      "nativeWindows/Linux/architectureexecution",
+      "broadperformanceoutsidefixtures"
+    ]
+  },
+  "missing_evidence": [
+    "A D08/D09/H01/H02/H03/J01/J02/J03 actoroutputs",
+    "B H03/J01/J02/J03 actoroutputs",
+    "CachedB D08/D09/H01/H02 available butnotgraded afterrequiredA stop",
+    "Sixactivationprobe decisions; native discovery notmeasured",
+    "Exactservingmodel/buildandseparatelyexportednativechildtooltranscripts",
+    "Fulloriginal20newconditionmetric andall28regressionchecks"
+  ],
+  "protocol_and_limits": {
+    "original_D05": "OriginalA behavior4/4 butinconclusiveeligibilitysourcecontamination, originalB3/4N1failure; diagnostic filespreservedunchanged.",
+    "selected_D05": "Wholepreregisteredprotocol1pairselectedregardlessofresults; A4/4pass,B3/4N1failure. Noordinarybehaviorretry.",
+    "trusted_budget_amendment": "trusted-amendment-and-handoff.json, exacthumanauthorizationtooneadditionalcandidate; global4 nofifth.",
+    "D05_bounds": "Bothselectedarmswithinown5minutes/max2children, serialownership; sharedcontextbaseline/candidatefixturecomparisonislimited.",
+    "cache_loading": "D01/D02Bcanonicalfirstround2cache; D03/D04/D06/D07BandfourungradedBoriginalfullportableexport. Predeterminedreuseoldertiming disclosed.",
+    "evidence_capture": "Freshorderedvisiblemessages inspected. Legacycacheslackcompleteorderedmessageexports; existingactions/finals preserved, missingpreludes notinvented.",
+    "blinding": "Independentgrader separateauthor/runner, no source/authorproposal/othergrade/intendedpatchread. Requiredindexmetadata andactorversiontext revealidentity; imperfectblind.",
+    "sealed_files": "H/J hiddencasecontentsnotopened bythisgrader; no correspondingfreshoutputsready. Four slots persealedcase retained unavailable/inconclusive withoutinventedconditionIDs.",
+    "quota": "Finalrunneractualquota ordinaryallowed,true primary79%used/21%remaining weekly12%used/88%remaining; noreset/spend. Stopwasrequiredbehaviorfailure, notquota exhaustion."
+  },
+  "hard_gate_adoption_pass": false,
+  "release_or_adoption_authorized_by_grade": false
+}
