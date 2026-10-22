@@ -1,6 +1,6 @@
 # v0.3.0 evaluation report
 
-Status: candidate 7 was **actually rejected** by the unchanged local update helper on 2026-10-21 at 22:05:51 UTC. It is not adopted, installed or released. Stable v0.2.0 remains active on main and in the personal installation. Candidate 6 was also rejected after complete evaluation.
+Status: candidate 8 was **actually rejected** by the unchanged local update helper on 2026-10-22 at 04:40:59 UTC. It is not adopted, installed or released. Stable v0.2.0 remains active on main and in the personal installation. Candidates 6 and 7 also remain rejected with their historical results preserved.
 
 ## Fixed comparison
 
@@ -21,6 +21,7 @@ All 18 candidate arms, the three K baseline arms and the replacement D05 baselin
 | 5 | `18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb` | Rejected: 58/60 conditions and 14/15 cases passed. J03 omitted material requirements from the visible preview and a settled correction from the resume handoff; J03-R2 was a baseline-passing regression loss. |
 | 6 | `b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee` | Rejected: 70/72 conditions and 15/18 cases passed. K02 omitted pre-build checks; K03 omitted an independent resource-contract check; D07 exceeded the zero-question budget after its draft. |
 | 7 | `8557ea0c92c2d2e1ba1978d31655cfeb5152d190a8420e4579d92ebb786f8f2e` | Rejected after a required K02-N1 failure. Only three pairs were independently graded; this is an incomplete suite, not a 10/84 performance estimate. |
+| 8 | `36706d8fddada6c9f3b2675b0add9b6038d6592eca516a7e1f493f191bec198d` | Rejected after a required K02-N2 failure. One pair independently graded: A 3/4, B 2/4. Exact schemas/header and supplied arithmetic example passed; coverage of exclusion/order contrasts did not. |
 
 Candidate 5 passed every original condition (48/48 against baseline 36/48) and all original new-feature conditions (20/20 against 10/20). The additional heldouts still prevented adoption: its ten-condition benefit did not excuse a required failure or regression. The helper actually rejected the candidate and preserved the prior active version. This is a narrow fixture comparison, not a statistical or universal-model claim.
 
@@ -30,7 +31,7 @@ All18 pairs completed:22fresh records/14preselected baseline caches. Candidate6 
 
 The unchanged helper actually rejected candidate6 on K02 and preserved stable0.2. K03's clean grade was transparently corrected from pass to fail for both arms after evidence clarification under the same criterion. A prior grader's source-read exposure made its preliminary batch03 findings uncredited; a registered fresh source-blind grader assessed the same ended actors without replay. Exact raw hashes, corrected grades and limitations are in [candidate6 grades](round6-grades.json), [executions](model-executions-round6.json), and [activation execution](activation-execution-round6.json).
 
-Candidate7 preserves all72 prior conditions and adds12 independent L conditions frozen before its patch. All21 candidate cases run fresh; fourteen original baseline captures and all three new L baselines are prospectively fresh. A metadata-only capture audit replaced every cached record lacking an exact ended return before any new baseline dispatch; all results are selected regardless of score. Four complete-capture baseline records remain fixed. The38fresh plus4cached records retain the same inputs and checks. The evaluator, original20-only benefit metric, question budgets and failure conditions are unchanged. The actual stopped outcome follows.
+Candidate7 preserves all72 prior conditions and adds12 independent L conditions frozen before its patch. All21 candidate cases were planned fresh; fourteen original baseline captures and all three new L baselines are prospectively fresh. A metadata-only capture audit replaced every cached record lacking an exact ended return before any new baseline dispatch; all results are selected regardless of score. Four complete-capture baseline records remain fixed. The38fresh plus4cached records retain the same inputs and checks. The evaluator, original20-only benefit metric, question budgets and failure conditions are unchanged. The actual stopped outcome follows.
 
 ## Candidate 7 stopped result
 
@@ -44,7 +45,23 @@ A source-blind independent grader audited D07, K02 and K03. Candidate A passed 1
 
 Across all 84 conditions per arm, A has 10 pass / 2 fail / 24 executed but independently ungraded / 48 unexecuted; B has 8 pass / 4 fail / 24 independently ungraded / 48 unexecuted. The latter categories are inconclusive/unavailable, never passes. Fresh L cases remain unexecuted. The full benefit comparison is inconclusive. The unchanged helper actually rejected source 7 and preserved stable 0.2.0; its previous version and rejected candidate snapshot remain available locally. No further source candidate was authorized in this bounded run.
 
-See [partial final grades](final-grades.json), [actual selected executions](model-executions-final.json), [activation status](activation-execution-final.json), [independent focus audit](candidate7-focus-audit.json), and [actual rejection](candidate7-rejection.json). Broader claims still require the remaining cases, activation, independent grading and relevant native/host checks. This report does not claim a completed release.
+See [candidate 7 partial grades](round7-grades.json), [candidate 7 selected executions](model-executions-round7.json), [candidate 7 activation status](activation-execution-round7.json), [independent focus audit](candidate7-focus-audit.json), and [actual rejection](candidate7-rejection.json). Broader claims still require the remaining cases, activation, independent grading and relevant native/host checks. This report does not claim a completed release.
+
+## Candidate 8: prospective input correction and stopped result
+
+Before patching or executing source 8, K02's input was prospectively corrected to supply the Expected=8 / Observed=6 / Delta=-2 acceptance example its unchanged criterion already required. No expected condition, evaluator rule, question budget, failure condition or benefit metric changed. Both K02 arms ran fresh under this exact input and matching capabilities. Candidate 7 was not rescored. Known K cases are development/regression evidence; the independently frozen, unexecuted L cases remain separate from source authoring. [Exact input amendment](candidate8-input-amendment.json).
+
+Independent pre-build review approved a narrow three-file authoring patch: carry supplied fields, order and exact output formats into the visible plan and compare it with settled context before building. The portable prompt was regenerated. This review and static checks did not establish a behavioral pass.
+
+The neutral execution plan retained all eight complete baseline captures with unchanged inputs, regardless of score, and planned 34 fresh arms (21 candidate / 13 baseline), for 42 records. The first corrected K02 pair was independently graded before broader execution. Candidate A passed R1, R2 and N1; N2 failed. Baseline B passed R1/R2 and failed N1/N2. Both case gates fail; both use zero questions and zero approval turns. A now names the exact schemas/header before the target and preserves the supplied arithmetic example as an unexecuted planned check.
+
+**Required failure K02-A-N2:** its visible verification list gives no excluded-price request with an expected non-activation decision. Its order example names manifest order B,A and an extra count-sheet item C, but does not specify a different count-sheet order; it therefore cannot distinguish a wrong implementation following that second list. The finished skill states the correct rules. Those rules do not complete a missing pre-build check. Both checks follow from the supplied requirements; this is separate from candidate 7's undisclosed numeric-example flaw.
+
+New dispatch stopped immediately. K03-A's already-launched first turn ended and was preserved; turns 2/3 were never staged. Ten records are complete (two fresh / eight caches), one case is partial, 31 fresh arms and activation are unexecuted. All actors ended, with no post-stop dispatch and no ordinary behavior retry. Only K02's four conditions per arm were independently graded. Across 84 conditions: A has 3 pass / 1 fail / 4 partial-but-ungraded / 76 unexecuted; B has 2 pass / 2 fail / 32 captured-but-ungraded / 48 unexecuted. Unknowns are not passes. No full-suite benefit or broader improvement is claimed.
+
+The independent judge verified all 22 selected raw artifacts against both frozen indices, both derived views/global view index, exact ended returns, message order and corrected-input binding. Source bodies were omitted only from derived action views; raw evidence remained intact. An immutable, already hash-bound source-metadata snapshot closed a live timestamp-regeneration diagnostic. Identity mapping was visible in metadata, so the grader was independent and source-body blind, with imperfect identity blindness. The coordinator separately verified 233 indexed raw files and unchanged source snapshots/origins with zero errors. [Independent grade](candidate8-focus-grades.json), [audit](candidate8-focus-audit.json).
+
+The actual helper rejected source 8, preserving stable 0.2 and a candidate snapshot. No further source revision was authorized in this bounded run. [Actual rejection](candidate8-rejection.json), [stopped grades](final-grades.json), [complete selected execution records](model-executions-final.json), [activation not executed](activation-execution-final.json). The partial K03 diagnostic remains locally preserved and is not exported as a complete case. The [design diagnosis](candidate8-design-diagnosis.md) proposes a future structural hypothesis, not an accepted lesson or a tested improvement.
 
 ## Protocol and evidence
 
@@ -58,9 +75,9 @@ The inherited Codex model is retained without override; its exact serving identi
 
 ## Helpers and host limits
 
-[Local helper and package evidence](helper-checks.json) includes 28 helper tests (27 passed and one Windows-only skip locally), portable generation/drift checks, packaged relative links and four temporary personal/project Codex/Claude installation paths. Candidate 6's prepared archives were extracted and compared with the frozen canonical source. Its helper code is byte-identical to the code actually tested on Python 3.15.0 / macOS 14.6 ARM. These are script/filesystem results, not native model execution.
+[Local helper and package evidence](helper-checks.json) includes 28 helper tests (27 passed and one Windows-only skip locally), portable generation/drift checks, packaged relative links and four temporary personal/project Codex/Claude installation paths. Candidate 6's and candidate 8's prepared archives were extracted and compared with their frozen sources. Its helper code is byte-identical to the code actually tested on Python 3.15.0 / macOS 14.6 ARM. These are script/filesystem results, not native model execution.
 
-[Hosted platform checks](final-source-platform-checks.json) currently identify source 5: six successful jobs cover Windows and Ubuntu with Python 3.9/3.13, Intel macOS with 3.9, and ARM macOS with 3.13. Actual expanded job logs supplied runtime profiles. Final-source publication-head CI and public-download first use remain pending.
+[Hosted platform checks](final-source-platform-checks.json) currently identify source 5: six successful jobs cover Windows and Ubuntu with Python 3.9/3.13, Intel macOS with 3.9, and ARM macOS with 3.13. Actual expanded job logs supplied runtime profiles. Source 8 publication-head CI and public-download first use remain pending; source 5 checks cannot establish those results.
 
 The historical [native Codex smoke](native-codex-smoke.json), using CLI 0.163.0-alpha.10.2 on macOS ARM with exact candidate-4 source, verified project discovery, a visible plan, a draft and metadata. Its reviewer claim lacks a captured launch/return and receives **no independent-review credit**. Exact final-source native Codex execution, native Claude execution, native Windows/Linux model runs and equivalent performance across other LLMs remain unverified.
 

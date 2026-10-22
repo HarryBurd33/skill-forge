@@ -252,5 +252,19 @@
     "test_validity": "K02-N2 requires numeric8/6example absentinput; fixedscoreunchanged, caveat explicit. K02-N1 exactschema/header omission independently rejects.",
     "adopted": false,
     "further_source_candidates_authorized": 0
+  },
+  "candidate8_input_correction_and_stopped_run": {
+    "authorized_candidates": 1,
+    "source_sha256": "36706d8fddada6c9f3b2675b0add9b6038d6592eca516a7e1f493f191bec198d",
+    "criteria_sha256": "c4305d513728b90b9c59c5d61e60ce64d5e363a0f670edfe817b493479507ef1",
+    "evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "input_change_only": "K02 supplies8/6/-2beforepatch/executions. All84conditions/evaluator/budgets/failures/metric unchanged. BothK02armsfresh;7notrescored.",
+    "plan": "All8complete8Bcapturesretainedregardlessscore: D01,D03,D05,D07,H02,J02,K01,K03. 21freshA13freshB;42total.",
+    "capture_audit": "191copiedfilesverified; D05childplaintextaddsoneformattingterminalnewline vs exactactionstrings, bothpreserved. No missingcapture/no replacement.",
+    "outcome": "K02A3of4/B2of4,bothcasefail. RequiredAN2verificationcoveragefail. Stopnonewdispatch;10completerecords,onepartialK03Afirstturn,31freshunlaunched/activationnotrun.",
+    "independent_audit": "22rawfilesbothindices/2views/globalview/sourceanchors exact; immutablehash-boundsourceaftersnapshot suppliedtoavoidlivetimestampregeneration. Identity mappingimperfectblindnessdisclosed.",
+    "coordinator_audit": "233indexedrawfilesmatch;frozen8andbaseline/source7originsunchanged;0anomalies",
+    "rejected": true,
+    "further_source_revision_authorized": false
   }
 }

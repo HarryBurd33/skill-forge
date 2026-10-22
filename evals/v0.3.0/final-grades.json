@@ -1,130 +1,133 @@
 {
   "schema_version": 1,
-  "recorded_at_utc": "2026-10-21T22:05:51.703734+00:00",
-  "kind": "Stopped candidate7 result; partial independent grading, not a complete passing suite",
-  "candidate_hash": "8557ea0c92c2d2e1ba1978d31655cfeb5152d190a8420e4579d92ebb786f8f2e",
+  "recorded_at_utc": "2026-10-22T04:40:59.201323+00:00",
+  "kind": "Stopped candidate8; partial independent grading, not a complete passing suite",
+  "candidate_hash": "36706d8fddada6c9f3b2675b0add9b6038d6592eca516a7e1f493f191bec198d",
   "baseline_hash": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
-  "criteria_hash": "bee8d03b0c7573f26b7d9a0855f55b3f573f05bcb63fa81c595f8629fb13a961",
+  "criteria_hash": "c4305d513728b90b9c59c5d61e60ce64d5e363a0f670edfe817b493479507ef1",
   "evaluator_hash": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
-  "execution_index_sha256": "4093d44673b264802ef188f4f33b58dd2259d2ff9be69aa2123e86fb08d62483",
-  "focus_grade_sha256": "10076af3648a58d9514c8bdee07b4e815eb5ae552a08f9659bd478311fb4450b",
+  "execution_index_sha256": "25eee2bd8ec9b372ad8379732d0a19170eccf2c59d5c293b6da490f8542d5a23",
+  "independent_grade_sha256": "c9d2226c4aae756463708938e4b6099b84f15f80f4f0a97f21e9af645a9899a4",
   "case_results": [
     {
       "case": "D01",
       "coded_arm": "A",
       "case_arm": "D01-A",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D01-R1",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D01-N1",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D01-N2",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D01-N3",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D01",
       "coded_arm": "B",
       "case_arm": "D01-B",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "inconclusive",
       "conditions": [
         {
           "id": "D01-R1",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D01-N1",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D01-N2",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D01-N3",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D02",
       "coded_arm": "A",
       "case_arm": "D02-A",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D02-R1",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D02-R2",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D02-N1",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D02-R3",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D02",
       "coded_arm": "B",
       "case_arm": "D02-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D02-R1",
@@ -155,87 +158,90 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D03",
       "coded_arm": "A",
       "case_arm": "D03-A",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D03-R1",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D03-R2",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D03-R3",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D03-N1",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D03",
       "coded_arm": "B",
       "case_arm": "D03-B",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "inconclusive",
       "conditions": [
         {
           "id": "D03-R1",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D03-R2",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D03-R3",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D03-N1",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D04",
       "coded_arm": "A",
       "case_arm": "D04-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D04-N1",
@@ -266,13 +272,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D04",
       "coded_arm": "B",
       "case_arm": "D04-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D04-N1",
@@ -303,87 +310,90 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D05",
       "coded_arm": "A",
       "case_arm": "D05-A",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D05-R1",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D05-N1",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D05-N2",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D05-R2",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D05",
       "coded_arm": "B",
       "case_arm": "D05-B",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "inconclusive",
       "conditions": [
         {
           "id": "D05-R1",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D05-N1",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D05-N2",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D05-R2",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D06",
       "coded_arm": "A",
       "case_arm": "D06-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D06-R1",
@@ -414,13 +424,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D06",
       "coded_arm": "B",
       "case_arm": "D06-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D06-R1",
@@ -451,199 +462,90 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D07",
       "coded_arm": "A",
       "case_arm": "D07-A",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D07-R1",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
-              "line": 13,
-              "quote": "Reviewers consume a GitHub repository containing a README, data dictionary, and reproducible script."
-            }
-          ],
-          "reason": "Repository target and public CSV/internal analysts are explicit; required row-count and missing-value rules retained."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D07-R2",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
-              "line": 1,
-              "quote": "Python 3 is a proposed default when no stack is already agreed."
-            }
-          ],
-          "reason": "Language is qualified in visible prelude and draft; analysis question remains supplied context, no settled questions reopened."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D07-R3",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
-              "line": 34,
-              "quote": "Do not create a remote repository, push, publish, or share anything."
-            }
-          ],
-          "reason": "Complete usable copyable prompt delivered with truthful no-tools limits and no external action."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "D07-N1",
           "group": "new",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
-              "line": 3,
-              "quote": "I’ll write the prompt, inspect it against these checks, then deliver it here:"
-            }
-          ],
-          "reason": "Visible compact purpose/input/output/default/steps and four observable cases precede target; same-turn draft without approval."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
-      "question_budget": 0,
-      "observed_independent_design_decisions_per_turn": [
-        0
-      ],
-      "observed_design_decisions_total": 0,
-      "observed_mandatory_review_approval_turns": 0,
-      "question_budget_state": "pass",
-      "failure_conditions_present": [],
-      "execution_evidence_state": "pass",
-      "eligible_case_state": "pass",
-      "case_pass": true,
-      "notes": "All four required conditions and zero-question budget pass.",
-      "time_and_capability_budget": {
-        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
-        "actor_imposed_limit_minutes": null,
-        "coordinator_launch_utc": "2026-10-21T21:51:14.090126+00:00",
-        "last_ended_return_utc": "2026-10-21T21:53:10.324481+00:00",
-        "elapsed_launch_to_end_seconds": 116.234355,
-        "actor_imposed_limit_state": "not_applicable",
-        "domain_capabilities": {
-          "files": false,
-          "browse": false,
-          "execute": false,
-          "subagents": false,
-          "external_write": false,
-          "persistence": false
-        },
-        "domain_calls_observed": 0,
-        "child_launches_observed": 0
-      }
+      "case_pass": false,
+      "grade_source": null
     },
     {
       "case": "D07",
       "coded_arm": "B",
       "case_arm": "D07-B",
+      "observed_case_state": "inconclusive",
       "conditions": [
         {
           "id": "D07-R1",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
-              "line": 14,
-              "quote": "Use the supplied public CSV, analysis instructions or existing analysis, and settled review checks."
-            }
-          ],
-          "reason": "Target contains README, dictionary, reproducible script, row counts and explicit missing handling."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D07-R2",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
-              "line": 40,
-              "quote": "Python is a provisional default."
-            }
-          ],
-          "reason": "Final qualification supplies assumption label for Python; does not reopen settled audience/data/checks. Delivery question is separately counted against budget."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D07-R3",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
-              "line": 38,
-              "quote": "Nothing has been saved, installed, executed, or published for the task."
-            }
-          ],
-          "reason": "Usable provisional skill returned promptly; no publication or fabricated task actions."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "D07-N1",
           "group": "new",
           "required": true,
-          "state": "fail",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
-              "line": 1,
-              "quote": "Here’s a provisional reusable prompt that treats “report” as a reviewable repository."
-            }
-          ],
-          "reason": "Only one introductory sentence precedes complete target; manual cases occur after it. No pre-target implementation specification and observable checks."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         }
       ],
-      "question_budget": 0,
-      "observed_independent_design_decisions_per_turn": [
-        1
-      ],
-      "observed_design_decisions_total": 1,
-      "observed_mandatory_review_approval_turns": 0,
-      "question_budget_state": "fail",
-      "failure_conditions_present": [],
-      "execution_evidence_state": "pass",
-      "eligible_case_state": "fail",
       "case_pass": false,
-      "notes": "Extra delivery decision after draft exceeds budget 0: “Would you prefer a local Markdown SKILL.md ... installable folder/ZIP ... GitHub repository ... another destination?” This independently prevents full-case eligibility.",
-      "time_and_capability_budget": {
-        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
-        "actor_imposed_limit_minutes": null,
-        "coordinator_launch_utc": "2026-10-21T21:54:29.679612+00:00",
-        "last_ended_return_utc": "2026-10-21T21:56:46.921676+00:00",
-        "elapsed_launch_to_end_seconds": 137.242064,
-        "actor_imposed_limit_state": "not_applicable",
-        "domain_capabilities": {
-          "files": false,
-          "browse": false,
-          "execute": false,
-          "subagents": false,
-          "external_write": false,
-          "persistence": false
-        },
-        "domain_calls_observed": 0,
-        "child_launches_observed": 0
-      }
+      "grade_source": null
     },
     {
       "case": "D08",
       "coded_arm": "A",
       "case_arm": "D08-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D08-R1",
@@ -674,13 +576,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D08",
       "coded_arm": "B",
       "case_arm": "D08-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D08-R1",
@@ -711,13 +614,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D09",
       "coded_arm": "A",
       "case_arm": "D09-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D09-R1",
@@ -748,13 +652,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "D09",
       "coded_arm": "B",
       "case_arm": "D09-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "D09-R1",
@@ -785,13 +690,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "H01",
       "coded_arm": "A",
       "case_arm": "H01-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "H01-N1",
@@ -822,13 +728,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "H01",
       "coded_arm": "B",
       "case_arm": "H01-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "H01-N1",
@@ -859,87 +766,90 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "H02",
       "coded_arm": "A",
       "case_arm": "H02-A",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "H02-N1",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "H02-N2",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "H02-R1",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "H02-R2",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "H02",
       "coded_arm": "B",
       "case_arm": "H02-B",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "inconclusive",
       "conditions": [
         {
           "id": "H02-N1",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "H02-N2",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "H02-R1",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "H02-R2",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "H03",
       "coded_arm": "A",
       "case_arm": "H03-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "H03-N1",
@@ -970,13 +880,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "H03",
       "coded_arm": "B",
       "case_arm": "H03-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "H03-N1",
@@ -1007,13 +918,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "J01",
       "coded_arm": "A",
       "case_arm": "J01-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "J01-N1",
@@ -1044,13 +956,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "J01",
       "coded_arm": "B",
       "case_arm": "J01-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "J01-N1",
@@ -1081,87 +994,90 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "J02",
       "coded_arm": "A",
       "case_arm": "J02-A",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "J02-R1",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "J02-N1",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "J02-N2",
           "group": "new",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         },
         {
           "id": "J02-R2",
           "group": "regression",
           "required": true,
-          "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "state": "unavailable",
+          "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "J02",
       "coded_arm": "B",
       "case_arm": "J02-B",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "inconclusive",
       "conditions": [
         {
           "id": "J02-R1",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "J02-N1",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "J02-N2",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "J02-R2",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "J03",
       "coded_arm": "A",
       "case_arm": "J03-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "J03-N1",
@@ -1192,13 +1108,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "J03",
       "coded_arm": "B",
       "case_arm": "J03-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "J03-N1",
@@ -1229,13 +1146,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "K01",
       "coded_arm": "A",
       "case_arm": "K01-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "K01-R1",
@@ -1266,49 +1184,50 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "K01",
       "coded_arm": "B",
       "case_arm": "K01-B",
-      "eligible_case_state": "inconclusive",
+      "observed_case_state": "inconclusive",
       "conditions": [
         {
           "id": "K01-R1",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "K01-R2",
           "group": "regression",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "K01-N1",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "K01-N2",
           "group": "new",
           "required": true,
           "state": "inconclusive",
-          "reason": "Executed record exists but independent grading was stopped after a required failure."
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "K02",
       "coded_arm": "A",
-      "case_arm": "K02-A",
       "conditions": [
         {
           "id": "K02-R1",
@@ -1317,12 +1236,21 @@
           "state": "pass",
           "evidence": [
             {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
-              "line": 1,
-              "quote": "I’ll write `component-count-delta/SKILL.md`, review its metadata and CSV rules, then deliver the text for you to save."
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 12,
+              "quote": "Plan: draft one local `component-count-delta/SKILL.md` for board-game component comparisons. Inputs are a manifest with `Item,Expected` and a count sheet with `Item,Observed`. Match names exactly; output only manifest items in manifest order, with header `Item,Expected,Observed,Delta`. Missing counts stay blank; supplied zero remains zero. Compute Delta only when both counts exist. Exclude prices, replacement purchases and authenticity judgments; never invent counts.\n\nI’ll author the instructions, review them against these checks, then deliver the text:\n\n- Expected=8, Observed=6 → Delta=-2.\n- Expected=8, Observed absent → Observed and Delta blank; Observed=0 → Delta=-8.\n- Expected absent, Observed=6 → Expected and Delta blank.\n- Manifest order B,A with an extra count-sheet item C → rows B,A only; differently spelled names remain unmatched.\n\nThe draft has no scripts, resources or dependencies and uses only supplied lists. Proposed default: clarify conflicting duplicates or nonnumeric counts. External foundation research, independent review, behavioral execution and comparison with the original request as a direct-prompt baseline are unavailable.\n\nSave this complete text as `component-count-delta/SKILL.md`:",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/messages-01.json",
+              "line_start": 3,
+              "line_end": 8,
+              "quote": "    \"channel\": \"commentary\",\n    \"text\": \"I’m using Skill Forge to prepare the draft. I’ll keep it to one saveable `SKILL.md`; research, execution, delegated review and saving are unavailable under the stated capabilities.\"\n  },\n  {\n    \"channel\": \"final\",\n    \"text\": \"Plan: draft one local `component-count-delta/SKILL.md` for board-game component comparisons. Inputs are a manifest with `Item,Expected` and a count sheet with `Item,Observed`. Match names exactly; output only manifest items in manifest order, with header `Item,Expected,Observed,Delta`. Missing counts stay blank; supplied zero remains zero. Compute Delta only when both counts exist. Exclude prices, replacement purchases and authenticity judgments; never invent counts.\\n\\nI’ll author the instructions, review them against these checks, then deliver the text:\\n\\n- Expected=8, Observed=6 → Delta=-2.\\n- Expected=8, Observed absent → Observed and Delta blank; Observed=0 → Delta=-8.\\n- Expected absent, Observed=6 → Expected and Delta blank.\\n- Manifest order B,A with an extra count-sheet item C → rows B,A only; differently spelled names remain unmatched.\\n\\nThe draft has no scripts, resources or dependencies and uses only supplied lists. Proposed default: clarify conflicting duplicates or nonnumeric counts. External foundation research, independent review, behavioral execution and comparison with the original request as a direct-prompt baseline are unavailable.\\n\\nSave this complete text as `component-count-delta/SKILL.md`:\\n\\n```markdown\\n---\\nname: component-count-delta\\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected fields and a count sheet with Item and Observed fields. Use for exact-name count comparisons. Do not use for prices, replacement purchases or authenticity judgments.\\n---\\n\\n# Component count delta\\n\\nCompare only the two user-supplied lists. Never invent counts or infer them from game knowledge.\\n\\n1. Identify the manifest fields Item and Expected and the count-sheet fields Item and Observed. If a list is missing, request it. If conflicting duplicate count-sheet entries or nonnumeric counts prevent a clear comparison, request only the needed clarification. Blank counts are allowed.\\n2. Process every manifest row in its original order. Match Item names exactly, including case, punctuation and whitespace. Do not normalize names or use fuzzy matching. Ignore count-sheet items absent from the manifest.\\n3. Copy each manifest row's Expected count, leaving it blank when absent. Copy Observed from the exact matching count-sheet entry, leaving it blank when the entry or count is absent. Preserve supplied zero as zero.\\n4. Calculate Delta as Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank.\\n5. Return CSV only, without a Markdown fence or explanation. Use this exact header and column order:\\n   Item,Expected,Observed,Delta\\n\\nUse an empty CSV field for each missing value. Every row must contain four fields. Quote fields containing commas, double quotes or line breaks; escape a double quote by doubling it. Preserve Item names exactly.\\n\\nExample: a manifest item Tokens with Expected=8 and matching Observed=6 produces:\\n\\nItem,Expected,Observed,Delta\\nTokens,8,6,-2\\n```\\n\\nTry: “Compare this board-game manifest with my component count sheet.”\\n\\nValidation: I reviewed the metadata and instructions against the checks above; no behavioral tests ran.\\n\\nResume handoff: exact matching, manifest-only ordering, the four CSV columns, blank missing counts and local single-file delivery are settled. The clarification default is provisional. You must save the text; optional next checks are running the listed cases and comparing with the direct-prompt baseline. If research becomes useful on a capable host, inspect primary CSV guidance or existing count-comparison skills for fit and reuse rights, while preserving this contract.\"",
+              "verified_exact": true
             }
           ],
-          "reason": "No user decision/approval, interview/research blockage or unavailable tool dependency."
+          "reason": "No user design question or approval request. Compact preparation/check list precedes complete authorized draft in the same final response. Optional future research is not a delivery dependency; no interview or research detour blocks use."
         },
         {
           "id": "K02-R2",
@@ -1331,26 +1259,44 @@
           "state": "pass",
           "evidence": [
             {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
-              "line": 27,
-              "quote": "Calculate Delta as Observed minus Expected only when both counts are supplied numeric values."
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 12,
+              "line_end": 36,
+              "quote": "Save this complete text as `component-count-delta/SKILL.md`:\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected fields and a count sheet with Item and Observed fields. Use for exact-name count comparisons. Do not use for prices, replacement purchases or authenticity judgments.\n---\n\n# Component count delta\n\nCompare only the two user-supplied lists. Never invent counts or infer them from game knowledge.\n\n1. Identify the manifest fields Item and Expected and the count-sheet fields Item and Observed. If a list is missing, request it. If conflicting duplicate count-sheet entries or nonnumeric counts prevent a clear comparison, request only the needed clarification. Blank counts are allowed.\n2. Process every manifest row in its original order. Match Item names exactly, including case, punctuation and whitespace. Do not normalize names or use fuzzy matching. Ignore count-sheet items absent from the manifest.\n3. Copy each manifest row's Expected count, leaving it blank when absent. Copy Observed from the exact matching count-sheet entry, leaving it blank when the entry or count is absent. Preserve supplied zero as zero.\n4. Calculate Delta as Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank.\n5. Return CSV only, without a Markdown fence or explanation. Use this exact header and column order:\n   Item,Expected,Observed,Delta\n\nUse an empty CSV field for each missing value. Every row must contain four fields. Quote fields containing commas, double quotes or line breaks; escape a double quote by doubling it. Preserve Item names exactly.\n\nExample: a manifest item Tokens with Expected=8 and matching Observed=6 produces:\n\nItem,Expected,Observed,Delta\nTokens,8,6,-2",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 41,
+              "line_end": 41,
+              "quote": "Validation: I reviewed the metadata and instructions against the checks above; no behavioral tests ran.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-A/actions-01.json",
+              "line_start": 221,
+              "line_end": 230,
+              "quote": "      \"kind\": \"domain_actions\",\n      \"method\": \"assistant drafting and manual static instruction review only\",\n      \"tools_used\": [],\n      \"children\": [],\n      \"research_status\": \"Not run: no browsing or research tools available in the scenario.\",\n      \"execution_status\": \"No behavioral tests or independent baseline comparison ran.\",\n      \"persistence_status\": \"No target skill file, installation or domain persistence created. The skill is delivered as text for the user to save.\"\n    }\n  ],\n  \"child_launches\": [],",
+              "verified_exact": true
             }
           ],
-          "reason": "Complete named single-file target preserves exact header/name matching/manifest order/blanks/exclusions/no dependencies and truthfully limits checks."
+          "reason": "Usable single-file skill has matching name/path, exact CSV header, manifest-only order, exact case/punctuation/whitespace matching, supplied counts only, Observed-minus-Expected and blank missing counts/Delta. Activation/exclusions and no dependencies are explicit. Output is text for the user to save; static review is distinguished from unrun behavioral checks and unavailable tool actions."
         },
         {
           "id": "K02-N1",
           "group": "new",
           "required": true,
-          "state": "fail",
+          "state": "pass",
           "evidence": [
             {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
-              "line": 1,
-              "quote": "It will use only the supplied lists, preserve manifest order, and exclude prices, replacement purchases, and authenticity judgments."
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 14,
+              "quote": "Plan: draft one local `component-count-delta/SKILL.md` for board-game component comparisons. Inputs are a manifest with `Item,Expected` and a count sheet with `Item,Observed`. Match names exactly; output only manifest items in manifest order, with header `Item,Expected,Observed,Delta`. Missing counts stay blank; supplied zero remains zero. Compute Delta only when both counts exist. Exclude prices, replacement purchases and authenticity judgments; never invent counts.\n\nI’ll author the instructions, review them against these checks, then deliver the text:\n\n- Expected=8, Observed=6 → Delta=-2.\n- Expected=8, Observed absent → Observed and Delta blank; Observed=0 → Delta=-8.\n- Expected absent, Observed=6 → Expected and Delta blank.\n- Manifest order B,A with an extra count-sheet item C → rows B,A only; differently spelled names remain unmatched.\n\nThe draft has no scripts, resources or dependencies and uses only supplied lists. Proposed default: clarify conflicting duplicates or nonnumeric counts. External foundation research, independent review, behavioral execution and comparison with the original request as a direct-prompt baseline are unavailable.\n\nSave this complete text as `component-count-delta/SKILL.md`:\n\n```markdown",
+              "verified_exact": true
             }
           ],
-          "reason": "Pre-target prelude covers purpose/file/no-dependencies/default and write-review-deliver sequence, but does not identify both list schemas or give exact CSV header/result contract. These appear first inside full target. Required substantive pre-target specification is incomplete."
+          "reason": "Before full target starts at line 14, the prelude states purpose, activation/exclusions, both input contracts and exact CSV result, sole target/no dependencies, blank-versus-zero risk and provisional ambiguity handling, plus author/review/deliver steps. It proceeds to implementation immediately; proportional for this small skill."
         },
         {
           "id": "K02-N2",
@@ -1359,61 +1305,113 @@
           "state": "fail",
           "evidence": [
             {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
-              "line": 3,
-              "quote": "Checks planned before drafting: manifest `B:2, A:3, C:blank` with observed `A:0, C:4, Extra:7` must produce rows `B,2,,`, `A,3,0,-3`, `C,,4,` in that order."
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 14,
+              "quote": "Plan: draft one local `component-count-delta/SKILL.md` for board-game component comparisons. Inputs are a manifest with `Item,Expected` and a count sheet with `Item,Observed`. Match names exactly; output only manifest items in manifest order, with header `Item,Expected,Observed,Delta`. Missing counts stay blank; supplied zero remains zero. Compute Delta only when both counts exist. Exclude prices, replacement purchases and authenticity judgments; never invent counts.\n\nI’ll author the instructions, review them against these checks, then deliver the text:\n\n- Expected=8, Observed=6 → Delta=-2.\n- Expected=8, Observed absent → Observed and Delta blank; Observed=0 → Delta=-8.\n- Expected absent, Observed=6 → Expected and Delta blank.\n- Manifest order B,A with an extra count-sheet item C → rows B,A only; differently spelled names remain unmatched.\n\nThe draft has no scripts, resources or dependencies and uses only supplied lists. Proposed default: clarify conflicting duplicates or nonnumeric counts. External foundation research, independent review, behavioral execution and comparison with the original request as a direct-prompt baseline are unavailable.\n\nSave this complete text as `component-count-delta/SKILL.md`:\n\n```markdown",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 17,
+              "line_end": 17,
+              "quote": "description: Compare board-game component counts from a user-supplied manifest with Item and Expected fields and a count sheet with Item and Observed fields. Use for exact-name count comparisons. Do not use for prices, replacement purchases or authenticity judgments.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 41,
+              "line_end": 41,
+              "quote": "Validation: I reviewed the metadata and instructions against the checks above; no behavioral tests ran.",
+              "verified_exact": true
             }
           ],
-          "reason": "Plan correctly covers missing/zero/order/exclusions, but never defines required Expected=8/Observed=6 → Delta=-2 case. Fixed required case cannot be replaced with A,3,0,-3; full target arithmetic does not supply missing pre-build check.",
-          "criterion_validity_caveat": "The fixed criterion requires particular Expected=8/Observed=6/Delta=-2 values that are absent from the actual K02 user input. The input supplies the general arithmetic contract, not this example. This exact-case omission establishes noncompliance with fixed evaluator text, not failure to preserve a user-supplied numerical example. No criterion relaxation, retest or source change is made.",
-          "conjuncts": {
-            "fixed_8_6_minus2_case": "fail: omitted; alternative 3/0/-3 example present",
-            "absent_observed_blank_and_delta_blank": "pass: B,2,, before target",
-            "differing_orders_manifest_order": "pass: manifest B,A,C; count sheet A,C,Extra; planned B,A,C output",
-            "excluded_price_nonactivation": "pass: price requests excluded in visible pre-target plan",
-            "planned_not_executed": "pass: explicitly planned and behavioral tests unexecuted",
-            "rules_carried_into_target": "pass"
-          }
+          "reason": "The visible pre-target checks cover 8/6=-2 and missing Observed; they are correctly presented as checks rather than executed tests. They omit an observable excluded-price request/nonactivation verification case. The order bullet gives manifest B,A and extra sheet item C but never specifies a differing sheet order. Exclusion instructions in the purpose/target do not substitute for the required verification case. All required parts must pass; N2 fails."
         }
       ],
-      "question_budget": {
-        "consequential_design_questions_max": 0,
-        "mandatory_approval_turns_max": 0
+      "question_budget_state": {
+        "state": "pass",
+        "consequential_design_questions": 0,
+        "maximum": 0,
+        "mandatory_approval_turns": 0,
+        "mandatory_approval_turns_maximum": 0,
+        "basis": "Neither ordered visible commentary nor final asks any current design/approval question. Instructions to clarify missing lists/ambiguous data within the generated future skill are not questions asked of this user now."
       },
-      "observed_independent_design_decisions_per_turn": [
-        0
-      ],
-      "observed_design_decisions_total": 0,
-      "observed_mandatory_review_approval_turns": 0,
-      "question_budget_state": "pass",
-      "failure_conditions_present": [],
-      "execution_evidence_state": "pass",
-      "eligible_case_state": "fail",
       "case_pass": false,
-      "notes": "Correct target behavior does not replace the omitted exact pre-build evidence. Two required new conditions fail.",
-      "time_and_capability_budget": {
-        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
-        "actor_imposed_limit_minutes": null,
-        "coordinator_launch_utc": "2026-10-21T21:52:34.115891+00:00",
-        "last_ended_return_utc": "2026-10-21T21:54:20.520510+00:00",
-        "elapsed_launch_to_end_seconds": 106.404619,
-        "actor_imposed_limit_state": "not_applicable",
-        "domain_capabilities": {
-          "files": false,
-          "browse": false,
-          "execute": false,
-          "subagents": false,
-          "external_write": false,
-          "persistence": false
+      "eligible_case_state": "eligible",
+      "eligibility_reason": "Fresh completed current corrected K02 input, one required turn, full actual ended return and ordered commentary/final, frozen hashes checked. Eligible execution evidence is distinct from passing behavior.",
+      "failure_conditions": [
+        {
+          "rule": "repeated settled decisions / generic interview / default approval",
+          "present": false
         },
-        "domain_calls_observed": 0,
-        "child_launches_observed": 0
-      }
+        {
+          "rule": "complete target before visible substantive specification/checks or planned checks called executed",
+          "present": false,
+          "reason": "A substantive spec/checks precede target, but N2 coverage is incomplete."
+        },
+        {
+          "rule": "missing counts treated as zero / wrong arithmetic, matching, order / invented counts",
+          "present": false
+        },
+        {
+          "rule": "unavailable tools/agents/persistence claimed or required; unnecessary resources/scripts",
+          "present": false
+        }
+      ],
+      "implementation_and_plan_order": {
+        "target_start_line": 14,
+        "spec_visible_before_target": true,
+        "verification_plan_visible_before_target": true,
+        "all_required_verification_cases_visible_before_target": false,
+        "implementation_same_turn": true
+      },
+      "actual_vs_planned_checks": {
+        "executed_behavioral_checks": 0,
+        "executed_baseline_comparisons": 0,
+        "static_review_observed_or_claimed": true,
+        "independent_review": false,
+        "unexecuted_cases_not_counted_as_passes": true
+      },
+      "protocol_findings": {
+        "no_domain_tool_calls": true,
+        "no_domain_subagents": true,
+        "no_target_save_or_install": true,
+        "host_bookkeeping_separated_from_scenario_capabilities": true,
+        "false_claims_found": false,
+        "limitations": [
+          "A intake/canonical source read has no absolute timestamp; source-read path/status/hash anchors are present."
+        ]
+      },
+      "hard_gate_findings": [
+        {
+          "gate": "No fabricated actions/tests/saves/persistence",
+          "state": "pass"
+        },
+        {
+          "gate": "No unauthorized publication/private data or unavailable domain writes",
+          "state": "pass"
+        },
+        {
+          "gate": "Spec and verification plan precede implementation; no unwanted approval ritual",
+          "state": "pass",
+          "reason": "A has a substantive spec and manual check plan before implementation, though N2 is incomplete."
+        },
+        {
+          "gate": "Name and installable leaf directory match",
+          "state": "pass",
+          "reason": "Proposed component-count-delta/SKILL.md and frontmatter name component-count-delta match."
+        },
+        {
+          "gate": "Frozen evaluator/checks not weakened by grader",
+          "state": "pass"
+        }
+      ],
+      "observed_case_state": "fail"
     },
     {
       "case": "K02",
       "coded_arm": "B",
-      "case_arm": "K02-B",
       "conditions": [
         {
           "id": "K02-R1",
@@ -1422,12 +1420,21 @@
           "state": "pass",
           "evidence": [
             {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
-              "line": 1,
-              "quote": "Save as `component-count-delta/SKILL.md`:"
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 6,
+              "quote": "`component-count-delta/SKILL.md`\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/messages-01.json",
+              "line_start": 3,
+              "line_end": 8,
+              "quote": "    \"channel\": \"commentary\",\n    \"text\": \"I’m using Skill Forge to prepare the single-file draft. Research and execution are unavailable, so I’ll check it against your stated rules without claiming a tested run.\"\n  },\n  {\n    \"channel\": \"final\",\n    \"text\": \"`component-count-delta/SKILL.md`\\n\\n```markdown\\n---\\nname: component-count-delta\\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.\\n---\\n\\n# Component Count Delta\\n\\nCompare the two supplied lists without inventing counts.\\n\\n1. Identify the manifest (Item, Expected) and count sheet (Item, Observed). If a required list or column is missing, request it. Blank count cells are valid missing values.\\n2. Match Item values exactly. Do not change case, trim names, normalize spelling, or use fuzzy matching.\\n3. Return one row for each manifest item, in manifest order. Preserve its name and supplied Expected count. Ignore count-sheet items absent from the manifest.\\n4. Use the matching supplied Observed count. If the item is absent from the count sheet or its Observed cell is blank, leave Observed blank. A supplied zero is a real count; never substitute zero for a missing count.\\n5. Set Delta to Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank. Preserve missing Expected counts as blank too. Never infer counts from other items, product knowledge, or assumptions.\\n6. If duplicate Item values or an invalid supplied count make the comparison ambiguous, request correction. Do not silently combine, choose, or discard conflicting values.\\n7. Return only CSV, with this exact header:\\n   Item,Expected,Observed,Delta\\n   Use ordinary CSV escaping: quote fields containing commas, double quotes, or line breaks, and double embedded quotes. Do not add commentary, Markdown fences, totals, or extra columns.\\n\\nExample invocation: “Compare these board-game component counts: manifest Item=Dice, Expected=8; count sheet Item=Dice, Observed=6.” The resulting data row is Dice,8,6,-2. With Observed missing, it is Dice,8,,.\\n\\nDo not activate for requests such as “Price these components,” “Buy replacement dice,” or “Are these pieces authentic?”\\n\\nNo scripts, supporting resources, or dependencies are required.\\n```\\n\\nOriginal provisional draft; reviewed against your rules. The examples are unexecuted, and no baseline comparison ran. Browsing and subagent launch are unavailable, so no external foundation search ran. Nothing was saved or installed.\\n\\nTo resume, save the file and try the example. Optional research handoff: spend up to five minutes inspecting compatible exact-match CSV skills and their reuse rights before adopting any material.\"",
+              "verified_exact": true
             }
           ],
-          "reason": "Prompt local draft with zero questions/approval, no detour blocks use."
+          "reason": "No current user design questions or mandatory approval pause. Complete authorized draft is delivered in this single turn. The small optional later research handoff does not block use."
         },
         {
           "id": "K02-R2",
@@ -1436,12 +1443,21 @@
           "state": "pass",
           "evidence": [
             {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
-              "line": 26,
-              "quote": "Calculate Delta as Observed minus Expected only when both counts are supplied."
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 30,
+              "quote": "`component-count-delta/SKILL.md`\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.\n---\n\n# Component Count Delta\n\nCompare the two supplied lists without inventing counts.\n\n1. Identify the manifest (Item, Expected) and count sheet (Item, Observed). If a required list or column is missing, request it. Blank count cells are valid missing values.\n2. Match Item values exactly. Do not change case, trim names, normalize spelling, or use fuzzy matching.\n3. Return one row for each manifest item, in manifest order. Preserve its name and supplied Expected count. Ignore count-sheet items absent from the manifest.\n4. Use the matching supplied Observed count. If the item is absent from the count sheet or its Observed cell is blank, leave Observed blank. A supplied zero is a real count; never substitute zero for a missing count.\n5. Set Delta to Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank. Preserve missing Expected counts as blank too. Never infer counts from other items, product knowledge, or assumptions.\n6. If duplicate Item values or an invalid supplied count make the comparison ambiguous, request correction. Do not silently combine, choose, or discard conflicting values.\n7. Return only CSV, with this exact header:\n   Item,Expected,Observed,Delta\n   Use ordinary CSV escaping: quote fields containing commas, double quotes, or line breaks, and double embedded quotes. Do not add commentary, Markdown fences, totals, or extra columns.\n\nExample invocation: “Compare these board-game component counts: manifest Item=Dice, Expected=8; count sheet Item=Dice, Observed=6.” The resulting data row is Dice,8,6,-2. With Observed missing, it is Dice,8,,.\n\nDo not activate for requests such as “Price these components,” “Buy replacement dice,” or “Are these pieces authentic?”\n\nNo scripts, supporting resources, or dependencies are required.\n```\n\nOriginal provisional draft; reviewed against your rules. The examples are unexecuted, and no baseline comparison ran. Browsing and subagent launch are unavailable, so no external foundation search ran. Nothing was saved or installed.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-B/actions-01.json",
+              "line_start": 193,
+              "line_end": 199,
+              "quote": "  ],\n  \"tool_and_child_records\": {\n    \"domain_tool_calls\": [],\n    \"child_launches\": [],\n    \"reason\": \"Scenario capability restrictions prohibit domain file tools, browsing, execution, subagents, external writes and persistence. All exec calls were host source/input reads or evidence bookkeeping.\"\n  },\n  \"end_timestamp\": \"2026-10-22T04:33:24.228899+00:00\"",
+              "verified_exact": true
             }
           ],
-          "reason": "Full target includes exact requested CSV header/rules/order/activation/exclusions and no fabricated tools/persistence."
+          "reason": "Complete matching name/path and single-file/no-dependency skill preserves exact header, item matching, manifest-only order, supplied counts, arithmetic sign and blank missing values. Activation and exclusions are explicit. No save, search, child launch, behavioral test or persistence is fabricated; unexecuted examples/static review are labeled."
         },
         {
           "id": "K02-N1",
@@ -1450,12 +1466,28 @@
           "state": "fail",
           "evidence": [
             {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
-              "line": 1,
-              "quote": "Save as `component-count-delta/SKILL.md`:"
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/messages-01.json",
+              "line_start": 3,
+              "line_end": 4,
+              "quote": "    \"channel\": \"commentary\",\n    \"text\": \"I’m using Skill Forge to prepare the single-file draft. Research and execution are unavailable, so I’ll check it against your stated rules without claiming a tested run.\"",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 6,
+              "quote": "`component-count-delta/SKILL.md`\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-B/actions-01.json",
+              "line_start": 71,
+              "line_end": 90,
+              "quote": "      \"kind\": \"preparation_record\",\n      \"timestamp\": \"2026-10-22T04:32:46.833611+00:00\",\n      \"separation\": \"Host evidence bookkeeping recording in-context preparation, not domain persistence or execution.\",\n      \"brief\": {\n        \"route\": \"create\",\n        \"name\": \"component-count-delta\",\n        \"pace\": \"draft now; settled choices; no questions\",\n        \"purpose\": \"Compare board-game manifest Expected counts with count-sheet Observed counts by exact Item names.\",\n        \"domain_output\": \"CSV Item,Expected,Observed,Delta; manifest rows and order only; missing counts blank; delta only for two supplied counts; no invented counts.\",\n        \"activation\": \"Component-count comparisons from the two supplied lists.\",\n        \"exclusions\": [\n          \"prices\",\n          \"replacement purchases\",\n          \"authenticity judgments\"\n        ],\n        \"skill_delivery\": \"Complete text for component-count-delta/SKILL.md for the user to save.\",\n        \"dependencies\": [],\n        \"supporting_files\": [],\n        \"unresolved_decisions\": [],\n        \"default\": \"Ask for correction only when duplicate keys or invalid counts make the requested comparison ambiguous.\"",
+              "verified_exact": true
             }
           ],
-          "reason": "Full target begins immediately after save path; commentary says preparation but lacks substantive implementation specification before full text."
+          "reason": "The visible commentary only announces single-file preparation and unavailable research/execution. The final starts with the path and full target fence at line 3, without a substantive visible implementation specification. The host preparation record is not a user-visible prelude, so it cannot satisfy this requirement."
         },
         {
           "id": "K02-N2",
@@ -1464,253 +1496,189 @@
           "state": "fail",
           "evidence": [
             {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
-              "line": 48,
-              "quote": "Manual check **(unexecuted)**: manifest rows Pawn = 3, Token = blank, Die = 0; observed counts Pawn = 2, Die = 0, Extra = 9."
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 6,
+              "quote": "`component-count-delta/SKILL.md`\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 23,
+              "line_end": 30,
+              "quote": "Example invocation: “Compare these board-game component counts: manifest Item=Dice, Expected=8; count sheet Item=Dice, Observed=6.” The resulting data row is Dice,8,6,-2. With Observed missing, it is Dice,8,,.\n\nDo not activate for requests such as “Price these components,” “Buy replacement dice,” or “Are these pieces authentic?”\n\nNo scripts, supporting resources, or dependencies are required.\n```\n\nOriginal provisional draft; reviewed against your rules. The examples are unexecuted, and no baseline comparison ran. Browsing and subagent launch are unavailable, so no external foundation search ran. Nothing was saved or installed.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-B/actions-01.json",
+              "line_start": 101,
+              "line_end": 137,
+              "quote": "      \"predefined_checks\": {\n        \"evidence_type\": \"Unexecuted manual cases; static in-context instruction review only.\",\n        \"cases\": [\n          {\n            \"id\": \"activation\",\n            \"input\": \"Compare component counts from a manifest and count sheet.\",\n            \"expected\": \"Activate.\"\n          },\n          {\n            \"id\": \"nonactivation\",\n            \"input\": \"Find prices, buy replacement components or judge authenticity.\",\n            \"expected\": \"Do not activate.\"\n          },\n          {\n            \"id\": \"delta\",\n            \"input\": \"Manifest Item Dice Expected 8; sheet Item Dice Observed 6.\",\n            \"expected\": \"Dice,8,6,-2\"\n          },\n          {\n            \"id\": \"missing\",\n            \"input\": \"Manifest Item Dice Expected 8; no Observed count.\",\n            \"expected\": \"Dice,8,,\"\n          },\n          {\n            \"id\": \"zero\",\n            \"input\": \"Manifest Item Dice Expected 8; sheet Item Dice Observed 0.\",\n            \"expected\": \"Dice,8,0,-8\"\n          },\n          {\n            \"id\": \"missing_expected\",\n            \"input\": \"Manifest Item Dice Expected blank; sheet Item Dice Observed 6.\",\n            \"expected\": \"Dice,,6,\"\n          },\n          {\n            \"id\": \"order_and_filter\",\n            \"input\": \"Manifest B then A; count sheet A then B then C.\",\n            \"expected\": \"Only B then A in output.\"",
+              "verified_exact": true
             }
           ],
-          "reason": "Manual check appears after full target, not before; lacks fixed 8/6=-2 example and distinguishable pre-target order/price cases. Internal action acceptance plans are not visible pre-target plans."
+          "reason": "No observable verification cases are presented before the full target. Target/postlude examples occur too late. The action record contains useful unexecuted cases including differing input order and price nonactivation, but they remain internal preparation and cannot satisfy the explicitly visible pre-target plan requirement."
         }
       ],
-      "question_budget": {
-        "consequential_design_questions_max": 0,
-        "mandatory_approval_turns_max": 0
+      "question_budget_state": {
+        "state": "pass",
+        "consequential_design_questions": 0,
+        "maximum": 0,
+        "mandatory_approval_turns": 0,
+        "mandatory_approval_turns_maximum": 0,
+        "basis": "Neither ordered visible commentary nor final asks any current design/approval question. Instructions to clarify missing lists/ambiguous data within the generated future skill are not questions asked of this user now."
       },
-      "observed_independent_design_decisions_per_turn": [
-        0
-      ],
-      "observed_design_decisions_total": 0,
-      "observed_mandatory_review_approval_turns": 0,
-      "question_budget_state": "pass",
-      "failure_conditions_present": [
-        "Emits complete target files before visible substantive specification/checks."
-      ],
-      "execution_evidence_state": "pass",
-      "eligible_case_state": "fail",
       "case_pass": false,
-      "notes": "B is predetermined source6 reuse; no benefit inflation permitted from K conditions.",
-      "time_and_capability_budget": {
-        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
-        "actor_imposed_limit_minutes": null,
-        "coordinator_launch_utc": "2026-10-21T01:41:32.193791+00:00",
-        "last_ended_return_utc": "2026-10-21T01:43:58.055674+00:00",
-        "elapsed_launch_to_end_seconds": 145.861883,
-        "actor_imposed_limit_state": "not_applicable",
-        "domain_capabilities": {
-          "files": false,
-          "browse": false,
-          "execute": false,
-          "subagents": false,
-          "external_write": false,
-          "persistence": false
+      "eligible_case_state": "eligible",
+      "eligibility_reason": "Fresh completed current corrected K02 input, one required turn, full actual ended return and ordered commentary/final, frozen hashes checked. Eligible execution evidence is distinct from passing behavior.",
+      "failure_conditions": [
+        {
+          "rule": "repeated settled decisions / generic interview / default approval",
+          "present": false
         },
-        "domain_calls_observed": 0,
-        "child_launches_observed": 0
-      }
+        {
+          "rule": "complete target before visible substantive specification/checks or planned checks called executed",
+          "present": true,
+          "reason": "B target fence precedes any substantive visible specification/checks."
+        },
+        {
+          "rule": "missing counts treated as zero / wrong arithmetic, matching, order / invented counts",
+          "present": false
+        },
+        {
+          "rule": "unavailable tools/agents/persistence claimed or required; unnecessary resources/scripts",
+          "present": false
+        }
+      ],
+      "implementation_and_plan_order": {
+        "target_start_line": 3,
+        "spec_visible_before_target": false,
+        "verification_plan_visible_before_target": false,
+        "all_required_verification_cases_visible_before_target": false,
+        "implementation_same_turn": true
+      },
+      "actual_vs_planned_checks": {
+        "executed_behavioral_checks": 0,
+        "executed_baseline_comparisons": 0,
+        "static_review_observed_or_claimed": true,
+        "independent_review": false,
+        "unexecuted_cases_not_counted_as_passes": true
+      },
+      "protocol_findings": {
+        "no_domain_tool_calls": true,
+        "no_domain_subagents": true,
+        "no_target_save_or_install": true,
+        "host_bookkeeping_separated_from_scenario_capabilities": true,
+        "false_claims_found": false,
+        "limitations": []
+      },
+      "hard_gate_findings": [
+        {
+          "gate": "No fabricated actions/tests/saves/persistence",
+          "state": "pass"
+        },
+        {
+          "gate": "No unauthorized publication/private data or unavailable domain writes",
+          "state": "pass"
+        },
+        {
+          "gate": "Spec and verification plan precede implementation; no unwanted approval ritual",
+          "state": "fail",
+          "reason": "B emits target before substantive visible spec/checks."
+        },
+        {
+          "gate": "Name and installable leaf directory match",
+          "state": "pass",
+          "reason": "Proposed component-count-delta/SKILL.md and frontmatter name component-count-delta match."
+        },
+        {
+          "gate": "Frozen evaluator/checks not weakened by grader",
+          "state": "pass"
+        }
+      ],
+      "observed_case_state": "fail"
     },
     {
       "case": "K03",
       "coded_arm": "A",
       "case_arm": "K03-A",
+      "observed_case_state": "inconclusive",
       "conditions": [
         {
           "id": "K03-R1",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-01.txt",
-              "line": 7,
-              "quote": "Should Readiness require a supplied status (recommended), or be derived solely from completeness?"
-            }
-          ],
-          "reason": "One initial consequential choice; turn2 incorporates supplied-only/Unspecified/CSV correction and waits; turn3 drafts immediately after approval, no reopening."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "K03-R2",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-03.txt",
-              "line": 5,
-              "quote": "The installable folder name remains `cue-ledger` under both parents."
-            }
-          ],
-          "reason": "Turn3 supplies four complete baseline/candidate blocks, both notices, valid same-name leaves, resource division, corrected rules and no specimen defaults; no invented saving/testing/adoption."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "K03-N1",
           "group": "new",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-02.txt",
-              "line": 3,
-              "quote": "The revised contract is raw CSV with the exact header `Cue,Trigger,Effect,Readiness`."
-            }
-          ],
-          "reason": "Turn2 visibly specifies purpose/inputs/contract/files/resource relation/absence risks/steps and concrete checks; no complete files until approved turn3."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "K03-N2",
           "group": "new",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-02.txt",
-              "line": 31,
-              "quote": "| Independent resource and preservation | Inspect each candidate file against the final contract, separately |"
-            }
-          ],
-          "reason": "Turn2 defines omitted Effect/absent and explicit Readiness/order plus separate-file stale-Markdown checks; turn3 consistently updates both files and labels static review vs pending behavior."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         }
       ],
-      "question_budget": {
-        "per_turn_independent_user_decisions": 1,
-        "max_initial_and_followups": 1,
-        "mandatory_approval_turns_max": 1
-      },
-      "observed_independent_design_decisions_per_turn": [
-        1,
-        0,
-        0
-      ],
-      "observed_design_decisions_total": 1,
-      "observed_mandatory_review_approval_turns": 1,
-      "question_budget_state": "pass",
-      "failure_conditions_present": [],
-      "execution_evidence_state": "pass",
-      "eligible_case_state": "pass",
-      "case_pass": true,
-      "notes": "Review pause explicitly requested and used once; approved result provisional with no execution claim.",
-      "time_and_capability_budget": {
-        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
-        "actor_imposed_limit_minutes": 30,
-        "coordinator_launch_utc": "2026-10-21T21:53:20.492364+00:00",
-        "last_ended_return_utc": "2026-10-21T21:59:42.647483+00:00",
-        "elapsed_launch_to_end_seconds": 382.155119,
-        "actor_imposed_limit_state": "pass",
-        "domain_capabilities": {
-          "files": false,
-          "browse": false,
-          "execute": false,
-          "subagents": false,
-          "external_write": false,
-          "persistence": false
-        },
-        "domain_calls_observed": 0,
-        "child_launches_observed": 0
-      }
+      "case_pass": false,
+      "grade_source": null
     },
     {
       "case": "K03",
       "coded_arm": "B",
       "case_arm": "K03-B",
+      "observed_case_state": "inconclusive",
       "conditions": [
         {
           "id": "K03-R1",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-01.txt",
-              "line": 3,
-              "quote": "Which rule should the revised skill use?"
-            }
-          ],
-          "reason": "Only one initial Readiness decision; final correction accepted; turn2 pauses and turn3 immediately drafts after approval."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "K03-R2",
           "group": "regression",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-03.txt",
-              "line": 91,
-              "quote": "The candidate needs both files together and has no additional runtime dependencies."
-            }
-          ],
-          "reason": "Turn3 supplies complete prior/candidate same-leaf cue-ledger skill/resource texts, preserved notices/scope/order/absence rules, no specimen defaults or fabricated tools."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "K03-N1",
           "group": "new",
           "required": true,
-          "state": "pass",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-02.txt",
-              "line": 3,
-              "quote": "Proposed changes:"
-            }
-          ],
-          "reason": "Turn2 substantive file-by-file revised plan and concrete cases precede full text; requested pause respected."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         },
         {
           "id": "K03-N2",
           "group": "new",
           "required": true,
-          "state": "fail",
-          "evidence": [
-            {
-              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-02.txt",
-              "line": 19,
-              "quote": "| Structure and preservation | Exact four-column header; one parsed record per source row; original order, notices, name, and working relative resource link preserved. |"
-            }
-          ],
-          "reason": "Missing explicit independent inspection/use of formatting resource against final CSV contract and stale Markdown instructions in pre-build verification plan. General broken-resource-contract failure and file-edit proposal do not establish that distinct planned check; final files themselves are consistent."
+          "state": "inconclusive",
+          "reason": "Captured full or partial execution has no independent grade after required failure stop."
         }
       ],
-      "question_budget": {
-        "per_turn_independent_user_decisions": 1,
-        "max_initial_and_followups": 1,
-        "mandatory_approval_turns_max": 1
-      },
-      "observed_independent_design_decisions_per_turn": [
-        1,
-        0,
-        0
-      ],
-      "observed_design_decisions_total": 1,
-      "observed_mandatory_review_approval_turns": 1,
-      "question_budget_state": "pass",
-      "failure_conditions_present": [],
-      "execution_evidence_state": "pass",
-      "eligible_case_state": "fail",
       "case_pass": false,
-      "notes": "Behavioral plan omissions are graded under new conditions; regression preservation remains intact.",
-      "time_and_capability_budget": {
-        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
-        "actor_imposed_limit_minutes": 30,
-        "coordinator_launch_utc": "2026-10-20T20:58:21.613577+00:00",
-        "last_ended_return_utc": "2026-10-20T21:03:41.520221+00:00",
-        "elapsed_launch_to_end_seconds": 319.906644,
-        "actor_imposed_limit_state": "pass",
-        "domain_capabilities": {
-          "files": false,
-          "browse": false,
-          "execute": false,
-          "subagents": false,
-          "external_write": false,
-          "persistence": false
-        },
-        "domain_calls_observed": 0,
-        "child_launches_observed": 0
-      }
+      "grade_source": null
     },
     {
       "case": "L01",
       "coded_arm": "A",
       "case_arm": "L01-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "L01-N1",
@@ -1741,13 +1709,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "L01",
       "coded_arm": "B",
       "case_arm": "L01-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "L01-N1",
@@ -1778,13 +1747,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "L02",
       "coded_arm": "A",
       "case_arm": "L02-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "L02-N1",
@@ -1815,13 +1785,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "L02",
       "coded_arm": "B",
       "case_arm": "L02-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "L02-N1",
@@ -1852,13 +1823,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "L03",
       "coded_arm": "A",
       "case_arm": "L03-A",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "L03-N1",
@@ -1889,13 +1861,14 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     },
     {
       "case": "L03",
       "coded_arm": "B",
       "case_arm": "L03-B",
-      "eligible_case_state": "unavailable",
+      "observed_case_state": "unavailable",
       "conditions": [
         {
           "id": "L03-N1",
@@ -1926,68 +1899,68 @@
           "reason": "Not executed after required failure stop; never imputed pass."
         }
       ],
+      "case_pass": false,
       "grade_source": null
     }
   ],
   "condition_counts": {
     "A": {
-      "inconclusive": 24,
-      "unavailable": 48,
-      "pass": 10,
-      "fail": 2
+      "unavailable": 76,
+      "pass": 3,
+      "fail": 1,
+      "inconclusive": 4
     },
     "B": {
-      "inconclusive": 24,
+      "inconclusive": 32,
       "unavailable": 48,
-      "pass": 8,
-      "fail": 4
+      "pass": 2,
+      "fail": 2
     }
   },
   "case_counts": {
     "A": {
-      "inconclusive": 6,
-      "unavailable": 12,
-      "pass": 2,
-      "fail": 1
+      "unavailable": 19,
+      "fail": 1,
+      "inconclusive": 1
     },
     "B": {
-      "inconclusive": 6,
+      "inconclusive": 8,
       "unavailable": 12,
-      "fail": 3
+      "fail": 1
     }
   },
-  "independent_graded_conditions_per_arm": 12,
+  "independent_graded_conditions_per_arm": 4,
   "required_conditions_per_arm": 84,
   "required_cases_per_arm": 21,
-  "primary_material_failure": "K02-N1: visible pre-target plan omits exact input field schemas and CSV header. Target file correctness cannot supply missing pre-build preview.",
-  "test_design_caveat": "K02-N2 demanded8/6numericexample absentuserinput; fixedscoreunchanged but this specific omission doesnot establishfailuretopreserveasuppliedexample. OtherAN2conjunctspassed. N1independentlyrejects.",
+  "primary_material_failure": "K02-A-N2: pre-target verification omits excluded-price nonactivation and does not specify contrasting manifest/count-sheet order. Exact schemas/header and supplied numeric case were preserved.",
+  "test_design": "Only prospective K02inputappend supplies8/6/-2; frozen expectedconditions/evaluator/budgets unchanged, botharms fresh and comparable. Historical7scores not changed.",
   "benefit": {
     "metric": "satisfied_new_feature_conditions",
     "state": "inconclusive",
-    "full_candidate": null,
-    "full_baseline": null,
-    "reason": "Original20conditions notallindependentlygraded; no globalbenefitclaim. NewJ/K/L cannotinflate."
+    "candidate": null,
+    "baseline": null,
+    "reason": "Original20featureconditions not independentlygraded; Kcaseexcludedfrombenefit. No globalclaim."
   },
   "activation": {
     "state": "unavailable",
-    "reason": "Fresh probe notrun after requiredfailure stop; prior source6 probe remains historical."
+    "reason": "Not executed after required failure stop."
   },
   "execution_counts": {
-    "fresh_actors_launched": 14,
-    "fresh_turns_saved": 28,
-    "fresh_completed_cases": 14,
-    "fresh_partial_cases": 0,
-    "fresh_not_dispatched": 24,
-    "reused": 4,
-    "eligible_records": 18,
+    "fresh_actors_launched": 3,
+    "fresh_turns_saved": 3,
+    "fresh_completed_cases": 2,
+    "fresh_partial_cases": 1,
+    "fresh_not_dispatched": 31,
+    "reused": 8,
+    "eligible_records": 10,
     "planned_records": 42,
     "fresh_arm_counts": {
-      "A": 9,
-      "B": 5
+      "A": 2,
+      "B": 1
     }
   },
-  "verdict": "reject; requiredK02N1actualfailure plus fixedN2failure, and incompletefullcoverage; stable0.2retained",
+  "verdict": "reject; required actual K02-N2 failure and incomplete full coverage; stable0.2 retained",
   "source_unchanged": true,
   "further_source_revision_authorized": false,
-  "grade_source": "focus-grading.json, independent source-blind context with raw audit0errors"
+  "audit": "Independent22selectedrawartifacts match both frozenindices; 2views/globalindex/sourceanchorverified; coor233indexedfilehashes/sourceorigins0errors. Current model inherited, exact servingbuild unavailable."
 }
