@@ -5,7 +5,7 @@ Revision: [id/hash]. Review preference: [continue / review first]. Status: [prop
 Present this plan and its checks visibly before any complete target contents or writes. Keep the plan outside the generated skill file, even for Markdown-only delivery; do not hide it in a comment.
 
 - Purpose, users and activation/exclusions: [repeated workflow and boundaries].
-- Inputs and outputs: [contract, required fields, destination, missing-data treatment].
+- Inputs and outputs: [material contract with supplied field names, column order, exact headers/format, destination and missing-data treatment; state these here rather than referring to the completed file].
 - Confirmed requirements and preservation: [source-backed decisions].
 - Proposed defaults, assumptions and unresolved blockers: [clearly separated].
 - Examples and failures: [representative input/output and counterexample].
