@@ -111,3 +111,7 @@ The fresh scoped K02 reviewer audited23raw artifacts against both frozen indices
 ## Latest bounded checkpoint
 
 20/21 paired scenarios independently reviewed; 20 candidate case passes and 80/84 required conditions passed. No required candidate failure is established in the qualified reviewed cases. This status supersedes earlier pending progress notes without rewriting historical results. The41/42capture checkpoint leaves L03-B, separate activation and pending paired reviews (L03) unfinished. Three supplemental mode/control cases, the helper-reference contents section and final adoption/install/release steps remain. See HANDOFF.md and the explicit round9progress records; no all-capabilities-pass claim is made.
+
+## Continuation boundary
+
+The new90-minute continuation captured all42original records and activation, but final L03/activation grades remain unfinished. Qualified coverage stays20/21pairs and80/84required conditions. Supplemental S01and S02turns1–2ended; S02turn3was interrupted and S03is unexecuted. The helper navigation evaluator/baseline is prepared, with no source patch. No adoption, personal update or release occurred. See HANDOFF.md for exact resumption and model-comparability limits.
