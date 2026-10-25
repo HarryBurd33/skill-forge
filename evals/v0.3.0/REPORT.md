@@ -1,3 +1,11 @@
+# Current development checkpoint — candidate 9
+
+Candidate 9 is under validation and is not approved, installed or released. Seven independently reviewed scenarios passed all28candidate conditions; the full21case/84condition gate, activation and additive controls are unfinished. No full-suite benefit is claimed. The same ended K02 pair received a qualified scoped review after the original reviewer exceeded its scope; no actor was replayed. D05 actual construction/evaluation/check records exist; domain work met the effort limit, while an independently timestamped final delivery before cutoff is unavailable and not claimed.
+
+See [progress](round9-progress.json), [selected executions](round9-progress-executions.json), [independent grades](round9-progress-grades.json) and [audits](round9-progress-audits.json). Only completed, graded synthetic cases are selected; unexecuted held-out contents are excluded. Candidate9coreSHA256: `323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab`. The final-named evidence aliases below still refer to rejected candidate8, pending final9aggregation. Stable v0.2.0 remains active. Historical scores below are unchanged.
+
+---
+
 # v0.3.0 evaluation report
 
 Status: candidate 8 was **actually rejected** by the unchanged local update helper on 2026-10-22 at 04:40:59 UTC. It is not adopted, installed or released. Stable v0.2.0 remains active on main and in the personal installation. Candidates 6 and 7 also remain rejected with their historical results preserved.

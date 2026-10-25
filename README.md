@@ -1,6 +1,6 @@
 # Skill Forge
 
-> **Development branch: v0.3.0 is not released.** Candidate 8 was rejected automatically after a required verification-planning failure; candidate 7 also failed. Use [stable v0.2.0](https://github.com/HarryBurd33/skill-forge/tree/main) for installation. The instructions below describe the proposed behavior; see the [evaluation report](evals/v0.3.0/REPORT.md) for actual results and limits.
+> **Development branch: v0.3.0 is not released.** Structured-verification candidate 9 is under evaluation; it is not approved or installed. Candidates 7 and 8 were rejected and their evidence is preserved. Use [stable v0.2.0](https://github.com/HarryBurd33/skill-forge/tree/main) for installation. The instructions below describe the proposed behavior; see the [evaluation report](evals/v0.3.0/REPORT.md) for actual results and limits.
 
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
 
@@ -86,3 +86,5 @@ The canonical builder lives in `skills/skill-forge/`. The portable prompt is gen
 [Report a failure or propose a question](CONTRIBUTING.md). A helpful contribution includes a realistic input, expected behavior, actual failure, and why the proposed change helps. Search the question library first: fewer useful questions beat more repetitive questions. Accepted changes gain a regression case and a versioned change record. Do not submit private transcripts or credentials.
 
 See [foundations and comparison](docs/foundations.md), [source ledger](SOURCES.json), [notices](THIRD_PARTY_NOTICES.md), and [changelog](CHANGELOG.md). Original project material is [MIT licensed](LICENSE). Installation, tool access and results vary by host; external publication always requires authorization for that destination.
+
+Track requested capabilities in [REQUIREMENTS.md](REQUIREMENTS.md), current work in [HANDOFF.md](HANDOFF.md), and the project usage policy in [MAINTENANCE.md](MAINTENANCE.md).

@@ -1,5 +1,7 @@
 # Changelog
 
+Development checkpoint2026-10-25: candidate9consolidates verification planning into a visible rule/example/outcome/method ledger. Seven independently reviewed scenarios pass28conditions; complete evaluation and adoption remain pending. Candidate8rejection and all earlier scores are preserved. v0.2.0 remains the current release.
+
 ## 0.3.0 — unreleased
 
 Candidate 8 was rejected after a required verification-planning failure. Candidate 7 and its historical test-input flaw remain recorded without rescoring. Stable 0.2.0 remains active. These changes are proposals, not a released update.

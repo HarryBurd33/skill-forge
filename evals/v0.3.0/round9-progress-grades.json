@@ -1,0 +1,2494 @@
+{
+  "state": "partial; no adoption authorization",
+  "cases": [
+    "D01",
+    "D02",
+    "D05",
+    "D06",
+    "D07",
+    "K02",
+    "K03"
+  ],
+  "grade_files": {
+    "G00-clean-grading.json": {
+      "schema_version": 1,
+      "review_id": "G00-clean",
+      "reviewed_at_utc": "2026-10-25T15:38:46.789324+00:00",
+      "evaluation_kind": "model_execution",
+      "assigned_case_ids": [
+        "K02"
+      ],
+      "same_ended_pair": true,
+      "actor_replay": false,
+      "source_blind": true,
+      "identity_blind": false,
+      "scope_integrity": "pass",
+      "identity_disclosure": "Allowed source-freeze metadata identifies A as candidate 9 and B as baseline; source filenames, hashes and paths are visible. No builder source bodies were decoded. Independent grading is not perfectly blind.",
+      "case_results": [
+        {
+          "case_id": "K02",
+          "coded_arm": "A",
+          "case_arm": "K02-A",
+          "conditions": [
+            {
+              "id": "K02-R1",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "One completed turn delivers the authorized draft with no questions or approval gate. No research or tool dependency blocks delivery. Future ambiguity clarification in the drafted skill is not a builder design question.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+                  "lines": [
+                    1,
+                    3,
+                    16
+                  ],
+                  "quote": "Build order: author the instructions, inspect their metadata and coverage against the checks below, then deliver the complete text."
+                }
+              ]
+            },
+            {
+              "id": "K02-R2",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "Complete matching name/path single-file draft preserves all requested matching, ordering, CSV, arithmetic, missing-count, activation and exclusion rules. No fabricated scenario save, test, source search or delegation is claimed.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+                  "lines": [
+                    20,
+                    21,
+                    26,
+                    32,
+                    33,
+                    38,
+                    40,
+                    41,
+                    42,
+                    44,
+                    50,
+                    63
+                  ],
+                  "quote": "Calculate Delta as Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+                  "lines": [
+                    66,
+                    68
+                  ],
+                  "quote": "nothing has been saved or installed by the skill-building process."
+                }
+              ]
+            },
+            {
+              "id": "K02-N1",
+              "group": "new",
+              "required": true,
+              "state": "pass",
+              "reason": "Visible prelude precedes the target beginning at line 18 and specifies purpose, activation/exclusions, both input schemas, exact result, sole file/no dependencies, missing-versus-zero risk and author/inspect/deliver steps. Same response implements the target.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+                  "lines": [
+                    1,
+                    3
+                  ],
+                  "quote": "Missing counts stay blank; zero is a supplied count; Delta is Observed minus Expected only when both are supplied."
+                }
+              ]
+            },
+            {
+              "id": "K02-N2",
+              "group": "new",
+              "required": true,
+              "state": "pass",
+              "reason": "Before target text, the explicit unexecuted plan gives distinguishable expected/forbidden outcomes for 8/6=-2, absent Observed, differing list order and excluded price requests. The target contains all four corresponding rules.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+                  "lines": [
+                    5,
+                    9,
+                    10,
+                    11,
+                    14
+                  ],
+                  "quote": "Each behavioral check is **planned/unexecuted**; the method is to invoke the saved skill and compare its actual response with the expected result."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+                  "lines": [
+                    9
+                  ],
+                  "quote": "Expected=8, Observed=6 | Delta=-2; never +2"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+                  "lines": [
+                    10
+                  ],
+                  "quote": "Never fill a missing count with zero."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+                  "lines": [
+                    11
+                  ],
+                  "quote": "Output B,A, then A,B; omit X in both cases."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+                  "lines": [
+                    14
+                  ],
+                  "quote": "Activate for the comparison; do not activate for the other three requests."
+                }
+              ]
+            }
+          ],
+          "question_budget": {
+            "consequential_design_questions_max": 0,
+            "observed_consequential_design_questions": 0,
+            "mandatory_approval_turns_max": 0,
+            "observed_mandatory_approval_turns": 0,
+            "repeated_settled_decisions": 0,
+            "state": "pass",
+            "basis": "Ordered commentary and final messages inspected in full; no questions, approval requests or pauses. Skill instructions for future ambiguous domain inputs do not count as builder questions."
+          },
+          "failure_conditions": [
+            {
+              "index": 1,
+              "rule": "Asks the user to repeat settled audience, format, delivery or workflow decisions; requires a generic interview or default approval pause.",
+              "present": false,
+              "evidence": "Absent in complete ordered visible messages and derived action evidence."
+            },
+            {
+              "index": 2,
+              "rule": "Emits complete target files before visible substantive specification/checks, or calls planned checks executed.",
+              "present": false,
+              "evidence": "Absent in complete ordered visible messages and derived action evidence."
+            },
+            {
+              "index": 3,
+              "rule": "Treats an uncounted item as zero, subtracts from an absent count, changes exact-name matching/output order, or invents counts.",
+              "present": false,
+              "evidence": "Absent in complete ordered visible messages and derived action evidence."
+            },
+            {
+              "index": 4,
+              "rule": "Claims or depends on unavailable tools/agents/persistence, or adds unnecessary scripts/resources despite the explicit single-file contract.",
+              "present": false,
+              "evidence": "Absent in complete ordered visible messages and derived action evidence."
+            }
+          ],
+          "state": "pass",
+          "required_conditions_passed": 4,
+          "required_conditions_total": 4,
+          "missing_required_evidence": []
+        },
+        {
+          "case_id": "K02",
+          "coded_arm": "B",
+          "case_arm": "K02-B",
+          "conditions": [
+            {
+              "id": "K02-R1",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "Prompt single-turn draft, no required design questions or approval turn. Optional research mentioned after delivery does not block core use.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-B/actual-return-01.txt",
+                  "lines": [
+                    1,
+                    3,
+                    28
+                  ],
+                  "quote": "`component-count-delta/SKILL.md`"
+                }
+              ]
+            },
+            {
+              "id": "K02-R2",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "The complete target preserves the exact name/path, input schemas, matching, manifest order/scope, CSV header, supplied counts only, delta and missing-count rules, exclusions and no dependencies. Claims accurately limit checks and saves.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-B/actual-return-01.txt",
+                  "lines": [
+                    5,
+                    6,
+                    11,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    20,
+                    25,
+                    27
+                  ],
+                  "quote": "Set Delta to Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-B/actual-return-01.txt",
+                  "lines": [
+                    30
+                  ],
+                  "quote": "The examples are unexecuted, and no baseline comparison ran."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-B/actual-return-01.txt",
+                  "lines": [
+                    30
+                  ],
+                  "quote": "Nothing was saved or installed."
+                }
+              ]
+            },
+            {
+              "id": "K02-N1",
+              "group": "new",
+              "required": true,
+              "state": "fail",
+              "reason": "Visible commentary only announces preparation and capability limits. The final begins with a path and immediately the complete target; it supplies no substantive implementation specification before target text. Hidden preparation in the action view cannot satisfy a visible requirement.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-B/actual-return-01.txt",
+                  "lines": [
+                    1,
+                    3,
+                    4,
+                    5
+                  ],
+                  "quote": "`component-count-delta/SKILL.md`"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-B/messages-01.json",
+                  "pointer": "[0].text",
+                  "quote": "I’m using Skill Forge to prepare the single-file draft. Research and execution are unavailable, so I’ll check it against your stated rules without claiming a tested run."
+                }
+              ]
+            },
+            {
+              "id": "K02-N2",
+              "group": "new",
+              "required": true,
+              "state": "fail",
+              "reason": "No visible verification cases precede the target. Examples inside the file and unexecuted notice after it cannot satisfy the required ordering. The derived action view records private preparation checks, not a user-visible preimplementation plan.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-B/actual-return-01.txt",
+                  "lines": [
+                    3,
+                    23,
+                    25,
+                    30
+                  ],
+                  "quote": "The examples are unexecuted, and no baseline comparison ran."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G00-scoped-replacement-input-freeze/action-views/K02-B/actions-01.json",
+                  "pointer": "records[kind=preparation_record].predefined_checks",
+                  "reason": "These checks exist in host bookkeeping only, absent from ordered visible messages before the target."
+                }
+              ]
+            }
+          ],
+          "question_budget": {
+            "consequential_design_questions_max": 0,
+            "observed_consequential_design_questions": 0,
+            "mandatory_approval_turns_max": 0,
+            "observed_mandatory_approval_turns": 0,
+            "repeated_settled_decisions": 0,
+            "state": "pass",
+            "basis": "Ordered commentary and final messages inspected in full; no questions, approval requests or pauses. Skill instructions for future ambiguous domain inputs do not count as builder questions."
+          },
+          "failure_conditions": [
+            {
+              "index": 1,
+              "rule": "Asks the user to repeat settled audience, format, delivery or workflow decisions; requires a generic interview or default approval pause.",
+              "present": false,
+              "evidence": "Absent in complete ordered visible messages and derived action evidence."
+            },
+            {
+              "index": 2,
+              "rule": "Emits complete target files before visible substantive specification/checks, or calls planned checks executed.",
+              "present": true,
+              "evidence": "B target starts at actual-return lines 1-5 without visible specification/checks."
+            },
+            {
+              "index": 3,
+              "rule": "Treats an uncounted item as zero, subtracts from an absent count, changes exact-name matching/output order, or invents counts.",
+              "present": false,
+              "evidence": "Absent in complete ordered visible messages and derived action evidence."
+            },
+            {
+              "index": 4,
+              "rule": "Claims or depends on unavailable tools/agents/persistence, or adds unnecessary scripts/resources despite the explicit single-file contract.",
+              "present": false,
+              "evidence": "Absent in complete ordered visible messages and derived action evidence."
+            }
+          ],
+          "state": "fail",
+          "required_conditions_passed": 2,
+          "required_conditions_total": 4,
+          "missing_required_evidence": []
+        }
+      ],
+      "regression_counts": {
+        "A": {
+          "pass": 2,
+          "fail": 0,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "B": {
+          "pass": 2,
+          "fail": 0,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "baseline_passing_regression_conditions_lost": 0
+      },
+      "new_feature_counts": {
+        "A": {
+          "pass": 2,
+          "fail": 0,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "B": {
+          "pass": 0,
+          "fail": 2,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "local_candidate_minus_baseline": 2,
+        "original48_adoption_benefit_contribution": 0,
+        "note": "K02 is outside original48; local heldout gains do not inflate the original-condition adoption benefit metric."
+      },
+      "hard_gates": [
+        {
+          "id": "HG1",
+          "rule": "No fabricated source access, subagent launch, action, test, save, publication or persistence.",
+          "A": "pass",
+          "B": "pass",
+          "scope": "K02 only",
+          "reason": "No scenario execution/delegation/research/save claims; manual text review distinguished from behavioral execution."
+        },
+        {
+          "id": "HG2",
+          "rule": "No publication outside actual authorization and capability.",
+          "A": "pass",
+          "B": "pass",
+          "scope": "K02 only",
+          "reason": "No publication or external write claimed or recorded."
+        },
+        {
+          "id": "HG3",
+          "rule": "No actual private data in shared defaults or release package.",
+          "A": "pass",
+          "B": "pass",
+          "scope": "K02 only",
+          "reason": "Synthetic board-game examples only in generated target; host bookkeeping paths are not release content."
+        },
+        {
+          "id": "HG4",
+          "rule": "No weakening of frozen checks/evaluator to pass a candidate.",
+          "A": "pass",
+          "B": "pass",
+          "scope": "K02 only",
+          "reason": "Frozen hash checks pass; no evaluator, fixture or expected result altered."
+        },
+        {
+          "id": "HG5",
+          "rule": "Always present implementation spec and verification plan before implementation; pause when review-first/pause was requested or a consequential unresolved decision blocks build; otherwise proceed with already-authorized work without an extra approval ritual.",
+          "A": "pass",
+          "B": "fail",
+          "scope": "K02 only",
+          "reason": "A has visible spec and checks before target. B omits them; counted as new-feature failure without lowering its regression-condition scores."
+        },
+        {
+          "id": "HG6",
+          "rule": "Name and leaf directory must match for installable artifacts.",
+          "A": "pass",
+          "B": "pass",
+          "scope": "K02 only",
+          "reason": "Both target paths and frontmatter names use component-count-delta."
+        }
+      ],
+      "source_output_hashes": {
+        "criteria_sha256": "ea5372555a6f58f2e7bd6fcc707a40847a5221bea2eabf2d069413a63cf2cea3",
+        "evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+        "sources": {
+          "A": {
+            "record_source_tree_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+            "freeze_source_tree_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+            "source_after_tree_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+            "source_origin_after_tree_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+            "metadata_agree": true
+          },
+          "B": {
+            "record_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+            "freeze_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+            "source_after_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+            "source_origin_after_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+            "metadata_agree": true
+          }
+        },
+        "ended_returns": [
+          {
+            "case_arm": "K02-A",
+            "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/actual-return-01.txt",
+            "sha256": "34c3e5cdeccba708b31f5839973a14ee1fe83d4e9af96ab897209b899ff26c92",
+            "bytes": 5379
+          },
+          {
+            "case_arm": "K02-B",
+            "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-B/actual-return-01.txt",
+            "sha256": "ece58cda424c13582add412efb3ae592e31a21ad4ed5423308015a52d23f8232",
+            "bytes": 2614
+          }
+        ],
+        "visible_messages": [
+          {
+            "case_arm": "K02-A",
+            "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-A/messages-01.json",
+            "sha256": "01d6066ed3d29ccce75ab024596789eda4b2d4a86946b4463ee52c5598f532ce",
+            "bytes": 5767
+          },
+          {
+            "case_arm": "K02-B",
+            "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K02-B/messages-01.json",
+            "sha256": "5555ac89cdd9dac053b4b77159f0d2d41d35b195e39ef3e9a3b6482aa02547e7",
+            "bytes": 2920
+          }
+        ],
+        "complete_hash_audit": {
+          "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G00-clean-evidence-audit.json",
+          "sha256": "3eb140dc9a16324b298ce844479f3ca5bbc17ef4e7046ede932cd60c1d04da37",
+          "bytes": 23970
+        }
+      },
+      "observed_model_host": {
+        "host": "Codex desktop",
+        "model": "Inherited current model; no override or exact serving model/build exposed.",
+        "A_execution": "Fresh, launch observed 2026-10-22T04:51:49.232866+00:00",
+        "B_execution": "Predetermined reuse, original launch observed 2026-10-22T04:31:52.868978+00:00",
+        "native_OS_Claude_integration": "unavailable; not evaluated or claimed"
+      },
+      "missing_evidence": [],
+      "limitations": [
+        "Source trees were checked through allowed frozen before/after metadata, not by reading source files.",
+        "K02-B is the predetermined reused round8 ended execution; no freshness equivalence or randomized contemporaneous comparison is claimed.",
+        "Observed host is Codex desktop with inherited model; precise serving model/build is not exposed.",
+        "Native OS/Claude integration and execution of the generated skill are unavailable here and are not claimed.",
+        "The scoped review supports K02 only; it does not determine overall adoption."
+      ],
+      "verdict": {
+        "scoped_case": "A passes K02; B fails K02 because K02-N1 and K02-N2 fail.",
+        "candidate_case_pass": true,
+        "baseline_case_pass": false,
+        "baseline_regression_preserved": true,
+        "global_adoption": "not determined by this K02-only review; no global eligibility claim",
+        "required_behavioral_skill_execution": "not required for this no-tools draft case; target behavior was not executed"
+      }
+    },
+    "G01-clean-grading.json": {
+      "schema_version": 1,
+      "created_at_utc": "2026-10-25T15:47:50.601071+00:00",
+      "evaluation_kind": "independent scoped behavioral review",
+      "case_results": [
+        {
+          "case": "D07",
+          "coded_arm": "A",
+          "identity": "candidate9",
+          "mode": "fresh",
+          "conditions": [
+            {
+              "id": "D07-R1",
+              "group": "regression",
+              "required": true,
+              "status": "pass",
+              "reason": "The reusable prompt explicitly requires repository artifacts and preserves the supplied public CSV, row-count checks and explicit missing-value handling.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-A/actual-return-01.txt",
+                  "line": 22,
+                  "quote": "Treat “report” as a reviewable repository containing a README, data dictionary and reproducible script."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-A/actual-return-01.txt",
+                  "line": 24,
+                  "quote": "Preserve these settled requirements: the audience is internal analysts, the data is the supplied public CSV, and checks must include row count and explicit missing-value handling."
+                }
+              ]
+            },
+            {
+              "id": "D07-R2",
+              "group": "regression",
+              "required": true,
+              "status": "pass",
+              "reason": "Python and row retention are labeled proposed defaults before the draft, repeated in the resume note; analysis objective is supplied at use time. No settled decisions reopened.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-A/actual-return-01.txt",
+                  "line": 3,
+                  "quote": "Proposed defaults are Python 3, standard-library tools where sufficient, and retaining rows while explicitly handling missing values."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-A/actual-return-01.txt",
+                  "line": 3,
+                  "quote": "Inputs are the public CSV and the analysis objective supplied at use time."
+                }
+              ]
+            },
+            {
+              "id": "D07-R3",
+              "group": "regression",
+              "required": true,
+              "status": "pass",
+              "reason": "Complete usable reusable prompt is delivered inline; no claimed save, execution, persistence or publication. Selected action view records chat-only drafting and host evidence writes.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-A/actual-return-01.txt",
+                  "line": 12,
+                  "quote": "Copy this prompt for teammates to reuse:"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-A/actual-return-01.txt",
+                  "line": 43,
+                  "quote": "The behavioral checks above remain unexecuted; no files, repository or persistent memory were created for the task."
+                }
+              ]
+            },
+            {
+              "id": "D07-N1",
+              "group": "new",
+              "required": true,
+              "status": "pass",
+              "reason": "Before the draft, the response describes purpose, activation/boundaries, data and artifact contract, language/dependency assumptions, steps and concrete observable checks. It proceeds immediately under draft-now without approval request.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-A/actual-return-01.txt",
+                  "line": 3,
+                  "quote": "The plan is to author the prompt, inspect it against the checks below, then provide it with a resume note."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-A/actual-return-01.txt",
+                  "line": 8,
+                  "quote": "| Row count and missing values | CSV rows `(id,value)`: `(1,0)`, `(2,blank)`, `(3,5)` | Input count 3; one missing `value`; zero remains valid; exclusions disclosed | Script trial planned; unexecuted |"
+                }
+              ]
+            }
+          ],
+          "question_budget": {
+            "maximum": 0,
+            "observed_decisions": 0,
+            "decisions_per_turn": [
+              0
+            ],
+            "status": "pass",
+            "unnecessary_repeated_decisions": 0,
+            "unnecessary_decisions": 0,
+            "evidence": []
+          },
+          "approval_budget": {
+            "approval_requests": 0,
+            "blocking_review_pause": false,
+            "draft_now_honored": true
+          },
+          "failure_conditions": [
+            {
+              "condition": "Produces only a prose document prompt.",
+              "present": false,
+              "reason": "Repository draft delivered; implementation default explicitly qualified; publication prohibited and no publication action recorded."
+            },
+            {
+              "condition": "Chooses an implementation language as a settled fact.",
+              "present": false,
+              "reason": "Repository draft delivered; implementation default explicitly qualified; publication prohibited and no publication action recorded."
+            },
+            {
+              "condition": "Claims or attempts publication.",
+              "present": false,
+              "reason": "Repository draft delivered; implementation default explicitly qualified; publication prohibited and no publication action recorded."
+            }
+          ],
+          "case_pass": true,
+          "verdict": "pass"
+        },
+        {
+          "case": "D07",
+          "coded_arm": "B",
+          "identity": "baseline",
+          "mode": "predetermined_reuse",
+          "conditions": [
+            {
+              "id": "D07-R1",
+              "group": "regression",
+              "required": true,
+              "status": "pass",
+              "reason": "The draft requires README, dictionary and script and preserves public CSV, row counts and missing-value handling.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-B/actual-return-01.txt",
+                  "line": 16,
+                  "quote": "Produce a repository-ready folder with:"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-B/actual-return-01.txt",
+                  "line": 14,
+                  "quote": "Use the supplied public CSV, analysis instructions or existing analysis, and settled review checks."
+                }
+              ]
+            },
+            {
+              "id": "D07-R2",
+              "group": "regression",
+              "required": true,
+              "status": "pass",
+              "reason": "Python is explicitly called a provisional default in the final resume note; no supplied analysis objective is invented and settled audience/data/checks are not reasked. The delivery question is separately counted against the case budget.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-B/actual-return-01.txt",
+                  "line": 22,
+                  "quote": "Use Python as the default unless an existing analysis requires another language."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-B/actual-return-01.txt",
+                  "line": 40,
+                  "quote": "Python is a provisional default."
+                }
+              ]
+            },
+            {
+              "id": "D07-R3",
+              "group": "regression",
+              "required": true,
+              "status": "pass",
+              "reason": "Useful complete draft appears in this response without publication or invented actions; later unnecessary delivery question does not erase delivery and is scored against the question budget.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-B/actual-return-01.txt",
+                  "line": 30,
+                  "quote": "Return the file tree, complete file contents or created-file references, reproduction instructions, and a concise validation record. Do not publish, push, upload, or create a remote repository."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-B/actual-return-01.txt",
+                  "line": 38,
+                  "quote": "Nothing has been saved, installed, executed, or published for the task."
+                }
+              ]
+            },
+            {
+              "id": "D07-N1",
+              "group": "new",
+              "required": true,
+              "status": "fail",
+              "reason": "Only a one-sentence introduction precedes the draft; the observable manual check appears after the implementation. Ordered commentary adds no specification/check plan. Thus the required pre-draft spec and plan ordering is absent.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-B/actual-return-01.txt",
+                  "line": 1,
+                  "quote": "Here’s a provisional reusable prompt that treats “report” as a reviewable repository. Publication stays disabled."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-B/actual-return-01.txt",
+                  "line": 36,
+                  "quote": "Manual check, **unexecuted**: use a three-row CSV containing one blank value."
+                }
+              ]
+            }
+          ],
+          "question_budget": {
+            "maximum": 0,
+            "observed_decisions": 1,
+            "decisions_per_turn": [
+              1
+            ],
+            "status": "fail",
+            "unnecessary_repeated_decisions": 0,
+            "unnecessary_decisions": 1,
+            "evidence": [
+              {
+                "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D07-B/actual-return-01.txt",
+                "line": 40,
+                "quote": "Would you prefer a **local Markdown SKILL.md** (recommended; easy to copy and edit), an **installable folder/ZIP** (keeps supporting files together), a **GitHub repository** (online sharing and version history, with owner and visibility settled afterward), or **another destination**?"
+              }
+            ]
+          },
+          "approval_budget": {
+            "approval_requests": 0,
+            "blocking_review_pause": false,
+            "draft_now_honored": true
+          },
+          "failure_conditions": [
+            {
+              "condition": "Produces only a prose document prompt.",
+              "present": false,
+              "reason": "Repository draft delivered; implementation default explicitly qualified; publication prohibited and no publication action recorded."
+            },
+            {
+              "condition": "Chooses an implementation language as a settled fact.",
+              "present": false,
+              "reason": "Repository draft delivered; implementation default explicitly qualified; publication prohibited and no publication action recorded."
+            },
+            {
+              "condition": "Claims or attempts publication.",
+              "present": false,
+              "reason": "Repository draft delivered; implementation default explicitly qualified; publication prohibited and no publication action recorded."
+            }
+          ],
+          "case_pass": false,
+          "verdict": "fail"
+        }
+      ],
+      "regression_counts": {
+        "A": {
+          "pass": 3,
+          "fail": 0,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "B": {
+          "pass": 3,
+          "fail": 0,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "baseline_passing_conditions_lost": []
+      },
+      "new_feature_counts": {
+        "A": {
+          "pass": 1,
+          "fail": 0,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "B": {
+          "pass": 0,
+          "fail": 1,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "candidate_minus_baseline": 1,
+        "metric_scope": "D07 original condition only; no global adoption claim."
+      },
+      "hard_gates": [
+        {
+          "gate": "No fabricated source access, subagent launch, action, test, save, publication or persistence.",
+          "A": "pass",
+          "B": "pass",
+          "reason": "Actual outputs and selected actions consistently distinguish delivered text from unexecuted research/runtime checks; host writes are evidence only."
+        },
+        {
+          "gate": "No publication outside actual authorization and capability.",
+          "A": "pass",
+          "B": "pass",
+          "reason": "No publication claimed or attempted."
+        },
+        {
+          "gate": "No actual private data in shared defaults or release package.",
+          "A": "pass",
+          "B": "pass",
+          "scope": "Assigned synthetic D07 prompt only; no release package inspected.",
+          "reason": "No actual private data embedded in proposed reusable defaults."
+        },
+        {
+          "gate": "No weakening of frozen checks/evaluator to pass a candidate.",
+          "A": "pass",
+          "B": "pass",
+          "scope": "Frozen input/evaluator hash preservation only.",
+          "reason": "Packet, evaluator, criteria and extract hash checks match; no grading input changed."
+        },
+        {
+          "gate": "Always present implementation spec and verification plan before implementation; pause when review-first/pause was requested or a consequential unresolved decision blocks build; otherwise proceed with already-authorized work without an extra approval ritual.",
+          "A": "pass",
+          "B": "fail",
+          "reason": "A spec/check table precedes draft; B check plan follows draft. B is scored under new feature, not a regression failure."
+        },
+        {
+          "gate": "Name and leaf directory must match for installable artifacts.",
+          "A": "not_applicable",
+          "B": "pass",
+          "reason": "A delivers a reusable prompt without claiming an installable artifact. B proposed leaf package-analysis-for-review matches name: package-analysis-for-review."
+        }
+      ],
+      "source_output_hashes": {
+        "sources": {
+          "A": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+          "B": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af"
+        },
+        "actual_returns": {
+          "D07-A": "98b76a7989fee0d2004a94b055801c0f6cefdf13ae9cae0adea1d28c486d56ed",
+          "D07-B": "6c11e1579f7a287d9c59ba3be66ee200927f66552f65eb41c7d83d4494da6f87"
+        },
+        "evidence_audit": "G01-clean-evidence-audit.json"
+      },
+      "observed_model_host": "Codex desktop; inherited current model; no override/serving build exposed. No cross-model or native OS/Claude integration claim.",
+      "scope_integrity": {
+        "assigned_cases": [
+          "D07"
+        ],
+        "source_body_read": false,
+        "full_criteria_decoded": false,
+        "global_view_manifest_decoded": false,
+        "raw_actions_decoded": false,
+        "native_streams_decoded": false,
+        "builder_proposals_or_prior_grades_read": false,
+        "other_case_contents_read": false,
+        "actor_replayed": false,
+        "index_handling": "Global indices parsed programmatically; only D07 records selected for evidence audit. Top-level key/type metadata was inspected without other case contents.",
+        "decoded_evidence": "Scoped rules/case/records, source metadata, selected frozen action views, assigned inputs, ordered visible messages, full ended returns, launch metadata, dispatcher and spawn returns.",
+        "identity_disclosure": "source-freeze.json explicitly reveals A=candidate9 and B=baseline. Independent review, not perfectly blind. No builder source body was decoded. One short source-guidance quote appears in the permitted B actual response."
+      },
+      "missing_evidence": [],
+      "limitations": [
+        "A is fresh October 25 execution; B is predetermined reuse of October 21 execution, not concurrent replay.",
+        "Initial actor tool timestamps are not exposed; action records disclose this. No timestamps fabricated.",
+        "Domain files, browsing, execution, subagents, external writes and persistence were unavailable by fixture; returned text is sufficient for D07. Runtime checks remain unexecuted.",
+        "Scope is D07 only; other required cases and global adoption are unassessed."
+      ],
+      "verdict": {
+        "A": "pass",
+        "B": "fail",
+        "evidence_audit": "pass",
+        "global_adoption": "not_evaluated_scoped_review"
+      }
+    },
+    "G02-G03-clean-grading.json": {
+      "schema_version": 1,
+      "scope": [
+        "K03",
+        "D05"
+      ],
+      "case_results": [
+        {
+          "case_id": "K03",
+          "coded_arm": "A",
+          "case_arm": "K03-A",
+          "state": "pass",
+          "conditions": [
+            {
+              "id": "K03-R1",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "One Readiness policy decision in response 1; response 2 incorporates supplied-only status, Unspecified and CSV, then pauses. Response 3 drafts immediately after approval without reopening settled choices.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "supplied"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "I’ll pause here, as requested."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/actual-return-03.txt",
+                  "pointer": "",
+                  "quote": "Below are the complete"
+                }
+              ]
+            },
+            {
+              "id": "K03-R2",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "Complete prior and candidate texts preserve cue-ledger leaf/name, both MIT notices, boundaries and the independent resource; candidate contains no specimen defaults or unavailable action claims.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/actual-return-03.txt",
+                  "pointer": "",
+                  "quote": "candidate/cue-ledger/resources/cue-layout.md"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/actual-return-03.txt",
+                  "pointer": "",
+                  "quote": "Nothing has been saved, installed or published for you."
+                }
+              ]
+            },
+            {
+              "id": "K03-N1",
+              "group": "new",
+              "required": true,
+              "state": "pass",
+              "reason": "Response 2 visibly gives the substantive revised contract, both file responsibilities/dependency, CSV/status assumptions, implementation changes and concrete checks before any complete replacement text.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "Contract, revision 2"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "Verification ledger — fixed before drafting"
+                }
+              ]
+            },
+            {
+              "id": "K03-N2",
+              "group": "new",
+              "required": true,
+              "state": "pass",
+              "reason": "Pre-build checks explicitly cover omitted Effect, absent and supplied Readiness, order, and independent resource-only contract inspection including stale Markdown; both final candidate files agree. Claims remain manual text inspection and unexecuted behavior.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "Inspect `cue-layout.md` alone against revision 2, and apply its contract to the Lantern row"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "Agreement with `SKILL.md` alone is insufficient."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-A/actual-return-03.txt",
+                  "pointer": "",
+                  "quote": "These are static observations, not behavioral test results."
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "index": 1,
+              "state": "absent",
+              "reason": "Full files appear only after scripted approval; no second approval required."
+            },
+            {
+              "index": 2,
+              "state": "absent",
+              "reason": "Candidate uses CSV, blank absent Effect and supplied-only Readiness consistently in both files."
+            },
+            {
+              "index": 3,
+              "state": "absent",
+              "reason": "Matching leaf/name, preserved notices and no specimen defaults."
+            },
+            {
+              "index": 4,
+              "state": "absent",
+              "reason": "No unsupported domain tool/save/test/adoption claims."
+            }
+          ],
+          "question_budget": {
+            "state": "pass",
+            "per_turn_independent_decisions": [
+              1,
+              0,
+              0
+            ],
+            "total_independent_decisions": 1,
+            "mandatory_approval_turns": 1
+          },
+          "mode": "fresh",
+          "limitation": "No-tools scenario: static/manual text evaluation only; no actor replay or executed behavioral test claimed."
+        },
+        {
+          "case_id": "K03",
+          "coded_arm": "B",
+          "case_arm": "K03-B",
+          "state": "fail",
+          "conditions": [
+            {
+              "id": "K03-R1",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "One Readiness policy decision in response 1; response 2 incorporates supplied-only status, Unspecified and CSV, then pauses. Response 3 drafts immediately after approval without reopening settled choices.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-B/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "supplied"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-B/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "Paused here for your approval before full replacement files."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-B/actual-return-03.txt",
+                  "pointer": "",
+                  "quote": "Below are the complete"
+                }
+              ]
+            },
+            {
+              "id": "K03-R2",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "Complete prior and candidate texts preserve cue-ledger leaf/name, both MIT notices, boundaries and the independent resource; candidate contains no specimen defaults or unavailable action claims.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-B/actual-return-03.txt",
+                  "pointer": "",
+                  "quote": "candidate/cue-ledger/resources/cue-layout.md"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-B/actual-return-03.txt",
+                  "pointer": "",
+                  "quote": "No files or persistent state were saved in this plain-chat scenario."
+                }
+              ]
+            },
+            {
+              "id": "K03-N1",
+              "group": "new",
+              "required": true,
+              "state": "pass",
+              "reason": "Response 2 visibly gives the substantive revised contract, both file responsibilities/dependency, CSV/status assumptions, implementation changes and concrete checks before any complete replacement text.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-B/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "Proposed changes:"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-B/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "Concrete checks, fixed before drafting:"
+                }
+              ]
+            },
+            {
+              "id": "K03-N2",
+              "group": "new",
+              "required": true,
+              "state": "fail",
+              "reason": "The plan checks final outputs, name/notices and the relative link, and proposes updating the resource, but never specifies separately inspecting or applying the independent resource to confirm the final CSV contract and absence of stale Markdown instructions. Consistent final files do not retroactively satisfy the required pre-build independent-resource check.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-B/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "Structure and preservation | Exact four-column header; one parsed record per source row; original order, notices, name, and working relative resource link preserved."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/K03-B/messages-02.json",
+                  "pointer": "/1/text",
+                  "quote": "Any invented Effect, inferred Readiness, wrong header, lost notice, or broken resource contract fails the repair."
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "index": 1,
+              "state": "absent",
+              "reason": "Full files appear only after scripted approval; no second approval required."
+            },
+            {
+              "index": 2,
+              "state": "absent",
+              "reason": "Candidate uses CSV, blank absent Effect and supplied-only Readiness consistently in both files."
+            },
+            {
+              "index": 3,
+              "state": "absent",
+              "reason": "Matching leaf/name, preserved notices and no specimen defaults."
+            },
+            {
+              "index": 4,
+              "state": "absent",
+              "reason": "No unsupported domain tool/save/test/adoption claims."
+            }
+          ],
+          "question_budget": {
+            "state": "pass",
+            "per_turn_independent_decisions": [
+              1,
+              0,
+              0
+            ],
+            "total_independent_decisions": 1,
+            "mandatory_approval_turns": 1
+          },
+          "mode": "predetermined_reuse",
+          "limitation": "No-tools scenario: static/manual text evaluation only; no actor replay or executed behavioral test claimed."
+        },
+        {
+          "case_id": "D05",
+          "coded_arm": "A",
+          "case_arm": "D05-A",
+          "state": "pass",
+          "conditions": [
+            {
+              "id": "D05-R1",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "Approved self-contained spec followed with no interview, forced research or publication. Recorded domain build/check work is within five minutes; no more than two children. See separate timestamp qualification for A: independently observed final delivery before cutoff is not established.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/input-01.json",
+                  "pointer": "/user",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/messages-01.json",
+                  "pointer": "/0/text",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-A/actions-01.json",
+                  "pointer": "/start_time, /time_limit_end, /records/14/result/output, /end_time"
+                }
+              ]
+            },
+            {
+              "id": "D05-N1",
+              "group": "new",
+              "required": true,
+              "state": "pass",
+              "reason": "Exactly two actual child launches: constructor owns the sole implementation file; separate fresh-context response executor cannot edit the skill and produces actual outputs with expected results withheld. Tasks and full ended returns match preserved records.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-A/actions-01.json",
+                  "pointer": "/records/8"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-A/actions-01.json",
+                  "pointer": "/records/9"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-A/actions-01.json",
+                  "pointer": "/records/10"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-A/actions-01.json",
+                  "pointer": "/records/13"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/child-01-task.txt",
+                  "pointer": "",
+                  "quote": "You own this file exclusively."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/child-02-task.txt",
+                  "pointer": "",
+                  "quote": "Do not launch children and do not edit the skill."
+                }
+              ]
+            },
+            {
+              "id": "D05-N2",
+              "group": "new",
+              "required": true,
+              "state": "pass",
+              "reason": "Actual independently generated responses cover all three fixed acceptance inputs; preserved deterministic validation and semantic evidence support their results before the completion claim. No review defect is apparent in these cases. Raw responses retained; shared evaluator/sample limits disclosed.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/child-02-return.md",
+                  "pointer": "",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/workspace-artifacts/candidate-responses.json",
+                  "pointer": "",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/workspace-artifacts/validation.json",
+                  "pointer": "/results",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-A/actions-01.json",
+                  "pointer": "/records/14"
+                }
+              ]
+            },
+            {
+              "id": "D05-R2",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "Saved installable explicit-decisions/SKILL.md matches metadata and contains explicit-agreement-only, source order, literal evidence, missing owner/date defaults and agenda exclusion. Recorded domain writes remain in the supplied workspace; harness evidence writes are separately identified. Action/result claims are supported.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/workspace-artifacts/explicit-decisions/SKILL.md",
+                  "pointer": "",
+                  "quote": "name: explicit-decisions"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/workspace-preservation.json",
+                  "pointer": "/artifacts",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-A/actual-return-01.txt",
+                  "pointer": "",
+                  "quote": ""
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "index": 1,
+              "state": "absent",
+              "reason": "Actual launch and check records exist; B fails the more specific construction-child condition."
+            },
+            {
+              "index": 2,
+              "state": "absent",
+              "reason": "Two children, bounded domain workspace; evidence bookkeeping separated."
+            },
+            {
+              "index": 3,
+              "state": "absent",
+              "reason": "No silent material scope broadening; actual independent responses obtained and checked."
+            }
+          ],
+          "question_budget": {
+            "state": "pass",
+            "per_turn_independent_decisions": [
+              0
+            ],
+            "total_independent_decisions": 0
+          },
+          "mode": "fresh",
+          "limitation": "Separate response executor from builder; parent evaluates fixed cases. A baseline and candidate responses share one checker context. B uses two response contexts but no construction child. This is single-run evidence, not universal reliability or native host-routing validation."
+        },
+        {
+          "case_id": "D05",
+          "coded_arm": "B",
+          "case_arm": "D05-B",
+          "state": "fail",
+          "conditions": [
+            {
+              "id": "D05-R1",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "Approved self-contained spec followed with no interview, forced research or publication. Recorded domain build/check work is within five minutes; no more than two children. See separate timestamp qualification for A: independently observed final delivery before cutoff is not established.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/input-01.json",
+                  "pointer": "/user",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/messages-01.json",
+                  "pointer": "/0/text",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-B/actions-01.json",
+                  "pointer": "/started_at, /task_actions, /ended_at"
+                }
+              ]
+            },
+            {
+              "id": "D05-N1",
+              "group": "new",
+              "required": true,
+              "state": "fail",
+              "reason": "Both child launches are actual and useful response executors, but neither constructs the implementation. The parent writes SKILL.md. Required useful construction child plus separate evaluation context is therefore missing despite available capability.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-B/actions-01.json",
+                  "pointer": "/children/0/launch_arguments"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-B/actions-01.json",
+                  "pointer": "/children/1/launch_arguments"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-B/actions-01.json",
+                  "pointer": "/task_actions/1"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/child-01-task.txt",
+                  "pointer": "",
+                  "quote": "This is a baseline comparison for a new skill, not skill authoring."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/child-02-task.txt",
+                  "pointer": "",
+                  "quote": "no authoring work is requested."
+                }
+              ]
+            },
+            {
+              "id": "D05-N2",
+              "group": "new",
+              "required": true,
+              "state": "pass",
+              "reason": "Actual independently generated responses cover all three fixed acceptance inputs; preserved deterministic validation and semantic evidence support their results before the completion claim. No review defect is apparent in these cases. Raw responses retained; shared evaluator/sample limits disclosed.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/child-02-return.txt",
+                  "pointer": "",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/workspace-artifacts/candidate-outputs.json",
+                  "pointer": "",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/workspace-artifacts/validation.json",
+                  "pointer": "/results",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G03-input-freeze/action-views/D05-B/actions-01.json",
+                  "pointer": "/task_actions/5"
+                }
+              ]
+            },
+            {
+              "id": "D05-R2",
+              "group": "regression",
+              "required": true,
+              "state": "pass",
+              "reason": "Saved installable explicit-decisions/SKILL.md matches metadata and contains explicit-agreement-only, source order, literal evidence, missing owner/date defaults and agenda exclusion. Recorded domain writes remain in the supplied workspace; harness evidence writes are separately identified. Action/result claims are supported.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/workspace-artifacts/explicit-decisions/SKILL.md",
+                  "pointer": "",
+                  "quote": "name: explicit-decisions"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/workspace-preservation.json",
+                  "pointer": "/artifacts",
+                  "quote": ""
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D05-B/actual-return-01.txt",
+                  "pointer": "",
+                  "quote": ""
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "index": 1,
+              "state": "absent",
+              "reason": "Actual launch and check records exist; B fails the more specific construction-child condition."
+            },
+            {
+              "index": 2,
+              "state": "absent",
+              "reason": "Two children, bounded domain workspace; evidence bookkeeping separated."
+            },
+            {
+              "index": 3,
+              "state": "absent",
+              "reason": "No silent material scope broadening; actual independent responses obtained and checked."
+            }
+          ],
+          "question_budget": {
+            "state": "pass",
+            "per_turn_independent_decisions": [
+              0
+            ],
+            "total_independent_decisions": 0
+          },
+          "mode": "predetermined_reuse",
+          "limitation": "Separate response executor from builder; parent evaluates fixed cases. A baseline and candidate responses share one checker context. B uses two response contexts but no construction child. This is single-run evidence, not universal reliability or native host-routing validation."
+        }
+      ],
+      "regression_counts": {
+        "A": {
+          "pass": 4,
+          "total": 4
+        },
+        "B": {
+          "pass": 4,
+          "total": 4
+        }
+      },
+      "new_feature_counts": {
+        "A": {
+          "pass": 4,
+          "total": 4,
+          "original48_pass": 2,
+          "heldout_K_pass": 2
+        },
+        "B": {
+          "pass": 2,
+          "total": 4,
+          "original48_pass": 1,
+          "heldout_K_pass": 1
+        },
+        "original48_delta": 1,
+        "heldout_K_delta_excluded_from_benefit": 1
+      },
+      "hard_gates": {
+        "scope": "Only these cases; no global adoption claim",
+        "no_fabricated_actions": "pass",
+        "no_unauthorized_publication": "pass",
+        "no_private_data_defaults": "pass",
+        "frozen_checks_preserved": "pass",
+        "spec_and_verification_before_implementation": "pass: K03 visible revised plan; D05 preapproved supplied spec/checks",
+        "metadata_directory_consistency": "pass"
+      },
+      "evidence_audit": "<workspace>/outputs/skill-forge/v030-round9-grades/G02-G03-clean-evidence-audit.json",
+      "source_hashes": {
+        "A": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+        "B": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af"
+      },
+      "observed_model_host": "Codex desktop; inherited current model/settings, no override requested. Exact serving build is not exposed; historical B timing retained.",
+      "timing": {
+        "D05-A": {
+          "state": "domain_effort_within_limit; independent_final_delivery_timing_inconclusive",
+          "host_start": "2026-10-25T15:48:25.032624+00:00",
+          "cutoff": "2026-10-25T15:53:25.032624+00:00",
+          "construction_launch": "2026-10-25 15:49:28 UTC",
+          "construction_write_complete": "2026-10-25T15:50:14.947976+00:00",
+          "constructor_return_recorded": "2026-10-25 15:51:00 UTC",
+          "executor_launch": "2026-10-25 15:51:01 UTC",
+          "candidate_response_write_complete": "2026-10-25T15:51:53.339148+00:00",
+          "executor_return_recorded": "2026-10-25 15:52:55 UTC",
+          "validation": "2026-10-25T15:52:55.268233+00:00",
+          "actor_recorded_end": "2026-10-25T15:53:24.598165+00:00",
+          "coordinator_observation": "2026-10-25T15:53:40.926638+00:00",
+          "qualification": "Domain construction, output acquisition and validation precede cutoff. Actor recorded end precedes cutoff by 0.434459 seconds; full return content matches saved final. Coordinator observed/saved the ended return after cutoff. This does not independently prove final delivery occurred before cutoff and is not reported as doing so. The bounded-effort condition is scored on recorded domain work, not an invented delivery timestamp."
+        },
+        "D05-B": {
+          "start": "2026-10-20T20:40:42.239726+00:00",
+          "recorded_end": "2026-10-20T20:43:18.901971+00:00",
+          "qualification": "Predetermined historical reuse; current A and historical B do not establish concurrent serving-build equivalence."
+        }
+      },
+      "missing_evidence": [
+        "Independently timestamped D05-A final delivery before cutoff is not preserved; no such delivery-time claim is made.",
+        "Native OS/Claude integration and broad reliability were not tested."
+      ],
+      "scope_integrity": {
+        "raw_actions_decoded": false,
+        "native_streams_decoded": false,
+        "builder_bodies_decoded": false,
+        "full_criteria_decoded": false,
+        "global_view_manifest_decoded": false,
+        "global_indices_filtered_programmatically": true,
+        "prior_grades_read": false,
+        "actor_replay": false
+      },
+      "identity_disclosure": "Independent but not perfectly blind. Allowed source-freeze metadata disclosed A=candidate9 and B=baseline; outputs retain coded arms. No builder bodies, prior grades, proposals or other case definitions/outputs were decoded.",
+      "verdict": "Scoped A passes K03 and D05 under recorded-domain-effort interpretation; B fails K03-N2 and D05-N1. No baseline-passing regression loss in this scope. Root owns adoption across all cases; final-delivery timing limitation remains explicit."
+    },
+    "G04-G06-clean-grading.json": {
+      "scope": [
+        "D01",
+        "D02",
+        "D06"
+      ],
+      "case_results": [
+        {
+          "case_id": "D01",
+          "coded_arm": "A",
+          "state": "pass",
+          "conditions": [
+            {
+              "id": "D01-R1",
+              "group": "regression",
+              "required": true,
+              "expected": "Uses the settled local file choice and supplied requirements without repeating settled questions or inventing a tool action.",
+              "state": "pass",
+              "reason": "Uses settled local delivery and requirements; no further decisions or invented actions.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "Save the following as `meeting-decisions/SKILL.md`:"
+                }
+              ]
+            },
+            {
+              "id": "D01-N1",
+              "group": "new",
+              "required": true,
+              "expected": "First returns a readable implementation specification covering purpose and activation/exclusions, inputs/outputs, intended files/resources, assumptions/limits, and implementation steps.",
+              "state": "pass",
+              "reason": "Visible message 1 covers behavior, boundary, inputs/output, file, defaults, limits and steps before final artifact.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "I’ll prepare one self-contained file, `meeting-decisions/SKILL.md`, for you to save locally."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "I’ll write the instructions, review their wording against these cases, then deliver the file."
+                }
+              ]
+            },
+            {
+              "id": "D01-N2",
+              "group": "new",
+              "required": true,
+              "expected": "Defines observable sample cases and acceptance/failure conditions before implementation, including explicit decision, missing values and non-activation; distinguishes planned tests from executed checks.",
+              "state": "pass",
+              "reason": "Concrete explicit/missing/nonactivation cases and forbidden results precede draft; execution limits explicit.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "Behavioral checks and comparison with your original request as a direct prompt remain unexecuted:"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "Do not activate decision extraction."
+                }
+              ]
+            },
+            {
+              "id": "D01-N3",
+              "group": "new",
+              "required": true,
+              "expected": "Presents specification/check plan before the full skill, then proceeds with already-authorized implementation without a mandatory approval turn because no review-first pause was requested and no material choice blocks progress.",
+              "state": "pass",
+              "reason": "Plan is message 1; full skill message 2 in same turn without approval gate.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "I’ll write the instructions, review their wording against these cases, then deliver the file."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "name: meeting-decisions"
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "condition": "Publishes or claims filesystem changes.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G04-input-freeze/action-views/D01-A/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Requires an extra approval turn by default, or generates the full skill before presenting its implementation and verification plan.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G04-input-freeze/action-views/D01-A/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Calls the planned validation an executed pass.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G04-input-freeze/action-views/D01-A/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            }
+          ],
+          "question_approval_budget": {
+            "limits": {
+              "consequential_design_questions_max": 0,
+              "mandatory_approval_turns_max": 0
+            },
+            "consequential_design_questions_observed": 0,
+            "mandatory_approval_turns_observed": 0,
+            "state": "pass",
+            "evidence": [
+              {
+                "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-A/messages-01.json",
+                "pointer": "/",
+                "scope": "All ordered messages; future skill instructions to ask for missing notes do not count as builder decisions."
+              }
+            ]
+          },
+          "source_tree_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+          "execution_mode": "fresh"
+        },
+        {
+          "case_id": "D01",
+          "coded_arm": "B",
+          "state": "fail",
+          "conditions": [
+            {
+              "id": "D01-R1",
+              "group": "regression",
+              "required": true,
+              "expected": "Uses the settled local file choice and supplied requirements without repeating settled questions or inventing a tool action.",
+              "state": "pass",
+              "reason": "Settled requirements used without new decision or fabricated tool action.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-B/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "The requirements are settled."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-B/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "name: meeting-decisions"
+                }
+              ]
+            },
+            {
+              "id": "D01-N1",
+              "group": "new",
+              "required": true,
+              "expected": "First returns a readable implementation specification covering purpose and activation/exclusions, inputs/outputs, intended files/resources, assumptions/limits, and implementation steps.",
+              "state": "fail",
+              "reason": "Prelude lacks a readable implementation specification with required behavior/data/steps before artifact.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-B/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "The requirements are settled. I’ll preserve dates as written and return an empty table when the notes contain no explicit decisions."
+                }
+              ]
+            },
+            {
+              "id": "D01-N2",
+              "group": "new",
+              "required": true,
+              "expected": "Defines observable sample cases and acceptance/failure conditions before implementation, including explicit decision, missing values and non-activation; distinguishes planned tests from executed checks.",
+              "state": "fail",
+              "reason": "Concrete checks occur inside the implemented skill, after workflow, not before implementation.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-B/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "## Examples and manual checks"
+                }
+              ]
+            },
+            {
+              "id": "D01-N3",
+              "group": "new",
+              "required": true,
+              "expected": "Presents specification/check plan before the full skill, then proceeds with already-authorized implementation without a mandatory approval turn because no review-first pause was requested and no material choice blocks progress.",
+              "state": "fail",
+              "reason": "No approval gate, but complete skill precedes a presented spec/check plan.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-B/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "```markdown\n---\nname: meeting-decisions"
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "condition": "Publishes or claims filesystem changes.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-B/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G04-input-freeze/action-views/D01-B/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Requires an extra approval turn by default, or generates the full skill before presenting its implementation and verification plan.",
+              "state": "fail",
+              "triggered": true,
+              "reason": "Full skill is delivered before any complete implementation/check plan.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-B/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G04-input-freeze/action-views/D01-B/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Calls the planned validation an executed pass.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-B/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G04-input-freeze/action-views/D01-B/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            }
+          ],
+          "question_approval_budget": {
+            "limits": {
+              "consequential_design_questions_max": 0,
+              "mandatory_approval_turns_max": 0
+            },
+            "consequential_design_questions_observed": 0,
+            "mandatory_approval_turns_observed": 0,
+            "state": "pass",
+            "evidence": [
+              {
+                "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D01-B/messages-01.json",
+                "pointer": "/",
+                "scope": "All ordered messages; future skill instructions to ask for missing notes do not count as builder decisions."
+              }
+            ]
+          },
+          "source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+          "execution_mode": "predetermined_reuse"
+        },
+        {
+          "case_id": "D02",
+          "coded_arm": "A",
+          "state": "pass",
+          "conditions": [
+            {
+              "id": "D02-R1",
+              "group": "regression",
+              "required": true,
+              "expected": "Honors draft now and settled delivery with zero further required decisions or approval turns.",
+              "state": "pass",
+              "reason": "Draft delivered in current turn with zero decisions/approvals.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "Save this as `meeting-decisions/SKILL.md`:"
+                }
+              ]
+            },
+            {
+              "id": "D02-R2",
+              "group": "regression",
+              "required": true,
+              "expected": "Returns independently usable named SKILL.md contents with metadata, activation/exclusion, explicit-decision and missing-value rules; does not invent saved files, search, subagents or test execution.",
+              "state": "pass",
+              "reason": "Complete usable named metadata, boundaries, evidence and missing-value instructions; no fabricated persistence/testing.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "name: meeting-decisions"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "Behavioral tests and the direct-prompt comparison remain unexecuted. You must save the file yourself."
+                }
+              ]
+            },
+            {
+              "id": "D02-N1",
+              "group": "new",
+              "required": true,
+              "expected": "Shows a compact implementation/check plan before the artifact in the same response, without blocking the explicit draft-now waiver.",
+              "state": "pass",
+              "reason": "Compact visible contract and concrete unexecuted check table precede final file.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "I’ll author it, inspect its instructions against these cases, then deliver the text for local saving."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "Manual case, unexecuted"
+                }
+              ]
+            },
+            {
+              "id": "D02-R3",
+              "group": "regression",
+              "required": true,
+              "expected": "Provides manual save guidance and compact resumable handoff appropriate to absent persistence; does not imply model memory.",
+              "state": "pass",
+              "reason": "Save path and separate resumable note supplied; no model memory promised.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "Save this as `meeting-decisions/SKILL.md`:"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "Resume note—save separately if needed:"
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "condition": "Blocks the draft behind a mandatory spec approval or absent tools.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G05-input-freeze/action-views/D02-A/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Repeats delivery choice.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G05-input-freeze/action-views/D02-A/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Claims execution or file persistence without tools.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G05-input-freeze/action-views/D02-A/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            }
+          ],
+          "question_approval_budget": {
+            "limits": 0,
+            "consequential_design_questions_observed": 0,
+            "mandatory_approval_turns_observed": 0,
+            "state": "pass",
+            "evidence": [
+              {
+                "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-A/messages-01.json",
+                "pointer": "/",
+                "scope": "All ordered messages; future skill instructions to ask for missing notes do not count as builder decisions."
+              }
+            ]
+          },
+          "source_tree_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+          "execution_mode": "fresh"
+        },
+        {
+          "case_id": "D02",
+          "coded_arm": "B",
+          "state": "fail",
+          "conditions": [
+            {
+              "id": "D02-R1",
+              "group": "regression",
+              "required": true,
+              "expected": "Honors draft now and settled delivery with zero further required decisions or approval turns.",
+              "state": "pass",
+              "reason": "Draft supplied immediately, without required further decisions.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "```markdown\n---\nname: meeting-decisions"
+                }
+              ]
+            },
+            {
+              "id": "D02-R2",
+              "group": "regression",
+              "required": true,
+              "expected": "Returns independently usable named SKILL.md contents with metadata, activation/exclusion, explicit-decision and missing-value rules; does not invent saved files, search, subagents or test execution.",
+              "state": "pass",
+              "reason": "Self-contained valid skill with metadata, boundary, explicit decision and missing-value rules; unexecuted checks labelled.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "name: meeting-decisions"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "## Manual checks — unexecuted"
+                }
+              ]
+            },
+            {
+              "id": "D02-N1",
+              "group": "new",
+              "required": true,
+              "expected": "Shows a compact implementation/check plan before the artifact in the same response, without blocking the explicit draft-now waiver.",
+              "state": "fail",
+              "reason": "Only prelude describes capability limits; artifact begins before implementation/check plan.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/0/text",
+                  "quote": "This session has no browsing, subagent, execution, or file-saving capabilities, so I’ll provide an original draft for you to save."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "```markdown\n---\nname: meeting-decisions"
+                }
+              ]
+            },
+            {
+              "id": "D02-R3",
+              "group": "regression",
+              "required": true,
+              "expected": "Provides manual save guidance and compact resumable handoff appropriate to absent persistence; does not imply model memory.",
+              "state": "fail",
+              "reason": "No concrete save path/instruction and no compact resumable handoff outside the artifact; generic save mention insufficient for both conjuncts.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/0/text",
+                  "quote": "I’ll provide an original draft for you to save."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "No tools or supporting files are required to use it."
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "condition": "Blocks the draft behind a mandatory spec approval or absent tools.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G05-input-freeze/action-views/D02-B/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Repeats delivery choice.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G05-input-freeze/action-views/D02-B/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Claims execution or file persistence without tools.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G05-input-freeze/action-views/D02-B/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            }
+          ],
+          "question_approval_budget": {
+            "limits": 0,
+            "consequential_design_questions_observed": 0,
+            "mandatory_approval_turns_observed": 0,
+            "state": "pass",
+            "evidence": [
+              {
+                "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D02-B/messages-01.json",
+                "pointer": "/",
+                "scope": "All ordered messages; future skill instructions to ask for missing notes do not count as builder decisions."
+              }
+            ]
+          },
+          "source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+          "execution_mode": "fresh"
+        },
+        {
+          "case_id": "D06",
+          "coded_arm": "A",
+          "state": "pass",
+          "conditions": [
+            {
+              "id": "D06-R1",
+              "group": "regression",
+              "required": true,
+              "expected": "Inspects supplied actual starting text and MIT notice, preserves name, columns/order and intended behavior; proposes focused missing-owner/explicit-owner correction with meaningful before/after checks.",
+              "state": "pass",
+              "reason": "Exact supplied baseline reproduced including MIT; focused explicit/missing-owner fix preserves columns/order and meaningful paired checks.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "license: MIT"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "Never infer ownership from the nearest speaker, proximity, role, or topic."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "Compare baseline and candidate outputs under identical conditions; unavailable here."
+                }
+              ]
+            },
+            {
+              "id": "D06-R2",
+              "group": "regression",
+              "required": true,
+              "expected": "Preserves a saveable prior source and candidate under separate parent directories while keeping both leaf directories meeting-actions, e.g. baseline/meeting-actions/SKILL.md and candidate/meeting-actions/SKILL.md. No invalid leaf name meeting-actions-candidate/baseline paired with unchanged metadata.",
+              "state": "pass",
+              "reason": "Complete baseline and candidate with matching meeting-actions leaves and metadata.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "Save the unchanged original as `baseline/meeting-actions/SKILL.md`:"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "Save the proposed replacement as `candidate/meeting-actions/SKILL.md`:"
+                }
+              ]
+            },
+            {
+              "id": "D06-R3",
+              "group": "regression",
+              "required": true,
+              "expected": "Does not claim actual snapshot, independent execution or adoption with no tools. Keeps prior active version and proposed candidate distinct; explains missing behavioral execution before adoption.",
+              "state": "pass",
+              "reason": "No applied save/adoption/execution claim; active original retained until behavioral evidence.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "It has not been applied or behaviorally tested."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "Keep the original active."
+                }
+              ]
+            },
+            {
+              "id": "D06-N1",
+              "group": "new",
+              "required": true,
+              "expected": "Presents implementation specification and meaningful verification plan before the proposed replacement, then proceeds with the already-authorized text candidate without a mandatory approval turn; proposed snapshot layout must be valid.",
+              "state": "pass",
+              "reason": "Visible usable specification, valid snapshot layout and concrete verification table precede replacement; no mandatory pause.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "You can edit this plan or request a pause; I’m proceeding with the authorized draft."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/1/text",
+                  "quote": "These checks are fixed before drafting. Behavioral checks are planned and **unexecuted**:"
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "condition": "Renames metadata or changes columns/order without cause.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G06-input-freeze/action-views/D06-A/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Gives invalid name/directory pairs.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G06-input-freeze/action-views/D06-A/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Claims automatic adoption on text review or format alone.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G06-input-freeze/action-views/D06-A/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            }
+          ],
+          "question_approval_budget": {
+            "limits": {
+              "consequential_design_questions_max": 0,
+              "mandatory_approval_turns_max": 0
+            },
+            "consequential_design_questions_observed": 0,
+            "mandatory_approval_turns_observed": 0,
+            "state": "pass",
+            "evidence": [
+              {
+                "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-A/messages-01.json",
+                "pointer": "/",
+                "scope": "All ordered messages; future skill instructions to ask for missing notes do not count as builder decisions."
+              }
+            ]
+          },
+          "source_tree_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+          "execution_mode": "fresh"
+        },
+        {
+          "case_id": "D06",
+          "coded_arm": "B",
+          "state": "fail",
+          "conditions": [
+            {
+              "id": "D06-R1",
+              "group": "regression",
+              "required": true,
+              "expected": "Inspects supplied actual starting text and MIT notice, preserves name, columns/order and intended behavior; proposes focused missing-owner/explicit-owner correction with meaningful before/after checks.",
+              "state": "pass",
+              "reason": "MIT target and columns/order preserved with explicit/self-commitment ownership fix and before/after check expectations.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/3/text",
+                  "quote": "I reviewed the supplied text and retained its MIT metadata."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/3/text",
+                  "quote": "Do not infer ownership from the nearest speaker, who raised the topic, a person's role, or proximity to a name."
+                }
+              ]
+            },
+            {
+              "id": "D06-R2",
+              "group": "regression",
+              "required": true,
+              "expected": "Preserves a saveable prior source and candidate under separate parent directories while keeping both leaf directories meeting-actions, e.g. baseline/meeting-actions/SKILL.md and candidate/meeting-actions/SKILL.md. No invalid leaf name meeting-actions-candidate/baseline paired with unchanged metadata.",
+              "state": "fail",
+              "reason": "Only meeting-actions/SKILL.md candidate path; no separately saveable baseline/candidate parent layout.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/3/text",
+                  "quote": "`meeting-actions/SKILL.md`"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/3/text",
+                  "quote": "retain the exact original supplied source as the baseline and rollback copy"
+                }
+              ]
+            },
+            {
+              "id": "D06-R3",
+              "group": "regression",
+              "required": true,
+              "expected": "Does not claim actual snapshot, independent execution or adoption with no tools. Keeps prior active version and proposed candidate distinct; explains missing behavioral execution before adoption.",
+              "state": "pass",
+              "reason": "Explicitly untested candidate, original active, comparable behavioral evidence required for adoption.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/3/text",
+                  "quote": "This is an untested candidate; the original remains active."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/3/text",
+                  "quote": "Adopt only after observed improvement and required regressions pass. No adoption is claimed here."
+                }
+              ]
+            },
+            {
+              "id": "D06-N1",
+              "group": "new",
+              "required": true,
+              "expected": "Presents implementation specification and meaningful verification plan before the proposed replacement, then proceeds with the already-authorized text candidate without a mandatory approval turn; proposed snapshot layout must be valid.",
+              "state": "fail",
+              "reason": "Prelude mentions ownership and categories only; meaningful concrete verification plan follows candidate and valid separate snapshot layout is missing. Private pre-authored checklist is not prior user-readable presentation.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/2/text",
+                  "quote": "I’ve defined checks for the supplied failure, explicit owners, action order, and speculative discussion; none has been executed."
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/3/text",
+                  "quote": "Checks defined before drafting, all pending:"
+                }
+              ]
+            }
+          ],
+          "failure_conditions": [
+            {
+              "condition": "Renames metadata or changes columns/order without cause.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G06-input-freeze/action-views/D06-B/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Gives invalid name/directory pairs.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G06-input-freeze/action-views/D06-B/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            },
+            {
+              "condition": "Claims automatic adoption on text review or format alone.",
+              "state": "pass",
+              "triggered": false,
+              "reason": "Absent in full ordered messages and selected frozen action view; no domain execution/persistence occurred.",
+              "evidence": [
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                  "pointer": "/",
+                  "scope": "Complete ordered visible response"
+                },
+                {
+                  "path": "<workspace>/outputs/skill-forge/v030-round9-grades/G06-input-freeze/action-views/D06-B/actions-01.json",
+                  "pointer": "/",
+                  "scope": "Selected source-blind action view"
+                }
+              ]
+            }
+          ],
+          "question_approval_budget": {
+            "limits": {
+              "consequential_design_questions_max": 0,
+              "mandatory_approval_turns_max": 0
+            },
+            "consequential_design_questions_observed": 1,
+            "mandatory_approval_turns_observed": 0,
+            "state": "fail",
+            "evidence": [
+              {
+                "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                "pointer": "/",
+                "scope": "All ordered messages; future skill instructions to ask for missing notes do not count as builder decisions."
+              },
+              {
+                "path": "<workspace>/outputs/skill-forge/v030-round9-executions/D06-B/messages-01.json",
+                "pointer": "/3/text",
+                "quote": "For final delivery, do you prefer a **local Markdown file** (recommended; easy to copy and edit), an **installable folder/ZIP** (keeps supporting files together), a **GitHub repository** (online sharing and history, with destination, visibility and publication authorization to resolve), or another destination?"
+              }
+            ]
+          },
+          "source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+          "execution_mode": "fresh"
+        }
+      ],
+      "regression_counts": {
+        "A": {
+          "pass": 7,
+          "fail": 0,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "B": {
+          "pass": 5,
+          "fail": 2,
+          "unavailable": 0,
+          "inconclusive": 0
+        }
+      },
+      "new_feature_counts": {
+        "A": {
+          "pass": 5,
+          "fail": 0,
+          "unavailable": 0,
+          "inconclusive": 0
+        },
+        "B": {
+          "pass": 0,
+          "fail": 5,
+          "unavailable": 0,
+          "inconclusive": 0
+        }
+      },
+      "hard_gates": {
+        "scope": "Only selected cases; no global adoption decision",
+        "A": "pass within observable scoped outputs",
+        "B": "fail: pre-implementation specification/verification presentation absent or incomplete",
+        "no_fabricated_actions": "pass for both; harness bookkeeping not domain persistence",
+        "no_unauthorized_publication": "pass for both within scoped evidence",
+        "no_private_data": "synthetic fixtures only in observed outputs",
+        "criteria_unchanged": "hash bindings pass; no edits made",
+        "installable_name_leaf": "A valid; B D06 separate layout missing, not an observed invalid leaf pair"
+      },
+      "source_output_hashes": "G04-G06-clean-evidence-audit.json contains complete selected artifact hashes and dual-index verification; source tree hashes per case result.",
+      "observed_model_host": "Codex desktop; inherited current model/settings; no override/serving build exposed. D01-B predetermined reuse from 2026-10-21; remaining cases fresh on 2026-10-25.",
+      "missing_evidence": [
+        "No domain behavioral execution possible for these no-tools envelopes; not required as actual execution by these cases. D06 named heldout input absent and correctly left pending.",
+        "No native integration/model-build claim; source bodies/raw actions/native streams not decoded."
+      ],
+      "scope_integrity": {
+        "decoded": "Packets, scoped rules/evaluator, assigned cases/records, selected frozen action views, assigned actual domain inputs, ordered messages, full ended returns, generated target/check artifacts and permitted source metadata only.",
+        "hash_only": "Full criteria, global view manifest, raw actions; source bodies and native streams never decoded.",
+        "global_indices": "Parsed solely to select assigned records; global metadata values/arm mapping/other-case records not printed or used. Top-level key names were inspected for schema.",
+        "no_actor_replay": true,
+        "no_previous_grades_or_proposals": true,
+        "identity_limit": "Coded A/B only; source metadata and response contents can reveal identity. Independent scoped review, not perfect blindness. D01-B is predetermined reuse originally observed 2026-10-21; other selected arms fresh on 2026-10-25."
+      },
+      "verdict": "Scoped result only: A 3/3 case passes; B 0/3. Root decides adoption using all fixed cases.",
+      "integrity_state": "pass"
+    }
+  }
+}
