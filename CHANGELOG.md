@@ -2,7 +2,7 @@
 
 Development checkpoint2026-10-25: candidate9consolidates verification planning into a visible rule/example/outcome/method ledger. Seven independently reviewed scenarios pass28conditions; complete evaluation and adoption remain pending. Candidate8rejection and all earlier scores are preserved. v0.2.0 remains the current release.
 
-## 0.3.0 — unreleased
+## 0.3.0 — 2026-10-25
 
 Candidate 8 was rejected after a required verification-planning failure. Candidate 7 and its historical test-input flaw remain recorded without rescoring. Stable 0.2.0 remains active. These changes are proposals, not a released update.
 
@@ -16,6 +16,9 @@ Candidate 8 was rejected after a required verification-planning failure. Candida
 - Preserve supplied acceptance examples, check behavior-bearing resources independently, and avoid reopening delivery after an immediate draft.
 - State supplied fields, order and exact output formats visibly before implementation; preserve the rejected candidate and incomplete checks when validation fails.
 - Preserve prior release evidence; record rejected candidates and the new comparison in the v0.3.0 evaluation report.
+
+- Completed the fixed 21-scenario/84-condition evaluation, separate routing probes and 15 supplemental interview checks; preserved rejected history and baseline comparability limits.
+- Added verified reference navigation, automatic adoption records, rollback/upgrade checks and a native Codex smoke test.
 
 ## 0.2.0 — 2026-10-17
 

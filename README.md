@@ -1,6 +1,7 @@
 # Skill Forge
 
-> **Development branch: v0.3.0 is not released.** Structured-verification candidate 9 is under evaluation; it is not approved or installed. Candidates 7 and 8 were rejected and their evidence is preserved. Use [stable v0.2.0](https://github.com/HarryBurd33/skill-forge/tree/main) for installation. The instructions below describe the proposed behavior; see the [evaluation report](evals/v0.3.0/REPORT.md) for actual results and limits.
+**Version 0.3.0.** [Validation and compatibility limits](evals/v0.3.0/REPORT.md).
+
 
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
 
@@ -86,5 +87,7 @@ The canonical builder lives in `skills/skill-forge/`. The portable prompt is gen
 [Report a failure or propose a question](CONTRIBUTING.md). A helpful contribution includes a realistic input, expected behavior, actual failure, and why the proposed change helps. Search the question library first: fewer useful questions beat more repetitive questions. Accepted changes gain a regression case and a versioned change record. Do not submit private transcripts or credentials.
 
 See [foundations and comparison](docs/foundations.md), [source ledger](SOURCES.json), [notices](THIRD_PARTY_NOTICES.md), and [changelog](CHANGELOG.md). Original project material is [MIT licensed](LICENSE). Installation, tool access and results vary by host; external publication always requires authorization for that destination.
+
+The v0.3.0 checks passed all 21 original scenarios (84 required conditions), all 15 supplemental interview items, and the navigation/package checks. A fresh Codex CLI 0.164.0 invocation discovered the installed skill and returned a standalone draft. Historical baseline/model limits and untested native hosts are documented in the validation report.
 
 Track requested capabilities in [REQUIREMENTS.md](REQUIREMENTS.md), current work in [HANDOFF.md](HANDOFF.md), and the project usage policy in [MAINTENANCE.md](MAINTENANCE.md).

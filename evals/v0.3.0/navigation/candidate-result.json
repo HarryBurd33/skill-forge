@@ -1,0 +1,30 @@
+{
+  "kind": "script_execution",
+  "checks": {
+    "NAV-1": "pass",
+    "NAV-2": "pass",
+    "NAV-3": "pass",
+    "NAV-4": "pass"
+  },
+  "state": "pass",
+  "baseline_hash": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+  "candidate_hash": "86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608",
+  "benefit": {
+    "metric": "navigable_helper_section_links",
+    "value": 5
+  },
+  "body_preserved": true,
+  "other_core_files_preserved": true,
+  "bundle_preserved": true,
+  "main_lines": 85,
+  "long_references": [
+    "helpers.md"
+  ],
+  "package_check": {
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"pass\",\n  \"public_files\": 193,\n  \"relative_links\": 175,\n  \"skills\": [\n    {\n      \"status\": \"pass\",\n      \"name\": \"skill-forge\",\n      \"files\": 20,\n      \"relative_links\": 16,\n      \"questions\": 11,\n      \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n    },\n    {\n      \"status\": \"pass\",\n      \"name\": \"skill-finder\",\n      \"files\": 2,\n      \"relative_links\": 0,\n      \"questions\": 0,\n      \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n    },\n    {\n      \"status\": \"pass\",\n      \"name\": \"adaptive-prompt-builder\",\n      \"files\": 3,\n      \"relative_links\": 2,\n      \"questions\": 0,\n      \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n    },\n    {\n      \"status\": \"pass\",\n      \"name\": \"research-writer\",\n      \"files\": 3,\n      \"relative_links\": 2,\n      \"questions\": 0,\n      \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n    },\n    {\n      \"status\": \"pass\",\n      \"name\": \"adaptive-planner\",\n      \"files\": 3,\n      \"relative_links\": 2,\n      \"questions\": 0,\n      \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n    },\n    {\n      \"status\": \"pass\",\n      \"name\": \"meeting-actions\",\n      \"files\": 1,\n      \"relative_links\": 0,\n      \"questions\": 0,\n      \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n    },\n    {\n      \"status\": \"pass\",\n      \"name\": \"meeting-actions\",\n      \"files\": 1,\n      \"relative_links\": 0,\n      \"questions\": 0,\n      \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n    },\n    {\n      \"status\": \"pass\",\n      \"name\": \"meeting-actions\",\n      \"files\": 1,\n      \"relative_links\": 0,\n      \"questions\": 0,\n      \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n    }\n  ],\n  \"clean_first_use\": {\n    \"status\": \"pass\",\n    \"temporary_install_paths\": 4,\n    \"skill_hash_matches\": true,\n    \"portable_bytes_match\": true,\n    \"scope\": \"Filesystem/CLI only; native Codex and Claude discovery are separate checks.\"\n  }\n}\n",
+    "stderr": "",
+    "errors": []
+  },
+  "limitation": "Navigation and byte preservation only; no new behavioral or native-host claim."
+}

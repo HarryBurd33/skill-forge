@@ -226,5 +226,27 @@
     "loader": "Canonical SKILL.md first; conditional same-tree resources only. Exact historical cached loaders and capture limits retained.",
     "reuse_policy": "Exact8complete source7 selected B fixed prospectively regardless scores;21A+13B fresh incl correctedK02botharms.34fresh+8caches=42.",
     "neutral_role": "Execution only; no source authoring or behavioral grading."
+  },
+  "round9": {
+    "frozen_at_utc": "2026-10-22T04:51:42.056427+00:00",
+    "global_candidate": 9,
+    "candidate_source_tree_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+    "baseline_source_tree_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+    "criteria_hash": "ea5372555a6f58f2e7bd6fcc707a40847a5221bea2eabf2d069413a63cf2cea3",
+    "original72_criteria_hash": "f50393e41ff2052488e576fdfc8ac2495aef87c67b46e5a6fda70ec00f887dc8",
+    "evaluator_hash": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+    "fresh_L_fixture_sha256": "9fd126051d818d6abc99c6d6df35be74f6b7920971c6cc389b19285c0e7b537c",
+    "effective_control": "run-b3ef27421f11",
+    "effective_gate_deadline_utc": "2026-10-22T06:16:36.069663+00:00",
+    "source_origins": {
+      "A": "<workspace>/skill-forge-v030-candidate9/skills/skill-forge",
+      "B": "<workspace>/skill-forge/skills/skill-forge"
+    },
+    "root_confirmation_sha256": "a94faa108031ea37d1cb63ec72d142a08e99aedff077ac727587d580df7a1667",
+    "control_sha256": "486414ed7dd3aa3f5ffeb6343dbc9a893eaa108da07104e28e7856f19fedb479",
+    "prospective_plan_sha256": "6ea0b1c31e34bda570c2d98151ec559e80b19e0a7ef74b44379ab45907e0bdbb",
+    "loader": "Canonical SKILL.md first; conditional same-tree resources only. Exact historical cached loaders and capture limits retained.",
+    "reuse_policy": "Exact9complete source8 selected B fixed prospectively regardless scores, incl exactcorrectedK02B;21A+12Bfresh=33fresh+9caches42.",
+    "neutral_role": "Execution only; no source authoring or behavioral grading."
   }
 }

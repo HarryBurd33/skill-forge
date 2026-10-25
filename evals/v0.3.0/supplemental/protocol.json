@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-25T17:45:10.645545+00:00",
+  "before_any_supplemental_execution": true,
+  "authority": "Current user90minute continuation plus usage policy: suitable model; preserve original frozen comparison settings",
+  "scope": "Additive acceptance evidence for existing source9; never replaces original21case comparison or its model settings",
+  "case_file": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/cases.json",
+  "case_file_sha256": "3587cc82ed4bab158d90f874efbd06ef5186169c0fb0c0f708c02406abdbbe4d",
+  "source_tree_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+  "source_root": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/sources/skill-forge",
+  "portable_prompt": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/sources/skill-forge-prompt.md",
+  "portable_prompt_sha256": "c424d65339b4ccf4a35011fc8325dfc2de9e599ab38c07d1ca6f262b8753a609",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "model_policy_amendment": "Original cases were unexecuted and said inherited settings. Prospectively use fixed Sol/Medium for these separate additive cases only; preserve original case file/criteria byte-exact and prior runs. No causal comparison with Astra results.",
+  "loading": {
+    "S01": "Canonical SKILL.md then only conditionally relevant same-source resources",
+    "S02": "Canonical SKILL.md then only conditionally relevant same-source resources",
+    "S03": "Self-contained portable prompt supplied in fresh actor context; no other source resource needed"
+  },
+  "actor_capabilities": {
+    "files": false,
+    "browse": false,
+    "execute": false,
+    "subagents": false
+  },
+  "harness_exception": "Read current input/frozen source and write exact response/action evidence only. Never count harness writes as user domain saves.",
+  "turn_policy": "One fresh context per case. Only current user turn staged. Followup only after actual ended response captured. No expected answers, future turns, prior grades or parent context to actors.",
+  "evaluator": "Independent fresh context with exact original expected/failure lists, ordered actual responses, raw hashes and source-blind action views. Every expected item must pass; any failure, question budget violation or missing turn blocks completion. No averaged pass.",
+  "question_budgets": {
+    "questioning_turn": "At most one consequential decision",
+    "final_build_turn": "Zero consequential questions or mandatory approval turns"
+  },
+  "qualitative_rubric": {
+    "0": "Fails material requirement or invents action",
+    "1": "Partial result or material unresolved gap",
+    "2": "Meets observed requirement with useful artifact and proportionate effort"
+  },
+  "retries": 0,
+  "source_changes_after_execution": false,
+  "deadline_utc": "2026-10-25T19:06:48+00:00",
+  "end_of_scope": "Original skill files, grades and criteria immutable; supplement is separate acceptance evidence."
+}

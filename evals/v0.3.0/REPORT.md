@@ -1,12 +1,41 @@
-# Current development checkpoint — candidate 9
+# Skill Forge v0.3.0 validation
 
-All42original comparison records and the separate activation response are captured. Qualified independent reviews still cover20of21paired scenarios and80of84required candidate conditions, all observed candidate conditions passing. L03 and activation grading remain unfinished. Candidate9is unchanged and is not adopted, installed or released. Stablev0.2.0remains active.
+The required original evaluation and supplemental acceptance checks passed. The behavior update was adopted automatically, followed by a separate navigation-only update. The personal installation, canonical skill and staged public skill have the same final SHA-256: **86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608**. Release publication and downloadable-asset verification are recorded in the closing handoff and GitHub release; this report does not substitute a prepared package for a published release.
 
-The90-minute Sol continuation reached its limit. Supplemental S01and the first2turns ofS02ended; S02turn3was interrupted and S03was not executed. No supplemental pass is claimed. See [continuation checkpoint](continuation-checkpoint.json), [qualified progress](round9-progress.json), [grades](round9-progress-grades.json) and [audits](round9-progress-audits.json). Existing20pair exports remain the qualified graded selection; ungraded L03and supplemental bodies are not published here.
+| Executed check | Candidate | Baseline / boundary |
+| --- | --- | --- |
+| Original fixed scenarios | 21/21 pass; 84/84 required conditions | Stable 0.2.0: 5/21 cases; 61/84 conditions |
+| Original new-feature metric | 20/20 | Baseline 10/20; predefined delta +10 |
+| Canonical-loader subset | 7 satisfied new conditions | Baseline 3; delta +4 |
+| Baseline-passing regressions | No loss | Every required candidate condition still passes |
+| Separate description-only activation | 6/6 for each description | One combined context; native discovery is separate |
+| Supplemental controls | 15/15 items; S01/S02/S03 each rubric score 2 | Separate Sol/Medium run, no replacement of original gates |
+| Navigation | Four fixed checks pass; links 0→5 | Existing instruction bytes preserved after removing added contents block |
+| Rollback / managed copies | Two-gate rollback, upgrade/downgrade/restore, customization refusal pass | Temporary identical artifacts; no actor replay |
+| Native Codex smoke | CLI 0.164.0, Sol/Medium, read-only; installed body injected, plan then draft | Parent static inspection; no Claude or universal-model claim |
 
-Later native metadata recovered model/effort settings:13pairs match recorded aliases/effort and8cached pairs differ. The unchanged original20feature metric is descriptive; matching-settings original-feature observations are11candidate passes versus6baseline passes, and its canonical-loader subset4versus3. Exact serving builds remain unknown. No historical score is changed. J03-B's native/saved representation discrepancy and D05timing limitations remain preserved.
+## Evidence and source identity
 
----
+- [Original grades](final-grades.json), [42 actual execution records](model-executions-final.json), [activation capture](activation-execution-final.json), and [frozen sources](source-freezes.json).
+- [Supplemental report](supplemental/REPORT.md), [criteria](supplemental/cases.json), [grades](supplemental/grades.json), [audits](supplemental/evidence-audit.json), and [actual outputs](supplemental/executions.json).
+- [Navigation criteria](navigation/criteria.json), [fixed evaluator](navigation/evaluator.py), [baseline](navigation/baseline-result.json) and [candidate result](navigation/candidate-result.json).
+- [Adoption, rollback and local equality](adoption.json), [native final-source smoke](native-final-smoke.json), [hosted helper checks](round9-platform-checks.json), and [public-download first use](round9-public-first-use.json).
+
+Behavioral trials used immutable source9, hash323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab. Final source10 adds only the five-link contents block to the long helper reference. The fixed structural evaluator verified that removing this block restores every original reference byte, every other core file is unchanged, and the regenerated prompt differs only by navigation and its generated digest. It passed format, relative links and four temporary installation paths. This is structural evidence, not a claim that source10 repeated every model trial.
+
+## Models, comparability and limitations
+
+Native metadata recovered recorded model/effort settings. Thirteen pairs share recorded aliases/effort; eight prospectively selected historical cached pairs differ. The full frozen descriptive metric is retained without claiming a fully controlled causal comparison. In the [matching-settings robustness subset](model-comparability.json), original-feature observations are11candidate passes versus6baseline passes; its canonical-loader subset is4versus3. Exact serving-weight builds and universal performance remain unknown. Cache dates and some loader details differ.
+
+Original actors and reviewers retained their recorded settings; no completed actor was replayed. Supplemental actors/reviewer used Sol/Medium under a separately declared prospective protocol. One unfinished S02 turn was aborted and later resumed in the same context; completed turns were not replayed. The portable S03 context loaded the self-contained bundle without domain tools.
+
+The scope-invalid original K02 review remains uncredited; its same ended pair received a clean scoped review. The L03 reviewer disclosed an unrelated orchestration-metadata summary, with no other-case responses, prior conclusions or builder source bodies read. J03-B native escaped JSON is valid while its actor-saved representation contains literal control characters; both remain preserved and the independent grade identifies which evidence supports each condition. D05 recorded domain work met its effort window; independently timestamped final delivery inside the cutoff was not established. Supplemental S01 has a terminal-newline bookkeeping discrepancy and S03 a repaired evidence-write syntax error; their actual final/ended texts were verified exact. These limits are retained, not rewritten as flawless capture.
+
+Local helper tests recorded27passes and1Windows-only skip. Six hosted jobs executed Windows/Linux Python3.9/3.13, IntelMac3.9 and ARMMac3.13 helper/package checks; final publication CI is linked from the release. These are filesystem/helper results. The native smoke verified actual installed-skill injection and conditional resource reads, visible checks before the standalone draft, and no domain writes. Native Claude, native Windows/Linux model execution, other model families and a human usability study remain unverified. All generated-skill behavioral checks claimed as unexecuted by tool-free actors remain unexecuted.
+
+<details>
+<summary>Historical rejected-candidate reports and their then-current limitations</summary>
+
 
 # v0.3.0 evaluation report
 
@@ -71,7 +100,7 @@ New dispatch stopped immediately. K03-A's already-launched first turn ended and 
 
 The independent judge verified all 22 selected raw artifacts against both frozen indices, both derived views/global view index, exact ended returns, message order and corrected-input binding. Source bodies were omitted only from derived action views; raw evidence remained intact. An immutable, already hash-bound source-metadata snapshot closed a live timestamp-regeneration diagnostic. Identity mapping was visible in metadata, so the grader was independent and source-body blind, with imperfect identity blindness. The coordinator separately verified 233 indexed raw files and unchanged source snapshots/origins with zero errors. [Independent grade](candidate8-focus-grades.json), [audit](candidate8-focus-audit.json).
 
-The actual helper rejected source 8, preserving stable 0.2 and a candidate snapshot. No further source revision was authorized in this bounded run. [Actual rejection](candidate8-rejection.json), [stopped grades](final-grades.json), [complete selected execution records](model-executions-final.json), [activation not executed](activation-execution-final.json). The partial K03 diagnostic remains locally preserved and is not exported as a complete case. The [design diagnosis](candidate8-design-diagnosis.md) proposes a future structural hypothesis, not an accepted lesson or a tested improvement.
+The actual helper rejected source 8, preserving stable 0.2 and a candidate snapshot. No further source revision was authorized in this bounded run. [Actual rejection](candidate8-rejection.json), [stopped grades](round8-grades.json), [complete selected execution records](model-executions-round8.json), [activation not executed](activation-execution-round8.json). The partial K03 diagnostic remains locally preserved and is not exported as a complete case. The [design diagnosis](candidate8-design-diagnosis.md) proposes a future structural hypothesis, not an accepted lesson or a tested improvement.
 
 ## Protocol and evidence
 
@@ -92,3 +121,5 @@ The inherited Codex model is retained without override; its exact serving identi
 The historical [native Codex smoke](native-codex-smoke.json), using CLI 0.163.0-alpha.10.2 on macOS ARM with exact candidate-4 source, verified project discovery, a visible plan, a draft and metadata. Its reviewer claim lacks a captured launch/return and receives **no independent-review credit**. Exact final-source native Codex execution, native Claude execution, native Windows/Linux model runs and equivalent performance across other LLMs remain unverified.
 
 Before release, final model grades must satisfy every gate; automatic adoption, managed personal-copy equality, exact public file selection, final-head CI, release asset hashes and clean public-download first use must be verified. Missing or inconclusive evidence keeps the prior version active. This rejected-candidate report is not a passing release report.
+
+</details>

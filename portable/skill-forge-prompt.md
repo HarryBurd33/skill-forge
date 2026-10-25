@@ -12,7 +12,7 @@ their references below describe capabilities, not tools available in plain chat.
 Generated from canonical instructions and all reference, template, question,
 and bundled sub-skill resources. Edit those sources and regenerate this file; do not edit this bundle.
 
-Source SHA-256: `070097bbdebf6c5fd2ada57d8246e3ec577214bc72eef9f340a8d24f75624003`
+Source SHA-256: `1627e54ca40829fc5fd61f8869402404a571672f503f08cbb444fade553d724f`
 
 <a id="resource-skill-md"></a>
 
@@ -190,6 +190,16 @@ A concise report includes case IDs, baseline/candidate hashes, model/host and kn
 ## Included resource: references/helpers.md
 
 # Optional file helpers
+
+<!-- skill-forge-contents:start -->
+**Contents**
+
+- [Private sessions](#private-sessions)
+- [Freeze an improvement before evaluating it](#freeze-an-improvement-before-evaluating-it)
+- [Supply actual evidence and adopt automatically](#supply-actual-evidence-and-adopt-automatically)
+- [Managed copies](#managed-copies)
+- [Release packages](#release-packages)
+<!-- skill-forge-contents:end -->
 
 Python 3.9 or later is sufficient; there are no third-party dependencies or paid
 API requirements. Run these commands from the installed `skill-forge` directory.

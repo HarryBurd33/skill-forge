@@ -1,5 +1,15 @@
 # Optional file helpers
 
+<!-- skill-forge-contents:start -->
+**Contents**
+
+- [Private sessions](#private-sessions)
+- [Freeze an improvement before evaluating it](#freeze-an-improvement-before-evaluating-it)
+- [Supply actual evidence and adopt automatically](#supply-actual-evidence-and-adopt-automatically)
+- [Managed copies](#managed-copies)
+- [Release packages](#release-packages)
+<!-- skill-forge-contents:end -->
+
 Python 3.9 or later is sufficient; there are no third-party dependencies or paid
 API requirements. Run these commands from the installed `skill-forge` directory.
 The core conversation also works without Python. All helpers print JSON; success

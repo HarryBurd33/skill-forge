@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "scope": "builder",
+  "change_kind": "structural",
+  "evaluation_kind": "script_execution",
+  "benefit": {
+    "metric": "navigable_helper_section_links",
+    "direction": "higher",
+    "min_delta": 5
+  },
+  "checks": [
+    {
+      "id": "NAV-1",
+      "kind": "acceptance",
+      "input": "The five original helpers.md second-level sections and generated portable prompt",
+      "expected": "All five contents links resolve to unique existing headings in reference and bundle; actual links increase0to5",
+      "failure": "Missing, duplicate, incorrect or unresolved target"
+    },
+    {
+      "id": "NAV-2",
+      "kind": "regression",
+      "input": "Frozen source9 and isolated navigation-only candidate",
+      "expected": "Removing exactly the inserted contents block restores baseline helper bytes; every other core file unchanged; bundle differs only by same block and generated digest",
+      "failure": "Any unrelated instruction/content edit or source drift"
+    },
+    {
+      "id": "NAV-3",
+      "kind": "regression",
+      "input": "Canonical entrypoint and all directly linked references",
+      "expected": "Main SKILL.md below500lines; every reference above100lines has contents; all references directly reachable",
+      "failure": "Long reference without navigation, missing direct link or oversized main"
+    },
+    {
+      "id": "NAV-4",
+      "kind": "regression",
+      "input": "Final staged public repository with navigation candidate and regenerated bundle",
+      "expected": "Core validation, portable byte equality, package/link validation and four clean temporary installation paths actually pass",
+      "failure": "Any failed or unavailable required deterministic check"
+    }
+  ],
+  "baseline_expected_hash": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+  "procedure": "POST-VALIDATION-CONTENTS-PLAN.md; defined before source patch; structural evidence only, no behavioral improvement claim"
+}

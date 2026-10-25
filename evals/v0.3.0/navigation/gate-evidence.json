@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "baseline_hash": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+  "criteria_hash": "47ce0e07c43b00a9bbe66ab16f5dfad9dd2503b152f22fc5f21f29154afed678",
+  "evaluator_hash": "6f00f8383a2c07bab7e4040a652f66c10d8bcfa08bac598d8c63deb1ae9b92e6",
+  "candidate_hash": "86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608",
+  "execution": {
+    "kind": "script_execution",
+    "model": "Not applicable; deterministic Python3.15.0",
+    "host": "macOSARM local Python; portable helper code unchanged",
+    "conditions": "Fixed navigation-only evaluator, baseline/result frozen before patch; exact body/core/bundle preservation plus actual release/package/4temporaryinstalls"
+  },
+  "results": [
+    {
+      "id": "NAV-1",
+      "candidate": "pass",
+      "baseline": "fail",
+      "artifact": "candidate-result.json"
+    },
+    {
+      "id": "NAV-2",
+      "candidate": "pass",
+      "baseline": "pass",
+      "artifact": "candidate-result.json"
+    },
+    {
+      "id": "NAV-3",
+      "candidate": "pass",
+      "baseline": "fail",
+      "artifact": "candidate-result.json"
+    },
+    {
+      "id": "NAV-4",
+      "candidate": "pass",
+      "baseline": "pass",
+      "artifact": "candidate-result.json"
+    }
+  ],
+  "benefit": {
+    "metric": "navigable_helper_section_links",
+    "candidate": 5,
+    "baseline": 0
+  }
+}
