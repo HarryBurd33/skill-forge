@@ -1,0 +1,12 @@
+{
+  "actual_helper_result": {
+    "round": 1,
+    "time": "2026-10-22T04:40:59.305822+00:00",
+    "candidate_hash": "36706d8fddada6c9f3b2675b0add9b6038d6592eca516a7e1f493f191bec198d",
+    "status": "rejected",
+    "reason": "Candidate failed or was inconclusive: K02"
+  },
+  "active_version_preserved": "0.2.0",
+  "active_core_sha256": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af",
+  "scope": "Required K02-N2 failure; no adoption or release."
+}

@@ -14,12 +14,13 @@ import os
 from pathlib import Path
 import re
 import shutil
+import stat
 import sys
 import tempfile
 import uuid
 import zipfile
 
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 SCHEMA = 1
 MARKER = ".skill-forge-managed.json"
 SKIP_DIRS = {".git", "__pycache__", ".pytest_cache"}
@@ -50,7 +51,24 @@ def read_json(path):
 def write_json(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    write_text(path, json.dumps(value, indent=2, ensure_ascii=False) + "\n")
+
+
+def write_text(path, text):
+    """Use UTF-8 and literal LF bytes on every OS, including Python 3.9."""
+    Path(path).write_bytes(text.replace("\r\n", "\n").encode("utf-8"))
+
+
+def is_link(path):
+    """Reject symlinks and Windows reparse points (including junctions)."""
+    try:
+        info = Path(path).lstat()
+    except FileNotFoundError:
+        return False
+    return stat.S_ISLNK(info.st_mode) or bool(
+        getattr(info, "st_file_attributes", 0)
+        & getattr(stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0x400)
+    )
 
 
 def digest(data):
@@ -70,18 +88,18 @@ def within(path, parent):
 
 
 def files(root):
-    """Reject symlinks; never read linked files outside an inspected tree."""
+    """Reject symlinks/reparse points before reading an inspected tree."""
     root = Path(root)
-    require(root.is_dir() and not root.is_symlink(), "Expected a real directory: {}".format(root))
+    require(root.is_dir() and not is_link(root), "Expected a real directory, not a symlink/reparse point: {}".format(root))
     result = []
     for directory, dirs, names in os.walk(str(root), followlinks=False):
         base = Path(directory)
         for name in list(dirs):
-            require(not (base / name).is_symlink(), "Symlink is not supported: {}".format(base / name))
+            require(not is_link(base / name), "Symlink/reparse point is not supported: {}".format(base / name))
         dirs[:] = sorted(d for d in dirs if d not in SKIP_DIRS)
         for name in sorted(names):
             path = base / name
-            require(not path.is_symlink(), "Symlink is not supported: {}".format(path))
+            require(not is_link(path), "Symlink/reparse point is not supported: {}".format(path))
             require(path.is_file(), "Not a regular file: {}".format(path))
             if name != MARKER and not name.endswith((".pyc", ".pyo")):
                 result.append(path)
@@ -106,7 +124,9 @@ def copy_tree(source, dest):
 
 
 def private_root(path, target=None):
-    path = Path(path).expanduser().resolve()
+    path = Path(path).expanduser()
+    require(not is_link(path), "Private state root cannot be a symlink/reparse point")
+    path = path.resolve()
     for ancestor in [path] + list(path.parents):
         if (ancestor / ".git").exists() or ((ancestor / "skills").is_dir() and (ancestor / "LICENSE").exists()):
             raise ForgeError("Private state must be outside the publishable repository")
@@ -117,12 +137,14 @@ def private_root(path, target=None):
             if (ancestor / ".git").exists() or ((ancestor / "skills").is_dir() and (ancestor / "LICENSE").exists()):
                 require(not within(path, ancestor), "Private state must be outside the publishable repository")
                 break
-    require(not path.is_symlink(), "Private state root cannot be a symlink")
     path.mkdir(parents=True, exist_ok=True, mode=0o700)
-    os.chmod(str(path), 0o700)
+    # Windows mode bits do not set ACLs. The directory inherits its parent's
+    # permissions; keep it under the user's profile and inspect sensitive data ACLs.
+    if os.name == "posix":
+        os.chmod(str(path), 0o700)
     ignore = path / ".gitignore"
     if not ignore.exists():
-        ignore.write_text("*\n!.gitignore\n", encoding="utf-8")
+        write_text(ignore, "*\n!.gitignore\n")
     return path
 
 
@@ -156,6 +178,7 @@ def metadata(text):
 
 
 def validate(skill):
+    require(not is_link(skill), "Skill root cannot be a symlink/reparse point")
     skill = Path(skill).resolve()
     inventory = files(skill)
     require((skill / "SKILL.md").is_file(), "Missing SKILL.md")
@@ -276,10 +299,17 @@ def session_init(state, name):
         "domain_output_contract": {},
         "refinement_status": {"open_material_decisions": [], "next_question": None, "ready_to_build": False},
         "skill_finder": {"status": "not-started", "brief_fingerprint": None, "report": None, "skip_reason": None},
+        "source_context": {"kind": "idea", "scope": None, "accessible_sources": [],
+                           "coverage_limits": [], "superseded_decisions": []},
+        "implementation_spec": {"status": "not-started", "path": None, "revision": None,
+                                "review_pause_requested": False, "review_state": "not-requested",
+                                "user_corrections": []},
+        "delegation": {"available": None, "effort_limit": None, "tasks": [], "skip_reason": None},
+        "verification_plan": {"cases": [], "baseline": None, "evaluator": None, "unavailable_checks": []},
         "effort_limit": {"wall_clock_minutes": 30, "max_candidates": 3}
     })
     write_json(folder / "session.json", record)
-    return {"session": str(folder / "session.json"), "privacy": "Private local state; do not add it to source or release packages."}
+    return {"session": str(folder / "session.json"), "privacy": "State is outside publishable source; do not add it to releases. POSIX directories use owner-only modes; Windows inherits parent ACLs, so use a user-owned location and inspect permissions for sensitive data."}
 
 
 def check_criteria(criteria):
@@ -317,7 +347,7 @@ def prepare(target, state, criteria_path, evaluator_path, effort_minutes, max_ro
     criteria = read_json(criteria_path)
     check_criteria(criteria)
     evaluator = Path(evaluator_path).resolve()
-    require(evaluator.is_file() and not evaluator.is_symlink() and evaluator.stat().st_size > 0, "Supply a nonempty fixed evaluator file")
+    require(evaluator.is_file() and not is_link(evaluator) and evaluator.stat().st_size > 0, "Supply a nonempty fixed evaluator file")
     require(not within(evaluator, target), "Evaluator must be outside the candidate-controlled target")
     require(not within(Path(criteria_path), target), "Criteria must be outside the candidate-controlled target")
     state = private_root(state, target)
@@ -360,7 +390,7 @@ def evidence_check(evidence, criteria, manifest, candidate_hash, evidence_dir, a
         require(isinstance(result.get("artifact"), str), "Each result needs a reviewable execution artifact")
         artifact = evidence_dir / result["artifact"]
         require(not Path(result["artifact"]).is_absolute() and within(artifact, evidence_dir), "Evidence artifact must be relative and inside the evidence directory")
-        require(artifact.is_file() and not artifact.is_symlink() and artifact.stat().st_size > 0, "Missing nonempty execution artifact")
+        require(artifact.is_file() and not is_link(artifact) and artifact.stat().st_size > 0, "Missing nonempty execution artifact")
         dest = artifacts / (digest(result["artifact"].encode())[:12] + "-" + artifact.name)
         shutil.copy2(str(artifact), str(dest))
     benefit, expected = evidence.get("benefit", {}), criteria["benefit"]
@@ -381,6 +411,7 @@ def replace_tree(target, source):
     target, source = Path(target), Path(source)
     temporary = Path(tempfile.mkdtemp(prefix=".forge-stage-", dir=str(target.parent)))
     stage, old = temporary / target.name, temporary / "previous"
+    preserve_recovery = False
     try:
         copy_tree(source, stage)
         # A managed copy remains managed; changing its content deliberately means
@@ -390,11 +421,21 @@ def replace_tree(target, source):
         os.replace(str(target), str(old))
         try:
             os.replace(str(stage), str(target))
-        except BaseException:
-            os.replace(str(old), str(target))
+        except BaseException as move_error:
+            try:
+                os.replace(str(old), str(target))
+            except BaseException as restore_error:
+                preserve_recovery = True
+                raise ForgeError(
+                    "Replacement and restoration failed; prior version is preserved at {}. "
+                    "Restore it before continuing. Move error: {}; restore error: {}".format(
+                        old, move_error, restore_error
+                    )
+                ) from restore_error
             raise
     finally:
-        shutil.rmtree(str(temporary), ignore_errors=True)
+        if not preserve_recovery:
+            shutil.rmtree(str(temporary), ignore_errors=True)
 
 
 def submit(run, candidate, evidence_path):
@@ -462,6 +503,7 @@ def rollback(run):
 
 
 def install(source, dest, update=False):
+    require(not is_link(source) and not is_link(Path(dest).expanduser()), "Install source/destination cannot be a symlink/reparse point")
     source, dest = Path(source).resolve(), Path(dest).expanduser().resolve()
     validate(source)
     require(dest.name == source.name, "Install destination must end with the skill name")
@@ -483,7 +525,7 @@ def check_public_file(path, rel):
     require(not (set(rel.parts) & (PRIVATE_PARTS | SKIP_DIRS)), "Private or generated directory cannot be packaged: {}".format(rel))
     require(not any(part.startswith(".env") or part.startswith("run-") or part.startswith("session-") for part in rel.parts), "Private state cannot be packaged: {}".format(rel))
     require(path.suffix.lower() not in (".pem", ".key", ".p12", ".pyc", ".pyo"), "Private/generated file cannot be packaged: {}".format(rel))
-    require(not path.is_symlink() and path.is_file(), "Package entries must be regular files")
+    require(not is_link(path) and path.is_file(), "Package entries must be regular files, not symlinks/reparse points")
     data = path.read_bytes()
     try:
         text = data.decode("utf-8")
@@ -540,6 +582,7 @@ def package(repo, output, kind="skill", manifest_path=None):
     with zipfile.ZipFile(str(output), "w", compression=zipfile.ZIP_DEFLATED) as archive:
         for path, rel in sorted(unique_entries, key=lambda pair: pair[1].as_posix()):
             info = zipfile.ZipInfo(rel.as_posix(), date_time=(2026, 1, 1, 0, 0, 0))
+            info.create_system = 3  # Stable archive metadata on Windows and POSIX.
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o100644 << 16
             archive.writestr(info, path.read_bytes())
@@ -612,7 +655,7 @@ def main(argv=None):
                 require(args.output.is_file() and args.output.read_text(encoding="utf-8") == content, "Portable prompt has drifted or is missing")
             else:
                 args.output.parent.mkdir(parents=True, exist_ok=True)
-                args.output.write_text(content, encoding="utf-8")
+                write_text(args.output, content)
             result = {"status": "pass", "output": str(args.output), "checked": args.check}
         elif args.command == "session-init":
             result = session_init(args.state_dir, args.name)

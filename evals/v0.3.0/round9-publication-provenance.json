@@ -1,0 +1,9 @@
+{
+  "prior_public_evidence_preserved": {
+    "model-executions-round8.json": "4d55a8b41507f61d4a7d3f819b034904f0dc4a108828786e9288b5f73e2175e9",
+    "activation-execution-round8.json": "fd5641c73433d2c4d21c3ba1a47f47d515264d7c709459f4c9498fd0d75dbbd8",
+    "round8-grades.json": "31e452970384933b95f13b159af626890c447a1bc71a0278725a0aa382c20ec4"
+  },
+  "exporter_sha256": "cfbc7a2425e17e04813a56397417c96cdca9c28b884ef54147424d90580cc80a",
+  "scope": "Intentionally public synthetic evidence; private paths aliased and native diagnostic bodies omitted, with raw hashes retained."
+}

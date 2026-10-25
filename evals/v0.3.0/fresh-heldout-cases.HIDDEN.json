@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "suite": "Skill Forge v0.3.0 round 2 fresh heldout supplement",
+  "cases": [
+    {
+      "id": "J01",
+      "split": "heldout",
+      "category": "Detailed simple local artifact with draft-now and proportional visible planning",
+      "input": "Create a reusable skill named box-inventory. From a pasted household packing list it should return a Markdown table with Item, Box, Count, keeping source order. Extract only explicitly packed items; an item mentioned as a possible future purchase is excluded. Use Unknown for an absent box and Not stated for an absent count; never assume a count of one. If the list contains no packed items, say No packed items found. Activate when I ask to turn a packing list into an inventory, not when I ask for shopping advice. Example: 'Packed two blue bowls in B7. Packed the tablecloth. Maybe buy napkins.' gives blue bowls / B7 / 2 and tablecloth / Unknown / Not stated, with no napkins row. The deliverable is a local SKILL.md only, with no helper files or installation. Draft now; all requirements are settled.",
+      "capabilities": {"files": false, "browse": false, "execute": false, "subagents": false, "external_write": false, "persistence": false},
+      "followups": [],
+      "must": [
+        {"id": "J01-N1", "group": "new", "required": true, "expected": "Before the complete generated skill, shows a compact visible implementation specification outside its saveable file contents: named skill purpose and activation/exclusion, supplied input and exact table output, one SKILL.md with no helper resources, missing-value/no-inference limits, and intended implementation steps. A few concise sentences or bullets are sufficient."},
+        {"id": "J01-N2", "group": "new", "required": true, "expected": "Before the artifact, states concrete verification cases and outcomes covering the supplied two-row example with napkins excluded, missing count not becoming 1, no packed items, and shopping-advice non-activation. Identifies checks as planned or manual text inspection rather than executed behavioral tests."},
+        {"id": "J01-R1", "group": "regression", "required": true, "expected": "Continues in the same response to complete saveable SKILL.md text with matching box-inventory metadata and the exact source-order, missing-value, exclusion, empty-result and activation rules, without a required approval turn or further question."},
+        {"id": "J01-R2", "group": "regression", "required": true, "expected": "Uses truthful text delivery, with a concise local save location such as box-inventory/SKILL.md; does not claim filesystem, installation, browsing, delegation, persistence or executed test actions."}
+      ],
+      "failure_conditions": [
+        "The first implementation/check plan appears only inside the delivered skill or after the full artifact, or is absent.",
+        "Blocks the settled draft-now request on approval, tool access or a repeated delivery/design question.",
+        "The skill invents missing counts, includes contemplated purchases, changes table columns/order, or claims unavailable actions happened."
+      ],
+      "question_budget": {"first_turn": 0, "total": 0}
+    },
+    {
+      "id": "J02",
+      "split": "heldout",
+      "category": "Project conversation conversion with one unresolved decision, corrected destination and explicit review pause",
+      "input": "Turn the supplied project conversation into a reusable skill called record-catalog. Use my latest corrections, and keep private collection configuration out of the reusable file. Review first: before drafting any complete skill, settle the one unresolved policy, then show me the implementation spec and concrete checks and wait. The only unresolved policy is whether repeated catalog IDs keep both records or keep only the last record. The domain output and skill delivery already recorded in the conversation are otherwise settled unless I change them.",
+      "capabilities": {"files": false, "browse": false, "execute": false, "subagents": false, "external_write": false, "persistence": false},
+      "context": {
+        "conversation": [
+          {"role": "user", "text": "I repeatedly paste record listings with Catalog ID, Title and Year. I originally wanted a shared Google Sheet and a public repository for the reusable skill."},
+          {"role": "assistant", "text": "We could alphabetize titles, infer missing years from familiar album names, and publish the sheet."},
+          {"role": "user", "text": "Reject inferred years and alphabetizing. Preserve source order, copy only supplied ID/title/year, and use an empty year when absent. The workflow output will instead be CSV text for a local file with columns Catalog ID, Title, Year. The skill itself will be local SKILL.md text only; cancel public publication. Activate on a request to format supplied catalog listings, not a request to recommend records. My private collection folder is /private/collections/cabinet-74 and the internal collection label is NIGHT-CABINET-74; neither belongs in reusable defaults or examples."}
+        ]
+      },
+      "followups": [
+        {"after_response": 1, "user": "Keep both repeated IDs in source order. One correction: the workflow result is now JSON Lines text for my local importer, not CSV or a sheet. Each line has exactly catalog_id, title, year; absent year is null. The reusable skill still comes as local SKILL.md text. Show the revised implementation spec and checks only, and wait for my review."},
+        {"after_response": 2, "user": "The revised spec is approved. Proceed now with the complete SKILL.md text. Keep the corrected JSON Lines destination and all other settled rules."}
+      ],
+      "must": [
+        {"id": "J02-R1", "group": "regression", "required": true, "expected": "First response asks only the unresolved duplicate-ID policy as one material decision, without reopening settled output/delivery, year inference, ordering or activation choices; does not produce the complete skill."},
+        {"id": "J02-N1", "group": "new", "required": true, "expected": "After followup 1 shows a visible implementation specification before any complete skill: record-catalog scope/activation, supplied-list input, local JSON Lines result with exactly catalog_id/title/year and null missing year, local SKILL.md delivery, keep-both/source-order policy, private-config exclusion, and implementation steps. Stops for the explicitly requested review without producing the complete artifact."},
+        {"id": "J02-N2", "group": "new", "required": true, "expected": "That pre-build verification plan tests the changed final contract: two records with the same ID remain two JSON objects in source order, an absent year is JSON null rather than an empty CSV cell, and the serialized artifact has the exact three keys and no CSV header or sheet publication. It also checks private collection values are absent from reusable source, and labels behavioral checks as unexecuted."},
+        {"id": "J02-R2", "group": "regression", "required": true, "expected": "After followup 2 delivers complete saveable skill text without another approval gate or interview, preserving final JSON Lines rules, literal supplied facts, activation limits and private-config exclusion. Does not insert the private folder/label, restore superseded assistant suggestions, or claim saving/publication/testing occurred."}
+      ],
+      "failure_conditions": [
+        "Generates a complete skill before the final proceed message, or adds a mandatory review gate after that message.",
+        "Treats the revised JSON Lines/null contract as CSV, a sheet or an external publication; loses duplicate records, infers years, or sorts source records.",
+        "Copies private collection configuration into reusable source or claims any unavailable action was performed."
+      ],
+      "question_budget": {"first_turn": 1, "total": 1}
+    },
+    {
+      "id": "J03",
+      "split": "heldout",
+      "category": "Resumed settled brief, source correction and truthful no-tools package handoff",
+      "input": "Resume this saved brief and build now. We have already settled purpose, triggers, inputs, delivery and the approved implementation spec; do not restart the interview. Skill name glossary-cards. Purpose: format pasted glossary records into flashcard import text using only supplied translations. Activate on a request to format supplied glossary records; exclude requests to translate new words. Domain output: tab-separated front, back, tags with no header, in source order; an absent tags field stays empty. For a missing front or back, omit that record and identify its input row number in a separate Issues note outside the TSV. Source correction: an old suggestion to fill missing translations from memory was rejected; never invent a translation. Skill delivery: installable glossary-cards folder containing only SKILL.md and evals/cases.json. Approved steps: write the rules, add three small behavioral cases and return a portable handoff. Check cases were approved in concept: complete record, absent tags, missing back. All host tools are unavailable, including file writes, browsing, execution, delegation and persistence. Give me the folder contents as saveable text and the short resume record instead of claiming installation. Private local configuration: my deck alias is PRIVATE-SPARROW-62 and my import folder is /private/study/hidden-62; exclude both from reusable files.",
+      "capabilities": {"files": false, "browse": false, "execute": false, "subagents": false, "external_write": false, "persistence": false},
+      "followups": [],
+      "must": [
+        {"id": "J03-N1", "group": "new", "required": true, "expected": "Before complete package contents, visibly summarizes the approved implementation spec with the exact two-file layout, settled purpose/activation, TSV contract, missing-row Issues behavior, no invented translations/private-config exclusion and the already approved steps. Does not hide this planning solely in package files or the resume record."},
+        {"id": "J03-N2", "group": "new", "required": true, "expected": "Before package contents, specifies observable verification outcomes for a complete record, absent tags producing an empty third TSV field, and a missing back producing no card and an Issues note with the source row number. Marks behavioral execution unavailable and distinguishes any direct text inspection from execution."},
+        {"id": "J03-R1", "group": "regression", "required": true, "expected": "Builds the complete two-file package as text in the same response without new decisions or approval, with a valid matching glossary-cards folder/name, the exact field and omission rules, and three meaningful eval cases matching the approved scenarios. Neither source file includes the private deck alias or private import folder."},
+        {"id": "J03-R2", "group": "regression", "required": true, "expected": "Provides concise manual save/handoff instructions and a portable resume record reflecting current settled rules and the rejected translation inference. Truthfully reports no files saved, installation, external search, delegation, persistent memory or executed behavioral passes; absent tools do not block text preparation."}
+      ],
+      "failure_conditions": [
+        "Restarts settled requirements or requires additional approval/tool access before preparing saveable contents.",
+        "The visible implementation/check plan appears only inside or after the completed package, or checks ignore empty tags and omitted-row reporting.",
+        "Reintroduces inferred translations, embeds private configuration, changes the two-file contract, or claims unavailable work occurred."
+      ],
+      "question_budget": {"first_turn": 0, "total": 0}
+    }
+  ]
+}

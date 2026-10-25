@@ -1,0 +1,77 @@
+{
+  "closed_utc": "2026-10-25T19:10:19.917278+00:00",
+  "status": "Time limit reached; source9 remains unadopted",
+  "authority": "User-authorized90active-minute continuation",
+  "deadline_utc": "2026-10-25T19:06:48+00:00",
+  "ordinary_work_stopped": true,
+  "coordinator_model": "gpt-6.1-sol",
+  "coordinator_effort": "medium; native metadata verified",
+  "original_capture_records": 42,
+  "planned_records": 42,
+  "original_activation": "Captured; independent grade not completed",
+  "qualified_reviewed_pairs": 20,
+  "candidate_required_conditions_passed": 80,
+  "required_conditions_total": 84,
+  "original_L03_review": "Interrupted at limit; no final grading files, no pass claimed",
+  "supplemental": {
+    "S01": "One ended turn captured; no independent grade",
+    "S02": "First2turns ended/captured; thirdturn interrupted and unconfirmed",
+    "S03": "Not executed"
+  },
+  "source_changes": "No skill instruction change; contents-only candidate not patched",
+  "navigation": "Criteria/evaluator/baseline-result frozen; actual baseline0links, patch pending",
+  "adoption_install_release": "Not performed; stable0.2.0 retained",
+  "clock_observation": "Native contexts and clock readings advanced sharply from18:02to18:52and subsequently; cause and inactive duration unverified, no time excluded or results inferred",
+  "interrupted_agents": [
+    "/root/r9_execution_coordinator_oct25/r9_l03_activation_independent_review",
+    "/root/supplemental_sol_runner/supplemental_s02",
+    "/root/supplemental_sol_runner"
+  ],
+  "limits": "Interrupt acknowledgements preserved; check any in-flight tool outcome before resume. No actor replay authorized.",
+  "comparability": {
+    "same_recorded_alias_and_effort_pairs": [
+      "D02",
+      "D04",
+      "D06",
+      "D08",
+      "D09",
+      "H01",
+      "H03",
+      "J01",
+      "J03",
+      "K02",
+      "L01",
+      "L02",
+      "L03"
+    ],
+    "different_recorded_alias_pairs": [
+      "D01",
+      "D03",
+      "D05",
+      "D07",
+      "H02",
+      "J02",
+      "K01",
+      "K03"
+    ],
+    "original20_metric_same_settings_subset": {
+      "A": {
+        "pass": 11
+      },
+      "B": {
+        "fail": 5,
+        "pass": 6
+      }
+    },
+    "canonical_loader_same_settings_subset": {
+      "A": {
+        "pass": 4
+      },
+      "B": {
+        "fail": 1,
+        "pass": 3
+      }
+    },
+    "interpretation": "Retrospective metadata-only robustness analysis, not a changed gate or causal full-suite claim; exact serving builds unknown."
+  }
+}

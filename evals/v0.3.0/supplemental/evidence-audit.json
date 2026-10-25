@@ -1,0 +1,1229 @@
+{
+  "artifact_audit": [
+    {
+      "path": "ended_proof.py",
+      "sha256": "43d63326396541e7d04462a1d60cd729c63c7fa5c079d8014ecf0980a781c744",
+      "bytes": 933,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "deadline-amendment.json",
+      "sha256": "0a21afac51335e559bfc9b8e268cfdff5fdd748429915dc49da54cf8c608ac99",
+      "bytes": 361,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/interruption-reconciliation.json",
+      "sha256": "edcef385e48736694406fe8bcba591e029c7a87a3fb7b597d8494a6f8d3ea1cb",
+      "bytes": 1156,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/resume-dispatch-03.txt",
+      "sha256": "a31f4d30dbb5568d8985f05ddb8dc1baa78116d0c95c584c0576a0cd990f1313",
+      "bytes": 619,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/resume-launch-03.json",
+      "sha256": "03ce15c7bda996b99aa2f02556540d2befc681f8a02970f91cb120182887bad4",
+      "bytes": 848,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "reviewer-task.txt",
+      "sha256": "df5442ac75fa25aea8b7624787509da253b3abcab374b602a13c439280b6d7c1",
+      "bytes": 3486,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "runner.py",
+      "sha256": "78e63bcc51eeba41d2338622825115ff36ad6e2ca4d555b8f6a48696ab4a0d77",
+      "bytes": 3838,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "native_capture.py",
+      "sha256": "6ab9ac3946e3026b31eff7617aa4aec451fc4883b055bda7468eec34093f4d28",
+      "bytes": 3220,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "assemble.py",
+      "sha256": "0e1f8b0d8e075397c2bdba99fc7cb99d3d0984572849076050e2f7129af4a6d6",
+      "bytes": 5308,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "review/cases.json",
+      "sha256": "3587cc82ed4bab158d90f874efbd06ef5186169c0fb0c0f708c02406abdbbe4d",
+      "bytes": 6637,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "review/protocol.json",
+      "sha256": "d6844c6c36bb97c78a713e8b3f6023d40cf0545cfed0e3c911aa2e7f67c039ca",
+      "bytes": 3191,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "source-before.json",
+      "sha256": "6e53d05cf6b0299dae68f4cf4c1daaecd099b1711ffb2767dad76c772065373b",
+      "bytes": 3407,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "source-after.json",
+      "sha256": "b74d9b05c49e6d746d2e69269d00ff52b13063bd45e2b8bd3f02047150657dc8",
+      "bytes": 3407,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "review/S01-actions-01.json",
+      "sha256": "914a414d9860aadfa9e8a2c564fc5c09672e8e3bfe2874abe98ad05cb1a42a0b",
+      "bytes": 20098,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/input-01.json",
+      "sha256": "6b8ffa856ba996e023e6a266fdeae27f0a8d6c33c995ff2047d30a434c697d9c",
+      "bytes": 556,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/task-01.txt",
+      "sha256": "6d18347fbc1a9a9061857ca8526be9b91b013f47ab0e26a327db2a6be604183a",
+      "bytes": 1997,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/dispatch-01.txt",
+      "sha256": "1d2fb8ab5a6ff674dc99321fa5fe877f1fd0724cfc22baed060c38adc1dfeb46",
+      "bytes": 350,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/staged-01.json",
+      "sha256": "2afe91f9e4acb5b861c7a0d71041150a92aa7c5981a1dbb8cbe301dbac3b502d",
+      "bytes": 309,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/launch-01.json",
+      "sha256": "a2500219dd0ef5941e45eca23ba0fe28c1390e56d1067c9e4a2aa5391aec6de7",
+      "bytes": 688,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/visible-01.json",
+      "sha256": "7b2d16fc8c003aebf31c43d9e574feab4cd60d8c269e2181d215f3281de9dc17",
+      "bytes": 6084,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/messages-01.json",
+      "sha256": "6c83b468c3beccb1659c8ac3fce2db646d5449bfc39514e8b026b5a5383fe31b",
+      "bytes": 5927,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/turn-01.md",
+      "sha256": "4666e9c77beb4ea79a5652f73eeeafc36306e55d0eadc75ca3a83f9ae3c3cf26",
+      "bytes": 5530,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/actual-return-01.txt",
+      "sha256": "4666e9c77beb4ea79a5652f73eeeafc36306e55d0eadc75ca3a83f9ae3c3cf26",
+      "bytes": 5530,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/ended-01.json",
+      "sha256": "f434771c9950adc5baa0b51039785deea301da81bc02b74ce72df45b84bf418b",
+      "bytes": 449,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/native-ended-01.json",
+      "sha256": "2341e9c4be8040d446f236bf5132e058bf12899cf81f5788c6373ca94312d6ad",
+      "bytes": 6217,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "review/S02-actions-01.json",
+      "sha256": "15580d0e5a75c5c2581163e88714ebb146d7c49fd12f363079dfeaa885747206",
+      "bytes": 11960,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/input-01.json",
+      "sha256": "ac2b04070cbfbe1deb8975a38fcae95046f94c2a14f4b4e2aa54ab62894fb34c",
+      "bytes": 306,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/task-01.txt",
+      "sha256": "7901dbd8a439fad7de7ff0f302ea692844bf0ad94b42ca81f303ab09ed5a9d8c",
+      "bytes": 1997,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/dispatch-01.txt",
+      "sha256": "22d8c2859c80f5b09b9d907f6bec5c4b2770a2e1e040d4c1eb5695904c734749",
+      "bytes": 350,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/staged-01.json",
+      "sha256": "390d4509eefbabe906cb2a6009c4d7b654a3f463889a2ff090118b0dd9dc9ae6",
+      "bytes": 309,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/launch-01.json",
+      "sha256": "e9ad96f0f7100c57febdb7f50a6634214991e86e8dad6c0d03d93d01cce8063f",
+      "bytes": 688,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/visible-01.json",
+      "sha256": "bc2c85e12fa74a9c7351724711c6b1a2e9115c1bb7ea0d270ea2e121c428cb46",
+      "bytes": 1362,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/messages-01.json",
+      "sha256": "c753dc130a62c24daee5bc56ab5be31252f404967877b510f14dffc545647244",
+      "bytes": 1329,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/turn-01.md",
+      "sha256": "3dcad766f2906e7835832929af8089c1682deceb89f6b4cea4f467be2c94ec70",
+      "bytes": 1267,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/actual-return-01.txt",
+      "sha256": "3dcad766f2906e7835832929af8089c1682deceb89f6b4cea4f467be2c94ec70",
+      "bytes": 1267,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/ended-01.json",
+      "sha256": "8971a54f91a7cc2bbe67751835d4e406c20755defc2306321c144338ab8e5f80",
+      "bytes": 450,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/native-ended-01.json",
+      "sha256": "768f57c891e61cd74925403962e5673115d6e69b74b70fc6be5e15e865393ebc",
+      "bytes": 1815,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "review/S02-actions-02.json",
+      "sha256": "c903dfd172ad86a0d4c89b25849aeb57dcd193f275f6908845c6a243146f6255",
+      "bytes": 10020,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/input-02.json",
+      "sha256": "0fbbf1fc719ca19bd2c279c34c4eeee7f56257b86cd4dfb2acfc8030605d673c",
+      "bytes": 271,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/task-02.txt",
+      "sha256": "38a6750e2c7692d0d8b85eb282e7443956f30c646eac32f38e01c0c67cfa32d9",
+      "bytes": 1846,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/dispatch-02.txt",
+      "sha256": "c2e9fedcd7a88299ae970f218ac091c937037eb7c89c653ca1ee0126d20f08de",
+      "bytes": 350,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/staged-02.json",
+      "sha256": "1be4d19b7ce37df4a76b72b151aaf35d39e720e6431d9e68f4865ea42abb0460",
+      "bytes": 309,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/launch-02.json",
+      "sha256": "3bec4f9be409daf5f26a335baef271fb484fd60d405fd997fed4ae12bee1bab4",
+      "bytes": 590,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/visible-02.json",
+      "sha256": "a7a077faafac02f88b1546e81bb5badd4e618917031db372165b596c414f6e52",
+      "bytes": 1572,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/messages-02.json",
+      "sha256": "8831497b9cb4eea24aaeab952a13639bf3a9a2bee09449830a5f8fc23b2a171a",
+      "bytes": 1535,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/turn-02.md",
+      "sha256": "09176209648778580858ddcd90910db65d4f7be4440fde00775a4272567e7ef8",
+      "bytes": 1477,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/actual-return-02.txt",
+      "sha256": "09176209648778580858ddcd90910db65d4f7be4440fde00775a4272567e7ef8",
+      "bytes": 1477,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/ended-02.json",
+      "sha256": "6868b5e10e8c4fad1f8f75381c411cc6d4d447181862ea39b59c5a0d776fab53",
+      "bytes": 450,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/native-ended-02.json",
+      "sha256": "e0e5f65be8ae325431d15ef0107fc854f805d292221ef0218b7879f419a32560",
+      "bytes": 2024,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "review/S02-actions-03.json",
+      "sha256": "9477912b9811ecb6fa2f0837645753be3923548627c3dc8554ce71523d4d4bce",
+      "bytes": 22093,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/input-03.json",
+      "sha256": "f184317d50803ff7b625d26941a29eee8043721d0eae0d8d9bc83c425f97627c",
+      "bytes": 253,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/task-03.txt",
+      "sha256": "6e7909ea3374d2b0972910b0ea59c3084c39718db5f946621982b0a06ef1f001",
+      "bytes": 1846,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/dispatch-03.txt",
+      "sha256": "a6e82600e6976e61af4c397967f58937fd687cf798735f8d2b36f17a257bb1ac",
+      "bytes": 350,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/staged-03.json",
+      "sha256": "242826c25d848bd559d52e5f5e46b9ec97cd5f38b4dfeda36dfd5c1170013890",
+      "bytes": 309,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/launch-03.json",
+      "sha256": "0089097903bf7210e54586771b25c45c470e08fe7629b85b3d84cf4bd67c7098",
+      "bytes": 590,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/visible-03.json",
+      "sha256": "167ed2c9ecd92452da65a5a927dacd2a1e6e55cd7690a43db3df3b5f4948a347",
+      "bytes": 9513,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/messages-03.json",
+      "sha256": "4bcf4a989d025ba4100f312a19d83f7cf1e86ff864ab23e6a41755c88b4b2ff0",
+      "bytes": 9437,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/turn-03.md",
+      "sha256": "430c3cf1c90a04d7543e4c1abb632bf52de6e2e8fcc7fe16074fad7a7d3da804",
+      "bytes": 9270,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/actual-return-03.txt",
+      "sha256": "430c3cf1c90a04d7543e4c1abb632bf52de6e2e8fcc7fe16074fad7a7d3da804",
+      "bytes": 9270,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/ended-03.json",
+      "sha256": "6456473d2f2c25b856f16cd9d95c8f427d11b8b8c768eddec158d29f675301d8",
+      "bytes": 450,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S02/native-ended-03.json",
+      "sha256": "348b921d2c7ee458c7af18db4c51720e08aca9b32799cdb28ceeb9379920120b",
+      "bytes": 9965,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "review/S03-actions-01.json",
+      "sha256": "098107583931fe10da9b4a90dc1b390a47fb47e0ebb6ea362cbe12bc827a98b6",
+      "bytes": 22455,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/input-01.json",
+      "sha256": "02669200654c20f33e2e88c4daf0399825d32a9d116cb1325eb1506ef50a6404",
+      "bytes": 757,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/task-01.txt",
+      "sha256": "afdb3c999e121ec1563ad00cebfd4e8d2f78711371815b7f5f6e3f0b80fa8480",
+      "bytes": 1988,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/dispatch-01.txt",
+      "sha256": "bb91dc3ed886af074cc3266100b71e3ff12e675682a6d0c0e74d3ac4c79ca265",
+      "bytes": 350,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/staged-01.json",
+      "sha256": "19ca9c53d60a6043028bd1089cbbecdaa88c7563732b6633ea055cba8c346cf8",
+      "bytes": 309,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/launch-01.json",
+      "sha256": "fcbc9c77f1b28c0192d859d657be785e0cfa139d67913addc46eb188e73c2783",
+      "bytes": 688,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/visible-01.json",
+      "sha256": "783157436c95875ed4d0a6beac93871dd084a5ffa213c864fe2bbfb51a97d98c",
+      "bytes": 1395,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/messages-01.json",
+      "sha256": "83bf3fdc300ba8caaa50cf0aa43d1a51a0a11fe29db756fff1eae978d077736a",
+      "bytes": 1334,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/turn-01.md",
+      "sha256": "caa7bcf9d1fc6f92318768e8b6f63823ed3692f7d5ea514f5c23a2c6ad02d583",
+      "bytes": 1138,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/actual-return-01.txt",
+      "sha256": "caa7bcf9d1fc6f92318768e8b6f63823ed3692f7d5ea514f5c23a2c6ad02d583",
+      "bytes": 1138,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/ended-01.json",
+      "sha256": "b6a6cf08b6b325cb2db51ade72644a320ae9af27bf39d3590e08cd0cb4bf2abb",
+      "bytes": 450,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/native-ended-01.json",
+      "sha256": "ee295c05ec428f944d0061813026b16f17b405a1c780e8bfe383923a4e9699c6",
+      "bytes": 1682,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "review/S03-actions-02.json",
+      "sha256": "7db24a0d80243acaa2a4caff77f651c84a938898950bccaca52fa680f8118143",
+      "bytes": 19280,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/input-02.json",
+      "sha256": "c990c9b6f4f3fd5d2f5a8f864efc82e6ae4519b43dfca27bad757078cb87f415",
+      "bytes": 385,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/task-02.txt",
+      "sha256": "2862c1fda191c3e8c4465977fe9bba7fc18891273f33837899ecb586adc5ccc0",
+      "bytes": 1846,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/dispatch-02.txt",
+      "sha256": "4b74f4a24d27a33cc65007d44e948f9c5291e00326c8c775366c2eafc1ee5722",
+      "bytes": 350,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/staged-02.json",
+      "sha256": "5c64bdc6405adcf0aa9f2aa9a4627097b27415bce42cd3c5edfce3c50dc44e40",
+      "bytes": 309,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/launch-02.json",
+      "sha256": "6131fe4be9b58750a550b1bfb910c327f2314ac7475329d50cf1d9fa9e58bf9b",
+      "bytes": 576,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/visible-02.json",
+      "sha256": "76db1e2953ffe83f6a34548c82338c18eca0224267b6a007d85cbd0dfcb8e4f8",
+      "bytes": 7394,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/messages-02.json",
+      "sha256": "869cd7f35d994f674ee45f396c7b1d018358b0ec9b80f136dde032e5ad9318bc",
+      "bytes": 7279,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/turn-02.md",
+      "sha256": "3884dc830d9f369bfcf66f1a933f03f1925ce74f3c4f9f1155806d549a17b85d",
+      "bytes": 6773,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/actual-return-02.txt",
+      "sha256": "3884dc830d9f369bfcf66f1a933f03f1925ce74f3c4f9f1155806d549a17b85d",
+      "bytes": 6773,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/ended-02.json",
+      "sha256": "0381987eb59d3cb5b5f94650e1b97116777354d7dc2806492ce6344dce4a0234",
+      "bytes": 450,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S03/native-ended-02.json",
+      "sha256": "bf58ef8238107c720611ae4bf26faf848a5dd875f8170f277b639587e3389fa6",
+      "bytes": 7438,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "review/private-boundaries.json",
+      "sha256": "a6f065b9f258c3ccae7e03492227f7aa7ae44cca31e19f64711af867b0f65f43",
+      "bytes": 2929,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "review-selected",
+      "body_reviewed": true
+    },
+    {
+      "path": "S01/native-01.json",
+      "sha256": "7acd346ea7e7c917a33a069b33827309c19b6ab8d511f4f8c3c973337c076247",
+      "bytes": 67152,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S01/actions-01.json",
+      "sha256": "9f989118bee10d4c272b7f1455ce82de00b840f4501b3f2433556d9fa2ed4f2b",
+      "bytes": 6390,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S02/native-01.json",
+      "sha256": "d0718a1d7a3ef652ac5eda4e46aa263f3f3bff1f29e19cafa3a93b799df1b86f",
+      "bytes": 44573,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S02/actions-01.json",
+      "sha256": "6d8b457bbcb83d6e60d6f8a90b6ca00ebe654cb07959cef7ef3291a1c8230b51",
+      "bytes": 5760,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S02/native-02.json",
+      "sha256": "a1c3a9dcccfa19bc029d6d6b46d6004bdb7315cd8abe4bae0b1dc9396b2c3134",
+      "bytes": 56566,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S02/actions-02.json",
+      "sha256": "ba592276108b82540b030928c5a8a5257f8acbd46b459cd45c09fca36169095b",
+      "bytes": 4439,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S02/native-03.json",
+      "sha256": "a2113bee4faab07e4067f82f59bcfbd9e4be320562eac33ee60356f03e735fda",
+      "bytes": 106502,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S02/actions-03.json",
+      "sha256": "964b2c3c000cdae1e1170c3d718852fd7cb9e269befbef34215c9f4a520b82a8",
+      "bytes": 10349,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S03/native-01.json",
+      "sha256": "f75ea0cedd0c00178dff46ba672d89093039cdba4478a9d79ec1b485a739bc94",
+      "bytes": 171066,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S03/actions-01.json",
+      "sha256": "7de839fd0419a958453e804b2a51c9f8af946f51df39ff1ba7888562fda7160e",
+      "bytes": 6891,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S03/native-02.json",
+      "sha256": "4b79949fdfa02dd7afe83e50be8c5f91efaf3cc596fc5989d5e3152ffd58d29a",
+      "bytes": 201002,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S03/actions-02.json",
+      "sha256": "e7446d111c4a6b06e26b468e50fd705b4301f59fbdfff5dbbb6142eec28439f8",
+      "bytes": 3116,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    },
+    {
+      "path": "S02/native-interrupted-turn3.private.json",
+      "sha256": "df7c628ecc25bbfbdca0049124dcb896b64a4bcad4cf89acaf255ff77eef1364",
+      "bytes": 81692,
+      "index_match": true,
+      "independent_match": true,
+      "mode": "hash-only",
+      "body_reviewed": false
+    }
+  ],
+  "scope": "Separate additive source-blind S01/S02/S03 acceptance only; no replacement or causal comparison.",
+  "all_selected_reviewed": true,
+  "all_selected_count": 86,
+  "raw_hash_only_count": 13,
+  "all_selected_and_raw_match_both_indices": true,
+  "immutable_index_matches_independent": true,
+  "raw_boundary_policy": "Raw native/action bodies never opened or parsed; byte hashing only. Source contents never decoded; byte hashing only. Safe manifests and derived calls read.",
+  "source_invariance": {
+    "before_after_files_equal": true,
+    "tree_before_after_protocol_current_equal": true,
+    "portable_before_after_protocol_current_equal": true,
+    "file_hashes": [
+      {
+        "path": "LICENSE",
+        "sha256": "8e51a3d1476cb7497704932e1511fc78c46c12ee900a121907ec178321cf7d28",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "6edb847fc7c604ef0e6f2a8d774cf418408e29280f3e7a24e634088753b581c2",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "sha256": "83063e8da7081c19a504b6df0d43491f0de6cd41e39a556ce0fc18213416cf2b",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "questions/questions.json",
+        "sha256": "42933db9dcb3f5e50bdf38ab0a213c68e2ec20acdce0703c7e986dfb046f791e",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "references/authoring.md",
+        "sha256": "c62a92803415d4966c2bcb4a17cffa3f36befa50e65017e0f3a2937c9d4208a2",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "references/context-intake.md",
+        "sha256": "e568628c228353f2618c976a1ca1f05b041a5f57d310ed945ef014ca9c6454db",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "references/delegation.md",
+        "sha256": "c214a66012480054a7d96c9698ea7ecf902ccad79b254ba6f8e0aa74f7515bfc",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "references/evaluation.md",
+        "sha256": "a8dfaa78e7349ebd65dad1f2c26d8b52b1f7b4059abf1259e39f54f51ed2203a",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "references/helpers.md",
+        "sha256": "7b4380f26a6d9b0d595cda219dfd7f3c1206ed9c2395b5688608aadb8c0c76fd",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "references/improvement.md",
+        "sha256": "0fe0a3669fd03b256277782e95a1e9472bbfaf983d93dede152f181881b15966",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "references/interview.md",
+        "sha256": "2a2a1b7d98170150a308516f73de7a03cdb17237c769c63e660d83538f05dc95",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "references/portability.md",
+        "sha256": "3d1e4fe40cfc4cf43a2ddd1046876e0da26926c4a2ad11ecc0a1b58b2f1c3e2b",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "references/specification.md",
+        "sha256": "9852c0028c482f6c4b2323059ec218cfff1a5d7f8e88132a679780dac5090332",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "scripts/forge.py",
+        "sha256": "861bd90ef4259cd1aa57095a9734fc8c2c7fdb0fa60b134cbbaea1c3693c9115",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "subskills/skill-finder/LICENSE",
+        "sha256": "8e51a3d1476cb7497704932e1511fc78c46c12ee900a121907ec178321cf7d28",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "subskills/skill-finder/SKILL.md",
+        "sha256": "d53d6a412b39d58a6ae9bd0e7fe4bba559e50d7e195de99a16f0d25fd1d1cb80",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "templates/finder-report.json",
+        "sha256": "491dfc47825b95a082b61456baabecc3468e8b82ce88569b5a5d29d52a9b3725",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "templates/implementation-spec.md",
+        "sha256": "c154acf4001aa10580ee79c5a6ba0483996920cf5934e2a4cf2d9f1371223a22",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "templates/improvement.json",
+        "sha256": "1363cd2687aba9325c2cb2c7551b821a8be8cd3507dd3feb372a31bc408f597c",
+        "match": true,
+        "body_read": false
+      },
+      {
+        "path": "templates/session.json",
+        "sha256": "189e061467f0e2aefb6116edc8e2533993d7670040c7f1636c74d57b71dae578",
+        "match": true,
+        "body_read": false
+      }
+    ]
+  },
+  "turn_audit": [
+    {
+      "case": "S01",
+      "turn": 1,
+      "consequential_decisions": 0,
+      "budget": 0,
+      "budget_pass": true,
+      "messages_equal_native_visible": false,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S01/native-ended-01.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "fae6b1f2afc3356f930719b142ad2a3d2902edf4a6e5344616d993e833612c26",
+          "timestamp": "2026-10-25T18:00:49.816Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true
+    },
+    {
+      "case": "S02",
+      "turn": 1,
+      "consequential_decisions": 1,
+      "budget": 1,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S02/native-ended-01.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "383350e47c39018ecccefdd597167e3366cf22eaf009447caf24388df640bfac",
+          "timestamp": "2026-10-25T18:02:32.765Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true,
+      "question_note": "Two phrasings of same overload-policy decision; counted once."
+    },
+    {
+      "case": "S02",
+      "turn": 2,
+      "consequential_decisions": 1,
+      "budget": 1,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S02/native-ended-02.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "383350e47c39018ecccefdd597167e3366cf22eaf009447caf24388df640bfac",
+          "timestamp": "2026-10-25T18:02:32.765Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 50,
+          "line_sha256": "b551aeaaa029532da55f0ad3d587ce437441749feea1d50bb3fd05946ae2ded0",
+          "timestamp": "2026-10-25T18:52:11.462Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true
+    },
+    {
+      "case": "S02",
+      "turn": 3,
+      "consequential_decisions": 0,
+      "budget": 0,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S02/native-ended-03.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "383350e47c39018ecccefdd597167e3366cf22eaf009447caf24388df640bfac",
+          "timestamp": "2026-10-25T18:02:32.765Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 50,
+          "line_sha256": "b551aeaaa029532da55f0ad3d587ce437441749feea1d50bb3fd05946ae2ded0",
+          "timestamp": "2026-10-25T18:52:11.462Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 76,
+          "line_sha256": "ee99cc51c1973f955af9dfac23e1fc5626ac070591e4c845d289070e69413a2c",
+          "timestamp": "2026-10-25T18:52:51.603Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 103,
+          "line_sha256": "fe53ebab0575caa5f8494e1f4000b83838af9ea18d8861538125e32d0f06652b",
+          "timestamp": "2026-10-25T19:15:06.128Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true
+    },
+    {
+      "case": "S03",
+      "turn": 1,
+      "consequential_decisions": 1,
+      "budget": 1,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S03/native-ended-01.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "48225e0d30d5a141ffda8161723ee4e7690c15e6ea7545eca4504738f9239eaa",
+          "timestamp": "2026-10-25T19:16:40.346Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true,
+      "question_note": "Two options are same judgment-policy decision; free textual answer remains possible."
+    },
+    {
+      "case": "S03",
+      "turn": 2,
+      "consequential_decisions": 0,
+      "budget": 0,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S03/native-ended-02.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "48225e0d30d5a141ffda8161723ee4e7690c15e6ea7545eca4504738f9239eaa",
+          "timestamp": "2026-10-25T19:16:40.346Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 70,
+          "line_sha256": "85bb4b25ee8abf42cb4a6dd218bef7c342c46c7d92cdd492165d0f4732906076",
+          "timestamp": "2026-10-25T19:17:57.033Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true
+    }
+  ],
+  "nonmaterial_discrepancies": [
+    {
+      "path": "S01/messages-01.json#/0/text",
+      "detail": "Actor-saved commentary omits one terminal LF present in S01/visible-01.json#/0/text. Final bytes and native ended return are exact; authoritative native visible text retained.",
+      "material": false
+    },
+    {
+      "path": "review/S03-actions-01.json#/actor_reported_metadata/reported_results/6/result",
+      "detail": "Bookkeeping command syntax error recorded, then repaired before final; no domain execution or draft retry.",
+      "material": false
+    }
+  ],
+  "limitations": [
+    "Source tool-output bodies deliberately unavailable; actual tool arguments, output hashes and actor reports inspected. Not independently rederived from private raw content because source-blind boundary forbids that.",
+    "Some actor source-read metadata/timestamps absent or post-capture; native call line timestamps supply actual chronology. No completion claim for behavioral tests.",
+    "Interruption reconciliation native_file_sha256 refers to underlying native session; private snapshot is separately hashed. Equality is not asserted across these distinct objects."
+  ],
+  "interruption": {
+    "evidence": "S02/interruption-reconciliation.json#/native_visible_or_ended_events/4",
+    "quote": "turn_aborted",
+    "turn3_had_no_final_in_interrupted_capture": true,
+    "resume_evidence": "S02/resume-launch-03.json#/arguments/target",
+    "same_actor_target": "supplemental_s02",
+    "resumed_context_evidence": "review/S02-actions-03.json#/native_contexts/3",
+    "resumed_final_evidence": "S02/visible-03.json#/0",
+    "final_ended_line": 115,
+    "administrative_deadline": "2026-10-25T20:43:55Z",
+    "assessment": "Same actor/context continuation; previous completed turns not replayed; no favorable retry observed."
+  }
+}

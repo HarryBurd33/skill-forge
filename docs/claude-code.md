@@ -1,61 +1,88 @@
 # Use Skill Forge in Claude Code
 
-Use the same canonical skill folder as Codex. No Claude-only fork, marketplace account, or API service is required by Skill Forge. You still need access to Claude Code itself. Python is optional for interviewing and required for bundled helpers.
+Use the same canonical Skill Forge folder as Codex. No Claude-only fork, marketplace listing or paid API service is required by Skill Forge; you still need Claude Code access. Its [setup guide](https://code.claude.com/docs/en/setup) documents macOS, Windows and Linux on x64 or ARM64. Intel/x64 describes processors, not an operating system. Native Windows can use PowerShell; Git for Windows is optional for Bash tools, and WSL is an alternative.
 
-## Install
+Python is optional for interviewing, the spec and file output. Only optional helpers require Python 3.9 or later. **Native Claude Code execution remains unverified here**; documentation-supported installation and helper checks are distinct.
 
-Download the repository from [the README](../README.md). From its directory, choose one scope:
+## Install without commands
 
-Personal, available across local projects:
+1. Download and extract the [repository or skill ZIP](../README.md).
+2. Find the entire `skills/skill-forge` folder in the repository, or `skill-forge` in the skill ZIP.
+3. Choose a destination below, create missing parents, and copy the complete folder. Keep all supporting files and nested Skill Finder.
+4. Start Claude Code in your project and enter `/skill-forge`.
+
+| Scope | macOS/Linux | Windows |
+| --- | --- | --- |
+| Personal local projects | `~/.claude/skills/skill-forge` | `%USERPROFILE%/.claude/skills/skill-forge` |
+| Project repository | `<project>/.claude/skills/skill-forge` | `<project>/.claude/skills/skill-forge` |
+
+Replace `<project>` with your repository path; `~` or `%USERPROFILE%` means your home folder. Windows also accepts native backslash paths. Personal skills take precedence over same-name project skills, so normally choose one scope. This local installation does not upload to your Claude account, install on other devices or automatically reach Cowork/cloud sessions. [Official skills reference](https://code.claude.com/docs/en/skills).
+
+## Optional managed installation
+
+Run from the **downloaded repository directory**; replace the project path when choosing that scope.
+
+macOS/Linux:
 
 ```sh
+# Personal
 python3 skills/skill-forge/scripts/forge.py install skills/skill-forge "$HOME/.claude/skills/skill-forge"
+# Or project
+python3 skills/skill-forge/scripts/forge.py install skills/skill-forge "/path/to/project/.claude/skills/skill-forge"
 ```
 
-Project, shared with a particular repository:
+Windows PowerShell:
 
-```sh
-python3 skills/skill-forge/scripts/forge.py install skills/skill-forge /absolute/path/to/your-project/.claude/skills/skill-forge
+```powershell
+# Personal
+py -3 skills/skill-forge/scripts/forge.py install skills/skill-forge "$HOME/.claude/skills/skill-forge"
+# Or project
+py -3 skills/skill-forge/scripts/forge.py install skills/skill-forge "C:/path/to/project/.claude/skills/skill-forge"
 ```
 
-Replace the project path. The helper refuses to overwrite an existing installation. Without Python, copy the complete `skills/skill-forge` folder into the chosen `skills` directory. If using the standalone skill archive, copy its `skill-forge` directory. Keep all supporting files.
-
-Claude Code documents personal skills at `~/.claude/skills` and project skills at `.claude/skills`, including symlinked skill directories. Invoke with `/skill-forge`; matching requests can also activate it automatically. Personal skills take precedence over same-name project skills. [Official reference](https://code.claude.com/docs/en/skills).
+Use `python` instead of `py -3` if that is your working Python command. Keep paths with spaces quoted. For the standalone skill ZIP use `skill-forge/scripts/forge.py` and source `skill-forge` from the extracted parent. The helper refuses an existing destination.
 
 ## First use
 
-Start Claude Code in your working project and enter:
-
 ```text
-/skill-forge Create a skill that turns my rough meeting notes into an action list.
-Keep unknown owners and dates explicit. Draft now; use your judgment.
+/skill-forge Create a skill that turns rough meeting notes into an action list.
+Keep unknown owners and dates explicit. Use your judgment.
 ```
 
-The builder should provide a compact brief, a skill draft, examples, and an honest validation report. It can also improve an existing skill when you supply its source and describe the failure. To propose a shared improvement, describe the repeated failure and an expected outcome, rather than supplying only a new instruction.
+Skill Forge reads context, asks needed questions and challenges material weaknesses. It shows an implementation spec and verification plan before building. Say “review first” to pause for edits; otherwise authorized work continues. Useful available subagents can research, build independent components, review or execute checks. Delivery includes skill files, examples and a report identifying what really ran.
+
+You can instead say `/skill-forge Based on this conversation, build me a skill`, or supply a project workflow. Only visible or supplied/authorized retrieved material is available. Final user corrections govern; private details belong in local configuration, not public instructions. “Quick,” “thorough,” “expert challenge,” “draft now,” “skip” and “resume” remain available. Supply the saved session/handoff to resume later.
 
 ## Update and remove
 
-For a helper-managed personal copy, run this from the newer downloaded repository:
+From a newer downloaded repository, update a helper-managed personal copy:
 
 ```sh
 python3 skills/skill-forge/scripts/forge.py install skills/skill-forge "$HOME/.claude/skills/skill-forge" --update
 ```
 
-Substitute the project destination when appropriate. Modified installed copies are refused so customizations are not silently lost. Reconcile changes into your canonical working copy, verify them, and then synchronize. A manual copy has no managed update history; snapshot it before replacing or merging files.
+Windows PowerShell:
 
-A symbolic link from the personal/project skill location to the absolute canonical source path is an alternative on macOS/Linux. Use a single maintained source and keep private state elsewhere. Do not link over an existing folder. If both hosts point to that source, an accepted local source update is shared automatically.
+```powershell
+py -3 skills/skill-forge/scripts/forge.py install skills/skill-forge "$HOME/.claude/skills/skill-forge" --update
+```
 
-Claude Code watches `SKILL.md` changes in established skills directories. Use `/reload-skills` if the top-level directory was created after the session started; restarting is a fallback. Remove a local skill by moving its directory/link outside the scanned location or deleting that installation. Already-loaded instructions may remain in the current conversation, so start a new session when verifying removal. [Update/removal details](https://code.claude.com/docs/en/skills#edit-a-skill-during-a-session).
+For project scope use its installation destination. Customized copies are refused; reconcile wanted changes into the canonical source, verify, then synchronize. For a manual installation back up the old folder outside the scanned skills directory before comparing and replacing it. Keep private sessions separate. Symlinks are optional, not a Windows prerequisite.
 
-## Portability limits
+To remove, move that installation outside the scanned skills directory. Use an unused backup path or your file manager. Personal examples:
 
-The common skill intentionally omits Claude-specific substitutions, shell injection, hooks, and tool permission declarations. The installation itself does not grant file, network, or publication access. Do not edit cloud-synced or vendor-managed skill caches as though they were your canonical source. Use a writable local copy for candidate work.
+```sh
+mv "$HOME/.claude/skills/skill-forge" "$HOME/skill-forge-backup"
+```
 
-Claude Code installation and invocation are **supported by documentation, not runtime-tested in this release environment**. The host-independent helpers and model behavior checks are reported separately in [the release evidence](../evals/v0.2.0/REPORT.md).
+```powershell
+Move-Item -LiteralPath "$HOME/.claude/skills/skill-forge" -Destination "$HOME/skill-forge-backup"
+```
 
+Use your project path for project scope. Claude watches established skill directories; use `/reload-skills` if the top-level directory was created after the session started. Start a fresh session to verify removal because already-loaded content can remain. [Update/removal reference](https://code.claude.com/docs/en/skills#edit-a-skill-during-a-session).
 
-## Skill Finder and updated sessions
+## Tools and portability
 
-The installed Skill Forge folder includes its nested Skill Finder component. Skill Forge loads it after refinement and before implementation; no second installation is required. Independent host discovery of the nested component is not assumed. With subagents, research is delegated; without them, it runs in the current context when browsing is available. See [Skill Finder](skill-finder.md) for limits and provenance.
+The common skill requires no Claude-specific substitutions, shell injection, hooks or permission declarations. Installation grants no browsing, file, execution, subagent or GitHub access. The nested [Skill Finder](skill-finder.md) is included with direct-work/no-tools fallbacks. Useful build/review delegation also depends on an available launch tool.
 
-Existing session records can resume with the new optional delivery and research fields added around settled answers. A successful tested update can sync a helper-managed installation using `--update`; customized installations still require reconciliation.
+Improve a writable local source rather than vendor-managed or account-synced caches. See [compatibility](compatibility.md) and [other capable LLMs](other-llms.md). Setup references were checked on **2026-10-21**.

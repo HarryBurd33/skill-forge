@@ -1,0 +1,356 @@
+{
+  "kind": "Actual local helper and package checks; not model behavior",
+  "executed_at_utc": "2026-10-19T12:30:59.406265+00:00",
+  "candidate_skill_sha256": "75df8b714e5804f5f2f1ef2148efa67dea437870e39edcf3ee63d464e288aef7",
+  "unit_tests": {
+    "run": 28,
+    "passed": 27,
+    "skipped": 1,
+    "skip": "Native Windows junction creation requires Windows; covered separately by hosted Windows jobs.",
+    "raw_log_sha256": "e91e045db441dcf703be906370c2acb57490c2a45a39e3c0a5e8d825b425b9e8",
+    "public_log": "unit-tests.txt",
+    "public_log_selection": "Exact unittest result lines through OK; helper stdout with temporary local paths omitted.",
+    "executed_with_skill_sha256": "75df8b714e5804f5f2f1ef2148efa67dea437870e39edcf3ee63d464e288aef7",
+    "helper_implementation_sha256": "861bd90ef4259cd1aa57095a9734fc8c2c7fdb0fa60b134cbbaea1c3693c9115",
+    "helper_implementation_unchanged_for_final_source": true
+  },
+  "release_check_before_final_evidence": {
+    "status": "pass",
+    "public_files": 136,
+    "relative_links": 141,
+    "clean_first_use": {
+      "status": "pass",
+      "temporary_install_paths": 4,
+      "skill_hash_matches": true,
+      "portable_bytes_match": true,
+      "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+    }
+  },
+  "limitations": [
+    "Final selected evidence/publication first-use will be checked after release records are complete.",
+    "Temporary Codex/Claude path installations do not establish native host execution."
+  ],
+  "third_candidate_skill_sha256": "7c7a0467e500321a4d872e199317a69eec1dba7890c677b6465d03db9e169990",
+  "third_source_package_checks_before_result_selection": {
+    "status": "pass",
+    "public_files": 150,
+    "relative_links": 141,
+    "clean_first_use": {
+      "status": "pass",
+      "temporary_install_paths": 4,
+      "skill_hash_matches": true,
+      "portable_bytes_match": true,
+      "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+    }
+  },
+  "final_candidate_skill_sha256": "3735ddcdc3aebe6be3a0dca442a0147cdc789860f66d1577a048e94b5b4221a0",
+  "final_source_package_checks_before_result_selection": {
+    "status": "pass",
+    "public_files": 150,
+    "relative_links": 141,
+    "clean_first_use": {
+      "status": "pass",
+      "temporary_install_paths": 4,
+      "skill_hash_matches": true,
+      "portable_bytes_match": true,
+      "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+    }
+  },
+  "final_source_hosted_checks": "final-source-platform-checks.json",
+  "prepared_archive_check": {
+    "status": "pass",
+    "skill_tree_sha256": "3735ddcdc3aebe6be3a0dca442a0147cdc789860f66d1577a048e94b5b4221a0",
+    "portable_exact": true,
+    "archives": [
+      {
+        "file": "skill-forge-0.3.0.zip",
+        "sha256": "78b37a7dd1b33a1eb98d020432ed1cbfbc68be1b3c532e8ae17b6f07d9de5f28"
+      },
+      {
+        "file": "skill-forge-portable-0.3.0.zip",
+        "sha256": "5c348fb794b63191927f3b833be315fd26c327ed2d42ff9476b00fb25ef8937e"
+      }
+    ],
+    "scope": "Prepared archives extracted locally; public release downloads still pending."
+  },
+  "candidate5_source_sha256": "18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb",
+  "candidate5_package_check_before_final_behavioral_results": {
+    "status": "pass",
+    "public_files": 157,
+    "relative_links": 147,
+    "clean_first_use": {
+      "status": "pass",
+      "temporary_install_paths": 4,
+      "skill_hash_matches": true,
+      "portable_bytes_match": true,
+      "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+    }
+  },
+  "candidate5_hosted_checks": "final-source-platform-checks.json",
+  "historical_final_label_note": "Earlier final_candidate/final_source labels retain candidate4 checkpoints. Explicit candidate5 and candidate6 fields identify their own sources; model behavior/adoption are separate gates.",
+  "candidate5_prepared_archive_check": {
+    "kind": "Actual local extraction and byte equality of prepared fifth-source archives, not public download or model behavior",
+    "skill_tree_sha256": "18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb",
+    "archives": [
+      {
+        "file": "skill-forge-0.3.0.zip",
+        "sha256": "4ff329dbd769db4df8fabfcac9c401b509d39b5c9b29ae3f7265629efe62b9e5",
+        "files": 20,
+        "match": "every skill archive entry exactly equals selected canonical file"
+      },
+      {
+        "file": "skill-forge-portable-0.3.0.zip",
+        "sha256": "556c8832b2138c0e7cb4dd44cd6e94b6d031f1b17745c5d5701adb1ae2f1103d",
+        "files": 3,
+        "match": "portable text exactly equals canonical generated prompt"
+      }
+    ],
+    "status": "pass"
+  },
+  "candidate5_local_unit_test_run": {
+    "executed_at_utc": "2026-10-20T15:44:28.788700+00:00",
+    "status": "pass",
+    "returncode": 0,
+    "tests_run": 28,
+    "skipped": 1,
+    "passed": 27,
+    "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "source_skill_sha256": "18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb",
+    "helper_sha256": "861bd90ef4259cd1aa57095a9734fc8c2c7fdb0fa60b134cbbaea1c3693c9115",
+    "raw_log_sha256": "6cf83111a81995ed2e16dd4f5f76101529c7026a4a152d307fa412080a1abce7",
+    "scope": "Actual local Python helper regression tests; not model/native host execution",
+    "skip_reason": "Windows-only junction creation unavailable on this POSIX runtime",
+    "observed_source_tree_sha256": "18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb"
+  },
+  "current_local_helper_runtime": {
+    "os": "macOS-14.6-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 16.0.0 (clang-1600.0.26.6)]"
+  },
+  "candidate6_source_sha256": "b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee",
+  "candidate6_package_check_before_behavioral_selection": {
+    "status": "pass",
+    "public_files": 157,
+    "relative_links": 147,
+    "skills": [
+      {
+        "status": "pass",
+        "name": "skill-forge",
+        "files": 20,
+        "relative_links": 15,
+        "questions": 11,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "skill-finder",
+        "files": 2,
+        "relative_links": 0,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "adaptive-prompt-builder",
+        "files": 3,
+        "relative_links": 2,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "research-writer",
+        "files": 3,
+        "relative_links": 2,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "adaptive-planner",
+        "files": 3,
+        "relative_links": 2,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "meeting-actions",
+        "files": 1,
+        "relative_links": 0,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "meeting-actions",
+        "files": 1,
+        "relative_links": 0,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "meeting-actions",
+        "files": 1,
+        "relative_links": 0,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      }
+    ],
+    "clean_first_use": {
+      "status": "pass",
+      "temporary_install_paths": 4,
+      "skill_hash_matches": true,
+      "portable_bytes_match": true,
+      "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+    }
+  },
+  "candidate6_prepared_archive_check": {
+    "status": "pass",
+    "kind": "Prepared final-candidate archives, not released/public downloads",
+    "core_sha256": "b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee",
+    "archives": [
+      {
+        "file": "skill-forge-0.3.0.zip",
+        "sha256": "acfca2e1708f127cb724d009f6ed10f1dca135e0de56b824b19d57c7bb359e24",
+        "files": 20,
+        "canonical_bytes_match": true
+      },
+      {
+        "file": "skill-forge-portable-0.3.0.zip",
+        "sha256": "e0e8a41909e3d5478e5801bd145e9bf20d28b26fd50ddf6a18b732edd6744264",
+        "files": 3,
+        "canonical_bytes_match": true
+      }
+    ]
+  },
+  "candidate6_helper_implementation_sha256": "861bd90ef4259cd1aa57095a9734fc8c2c7fdb0fa60b134cbbaea1c3693c9115",
+  "candidate6_helper_code_identical_to_candidate5_tested_code": true,
+  "candidate7_prepared_archive_check": {
+    "checked_at_utc": "2026-10-21T16:41:28.973899+00:00",
+    "actual_archives_verified": true,
+    "skill_entries": 20,
+    "portable_entries": 3,
+    "skill_contents_byte_equal_frozen_core": true,
+    "portable_contents_byte_equal_generated_bundle": true,
+    "core_sha256": "8557ea0c92c2d2e1ba1978d31655cfeb5152d190a8420e4579d92ebb786f8f2e",
+    "archives": {
+      "skill-forge-v0.3.0-skill.zip": "9ee9566636114f57c6f048ddb39c8a8d6293452c27672b696db3e2f44d538e68",
+      "skill-forge-v0.3.0-portable.zip": "258a91e731bdae288b6f95cc14275866417adeb32d2320660a2e6706978a63d0"
+    },
+    "released": false,
+    "behavioral_adoption_pass_claimed": false
+  },
+  "candidate7_limitations": "Prepared archives only; no adoption, final-source hosted CI, release or public download check. Core/helper unchanged after freeze.",
+  "candidate8_prepared_archive_check": {
+    "checked_at_utc": "2026-10-22T04:33:05.510631+00:00",
+    "core_sha256": "36706d8fddada6c9f3b2675b0add9b6038d6592eca516a7e1f493f191bec198d",
+    "released": false,
+    "adopted": false,
+    "archives": [
+      {
+        "kind": "skill",
+        "file": "skill-forge-v0.3.0-skill.zip",
+        "sha256": "296537b1e5cbf0ec1f93a343a207162b90aca39ebaf3c72bd6d3a1e1abd59ef0",
+        "entries": 20,
+        "contents_match_frozen_source": true
+      },
+      {
+        "kind": "portable",
+        "file": "skill-forge-v0.3.0-portable.zip",
+        "sha256": "5980121fa9e72d0c97be5a3ce63db8d89adb430e5e2d4f061de160ddcb7a7d37",
+        "entries": 3,
+        "contents_match_frozen_source": true
+      }
+    ],
+    "scope": "Actual local archive-byte checks, not behavioral execution or native integration."
+  },
+  "candidate8_local_static": {
+    "public_files": 170,
+    "relative_links": 154,
+    "temporary_install_paths": 4,
+    "portable_matches": true,
+    "native_execution": false,
+    "before_new_evidence_selection": true
+  },
+  "candidate8_limitations": "Rejected; no adoption/release/publicdownload test. Newsource8hostedchecks pendingpublication.",
+  "candidate8_final_evidence_local_release_check": {
+    "status": "pass",
+    "public_files": 178,
+    "relative_links": 162,
+    "skills": [
+      {
+        "status": "pass",
+        "name": "skill-forge",
+        "files": 20,
+        "relative_links": 15,
+        "questions": 11,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "skill-finder",
+        "files": 2,
+        "relative_links": 0,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "adaptive-prompt-builder",
+        "files": 3,
+        "relative_links": 2,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "research-writer",
+        "files": 3,
+        "relative_links": 2,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "adaptive-planner",
+        "files": 3,
+        "relative_links": 2,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "meeting-actions",
+        "files": 1,
+        "relative_links": 0,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "meeting-actions",
+        "files": 1,
+        "relative_links": 0,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      },
+      {
+        "status": "pass",
+        "name": "meeting-actions",
+        "files": 1,
+        "relative_links": 0,
+        "questions": 0,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+      }
+    ],
+    "clean_first_use": {
+      "status": "pass",
+      "temporary_install_paths": 4,
+      "skill_hash_matches": true,
+      "portable_bytes_match": true,
+      "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+    }
+  }
+}

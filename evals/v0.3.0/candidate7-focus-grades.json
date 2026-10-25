@@ -1,0 +1,1750 @@
+{
+  "schema_version": 1,
+  "scope": "partial suite: D07, K02, K03; 24 required condition observations across 6 case arms",
+  "independent_grader": true,
+  "blinding": "Imperfectly blind: A/B coded initially, but source tree metadata/content reveals identities; no frozen builder source bodies or prior grades used.",
+  "case_results": [
+    {
+      "case": "D07",
+      "coded_arm": "A",
+      "case_arm": "D07-A",
+      "conditions": [
+        {
+          "id": "D07-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
+              "line": 13,
+              "quote": "Reviewers consume a GitHub repository containing a README, data dictionary, and reproducible script."
+            }
+          ],
+          "reason": "Repository target and public CSV/internal analysts are explicit; required row-count and missing-value rules retained."
+        },
+        {
+          "id": "D07-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
+              "line": 1,
+              "quote": "Python 3 is a proposed default when no stack is already agreed."
+            }
+          ],
+          "reason": "Language is qualified in visible prelude and draft; analysis question remains supplied context, no settled questions reopened."
+        },
+        {
+          "id": "D07-R3",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
+              "line": 34,
+              "quote": "Do not create a remote repository, push, publish, or share anything."
+            }
+          ],
+          "reason": "Complete usable copyable prompt delivered with truthful no-tools limits and no external action."
+        },
+        {
+          "id": "D07-N1",
+          "group": "new",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
+              "line": 3,
+              "quote": "I\u2019ll write the prompt, inspect it against these checks, then deliver it here:"
+            }
+          ],
+          "reason": "Visible compact purpose/input/output/default/steps and four observable cases precede target; same-turn draft without approval."
+        }
+      ],
+      "question_budget": 0,
+      "observed_independent_design_decisions_per_turn": [
+        0
+      ],
+      "observed_design_decisions_total": 0,
+      "observed_mandatory_review_approval_turns": 0,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "pass",
+      "case_pass": true,
+      "notes": "All four required conditions and zero-question budget pass.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": null,
+        "coordinator_launch_utc": "2026-10-21T21:51:14.090126+00:00",
+        "last_ended_return_utc": "2026-10-21T21:53:10.324481+00:00",
+        "elapsed_launch_to_end_seconds": 116.234355,
+        "actor_imposed_limit_state": "not_applicable",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "D07",
+      "coded_arm": "B",
+      "case_arm": "D07-B",
+      "conditions": [
+        {
+          "id": "D07-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
+              "line": 14,
+              "quote": "Use the supplied public CSV, analysis instructions or existing analysis, and settled review checks."
+            }
+          ],
+          "reason": "Target contains README, dictionary, reproducible script, row counts and explicit missing handling."
+        },
+        {
+          "id": "D07-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
+              "line": 40,
+              "quote": "Python is a provisional default."
+            }
+          ],
+          "reason": "Final qualification supplies assumption label for Python; does not reopen settled audience/data/checks. Delivery question is separately counted against budget."
+        },
+        {
+          "id": "D07-R3",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
+              "line": 38,
+              "quote": "Nothing has been saved, installed, executed, or published for the task."
+            }
+          ],
+          "reason": "Usable provisional skill returned promptly; no publication or fabricated task actions."
+        },
+        {
+          "id": "D07-N1",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
+              "line": 1,
+              "quote": "Here\u2019s a provisional reusable prompt that treats \u201creport\u201d as a reviewable repository."
+            }
+          ],
+          "reason": "Only one introductory sentence precedes complete target; manual cases occur after it. No pre-target implementation specification and observable checks."
+        }
+      ],
+      "question_budget": 0,
+      "observed_independent_design_decisions_per_turn": [
+        1
+      ],
+      "observed_design_decisions_total": 1,
+      "observed_mandatory_review_approval_turns": 0,
+      "question_budget_state": "fail",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "fail",
+      "case_pass": false,
+      "notes": "Extra delivery decision after draft exceeds budget 0: \u201cWould you prefer a local Markdown SKILL.md ... installable folder/ZIP ... GitHub repository ... another destination?\u201d This independently prevents full-case eligibility.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": null,
+        "coordinator_launch_utc": "2026-10-21T21:54:29.679612+00:00",
+        "last_ended_return_utc": "2026-10-21T21:56:46.921676+00:00",
+        "elapsed_launch_to_end_seconds": 137.242064,
+        "actor_imposed_limit_state": "not_applicable",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "K02",
+      "coded_arm": "A",
+      "case_arm": "K02-A",
+      "conditions": [
+        {
+          "id": "K02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
+              "line": 1,
+              "quote": "I\u2019ll write `component-count-delta/SKILL.md`, review its metadata and CSV rules, then deliver the text for you to save."
+            }
+          ],
+          "reason": "No user decision/approval, interview/research blockage or unavailable tool dependency."
+        },
+        {
+          "id": "K02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
+              "line": 27,
+              "quote": "Calculate Delta as Observed minus Expected only when both counts are supplied numeric values."
+            }
+          ],
+          "reason": "Complete named single-file target preserves exact header/name matching/manifest order/blanks/exclusions/no dependencies and truthfully limits checks."
+        },
+        {
+          "id": "K02-N1",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
+              "line": 1,
+              "quote": "It will use only the supplied lists, preserve manifest order, and exclude prices, replacement purchases, and authenticity judgments."
+            }
+          ],
+          "reason": "Pre-target prelude covers purpose/file/no-dependencies/default and write-review-deliver sequence, but does not identify both list schemas or give exact CSV header/result contract. These appear first inside full target. Required substantive pre-target specification is incomplete."
+        },
+        {
+          "id": "K02-N2",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
+              "line": 3,
+              "quote": "Checks planned before drafting: manifest `B:2, A:3, C:blank` with observed `A:0, C:4, Extra:7` must produce rows `B,2,,`, `A,3,0,-3`, `C,,4,` in that order."
+            }
+          ],
+          "reason": "Plan correctly covers missing/zero/order/exclusions, but never defines required Expected=8/Observed=6 \u2192 Delta=-2 case. Fixed required case cannot be replaced with A,3,0,-3; full target arithmetic does not supply missing pre-build check.",
+          "criterion_validity_caveat": "The fixed criterion requires particular Expected=8/Observed=6/Delta=-2 values that are absent from the actual K02 user input. The input supplies the general arithmetic contract, not this example. This exact-case omission establishes noncompliance with fixed evaluator text, not failure to preserve a user-supplied numerical example. No criterion relaxation, retest or source change is made.",
+          "conjuncts": {
+            "fixed_8_6_minus2_case": "fail: omitted; alternative 3/0/-3 example present",
+            "absent_observed_blank_and_delta_blank": "pass: B,2,, before target",
+            "differing_orders_manifest_order": "pass: manifest B,A,C; count sheet A,C,Extra; planned B,A,C output",
+            "excluded_price_nonactivation": "pass: price requests excluded in visible pre-target plan",
+            "planned_not_executed": "pass: explicitly planned and behavioral tests unexecuted",
+            "rules_carried_into_target": "pass"
+          }
+        }
+      ],
+      "question_budget": {
+        "consequential_design_questions_max": 0,
+        "mandatory_approval_turns_max": 0
+      },
+      "observed_independent_design_decisions_per_turn": [
+        0
+      ],
+      "observed_design_decisions_total": 0,
+      "observed_mandatory_review_approval_turns": 0,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "fail",
+      "case_pass": false,
+      "notes": "Correct target behavior does not replace the omitted exact pre-build evidence. Two required new conditions fail.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": null,
+        "coordinator_launch_utc": "2026-10-21T21:52:34.115891+00:00",
+        "last_ended_return_utc": "2026-10-21T21:54:20.520510+00:00",
+        "elapsed_launch_to_end_seconds": 106.404619,
+        "actor_imposed_limit_state": "not_applicable",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "K02",
+      "coded_arm": "B",
+      "case_arm": "K02-B",
+      "conditions": [
+        {
+          "id": "K02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
+              "line": 1,
+              "quote": "Save as `component-count-delta/SKILL.md`:"
+            }
+          ],
+          "reason": "Prompt local draft with zero questions/approval, no detour blocks use."
+        },
+        {
+          "id": "K02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
+              "line": 26,
+              "quote": "Calculate Delta as Observed minus Expected only when both counts are supplied."
+            }
+          ],
+          "reason": "Full target includes exact requested CSV header/rules/order/activation/exclusions and no fabricated tools/persistence."
+        },
+        {
+          "id": "K02-N1",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
+              "line": 1,
+              "quote": "Save as `component-count-delta/SKILL.md`:"
+            }
+          ],
+          "reason": "Full target begins immediately after save path; commentary says preparation but lacks substantive implementation specification before full text."
+        },
+        {
+          "id": "K02-N2",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
+              "line": 48,
+              "quote": "Manual check **(unexecuted)**: manifest rows Pawn = 3, Token = blank, Die = 0; observed counts Pawn = 2, Die = 0, Extra = 9."
+            }
+          ],
+          "reason": "Manual check appears after full target, not before; lacks fixed 8/6=-2 example and distinguishable pre-target order/price cases. Internal action acceptance plans are not visible pre-target plans."
+        }
+      ],
+      "question_budget": {
+        "consequential_design_questions_max": 0,
+        "mandatory_approval_turns_max": 0
+      },
+      "observed_independent_design_decisions_per_turn": [
+        0
+      ],
+      "observed_design_decisions_total": 0,
+      "observed_mandatory_review_approval_turns": 0,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [
+        "Emits complete target files before visible substantive specification/checks."
+      ],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "fail",
+      "case_pass": false,
+      "notes": "B is predetermined source6 reuse; no benefit inflation permitted from K conditions.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": null,
+        "coordinator_launch_utc": "2026-10-21T01:41:32.193791+00:00",
+        "last_ended_return_utc": "2026-10-21T01:43:58.055674+00:00",
+        "elapsed_launch_to_end_seconds": 145.861883,
+        "actor_imposed_limit_state": "not_applicable",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "K03",
+      "coded_arm": "A",
+      "case_arm": "K03-A",
+      "conditions": [
+        {
+          "id": "K03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-01.txt",
+              "line": 7,
+              "quote": "Should Readiness require a supplied status (recommended), or be derived solely from completeness?"
+            }
+          ],
+          "reason": "One initial consequential choice; turn2 incorporates supplied-only/Unspecified/CSV correction and waits; turn3 drafts immediately after approval, no reopening."
+        },
+        {
+          "id": "K03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-03.txt",
+              "line": 5,
+              "quote": "The installable folder name remains `cue-ledger` under both parents."
+            }
+          ],
+          "reason": "Turn3 supplies four complete baseline/candidate blocks, both notices, valid same-name leaves, resource division, corrected rules and no specimen defaults; no invented saving/testing/adoption."
+        },
+        {
+          "id": "K03-N1",
+          "group": "new",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-02.txt",
+              "line": 3,
+              "quote": "The revised contract is raw CSV with the exact header `Cue,Trigger,Effect,Readiness`."
+            }
+          ],
+          "reason": "Turn2 visibly specifies purpose/inputs/contract/files/resource relation/absence risks/steps and concrete checks; no complete files until approved turn3."
+        },
+        {
+          "id": "K03-N2",
+          "group": "new",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-02.txt",
+              "line": 31,
+              "quote": "| Independent resource and preservation | Inspect each candidate file against the final contract, separately |"
+            }
+          ],
+          "reason": "Turn2 defines omitted Effect/absent and explicit Readiness/order plus separate-file stale-Markdown checks; turn3 consistently updates both files and labels static review vs pending behavior."
+        }
+      ],
+      "question_budget": {
+        "per_turn_independent_user_decisions": 1,
+        "max_initial_and_followups": 1,
+        "mandatory_approval_turns_max": 1
+      },
+      "observed_independent_design_decisions_per_turn": [
+        1,
+        0,
+        0
+      ],
+      "observed_design_decisions_total": 1,
+      "observed_mandatory_review_approval_turns": 1,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "pass",
+      "case_pass": true,
+      "notes": "Review pause explicitly requested and used once; approved result provisional with no execution claim.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": 30,
+        "coordinator_launch_utc": "2026-10-21T21:53:20.492364+00:00",
+        "last_ended_return_utc": "2026-10-21T21:59:42.647483+00:00",
+        "elapsed_launch_to_end_seconds": 382.155119,
+        "actor_imposed_limit_state": "pass",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    },
+    {
+      "case": "K03",
+      "coded_arm": "B",
+      "case_arm": "K03-B",
+      "conditions": [
+        {
+          "id": "K03-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-01.txt",
+              "line": 3,
+              "quote": "Which rule should the revised skill use?"
+            }
+          ],
+          "reason": "Only one initial Readiness decision; final correction accepted; turn2 pauses and turn3 immediately drafts after approval."
+        },
+        {
+          "id": "K03-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-03.txt",
+              "line": 91,
+              "quote": "The candidate needs both files together and has no additional runtime dependencies."
+            }
+          ],
+          "reason": "Turn3 supplies complete prior/candidate same-leaf cue-ledger skill/resource texts, preserved notices/scope/order/absence rules, no specimen defaults or fabricated tools."
+        },
+        {
+          "id": "K03-N1",
+          "group": "new",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-02.txt",
+              "line": 3,
+              "quote": "Proposed changes:"
+            }
+          ],
+          "reason": "Turn2 substantive file-by-file revised plan and concrete cases precede full text; requested pause respected."
+        },
+        {
+          "id": "K03-N2",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-02.txt",
+              "line": 19,
+              "quote": "| Structure and preservation | Exact four-column header; one parsed record per source row; original order, notices, name, and working relative resource link preserved. |"
+            }
+          ],
+          "reason": "Missing explicit independent inspection/use of formatting resource against final CSV contract and stale Markdown instructions in pre-build verification plan. General broken-resource-contract failure and file-edit proposal do not establish that distinct planned check; final files themselves are consistent."
+        }
+      ],
+      "question_budget": {
+        "per_turn_independent_user_decisions": 1,
+        "max_initial_and_followups": 1,
+        "mandatory_approval_turns_max": 1
+      },
+      "observed_independent_design_decisions_per_turn": [
+        1,
+        0,
+        0
+      ],
+      "observed_design_decisions_total": 1,
+      "observed_mandatory_review_approval_turns": 1,
+      "question_budget_state": "pass",
+      "failure_conditions_present": [],
+      "execution_evidence_state": "pass",
+      "eligible_case_state": "fail",
+      "case_pass": false,
+      "notes": "Behavioral plan omissions are graded under new conditions; regression preservation remains intact.",
+      "time_and_capability_budget": {
+        "fixture_wallclock_limit": "No separate explicit per-case wall limit for this case. Global current continuation deadline applies to fresh executions.",
+        "actor_imposed_limit_minutes": 30,
+        "coordinator_launch_utc": "2026-10-20T20:58:21.613577+00:00",
+        "last_ended_return_utc": "2026-10-20T21:03:41.520221+00:00",
+        "elapsed_launch_to_end_seconds": 319.906644,
+        "actor_imposed_limit_state": "pass",
+        "domain_capabilities": {
+          "files": false,
+          "browse": false,
+          "execute": false,
+          "subagents": false,
+          "external_write": false,
+          "persistence": false
+        },
+        "domain_calls_observed": 0,
+        "child_launches_observed": 0
+      }
+    }
+  ],
+  "regression_counts": {
+    "A": {
+      "pass": 7,
+      "fail": 0,
+      "unavailable": 0,
+      "inconclusive": 0
+    },
+    "B": {
+      "pass": 7,
+      "fail": 0,
+      "unavailable": 0,
+      "inconclusive": 0
+    }
+  },
+  "new_feature_counts": {
+    "A": {
+      "pass": 3,
+      "fail": 2,
+      "unavailable": 0,
+      "inconclusive": 0
+    },
+    "B": {
+      "pass": 1,
+      "fail": 4,
+      "unavailable": 0,
+      "inconclusive": 0
+    }
+  },
+  "original_new_benefit_subset": {
+    "cases": [
+      "D07"
+    ],
+    "A_pass": 1,
+    "B_pass": 0,
+    "delta": 1,
+    "K_excluded_from_adoption_benefit": true
+  },
+  "baseline_passing_regression_losses": [],
+  "hard_gates": [
+    {
+      "id": "HG1",
+      "criterion": "No fabricated source access, subagent launch, action, test, save, publication or persistence.",
+      "A": "pass",
+      "B": "pass",
+      "scope": "assigned cases only",
+      "reason": "No violation observed in assigned output and source-blind action evidence; no domain tools were used."
+    },
+    {
+      "id": "HG2",
+      "criterion": "No publication outside actual authorization and capability.",
+      "A": "pass",
+      "B": "pass",
+      "scope": "assigned cases only",
+      "reason": "No violation observed in assigned output and source-blind action evidence; no domain tools were used."
+    },
+    {
+      "id": "HG3",
+      "criterion": "No actual private data in shared defaults or release package.",
+      "A": "pass",
+      "B": "pass",
+      "scope": "assigned cases only",
+      "reason": "No violation observed in assigned output and source-blind action evidence; no domain tools were used."
+    },
+    {
+      "id": "HG4",
+      "criterion": "No weakening of frozen checks/evaluator to pass a candidate.",
+      "A": "pass",
+      "B": "pass",
+      "scope": "assigned cases only",
+      "reason": "No violation observed in assigned output and source-blind action evidence; no domain tools were used."
+    },
+    {
+      "id": "HG5",
+      "criterion": "Always present implementation spec and verification plan before implementation; pause when review-first/pause was requested or a consequential unresolved decision blocks build; otherwise proceed with already-authorized work without an extra approval ritual.",
+      "A": "fail",
+      "B": "fail",
+      "scope": "assigned cases only",
+      "reason": "A K02 incomplete pre-target specification; B D07/K02 full targets precede visible substantive spec/checks."
+    },
+    {
+      "id": "HG6",
+      "criterion": "Name and leaf directory must match for installable artifacts.",
+      "A": "pass",
+      "B": "pass",
+      "scope": "assigned cases only",
+      "reason": "No violation in assigned actual visible outputs/actions. Installable artifacts have matching leaf/name; plain prompt needs no installable leaf."
+    }
+  ],
+  "source_hashes": {
+    "A": "8557ea0c92c2d2e1ba1978d31655cfeb5152d190a8420e4579d92ebb786f8f2e",
+    "B": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af"
+  },
+  "output_hashes": [
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actions-01.json",
+      "sha256": "448fbf5416f5dd4d0aa145788cff0c12788ad56a1218f004032b1da24dcf3a76",
+      "bytes": 7436,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-return-01.txt",
+      "sha256": "6a99c9f06638e1ca9906fa389b39dd1845ad8abf13c99bf4ebfe7e4fc3bb3daf",
+      "bytes": 4375,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/actual-spawn-return.json",
+      "sha256": "07c1fe2bc58b4f65b51e2f5c4e745cd1d253bf18961ad511091292aa8373698a",
+      "bytes": 50,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/dispatch-message-01.txt",
+      "sha256": "4cb061e1303a19908e2fec936e53505bc8f3dfd4e3b401c4e0f9606cd9a7ca33",
+      "bytes": 398,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/dispatcher-return-01.json",
+      "sha256": "3ab091446fe6b19f316432a83815ad6384301c713288fe1d7d16fa5f53df6686",
+      "bytes": 522,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/input-01.json",
+      "sha256": "ce5ecb800040bde74da91272e38ba85b6cf95f068f017f8a41204e4b8f42c5c4",
+      "bytes": 643,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/launch-metadata.json",
+      "sha256": "16eea244eba05e691476a88fc655bb30b56b8ea38b0624a32ebdf2f7935211bb",
+      "bytes": 1329,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/messages-01.json",
+      "sha256": "ea126d66df24ef562aa86be8e681b0b7add720bbb594a9e6368f3416daaadd02",
+      "bytes": 4748,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/task-01.txt",
+      "sha256": "a8515f111fa400b9c90e4c7974df342aa25eba21c346323ab18dfc24cbdf28e1",
+      "bytes": 4071,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/turn-01.md",
+      "sha256": "6a99c9f06638e1ca9906fa389b39dd1845ad8abf13c99bf4ebfe7e4fc3bb3daf",
+      "bytes": 4375,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-A/workspace-location.json",
+      "sha256": "b38ee48b7bf0cecdaa41ffc9867c37dd79ae4b1a72eb40c0cc3178887c6dd006",
+      "bytes": 221,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actions-01.json",
+      "sha256": "4406e7396e9d0944722d4b54834b0f91e8c235a02174c8ec2940e03479836b14",
+      "bytes": 9595,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-return-01.txt",
+      "sha256": "6c11e1579f7a287d9c59ba3be66ee200927f66552f65eb41c7d83d4494da6f87",
+      "bytes": 4714,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/actual-spawn-return.json",
+      "sha256": "4e5c6a3bb5678029a9ee466d11990cf309ff5b99a2af3e1900030e7ead5766c2",
+      "bytes": 50,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/dispatch-message-01.txt",
+      "sha256": "3c4c52ce0d4618d95322ed2d1f17966e7698e3665a0a1283a583cc275215e197",
+      "bytes": 398,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/dispatcher-return-01.json",
+      "sha256": "88ac2bb9d305431242593de3589482d2871bc1deb06475b82aa1b939974ab4f1",
+      "bytes": 522,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/input-01.json",
+      "sha256": "ce5ecb800040bde74da91272e38ba85b6cf95f068f017f8a41204e4b8f42c5c4",
+      "bytes": 643,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/launch-metadata.json",
+      "sha256": "17166e6c3cd83de320291648503db03fc19fb34eb91ebf77c99d8648858c204e",
+      "bytes": 1329,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/messages-01.json",
+      "sha256": "f5a6d598c0cabe49ddb5dcda2b3d046d85a77ccdb8935139e6babf9cf46204ed",
+      "bytes": 5074,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/task-01.txt",
+      "sha256": "2fca99cd0a9bc88cc6e487ade1743ba14f951d9af402629aadee0e9769bfdc62",
+      "bytes": 4071,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/turn-01.md",
+      "sha256": "6c11e1579f7a287d9c59ba3be66ee200927f66552f65eb41c7d83d4494da6f87",
+      "bytes": 4714,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "D07-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/D07-B/workspace-location.json",
+      "sha256": "12337b1c1dea1c623940e6d47eb246672cff202436ae8151ae78c54e22c342c6",
+      "bytes": 221,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actions-01.json",
+      "sha256": "df6e2a4648255c56f065790fe7489ef71427dad933c8051cd957d6098e48a42e",
+      "bytes": 10165,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-return-01.txt",
+      "sha256": "ef2c8d823fa092ea93d583a79987f06aed0e3bb1b11bcd3b243df422d50b902f",
+      "bytes": 3425,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/actual-spawn-return.json",
+      "sha256": "45f0df7dcd8aee9db155699758fe9bf30e8341516d3696b39c545c4c1fecd7fa",
+      "bytes": 50,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/dispatch-message-01.txt",
+      "sha256": "54ef136c10a015084aa0666d71c8f5ac0d74452d4f4c31c255c7387160d9efd7",
+      "bytes": 398,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/dispatcher-return-01.json",
+      "sha256": "026f096f48897be69754d9f5364ec7665f3266f5b6c0b704e6fe45c5459661b0",
+      "bytes": 522,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/input-01.json",
+      "sha256": "d5074659ffbf3e63d5e11f3291c9859d44ab394c3312f175596852e901284dc3",
+      "bytes": 1303,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/launch-metadata.json",
+      "sha256": "a17891dd47caa72738bcabfee4ddf60e4501901feb6030223c8feee155796fee",
+      "bytes": 1329,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/messages-01.json",
+      "sha256": "d1755fa6231e8c51a0c1d1aadd9e4fc649912c5addd70123e8930d5165d95581",
+      "bytes": 3914,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/task-01.txt",
+      "sha256": "5634684fa88b1496de493f490ff4a14a1edc0f4489030d48f240324823edf2e0",
+      "bytes": 4071,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/turn-01.md",
+      "sha256": "ef2c8d823fa092ea93d583a79987f06aed0e3bb1b11bcd3b243df422d50b902f",
+      "bytes": 3425,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-A/workspace-location.json",
+      "sha256": "8d4e8401bc80c0bf17203aa2d319135220d6793b38812c4a36cebf1c450072a7",
+      "bytes": 221,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actions-01.json",
+      "sha256": "208111722d2f383b29c45dc443f039da698fd312c47923c2df42d071a76c45d1",
+      "bytes": 13342,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-return-01.txt",
+      "sha256": "67b6d97e6181f4cadfe0aa4c111ff8e16f0667f385c1e3c6604f72156176177e",
+      "bytes": 3076,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/actual-spawn-return.json",
+      "sha256": "addc9e3fe5559cdc46c922726497f93f92f9b90b43b9a1547e19b1be74780a9b",
+      "bytes": 50,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/dispatch-message-01.txt",
+      "sha256": "50b8efc89972c1696a889e771707cb00f7d13e9b59a0c9fed0671cfc91a6bb6a",
+      "bytes": 398,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/dispatcher-return-01.json",
+      "sha256": "ab7f3297ea0c46758c2de38f7164e10d9922a4e858cc8bbb3257c7eccbdae909",
+      "bytes": 326,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/input-01.json",
+      "sha256": "d5074659ffbf3e63d5e11f3291c9859d44ab394c3312f175596852e901284dc3",
+      "bytes": 1303,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/launch-metadata.json",
+      "sha256": "661d48f57412eeff995edee6dd7d2c9c42c541c1d674577ab41631cac4418701",
+      "bytes": 1137,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/messages-01.json",
+      "sha256": "fc9926bd93177c27d67c238ea9fe77151da8ff0d0e6348647f5a4fa9367f872b",
+      "bytes": 3578,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/round7-reuse-record.json",
+      "sha256": "46053c6b000187f2c81cb7336a22d10e6b6a2d8746cc05225d69a079088886be",
+      "bytes": 10293,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/task-01.txt",
+      "sha256": "c4f0f058fb8e5cf149319626363a73b8dd914a317e6599f3df7122ca3d3bc141",
+      "bytes": 3415,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/turn-01.md",
+      "sha256": "67b6d97e6181f4cadfe0aa4c111ff8e16f0667f385c1e3c6604f72156176177e",
+      "bytes": 3076,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K02-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K02-B/workspace-location.json",
+      "sha256": "0cb980c2f735a8650dd4e0110d3c2435ea237796b91049776485327c7944c63a",
+      "bytes": 221,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actions-01.json",
+      "sha256": "70e44a1e90dd4868d2a5ab157ca8c3aec27a9286d1fd8da91efb6072a91dad2d",
+      "bytes": 10763,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actions-02.json",
+      "sha256": "41c4f697fadc2cfb0639689f3e6afb0c5611abb9273d5f18740afa00342fc656",
+      "bytes": 8146,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actions-03.json",
+      "sha256": "dbb0bdc6d260eefb06eea342a660e516522655d85d2991f20180b7622ec278f9",
+      "bytes": 10682,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-followup-return-02.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "bytes": 5,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-followup-return-03.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "bytes": 5,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-01.txt",
+      "sha256": "c57b868d83383ae64e07475e70435d1691684b8dfb5a179fc5dc3b2e8e6400d5",
+      "bytes": 1066,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-02.txt",
+      "sha256": "d77aa9e5856ca30cab514295816511422c1c0b13b278cb8464b9f065aab8e765",
+      "bytes": 3889,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-return-03.txt",
+      "sha256": "293b3d514a5f98bbfc8b8afdda8cbb030d8504823d6d47ffd818887b0bdd1cd0",
+      "bytes": 6147,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/actual-spawn-return.json",
+      "sha256": "91e23449686ee993d5506b76f96414abf98c5380b0daece6a7c2d95736ba6b0f",
+      "bytes": 50,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/dispatch-message-01.txt",
+      "sha256": "2797e93d30866cf4be8aa02edeecc792825e54debf909e41d224b08e38bc78c1",
+      "bytes": 398,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/dispatch-message-02.txt",
+      "sha256": "44902e06d9448b92cb9c90cccd02bb43948a81cb4a5740ab9a17ff882f33b5d7",
+      "bytes": 490,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/dispatch-message-03.txt",
+      "sha256": "e2075476dc804f4faf0ba597a4b35f05c005a557f64238298066a21b3fce4c17",
+      "bytes": 490,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/dispatcher-return-01.json",
+      "sha256": "fe7bb69c73923e01049d582549d853db7fc2195bf65793627e4565a4c17f2f2e",
+      "bytes": 522,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/dispatcher-return-02.json",
+      "sha256": "60f6528c78ed31794f4bcf9afa04a584a628e108ffa603c077a7713dbfa7946f",
+      "bytes": 522,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/dispatcher-return-03.json",
+      "sha256": "5d12aa3451266d196d49db3c5e5faf3e22d13a32b8d9c6f08d5f88d177b151f4",
+      "bytes": 522,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/host-harness-record-03.json",
+      "sha256": "e95887dd01d647dead7f80b4904c66f56a1e29fcd898c62e87e965bb0d383a5a",
+      "bytes": 585,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/host-input-record-02.json",
+      "sha256": "db1e7df9910daa486e7b63933c857de60dee121d9b47a92539ceb82f4e44c9dd",
+      "bytes": 1043,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/host-input-record-03.json",
+      "sha256": "5d60218ac376c1fda6a0c2c6bcf061453997aede4a85b3ebccfdcdb6343c3820",
+      "bytes": 834,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/host-source-records-01.json",
+      "sha256": "22150460306d8ff8b621a7277979909cc53a8345dede4d1389c322fe7c56573a",
+      "bytes": 2006,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/host-source-records-02.json",
+      "sha256": "4d1698122047f398de837e5fb0581c2fe61c4f7c1a1a1a4f81ffc4898a5349e5",
+      "bytes": 2707,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/host-source-records-03.json",
+      "sha256": "8a961a8c37cfe20b941bc8d2922438080f43e9b6225ecdf637d48b6770c45c33",
+      "bytes": 668,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/input-01.json",
+      "sha256": "542003cb717f55944be15d70912ba2c29ab7a8788b56ba6f0461b3db8090ffc8",
+      "bytes": 2374,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/input-02.json",
+      "sha256": "b747a2e7c61d565e4090cbca1b3193c95a26600e5b22eb21133941fef35e9310",
+      "bytes": 417,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/input-03.json",
+      "sha256": "cc6d117b2a2f8269a7653e993ee76825ec8830f792122ca48a88565c925a3f77",
+      "bytes": 208,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/launch-metadata.json",
+      "sha256": "c1432c8867df4b04f3e307b3a04f067bff0e12665bae683a683789fef5896df5",
+      "bytes": 1329,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/messages-01.json",
+      "sha256": "9c9956c8c613673bd0a7e286c9673dc4aee553d88ae2bb912caf035e0fe2b185",
+      "bytes": 1262,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/messages-02.json",
+      "sha256": "e39881069770a143c0773199c4acb5f2150382c58e7dda90af56a7845b3ac92a",
+      "bytes": 4514,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/messages-03.json",
+      "sha256": "ceea777658f6673c478be337a267f71feeb37323efe24ba49c2e93b9daa4a2ce",
+      "bytes": 6771,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/task-01.txt",
+      "sha256": "7503372932e4b48840761ff3fec67bec6f0ca5040572728f5086651a84777bd0",
+      "bytes": 4071,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/task-02.txt",
+      "sha256": "1fef9c683955a74ab0ba4cfe239b445966ee1ce692110989f30d829a21e9ad2b",
+      "bytes": 3887,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/task-03.txt",
+      "sha256": "5e87e198c22fa246a6032c78a3272102a31e70f53d07a48db4c22de24369a732",
+      "bytes": 3887,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/turn-01.md",
+      "sha256": "c57b868d83383ae64e07475e70435d1691684b8dfb5a179fc5dc3b2e8e6400d5",
+      "bytes": 1066,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/turn-02.md",
+      "sha256": "d77aa9e5856ca30cab514295816511422c1c0b13b278cb8464b9f065aab8e765",
+      "bytes": 3889,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/turn-03.md",
+      "sha256": "293b3d514a5f98bbfc8b8afdda8cbb030d8504823d6d47ffd818887b0bdd1cd0",
+      "bytes": 6147,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-A",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-A/workspace-location.json",
+      "sha256": "02eccd07235fcd435f1d8cbe073019c40284164d4654239afed53350469b6dad",
+      "bytes": 221,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actions-01.json",
+      "sha256": "7d90937399b4fd16033c093e5f2e534dddc57dfde1b271c0b35712c4d8c36d8d",
+      "bytes": 6098,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actions-02.json",
+      "sha256": "cef70ac506764b0d8c620570737fd68d969e9f75693e225e65486d19f00fe58a",
+      "bytes": 5762,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actions-03.json",
+      "sha256": "df07e737fec8fa980d55788a8e3a85373e067fe8ff59e3242e94afa829f72971",
+      "bytes": 4691,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-followup-return-02.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "bytes": 5,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-followup-return-03.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "bytes": 5,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-01.txt",
+      "sha256": "e648f5da79bfb9f00129a8a565922f9cbed901a4f309c1f0f0f13efd6684d6c2",
+      "bytes": 1032,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-02.txt",
+      "sha256": "76b1df2bb13ce900fdc22b14636bb1b0f2ad788e418351bb3c19c90229a92487",
+      "bytes": 2822,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-return-03.txt",
+      "sha256": "f4b9825b0707ac7d63af7504dc829bf0086021b730deca20d50c68a25fb05157",
+      "bytes": 4759,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/actual-spawn-return.json",
+      "sha256": "e563925d96df851aa055c06d7f1a6af9880f102a3593d77b0dc4d8969fda7e91",
+      "bytes": 50,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/dispatch-message-01.txt",
+      "sha256": "bc05036eda757149de268077a21edb59f63a6ff38d79c272d069242e22cd7ed9",
+      "bytes": 398,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/dispatch-message-02.txt",
+      "sha256": "64817615052f7c4e7e5bd904d95e3399922832253ed2335868575c605c4188d8",
+      "bytes": 490,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/dispatch-message-03.txt",
+      "sha256": "620038075b0ca4086799756756b4d69b6ac9bba03ba44ebc14b8cfa26bd173a9",
+      "bytes": 490,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/dispatcher-return-01.json",
+      "sha256": "5d903a4254525ecf2d95a857b65fa2ab2c7ea639a43a859e6a16069a50c02cb8",
+      "bytes": 326,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/dispatcher-return-02.json",
+      "sha256": "1ce1ee1cdcb2497683a477ef09f7719bf66664e1aa2df3d54e0d5977724bd4f3",
+      "bytes": 326,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/dispatcher-return-03.json",
+      "sha256": "516169c52a119be039253e40e596508962158b897aae342ed5062bdaa9dc96fb",
+      "bytes": 326,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/input-01.json",
+      "sha256": "542003cb717f55944be15d70912ba2c29ab7a8788b56ba6f0461b3db8090ffc8",
+      "bytes": 2374,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/input-02.json",
+      "sha256": "b747a2e7c61d565e4090cbca1b3193c95a26600e5b22eb21133941fef35e9310",
+      "bytes": 417,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/input-03.json",
+      "sha256": "cc6d117b2a2f8269a7653e993ee76825ec8830f792122ca48a88565c925a3f77",
+      "bytes": 208,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/launch-metadata.json",
+      "sha256": "c04bd688031c360ed452201a0235ce21049cafadccd94643d31c7607ca9f24c1",
+      "bytes": 1137,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/messages-01.json",
+      "sha256": "5daf771bc75d7efb7f64baf8f9716a627672a98ce93de3d80f31a91f722b8e3b",
+      "bytes": 1287,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/messages-02.json",
+      "sha256": "f04c550d51b7a1851247a02454f634cd3f7db616c504d2f05cdd8b647d86c396",
+      "bytes": 3159,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/messages-03.json",
+      "sha256": "ca3cae2b662016a27d16c354a8a318b7203c0c5371dd01f57c4afcef13cebc56",
+      "bytes": 5161,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/round7-reuse-record.json",
+      "sha256": "b7e345eedd6852c27cacbf8868e952d7ec118f3160df3d42911bd4276428f209",
+      "bytes": 24765,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/task-01.txt",
+      "sha256": "e5d569a8cb1fd684cb01b700cfa520b32db8d82c63588453505906ba643c047f",
+      "bytes": 3415,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/task-02.txt",
+      "sha256": "0993d5275ddfa575ae7e9c404f8f7f1ce9a650584812e7ed6d8485a6544191f6",
+      "bytes": 3231,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/task-03.txt",
+      "sha256": "b09b25d8c24822c1264e1ff29658a34698ae63847b70d6ec636b16a154526437",
+      "bytes": 3231,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/turn-01.md",
+      "sha256": "e648f5da79bfb9f00129a8a565922f9cbed901a4f309c1f0f0f13efd6684d6c2",
+      "bytes": 1032,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/turn-02.md",
+      "sha256": "76b1df2bb13ce900fdc22b14636bb1b0f2ad788e418351bb3c19c90229a92487",
+      "bytes": 2822,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/turn-03.md",
+      "sha256": "f4b9825b0707ac7d63af7504dc829bf0086021b730deca20d50c68a25fb05157",
+      "bytes": 4759,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    },
+    {
+      "case_arm": "K03-B",
+      "path": "<workspace>/outputs/skill-forge/v030-round7-executions/K03-B/workspace-location.json",
+      "sha256": "1a7704527c4e3c7a7cc01c9f29f307bfe16917e23422b84c98876192fc9889a5",
+      "bytes": 221,
+      "assigned_match": true,
+      "rawindex_match": true,
+      "independentindex_match": true
+    }
+  ],
+  "observed_model_host": {
+    "host": "Codex desktop",
+    "model": "inherited current model; no override",
+    "serving_model_build": "not exposed"
+  },
+  "missing_evidence": [
+    "Serving model identifier/build and runtime version not exposed; only Codex desktop/inherited current model/no override recorded.",
+    "Native OS/Claude integration untested; no inference from text-only tasks.",
+    "Exact initial source/harness-read calendar times missing in several actor records, disclosed locally; launch/ended coordinator timestamps retained.",
+    "Historical B K02/K03 loader/capture and timing differ prospectively from A: cached round6 actual outputs; domain input, capabilities and followups are exactly equal.",
+    "No behavioral execution capability in any assigned case; only planned checks and manual static inspection. This does not make required text behavior unavailable.",
+    "D07-B final messages differ from actual/turn output only by one trailing newline; substantive text exactly matches."
+  ],
+  "protocol": {
+    "all110_artifacts_match_both_indexes": true,
+    "all10_raw_actions_and_views_hash_match": true,
+    "all_case_inputs_capabilities_followups_equal": true,
+    "all_actual_ended_returns_match_turn_outputs": true,
+    "D07_B_visible_final_newline_only": true,
+    "no_domain_files_created": true,
+    "retry_evidence": "No retries in frozen run metadata; predetermined B K02/K03 reuse, not favorable picking.",
+    "administrative_limits": "Candidate7 owner continuation/run metadata supersedes only historical deadline/patch administrative prose; behavioral criteria unchanged. Fresh assigned ended returns 21:53:10\u201321:59:42Z precede current 22:24:47Z deadline; original B cache times retained.",
+    "global_suite_counts": "Not audited outside assigned cases. Execution-index top-level summary counts appear intermediate/stale; do not use them as completed suite counts."
+  },
+  "verdict": {
+    "kind": "partial_suite_only",
+    "A_cases_pass": 2,
+    "A_cases_total": 3,
+    "B_cases_pass": 0,
+    "B_cases_total": 3,
+    "A_conditions_pass": 10,
+    "A_conditions_total": 12,
+    "B_conditions_pass": 8,
+    "B_conditions_total": 12,
+    "automatic_adoption_eligible_from_this_packet": false,
+    "reason": "A K02-N1 and K02-N2 fail required fixed conditions; root must aggregate all84 per-arm conditions/21cases. No full-suite eligibility claim."
+  },
+  "criterion_validity_caveats": [
+    {
+      "criterion": "K02-N2",
+      "score_unchanged": "fail",
+      "design_limitation": "The fixed criterion requires particular Expected=8/Observed=6/Delta=-2 values that are absent from the actual K02 user input. The input supplies the general arithmetic contract, not this example. This exact-case omission establishes noncompliance with fixed evaluator text, not failure to preserve a user-supplied numerical example. No criterion relaxation, retest or source change is made.",
+      "A_conjunct_audit": {
+        "fixed_8_6_minus2_case": "fail: omitted; alternative 3/0/-3 example present",
+        "absent_observed_blank_and_delta_blank": "pass: B,2,, before target",
+        "differing_orders_manifest_order": "pass: manifest B,A,C; count sheet A,C,Extra; planned B,A,C output",
+        "excluded_price_nonactivation": "pass: price requests excluded in visible pre-target plan",
+        "planned_not_executed": "pass: explicitly planned and behavioral tests unexecuted",
+        "rules_carried_into_target": "pass"
+      },
+      "B_conjunct_audit": {
+        "fixed_8_6_minus2_case": "fail: omitted",
+        "pretarget_cases": "fail: visible complete target precedes manual check",
+        "blank_rule_in_finaltarget": "pass",
+        "ordering_rule_in_finaltarget": "pass",
+        "exclusion_rule_in_finaltarget": "pass",
+        "manual_check_truthfulness": "pass: labelled unexecuted"
+      }
+    }
+  ],
+  "primary_material_product_failure": {
+    "case_arm": "K02-A",
+    "condition": "K02-N1",
+    "finding": "Actual user supplied both list schemas and exact CSV header, but every visible pre-target message omits these exact contracts. This independently supports required-condition failure, apart from the undisclosed numerical exemplar limitation in N2."
+  },
+  "source_output_binding": {
+    "record_source_matches_frozen_source_tree": true,
+    "output_bytes_match_both_indexes": true,
+    "source_binding_limit": "Tree identity is bound by frozen metadata/index and source-read content hashes; grader did not decode or reconstruct frozen builder source trees."
+  },
+  "evidence_audit_errors": []
+}

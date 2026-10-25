@@ -3,7 +3,7 @@ name: skill-finder
 description: Find and assess existing skills, repositories and other primary resources as foundations for a refined skill brief. Use before implementation or for a targeted foundation review, not for unrelated web research or the skill's domain task.
 license: MIT
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Skill Finder

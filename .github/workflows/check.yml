@@ -2,15 +2,34 @@ name: Validate
 on: [push, pull_request]
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   check:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {os: ubuntu-latest, python: '3.9'}
+          - {os: ubuntu-latest, python: '3.13'}
+          - {os: windows-latest, python: '3.9'}
+          - {os: windows-latest, python: '3.13'}
+          # Python 3.9 is unavailable on setup-python's ARM macOS runners.
+          - {os: macos-15-intel, python: '3.9'}
+          - {os: macos-latest, python: '3.13'}
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: '1'
+      PYTHONIOENCODING: utf-8
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
         with:
-          python-version: '3.9'
-      - run: python3 -m unittest discover -s tests -v
-      - run: python3 skills/skill-forge/scripts/forge.py validate skills/skill-forge
-      - run: python3 skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --output portable/skill-forge-prompt.md --check
-      - run: python3 scripts/check_release.py
+          python-version: ${{ matrix.python }}
+      - name: Record actual runtime
+        run: python -c "import platform,sys; print(platform.platform()); print(platform.machine()); print(sys.version)"
+      - run: python -m unittest discover -s tests -v
+      - run: python skills/skill-forge/scripts/forge.py validate skills/skill-forge
+      - run: python skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --output portable/skill-forge-prompt.md --check
+      - run: python scripts/check_release.py

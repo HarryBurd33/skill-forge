@@ -1,0 +1,345 @@
+{
+  "created_utc": "2026-10-25T18:02:48.679111+00:00",
+  "method": "Retrospective native metadata corroboration only; no case/grade/criteria/model changes and no new actor execution",
+  "pair_settings": {
+    "D05": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ]
+    },
+    "D08": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "K02": {
+      "A": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ]
+    },
+    "L03": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "H01": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "D06": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "K03": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ]
+    },
+    "D02": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "D09": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "J01": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "H02": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ]
+    },
+    "D01": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ]
+    },
+    "L02": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "D03": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ]
+    },
+    "L01": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "H03": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "D07": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ]
+    },
+    "J02": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ]
+    },
+    "J03": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    },
+    "K01": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6.1-sol",
+          "ultra"
+        ]
+      ]
+    },
+    "D04": {
+      "A": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ],
+      "B": [
+        [
+          "gpt-6-astra",
+          "ultra"
+        ]
+      ]
+    }
+  },
+  "same_recorded_alias_and_effort_pairs": [
+    "D02",
+    "D04",
+    "D06",
+    "D08",
+    "D09",
+    "H01",
+    "H03",
+    "J01",
+    "J03",
+    "K02",
+    "L01",
+    "L02",
+    "L03"
+  ],
+  "different_recorded_alias_pairs": [
+    "D01",
+    "D03",
+    "D05",
+    "D07",
+    "H02",
+    "J02",
+    "K01",
+    "K03"
+  ],
+  "missing": [],
+  "original20_metric_same_settings_subset": {
+    "A": {
+      "pass": 11
+    },
+    "B": {
+      "fail": 5,
+      "pass": 6
+    }
+  },
+  "canonical_loader_same_settings_subset": {
+    "A": {
+      "pass": 4
+    },
+    "B": {
+      "fail": 1,
+      "pass": 3
+    }
+  },
+  "limitation": "Exact serving weight builds remain unknown; cache dates/loaders differ. Full frozen metric retained as descriptive. Same-settings subset is additional robustness evidence, not a changed gate or replacement score."
+}

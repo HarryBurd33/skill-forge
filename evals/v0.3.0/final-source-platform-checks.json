@@ -1,0 +1,78 @@
+{
+  "kind": "Actual hosted helper/package/temporary-install checks for frozen fifth source; not native LLM execution",
+  "checked_date": "2026-10-19",
+  "workflow_run": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465",
+  "commit": "4a9092b6064a387bcf7b6ad5fdd27f40d8e95551",
+  "skill_sha256": "18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb",
+  "jobs": [
+    {
+      "name": "check (ubuntu-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373483846"
+    },
+    {
+      "name": "check (windows-latest, 3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373484166"
+    },
+    {
+      "name": "check (ubuntu-latest, 3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373484171"
+    },
+    {
+      "name": "check (macos-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373484252"
+    },
+    {
+      "name": "check (windows-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373484289"
+    },
+    {
+      "name": "check (macos-15-intel, 3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373484361"
+    }
+  ],
+  "previous_runtime_record": "platform-checks.json",
+  "previous_source4_run": "https://github.com/HarryBurd33/skill-forge/actions/runs/39302710484",
+  "limitations": [
+    "Confirms frozen current skill source and packaging helpers; evidence/report-only follow-up commits need final-head CI separately.",
+    "Native Codex/Claude/model execution is separate from helper and filesystem tests."
+  ],
+  "runtime_observation_method": "Expanded Record actual runtime logs on the corresponding GitHub job pages, read through the signed-in browser on2026-10-20UTC. These are representative runtime samples from four of the six successful cells.",
+  "runtime_samples": [
+    {
+      "os": "Windows-10-10.0.26100-SP0",
+      "machine": "AMD64",
+      "python": "3.9.13",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373484166"
+    },
+    {
+      "os": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "python": "3.13.16",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373483846"
+    },
+    {
+      "os": "macOS-15.7.9-x86_64-i386-64bit",
+      "machine": "x86_64",
+      "python": "3.9.25",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373484361"
+    },
+    {
+      "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "python": "3.13.16",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465/job/118373484252"
+    }
+  ]
+}

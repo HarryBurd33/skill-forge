@@ -1,0 +1,59 @@
+{
+  "status": "Incomplete evaluation; source9 not adopted or released",
+  "candidate": 9,
+  "core_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+  "criteria_sha256": "ea5372555a6f58f2e7bd6fcc707a40847a5221bea2eabf2d069413a63cf2cea3",
+  "evaluator_sha256": "a1e872b502f45c72e10d9ab692fc4f198c1394a14e27d1a9255a6a1f9d78f02b",
+  "qualified_cases": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "H01",
+    "H02",
+    "H03",
+    "J01",
+    "J02",
+    "J03",
+    "K01",
+    "K02",
+    "K03",
+    "L01",
+    "L02"
+  ],
+  "candidate_required_conditions_passed": 80,
+  "case_counts": {
+    "A": {
+      "pass": 20
+    },
+    "B": {
+      "fail": 15,
+      "pass": 5
+    }
+  },
+  "missing_cases": [
+    "L03"
+  ],
+  "condition_counts": {
+    "A": {
+      "pass": 80
+    },
+    "B": {
+      "pass": 58,
+      "fail": 22
+    }
+  },
+  "required_conditions_total": 84,
+  "actor_replays": 0,
+  "excluded_scope_invalid_review": "Original G00 review remains uncredited; same ended pair underwent clean scoped review",
+  "remaining": "Unfinished original cases/reviews and activation, additive control scenarios, contents navigation, final gates/install/release",
+  "full_benefit_claim": false,
+  "D05_timing": "Recorded domain work met effort cutoff; independently timed finaldelivery unavailable and not claimed",
+  "historical_current_aliases": "final-grades/model-executions-final still refer to rejected candidate8; preserved until finalsource9 export",
+  "no_unexecuted_heldout_contents_selected": true
+}

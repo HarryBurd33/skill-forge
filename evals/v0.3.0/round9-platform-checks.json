@@ -1,0 +1,447 @@
+{
+  "checked_at_utc": "2026-10-25 16:38:25 UTC",
+  "head": "08fde55b9293d0fab95e3ad7b329fd502f8be937",
+  "runs": [
+    {
+      "id": 40211277940,
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/40211277940",
+      "head": "08fde55b9293d0fab95e3ad7b329fd502f8be937",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "completed": "2026-10-25T16:22:48Z"
+    },
+    {
+      "id": 40211274980,
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/40211274980",
+      "head": "08fde55b9293d0fab95e3ad7b329fd502f8be937",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "push",
+      "completed": "2026-10-25T16:22:28Z"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 121222817218,
+      "name": "check (macos-15-intel, 3.9)",
+      "runner": "GitHub Actions 1000001276",
+      "labels": [
+        "macos-15-intel"
+      ],
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-25T16:21:26Z",
+      "completed_at": "2026-10-25T16:22:14Z",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/40211274980/job/121222817218",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record actual runtime",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py validate skills/skill-forge",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --output portable/skill-forge-prompt.md --check",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python scripts/check_release.py",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 121222817395,
+      "name": "check (windows-latest, 3.13)",
+      "runner": "GitHub Actions 1000001277",
+      "labels": [
+        "windows-latest"
+      ],
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-25T16:21:25Z",
+      "completed_at": "2026-10-25T16:21:45Z",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/40211274980/job/121222817395",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record actual runtime",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py validate skills/skill-forge",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --output portable/skill-forge-prompt.md --check",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python scripts/check_release.py",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 121222817412,
+      "name": "check (ubuntu-latest, 3.9)",
+      "runner": "GitHub Actions 1000001279",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-25T16:21:24Z",
+      "completed_at": "2026-10-25T16:21:36Z",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/40211274980/job/121222817412",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record actual runtime",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py validate skills/skill-forge",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --output portable/skill-forge-prompt.md --check",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python scripts/check_release.py",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 121222817413,
+      "name": "check (ubuntu-latest, 3.13)",
+      "runner": "GitHub Actions 1000001280",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-25T16:21:24Z",
+      "completed_at": "2026-10-25T16:21:32Z",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/40211274980/job/121222817413",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record actual runtime",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py validate skills/skill-forge",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --output portable/skill-forge-prompt.md --check",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python scripts/check_release.py",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 121222817425,
+      "name": "check (windows-latest, 3.9)",
+      "runner": "GitHub Actions 1000001278",
+      "labels": [
+        "windows-latest"
+      ],
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-25T16:21:25Z",
+      "completed_at": "2026-10-25T16:22:28Z",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/40211274980/job/121222817425",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record actual runtime",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py validate skills/skill-forge",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --output portable/skill-forge-prompt.md --check",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python scripts/check_release.py",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 121222817576,
+      "name": "check (macos-latest, 3.13)",
+      "runner": "GitHub Actions 1000001281",
+      "labels": [
+        "macos-latest"
+      ],
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-25T16:21:24Z",
+      "completed_at": "2026-10-25T16:21:32Z",
+      "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/40211274980/job/121222817576",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record actual runtime",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py validate skills/skill-forge",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --output portable/skill-forge-prompt.md --check",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python scripts/check_release.py",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7.0.0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7.0.1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "scope": "Actual hosted helper/static/packaging/clean-install checks; does not establish native LLM behavior or parity."
+}

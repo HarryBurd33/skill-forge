@@ -1,0 +1,125 @@
+# Skill Forge v0.3.0 validation
+
+The required original evaluation and supplemental acceptance checks passed. The behavior update was adopted automatically, followed by a separate navigation-only update. The personal installation, canonical skill and staged public skill have the same final SHA-256: **86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608**. Release publication and downloadable-asset verification are recorded in the closing handoff and GitHub release; this report does not substitute a prepared package for a published release.
+
+| Executed check | Candidate | Baseline / boundary |
+| --- | --- | --- |
+| Original fixed scenarios | 21/21 pass; 84/84 required conditions | Stable 0.2.0: 5/21 cases; 61/84 conditions |
+| Original new-feature metric | 20/20 | Baseline 10/20; predefined delta +10 |
+| Canonical-loader subset | 7 satisfied new conditions | Baseline 3; delta +4 |
+| Baseline-passing regressions | No loss | Every required candidate condition still passes |
+| Separate description-only activation | 6/6 for each description | One combined context; native discovery is separate |
+| Supplemental controls | 15/15 items; S01/S02/S03 each rubric score 2 | Separate Sol/Medium run, no replacement of original gates |
+| Navigation | Four fixed checks pass; links 0→5 | Existing instruction bytes preserved after removing added contents block |
+| Rollback / managed copies | Two-gate rollback, upgrade/downgrade/restore, customization refusal pass | Temporary identical artifacts; no actor replay |
+| Native Codex smoke | CLI 0.164.0, Sol/Medium, read-only; installed body injected, plan then draft | Parent static inspection; no Claude or universal-model claim |
+
+## Evidence and source identity
+
+- [Original grades](final-grades.json), [42 actual execution records](model-executions-final.json), [activation capture](activation-execution-final.json), and [frozen sources](source-freezes.json).
+- [Supplemental report](supplemental/REPORT.md), [criteria](supplemental/cases.json), [grades](supplemental/grades.json), [audits](supplemental/evidence-audit.json), and [actual outputs](supplemental/executions.json).
+- [Navigation criteria](navigation/criteria.json), [fixed evaluator](navigation/evaluator.py), [baseline](navigation/baseline-result.json) and [candidate result](navigation/candidate-result.json).
+- [Adoption, rollback and local equality](adoption.json), [native final-source smoke](native-final-smoke.json), [hosted helper checks](round9-platform-checks.json), and [public-download first use](round9-public-first-use.json).
+
+Behavioral trials used immutable source9, hash323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab. Final source10 adds only the five-link contents block to the long helper reference. The fixed structural evaluator verified that removing this block restores every original reference byte, every other core file is unchanged, and the regenerated prompt differs only by navigation and its generated digest. It passed format, relative links and four temporary installation paths. This is structural evidence, not a claim that source10 repeated every model trial.
+
+## Models, comparability and limitations
+
+Native metadata recovered recorded model/effort settings. Thirteen pairs share recorded aliases/effort; eight prospectively selected historical cached pairs differ. The full frozen descriptive metric is retained without claiming a fully controlled causal comparison. In the [matching-settings robustness subset](model-comparability.json), original-feature observations are11candidate passes versus6baseline passes; its canonical-loader subset is4versus3. Exact serving-weight builds and universal performance remain unknown. Cache dates and some loader details differ.
+
+Original actors and reviewers retained their recorded settings; no completed actor was replayed. Supplemental actors/reviewer used Sol/Medium under a separately declared prospective protocol. One unfinished S02 turn was aborted and later resumed in the same context; completed turns were not replayed. The portable S03 context loaded the self-contained bundle without domain tools.
+
+The scope-invalid original K02 review remains uncredited; its same ended pair received a clean scoped review. The L03 reviewer disclosed an unrelated orchestration-metadata summary, with no other-case responses, prior conclusions or builder source bodies read. J03-B native escaped JSON is valid while its actor-saved representation contains literal control characters; both remain preserved and the independent grade identifies which evidence supports each condition. D05 recorded domain work met its effort window; independently timestamped final delivery inside the cutoff was not established. Supplemental S01 has a terminal-newline bookkeeping discrepancy and S03 a repaired evidence-write syntax error; their actual final/ended texts were verified exact. These limits are retained, not rewritten as flawless capture.
+
+Local helper tests recorded27passes and1Windows-only skip. Six hosted jobs executed Windows/Linux Python3.9/3.13, IntelMac3.9 and ARMMac3.13 helper/package checks; final publication CI is linked from the release. These are filesystem/helper results. The native smoke verified actual installed-skill injection and conditional resource reads, visible checks before the standalone draft, and no domain writes. Native Claude, native Windows/Linux model execution, other model families and a human usability study remain unverified. All generated-skill behavioral checks claimed as unexecuted by tool-free actors remain unexecuted.
+
+<details>
+<summary>Historical rejected-candidate reports and their then-current limitations</summary>
+
+
+# v0.3.0 evaluation report
+
+Status: candidate 8 was **actually rejected** by the unchanged local update helper on 2026-10-22 at 04:40:59 UTC. It is not adopted, installed or released. Stable v0.2.0 remains active on main and in the personal installation. Candidates 6 and 7 also remain rejected with their historical results preserved.
+
+## Fixed comparison
+
+Candidate 6 used 18 paired builder cases and 72 required conditions per arm, plus six separate description-only activation probes. Candidate 7 preserved these checks and added three independently frozen L cases: 21 pairs / 84 conditions per arm. Its separate activation probe was not executed. Inputs, expected behavior, failure conditions and the evaluator were frozen before execution. All original 48 conditions remain required; independently authored J and K cases add 12 conditions each. K was frozen before candidate 6 and was unseen by its implementation author. All required checks, question budgets and relevant regressions must pass, with no loss on a baseline-passing regression.
+
+Only the original 20 new-feature conditions determine the predefined benefit: at least one additional satisfied condition against stable v0.2.0. J/K additions cannot inflate that metric. A positive result on the comparable canonical-first D01/D02/H03 subset is also required. Formatting and narrated success cannot satisfy behavioral conditions.
+
+All 18 candidate arms, the three K baseline arms and the replacement D05 baseline arm are fresh: 22 fresh records and 14 predetermined baseline caches. Initially all 15 original baseline records were selected prospectively regardless of score; the registered entire-pair D05 interruption retry replaced that one cached counterpart before new output. Cached records retain their actual original dates, loading methods and limitations. Fresh actors receive one source, the current scripted turn and its allowed capabilities; future corrections and grading answers are withheld. The executor and grader work separately. User-visible plan messages are recorded in order, separately from generated files.
+
+## Revision history
+
+| Candidate | Source tree SHA-256 | Actual outcome |
+| --- | --- | --- |
+| 1 | `3fbcb24e5f81d9c622d41a33c514fa29f9adeb45d6f7e5a03da02c1c8db475cf` | Rejected: visible pre-build plan/check failures in D01/D02 and a missing corrected-output check in D04. |
+| 2 | `75df8b714e5804f5f2f1ef2148efa67dea437870e39edcf3ee63d464e288aef7` | Rejected: incomplete implementation sequence in D01 and missing manual-save/resume handoff in D02. |
+| 3 | `7c7a0467e500321a4d872e199317a69eec1dba7890c677b6465d03db9e169990` | Rejected: parent constructed the skill while both children only evaluated; D05 construction-role check failed. |
+| 4 | `3735ddcdc3aebe6be3a0dca442a0147cdc789860f66d1577a048e94b5b4221a0` | Rejected: D06 reopened delivery discovery and returned no prior/candidate text pair or replacement. 26/28 observed conditions passed across seven cases; incomplete coverage did not authorize adoption. |
+| 5 | `18ee2424eaffd4aad52145fe0dc35452b6b03713980a87b20aa2b8d59bf696cb` | Rejected: 58/60 conditions and 14/15 cases passed. J03 omitted material requirements from the visible preview and a settled correction from the resume handoff; J03-R2 was a baseline-passing regression loss. |
+| 6 | `b644adc2f9984dd210066a7a0410b120a68d284f7d723c86f0e7a253e436d6ee` | Rejected: 70/72 conditions and 15/18 cases passed. K02 omitted pre-build checks; K03 omitted an independent resource-contract check; D07 exceeded the zero-question budget after its draft. |
+| 7 | `8557ea0c92c2d2e1ba1978d31655cfeb5152d190a8420e4579d92ebb786f8f2e` | Rejected after a required K02-N1 failure. Only three pairs were independently graded; this is an incomplete suite, not a 10/84 performance estimate. |
+| 8 | `36706d8fddada6c9f3b2675b0add9b6038d6592eca516a7e1f493f191bec198d` | Rejected after a required K02-N2 failure. One pair independently graded: A 3/4, B 2/4. Exact schemas/header and supplied arithmetic example passed; coverage of exclusion/order contrasts did not. |
+
+Candidate 5 passed every original condition (48/48 against baseline 36/48) and all original new-feature conditions (20/20 against 10/20). The additional heldouts still prevented adoption: its ten-condition benefit did not excuse a required failure or regression. The helper actually rejected the candidate and preserved the prior active version. This is a narrow fixture comparison, not a statistical or universal-model claim.
+
+## Candidate6 completed evidence
+
+All18 pairs completed:22fresh records/14preselected baseline caches. Candidate6 passed70/72 conditions, all40 regression conditions, and15/18 case gates. Baseline had51passes,17failures and4unavailable conditions; only2case gates were eligible passes, with6other cases inconclusive/unavailable because historical capture was insufficient. Its missing checks were not imputed passes or failures. Original new-feature counts were20passes for candidate versus10observed baseline passes,6failures and4unavailable; the frozen full benefit comparison therefore remained inconclusive. The separate description-only probe matched6/6 activation decisions in each arm.
+
+The unchanged helper actually rejected candidate6 on K02 and preserved stable0.2. K03's clean grade was transparently corrected from pass to fail for both arms after evidence clarification under the same criterion. A prior grader's source-read exposure made its preliminary batch03 findings uncredited; a registered fresh source-blind grader assessed the same ended actors without replay. Exact raw hashes, corrected grades and limitations are in [candidate6 grades](round6-grades.json), [executions](model-executions-round6.json), and [activation execution](activation-execution-round6.json).
+
+Candidate7 preserves all72 prior conditions and adds12 independent L conditions frozen before its patch. All21 candidate cases were planned fresh; fourteen original baseline captures and all three new L baselines are prospectively fresh. A metadata-only capture audit replaced every cached record lacking an exact ended return before any new baseline dispatch; all results are selected regardless of score. Four complete-capture baseline records remain fixed. The38fresh plus4cached records retain the same inputs and checks. The evaluator, original20-only benefit metric, question budgets and failure conditions are unchanged. The actual stopped outcome follows.
+
+## Candidate 7 stopped result
+
+18 of 42 planned records completed: 14 fresh executions and four preselected complete-capture baseline caches. New dispatch stopped after an independently confirmed required failure; 24 fresh arms and the separate activation probe were not executed. Already running D01-B finished before the checkpoint. Completed responses were not replayed to seek a pass.
+
+A source-blind independent grader audited D07, K02 and K03. Candidate A passed 10 of their 12 conditions and two of their three case gates; baseline B passed eight conditions and none of the three gates. All seven regression conditions in these three cases passed for each arm. The 110 selected artifact hashes/sizes, 40 original reused artifacts and ten frozen source-blind action views were audited with zero errors. These limited results do not establish the full original 20-condition benefit metric.
+
+**Valid behavioral failure, K02-A-N1:** the visible plan before the target file omitted the manifest input columns `Item,Expected`, count-sheet columns `Item,Observed` and exact CSV header `Item,Expected,Observed,Delta`. These details appeared inside the completed skill. Correct finished contents cannot retroactively supply the missing pre-build preview.
+
+**Separate test-design flaw, K02-N2:** the frozen criterion demanded Expected=8, Observed=6, Delta=-2, but the actual user input supplied no numerical example. The fixed score is preserved rather than relaxed after observing output; the omitted undisclosed numbers do not establish failure to preserve a supplied example. Other candidate N2 conjuncts (order, absence and explicit-zero behavior) passed. N1 independently justifies rejection. A future evaluation must prospectively align the input and expected check and rerun the comparable baseline; it must not teach the builder hidden fixture numbers.
+
+Across all 84 conditions per arm, A has 10 pass / 2 fail / 24 executed but independently ungraded / 48 unexecuted; B has 8 pass / 4 fail / 24 independently ungraded / 48 unexecuted. The latter categories are inconclusive/unavailable, never passes. Fresh L cases remain unexecuted. The full benefit comparison is inconclusive. The unchanged helper actually rejected source 7 and preserved stable 0.2.0; its previous version and rejected candidate snapshot remain available locally. No further source candidate was authorized in this bounded run.
+
+See [candidate 7 partial grades](round7-grades.json), [candidate 7 selected executions](model-executions-round7.json), [candidate 7 activation status](activation-execution-round7.json), [independent focus audit](candidate7-focus-audit.json), and [actual rejection](candidate7-rejection.json). Broader claims still require the remaining cases, activation, independent grading and relevant native/host checks. This report does not claim a completed release.
+
+## Candidate 8: prospective input correction and stopped result
+
+Before patching or executing source 8, K02's input was prospectively corrected to supply the Expected=8 / Observed=6 / Delta=-2 acceptance example its unchanged criterion already required. No expected condition, evaluator rule, question budget, failure condition or benefit metric changed. Both K02 arms ran fresh under this exact input and matching capabilities. Candidate 7 was not rescored. Known K cases are development/regression evidence; the independently frozen, unexecuted L cases remain separate from source authoring. [Exact input amendment](candidate8-input-amendment.json).
+
+Independent pre-build review approved a narrow three-file authoring patch: carry supplied fields, order and exact output formats into the visible plan and compare it with settled context before building. The portable prompt was regenerated. This review and static checks did not establish a behavioral pass.
+
+The neutral execution plan retained all eight complete baseline captures with unchanged inputs, regardless of score, and planned 34 fresh arms (21 candidate / 13 baseline), for 42 records. The first corrected K02 pair was independently graded before broader execution. Candidate A passed R1, R2 and N1; N2 failed. Baseline B passed R1/R2 and failed N1/N2. Both case gates fail; both use zero questions and zero approval turns. A now names the exact schemas/header before the target and preserves the supplied arithmetic example as an unexecuted planned check.
+
+**Required failure K02-A-N2:** its visible verification list gives no excluded-price request with an expected non-activation decision. Its order example names manifest order B,A and an extra count-sheet item C, but does not specify a different count-sheet order; it therefore cannot distinguish a wrong implementation following that second list. The finished skill states the correct rules. Those rules do not complete a missing pre-build check. Both checks follow from the supplied requirements; this is separate from candidate 7's undisclosed numeric-example flaw.
+
+New dispatch stopped immediately. K03-A's already-launched first turn ended and was preserved; turns 2/3 were never staged. Ten records are complete (two fresh / eight caches), one case is partial, 31 fresh arms and activation are unexecuted. All actors ended, with no post-stop dispatch and no ordinary behavior retry. Only K02's four conditions per arm were independently graded. Across 84 conditions: A has 3 pass / 1 fail / 4 partial-but-ungraded / 76 unexecuted; B has 2 pass / 2 fail / 32 captured-but-ungraded / 48 unexecuted. Unknowns are not passes. No full-suite benefit or broader improvement is claimed.
+
+The independent judge verified all 22 selected raw artifacts against both frozen indices, both derived views/global view index, exact ended returns, message order and corrected-input binding. Source bodies were omitted only from derived action views; raw evidence remained intact. An immutable, already hash-bound source-metadata snapshot closed a live timestamp-regeneration diagnostic. Identity mapping was visible in metadata, so the grader was independent and source-body blind, with imperfect identity blindness. The coordinator separately verified 233 indexed raw files and unchanged source snapshots/origins with zero errors. [Independent grade](candidate8-focus-grades.json), [audit](candidate8-focus-audit.json).
+
+The actual helper rejected source 8, preserving stable 0.2 and a candidate snapshot. No further source revision was authorized in this bounded run. [Actual rejection](candidate8-rejection.json), [stopped grades](round8-grades.json), [complete selected execution records](model-executions-round8.json), [activation not executed](activation-execution-round8.json). The partial K03 diagnostic remains locally preserved and is not exported as a complete case. The [design diagnosis](candidate8-design-diagnosis.md) proposes a future structural hypothesis, not an accepted lesson or a tested improvement.
+
+## Protocol and evidence
+
+[Administrative and protocol amendments](evaluation-amendments.json) record owner-authorized effort extensions, actual quota interruptions, baseline reuse and prospectively selected retries. They do not relax original acceptance checks or change the evaluator. Candidate 4's first D05 pair was diagnostic because a child read an extra guide. Candidate 5's first pair lacked full plaintext child task/return capture. Their entire replacement pairs were registered before output and retained regardless of outcome. No ordinary behavior failure was retried to seek a passing answer.
+
+Candidate 6's first D05 attempt stopped at a real usage limit before a response or child return; its fixed five-minute window expired during the wait. Original tasks and partial workspace were retained. One entire fresh pair was registered before any new output, with the same source, input, capabilities, checks and five-minute/two-child bounds. Completed J03 evidence was retained without replay. Quota waits use the owner's existing authorization and are excluded from active effort; new control timestamps are actual, never backdated.
+
+These are actual isolated model responses/actions for intentionally public fictional inputs. Execution exports include exact inputs, visible response order, tasks/returns and selected artifacts with distinct raw and path-aliased publication hashes. Private user sessions, credentials and native diagnostic streams are excluded. Independent raw-artifact auditing and release privacy review are separate from behavioral grading. Earlier evidence remains available beside this report.
+
+The inherited Codex model is retained without override; its exact serving identifier/build is not exposed. Coded arms are imperfectly blind because content and source metadata can reveal identity. Cached baselines introduce timing and, for some older arms, full-export versus conditional-resource loading differences; these limits are disclosed. No-tools cases exercise builder behavior but cannot execute the generated skill's domain workflow. D05 separately requires actual construction and fixture checks. Description-only activation is distinct from native skill discovery.
+
+## Helpers and host limits
+
+[Local helper and package evidence](helper-checks.json) includes 28 helper tests (27 passed and one Windows-only skip locally), portable generation/drift checks, packaged relative links and four temporary personal/project Codex/Claude installation paths. Candidate 6's and candidate 8's prepared archives were extracted and compared with their frozen sources. Its helper code is byte-identical to the code actually tested on Python 3.15.0 / macOS 14.6 ARM. These are script/filesystem results, not native model execution.
+
+[Candidate 9 hosted platform checks](round9-platform-checks.json) passed six jobs at `08fde55b9293d0fab95e3ad7b329fd502f8be937`: Windows and Ubuntu with Python 3.9/3.13, Intel macOS with 3.9, and ARM macOS with 3.13. Unit tests, format, portable drift and package/temporary-install checks all passed. [Public-download first use](round9-public-first-use.json) passed the README commands and four temporary installations from that immutable public source archive; all185selected files matched the verified publication tree. These do not establish a native model run or a final release-asset check. [Older platform evidence](final-source-platform-checks.json) and exact runtime samples still identify source5 and are preserved.
+
+The historical [native Codex smoke](native-codex-smoke.json), using CLI 0.163.0-alpha.10.2 on macOS ARM with exact candidate-4 source, verified project discovery, a visible plan, a draft and metadata. Its reviewer claim lacks a captured launch/return and receives **no independent-review credit**. Exact final-source native Codex execution, native Claude execution, native Windows/Linux model runs and equivalent performance across other LLMs remain unverified.
+
+Before release, final model grades must satisfy every gate; automatic adoption, managed personal-copy equality, exact public file selection, final-head CI, release asset hashes and clean public-download first use must be verified. Missing or inconclusive evidence keeps the prior version active. This rejected-candidate report is not a passing release report.
+
+</details>

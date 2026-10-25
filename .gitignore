@@ -10,3 +10,4 @@ sessions/
 transcripts/
 *.local.json
 dist/
+.checkpoint/

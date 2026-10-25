@@ -1,0 +1,71 @@
+{
+  "behavior": {
+    "round": 1,
+    "time": "2026-10-25T19:23:18.126784+00:00",
+    "candidate_hash": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+    "status": "adopted",
+    "reason": "All frozen checks passed and predefined benefit was demonstrated",
+    "benefit_delta": 10,
+    "validation": {
+      "status": "pass",
+      "name": "skill-forge",
+      "files": 20,
+      "relative_links": 16,
+      "questions": 11,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+    },
+    "run": "<workspace>/.skill-forge-private/run-507f78d3af9f",
+    "candidate_preserved": "<workspace>/.skill-forge-private/run-507f78d3af9f/candidates/01/skill",
+    "evidence_limit": "Supplied execution records were checked; authenticity and evaluator quality require independent review."
+  },
+  "navigation": {
+    "round": 1,
+    "time": "2026-10-25T19:24:22.092587+00:00",
+    "candidate_hash": "86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608",
+    "status": "adopted",
+    "reason": "All frozen checks passed and predefined benefit was demonstrated",
+    "benefit_delta": 5,
+    "validation": {
+      "status": "pass",
+      "name": "skill-forge",
+      "files": 20,
+      "relative_links": 16,
+      "questions": 11,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."
+    },
+    "run": "<workspace>/.skill-forge-private/run-a3deb2a3eb1a",
+    "candidate_preserved": "<workspace>/.skill-forge-private/run-a3deb2a3eb1a/candidates/01/skill",
+    "evidence_limit": "Supplied execution records were checked; authenticity and evaluator quality require independent review."
+  },
+  "final_source": {
+    "global_candidate": 10,
+    "kind": "structural_navigation_only",
+    "baseline": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+    "final_source_hash": "86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608",
+    "source_run": "<workspace>/.skill-forge-private/run-a3deb2a3eb1a",
+    "behavior_evidence": "Frozen9 full21/84pass + activation6/6each + supplemental15/15, unchanged instructions demonstrated by NAV-2",
+    "checks": {
+      "NAV-1": "pass",
+      "NAV-2": "pass",
+      "NAV-3": "pass",
+      "NAV-4": "pass"
+    },
+    "links_before": 0,
+    "links_after": 5,
+    "portable_sha256": "938c4e3add45817f111d52b5a5561c3f5895349f2c4e3918b9a9913dc3ffe1d7"
+  },
+  "rollback_upgrade": {
+    "kind": "actual_deterministic_operations_on_identical_tested_artifacts",
+    "actor_replays": 0,
+    "final_hash": "86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608",
+    "harness_correction": "Initial managed-install fixture pointed at snapshot folder named baseline; validator correctly rejected name mismatch. Repeated with baseline/skill-forge; no source/check changes.",
+    "two_gate_rollback": "pass; final→behavioral9→stable0.2",
+    "managed_upgrade_downgrade_restore": "pass",
+    "customization_preserved": "pass"
+  },
+  "local_equality": {
+    "canonical": "86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608",
+    "publication": "86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608",
+    "personal": "86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608"
+  }
+}

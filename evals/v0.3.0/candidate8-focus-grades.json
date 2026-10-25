@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "grader": "G00",
+  "created_at_utc": "2026-10-22T04:39:31.671058+00:00",
+  "case_results": [
+    {
+      "case": "K02",
+      "coded_arm": "A",
+      "conditions": [
+        {
+          "id": "K02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 12,
+              "quote": "Plan: draft one local `component-count-delta/SKILL.md` for board-game component comparisons. Inputs are a manifest with `Item,Expected` and a count sheet with `Item,Observed`. Match names exactly; output only manifest items in manifest order, with header `Item,Expected,Observed,Delta`. Missing counts stay blank; supplied zero remains zero. Compute Delta only when both counts exist. Exclude prices, replacement purchases and authenticity judgments; never invent counts.\n\nI\u2019ll author the instructions, review them against these checks, then deliver the text:\n\n- Expected=8, Observed=6 \u2192 Delta=-2.\n- Expected=8, Observed absent \u2192 Observed and Delta blank; Observed=0 \u2192 Delta=-8.\n- Expected absent, Observed=6 \u2192 Expected and Delta blank.\n- Manifest order B,A with an extra count-sheet item C \u2192 rows B,A only; differently spelled names remain unmatched.\n\nThe draft has no scripts, resources or dependencies and uses only supplied lists. Proposed default: clarify conflicting duplicates or nonnumeric counts. External foundation research, independent review, behavioral execution and comparison with the original request as a direct-prompt baseline are unavailable.\n\nSave this complete text as `component-count-delta/SKILL.md`:",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/messages-01.json",
+              "line_start": 3,
+              "line_end": 8,
+              "quote": "    \"channel\": \"commentary\",\n    \"text\": \"I\u2019m using Skill Forge to prepare the draft. I\u2019ll keep it to one saveable `SKILL.md`; research, execution, delegated review and saving are unavailable under the stated capabilities.\"\n  },\n  {\n    \"channel\": \"final\",\n    \"text\": \"Plan: draft one local `component-count-delta/SKILL.md` for board-game component comparisons. Inputs are a manifest with `Item,Expected` and a count sheet with `Item,Observed`. Match names exactly; output only manifest items in manifest order, with header `Item,Expected,Observed,Delta`. Missing counts stay blank; supplied zero remains zero. Compute Delta only when both counts exist. Exclude prices, replacement purchases and authenticity judgments; never invent counts.\\n\\nI\u2019ll author the instructions, review them against these checks, then deliver the text:\\n\\n- Expected=8, Observed=6 \u2192 Delta=-2.\\n- Expected=8, Observed absent \u2192 Observed and Delta blank; Observed=0 \u2192 Delta=-8.\\n- Expected absent, Observed=6 \u2192 Expected and Delta blank.\\n- Manifest order B,A with an extra count-sheet item C \u2192 rows B,A only; differently spelled names remain unmatched.\\n\\nThe draft has no scripts, resources or dependencies and uses only supplied lists. Proposed default: clarify conflicting duplicates or nonnumeric counts. External foundation research, independent review, behavioral execution and comparison with the original request as a direct-prompt baseline are unavailable.\\n\\nSave this complete text as `component-count-delta/SKILL.md`:\\n\\n```markdown\\n---\\nname: component-count-delta\\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected fields and a count sheet with Item and Observed fields. Use for exact-name count comparisons. Do not use for prices, replacement purchases or authenticity judgments.\\n---\\n\\n# Component count delta\\n\\nCompare only the two user-supplied lists. Never invent counts or infer them from game knowledge.\\n\\n1. Identify the manifest fields Item and Expected and the count-sheet fields Item and Observed. If a list is missing, request it. If conflicting duplicate count-sheet entries or nonnumeric counts prevent a clear comparison, request only the needed clarification. Blank counts are allowed.\\n2. Process every manifest row in its original order. Match Item names exactly, including case, punctuation and whitespace. Do not normalize names or use fuzzy matching. Ignore count-sheet items absent from the manifest.\\n3. Copy each manifest row's Expected count, leaving it blank when absent. Copy Observed from the exact matching count-sheet entry, leaving it blank when the entry or count is absent. Preserve supplied zero as zero.\\n4. Calculate Delta as Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank.\\n5. Return CSV only, without a Markdown fence or explanation. Use this exact header and column order:\\n   Item,Expected,Observed,Delta\\n\\nUse an empty CSV field for each missing value. Every row must contain four fields. Quote fields containing commas, double quotes or line breaks; escape a double quote by doubling it. Preserve Item names exactly.\\n\\nExample: a manifest item Tokens with Expected=8 and matching Observed=6 produces:\\n\\nItem,Expected,Observed,Delta\\nTokens,8,6,-2\\n```\\n\\nTry: \u201cCompare this board-game manifest with my component count sheet.\u201d\\n\\nValidation: I reviewed the metadata and instructions against the checks above; no behavioral tests ran.\\n\\nResume handoff: exact matching, manifest-only ordering, the four CSV columns, blank missing counts and local single-file delivery are settled. The clarification default is provisional. You must save the text; optional next checks are running the listed cases and comparing with the direct-prompt baseline. If research becomes useful on a capable host, inspect primary CSV guidance or existing count-comparison skills for fit and reuse rights, while preserving this contract.\"",
+              "verified_exact": true
+            }
+          ],
+          "reason": "No user design question or approval request. Compact preparation/check list precedes complete authorized draft in the same final response. Optional future research is not a delivery dependency; no interview or research detour blocks use."
+        },
+        {
+          "id": "K02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 12,
+              "line_end": 36,
+              "quote": "Save this complete text as `component-count-delta/SKILL.md`:\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected fields and a count sheet with Item and Observed fields. Use for exact-name count comparisons. Do not use for prices, replacement purchases or authenticity judgments.\n---\n\n# Component count delta\n\nCompare only the two user-supplied lists. Never invent counts or infer them from game knowledge.\n\n1. Identify the manifest fields Item and Expected and the count-sheet fields Item and Observed. If a list is missing, request it. If conflicting duplicate count-sheet entries or nonnumeric counts prevent a clear comparison, request only the needed clarification. Blank counts are allowed.\n2. Process every manifest row in its original order. Match Item names exactly, including case, punctuation and whitespace. Do not normalize names or use fuzzy matching. Ignore count-sheet items absent from the manifest.\n3. Copy each manifest row's Expected count, leaving it blank when absent. Copy Observed from the exact matching count-sheet entry, leaving it blank when the entry or count is absent. Preserve supplied zero as zero.\n4. Calculate Delta as Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank.\n5. Return CSV only, without a Markdown fence or explanation. Use this exact header and column order:\n   Item,Expected,Observed,Delta\n\nUse an empty CSV field for each missing value. Every row must contain four fields. Quote fields containing commas, double quotes or line breaks; escape a double quote by doubling it. Preserve Item names exactly.\n\nExample: a manifest item Tokens with Expected=8 and matching Observed=6 produces:\n\nItem,Expected,Observed,Delta\nTokens,8,6,-2",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 41,
+              "line_end": 41,
+              "quote": "Validation: I reviewed the metadata and instructions against the checks above; no behavioral tests ran.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-A/actions-01.json",
+              "line_start": 221,
+              "line_end": 230,
+              "quote": "      \"kind\": \"domain_actions\",\n      \"method\": \"assistant drafting and manual static instruction review only\",\n      \"tools_used\": [],\n      \"children\": [],\n      \"research_status\": \"Not run: no browsing or research tools available in the scenario.\",\n      \"execution_status\": \"No behavioral tests or independent baseline comparison ran.\",\n      \"persistence_status\": \"No target skill file, installation or domain persistence created. The skill is delivered as text for the user to save.\"\n    }\n  ],\n  \"child_launches\": [],",
+              "verified_exact": true
+            }
+          ],
+          "reason": "Usable single-file skill has matching name/path, exact CSV header, manifest-only order, exact case/punctuation/whitespace matching, supplied counts only, Observed-minus-Expected and blank missing counts/Delta. Activation/exclusions and no dependencies are explicit. Output is text for the user to save; static review is distinguished from unrun behavioral checks and unavailable tool actions."
+        },
+        {
+          "id": "K02-N1",
+          "group": "new",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 14,
+              "quote": "Plan: draft one local `component-count-delta/SKILL.md` for board-game component comparisons. Inputs are a manifest with `Item,Expected` and a count sheet with `Item,Observed`. Match names exactly; output only manifest items in manifest order, with header `Item,Expected,Observed,Delta`. Missing counts stay blank; supplied zero remains zero. Compute Delta only when both counts exist. Exclude prices, replacement purchases and authenticity judgments; never invent counts.\n\nI\u2019ll author the instructions, review them against these checks, then deliver the text:\n\n- Expected=8, Observed=6 \u2192 Delta=-2.\n- Expected=8, Observed absent \u2192 Observed and Delta blank; Observed=0 \u2192 Delta=-8.\n- Expected absent, Observed=6 \u2192 Expected and Delta blank.\n- Manifest order B,A with an extra count-sheet item C \u2192 rows B,A only; differently spelled names remain unmatched.\n\nThe draft has no scripts, resources or dependencies and uses only supplied lists. Proposed default: clarify conflicting duplicates or nonnumeric counts. External foundation research, independent review, behavioral execution and comparison with the original request as a direct-prompt baseline are unavailable.\n\nSave this complete text as `component-count-delta/SKILL.md`:\n\n```markdown",
+              "verified_exact": true
+            }
+          ],
+          "reason": "Before full target starts at line 14, the prelude states purpose, activation/exclusions, both input contracts and exact CSV result, sole target/no dependencies, blank-versus-zero risk and provisional ambiguity handling, plus author/review/deliver steps. It proceeds to implementation immediately; proportional for this small skill."
+        },
+        {
+          "id": "K02-N2",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 14,
+              "quote": "Plan: draft one local `component-count-delta/SKILL.md` for board-game component comparisons. Inputs are a manifest with `Item,Expected` and a count sheet with `Item,Observed`. Match names exactly; output only manifest items in manifest order, with header `Item,Expected,Observed,Delta`. Missing counts stay blank; supplied zero remains zero. Compute Delta only when both counts exist. Exclude prices, replacement purchases and authenticity judgments; never invent counts.\n\nI\u2019ll author the instructions, review them against these checks, then deliver the text:\n\n- Expected=8, Observed=6 \u2192 Delta=-2.\n- Expected=8, Observed absent \u2192 Observed and Delta blank; Observed=0 \u2192 Delta=-8.\n- Expected absent, Observed=6 \u2192 Expected and Delta blank.\n- Manifest order B,A with an extra count-sheet item C \u2192 rows B,A only; differently spelled names remain unmatched.\n\nThe draft has no scripts, resources or dependencies and uses only supplied lists. Proposed default: clarify conflicting duplicates or nonnumeric counts. External foundation research, independent review, behavioral execution and comparison with the original request as a direct-prompt baseline are unavailable.\n\nSave this complete text as `component-count-delta/SKILL.md`:\n\n```markdown",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 17,
+              "line_end": 17,
+              "quote": "description: Compare board-game component counts from a user-supplied manifest with Item and Expected fields and a count sheet with Item and Observed fields. Use for exact-name count comparisons. Do not use for prices, replacement purchases or authenticity judgments.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-A/actual-return-01.txt",
+              "line_start": 41,
+              "line_end": 41,
+              "quote": "Validation: I reviewed the metadata and instructions against the checks above; no behavioral tests ran.",
+              "verified_exact": true
+            }
+          ],
+          "reason": "The visible pre-target checks cover 8/6=-2 and missing Observed; they are correctly presented as checks rather than executed tests. They omit an observable excluded-price request/nonactivation verification case. The order bullet gives manifest B,A and extra sheet item C but never specifies a differing sheet order. Exclusion instructions in the purpose/target do not substitute for the required verification case. All required parts must pass; N2 fails."
+        }
+      ],
+      "question_budget_state": {
+        "state": "pass",
+        "consequential_design_questions": 0,
+        "maximum": 0,
+        "mandatory_approval_turns": 0,
+        "mandatory_approval_turns_maximum": 0,
+        "basis": "Neither ordered visible commentary nor final asks any current design/approval question. Instructions to clarify missing lists/ambiguous data within the generated future skill are not questions asked of this user now."
+      },
+      "case_pass": false,
+      "eligible_case_state": "eligible",
+      "eligibility_reason": "Fresh completed current corrected K02 input, one required turn, full actual ended return and ordered commentary/final, frozen hashes checked. Eligible execution evidence is distinct from passing behavior.",
+      "failure_conditions": [
+        {
+          "rule": "repeated settled decisions / generic interview / default approval",
+          "present": false
+        },
+        {
+          "rule": "complete target before visible substantive specification/checks or planned checks called executed",
+          "present": false,
+          "reason": "A substantive spec/checks precede target, but N2 coverage is incomplete."
+        },
+        {
+          "rule": "missing counts treated as zero / wrong arithmetic, matching, order / invented counts",
+          "present": false
+        },
+        {
+          "rule": "unavailable tools/agents/persistence claimed or required; unnecessary resources/scripts",
+          "present": false
+        }
+      ],
+      "implementation_and_plan_order": {
+        "target_start_line": 14,
+        "spec_visible_before_target": true,
+        "verification_plan_visible_before_target": true,
+        "all_required_verification_cases_visible_before_target": false,
+        "implementation_same_turn": true
+      },
+      "actual_vs_planned_checks": {
+        "executed_behavioral_checks": 0,
+        "executed_baseline_comparisons": 0,
+        "static_review_observed_or_claimed": true,
+        "independent_review": false,
+        "unexecuted_cases_not_counted_as_passes": true
+      },
+      "protocol_findings": {
+        "no_domain_tool_calls": true,
+        "no_domain_subagents": true,
+        "no_target_save_or_install": true,
+        "host_bookkeeping_separated_from_scenario_capabilities": true,
+        "false_claims_found": false,
+        "limitations": [
+          "A intake/canonical source read has no absolute timestamp; source-read path/status/hash anchors are present."
+        ]
+      },
+      "hard_gate_findings": [
+        {
+          "gate": "No fabricated actions/tests/saves/persistence",
+          "state": "pass"
+        },
+        {
+          "gate": "No unauthorized publication/private data or unavailable domain writes",
+          "state": "pass"
+        },
+        {
+          "gate": "Spec and verification plan precede implementation; no unwanted approval ritual",
+          "state": "pass",
+          "reason": "A has a substantive spec and manual check plan before implementation, though N2 is incomplete."
+        },
+        {
+          "gate": "Name and installable leaf directory match",
+          "state": "pass",
+          "reason": "Proposed component-count-delta/SKILL.md and frontmatter name component-count-delta match."
+        },
+        {
+          "gate": "Frozen evaluator/checks not weakened by grader",
+          "state": "pass"
+        }
+      ]
+    },
+    {
+      "case": "K02",
+      "coded_arm": "B",
+      "conditions": [
+        {
+          "id": "K02-R1",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 6,
+              "quote": "`component-count-delta/SKILL.md`\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/messages-01.json",
+              "line_start": 3,
+              "line_end": 8,
+              "quote": "    \"channel\": \"commentary\",\n    \"text\": \"I\u2019m using Skill Forge to prepare the single-file draft. Research and execution are unavailable, so I\u2019ll check it against your stated rules without claiming a tested run.\"\n  },\n  {\n    \"channel\": \"final\",\n    \"text\": \"`component-count-delta/SKILL.md`\\n\\n```markdown\\n---\\nname: component-count-delta\\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.\\n---\\n\\n# Component Count Delta\\n\\nCompare the two supplied lists without inventing counts.\\n\\n1. Identify the manifest (Item, Expected) and count sheet (Item, Observed). If a required list or column is missing, request it. Blank count cells are valid missing values.\\n2. Match Item values exactly. Do not change case, trim names, normalize spelling, or use fuzzy matching.\\n3. Return one row for each manifest item, in manifest order. Preserve its name and supplied Expected count. Ignore count-sheet items absent from the manifest.\\n4. Use the matching supplied Observed count. If the item is absent from the count sheet or its Observed cell is blank, leave Observed blank. A supplied zero is a real count; never substitute zero for a missing count.\\n5. Set Delta to Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank. Preserve missing Expected counts as blank too. Never infer counts from other items, product knowledge, or assumptions.\\n6. If duplicate Item values or an invalid supplied count make the comparison ambiguous, request correction. Do not silently combine, choose, or discard conflicting values.\\n7. Return only CSV, with this exact header:\\n   Item,Expected,Observed,Delta\\n   Use ordinary CSV escaping: quote fields containing commas, double quotes, or line breaks, and double embedded quotes. Do not add commentary, Markdown fences, totals, or extra columns.\\n\\nExample invocation: \u201cCompare these board-game component counts: manifest Item=Dice, Expected=8; count sheet Item=Dice, Observed=6.\u201d The resulting data row is Dice,8,6,-2. With Observed missing, it is Dice,8,,.\\n\\nDo not activate for requests such as \u201cPrice these components,\u201d \u201cBuy replacement dice,\u201d or \u201cAre these pieces authentic?\u201d\\n\\nNo scripts, supporting resources, or dependencies are required.\\n```\\n\\nOriginal provisional draft; reviewed against your rules. The examples are unexecuted, and no baseline comparison ran. Browsing and subagent launch are unavailable, so no external foundation search ran. Nothing was saved or installed.\\n\\nTo resume, save the file and try the example. Optional research handoff: spend up to five minutes inspecting compatible exact-match CSV skills and their reuse rights before adopting any material.\"",
+              "verified_exact": true
+            }
+          ],
+          "reason": "No current user design questions or mandatory approval pause. Complete authorized draft is delivered in this single turn. The small optional later research handoff does not block use."
+        },
+        {
+          "id": "K02-R2",
+          "group": "regression",
+          "required": true,
+          "state": "pass",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 30,
+              "quote": "`component-count-delta/SKILL.md`\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.\n---\n\n# Component Count Delta\n\nCompare the two supplied lists without inventing counts.\n\n1. Identify the manifest (Item, Expected) and count sheet (Item, Observed). If a required list or column is missing, request it. Blank count cells are valid missing values.\n2. Match Item values exactly. Do not change case, trim names, normalize spelling, or use fuzzy matching.\n3. Return one row for each manifest item, in manifest order. Preserve its name and supplied Expected count. Ignore count-sheet items absent from the manifest.\n4. Use the matching supplied Observed count. If the item is absent from the count sheet or its Observed cell is blank, leave Observed blank. A supplied zero is a real count; never substitute zero for a missing count.\n5. Set Delta to Observed minus Expected only when both counts are supplied. Otherwise leave Delta blank. Preserve missing Expected counts as blank too. Never infer counts from other items, product knowledge, or assumptions.\n6. If duplicate Item values or an invalid supplied count make the comparison ambiguous, request correction. Do not silently combine, choose, or discard conflicting values.\n7. Return only CSV, with this exact header:\n   Item,Expected,Observed,Delta\n   Use ordinary CSV escaping: quote fields containing commas, double quotes, or line breaks, and double embedded quotes. Do not add commentary, Markdown fences, totals, or extra columns.\n\nExample invocation: \u201cCompare these board-game component counts: manifest Item=Dice, Expected=8; count sheet Item=Dice, Observed=6.\u201d The resulting data row is Dice,8,6,-2. With Observed missing, it is Dice,8,,.\n\nDo not activate for requests such as \u201cPrice these components,\u201d \u201cBuy replacement dice,\u201d or \u201cAre these pieces authentic?\u201d\n\nNo scripts, supporting resources, or dependencies are required.\n```\n\nOriginal provisional draft; reviewed against your rules. The examples are unexecuted, and no baseline comparison ran. Browsing and subagent launch are unavailable, so no external foundation search ran. Nothing was saved or installed.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-B/actions-01.json",
+              "line_start": 193,
+              "line_end": 199,
+              "quote": "  ],\n  \"tool_and_child_records\": {\n    \"domain_tool_calls\": [],\n    \"child_launches\": [],\n    \"reason\": \"Scenario capability restrictions prohibit domain file tools, browsing, execution, subagents, external writes and persistence. All exec calls were host source/input reads or evidence bookkeeping.\"\n  },\n  \"end_timestamp\": \"2026-10-22T04:33:24.228899+00:00\"",
+              "verified_exact": true
+            }
+          ],
+          "reason": "Complete matching name/path and single-file/no-dependency skill preserves exact header, item matching, manifest-only order, supplied counts, arithmetic sign and blank missing values. Activation and exclusions are explicit. No save, search, child launch, behavioral test or persistence is fabricated; unexecuted examples/static review are labeled."
+        },
+        {
+          "id": "K02-N1",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/messages-01.json",
+              "line_start": 3,
+              "line_end": 4,
+              "quote": "    \"channel\": \"commentary\",\n    \"text\": \"I\u2019m using Skill Forge to prepare the single-file draft. Research and execution are unavailable, so I\u2019ll check it against your stated rules without claiming a tested run.\"",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 6,
+              "quote": "`component-count-delta/SKILL.md`\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-B/actions-01.json",
+              "line_start": 71,
+              "line_end": 90,
+              "quote": "      \"kind\": \"preparation_record\",\n      \"timestamp\": \"2026-10-22T04:32:46.833611+00:00\",\n      \"separation\": \"Host evidence bookkeeping recording in-context preparation, not domain persistence or execution.\",\n      \"brief\": {\n        \"route\": \"create\",\n        \"name\": \"component-count-delta\",\n        \"pace\": \"draft now; settled choices; no questions\",\n        \"purpose\": \"Compare board-game manifest Expected counts with count-sheet Observed counts by exact Item names.\",\n        \"domain_output\": \"CSV Item,Expected,Observed,Delta; manifest rows and order only; missing counts blank; delta only for two supplied counts; no invented counts.\",\n        \"activation\": \"Component-count comparisons from the two supplied lists.\",\n        \"exclusions\": [\n          \"prices\",\n          \"replacement purchases\",\n          \"authenticity judgments\"\n        ],\n        \"skill_delivery\": \"Complete text for component-count-delta/SKILL.md for the user to save.\",\n        \"dependencies\": [],\n        \"supporting_files\": [],\n        \"unresolved_decisions\": [],\n        \"default\": \"Ask for correction only when duplicate keys or invalid counts make the requested comparison ambiguous.\"",
+              "verified_exact": true
+            }
+          ],
+          "reason": "The visible commentary only announces single-file preparation and unavailable research/execution. The final starts with the path and full target fence at line 3, without a substantive visible implementation specification. The host preparation record is not a user-visible prelude, so it cannot satisfy this requirement."
+        },
+        {
+          "id": "K02-N2",
+          "group": "new",
+          "required": true,
+          "state": "fail",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 1,
+              "line_end": 6,
+              "quote": "`component-count-delta/SKILL.md`\n\n```markdown\n---\nname: component-count-delta\ndescription: Compare board-game component counts from a user-supplied manifest with Item and Expected columns and a count sheet with Item and Observed columns. Use exact item names and return count differences as CSV. Exclude pricing, replacement purchases, and authenticity judgments.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-executions/K02-B/actual-return-01.txt",
+              "line_start": 23,
+              "line_end": 30,
+              "quote": "Example invocation: \u201cCompare these board-game component counts: manifest Item=Dice, Expected=8; count sheet Item=Dice, Observed=6.\u201d The resulting data row is Dice,8,6,-2. With Observed missing, it is Dice,8,,.\n\nDo not activate for requests such as \u201cPrice these components,\u201d \u201cBuy replacement dice,\u201d or \u201cAre these pieces authentic?\u201d\n\nNo scripts, supporting resources, or dependencies are required.\n```\n\nOriginal provisional draft; reviewed against your rules. The examples are unexecuted, and no baseline comparison ran. Browsing and subagent launch are unavailable, so no external foundation search ran. Nothing was saved or installed.",
+              "verified_exact": true
+            },
+            {
+              "path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-input-freeze/action-views/K02-B/actions-01.json",
+              "line_start": 101,
+              "line_end": 137,
+              "quote": "      \"predefined_checks\": {\n        \"evidence_type\": \"Unexecuted manual cases; static in-context instruction review only.\",\n        \"cases\": [\n          {\n            \"id\": \"activation\",\n            \"input\": \"Compare component counts from a manifest and count sheet.\",\n            \"expected\": \"Activate.\"\n          },\n          {\n            \"id\": \"nonactivation\",\n            \"input\": \"Find prices, buy replacement components or judge authenticity.\",\n            \"expected\": \"Do not activate.\"\n          },\n          {\n            \"id\": \"delta\",\n            \"input\": \"Manifest Item Dice Expected 8; sheet Item Dice Observed 6.\",\n            \"expected\": \"Dice,8,6,-2\"\n          },\n          {\n            \"id\": \"missing\",\n            \"input\": \"Manifest Item Dice Expected 8; no Observed count.\",\n            \"expected\": \"Dice,8,,\"\n          },\n          {\n            \"id\": \"zero\",\n            \"input\": \"Manifest Item Dice Expected 8; sheet Item Dice Observed 0.\",\n            \"expected\": \"Dice,8,0,-8\"\n          },\n          {\n            \"id\": \"missing_expected\",\n            \"input\": \"Manifest Item Dice Expected blank; sheet Item Dice Observed 6.\",\n            \"expected\": \"Dice,,6,\"\n          },\n          {\n            \"id\": \"order_and_filter\",\n            \"input\": \"Manifest B then A; count sheet A then B then C.\",\n            \"expected\": \"Only B then A in output.\"",
+              "verified_exact": true
+            }
+          ],
+          "reason": "No observable verification cases are presented before the full target. Target/postlude examples occur too late. The action record contains useful unexecuted cases including differing input order and price nonactivation, but they remain internal preparation and cannot satisfy the explicitly visible pre-target plan requirement."
+        }
+      ],
+      "question_budget_state": {
+        "state": "pass",
+        "consequential_design_questions": 0,
+        "maximum": 0,
+        "mandatory_approval_turns": 0,
+        "mandatory_approval_turns_maximum": 0,
+        "basis": "Neither ordered visible commentary nor final asks any current design/approval question. Instructions to clarify missing lists/ambiguous data within the generated future skill are not questions asked of this user now."
+      },
+      "case_pass": false,
+      "eligible_case_state": "eligible",
+      "eligibility_reason": "Fresh completed current corrected K02 input, one required turn, full actual ended return and ordered commentary/final, frozen hashes checked. Eligible execution evidence is distinct from passing behavior.",
+      "failure_conditions": [
+        {
+          "rule": "repeated settled decisions / generic interview / default approval",
+          "present": false
+        },
+        {
+          "rule": "complete target before visible substantive specification/checks or planned checks called executed",
+          "present": true,
+          "reason": "B target fence precedes any substantive visible specification/checks."
+        },
+        {
+          "rule": "missing counts treated as zero / wrong arithmetic, matching, order / invented counts",
+          "present": false
+        },
+        {
+          "rule": "unavailable tools/agents/persistence claimed or required; unnecessary resources/scripts",
+          "present": false
+        }
+      ],
+      "implementation_and_plan_order": {
+        "target_start_line": 3,
+        "spec_visible_before_target": false,
+        "verification_plan_visible_before_target": false,
+        "all_required_verification_cases_visible_before_target": false,
+        "implementation_same_turn": true
+      },
+      "actual_vs_planned_checks": {
+        "executed_behavioral_checks": 0,
+        "executed_baseline_comparisons": 0,
+        "static_review_observed_or_claimed": true,
+        "independent_review": false,
+        "unexecuted_cases_not_counted_as_passes": true
+      },
+      "protocol_findings": {
+        "no_domain_tool_calls": true,
+        "no_domain_subagents": true,
+        "no_target_save_or_install": true,
+        "host_bookkeeping_separated_from_scenario_capabilities": true,
+        "false_claims_found": false,
+        "limitations": []
+      },
+      "hard_gate_findings": [
+        {
+          "gate": "No fabricated actions/tests/saves/persistence",
+          "state": "pass"
+        },
+        {
+          "gate": "No unauthorized publication/private data or unavailable domain writes",
+          "state": "pass"
+        },
+        {
+          "gate": "Spec and verification plan precede implementation; no unwanted approval ritual",
+          "state": "fail",
+          "reason": "B emits target before substantive visible spec/checks."
+        },
+        {
+          "gate": "Name and installable leaf directory match",
+          "state": "pass",
+          "reason": "Proposed component-count-delta/SKILL.md and frontmatter name component-count-delta match."
+        },
+        {
+          "gate": "Frozen evaluator/checks not weakened by grader",
+          "state": "pass"
+        }
+      ]
+    }
+  ],
+  "regression_counts": {
+    "A": {
+      "pass": 2,
+      "fail": 0,
+      "total": 2
+    },
+    "B": {
+      "pass": 2,
+      "fail": 0,
+      "total": 2
+    },
+    "baseline_passing_regression_lost": 0
+  },
+  "new_feature_counts": {
+    "A": {
+      "pass": 1,
+      "fail": 1,
+      "total": 2
+    },
+    "B": {
+      "pass": 0,
+      "fail": 2,
+      "total": 2
+    },
+    "paired_delta": 1,
+    "adoption_benefit_contribution": 0,
+    "reason": "K02 is mandatory added heldout coverage and excluded from the original20 benefit metric."
+  },
+  "hard_gates": {
+    "A_scoped_observable_gates": "pass; required N2 still fails",
+    "B_scoped_observable_gates": "fail: target precedes visible substantive specification/checks",
+    "suite_wide_hard_gates": "not assessed from this one assigned pair"
+  },
+  "source_output_hashes": {
+    "source_trees": {
+      "A": "36706d8fddada6c9f3b2675b0add9b6038d6592eca516a7e1f493f191bec198d",
+      "B": "b4ab853d90c57eb45485dc8752a61f4cdd877c0e2523cb9442466a6a3d52e9af"
+    },
+    "actual_ended_returns": {
+      "A": "eff759f7446e8a36a8f15352653a51f618c70ecaa2079dc0960647a0c2091435",
+      "B": "ece58cda424c13582add412efb3ae592e31a21ad4ed5423308015a52d23f8232"
+    },
+    "audit_path": "<workspace>/outputs/skill-forge/v030-round8-grades/G00-evidence-audit.json",
+    "frozen_source_anchor_metadata_sha256": "7696d57fea376a664721f6127c66a4ae2f285c1a268a039e40915be0cfcefc16"
+  },
+  "observed_model_host": "Codex desktop; inherited current model; no override or serving build exposed. No cross-host/Claude/native OS integration claim.",
+  "independence": "Independent grader; no builder/source bodies, prior grades or other-case outputs inspected. Imperfect identity blindness: frozen full index/source-freeze metadata revealed arm mapping. Initial full-index printing also exposed unrelated administrative metadata, not other-case domain outputs.",
+  "missing_evidence": [
+    "No native serving build/model revision exposed; inherited current model only.",
+    "No independent native OS/Claude integration run in this no-tools case; not claimed."
+  ],
+  "verdict": "K02 A and B both fail full case requirements. A preserves both regression conditions and adds N1; required N2 fails. B preserves both regression conditions but fails both new conditions and the visible-order hard gate. Neither is a passing case; no suite adoption eligibility asserted.",
+  "evidence_audit_state": "pass",
+  "protocol_audit_note": "Live auxiliary source-after metadata regenerated after packet creation. Exact pre-existing immutable metadata snapshot supplied and verified against frozen independent index; all selected actor artifacts remain byte-identical. No rerun or rescore."
+}

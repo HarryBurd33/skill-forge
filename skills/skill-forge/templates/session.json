@@ -49,5 +49,32 @@
     "report": null,
     "selected_foundations": [],
     "skip_reason": null
+  },
+  "source_context": {
+    "kind": "idea",
+    "scope": null,
+    "accessible_sources": [],
+    "coverage_limits": [],
+    "superseded_decisions": []
+  },
+  "implementation_spec": {
+    "status": "not-started",
+    "path": null,
+    "revision": null,
+    "review_pause_requested": false,
+    "review_state": "not-requested",
+    "user_corrections": []
+  },
+  "delegation": {
+    "available": null,
+    "effort_limit": null,
+    "tasks": [],
+    "skip_reason": null
+  },
+  "verification_plan": {
+    "cases": [],
+    "baseline": null,
+    "evaluator": null,
+    "unavailable_checks": []
   }
 }

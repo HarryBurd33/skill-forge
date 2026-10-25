@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-10-25T15:42:10.445587+00:00",
+  "purpose": "Prospective additive checks requested2026-10-25; do not replace or alter frozen21case84condition gate",
+  "candidate_source_sha256": "323f3aff35e785a8c53b7db06bbf40ad5d028e1a2f59c952f318637862f28dab",
+  "actor_capabilities": {
+    "files": false,
+    "browse": false,
+    "execute": false,
+    "subagents": false
+  },
+  "harness_exception": "Read only current input and frozen source, write exact ordered visible messages/actions/fullreturns for evidence; no domaintools. Sourcebodyblinding before independent review.",
+  "model_policy": "Same inherited evaluationmodel/settings, no overrides; exactservingbuildunknown",
+  "criteria": "Every expected item must be supported by actual ordered responses. Failure condition or unexecuted turn blocks completion. At most one consequential decision per questioning turn, final buildturn0. No source edits after execution.",
+  "cases": [
+    {
+      "id": "S01",
+      "purpose": "Quick mode, use judgment, independent single-file delivery, material closure",
+      "turns": [
+        {
+          "user": "Use Skill Forge in quick mode. Build a reusable skill called meeting-actions for a general audience. Turn pasted rough meeting notes into a Markdown table with Action, Owner, Due and Evidence columns. Keep missing owners and dates Unknown. Do not invent commitments or infer dates from vague phrases. Activate for meeting action extraction, not for writing an agenda. Deliver a single local SKILL.md; the skill itself produces a Markdown table. Use your judgment for routine wording. No external research or tools are available. Draft now."
+        }
+      ],
+      "expected": [
+        "No clarification or approval pause before complete draft",
+        "Visible brief/spec and discriminating planned checks precede full skill text",
+        "Separates skill delivery Markdown from produced table contract",
+        "Exact columns, Unknown rule and nonactivation preserved; no invented tooling or test claims",
+        "Generated skill operates without Skill Forge"
+      ],
+      "failure": [
+        "Asks settled questions or continues abstract interview after material closure",
+        "Misrepresents planned checks as executed or omits requested contract"
+      ]
+    },
+    {
+      "id": "S02",
+      "purpose": "Thorough mode, consequential single questions, constructive disagreement, skip/go deeper and corrections",
+      "turns": [
+        {
+          "user": "Use Skill Forge in thorough mode. I want a reusable study-plan skill, delivered as a local skill folder, that produces a daily text schedule. It must fit everything I put in, even when tasks need twelve hours but only four hours are available. Start by refining the idea; do not build yet."
+        },
+        {
+          "user": "Treat sleep and fixed classes as firm, and show any work that does not fit instead of silently dropping it. I want it to prioritize tasks by approaching deadlines, then importance. Go deeper on one overlooked failure that could make the plan unrealistic."
+        },
+        {
+          "user": "Skip that detail for now and label a reasonable provisional assumption. Correction: the output should be a weekly Markdown table, not a daily text schedule. Use your judgment for any remaining routine choices. Draft now; do not publish."
+        }
+      ],
+      "expected": [
+        "First turn constructively challenges infeasible fit-everything premise and asks at most one consequential decision",
+        "Second turn preserves sleep/classes and priority order, explores one concrete overlooked risk with at most one consequential question",
+        "Final honors skip without inventing user answer, labels assumption and stops questions",
+        "Correction to weekly Markdown table appears consistently in brief/spec/checks/skill/handoff without stale daily-text contract",
+        "Final visible spec and planned feasible/infeasible/sleep preservation checks precede draft; skill packaging remains localfolder; no publication"
+      ],
+      "failure": [
+        "Silently breaks sleep/fixedclasses or promises impossible schedule",
+        "Bundles dependent independent decisions in one question or demands default approval",
+        "Repeats settled or skipped question, retains contradicted output contract"
+      ]
+    },
+    {
+      "id": "S03",
+      "purpose": "Expert challenge, resume, concrete examples/counterexamples and no tools handoff",
+      "turns": [
+        {
+          "user": "Resume Skill Forge in expert-challenge mode from this handoff. Confirmed: create a skill for a volunteer book club that compares two pasted interpretations of one supplied passage, separating textual evidence from interpretation. Audience: nonspecialists. Inputs: passage and two interpretations. Output: a Markdown comparison, quoted evidence, uncertainties, and two discussion questions. Delivery: a single local SKILL.md. No browsing/files/agents available. Prior idea: declare one interpretation objectively correct even when the passage is ambiguous. Unresolved: how strong a verdict should be. Challenge that weak assumption and ask only the most consequential next question. Do not re-ask audience, inputs, delivery or output format."
+        },
+        {
+          "user": "Use a comparative judgment only when the passage gives stronger support; otherwise retain plausible alternatives. For example, the word cold may describe temperature or emotional distance when context supports both. No fabricated citations or outside claims. Material choices are now resolved. Build the draft and include a compact handoff I can save for another chat."
+        }
+      ],
+      "expected": [
+        "Resumes settled facts without repeating them; expert challenge identifies limitation of objectively-correct premise",
+        "At most one consequential question about unresolved judgment; offers tradeoff and permits freeanswer",
+        "Final stops interview, includes concrete ambiguity example/counterexample and preserves source/evidence boundaries",
+        "Visible specification and planned checks precede standalone target contents",
+        "Complete copyable skill and private portable handoff; no fabricated saves/search/delegation/retraining claims"
+      ],
+      "failure": [
+        "Treats uncertain interpretation as establishedfact or invents sources",
+        "Repeats settled questions or keeps asking after user resolves materialchoices",
+        "Claims unavailable tools or automatic crosschat memory"
+      ]
+    }
+  ],
+  "status": "frozen_before_execution",
+  "actor_retries": 0
+}

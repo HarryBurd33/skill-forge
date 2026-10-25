@@ -1,0 +1,511 @@
+{
+  "reviewer_settings": {
+    "requested_model": "gpt-6.1-sol",
+    "requested_effort": "medium",
+    "actual_runtime_self_verification": "Not available to reviewer; parent launch record owns reviewer-serving verification."
+  },
+  "scope": "Separate additive source-blind S01/S02/S03 acceptance only; no replacement or causal comparison.",
+  "overall": "PASS",
+  "expected_pass": 15,
+  "expected_total": 15,
+  "failure_conditions_observed": 0,
+  "cases": [
+    {
+      "id": "S01",
+      "qualitative_score": 2,
+      "decision": "PASS",
+      "expected": [
+        {
+          "decision": "PASS",
+          "reason": "Complete copyable draft delivered immediately; no clarification or mandatory approval.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S01/visible-01.json",
+              "pointer": "/1/text",
+              "native_line": 44,
+              "quote": "Delivery is settled, with no outstanding questions."
+            }
+          ],
+          "criterion": "No clarification or approval pause before complete draft"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Brief, implementation order and discriminating positive/negative checks occur before the fenced skill.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S01/visible-01.json",
+              "pointer": "/1/text",
+              "native_line": 44,
+              "quote": "Manual behavioral check planned, unexecuted"
+            }
+          ],
+          "criterion": "Visible brief/spec and discriminating planned checks precede full skill text"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Delivery is one Markdown skill file; contained skill output is the exact four-column table.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S01/visible-01.json",
+              "pointer": "/1/text",
+              "native_line": 44,
+              "quote": "Save the following contents as **`meeting-actions/SKILL.md`**:"
+            }
+          ],
+          "criterion": "Separates skill delivery Markdown from produced table contract"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Exact headers, missing/vague date and agenda exclusions appear both in brief and standalone contents; checks expressly unrun.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S01/visible-01.json",
+              "pointer": "/1/text",
+              "native_line": 44,
+              "quote": "Missing owners and dates remain `Unknown`"
+            }
+          ],
+          "criterion": "Exact columns, Unknown rule and nonactivation preserved; no invented tooling or test claims"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Self-contained rules and metadata require only pasted notes; no Skill Forge dependency.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S01/visible-01.json",
+              "pointer": "/1/text",
+              "native_line": 44,
+              "quote": "Include only explicitly agreed actions, commitments, or direct task instructions."
+            }
+          ],
+          "criterion": "Generated skill operates without Skill Forge"
+        }
+      ],
+      "failure_conditions": [
+        {
+          "decision": "NOT_OBSERVED",
+          "reason": "No settled-question or abstract-interview continuation.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S01/visible-01.json",
+              "pointer": "/1/text",
+              "native_line": 44,
+              "quote": "Delivery is settled, with no outstanding questions."
+            }
+          ],
+          "criterion": "Asks settled questions or continues abstract interview after material closure"
+        },
+        {
+          "decision": "NOT_OBSERVED",
+          "reason": "Unrun checks correctly distinguished; requested contract present.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S01/visible-01.json",
+              "pointer": "/1/text",
+              "native_line": 44,
+              "quote": "Behavioral checks and the baseline comparison have not run."
+            }
+          ],
+          "criterion": "Misrepresents planned checks as executed or omits requested contract"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "qualitative_score": 2,
+      "decision": "PASS",
+      "expected": [
+        {
+          "decision": "PASS",
+          "reason": "Challenges capacity premise with concrete consequence and one overload-policy decision (rephrased once).",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S02/visible-01.json",
+              "pointer": "/0/text",
+              "native_line": 45,
+              "quote": "twelve hours of work cannot fit into four hours"
+            }
+          ],
+          "criterion": "First turn constructively challenges infeasible fit-everything premise and asks at most one consequential decision"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Preserves sleep/classes, deadline then importance; one concrete duration uncertainty decision with tradeoff.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S02/visible-02.json",
+              "pointer": "/0/text",
+              "native_line": 71,
+              "quote": "One overlooked failure is **optimistic duration estimates**."
+            }
+          ],
+          "criterion": "Second turn preserves sleep/classes and priority order, explores one concrete overlooked risk with at most one consequential question"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Honors skip through explicitly provisional judgment; no fabricated user choice and no further interview.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S02/visible-03.json",
+              "pointer": "/0/text",
+              "native_line": 112,
+              "quote": "The provisional assumption is a **10% daily buffer**"
+            }
+          ],
+          "criterion": "Final honors skip without inventing user answer, labels assumption and stops questions"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Weekly table contract carried through plan, checks, draft and handoff. Daily refers only to capacity/buffer accounting; old daily text is explicitly superseded.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S02/visible-03.json",
+              "pointer": "/0/text",
+              "native_line": 112,
+              "quote": "The correction is applied: **daily text schedule → weekly Markdown table**."
+            }
+          ],
+          "criterion": "Correction to weekly Markdown table appears consistently in brief/spec/checks/skill/handoff without stale daily-text contract"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Visible specification and capacity/feasibility/protected sleep checks precede local-folder draft. No publication.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S02/visible-03.json",
+              "pointer": "/0/text",
+              "native_line": 112,
+              "quote": "Sleep 23:00–07:00; class 09:00–10:00; study window 06:00–11:00"
+            }
+          ],
+          "criterion": "Final visible spec and planned feasible/infeasible/sleep preservation checks precede draft; skill packaging remains localfolder; no publication"
+        }
+      ],
+      "failure_conditions": [
+        {
+          "decision": "NOT_OBSERVED",
+          "reason": "No impossible-fit promise; explicit capacity and remainder accounting.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S02/visible-03.json",
+              "pointer": "/0/text",
+              "native_line": 112,
+              "quote": "Never move or shorten sleep or classes to fit tasks."
+            }
+          ],
+          "criterion": "Silently breaks sleep/fixedclasses or promises impossible schedule"
+        },
+        {
+          "decision": "NOT_OBSERVED",
+          "reason": "One decision with alternative policies; no dependent extra decisions or approval demand.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S02/visible-02.json",
+              "pointer": "/0/text",
+              "native_line": 71,
+              "quote": "How should the skill handle uncertain task durations:"
+            }
+          ],
+          "criterion": "Bundles dependent independent decisions in one question or demands default approval"
+        },
+        {
+          "decision": "NOT_OBSERVED",
+          "reason": "Skipped question not repeated; correction consistently replaces daily-text contract.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S02/visible-03.json",
+              "pointer": "/0/text",
+              "native_line": 112,
+              "quote": "The provisional assumption is a **10% daily buffer**"
+            }
+          ],
+          "criterion": "Repeats settled or skipped question, retains contradicted output contract"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "qualitative_score": 2,
+      "decision": "PASS",
+      "expected": [
+        {
+          "decision": "PASS",
+          "reason": "Resumes settled handoff and identifies false certainty limitation without asking settled facts.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S03/visible-01.json",
+              "pointer": "/1/text",
+              "native_line": 65,
+              "quote": "An objectively correct verdict is too strong when the passage supports more than one reading"
+            }
+          ],
+          "criterion": "Resumes settled facts without repeating them; expert challenge identifies limitation of objectively-correct premise"
+        },
+        {
+          "decision": "PASS",
+          "reason": "One consequential verdict policy question; tradeoff recommended beforehand. Ordinary response text permits free answer, no forced selector.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S03/visible-01.json",
+              "pointer": "/1/text",
+              "native_line": 65,
+              "quote": "Should the skill use that evidence-dependent verdict rule, or should it always avoid ranking interpretations?"
+            }
+          ],
+          "criterion": "At most one consequential question about unresolved judgment; offers tradeoff and permits freeanswer"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Final ends interview; concrete ambiguity and stronger-support counterexample provided; supplied-text boundary preserved.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S03/visible-02.json",
+              "pointer": "/1/text",
+              "native_line": 107,
+              "quote": "“The room was cold; ice formed inside the window.”"
+            }
+          ],
+          "criterion": "Final stops interview, includes concrete ambiguity example/counterexample and preserves source/evidence boundaries"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Visible spec and concrete planned checks precede complete standalone fenced contents.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S03/visible-02.json",
+              "pointer": "/1/text",
+              "native_line": 107,
+              "quote": "Before building, these are the checks:"
+            }
+          ],
+          "criterion": "Visible specification and planned checks precede standalone target contents"
+        },
+        {
+          "decision": "PASS",
+          "reason": "Complete copyable skill plus private portable handoff; honest user-side saving, no fabricated searches, delegation, retraining or memory.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S03/visible-02.json",
+              "pointer": "/1/text",
+              "native_line": 107,
+              "quote": "**Handoff to save for another chat:**"
+            }
+          ],
+          "criterion": "Complete copyable skill and private portable handoff; no fabricated saves/search/delegation/retraining claims"
+        }
+      ],
+      "failure_conditions": [
+        {
+          "decision": "NOT_OBSERVED",
+          "reason": "No uncertain reading asserted as established fact and no invented sources.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S03/visible-02.json",
+              "pointer": "/1/text",
+              "native_line": 107,
+              "quote": "Do not turn stronger support into certainty"
+            }
+          ],
+          "criterion": "Treats uncertain interpretation as establishedfact or invents sources"
+        },
+        {
+          "decision": "NOT_OBSERVED",
+          "reason": "Resolved choice used immediately; no repeated settled question or continued interview.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S03/visible-02.json",
+              "pointer": "/1/text",
+              "native_line": 107,
+              "quote": "The final verdict rule replaces the earlier “objectively correct winner” idea"
+            }
+          ],
+          "criterion": "Repeats settled questions or keeps asking after user resolves materialchoices"
+        },
+        {
+          "decision": "NOT_OBSERVED",
+          "reason": "Unavailable actions not claimed; portable handoff requires user save, no automatic memory.",
+          "evidence": [
+            {
+              "path": "<workspace>/outputs/skill-forge/supplemental-controls-2026-10-25/sol-run/S03/visible-02.json",
+              "pointer": "/1/text",
+              "native_line": 107,
+              "quote": "no domain file saved, installation performed or behavioral test executed."
+            }
+          ],
+          "criterion": "Claims unavailable tools or automatic crosschat memory"
+        }
+      ]
+    }
+  ],
+  "question_budgets": [
+    {
+      "case": "S01",
+      "turn": 1,
+      "consequential_decisions": 0,
+      "budget": 0,
+      "budget_pass": true,
+      "messages_equal_native_visible": false,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S01/native-ended-01.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "fae6b1f2afc3356f930719b142ad2a3d2902edf4a6e5344616d993e833612c26",
+          "timestamp": "2026-10-25T18:00:49.816Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true
+    },
+    {
+      "case": "S02",
+      "turn": 1,
+      "consequential_decisions": 1,
+      "budget": 1,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S02/native-ended-01.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "383350e47c39018ecccefdd597167e3366cf22eaf009447caf24388df640bfac",
+          "timestamp": "2026-10-25T18:02:32.765Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true,
+      "question_note": "Two phrasings of same overload-policy decision; counted once."
+    },
+    {
+      "case": "S02",
+      "turn": 2,
+      "consequential_decisions": 1,
+      "budget": 1,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S02/native-ended-02.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "383350e47c39018ecccefdd597167e3366cf22eaf009447caf24388df640bfac",
+          "timestamp": "2026-10-25T18:02:32.765Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 50,
+          "line_sha256": "b551aeaaa029532da55f0ad3d587ce437441749feea1d50bb3fd05946ae2ded0",
+          "timestamp": "2026-10-25T18:52:11.462Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true
+    },
+    {
+      "case": "S02",
+      "turn": 3,
+      "consequential_decisions": 0,
+      "budget": 0,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S02/native-ended-03.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "383350e47c39018ecccefdd597167e3366cf22eaf009447caf24388df640bfac",
+          "timestamp": "2026-10-25T18:02:32.765Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 50,
+          "line_sha256": "b551aeaaa029532da55f0ad3d587ce437441749feea1d50bb3fd05946ae2ded0",
+          "timestamp": "2026-10-25T18:52:11.462Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 76,
+          "line_sha256": "ee99cc51c1973f955af9dfac23e1fc5626ac070591e4c845d289070e69413a2c",
+          "timestamp": "2026-10-25T18:52:51.603Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 103,
+          "line_sha256": "fe53ebab0575caa5f8494e1f4000b83838af9ea18d8861538125e32d0f06652b",
+          "timestamp": "2026-10-25T19:15:06.128Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true
+    },
+    {
+      "case": "S03",
+      "turn": 1,
+      "consequential_decisions": 1,
+      "budget": 1,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S03/native-ended-01.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "48225e0d30d5a141ffda8161723ee4e7690c15e6ea7545eca4504738f9239eaa",
+          "timestamp": "2026-10-25T19:16:40.346Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true,
+      "question_note": "Two options are same judgment-policy decision; free textual answer remains possible."
+    },
+    {
+      "case": "S03",
+      "turn": 2,
+      "consequential_decisions": 0,
+      "budget": 0,
+      "budget_pass": true,
+      "messages_equal_native_visible": true,
+      "native_final_equals_actual_return": true,
+      "saved_final_equals_actual_return": true,
+      "native_ended_equals_actual_return": true,
+      "ended_evidence": "S03/native-ended-02.json#/actual_ended_payload/last_agent_message",
+      "native_contexts": [
+        {
+          "line": 10,
+          "line_sha256": "48225e0d30d5a141ffda8161723ee4e7690c15e6ea7545eca4504738f9239eaa",
+          "timestamp": "2026-10-25T19:16:40.346Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "line": 70,
+          "line_sha256": "85bb4b25ee8abf42cb4a6dd218bef7c342c46c7d92cdd492165d0f4732906076",
+          "timestamp": "2026-10-25T19:17:57.033Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        }
+      ],
+      "serving_settings_pass": true
+    }
+  ]
+}
