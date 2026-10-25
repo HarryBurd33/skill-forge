@@ -16,9 +16,9 @@ Describe a workflow in ordinary language, or say **“Based on this conversation
 - Successful updates are applied automatically after predefined checks, with history and rollback. Failed or untested candidates stay separate.
 - Private preferences and conversations stay outside published source by default.
 
-## Start here
+## Install and start using Skill Forge
 
-Choose one route. No paid API or custom service is required for the core conversation.
+You need access to Codex, Claude Code, or another capable chat model. Skill Forge itself needs no paid API or custom service. Python is **optional**: only the validation, packaging and managed-update helpers require Python 3.9 or newer.
 
 | Where you work | Start |
 | --- | --- |
@@ -26,9 +26,45 @@ Choose one route. No paid API or custom service is required for the core convers
 | Claude Code | [Install for yourself or a project](docs/claude-code.md) |
 | Another capable chat model | Paste or upload [the self-contained prompt](portable/skill-forge-prompt.md), then describe your idea |
 
+### Codex or Claude Code: install without commands
+
+1. Download [skill-forge-v0.3.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.0/skill-forge-v0.3.0.zip) and extract it.
+2. Copy the **complete `skill-forge` folder**, including its references, scripts, templates and nested Skill Finder, to **one** destination below. Create missing parent folders. Copying only `SKILL.md` is incomplete.
+3. Open a new session in your host and invoke Skill Forge as shown below. If it does not appear, restart the host.
+
+| Host and scope | macOS / Linux destination | Windows destination |
+| --- | --- | --- |
+| Codex, personal | `~/.agents/skills/skill-forge` | `%USERPROFILE%/.agents/skills/skill-forge` |
+| Codex, one project | `<project>/.agents/skills/skill-forge` | `<project>/.agents/skills/skill-forge` |
+| Claude Code, personal | `~/.claude/skills/skill-forge` | `%USERPROFILE%/.claude/skills/skill-forge` |
+| Claude Code, one project | `<project>/.claude/skills/skill-forge` | `<project>/.claude/skills/skill-forge` |
+
+`~` and `%USERPROFILE%` mean your home folder; replace `<project>` with your project's folder. On Windows you can paste `%USERPROFILE%` into File Explorer's address bar; native backslashes also work. Personal means your local user installation; project means only the selected repository. Avoid installing the same named skill at multiple scopes.
+
+In **Codex**, select Skill Forge or type:
+
+```text
+$skill-forge Create a skill that turns rough meeting notes into action items.
+Keep unknown owners and dates explicit. Use your judgment. Draft now.
+```
+
+In **Claude Code**, type the same request starting with `/skill-forge` instead of `$skill-forge`.
+
+The [Codex guide](docs/codex.md) and [Claude Code guide](docs/claude-code.md) also include optional managed installation commands for macOS/Linux and Windows PowerShell, updating, removal and troubleshooting. For a manual update, back up and compare your existing folder before replacing it. Managed updates refuse customized copies rather than overwrite them.
+
+### Other capable LLMs: use the portable prompt
+
+1. Download [skill-forge-portable-v0.3.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.0/skill-forge-portable-v0.3.0.zip) and extract it.
+2. Upload **`skill-forge-prompt.md`**, or paste its complete contents into a new conversation. Use the full bundle, not just the short installed `SKILL.md`. Choose a model with enough context for the entire file.
+3. Say: **“Use Skill Forge to build a skill for [my repeated workflow].”** Supply relevant context and references. With no file tools, it returns complete file contents for you to save.
+
+No installation, Python or operating-system-specific command is needed for this route. Without browsing, subagents or execution, those parts remain unavailable and must be reported honestly. See [the plain-chat guide](docs/other-llms.md).
+
 The instructions work as text across operating systems. Installation guides include **Windows PowerShell** and **macOS/Linux** commands plus manual whole-folder copying without Python. Intel/x64 and ARM are processor architectures; choose a host/Python version available for your machine. See [compatibility](docs/compatibility.md) for actual tested OS/CPU combinations and the difference between helper tests and native model execution. Local installation does not install the skill on every device or cloud chat account.
 
 Download the [latest release](https://github.com/HarryBurd33/skill-forge/releases/latest): the **skill ZIP** contains an installable `skill-forge/` folder; the **portable ZIP** contains the standalone prompt and license; the **source ZIP** contains examples, tests and documentation. See [compatibility](docs/compatibility.md) for what was actually tested.
+
+### What you receive on first use
 
 After installation, try:
 
@@ -42,6 +78,8 @@ For a plan you want to edit first:
 
 For a project, supply the relevant files or accessible authorized project context. Skill Forge states what it actually read; it cannot see hidden chats or an entire project merely because you name one. See [conversation/project intake](skills/skill-forge/references/context-intake.md) and [other LLMs](docs/other-llms.md).
 
+**Review behavior:** the plan and concrete checks appear before the artifact. They can be followed by implementation in the same response. Say **“review first; wait before building”** if you want a separate turn to edit the plan.
+
 For the first result, check one realistic input and a failure case. Tell the builder what was wrong or changed:
 
 > Improve this skill: it assigns a speaker as the owner even when nobody accepted the task. Keep its table format and meeting order.
@@ -49,6 +87,25 @@ For the first result, check one realistic input and a failure case. Tell the bui
 Or improve the builder:
 
 > Evaluate a Skill Forge improvement: users who ask for a spreadsheet are not finding the output-destination question. Compare retrieval before and after, preserve the prior version, and adopt only if checks pass.
+
+## Remaining limitations and what was actually tested
+
+Skill Forge implements the requested workflow; it does not guarantee perfect skills or identical behavior on every model. Read these boundaries before relying on it:
+
+| Area | Current capability and limit |
+| --- | --- |
+| Host and operating-system coverage | Native Codex CLI 0.164.0 was tested on macOS ARM. Six hosted Python/helper and packaging jobs passed across Windows, Linux, Intel macOS and ARM macOS. Native Claude Code, native Codex model runs on Windows/Linux, and other model families remain unverified. Documented installation support is distinct from executed model testing. |
+| Tools and permissions | Installation grants no file, browsing, execution, subagent or GitHub access. Useful available subagents are launched; when unavailable, the parent works directly and discloses that limitation. Without execution, planned tests remain unexecuted. |
+| Research and reuse | Skill Finder performs a bounded, relevant search, not an exhaustive search of every service. Hugging Face is searched when useful. No suitable or properly licensed foundation means original work or a documented gap, not forced copying. |
+| Interview depth | Questioning continues while material uncertainty remains, within your pace and effort limits. It stops for useful closure or your draft/stop instruction; “maximum possible refinement” is not a measurable guarantee. |
+| Automatic updates | Adoption needs predefined checks, relevant regressions, demonstrated benefit and a writable target. Failed, inconclusive or unavailable required checks preserve the prior version. The helper validates hashes and supplied evidence records; it does not independently run a model evaluator or certify its judgment. |
+| Memory and installation scope | Continuity comes from saved files or a handoff, not retraining or guaranteed memory between chats. Save the private handoff and supply it when resuming. Local installation does not synchronize other devices, accounts or cloud environments. |
+| Privacy and publication | Keep credentials, raw transcripts and personal preferences outside public source. Publishing a generated skill requires authorization and working access to that destination; improving locally does not grant upstream write permission. Private storage is not automatically encrypted; Windows privacy depends on the parent folder's access controls. |
+| Evaluation strength | All 21 original scenarios / 84 required conditions and 15 supplemental items passed. Eight historical baseline pairs used different recorded model settings; the full comparison is descriptive, not a perfectly controlled causal benchmark or proof of universal reliability. |
+
+The final release also passed actual rollback/customization checks and clean first-use checks from downloaded public packages. See [the validation report](evals/v0.3.0/REPORT.md), [compatibility record](docs/compatibility.md), [requirements map](REQUIREMENTS.md) and [release verification receipt](https://github.com/HarryBurd33/skill-forge/releases/tag/v0.3.0) for evidence and qualifications.
+
+You can combine Skill Forge with Codex's built-in skill creator for authoring or review. Forge does not silently modify the vendor-managed creator; see [how they work together](docs/foundations.md#combining-skill-forge-with-codexs-skill-creator).
 
 ## What happens during a session
 
