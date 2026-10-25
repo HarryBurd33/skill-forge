@@ -15,7 +15,7 @@ The core is Markdown/JSON text with no OS-specific executable. Optional Python h
 | Codex model behavior | Real evidence is release-specific; [v0.3.0 report](../evals/v0.3.0/REPORT.md) records the current comparison and native smoke check, and earlier reports retain previous results | A requested model role does not establish the executing model/build. Use recorded environment details. |
 | Claude Code | Local paths/invocation supported by [official docs](https://code.claude.com/docs/en/skills); native execution unverified here | Helper success does not establish a Claude model run; personal local installation does not automatically reach cloud/Cowork. |
 | Portable prompt | Generated from canonical files; resource completeness/drift checks are available | Use a capable model; no universal performance promise. See [other LLMs](other-llms.md). |
-| Python helpers across OSes | [Six hosted jobs passed](https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465) for Windows and Ubuntu on Python 3.9/3.13, Intel macOS on 3.9 and ARM macOS on 3.13 | These are actual helper, packaging and temporary-install checks. Native LLM execution is separate; other OS/CPU/Python combinations need their own evidence. |
+| Python helpers across OSes | [Six candidate 9 hosted jobs passed](https://github.com/HarryBurd33/skill-forge/actions/runs/40211274980) for Windows and Ubuntu on Python 3.9/3.13, Intel macOS on 3.9 and ARM macOS on 3.13 | These are actual helper, packaging and temporary-install checks at commit `08fde55`. Native LLM execution is separate; other OS/CPU/Python combinations need their own evidence. |
 | Other OS, CPU or models | Unverified unless release evidence explicitly records them | Test a representative workflow before relying on a combination. |
 
 Core installation/discovery documentation was rechecked on **2026-10-21**. [Codex](codex.md) and [Claude Code](claude-code.md) guides cover personal/project install, invocation, updates and removal. One local copy does not install on every device or grant another account access.
@@ -38,6 +38,8 @@ Before building, Skill Forge shows its implementation spec and plans checks. Use
 Improvement persists through revised files and explicit evidence/session records, not model retraining or guaranteed memory across chats. A helper verifies hashes, snapshots and evidence structure; it cannot prove an evaluator truthful or infer quality from formatting alone. Failed, inconclusive or unavailable required checks leave the prior version active. Keep private preferences and raw transcripts outside public source. Installation creates no background automation.
 
 ## Actual hosted runtime samples — 2026-10-18
+
+On 2026-10-25, [candidate 9 platform checks](../evals/v0.3.0/round9-platform-checks.json) independently confirmed successful unit tests, format validation, portable drift checks and package/temporary-install validation in all six jobs at `08fde55b9293d0fab95e3ad7b329fd502f8be937`. The older runtime samples below remain historical; exact current OS build and patch-level Python versions were not re-read from job logs.
 
 Visible job logs record Windows build 10.0.26100 on AMD64/Python 3.9.13; Linux 6.17 x86_64/Python 3.13.16; macOS 15.7.9 x86_64/Python 3.9.25; and macOS 26.6.2 arm64/Python 3.13.16. The six-cell job results include the second Windows/Linux Python versions. These observations establish those helper executions, not every operating-system version or native Claude/model combination.
 

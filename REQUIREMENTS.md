@@ -82,7 +82,7 @@ Paths in the table are repository-relative to `skill-forge-v030-candidate9`, unl
 | Claude Code | Official paths/invocation documentation and temporary directory installation tests | Native Claude execution unverified; no claude executable found on this host2026-10-25. No parity claim. |
 | Other capable LLMs | Self-contained prompt and imposed tool-free model contexts | External model families/products unverified. Local/free model availability/quality not measured in this audit. |
 
-Platform evidence paths: `docs/compatibility.md`, `evals/v0.3.0/helper-checks.json`, `evals/v0.3.0/final-source-platform-checks.json`, `evals/v0.3.0/native-codex-smoke.json`. Hosted run [39344381465](https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465) binds source5, not9. Helper bytes are unchanged at `861bd90ef4259cd1aa57095a9734fc8c2c7fdb0fa60b134cbbaea1c3693c9115`.
+Platform evidence paths: `docs/compatibility.md`, `evals/v0.3.0/helper-checks.json`, `evals/v0.3.0/round9-platform-checks.json`, `evals/v0.3.0/native-codex-smoke.json`. Candidate 9 hosted run [40211274980](https://github.com/HarryBurd33/skill-forge/actions/runs/40211274980) passed all six jobs at `08fde55b9293d0fab95e3ad7b329fd502f8be937`. Historical run [39344381465](https://github.com/HarryBurd33/skill-forge/actions/runs/39344381465) and its exact runtime samples bind source5. Current job statuses/steps were verified; current OS build and patch-level Python log details were not re-read. Helper bytes are unchanged at `861bd90ef4259cd1aa57095a9734fc8c2c7fdb0fa60b134cbbaea1c3693c9115`.
 
 ## Foundation and desktop-source review
 
