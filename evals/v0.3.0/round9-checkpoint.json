@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-10-25T17:29:41.829333+00:00",
+  "status": "Incomplete original comparison; no adoption or release",
+  "captured_records": 41,
+  "planned_records": 42,
+  "qualified_reviewed_pairs": 20,
+  "candidate_case_passes": 20,
+  "candidate_required_conditions_passed": 80,
+  "required_conditions": 84,
+  "pending_fresh_execution": [
+    "L03-B",
+    "description-only activation"
+  ],
+  "pending_paired_reviews": [
+    "L03"
+  ],
+  "L03_A": "Complete and preserved; do not replay",
+  "source_and_definition_checks": {
+    "source_mutation_check": {
+      "A": true,
+      "B": true
+    },
+    "source_origin_hash_check": {
+      "A": true,
+      "B": true
+    },
+    "frozen_criteria_hash_check": true,
+    "original72_criteria_hash_check": true,
+    "frozen_evaluator_hash_check": true,
+    "corrected_K_hash_check": true,
+    "fresh_L_hash_check": true
+  },
+  "byte_audit": {
+    "checked_file_records": 761,
+    "frozen_batches_checked": 21,
+    "errors": []
+  },
+  "fidelity_anomaly": "J03-B literal escape/control representations preserved; consult independent grade, not silent normalization",
+  "limitations": [
+    "Exact serving model build not exposed; inherited settings unchanged.",
+    "Nine prospectively fixed historical baseline captures retain their recorded loader and capture limitations.",
+    "D05 recorded domain effort met its five-minute window; independently timestamped final delivery within that window was not established.",
+    "Description-only activation is separate from native host discovery. No current native Claude or other-model parity claim."
+  ],
+  "model_switch": "Routine coordinator may use GPT-6.1Sol Medium. Existing frozen actor/evaluator settings remain unchanged."
+}
