@@ -1,0 +1,821 @@
+{
+  "schema_version": 1,
+  "execution_kind": "script_execution",
+  "host": "macOS-14.6-arm64-arm-64bit-Mach-O Python 3.15.0",
+  "model": "not-applicable",
+  "elapsed_seconds": 2.3867233749479055,
+  "case_files": [
+    {
+      "path": "development-cases.json",
+      "sha256": "8f424a1366f9e8c2609837a8083d03bb46e5d6d1f0a2083affdb65f135451483"
+    },
+    {
+      "path": "heldout-cases.json",
+      "sha256": "67315c2c99d8f1bc0e02a7f85dc826717c5ac949527725afc103ec575f3ae69c"
+    }
+  ],
+  "runs": [
+    {
+      "label": "baseline",
+      "script_sha256": "861bd90ef4259cd1aa57095a9734fc8c2c7fdb0fa60b134cbbaea1c3693c9115",
+      "profile_supported": false,
+      "cases": [
+        {
+          "id": "C01",
+          "kind": "acceptance",
+          "result": "fail",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "C02",
+          "kind": "acceptance",
+          "result": "fail",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "C03",
+          "kind": "acceptance",
+          "result": "fail",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"claude-helper\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "C04",
+          "kind": "acceptance",
+          "result": "fail",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"anthropic-helper\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "C05",
+          "kind": "acceptance",
+          "result": "fail",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "C06",
+          "kind": "acceptance",
+          "result": "fail",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R01",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R02",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R03",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R04",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R05",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R06",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R07",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R08",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R09",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R10",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"claude-helper\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R11",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R12",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"name must be <=64 lowercase letters, numbers, and single hyphens\"\n}\n"
+        },
+        {
+          "id": "R13",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"Frontmatter name must match skill directory name\"\n}\n"
+        },
+        {
+          "id": "R14",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"description must be <=1024 characters\"\n}\n"
+        },
+        {
+          "id": "R15",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R16",
+          "kind": "regression",
+          "result": "fail",
+          "returncode": 2,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "unknown",
+          "stdout": "",
+          "stderr": "usage: forge.py [-h] [--version]\n                {validate,questions,bundle,session-init,hash,prepare,submit,rollback,install,package} ...\nforge.py: error: unrecognized arguments: --profile unknown\n"
+        },
+        {
+          "id": "H01",
+          "kind": "held_out",
+          "result": "fail",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "H02",
+          "kind": "held_out",
+          "result": "fail",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"my-anthropic-notes\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "H03",
+          "kind": "held_out",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "H04",
+          "kind": "held_out",
+          "result": "fail",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": false,
+          "diagnostic_ok": false,
+          "effective_profile": "generic (baseline profile unavailable)",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML or semantic quality.\"\n}\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "label": "candidate",
+      "script_sha256": "3532563429bc16da27ddcadc9cea9f9f56a9be3499b389ebc691557d3e5a1bcb",
+      "profile_supported": true,
+      "cases": [
+        {
+          "id": "C01",
+          "kind": "acceptance",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"compatibility must be 1-500 characters when supplied\"\n}\n"
+        },
+        {
+          "id": "C02",
+          "kind": "acceptance",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"compatibility must be 1-500 characters when supplied\"\n}\n"
+        },
+        {
+          "id": "C03",
+          "kind": "acceptance",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"Claude profile: name contains reserved claude/anthropic text\"\n}\n"
+        },
+        {
+          "id": "C04",
+          "kind": "acceptance",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"Claude profile: name contains reserved claude/anthropic text\"\n}\n"
+        },
+        {
+          "id": "C05",
+          "kind": "acceptance",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"Claude profile: description cannot contain XML angle brackets\"\n}\n"
+        },
+        {
+          "id": "C06",
+          "kind": "acceptance",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"Claude profile: description cannot contain XML angle brackets\"\n}\n"
+        },
+        {
+          "id": "R01",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"generic\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R02",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"claude\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R03",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"generic\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R04",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"generic\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R05",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"generic\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R06",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"generic\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R07",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"generic\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R08",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"claude\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R09",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"claude\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R10",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"claude-helper\",\n  \"profile\": \"generic\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R11",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"generic\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R12",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"name must be <=64 lowercase letters, numbers, and single hyphens\"\n}\n"
+        },
+        {
+          "id": "R13",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"Frontmatter name must match skill directory name\"\n}\n"
+        },
+        {
+          "id": "R14",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"description must be <=1024 characters\"\n}\n"
+        },
+        {
+          "id": "R15",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"generic\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "R16",
+          "kind": "regression",
+          "result": "pass",
+          "returncode": 2,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "unknown",
+          "stdout": "",
+          "stderr": "usage: forge.py validate [-h] [--profile {generic,claude}] path\nforge.py validate: error: argument --profile: invalid choice: 'unknown' (choose from 'generic', 'claude')\n"
+        },
+        {
+          "id": "H01",
+          "kind": "held_out",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "generic",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"compatibility must be 1-500 characters when supplied\"\n}\n"
+        },
+        {
+          "id": "H02",
+          "kind": "held_out",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"Claude profile: name contains reserved claude/anthropic text\"\n}\n"
+        },
+        {
+          "id": "H03",
+          "kind": "held_out",
+          "result": "pass",
+          "returncode": 0,
+          "accepted": true,
+          "expected_accept": true,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "{\n  \"status\": \"pass\",\n  \"name\": \"meeting-actions\",\n  \"profile\": \"claude\",\n  \"files\": 1,\n  \"relative_links\": 0,\n  \"questions\": 0,\n  \"limitations\": \"Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality.\"\n}\n",
+          "stderr": ""
+        },
+        {
+          "id": "H04",
+          "kind": "held_out",
+          "result": "pass",
+          "returncode": 1,
+          "accepted": false,
+          "expected_accept": false,
+          "diagnostic_ok": true,
+          "effective_profile": "claude",
+          "stdout": "",
+          "stderr": "{\n  \"status\": \"error\",\n  \"message\": \"Claude profile: description cannot contain XML angle brackets\"\n}\n"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "C01",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "C02",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "C03",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "C04",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "C05",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "C06",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R01",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R02",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R03",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R04",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R05",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R06",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R07",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R08",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R09",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R10",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R11",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R12",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R13",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R14",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R15",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "R16",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "H01",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "H02",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "H03",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    },
+    {
+      "id": "H04",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "final-execution.json"
+    }
+  ],
+  "benefit": {
+    "metric": "invalid_metadata_cases_correctly_rejected",
+    "baseline": 3,
+    "candidate": 12
+  },
+  "limits": "Deterministic helper metadata validation only; no claim of downstream model quality, full YAML validity or native Claude execution."
+}

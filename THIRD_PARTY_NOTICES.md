@@ -13,3 +13,5 @@ The official Agent Skills specification, Agent Skills evaluation guide, OpenAI d
 [SOURCES.json](SOURCES.json) identifies the exact retrieved material and dates; [the comparison](docs/foundations.md) explains the design influence. If a future contribution copies or substantially adapts third-party expression, record the affected files and modifications, include the applicable license and required notices in both repository and release packages, and verify compatibility before merging. MIT for original work does not erase upstream obligations.
 
 Skill Forge is an independent project and is not affiliated with or endorsed by these authors or product vendors.
+
+Anthropic’s *The Complete Guide to Building Skills for Claude* was reviewed on 2026-10-26 as a conceptual reference for optional metadata checks. The PDF and its prose/templates are not redistributed. No permission or license is inferred from Anthropic’s separately licensed skill repository. See [the review](docs/claude-guide-review.md) and source ledger.

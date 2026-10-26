@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "scope": "builder",
+  "change_kind": "behavior",
+  "evaluation_kind": "script_execution",
+  "checks": [
+    {
+      "id": "C01",
+      "kind": "acceptance",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: \"\"\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "C02",
+      "kind": "acceptance",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "C03",
+      "kind": "acceptance",
+      "input": "---\nname: claude-helper\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "C04",
+      "kind": "acceptance",
+      "input": "---\nname: anthropic-helper\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "C05",
+      "kind": "acceptance",
+      "input": "---\nname: meeting-actions\ndescription: Use <task> tags when building actions.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "C06",
+      "kind": "acceptance",
+      "input": "---\nname: meeting-actions\ndescription: Use > markers when building actions.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R01",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R02",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R03",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R04",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: \"P\"\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R05",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: 'Python 3.9 or newer'\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R06",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: >\n  Python 3.9\n  with file access\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R07",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: |\n  Python 3.9\n  with file access\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R08",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: >\n  Turn notes into actions.\n  Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R09",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\n<example>unknown owner</example>\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R10",
+      "kind": "regression",
+      "input": "---\nname: claude-helper\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R11",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Use <task> tags when building actions.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R12",
+      "kind": "regression",
+      "input": "---\nname: Meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R13",
+      "kind": "regression",
+      "input": "---\nname: different-name\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R14",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R15",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: Python\nmetadata:\n  author: Test\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "R16",
+      "kind": "regression",
+      "input": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "H01",
+      "kind": "held_out",
+      "input": "Reserved independent case",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "H02",
+      "kind": "held_out",
+      "input": "Reserved independent case",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "H03",
+      "kind": "held_out",
+      "input": "Reserved independent case",
+      "expected": "Accept",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    },
+    {
+      "id": "H04",
+      "kind": "held_out",
+      "input": "Reserved independent case",
+      "expected": "Reject with relevant diagnostic",
+      "failure": "Incorrect accept/reject or missing diagnostic"
+    }
+  ],
+  "benefit": {
+    "metric": "invalid_metadata_cases_correctly_rejected",
+    "direction": "higher",
+    "min_delta": 3
+  }
+}

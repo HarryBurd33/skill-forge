@@ -65,6 +65,41 @@ print(json.dumps({q: [x['id'] for x in m.search_questions(skill, q)] for q in ['
     def tearDown(self):
         self.temp.cleanup()
 
+    def test_optional_compatibility_contract(self):
+        original = (self.skill / "SKILL.md").read_text(encoding="utf-8")
+        for scalar in ('"P"', '"' + 'x' * 500 + '"', "'Python 3.9 or newer'", '>\n  Python 3.9\n  with file access', '|\n  Python 3.9\n  with file access', '"null"'):
+            write_fixture(self.skill / "SKILL.md", original.replace('description: Build useful skills.\n', 'description: Build useful skills.\ncompatibility: ' + scalar + '\n'))
+            self.assertEqual(forge.validate(self.skill)["status"], "pass")
+        for scalar in ('', '""', "''", 'null', '~', 'x' * 501):
+            write_fixture(self.skill / "SKILL.md", original.replace('description: Build useful skills.\n', 'description: Build useful skills.\ncompatibility: ' + scalar + '\n'))
+            with self.assertRaisesRegex(forge.ForgeError, 'compatibility'):
+                forge.validate(self.skill)
+        write_fixture(self.skill / "SKILL.md", original)
+        self.assertEqual(forge.validate(self.skill)["status"], "pass")
+
+    def test_claude_profile_is_explicit_and_metadata_only(self):
+        root = self.root / 'claude-helper'
+        root.mkdir()
+        write_fixture(root / 'SKILL.md', '---\nname: claude-helper\ndescription: Build useful skills.\n---\n# Helper\n')
+        self.assertEqual(forge.validate(root)["profile"], "generic")
+        with self.assertRaisesRegex(forge.ForgeError, 'reserved'):
+            forge.validate(root, 'claude')
+        original = (self.skill / 'SKILL.md').read_text(encoding='utf-8')
+        write_fixture(self.skill / 'SKILL.md', original.replace('description: Build useful skills.', 'description: Use <task> input.'))
+        self.assertEqual(forge.validate(self.skill)["status"], "pass")
+        with self.assertRaisesRegex(forge.ForgeError, 'description'):
+            forge.validate(self.skill, 'claude')
+        write_fixture(self.skill / 'SKILL.md', original.replace('description: Build useful skills.', 'description: >\n  Build useful skills.') + '\n<example>Allowed body markup</example>\n')
+        self.assertEqual(forge.validate(self.skill, 'claude')["profile"], 'claude')
+
+    def test_validate_profile_cli(self):
+        process = subprocess.run([sys.executable, str(SCRIPT), 'validate', str(self.skill), '--profile', 'claude'], capture_output=True, text=True)
+        self.assertEqual(process.returncode, 0, process.stderr + process.stdout)
+        self.assertEqual(json.loads(process.stdout)["profile"], 'claude')
+        process = subprocess.run([sys.executable, str(SCRIPT), 'validate', str(self.skill), '--profile', 'unknown'], capture_output=True, text=True)
+        self.assertNotEqual(process.returncode, 0)
+        self.assertIn('invalid choice', process.stderr)
+
     def prepare_candidate(self):
         manifest = forge.prepare(self.skill, self.state, self.criteria_path, self.evaluator, 30)
         run = Path(manifest["run"])

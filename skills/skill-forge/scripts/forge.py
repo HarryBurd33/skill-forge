@@ -20,7 +20,7 @@ import tempfile
 import uuid
 import zipfile
 
-VERSION = "0.3.0"
+VERSION = "0.3.1"
 SCHEMA = 1
 MARKER = ".skill-forge-managed.json"
 SKIP_DIRS = {".git", "__pycache__", ".pytest_cache"}
@@ -174,16 +174,39 @@ def metadata(text):
     name = values["name"]
     require(len(name) <= 64 and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", name), "name must be <=64 lowercase letters, numbers, and single hyphens")
     require(len(values["description"]) <= 1024, "description must be <=1024 characters")
+    # Optional environment requirements use the same small scalar subset as the
+    # required fields. Horizontal whitespace avoids consuming the next key when
+    # compatibility is present but empty. This is not a general YAML parser.
+    match = re.search(r"^compatibility:[ \t]*(.*)$", head, re.M)
+    if match is not None:
+        value = match.group(1).strip()
+        if value in ("|", ">", "|-", ">-"):
+            lines = []
+            for line in head[match.end():].splitlines():
+                if line and not line[0].isspace():
+                    break
+                if line.strip():
+                    lines.append(line.strip())
+            value = " ".join(lines)
+        else:
+            require(value.lower() not in ("null", "~"), "compatibility must be a nonempty string, not null")
+            value = value.strip("\"'")
+        require(bool(value.strip()) and len(value) <= 500, "compatibility must be 1-500 characters when supplied")
+        values["compatibility"] = value
     return values
 
 
-def validate(skill):
+def validate(skill, profile="generic"):
+    require(profile in ("generic", "claude"), "Unknown validation profile: {}".format(profile))
     require(not is_link(skill), "Skill root cannot be a symlink/reparse point")
     skill = Path(skill).resolve()
     inventory = files(skill)
     require((skill / "SKILL.md").is_file(), "Missing SKILL.md")
     meta = metadata((skill / "SKILL.md").read_text(encoding="utf-8"))
     require(meta["name"] == skill.name, "Frontmatter name must match skill directory name")
+    if profile == "claude":
+        require(not any(word in meta["name"] for word in ("claude", "anthropic")), "Claude profile: name contains reserved claude/anthropic text")
+        require(not any(char in meta["description"] for char in ("<", ">")), "Claude profile: description cannot contain XML angle brackets")
     checked = 0
     for path in inventory:
         if path.suffix != ".md":
@@ -218,7 +241,7 @@ def validate(skill):
             for field in ("purpose", "ask_when", "dependencies", "affects", "evidence", "skip_when"):
                 require(field in q, "Question {} lacks {}".format(q["id"], field))
         question_count = len(questions)
-    return {"status": "pass", "name": meta["name"], "files": len(inventory), "relative_links": checked, "questions": question_count, "limitations": "Checks supported frontmatter fields and file links, not full YAML or semantic quality."}
+    return {"status": "pass", "name": meta["name"], "profile": profile, "files": len(inventory), "relative_links": checked, "questions": question_count, "limitations": "Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality."}
 
 
 def question_entries(data):
@@ -604,6 +627,7 @@ def parser():
     sub = p.add_subparsers(dest="command", required=True)
     q = sub.add_parser("validate", help="Check skill metadata and packaged references")
     q.add_argument("path", type=Path)
+    q.add_argument("--profile", choices=("generic", "claude"), default="generic", help="Add Claude-specific discovery metadata restrictions")
     q = sub.add_parser("questions", help="Search question metadata")
     q.add_argument("query", nargs="?", default="")
     q.add_argument("--skill", type=Path, default=default_skill)
@@ -646,7 +670,7 @@ def main(argv=None):
     args = parser().parse_args(argv)
     try:
         if args.command == "validate":
-            result = validate(args.path)
+            result = validate(args.path, args.profile)
         elif args.command == "questions":
             result = search_questions(args.skill, args.query, args.status)
         elif args.command == "bundle":

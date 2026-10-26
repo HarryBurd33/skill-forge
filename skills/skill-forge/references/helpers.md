@@ -26,9 +26,22 @@ python3 scripts/forge.py bundle --skill . --output /tmp/skill-forge-prompt.md --
 
 `validate` checks required discovery fields, the skill name and directory match,
 question record completeness, duplicate question identifiers, and local Markdown
-file links. It rejects links outside the package and symlinks. It checks supported
-frontmatter fields, not the full YAML language, semantic correctness, or anchor
-existence. Literal paths under `references`, `templates`, `questions`, `scripts`,
+file links. It rejects links outside the package and symlinks. If supplied, the optional
+`compatibility` field must contain 1–500 characters. The supported scalar subset
+is plain/quoted text and literal/folded block text; this is not a full YAML parser.
+It does not establish semantic quality, anchor existence or native-host acceptance.
+
+For a skill intended for Claude, add `--profile claude` to `validate`. This opt-in
+profile rejects names containing `claude` or `anthropic` and angle brackets in
+the parsed name/description. It deliberately leaves body markup and YAML block
+indicators alone. Default `--profile generic` keeps vendor-neutral naming and
+description rules. These are discovery-field lint checks, not a security audit.
+
+```sh
+python3 scripts/forge.py validate /path/to/my-skill --profile claude
+```
+
+Literal paths under `references`, `templates`, `questions`, `scripts`,
 and `assets` are checked when written in inline code. Examples inside fenced code
 blocks are not interpreted as live links.
 

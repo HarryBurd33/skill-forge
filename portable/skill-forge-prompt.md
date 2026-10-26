@@ -12,7 +12,7 @@ their references below describe capabilities, not tools available in plain chat.
 Generated from canonical instructions and all reference, template, question,
 and bundled sub-skill resources. Edit those sources and regenerate this file; do not edit this bundle.
 
-Source SHA-256: `1627e54ca40829fc5fd61f8869402404a571672f503f08cbb444fade553d724f`
+Source SHA-256: `066be3ef592802b31c69d1ce8fddb0b595f295e49a6d8884a7abf9d78d359f81`
 
 <a id="resource-skill-md"></a>
 
@@ -23,7 +23,7 @@ name: skill-forge
 description: Create reusable agent skills from ideas, conversations or project workflows; improve existing skills or Skill Forge from observed failures. Use when asked to turn this conversation or project into a skill, not merely perform its domain task or write a one-off prompt.
 license: MIT
 metadata:
-  version: "0.3.0"
+  version: "0.3.1"
 ---
 
 # Skill Forge
@@ -126,6 +126,8 @@ Build for the agreed skill-delivery contract. A single Markdown skill is deliver
 
 Return installation/export steps, at least one natural-language invocation, activation and non-activation examples, validation evidence types, dependencies and unfinished checks. An untested skill can be delivered provisionally, but an existing active version remains until its required improvement checks pass.
 
+When the intended host includes Claude, the optional helper can check its discovery-field restrictions with `validate /path/to/skill-name --profile claude`. The default generic profile does not impose vendor-specific reserved names. Add `compatibility` only for real environment requirements; if present it must contain 1–500 characters. Preserve XML/HTML examples in the body when useful. Neither profile is a complete YAML validator or proof of native installation/behavior.
+
 <a id="resource-references-context-intake-md"></a>
 
 ## Included resource: references/context-intake.md
@@ -217,9 +219,22 @@ python3 scripts/forge.py bundle --skill . --output /tmp/skill-forge-prompt.md --
 
 `validate` checks required discovery fields, the skill name and directory match,
 question record completeness, duplicate question identifiers, and local Markdown
-file links. It rejects links outside the package and symlinks. It checks supported
-frontmatter fields, not the full YAML language, semantic correctness, or anchor
-existence. Literal paths under `references`, `templates`, `questions`, `scripts`,
+file links. It rejects links outside the package and symlinks. If supplied, the optional
+`compatibility` field must contain 1–500 characters. The supported scalar subset
+is plain/quoted text and literal/folded block text; this is not a full YAML parser.
+It does not establish semantic quality, anchor existence or native-host acceptance.
+
+For a skill intended for Claude, add `--profile claude` to `validate`. This opt-in
+profile rejects names containing `claude` or `anthropic` and angle brackets in
+the parsed name/description. It deliberately leaves body markup and YAML block
+indicators alone. Default `--profile generic` keeps vendor-neutral naming and
+description rules. These are discovery-field lint checks, not a security audit.
+
+```sh
+python3 scripts/forge.py validate /path/to/my-skill --profile claude
+```
+
+Literal paths under `references`, `templates`, `questions`, `scripts`,
 and `assets` are checked when written in inline code. Examples inside fenced code
 blocks are not interpreted as live links.
 

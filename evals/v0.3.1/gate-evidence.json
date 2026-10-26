@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "baseline_hash": "86daffd3c4e7cdeed994717466b0ba9a8e3c6c16bd596acbef3ed01114963608",
+  "candidate_hash": "5b25ded0676dc20f8331442bfe62a4d3e17df05a9f71603cd745224c7b5a27c7",
+  "criteria_hash": "552c00eb8756ad051be3da35300cd1738106679c192b1957f92ce36f749ea32f",
+  "evaluator_hash": "4a692dd52ca1cd9163ef57feb954c727b503090653e988b11a15f6c6a8dd5af7",
+  "execution": {
+    "kind": "script_execution",
+    "coverage": "behavior",
+    "model": "not-applicable",
+    "host": "macOS-14.6-arm64-arm-64bit-Mach-O Python 3.15.0",
+    "conditions": "Frozen real-subprocess evaluator; samePython andcaseinputs. Old baseline has noClaudeprofile so knownClaude cases use generic and record that limit. No interview/modelqualityclaim."
+  },
+  "results": [
+    {
+      "id": "C01",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "C02",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "C03",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "C04",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "C05",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "C06",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R01",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R02",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R03",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R04",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R05",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R06",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R07",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R08",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R09",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R10",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R11",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R12",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R13",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R14",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R15",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "R16",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "H01",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "H02",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "H03",
+      "baseline": "pass",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    },
+    {
+      "id": "H04",
+      "baseline": "fail",
+      "candidate": "pass",
+      "artifact": "execution.json"
+    }
+  ],
+  "benefit": {
+    "metric": "invalid_metadata_cases_correctly_rejected",
+    "baseline": 3,
+    "candidate": 12
+  }
+}
