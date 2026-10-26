@@ -3,7 +3,7 @@ name: skill-forge
 description: Create reusable agent skills from ideas, conversations or project workflows; improve existing skills or Skill Forge from observed failures. Use when asked to turn this conversation or project into a skill, not merely perform its domain task or write a one-off prompt.
 license: MIT
 metadata:
-  version: "0.3.0"
+  version: "0.3.1"
 ---
 
 # Skill Forge

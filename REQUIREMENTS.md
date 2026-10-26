@@ -1,6 +1,6 @@
-# Skill Forge v0.3.0 requirements and evidence
+# Skill Forge requirements and evidence
 
-Updated2026-10-25. Required behavioral checks passed21/21cases and84/84conditions; supplemental controls passed15/15. Final source adds only verified navigation. Evidence statements distinguish actual execution, static/component evidence and unverified native hosts. Historical audits and scores remain in Git history and the evaluation report.
+Updated2026-10-26. v0.3.1 adds tested metadata-helper checks; the following workflow evidence remains the completed v0.3.0 evaluation, not a rerun. See [v0.3.1 validation](evals/v0.3.1/REPORT.md). Required behavioral checks passed21/21cases and84/84conditions; supplemental controls passed15/15. Final source adds only verified navigation. Evidence statements distinguish actual execution, static/component evidence and unverified native hosts. Historical audits and scores remain in Git history and the evaluation report.
 
 | Requirement | Evidence / limit |
 | --- | --- |

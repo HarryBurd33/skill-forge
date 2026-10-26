@@ -1,0 +1,7 @@
+{
+  "candidate_hash": "fa0e7326ca888376e4d521cdd9ae9b0e8d98861bfbaa3dfb7a19747bb391e6b3",
+  "status": "not-adopted",
+  "reason": "Independent review found closing code fence sharing a line with following prose",
+  "checks": "26CLIcases passed; documentation repair required",
+  "repair": "Insert newline after closing fence; samecriteria/evaluator/script preserved"
+}

@@ -1,10 +1,15 @@
 # Changelog
 
-Development checkpoint2026-10-25: candidate9consolidates verification planning into a visible rule/example/outcome/method ledger. Seven independently reviewed scenarios pass28conditions; complete evaluation and adoption remain pending. Candidate8rejection and all earlier scores are preserved. v0.2.0 remains the current release.
+## 0.3.1 — 2026-10-26
+
+- Add optional Claude discovery-metadata validation and optional compatibility-field checks, with fixed baseline/candidate CLI cases.
+- Preserve generic validation, body markup, existing interview behavior, and evidence-gated updates.
+- Record the supplied Claude guide review, primary-source checks, license limits and independently reserved tests.
+- Refresh the derived portable bundle and managed installation. Validation scope and limitations are recorded in evals/v0.3.1/REPORT.md.
 
 ## 0.3.0 — 2026-10-25
 
-Candidate 8 was rejected after a required verification-planning failure. Candidate 7 and its historical test-input flaw remain recorded without rescoring. Stable 0.2.0 remains active. These changes are proposals, not a released update.
+Released after candidate9 passed all fixed behavioral checks and candidate10 passed its navigation-only checks. Earlier rejected candidates and test-input limitations remain preserved in the historical evaluation records.
 
 - Add conversation/project intake that preserves final corrections, reports source coverage, and keeps private context out of shared skills.
 - Present an implementation spec and observable verification plan before building. Offer an optional review pause and preserve explicit review-first requests on resume.

@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "id": "H01",
+      "kind": "held_out",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: |-\n\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": "compatibility"
+    },
+    {
+      "id": "H02",
+      "kind": "held_out",
+      "text": "---\nname: my-anthropic-notes\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "claude",
+      "folder": "my-anthropic-notes",
+      "diagnostic": "reserved"
+    },
+    {
+      "id": "H03",
+      "kind": "held_out",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\nmetadata:\n  compatibility: \"\"\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "claude",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "H04",
+      "kind": "held_out",
+      "text": "---\nname: meeting-actions\ndescription: |-\n  Read <note> entries.\n  Use for notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "claude",
+      "folder": "meeting-actions",
+      "diagnostic": "description"
+    }
+  ]
+}

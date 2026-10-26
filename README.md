@@ -1,6 +1,6 @@
 # Skill Forge
 
-**Version 0.3.0.** [Validation and compatibility limits](evals/v0.3.0/REPORT.md).
+**Version 0.3.1.** [Current validation and limits](evals/v0.3.1/REPORT.md). The interview and workflow behavior is unchanged from v0.3.0.
 
 
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
@@ -28,7 +28,7 @@ You need access to Codex, Claude Code, or another capable chat model. Skill Forg
 
 ### Codex or Claude Code: install without commands
 
-1. Download [skill-forge-v0.3.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.0/skill-forge-v0.3.0.zip) and extract it.
+1. Download [skill-forge-v0.3.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.1/skill-forge-v0.3.1.zip) and extract it.
 2. Copy the **complete `skill-forge` folder**, including its references, scripts, templates and nested Skill Finder, to **one** destination below. Create missing parent folders. Copying only `SKILL.md` is incomplete.
 3. Open a new session in your host and invoke Skill Forge as shown below. If it does not appear, restart the host.
 
@@ -54,7 +54,7 @@ The [Codex guide](docs/codex.md) and [Claude Code guide](docs/claude-code.md) al
 
 ### Other capable LLMs: use the portable prompt
 
-1. Download [skill-forge-portable-v0.3.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.0/skill-forge-portable-v0.3.0.zip) and extract it.
+1. Download [skill-forge-portable-v0.3.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.1/skill-forge-portable-v0.3.1.zip) and extract it.
 2. Upload **`skill-forge-prompt.md`**, or paste its complete contents into a new conversation. Use the full bundle, not just the short installed `SKILL.md`. Choose a model with enough context for the entire file.
 3. Say: **“Use Skill Forge to build a skill for [my repeated workflow].”** Supply relevant context and references. With no file tools, it returns complete file contents for you to save.
 
@@ -120,6 +120,16 @@ For useful separable work it automatically launches available constructors, reso
 When a session pauses, save its private record or copy its handoff into the next chat. Improvement means revised files and recorded evidence; it does not retrain a model or promise memory across unrelated conversations.
 
 [Worked examples](examples/README.md) cover research and writing, an adaptive prompt builder, a planner handling an exam, and a correction to an existing skill. The public inputs are fictional. Authored demonstrations are labeled separately from executed evaluation results: [v0.1.0](evals/REPORT.md), [v0.2.0](evals/v0.2.0/REPORT.md), and [v0.3.0](evals/v0.3.0/REPORT.md).
+
+## Claude metadata checks in v0.3.1
+
+The [Claude guide review](docs/claude-guide-review.md) identified a narrow helper gap. Optional `compatibility` values are now checked for 1–500 characters; omit the field when no environment requirements apply. For Claude-targeted skills, use the opt-in profile from a source checkout:
+
+```sh
+python3 skills/skill-forge/scripts/forge.py validate /path/to/my-skill --profile claude
+```
+
+On Windows use `py -3` instead of `python3`. The profile checks reserved names and discovery-description angle brackets; body XML/HTML is allowed. Generic validation remains the default. This checks a supported metadata subset, not full YAML validity, native Claude upload success or model quality.
 
 ## Evidence and automatic updates
 

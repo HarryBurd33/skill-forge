@@ -1,0 +1,202 @@
+{
+  "cases": [
+    {
+      "id": "C01",
+      "kind": "acceptance",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: \"\"\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": "compatibility"
+    },
+    {
+      "id": "C02",
+      "kind": "acceptance",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": "compatibility"
+    },
+    {
+      "id": "C03",
+      "kind": "acceptance",
+      "text": "---\nname: claude-helper\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "claude",
+      "folder": "claude-helper",
+      "diagnostic": "reserved"
+    },
+    {
+      "id": "C04",
+      "kind": "acceptance",
+      "text": "---\nname: anthropic-helper\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "claude",
+      "folder": "anthropic-helper",
+      "diagnostic": "reserved"
+    },
+    {
+      "id": "C05",
+      "kind": "acceptance",
+      "text": "---\nname: meeting-actions\ndescription: Use <task> tags when building actions.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "claude",
+      "folder": "meeting-actions",
+      "diagnostic": "description"
+    },
+    {
+      "id": "C06",
+      "kind": "acceptance",
+      "text": "---\nname: meeting-actions\ndescription: Use > markers when building actions.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "claude",
+      "folder": "meeting-actions",
+      "diagnostic": "description"
+    },
+    {
+      "id": "R01",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R02",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "claude",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R03",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R04",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: \"P\"\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R05",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: 'Python 3.9 or newer'\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R06",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: >\n  Python 3.9\n  with file access\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R07",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: |\n  Python 3.9\n  with file access\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R08",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: >\n  Turn notes into actions.\n  Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "claude",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R09",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\n<example>unknown owner</example>\n",
+      "expected_accept": true,
+      "profile": "claude",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R10",
+      "kind": "regression",
+      "text": "---\nname: claude-helper\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "generic",
+      "folder": "claude-helper",
+      "diagnostic": null
+    },
+    {
+      "id": "R11",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Use <task> tags when building actions.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R12",
+      "kind": "regression",
+      "text": "---\nname: Meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "generic",
+      "folder": "Meeting-actions",
+      "diagnostic": "name"
+    },
+    {
+      "id": "R13",
+      "kind": "regression",
+      "text": "---\nname: different-name\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": "name"
+    },
+    {
+      "id": "R14",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": "description"
+    },
+    {
+      "id": "R15",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\ncompatibility: Python\nmetadata:\n  author: Test\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": true,
+      "profile": "generic",
+      "folder": "meeting-actions",
+      "diagnostic": null
+    },
+    {
+      "id": "R16",
+      "kind": "regression",
+      "text": "---\nname: meeting-actions\ndescription: Turn meeting notes into actions. Use for meeting notes.\n---\n# Actions\nKeep unknown values explicit.\n",
+      "expected_accept": false,
+      "profile": "unknown",
+      "folder": "meeting-actions",
+      "diagnostic": "invalid choice"
+    }
+  ]
+}

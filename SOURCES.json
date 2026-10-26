@@ -263,6 +263,23 @@
           "url": "https://github.com/openai/codex/blob/8c076942cb70fba8e5c4732c23f1faabc4aed484/NOTICE"
         }
       ]
+    },
+    {
+      "id": "anthropic-complete-guide-2026-10-26",
+      "type": "pdf-and-live-documentation",
+      "retrieved_date": "2026-10-26",
+      "url": "https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf",
+      "supplied_file_sha256": "66cbcc06df9271e0bb59986582646f0c4c7c94697554f893f937a5a55cef736d",
+      "bytes": 561652,
+      "pages": 33,
+      "inspected_scope": "All supplied pages text-extracted privately; checklist page31 visually inspected. Official public counterpart opened, downloaded-byte equivalence not established.",
+      "revision": "not applicable to PDF/live pages",
+      "corroboration": [
+        "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
+        "https://agentskills.io/specification"
+      ],
+      "license": "No redistribution permission found in supplied PDF; no Apache inference from separate repository",
+      "reuse": "Conceptual only; original validator code and explanation. PDF, extraction and source prose not distributed."
     }
   ],
   "verification_updates": [

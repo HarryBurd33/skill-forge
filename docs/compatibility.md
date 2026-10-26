@@ -46,3 +46,7 @@ Visible job logs record Windows build 10.0.26100 on AMD64/Python 3.9.13; Linux 6
 On POSIX, the helper requests owner-only state-directory mode. On Windows, directory access inherits Windows ACLs; `chmod(0700)` is not an ACL privacy guarantee. Keep private state under your user profile outside repositories and use an appropriately private parent directory.
 
 Final source86daffd3… adds only reference navigation to the behavior-tested source. The [final native receipt](../evals/v0.3.0/native-final-smoke.json) records a read-only CLI invocation using default per-invocation configuration, with normal authentication and rules. It does not establish behavior under every user configuration.
+
+## v0.3.1 metadata-helper scope
+
+The opt-in Claude profile checks discovery metadata against documented restrictions; it does not establish native Claude upload acceptance. The current comparison ran26actual CLI cases, with30local unit passes and1Windows-only skip. [The v0.3.1 report](../evals/v0.3.1/REPORT.md) records frozen inputs and limits; earlier model/host evidence remains historical.
