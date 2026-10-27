@@ -38,3 +38,13 @@ The model can return a file map and a complete code block for each file, such as
 Keep credentials, raw transcripts, sensitive examples and private preferences out of shared files. Use placeholders and local configuration. Revised files and session records provide continuity; they do not retrain the model or create memory across unrelated conversations.
 
 Test a representative request before relying on a new host/model. The [compatibility record](compatibility.md) distinguishes actual checks, documented support and unverified combinations.
+
+## Optional REA and Anatomy resources
+
+The portable prompt contains workflow instructions, including the nested adapters. It does not embed the Anatomy renderer's JavaScript and CSS, and it cannot grant filesystem, execution or REA access. For a visual target, also supply the complete `resources/anatomy` folder from the skill/source ZIP, including vendor files, license and provenance. With file tools, copy that complete slice into the generated target's `assets/anatomy` folder. With text-only access, receive an exact pinned file map and original provisional instructions; actual asset attachment, rendering and required visual checks remain pending. A link to upstream source alone is not a completed self-contained renderer.
+
+[REA](integrations.md#learn-a-workflow-from-source-or-a-shipped-artifact) is optional. Readable complete source still uses normal file tools. Without REA or a compatible provider, record shipped-artifact/runtime questions as unresolved and continue the inspection that the available files support. Never claim an Evidence ID or execution that did not occur. Installing or registering a tool needs the user's current authorization.
+
+When real assets are available, the bundled SVG/HTML example needs Node.js 20.10+ and a browser for visual checks, with no npm dependencies. The built HTML embeds its renderer, model and CSS. Keep notices/provenance when sharing; the generated target and built HTML do not depend on Forge. See [the exact scope](integrations.md#what-is-included).
+
+The candidate full skill ZIP carries the complete 32-file skill folder, including real Anatomy assets. The portable ZIP is the prompt-and-notices route; its instructions alone are not those executable assets. A plain-chat model can return complete original file texts and a spec, but cannot fetch the pinned kit or render it without the necessary tools or user-supplied files.

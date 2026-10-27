@@ -1,0 +1,520 @@
+{
+  "status": "MODEL_SUITE_PASS; ADOPTION_PENDING_S1_BROWSER",
+  "frozen_behavior_candidate_hash": "51f4b6ace943de87cbc6b09ca25213e578bea4a5d7dfe45599ca19734031aea4",
+  "notice_only_candidate_hash": "da8e24cf80f7dfc57597a7746ff917a22a2030adf4a7ee7983506e446380dbeb",
+  "settings": {
+    "requested_model": "gpt-6.1-sol",
+    "requested_effort": "medium",
+    "observed_model": null,
+    "observed_effort": null,
+    "host": "Codex CLI0.164.0 on macOS arm64; ephemeral native runs do not emit serving context"
+  },
+  "results": [
+    {
+      "case": "D1-source-data",
+      "arm": "baseline",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C1": {
+          "status": "PASS",
+          "evidence": "Transcript reads the four complete-source fixture files; no REA/doctor/setup command was invoked."
+        },
+        "C4": {
+          "status": "PASS",
+          "evidence": "Source AST/mapping and stale instruction independently inspected; generated SKILL encodes input/output/activation; target LICENSE bytes match fixture LICENSE."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Visible provisional brief states incident_id,severity,summary; exact Incident,Action,Owner order; ordered write/check/deliver sequence and concrete multi-case ledger precede target write."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Local provisional folder and separate concrete build/resume record delivered; no interview or delivery redecision."
+        }
+      },
+      "transcript_sha256": "050548eb18826927b8215bf40f5e3f0a20494b1c60143cd575ed8f3e183fe886",
+      "notes": [
+        "Case assesses builder behavior through a real model execution; actor-authored illustrative tests are not counted as independent execution of its generated target skill."
+      ]
+    },
+    {
+      "case": "D1-source-data",
+      "arm": "candidate",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C1": {
+          "status": "PASS",
+          "evidence": "Transcript reads the four complete-source fixture files; no REA/doctor/setup command was invoked."
+        },
+        "C4": {
+          "status": "PASS",
+          "evidence": "Source AST/mapping and stale instruction independently inspected; generated SKILL encodes input/output/activation; target LICENSE bytes match fixture LICENSE."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Visible provisional brief states incident_id,severity,summary; exact Incident,Action,Owner order; ordered write/check/deliver sequence and concrete multi-case ledger precede target write."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Local provisional folder and separate concrete build/resume record delivered; no interview or delivery redecision."
+        }
+      },
+      "transcript_sha256": "b7b8ceef335fac1d81c44376cc1771406cd506e05fc0eec91d382dab288be7e9",
+      "notes": [
+        "Case assesses builder behavior through a real model execution; actor-authored illustrative tests are not counted as independent execution of its generated target skill."
+      ]
+    },
+    {
+      "case": "D2-shipped-js-no-rea",
+      "arm": "baseline",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C2": {
+          "status": "PASS",
+          "evidence": "Actor identifies extracted shipped package; static trace and inferred outcomes separated from execution/deployment/paging; no universal REA capability claim. REA unavailable under fixture."
+        },
+        "C3": {
+          "status": "PASS",
+          "evidence": "Actual commands inspect files/hashes and author/check Markdown; no acquisition/setup/target run. Final and worked example explicitly say no REA analysis/runtime occurred."
+        },
+        "C4": {
+          "status": "PASS",
+          "evidence": "Root MIT license inspected and acknowledged; original reusable review instructions, conceptual worked trace, no target implementation copied. Input/output/activation/resources/checks derived."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Visible pre-build contract, specific paths/dependencies, ordered author/check/deliver sequence and discriminating urgent/near-match/missing cases precede writes."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Provisional local skill plus separate substantive resume/build record delivered without new questions."
+        }
+      },
+      "transcript_sha256": "fe9d4f2bdc957b290afe37a142324a618a4c92030147e0073ccf2c0411d899aa",
+      "notes": [
+        "Case assesses builder behavior through a real model execution; actor-authored illustrative tests are not counted as independent execution of its generated target skill."
+      ]
+    },
+    {
+      "case": "D2-shipped-js-no-rea",
+      "arm": "candidate",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C2": {
+          "status": "PASS",
+          "evidence": "Actor identifies extracted shipped package; static trace and inferred outcomes separated from execution/deployment/paging; no universal REA capability claim. REA unavailable under fixture."
+        },
+        "C3": {
+          "status": "PASS",
+          "evidence": "Actual commands inspect files/hashes and author/check Markdown; no acquisition/setup/target run. Final and worked example explicitly say no REA analysis/runtime occurred."
+        },
+        "C4": {
+          "status": "PASS",
+          "evidence": "Root MIT license inspected and acknowledged; original reusable review instructions, conceptual worked trace, no target implementation copied. Input/output/activation/resources/checks derived."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Visible pre-build contract, specific paths/dependencies, ordered author/check/deliver sequence and discriminating urgent/near-match/missing cases precede writes."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Provisional local skill plus separate substantive resume/build record delivered without new questions."
+        }
+      },
+      "transcript_sha256": "e9b468dfba1957ff2b5a82f4efd152f496547c92804ed11a07d0d2cc3e73d0e4",
+      "notes": [
+        "Case assesses builder behavior through a real model execution; actor-authored illustrative tests are not counted as independent execution of its generated target skill."
+      ]
+    },
+    {
+      "case": "D3-anatomy",
+      "arm": "candidate",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C4": {
+          "status": "PASS",
+          "evidence": "PASS: original renderer/demo notices copied; pinned byte hashes retained and adaptation of original build documented in local provenance."
+        },
+        "C5": {
+          "status": "PASS",
+          "evidence": "PASS: real renderer/CSS copied automatically for agreed physical mechanism; actual shared-model force/piston output built, no external-only link or stub."
+        },
+        "C6": {
+          "status": "PASS",
+          "evidence": "PASS: real commands relocate complete target and build there; generated HTML embeds renderer/CSS/model; no Forge runtime import."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "PASS: complete inputs/outputs/limits, exact intended folder/resources and ordered copy/author/check sequence plus concrete check ledger visible before first target write."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "PASS: provisional folder delivered without questions; final contains concrete external resume handoff and remaining browser checks."
+        },
+        "N1": {
+          "status": "PASS",
+          "evidence": "PASS candidate outcome: original generated target actually uses real bundled renderer and retained notices, resolves relative paths independently and builds/updates model through executed Node/DOM-stub checks. Does not credit browser behavior or mere file presence."
+        }
+      },
+      "transcript_sha256": "4824bc465eddd7050dda9213c11f3d35af5f7e453e58e00e5fa80c585f4a6c24",
+      "limitations": [
+        "DOM stub is not browser; candidate explicitly keeps native keyboard/layout/themes/reduced-motion visual checks pending.",
+        "Candidate side N1 outcome established; baseline comparison still pending."
+      ]
+    },
+    {
+      "case": "D3-anatomy",
+      "arm": "baseline",
+      "case_status": "FAIL",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C4": {
+          "status": "PASS",
+          "evidence": "Rights gap honestly identified; original local code used, no invented upstream notice/provenance."
+        },
+        "C5": {
+          "status": "FAIL",
+          "evidence": "Real Anatomy renderer/CSS/full notice absent; baseline explicitly substitutes original generator and records unmet Anatomy requirement."
+        },
+        "C6": {
+          "status": "PASS",
+          "evidence": "Original target generated through relocated folder without Forge dependency; this does not satisfy separate real-kit C5/N1."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Visible current contract, ordered author/check/deliver sequence and concrete check ledger precede target writes."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Provisional folder and concrete separate resume record delivered without new interview."
+        },
+        "N1": {
+          "status": "FAIL",
+          "evidence": "No actual bundled Anatomy generated outcome: final explicitly says real Anatomy kit/license could not be included. Original renderer is not equivalent to required real kit."
+        }
+      },
+      "transcript_sha256": "1b16f285298a085763e75058dc4cdd0e7c00b29b55f583ed22ff758f6c1f2a36"
+    },
+    {
+      "case": "D4-csv-optout",
+      "arm": "candidate",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C5": {
+          "status": "PASS",
+          "evidence": "No Anatomy/REA reads or resources, no visual additions; self-contained file-text output only."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Exact id,title,priority header/column order and preserved row order visible before artifact; ordered implementation sequence and contrasting two-row order ledger present."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Complete ticket-csv/SKILL.md saveable text, explicit provisional defaults, validation note and external compact resume handoff; no extra questions."
+        }
+      },
+      "transcript_sha256": "2c3d6d4cd777c68b773cf5c66b68dcc32c75fe4d2778d64eacfe69d56793e429"
+    },
+    {
+      "case": "D4-csv-optout",
+      "arm": "baseline",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C5": {
+          "status": "PASS",
+          "evidence": "No Anatomy/REA resource reads/copies; output explicitly excludes diagrams/resources; workspace has no generated files."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Pre-artifact exact id,title,priority header/columns and input order, ordered sequence and concrete [9,2] versus [2,9] contrast ledger."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Complete ticket-csv/SKILL.md saveable text plus provisional defaults, validation note and substantive compact external resume handoff; no interview."
+        }
+      },
+      "transcript_sha256": "76eae732e5a181db96e9a83536e509a96b559cdc4c5bfda2e7254e54c5cd7656"
+    },
+    {
+      "case": "H1-review-first-visual",
+      "arm": "baseline",
+      "case_status": "FAIL",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C5": {
+          "status": "FAIL",
+          "evidence": "Spec plans an original Python/HTML/SVG renderer and omits required relevant Anatomy renderer/CSS/notices plan; no actual assets available in baseline."
+        },
+        "C6": {
+          "status": "PASS",
+          "evidence": "Proposed local folder explicitly works independently of Forge with relative resources and offline HTML/SVG outputs; no runtime import claimed executed."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Input opening_pct, HTML+SVG contract, concrete resource map, ordered implementation sequence and discriminating cases visible; all planned checks accurately unexecuted."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Review-first retained: transcript contains read commands only, final spec no complete SKILL.md, workspace only original session fixture. Delivery already settled, no new menu/question ritual."
+        }
+      },
+      "transcript_sha256": "717b7cab36033e2c7e264c26988cac84d452b85fc01906e6c8ceb477c23d04f2",
+      "notes": [
+        "Spec-only review-first case: target rendering/copying intentionally forbidden; correct relevant resource plan is evaluated, not actual target implementation."
+      ]
+    },
+    {
+      "case": "H1-review-first-visual",
+      "arm": "candidate",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C5": {
+          "status": "PASS",
+          "evidence": "Relevant actual renderer/CSS/notices planned with exact target-relative paths; pressure-rig demo explicitly distinguished from future original valve implementation."
+        },
+        "C6": {
+          "status": "PASS",
+          "evidence": "Proposed local folder explicitly works independently of Forge with relative resources and offline HTML/SVG outputs; no runtime import claimed executed."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Input opening_pct, HTML+SVG contract, concrete resource map, ordered implementation sequence and discriminating cases visible; all planned checks accurately unexecuted."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Review-first retained: transcript contains read commands only, final spec no complete SKILL.md, workspace only original session fixture. Delivery already settled, no new menu/question ritual."
+        }
+      },
+      "transcript_sha256": "a4747e1d2169ecb35837a51a3b056779286ac69a833f1d9278d3ca8e064eeb99",
+      "notes": [
+        "Spec-only review-first case: target rendering/copying intentionally forbidden; correct relevant resource plan is evaluated, not actual target implementation."
+      ]
+    },
+    {
+      "case": "H2-native-provider-gap",
+      "arm": "baseline",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C2": {
+          "status": "PASS",
+          "evidence": "Shipped native artifact scope recognized; actual exposed fixture is a provider declaration with execution_evidence=false, not callable analysis. Skill preserves routine matching/identity/coverage requirements and static/runtime distinctions. No universal capability claim."
+        },
+        "C3": {
+          "status": "PASS",
+          "evidence": "Real transcript reads only authorized metadata/notes and authors/checks original Markdown; no binary read, install, setup or target launch. Calibration remains unresolved."
+        },
+        "C4": {
+          "status": "PASS",
+          "evidence": "Notes license inspected and explicitly not extended to binary rights; original instructions, no binaries/notes copied. Activation/input/output/resources/checks derived."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Visible pre-write substantive contract, proposed exact output fields/headers, paths and ordered author/check/deliver sequence plus concrete provider/hash/activation ledger."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Local provisional skill plus separate concrete validation/resume record delivered without interview; unresolved routine-evidence state retained."
+        },
+        "N2": {
+          "status": "PASS",
+          "evidence": "Mandatory preservation PASS: missing provider is declared (not execution evidence), unsupported claim remains unresolved, supported metadata work continues without pretending analysis or installing."
+        }
+      },
+      "transcript_sha256": "bdb303a3507d81e7d0abcea615f6c12d5b1a565511648636142e7232adbc4982",
+      "notes": [
+        "This case tests response to declared unavailable native provider in metadata-only scope. It is not execution evidence for REA itself; separate actual runtime receipts are graded independently."
+      ]
+    },
+    {
+      "case": "H2-native-provider-gap",
+      "arm": "candidate",
+      "case_status": "PASS",
+      "run_exit_status": 0,
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "medium",
+      "observed_model": null,
+      "observed_effort": null,
+      "conditions": {
+        "C2": {
+          "status": "PASS",
+          "evidence": "Shipped native artifact scope recognized; actual exposed fixture is a provider declaration with execution_evidence=false, not callable analysis. Skill preserves routine matching/identity/coverage requirements and static/runtime distinctions. No universal capability claim."
+        },
+        "C3": {
+          "status": "PASS",
+          "evidence": "Real transcript reads only authorized metadata/notes and authors/checks original Markdown; no binary read, install, setup or target launch. Calibration remains unresolved."
+        },
+        "C4": {
+          "status": "PASS",
+          "evidence": "Notes license inspected and explicitly not extended to binary rights; original instructions, no binaries/notes copied. Activation/input/output/resources/checks derived."
+        },
+        "C7": {
+          "status": "PASS",
+          "evidence": "Visible pre-write substantive contract, proposed exact output fields/headers, paths and ordered author/check/deliver sequence plus concrete provider/hash/activation ledger."
+        },
+        "C8": {
+          "status": "PASS",
+          "evidence": "Local provisional skill plus separate concrete validation/resume record delivered without interview; unresolved routine-evidence state retained."
+        },
+        "N2": {
+          "status": "PASS",
+          "evidence": "Mandatory preservation PASS: missing provider is declared (not execution evidence), unsupported claim remains unresolved, supported metadata work continues without pretending analysis or installing."
+        }
+      },
+      "transcript_sha256": "df65a6dbb2217b613feb7e6c80b81a03331eb67861fad20f68cfd157e75ab584",
+      "notes": [
+        "This case tests response to declared unavailable native provider in metadata-only scope. It is not execution evidence for REA itself; separate actual runtime receipts are graded independently."
+      ]
+    }
+  ],
+  "benefit": {
+    "N1": {
+      "candidate": 1,
+      "baseline": 0,
+      "delta": 1,
+      "metric": "self_contained_anatomy_outcomes",
+      "status": "PASS measured generated-resource outcome; global S1 visual gate still unexecuted"
+    },
+    "N2": "PASS mandatory preservation both arms on D2/H2, no benefit credit"
+  },
+  "execution": {
+    "primary_completed": 12,
+    "archived_timeouts": 2,
+    "all_source_arms_unchanged": true,
+    "all_primary_have_native_turn_completion": true,
+    "all_primary_have_final_text": true,
+    "observed_model_effort_available": false,
+    "elapsed_seconds_by_case": {
+      "D1-source-data": {
+        "baseline": 77.369,
+        "candidate": 76.942
+      },
+      "D2-shipped-js-no-rea": {
+        "baseline": 139.795,
+        "candidate": 127.927
+      },
+      "D3-anatomy": {
+        "baseline": 180.12,
+        "candidate": 148.826
+      },
+      "D4-csv-optout": {
+        "baseline": 44.192,
+        "candidate": 38.999
+      },
+      "H1-review-first-visual": {
+        "baseline": 63.548,
+        "candidate": 76.515
+      },
+      "H2-native-provider-gap": {
+        "baseline": 106.225,
+        "candidate": 123.969
+      }
+    },
+    "manifest_sha256": "8ec49f0c9a1e41b5ee2585ffd12c159c1117a00c34eb7d71876c2aeeb3be40c4"
+  },
+  "conditional_rea": {
+    "R1": {
+      "status": "NOT_APPLICABLE_PROVIDER_UNAVAILABLE",
+      "reason": "The conditional compatible semantic provider is proven unavailable by actual analyze-javascript-application exit1 nonretryable execution_failure, including SwiftBridging compiler diagnostics. An actual invocation was attempted; no semantic-analysis success is credited. Root did not repeat unchanged request.",
+      "real_runtime": {
+        "node": "v24.22.1",
+        "rea": "6.8.0",
+        "runtime_command_exit": 0
+      },
+      "actual_semantic_command_exit": 1,
+      "error_code": "execution_failure",
+      "retryable": false
+    },
+    "additional_real_capability": {
+      "status": "PASS_SUPPORTED_PACKAGE_INSPECTION_ONLY",
+      "command_exit": 0,
+      "evidence_id": "ev_2c00ae3b52ede762db00b7316af99b2493a654c0f377db0917a10b46588ffe55",
+      "artifact_sha256": "a80a95fb64d6d42df992b53ff1b23bdab552d332792bee7432a0db9383cf4ce0",
+      "scope_limit": "ZIP artifact inspection is actual supported static package evidence; it does not establish JavaScript semantic graph, application execution, native decompilation, provider-wide compatibility or universal target support."
+    },
+    "criteria_unchanged": true
+  },
+  "remaining": {
+    "check": "S1-package-helper",
+    "status": "UNEXECUTED_REQUIRED_COMPONENTS",
+    "frozen_wording": "Build an original mechanism using the actual bundled renderer; parse resulting SVG, inspect actual light/dark desktop/mobile images and verify model-derived readout, keyboard/reduced-motion behavior if claimed.",
+    "verified_scope_to_date": [
+      "Static source/relative closure and upstream byte comparisons independently reviewed.",
+      "Actual Node build/model checks, SVG XML and finite-path checks, target relocation, and event wiring via actual inline script in DOM stub are observed model transcript evidence.",
+      "Root reports four actual static SVG light/dark desktop/mobile PNGs inspected after CSS-variable resolution for librsvg; these address figure appearance only."
+    ],
+    "remaining_required": [
+      {
+        "item": "HTML layout",
+        "status": "UNEXECUTED",
+        "reason": "SVG-only snapshots omit card/readout/control layout at desktop and 390px in light/dark."
+      },
+      {
+        "item": "Native keyboard/control interaction",
+        "status": "UNEXECUTED",
+        "reason": "Actual pressure arrow/Home behavior and area validity/focus depend on browser default mechanics; DOM stub verifies listeners/model coupling only. Claimed keyboard accessibility makes the conditional criterion applicable."
+      },
+      {
+        "item": "Reduced-motion runtime",
+        "status": "UNEXECUTED",
+        "reason": "Static disabling CSS and no autonomous animation are present, but actual media-preference behavior not observed. Bundle claims reduced-motion handling."
+      }
+    ],
+    "constraint": "Browser automation explicitly denied by policy per root; no policy bypass attempted and no substitute pass awarded. Manual user evidence may resolve missing checks.",
+    "adoption_implication": "All-required gate remains unmet until missing applicable checks execute; preserve candidate and prior active version if evidence stays unavailable.",
+    "criteria_modified": false
+  },
+  "disclosure": "Synthetic requests and sanitized independent outcomes are public; raw transcripts, private paths, native state and temporary workspaces are excluded. Digests bind retained local evidence, not publicly replayable logs."
+}

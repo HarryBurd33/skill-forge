@@ -1,6 +1,6 @@
 # Skill Forge
 
-**Version 0.3.1.** [Current validation and limits](evals/v0.3.1/REPORT.md). The interview and workflow behavior is unchanged from v0.3.0.
+**Version 0.4.0 candidate.** Adds optional artifact reconstruction and a bundled Anatomy SVG renderer for relevant generated skills. The six-scenario model comparison passed; required browser checks remain pending, so this text does not announce a release. See [integration scope and current checks](docs/integrations.md#what-has-actually-run). The [v0.3.1 report](evals/v0.3.1/REPORT.md) remains the record for that earlier version.
 
 
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
@@ -11,6 +11,8 @@ Describe a workflow in ordinary language, or say **“Based on this conversation
 - Refine through focused questions, examples and constructive challenge until material gaps close. Say **quick**, **thorough**, **expert challenge**, **draft now**, **skip**, or **resume** to control the pace.
 - Choose how to receive the skill itself: local Markdown, an installable folder/ZIP, a GitHub repository, or another destination. Settled choices are remembered.
 - Before implementation, [Skill Finder](docs/skill-finder.md) delegates a bounded search for useful foundations, inspecting actual source, licenses and fit. It has honest fallbacks when browsing or subagents are unavailable.
+- Learn from complete source files using ordinary file tools; use the optional [REA adapter](docs/integrations.md#learn-a-workflow-from-source-or-a-shipped-artifact) for shipped-artifact or runtime-dependent questions. Missing providers leave explicit evidence gaps.
+- Automatically include the real [Anatomy renderer and notices](docs/integrations.md#add-a-physical-explanation-when-it-helps) when the generated skill needs an explanatory physical mechanism. Text/CSV-only work, ordinary flowcharts and explicit opt-outs skip it.
 - See what will be built and how it will be checked before implementation. Say **review first** to pause for edits; the pause is optional, so **draft now** and already-authorized work can continue after the plan.
 - Available useful subagents automatically help construct resources, review the result or run independent checks. Small tasks can stay in one context; unavailable tools are disclosed.
 - Successful updates are applied automatically after predefined checks, with history and rollback. Failed or untested candidates stay separate.
@@ -18,7 +20,7 @@ Describe a workflow in ordinary language, or say **“Based on this conversation
 
 ## Install and start using Skill Forge
 
-You need access to Codex, Claude Code, or another capable chat model. Skill Forge itself needs no paid API or custom service. Python is **optional**: only the validation, packaging and managed-update helpers require Python 3.9 or newer.
+You need access to Codex, Claude Code, or another capable chat model. Skill Forge itself needs no paid API or custom service. Python is **optional**: only the validation, resource-attachment, packaging and managed-update helpers require Python 3.9 or newer. Node.js 20.10+ is optional and used only when building the bundled Anatomy example; a modern browser is needed to view and verify the interactive output. REA is a separate optional tool with its own runtime/provider requirements. Installing Forge does not install Node, REA or a browser.
 
 | Where you work | Start |
 | --- | --- |
@@ -26,10 +28,12 @@ You need access to Codex, Claude Code, or another capable chat model. Skill Forg
 | Claude Code | [Install for yourself or a project](docs/claude-code.md) |
 | Another capable chat model | Paste or upload [the self-contained prompt](portable/skill-forge-prompt.md), then describe your idea |
 
+The download links below remain the published v0.3.1 artifacts. The v0.4.0 candidate is still awaiting its required behavior/browser checks and final release review.
+
 ### Codex or Claude Code: install without commands
 
-1. Download [skill-forge-v0.3.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.1/skill-forge-v0.3.1.zip) and extract it.
-2. Copy the **complete `skill-forge` folder**, including its references, scripts, templates and nested Skill Finder, to **one** destination below. Create missing parent folders. Copying only `SKILL.md` is incomplete.
+1. Download [skill-forge-v0.3.1.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.1/skill-forge-v0.3.1.zip) and extract it.
+2. Copy the **complete `skill-forge` folder**, including its references, scripts, templates, resources and nested adapters, to **one** destination below. Create missing parent folders. Copying only `SKILL.md` is incomplete.
 3. Open a new session in your host and invoke Skill Forge as shown below. If it does not appear, restart the host.
 
 | Host and scope | macOS / Linux destination | Windows destination |
@@ -54,7 +58,7 @@ The [Codex guide](docs/codex.md) and [Claude Code guide](docs/claude-code.md) al
 
 ### Other capable LLMs: use the portable prompt
 
-1. Download [skill-forge-portable-v0.3.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.1/skill-forge-portable-v0.3.1.zip) and extract it.
+1. Download [skill-forge-portable-v0.3.1.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.1/skill-forge-portable-v0.3.1.zip) and extract it.
 2. Upload **`skill-forge-prompt.md`**, or paste its complete contents into a new conversation. Use the full bundle, not just the short installed `SKILL.md`. Choose a model with enough context for the entire file.
 3. Say: **“Use Skill Forge to build a skill for [my repeated workflow].”** Supply relevant context and references. With no file tools, it returns complete file contents for you to save.
 
@@ -90,6 +94,8 @@ Or improve the builder:
 
 ## Remaining limitations and what was actually tested
 
+The v0.4.0 [model comparison](evals/v0.4.0/REPORT.md) passed all six candidate scenarios, including two held-out cases. Local helper checks recorded42passes and1Windows-only skip. Required HTML layout, native keyboard and reduced-motion checks remain pending. Historical model/host results below apply to their named earlier versions; they are not a pass for the new behavior cases.
+
 Skill Forge implements the requested workflow; it does not guarantee perfect skills or identical behavior on every model. Read these boundaries before relying on it:
 
 | Area | Current capability and limit |
@@ -101,9 +107,9 @@ Skill Forge implements the requested workflow; it does not guarantee perfect ski
 | Automatic updates | Adoption needs predefined checks, relevant regressions, demonstrated benefit and a writable target. Failed, inconclusive or unavailable required checks preserve the prior version. The helper validates hashes and supplied evidence records; it does not independently run a model evaluator or certify its judgment. |
 | Memory and installation scope | Continuity comes from saved files or a handoff, not retraining or guaranteed memory between chats. Save the private handoff and supply it when resuming. Local installation does not synchronize other devices, accounts or cloud environments. |
 | Privacy and publication | Keep credentials, raw transcripts and personal preferences outside public source. Publishing a generated skill requires authorization and working access to that destination; improving locally does not grant upstream write permission. Private storage is not automatically encrypted; Windows privacy depends on the parent folder's access controls. |
-| Evaluation strength | All 21 original scenarios / 84 required conditions and 15 supplemental items passed. Eight historical baseline pairs used different recorded model settings; the full comparison is descriptive, not a perfectly controlled causal benchmark or proof of universal reliability. |
+| Evaluation strength | The v0.3.0 evaluation passed all 21 original scenarios / 84 required conditions and 15 supplemental items. Eight historical baseline pairs used different recorded model settings; the full comparison is descriptive, not a perfectly controlled causal benchmark or proof of universal reliability. |
 
-The final release also passed actual rollback/customization checks and clean first-use checks from downloaded public packages. See [the validation report](evals/v0.3.0/REPORT.md), [compatibility record](docs/compatibility.md), [requirements map](REQUIREMENTS.md) and [release verification receipt](https://github.com/HarryBurd33/skill-forge/releases/tag/v0.3.0) for evidence and qualifications.
+The earlier v0.3.0 release also passed actual rollback/customization checks and clean first-use checks from downloaded public packages. See [the validation report](evals/v0.3.0/REPORT.md), [compatibility record](docs/compatibility.md), [requirements map](REQUIREMENTS.md) and [release verification receipt](https://github.com/HarryBurd33/skill-forge/releases/tag/v0.3.0) for evidence and qualifications.
 
 You can combine Skill Forge with Codex's built-in skill creator for authoring or review. Forge does not silently modify the vendor-managed creator; see [how they work together](docs/foundations.md#combining-skill-forge-with-codexs-skill-creator).
 
@@ -120,6 +126,10 @@ For useful separable work it automatically launches available constructors, reso
 When a session pauses, save its private record or copy its handoff into the next chat. Improvement means revised files and recorded evidence; it does not retrain a model or promise memory across unrelated conversations.
 
 [Worked examples](examples/README.md) cover research and writing, an adaptive prompt builder, a planner handling an exam, and a correction to an existing skill. The public inputs are fictional. Authored demonstrations are labeled separately from executed evaluation results: [v0.1.0](evals/REPORT.md), [v0.2.0](evals/v0.2.0/REPORT.md), and [v0.3.0](evals/v0.3.0/REPORT.md).
+
+## Optional REA and Anatomy resources in v0.4.0
+
+The [integration guide](docs/integrations.md) explains source versus shipped-artifact evidence, automatic selection for physical explainers, the exact bundled file slice, optional dependencies and helper commands. Generated skills receive their own resources and work without Forge. An adapter is workflow guidance; it is not proof that a tool is connected or that an analysis, render or browser check ran.
 
 ## Claude metadata checks in v0.3.1
 
@@ -147,7 +157,7 @@ python3 skills/skill-forge/scripts/forge.py bundle --skill skills/skill-forge --
 
 On Windows, use `py` or `python` in place of `python3`; the installation guides include complete PowerShell examples. Before installing a generated skill, verify that its innermost folder matches the `name` in its metadata. Preserve versions under separate parents (`baseline/skill-name`, `candidate/skill-name`). See [the release report](evals/v0.3.0/REPORT.md) for exact results, earlier failure rechecks and remaining limits.
 
-The canonical builder lives in `skills/skill-forge/`. The portable prompt is generated from it, so edits cannot quietly drift. Managed installations refuse to overwrite customized copies; keep personal settings outside the shared skill.
+The canonical builder lives in `skills/skill-forge/`. The portable prompt is generated from it, so edits cannot quietly drift. Its text-only form does not embed the Anatomy renderer files; an explanatory visual target needs the complete folder assets or an honest pending asset-copy step. See [plain-chat limits](docs/other-llms.md#optional-rea-and-anatomy-resources). Managed installations refuse to overwrite customized copies; keep personal settings outside the shared skill.
 
 ## Contribute an improvement
 

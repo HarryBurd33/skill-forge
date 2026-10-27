@@ -50,3 +50,13 @@ Final source86daffd3… adds only reference navigation to the behavior-tested so
 ## v0.3.1 metadata-helper scope
 
 The opt-in Claude profile checks discovery metadata against documented restrictions; it does not establish native Claude upload acceptance. The current comparison ran26actual CLI cases, with30local unit passes and1Windows-only skip. [The v0.3.1 report](../evals/v0.3.1/REPORT.md) records frozen inputs and limits; earlier model/host evidence remains historical.
+
+## v0.4.0 candidate integrations — 2026-10-27
+
+The candidate helper run recorded **38 passes and one Windows-only skip** on the local macOS host. This is local helper evidence; it is not a new six-platform CI run or a native Claude/other-model result. New checks cover complete resource copying, relocation, unchanged repeats, customized/partial conflicts, symlink/path refusal, injected copy/publication failures and exclusive publication. The original mechanism builds with the actual renderer; SVG parsing and model/inline-script checks ran. Browser appearance, keyboard and reduced-motion checks are still pending in this documentation snapshot.
+
+The basic Anatomy slice uses optional Node.js **20.10+** and Node built-in ESM modules, with no npm dependencies. Attachment uses Python only. Generated HTML embeds the renderer, CSS and model, so viewing it needs a modern browser and no Forge installation or server. Advanced upstream rendering modules and verification scripts are not included. See [the file/scope map](integrations.md#what-is-included).
+
+REA is not bundled as an executable service. A real `rea-agents` **6.8.0** package was exercised with an isolated Node **24.22.1** runtime: version/help and ZIP artifact inspection succeeded. A JavaScript static-analysis attempt failed during macOS process-helper compilation because of a **SwiftBridging module redefinition**. That failure does not establish working JavaScript analysis, successful provider setup or runtime observation of the target. Its unresolved analysis requirements remain explicit. The isolated package environment changed no system Node or global registration.
+
+The reviewed REA package declares Node `^22.23.4 || ^24.22.1 || >=26.12.1`; this differs from the basic Anatomy example's minimum. Individual REA providers and operating systems have separate prerequisites. A source revision, CLI version or successful ZIP inspection does not prove all providers work. No new installation, native-host or release claim follows from these candidate checks.

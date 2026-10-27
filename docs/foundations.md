@@ -1,6 +1,6 @@
 # Foundations and design decisions
 
-Reviewed on **2026-10-15**. This is an original implementation informed by the sources below, not a repackaging of their skill files. Machine-readable source URLs, pinned repository commits, file hashes, and license findings are in [SOURCES.json](../SOURCES.json); distribution boundaries are in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
+Original foundations reviewed on **2026-10-15**; the REA/Anatomy integration was reviewed on **2026-10-27**. The original builder draws on the sources below, and v0.4.0 additionally bundles the explicitly identified Anatomy renderer slice. Machine-readable source URLs, pinned repository commits, file hashes, and license findings are in [SOURCES.json](../SOURCES.json); distribution boundaries are in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
 
 | Foundation | What already exists | Skill Forge decision |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ The first release deliberately avoids a hosted service, paid evaluator requireme
 
 Pinned source files and skill-local licenses were fetched, not inferred from GitHub visibility. Matt Pocock's repository has MIT terms. Anthropic's and OpenAI's inspected skill-creator directories each contain Apache-2.0 terms; neither was assumed MIT because other files might use different terms. Recursive repository inventories showed no additional `NOTICE` file in either inspected creator directory. The records cover only the listed material, not every file in those repositories.
 
-No third-party prose, code, templates, or assets are incorporated into this release. The original Skill Forge material is MIT. Future copying must preserve the relevant license, copyright, modification, and notice requirements; a source link alone is not a substitute.
+The earlier conceptual foundations listed above did not contribute copied prose, code, templates or assets. The v0.4.0 integration adds the pinned Anatomy files and MIT notices described below. Original Skill Forge material remains MIT. Future copying must preserve the relevant license, copyright, modification, and notice requirements; a source link alone is not a substitute.
 
 
 ## Refinement and discovery update — 0.2.0
@@ -30,7 +30,7 @@ Re-inspected the actual Matt Pocock wrapper, grilling implementation and MIT lic
 
 Skill Finder adds a distinct pre-implementation research handoff: one delegated researcher receives the refined sanitized brief, searches relevant primary resources, inspects actual instructions/code and reuse terms, and returns a justified integration plan. GitHub is useful for skills and code; Hugging Face is useful when its skills, models, datasets or Spaces fit the task. Search does not force reuse. Without a researcher, the parent searches directly; without browsing, it returns an honest pending research task and can draft original provisional files.
 
-The implementation is original. [GitHub licensing guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) and [Hugging Face license guidance](https://huggingface.co/docs/hub/repositories-licenses) inform the distinction between public visibility, source verification and applicable reuse rights. The existing third-party notices remain accurate: no upstream skill prose, templates or implementation code were copied into Skill Forge.
+The implementation is original. [GitHub licensing guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) and [Hugging Face license guidance](https://huggingface.co/docs/hub/repositories-licenses) inform the distinction between public visibility, source verification and applicable reuse rights. That v0.2.0 change did not copy upstream skill prose, templates or implementation code. The later Anatomy addition is recorded separately below.
 
 ## Specification, context and delegation update — 0.3.0
 
@@ -42,7 +42,7 @@ Dependency-aware interviewing remains useful, but a long questionnaire is not a 
 
 Current [Codex subagent guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents) supports delegation requested by applicable skill instructions; [Claude Code subagent guidance](https://code.claude.com/docs/en/sub-agents) describes separate worker contexts and task matching. Adapt the idea into bounded useful research, implementation, review or evaluation tasks, with separate write ownership and a parent responsible for integration. Do not require permanent custom-agent files or host-specific calls in the common skill. A missing launch tool requires direct work and an honest limitation, not imagined delegation.
 
-The earlier pinned grilling and creator records remain the conceptual foundation; no upstream prose, code, templates or assets were copied. Hugging Face was skipped for this update because no model, dataset or hosted resource materially improves an instruction workflow and optional standard-library helpers. The portable prompt and [other-LLM guide](other-llms.md) offer the same core workflow with explicit file, browsing, execution, persistence and publication limits.
+For that v0.3.0 update, the earlier pinned grilling and creator records remained the conceptual foundation; it copied no upstream prose, code, templates or assets. Hugging Face was skipped for this update because no model, dataset or hosted resource materially improves an instruction workflow and optional standard-library helpers. The portable prompt and [other-LLM guide](other-llms.md) offer the same core workflow with explicit file, browsing, execution, persistence and publication limits.
 
 ## Combining Skill Forge with Codex’s skill creator
 
@@ -53,3 +53,11 @@ Skill Forge can manage the interview, implementation spec, evidence and reversib
 Improvements to the generated skill and to Skill Forge are separate candidates with separate evidence. Keep generalizable lessons in Forge and personal choices in private configuration. A useful review can also produce a proposed improvement for the built-in creator, but editing a vendor-managed cache is not a durable upstream update. Preserve a local patch or contribution; publishing to someone else’s repository needs appropriate authorization and access. The installed creator was inspected locally during this maintenance; its capabilities can evolve beyond the pinned research version described above.
 
 Core setup and discovery pages were rechecked on2026-10-21; exact URLs and scope are recorded in the source ledger. These checks support the guides, not equivalent performance across models or native-host tests.
+
+## REA and Anatomy update — 0.4.0 candidate
+
+[REA](https://github.com/morluto/rea/tree/0cd7ef456bf960da265e04b341e82a24b1e377d5) supplies a useful source/artifact distinction and evidence discipline. Forge's concise adapter uses ordinary file tools for complete source and selects discovered real REA tools for artifact/runtime-dependent claims. It retains unknowns, target identity and genuine returned evidence, while refusing to equate static findings with observed execution. The server and its provider engines are not bundled. The complete MIT notice, copyright (c) 2026 morluto, accompanies the adapter. Repository revision and published npm version are separate identities.
+
+[Anatomy](https://github.com/wheresryan22/anatomy/tree/1482e8469b0a9e0d8cc18ea2740a01423d29ae80) provides the real `kit/iso-kit.mjs` and `kit/iso.css`, copied unchanged with its complete MIT notice, copyright (c) 2026 Ryan. Forge adds an original model/build example and narrower routing guidance for relevant physical explainers. It copies this complete basic slice into generated targets rather than making them depend on Forge. The full upstream example library, advanced modules, browser scripts and publishing workflows are not bundled.
+
+The [source ledger](../SOURCES.json) records exact upstream paths, pinned commits, retained notices and vendor hashes. [The integration guide](integrations.md) separates what ships, optional dependencies, actual candidate checks and outstanding browser verification. No inspected target is relicensed by either upstream project's MIT license.
