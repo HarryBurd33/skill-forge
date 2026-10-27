@@ -60,3 +60,8 @@ The basic Anatomy slice uses optional Node.js **20.10+** and Node built-in ESM m
 REA is not bundled as an executable service. A real `rea-agents` **6.8.0** package was exercised with an isolated Node **24.22.1** runtime: version/help and ZIP artifact inspection succeeded. A JavaScript static-analysis attempt failed during macOS process-helper compilation because of a **SwiftBridging module redefinition**. That failure does not establish working JavaScript analysis, successful provider setup or runtime observation of the target. Its unresolved analysis requirements remain explicit. The isolated package environment changed no system Node or global registration.
 
 The reviewed REA package declares Node `^22.23.4 || ^24.22.1 || >=26.12.1`; this differs from the basic Anatomy example's minimum. Individual REA providers and operating systems have separate prerequisites. A source revision, CLI version or successful ZIP inspection does not prove all providers work. No new installation, native-host or release claim follows from these candidate checks.
+
+
+### v0.4.0 candidate hosted checks
+
+[All six candidate jobs passed](../evals/v0.4.0/platform-checks.json) at `fd45d89`: Windows/Ubuntu Python3.9 and3.13, Intel macOS3.9 and ARM macOS3.13. This includes the new resource-attachment and package-boundary tests. Native Claude, other-model behavior and REA providers on these platforms remain separate, unverified integrations. Required local HTML layout/keyboard/reduced-motion checks remain pending.

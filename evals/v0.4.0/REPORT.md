@@ -27,6 +27,8 @@ Four actual static figure PNGs were inspected at1080px/390px in light/dark. The 
 
 **Still required:** inspect the actual HTML in both themes at desktop/narrow widths; exercise slider arrow/Home and area controls; check with reduced-motion preference. Browser automation refused local-file previews. No localhost, data-URL or alternate-browser workaround was used. Manual observations have been requested. Required pending checks keep the original behavior gate unpassed.
 
+All six [hosted checks](platform-checks.json) also passed at commit `fd45d89a86ecaea0b6e38244ff8ef4afc38bd466`: Ubuntu and Windows on Python3.9/3.13, Intel macOS on3.9 and ARM macOS on3.13. These verify actual helper/package executions on those runners, not native LLM, REA-provider or browser interaction behavior.
+
 ## REA scope actually exercised
 
 An isolated npm runner verified REA6.8.0 under Node24.22.1. Version/help and a real original ZIP inspection succeeded. The returned package Evidence ID was `ev_2c00ae3b52ede762db00b7316af99b2493a654c0f377db0917a10b46588ffe55`, with ZIP SHA-256 `a80a95fb64d6d42df992b53ff1b23bdab552d332792bee7432a0db9383cf4ce0`. This establishes supported package inspection, not application execution or semantic recovery.
