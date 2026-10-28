@@ -1,5 +1,5 @@
 {
-  "status": "MODEL_SUITE_PASS; ADOPTION_PENDING_S1_BROWSER",
+  "status": "ALL_FIXED_CHECKS_PASS; CANONICAL_CORE_ADOPTED",
   "frozen_behavior_candidate_hash": "51f4b6ace943de87cbc6b09ca25213e578bea4a5d7dfe45599ca19734031aea4",
   "notice_only_candidate_hash": "da8e24cf80f7dfc57597a7746ff917a22a2030adf4a7ee7983506e446380dbeb",
   "settings": {
@@ -487,34 +487,13 @@
     "criteria_unchanged": true
   },
   "remaining": {
-    "check": "S1-package-helper",
-    "status": "UNEXECUTED_REQUIRED_COMPONENTS",
-    "frozen_wording": "Build an original mechanism using the actual bundled renderer; parse resulting SVG, inspect actual light/dark desktop/mobile images and verify model-derived readout, keyboard/reduced-motion behavior if claimed.",
-    "verified_scope_to_date": [
-      "Static source/relative closure and upstream byte comparisons independently reviewed.",
-      "Actual Node build/model checks, SVG XML and finite-path checks, target relocation, and event wiring via actual inline script in DOM stub are observed model transcript evidence.",
-      "Root reports four actual static SVG light/dark desktop/mobile PNGs inspected after CSS-variable resolution for librsvg; these address figure appearance only."
-    ],
-    "remaining_required": [
-      {
-        "item": "HTML layout",
-        "status": "UNEXECUTED",
-        "reason": "SVG-only snapshots omit card/readout/control layout at desktop and 390px in light/dark."
-      },
-      {
-        "item": "Native keyboard/control interaction",
-        "status": "UNEXECUTED",
-        "reason": "Actual pressure arrow/Home behavior and area validity/focus depend on browser default mechanics; DOM stub verifies listeners/model coupling only. Claimed keyboard accessibility makes the conditional criterion applicable."
-      },
-      {
-        "item": "Reduced-motion runtime",
-        "status": "UNEXECUTED",
-        "reason": "Static disabling CSS and no autonomous animation are present, but actual media-preference behavior not observed. Bundle claims reduced-motion handling."
-      }
-    ],
-    "constraint": "Browser automation explicitly denied by policy per root; no policy bypass attempted and no substitute pass awarded. Manual user evidence may resolve missing checks.",
-    "adoption_implication": "All-required gate remains unmet until missing applicable checks execute; preserve candidate and prior active version if evidence stays unavailable.",
-    "criteria_modified": false
+    "required_unexecuted": [],
+    "S1": "pass_current_host_with_maintainer_reported_manual_execution",
+    "manual_evidence": "manual-browser.json",
+    "independent_review": "final-s1-review.json",
+    "browser_version": null,
+    "automated_browser_execution": false
   },
-  "disclosure": "Synthetic requests and sanitized independent outcomes are public; raw transcripts, private paths, native state and temporary workspaces are excluded. Digests bind retained local evidence, not publicly replayable logs."
+  "disclosure": "Synthetic requests and sanitized independent outcomes are public; raw transcripts, private paths, native state and temporary workspaces are excluded. Digests bind retained local evidence, not publicly replayable logs.",
+  "adoption": "adoption.json"
 }

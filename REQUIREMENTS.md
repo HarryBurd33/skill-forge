@@ -1,6 +1,19 @@
 # Skill Forge requirements and evidence
 
-Updated2026-10-26. v0.3.1 adds tested metadata-helper checks; the following workflow evidence remains the completed v0.3.0 evaluation, not a rerun. See [v0.3.1 validation](evals/v0.3.1/REPORT.md). Required behavioral checks passed21/21cases and84/84conditions; supplemental controls passed15/15. Final source adds only verified navigation. Evidence statements distinguish actual execution, static/component evidence and unverified native hosts. Historical audits and scores remain in Git history and the evaluation report.
+## v0.4.0 additions — 2026-10-28
+
+| Requirement | Implemented behavior and evidence |
+| --- | --- |
+| Recover workflows from repositories or software | Scoped reverse-engineering adapter uses ordinary source inspection or actual compatible REA tooling; records facts, inferences, unknowns and reuse rights. ZIP inspection passed; local macOS semantic provider remains unavailable. |
+| Add Anatomy where useful | Physical explainers automatically receive the pinned real basic renderer/CSS, complete MIT notice and an original model/build example; text/CSV and explicit opt-outs skip it. |
+| Independent generated targets | Actual attachment, relocation, render, model/event coupling and license checks passed; generated target needs no Forge runtime. |
+| Keep fixed checks and trace updates | All ten frozen checks passed; six candidate model cases versus four baseline successes; independent review, maintainer-reported manual browser checks and two actual helper adoptions recorded. |
+| Match installed/public version | Accepted core hash `da8e24cf80f7dfc57597a7746ff917a22a2030adf4a7ee7983506e446380dbeb`; installation/publication are verified separately in closing receipts. |
+
+See [v0.4.0 evidence](evals/v0.4.0/REPORT.md), [manual evidence](evals/v0.4.0/manual-browser.json), [adoption records](evals/v0.4.0/adoption.json) and [integration limits](docs/integrations.md). The earlier workflow requirements below remain historical evidence, not newly repeated model tests.
+
+
+Historical workflow evidence through v0.3.1 (2026-10-26): v0.3.1 adds tested metadata-helper checks; the following workflow evidence remains the completed v0.3.0 evaluation, not a rerun. See [v0.3.1 validation](evals/v0.3.1/REPORT.md). Required behavioral checks passed21/21cases and84/84conditions; supplemental controls passed15/15. Final source adds only verified navigation. Evidence statements distinguish actual execution, static/component evidence and unverified native hosts. Historical audits and scores remain in Git history and the evaluation report.
 
 | Requirement | Evidence / limit |
 | --- | --- |

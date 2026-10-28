@@ -1,6 +1,6 @@
 # Third-party research and notices
 
-Skill Forge's original material is licensed under [MIT](LICENSE). The original builder and earlier conceptual foundations were independently implemented. The v0.4.0 candidate additionally bundles the explicitly identified Anatomy renderer/CSS and retains complete MIT notices for its Anatomy and REA integrations, as described below. This research acknowledgment does not relicense any upstream material.
+Skill Forge's original material is licensed under [MIT](LICENSE). The original builder and earlier conceptual foundations were independently implemented. The v0.4.0 additionally bundles the explicitly identified Anatomy renderer/CSS and retains complete MIT notices for its Anatomy and REA integrations, as described below. This research acknowledgment does not relicense any upstream material.
 
 | Reviewed material | Pinned commit | Inspected license | Credit |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ Skill Forge is an independent project and is not affiliated with or endorsed by 
 
 Anthropic’s *The Complete Guide to Building Skills for Claude* was reviewed on 2026-10-26 as a conceptual reference for optional metadata checks. The PDF and its prose/templates are not redistributed. No permission or license is inferred from Anthropic’s separately licensed skill repository. See [the review](docs/claude-guide-review.md) and source ledger.
 
-## v0.4.0 candidate: bundled material and retained notices
+## v0.4.0: bundled material and retained notices
 
 | Source | Pinned revision | Included material and changes | License/credit |
 | --- | --- | --- | --- |

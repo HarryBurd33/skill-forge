@@ -63,14 +63,14 @@ The portable text prompt includes adapter instructions but not this JavaScript/C
 
 ## What has actually run
 
-This documentation overlay describes a candidate, not a published release. As of the 2026-10-27 review:
+The following evidence was recorded for v0.4.0; evaluation and publication are separate actions:
 
-- Local helper checks recorded42passes and one Windows-only skip, including the release-validator boundary regressions. The resource tests cover copy completeness, relocation, identical repeats, conflict preservation, unsafe paths, failure cleanup and exclusive publication.
+- Local helper checks recorded42 passes and one Windows-only skip, including the release-validator boundary regressions. The resource tests cover copy completeness, relocation, identical repeats, conflict preservation, unsafe paths, failure cleanup and exclusive publication.
 - The original rig was built with the actual renderer. SVG parsing, input/model checks and inline-script closure/coupling checks ran. These establish specific structural/model behavior; they do not establish browser visual quality.
 - A real `rea-agents@6.8.0` package ran under isolated Node 24.22.1. Version/help and ZIP artifact inspection succeeded. JavaScript static analysis failed at macOS process-helper compilation with a SwiftBridging module redefinition; successful JavaScript provider analysis and target runtime observation are not claimed.
-- Four static SVG light/dark1080px/390px images were inspected after temporary CSS-variable resolution for Sharp/librsvg. These omit HTML cards/controls; actual HTML layout, native keyboard and reduced-motion checks remain pending. Required pending checks must complete before adoption or release.
-- The comparable native model suite passed6/6candidate and4/6baseline scenarios. The predefined real Anatomy outcome improved0→1; truthful missing-tool fallback was preserved. See the [report](../evals/v0.4.0/REPORT.md) for fixed inputs, conditions, unknown serving metadata and limitations.
+- Four static SVG light/dark1080px/390px images were inspected after temporary CSS-variable resolution for Sharp/librsvg. These omit HTML cards/controls. The maintainer later confirmed all required HTML layout, native keyboard/control and OS Reduce Motion checks working; independent review accepted this manual evidence. Browser/version is unknown, with no automated browser or screenshot claim.
+- The comparable native model suite passed6/6 candidate and4/6 baseline scenarios. The predefined real Anatomy outcome improved0→1; truthful missing-tool fallback was preserved. See the [report](../evals/v0.4.0/REPORT.md) for fixed inputs, conditions, unknown serving metadata and limitations.
 
 The isolated REA test environment changed no global registration or system Node configuration. Historical platform/model results remain in their versioned reports; these local checks do not revalidate every host, provider or model. Public summaries should contain sanitized outcomes and provenance, while credentials, private paths and raw transcripts stay outside the release allowlist.
 
-The candidate full skill ZIP carries the complete 32-file skill folder, including real Anatomy assets. The portable ZIP is the prompt-and-notices route; its instructions alone are not those executable assets. A plain-chat model can return complete original file texts and a spec, but cannot fetch the pinned kit or render it without the necessary tools or user-supplied files.
+The full skill ZIP carries the complete 32-file skill folder, including real Anatomy assets. The portable ZIP is the prompt-and-notices route; its instructions alone are not those executable assets. A plain-chat model can return complete original file texts and a spec, but cannot fetch the pinned kit or render it without the necessary tools or user-supplied files.

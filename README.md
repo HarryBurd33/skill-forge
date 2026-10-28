@@ -1,6 +1,6 @@
 # Skill Forge
 
-**Version 0.4.0 candidate.** Adds optional artifact reconstruction and a bundled Anatomy SVG renderer for relevant generated skills. The six-scenario model comparison passed; required browser checks remain pending, so this text does not announce a release. See [integration scope and current checks](docs/integrations.md#what-has-actually-run). The [v0.3.1 report](evals/v0.3.1/REPORT.md) remains the record for that earlier version.
+**Version 0.4.0.** Adds scoped software reconstruction and a bundled Anatomy SVG/HTML renderer for relevant generated skills. All ten fixed integration checks passed, including separately reported manual browser checks. See [the validation report](evals/v0.4.0/REPORT.md) and [integration scope](docs/integrations.md).
 
 
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
@@ -28,11 +28,11 @@ You need access to Codex, Claude Code, or another capable chat model. Skill Forg
 | Claude Code | [Install for yourself or a project](docs/claude-code.md) |
 | Another capable chat model | Paste or upload [the self-contained prompt](portable/skill-forge-prompt.md), then describe your idea |
 
-The download links below remain the published v0.3.1 artifacts. The v0.4.0 candidate is still awaiting its required behavior/browser checks and final release review.
+Choose the skill ZIP for Codex/Claude Code, or the portable ZIP for another capable chat model. Keep the full skill folder when executable resources are needed.
 
 ### Codex or Claude Code: install without commands
 
-1. Download [skill-forge-v0.3.1.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.1/skill-forge-v0.3.1.zip) and extract it.
+1. Download [skill-forge-v0.4.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.0/skill-forge-v0.4.0.zip) and extract it.
 2. Copy the **complete `skill-forge` folder**, including its references, scripts, templates, resources and nested adapters, to **one** destination below. Create missing parent folders. Copying only `SKILL.md` is incomplete.
 3. Open a new session in your host and invoke Skill Forge as shown below. If it does not appear, restart the host.
 
@@ -58,7 +58,7 @@ The [Codex guide](docs/codex.md) and [Claude Code guide](docs/claude-code.md) al
 
 ### Other capable LLMs: use the portable prompt
 
-1. Download [skill-forge-portable-v0.3.1.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.3.1/skill-forge-portable-v0.3.1.zip) and extract it.
+1. Download [skill-forge-portable-v0.4.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.0/skill-forge-portable-v0.4.0.zip) and extract it.
 2. Upload **`skill-forge-prompt.md`**, or paste its complete contents into a new conversation. Use the full bundle, not just the short installed `SKILL.md`. Choose a model with enough context for the entire file.
 3. Say: **“Use Skill Forge to build a skill for [my repeated workflow].”** Supply relevant context and references. With no file tools, it returns complete file contents for you to save.
 
@@ -94,7 +94,7 @@ Or improve the builder:
 
 ## Remaining limitations and what was actually tested
 
-The v0.4.0 [model comparison](evals/v0.4.0/REPORT.md) passed all six candidate scenarios, including two held-out cases. Local helper checks recorded42passes and1Windows-only skip. Required HTML layout, native keyboard and reduced-motion checks remain pending. Historical model/host results below apply to their named earlier versions; they are not a pass for the new behavior cases.
+The v0.4.0 [model comparison](evals/v0.4.0/REPORT.md) passed all six candidate scenarios, including two held-out cases. Local helper checks recorded42 passes and1 Windows-only skip. The maintainer reported the required HTML layout, native keyboard and reduced-motion checks working; independent review accepted that manual evidence. Browser/version remains unknown and automated browser coverage is not claimed. Historical model/host results below apply to their named earlier versions; they are not a pass for the new behavior cases.
 
 Skill Forge implements the requested workflow; it does not guarantee perfect skills or identical behavior on every model. Read these boundaries before relying on it:
 
@@ -102,6 +102,7 @@ Skill Forge implements the requested workflow; it does not guarantee perfect ski
 | --- | --- |
 | Host and operating-system coverage | Native Codex CLI 0.164.0 was tested on macOS ARM. Six hosted Python/helper and packaging jobs passed across Windows, Linux, Intel macOS and ARM macOS. Native Claude Code, native Codex model runs on Windows/Linux, and other model families remain unverified. Documented installation support is distinct from executed model testing. |
 | Tools and permissions | Installation grants no file, browsing, execution, subagent or GitHub access. Useful available subagents are launched; when unavailable, the parent works directly and discloses that limitation. Without execution, planned tests remain unexecuted. |
+| REA and Anatomy | Readable source uses normal inspection; shipped artifacts use compatible optional REA tools. ZIP inspection was exercised; JavaScript semantic analysis hit a local macOS compiler conflict. Anatomy includes the basic SVG/HTML slice, not the full upstream advanced toolkit. Plain-chat text does not contain its executable assets. See [integration limits](docs/integrations.md). |
 | Research and reuse | Skill Finder performs a bounded, relevant search, not an exhaustive search of every service. Hugging Face is searched when useful. No suitable or properly licensed foundation means original work or a documented gap, not forced copying. |
 | Interview depth | Questioning continues while material uncertainty remains, within your pace and effort limits. It stops for useful closure or your draft/stop instruction; “maximum possible refinement” is not a measurable guarantee. |
 | Automatic updates | Adoption needs predefined checks, relevant regressions, demonstrated benefit and a writable target. Failed, inconclusive or unavailable required checks preserve the prior version. The helper validates hashes and supplied evidence records; it does not independently run a model evaluator or certify its judgment. |

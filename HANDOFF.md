@@ -1,7 +1,5 @@
-# Skill Forge current maintenance state
+# Skill Forge maintenance state
 
-Version0.3.1 adds optional Claude metadata validation and compatibility-field checks. The canonical source and managed laptop installation share core SHA256 `5b25ded0676dc20f8331442bfe62a4d3e17df05a9f71603cd745224c7b5a27c7`. The fixed comparison passed26/26cases with four independent reserved cases and benefit3→12. The local helper suite passed30tests with1Windows-only skip. The interview workflow remains unchanged from0.3.0.
+v0.4.0 canonical core SHA-256: `da8e24cf80f7dfc57597a7746ff917a22a2030adf4a7ee7983506e446380dbeb`. The [fixed checks and adoption record](evals/v0.4.0/REPORT.md) passed; [manual browser evidence](evals/v0.4.0/manual-browser.json) is explicitly maintainer-reported, with browser/version unknown. A managed personal Codex installation was updated and its complete core hash matched canonical. Public release/download verification is a separate closing receipt.
 
-See [the current report](evals/v0.3.1/REPORT.md), [guide review](docs/claude-guide-review.md), [README](README.md) and [releases](https://github.com/HarryBurd33/skill-forge/releases) for publication state and limits. Prepared files alone are not a published release. The final closing receipt is recorded on the actual release page after verification. No raw PDF, private session or native transcript is selected for publication.
-
-For future maintenance preserve fixed criteria, prior versions, managed-copy customizations and existing Git history. No background work is scheduled. Native Claude execution and broad model parity remain unverified.
+Use the [README](README.md) and [installation guides](docs/codex.md) to start. REA semantic analysis on the local macOS toolchain remains unavailable; basic Anatomy resources are bundled, advanced modules are not. Native Claude/other-model parity remains unverified. Preserve criteria, licenses, customizations and rollback history during future updates; no background work is scheduled.

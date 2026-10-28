@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-28",
+  "kind": "maintainer_reported_manual_execution",
+  "status": "pass_for_all_listed_checks",
+  "checks": [
+    {
+      "id": "force",
+      "input": "pressure250kPa;area200mm2 then100mm2",
+      "expected": "50N then25N; piston responds",
+      "reported": "pass"
+    },
+    {
+      "id": "keyboard",
+      "input": "pressure slider arrowkeys andHome",
+      "expected": "valuesrespond;Home gives0N",
+      "reported": "pass"
+    },
+    {
+      "id": "layout",
+      "input": "desktop/narrow widths;light/dark themes",
+      "expected": "figure,readouts andcontrols readable",
+      "reported": "pass"
+    },
+    {
+      "id": "reduced-motion",
+      "input": "controls withOSReduceMotion enabled",
+      "expected": "controlswork;noautonomousanimation",
+      "reported": "pass"
+    }
+  ],
+  "browser_name_version": null,
+  "screenshots_provided": false,
+  "automated_browser_execution": false,
+  "limits": "Maintainer confirmation is manual evidence, not an automated browser capture or cross-browser/OS benchmark."
+}

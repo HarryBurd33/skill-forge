@@ -1,0 +1,26 @@
+{
+  "check": "S1-package-helper",
+  "status": "PASS_CURRENT_HOST_WITH_USER_REPORTED_MANUAL_EXECUTION",
+  "baseline": "fail",
+  "candidate": "pass",
+  "baseline_evidence": "Actual frozen baseline tree lacks resources/anatomy and attach_anatomy helper; D3 baseline execution explicitly records missing real Anatomy kit/license and substitutes an original renderer. No unperformed baseline browser/helper run is invented.",
+  "candidate_evidence": [
+    "Observed actual helper tests: complete attachment, idempotency, preservation of unrelated/customized files, injected failure cleanup, exclusive publication conflict, symlink/path traversal refusal.",
+    "Observed actual relocated Node builds, pure-model and inline-JS DOM event coupling, XML finite paths and pinned vendor byte comparisons.",
+    "Four actual static light/dark desktop/narrow SVG PNGs inspected by root, with CSS-variable conversion disclosed; not treated as HTML interaction evidence.",
+    "Direct human report affirmatively covers50N at250/200, area100\u219225N+piston update, native arrow/Home\u21920, desktop/narrow both themes, and controls with OS Reduce Motion enabled."
+  ],
+  "manual_evidence": "manual-browser.json",
+  "manual_kind": "user_reported_manual_execution",
+  "browser_name_version": "unknown; not supplied",
+  "screenshots_provided": false,
+  "root_automated_browser_execution": false,
+  "relevant_regressions": "Actual complete staged suite43 tests:42 pass/1 Windows-only junction skip on macOS. Independent rerun12 focused tests and release checker pass; staged core bytes match notice-only correction, all original behavior bytes unchanged.",
+  "criteria_unchanged": true,
+  "limitations": [
+    "Manual success is user-reported observation, not agent browser execution or browser-version verification.",
+    "Native Windows junction case is skipped on the local macOS host; hosted Windows helper results are recorded separately. No Windows-native browser execution is claimed.",
+    "REA semantic provider remains unavailable; no semantic execution success claimed."
+  ],
+  "eligibility": "All applicable fixed behavior-gate conditions now satisfied for original frozen candidate on current host with described evidence; notice-only correction has separate structural review."
+}

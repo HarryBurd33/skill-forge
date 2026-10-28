@@ -1,12 +1,13 @@
 # Changelog
 
-## 0.4.0 — candidate, 2026-10-27
+## 0.4.0 — 2026-10-28
 
 - Add a scoped reconstruction adapter: inspect complete source with ordinary tools, and use discovered compatible REA tooling for shipped-artifact/runtime-dependent claims while preserving missing-provider gaps.
 - Automatically attach the real pinned Anatomy SVG renderer/CSS and complete MIT notice when a generated skill needs a physical explainer; preserve text/CSV/ordinary-flowchart opt-outs.
 - Add original shared-model pressure-rig resources and the `attach-anatomy`/`integrations` helper commands, with conflict-safe copying and relocation checks.
 - Keep generated targets independent of Forge. Document optional Node/browser dependencies and the exact basic slice rather than claiming the full upstream toolkit.
-- Local helpers: 38 passes, one Windows-only skip. REA 6.8.0 version/help and ZIP inspection ran under isolated Node 24.22.1; JavaScript analysis failed at a macOS SwiftBridging compiler error. Browser checks and final release review remain pending; no publication is claimed.
+- Validation: all 10 fixed checks passed; comparable model suite6/6 candidate versus4/6 baseline,42 local helper passes/1 Windows-only skip, and six hosted platform jobs. Required browser behavior was confirmed by the maintainer and independently reviewed; browser/version remains unknown.
+- Actual evidence-gated behavior and notice-only updates preserved prior versions. REA 6.8.0 version/help and ZIP inspection passed under isolated Node 24.22.1; JavaScript semantic analysis remains unavailable after a local macOS compiler failure.
 
 ## 0.3.1 — 2026-10-26
 
