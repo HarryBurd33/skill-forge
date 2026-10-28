@@ -1,6 +1,6 @@
 # Skill Forge
 
-**Version 0.4.0.** Adds scoped software reconstruction and a bundled Anatomy SVG/HTML renderer for relevant generated skills. All ten fixed integration checks passed, including separately reported manual browser checks. See [the validation report](evals/v0.4.0/REPORT.md) and [integration scope](docs/integrations.md).
+**Version 0.4.1.** Adds an opt-in recovery runner for the verified macOS SwiftBridging compiler conflict that blocked REA JavaScript analysis. The core skill-building workflows and bundled Anatomy renderer remain available. See [the recovery guide](skills/skill-forge/references/rea-macos.md), [validation report](evals/v0.4.1/REPORT.md) and [integration scope](docs/integrations.md).
 
 
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
@@ -32,7 +32,7 @@ Choose the skill ZIP for Codex/Claude Code, or the portable ZIP for another capa
 
 ### Codex or Claude Code: install without commands
 
-1. Download [skill-forge-v0.4.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.0/skill-forge-v0.4.0.zip) and extract it.
+1. Download [skill-forge-v0.4.1.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.1/skill-forge-v0.4.1.zip) and extract it.
 2. Copy the **complete `skill-forge` folder**, including its references, scripts, templates, resources and nested adapters, to **one** destination below. Create missing parent folders. Copying only `SKILL.md` is incomplete.
 3. Open a new session in your host and invoke Skill Forge as shown below. If it does not appear, restart the host.
 
@@ -58,7 +58,7 @@ The [Codex guide](docs/codex.md) and [Claude Code guide](docs/claude-code.md) al
 
 ### Other capable LLMs: use the portable prompt
 
-1. Download [skill-forge-portable-v0.4.0.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.0/skill-forge-portable-v0.4.0.zip) and extract it.
+1. Download [skill-forge-portable-v0.4.1.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.1/skill-forge-portable-v0.4.1.zip) and extract it.
 2. Upload **`skill-forge-prompt.md`**, or paste its complete contents into a new conversation. Use the full bundle, not just the short installed `SKILL.md`. Choose a model with enough context for the entire file.
 3. Say: **“Use Skill Forge to build a skill for [my repeated workflow].”** Supply relevant context and references. With no file tools, it returns complete file contents for you to save.
 
@@ -102,7 +102,7 @@ Skill Forge implements the requested workflow; it does not guarantee perfect ski
 | --- | --- |
 | Host and operating-system coverage | Native Codex CLI 0.164.0 was tested on macOS ARM. Six hosted Python/helper and packaging jobs passed across Windows, Linux, Intel macOS and ARM macOS. Native Claude Code, native Codex model runs on Windows/Linux, and other model families remain unverified. Documented installation support is distinct from executed model testing. |
 | Tools and permissions | Installation grants no file, browsing, execution, subagent or GitHub access. Useful available subagents are launched; when unavailable, the parent works directly and discloses that limitation. Without execution, planned tests remain unexecuted. |
-| REA and Anatomy | Readable source uses normal inspection; shipped artifacts use compatible optional REA tools. ZIP inspection was exercised; JavaScript semantic analysis hit a local macOS compiler conflict. Anatomy includes the basic SVG/HTML slice, not the full upstream advanced toolkit. Plain-chat text does not contain its executable assets. See [integration limits](docs/integrations.md). |
+| REA and Anatomy | Readable source uses normal inspection; shipped artifacts use compatible optional REA tools. ZIP inspection was exercised; v0.4.1 adds guarded recovery for the observed macOS compiler conflict, with actual static semantic checks documented in its report. Runtime behavior remains unproved. Anatomy includes the basic SVG/HTML slice, not the full upstream advanced toolkit. Plain-chat text does not contain its executable assets. See [integration limits](docs/integrations.md). |
 | Research and reuse | Skill Finder performs a bounded, relevant search, not an exhaustive search of every service. Hugging Face is searched when useful. No suitable or properly licensed foundation means original work or a documented gap, not forced copying. |
 | Interview depth | Questioning continues while material uncertainty remains, within your pace and effort limits. It stops for useful closure or your draft/stop instruction; “maximum possible refinement” is not a measurable guarantee. |
 | Automatic updates | Adoption needs predefined checks, relevant regressions, demonstrated benefit and a writable target. Failed, inconclusive or unavailable required checks preserve the prior version. The helper validates hashes and supplied evidence records; it does not independently run a model evaluator or certify its judgment. |
@@ -128,7 +128,7 @@ When a session pauses, save its private record or copy its handoff into the next
 
 [Worked examples](examples/README.md) cover research and writing, an adaptive prompt builder, a planner handling an exam, and a correction to an existing skill. The public inputs are fictional. Authored demonstrations are labeled separately from executed evaluation results: [v0.1.0](evals/REPORT.md), [v0.2.0](evals/v0.2.0/REPORT.md), and [v0.3.0](evals/v0.3.0/REPORT.md).
 
-## Optional REA and Anatomy resources in v0.4.0
+## Optional REA and Anatomy resources
 
 The [integration guide](docs/integrations.md) explains source versus shipped-artifact evidence, automatic selection for physical explainers, the exact bundled file slice, optional dependencies and helper commands. Generated skills receive their own resources and work without Forge. An adapter is workflow guidance; it is not proof that a tool is connected or that an analysis, render or browser check ran.
 
@@ -169,3 +169,9 @@ See [foundations and comparison](docs/foundations.md), [source ledger](SOURCES.j
 The v0.3.0 checks passed all 21 original scenarios (84 required conditions), all 15 supplemental interview items, and the navigation/package checks. A fresh Codex CLI 0.164.0 invocation discovered the installed skill and returned a standalone draft. Historical baseline/model limits and untested native hosts are documented in the validation report.
 
 Track requested capabilities in [REQUIREMENTS.md](REQUIREMENTS.md), current work in [HANDOFF.md](HANDOFF.md), and the project usage policy in [MAINTENANCE.md](MAINTENANCE.md).
+
+### REA JavaScript compiler recovery on macOS
+
+If REA reports `redefinition of module 'SwiftBridging'`, use the [guarded macOS recovery guide](skills/skill-forge/references/rea-macos.md). The opt-in Python runner checks the actual diagnostic and matching module definitions, then supplies a temporary compiler overlay only to the requested command. It does not edit Apple files, disable REA ownership checks, install REA or repair every Swift failure. Existing custom compiler/SDK selections are refused. Normal host process inspection is still required; a sandbox may deny it. Failed or interrupted runs retain temporary state when native descendant cleanup is uncertain.
+
+The executable runner is included in the full skill/source ZIP, not the portable text bundle. Other operating systems keep their ordinary REA setup; this specific workaround refuses non-macOS systems. See [v0.4.1 evidence and limits](evals/v0.4.1/REPORT.md).

@@ -1,0 +1,27 @@
+{
+  "candidate_hash": "850e1fd6286663bb0c7f360a2e47adca7c78822917b7ed7a2e4d8d4fad01f454",
+  "staged_skill_hash": "850e1fd6286663bb0c7f360a2e47adca7c78822917b7ed7a2e4d8d4fad01f454",
+  "original_stdout_hash_valid": true,
+  "independent_original_assertion": {
+    "exit": 0,
+    "stdout": "{\"semantic_facts_pass\": true, \"branch_authority\": \"source excerpt anchored by REA static return-site evidence\", \"runtime_execution_proven\": false}\n",
+    "stderr": ""
+  },
+  "original_test_files": {
+    "test_forge.py": {
+      "baseline": "19d5d14e7de351c6d4088d83037a06713ee1e28519d2af12064de0716d4b8d12",
+      "staged": "19d5d14e7de351c6d4088d83037a06713ee1e28519d2af12064de0716d4b8d12",
+      "unchanged": true
+    },
+    "test_integrations.py": {
+      "baseline": "fb5ca5685be062a44e3bb00358058ffbbe685384202eef420474df9bc70c535a",
+      "staged": "fb5ca5685be062a44e3bb00358058ffbbe685384202eef420474df9bc70c535a",
+      "unchanged": true
+    }
+  },
+  "candidate_tests_match_staged": true,
+  "test_summary": "68 collected, 67 passed, one existing Windows-only junction skip",
+  "protected_unchanged": true,
+  "docs_review": "Narrow current recovery claims, custom selector refusal, process-only overlay, no automatic acquisition, conservative descendant uncertainty and static-only semantics accurately stated. Historical v0.4.0 failure is separated from v0.4.1 scope. Report placeholder must be filled before publication.",
+  "C7_scope": "Staged gate only; active/public parity remains post-adoption closing check."
+}

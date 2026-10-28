@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "scope": "builder",
+  "change_kind": "behavior",
+  "evaluation_kind": "script_execution",
+  "checks": [
+    {
+      "id": "C0",
+      "kind": "acceptance",
+      "input": "Original shipped-js fixture, retained real baseline duplicate SwiftBridging compiler failure.",
+      "expected": "Archive actual default-compiler failure with original fixture hash; baseline real_semantic_success=0. No unchanged full REA rerun needed.",
+      "failure": "Missing actual baseline failure or fabricated baseline score."
+    },
+    {
+      "id": "C1",
+      "kind": "acceptance",
+      "input": "Same shipped-js fixture through guarded utility and actual installed REA 6.8.0.",
+      "expected": "Exit 0, no unresolved cleanup failure; normalized resolved entry.js imports feature.js summarize binding; static function reviewTicket and summarize nodes and source-hash-bound return-site range backing urgent/page-owner/queue-review ternary. Retain static-only and unknown-call limits.",
+      "failure": "Exit 0 only, partial graph with cleanup failure, hand-authored graph, source-only replacement analysis, invented branch edge or runtime call claims."
+    },
+    {
+      "id": "C2",
+      "kind": "acceptance",
+      "input": "Known duplicate-definition guard with actual macOS compiler/SDK discovery and both candidate modulemap files.",
+      "expected": "Require Darwin, exact duplicate SwiftBridging diagnostic from selected compiler probe or explicit supplied diagnostic plus current matching modulemaps; verify redundant module.modulemap contains only matching SwiftBridging definition and retained bridging.modulemap defines it. Empty-file VFS overlay masks exactly redundant module.modulemap for compiler argv only; retain bridging.modulemap and unmodified native ownership reader.",
+      "failure": "Generic Foundation error treated as match, multi-module map masked, absent/nonmatching duplicate accepted, global edit or ownership bypass."
+    },
+    {
+      "id": "C3",
+      "kind": "regression",
+      "input": "Unsupported OS; absent/mismatched maps; absent executable; existing nonempty REA_DARWIN_SWIFTC_PATH or SDKROOT.",
+      "expected": "Fail closed before analyzer/overlay on unsupported/unmatched cases. Existing custom compiler or SDK is refused explicitly without overwrite; caller can rerun in intentionally configured environment. Preserve all other ambient settings.",
+      "failure": "Silent custom selector replacement, package acquisition, broad attempted repair or hidden fallback."
+    },
+    {
+      "id": "C4",
+      "kind": "regression",
+      "input": "Custom REA_DARWIN_MODULE_CACHE_PATH and CLANG_MODULE_CACHE_PATH plus paths/argv with spaces, quotes, dollar signs and semicolons.",
+      "expected": "Runner preserves existing cache values unchanged and never deletes custom caches; documents REA itself may suppress CLANG_MODULE_CACHE_PATH if its supported cache selector is empty. Commands are argv lists with shell=False; exact arguments reach installed executable. No shell interpretation or command splitting.",
+      "failure": "Cache clearing/replacement, shell=True or shell-generated compiler trampoline, argument corruption."
+    },
+    {
+      "id": "C5",
+      "kind": "regression",
+      "input": "Child nonzero exit, signal termination, caller SIGINT, spawn failure, cleanup failure, two concurrent runs.",
+      "expected": "Propagate nonzero and signals honestly; only signal owned child/group, settle owned processes before deleting unique per-run temporary state. Cleanup errors remain visible and non-success. Concurrent temp roots disjoint; unrelated sentinel files/caches survive.",
+      "failure": "False success, deleting shared/foreign state, swallowing cleanup error, unverified child survival reported as cleaned."
+    },
+    {
+      "id": "C6",
+      "kind": "regression",
+      "input": "Apple module.modulemap and bridging.modulemap; installed ownership implementation and Swift helper sources before/after; package/runtime boundaries.",
+      "expected": "SHA256 all protected files unchanged. No system/config/security edits, paid API/new engine or automatic package acquisition. Actual reader compilation/use retained via supported REA_DARWIN_SWIFTC_PATH plus SDKROOT.",
+      "failure": "Any protected hash drift, fake reader or ownership suppression, dependency fetch."
+    },
+    {
+      "id": "C7",
+      "kind": "regression",
+      "input": "Existing 43 helper tests, package/portable checks, canonical/installed/public artifacts and licenses.",
+      "expected": "All 43 existing tests pass unchanged; new meaningful runner checks pass; package and portable checks pass; intentional file/version deltas agree across deliverables and provenance/MIT notices remain.",
+      "failure": "Existing tests removed/weakened, packaging regression, stale installed/public copy or notices removed."
+    },
+    {
+      "id": "H1",
+      "kind": "held_out",
+      "input": "One original MIT JavaScript fixture and executable semantic assertion plan sealed in heldout-private; manifest SHA256 d56767e79ff1c3f1574a0850dd7cff5c99e41de211d21c9e7ee30a89e9f1f98b.",
+      "expected": "After candidate hash freeze, actual REA run exits 0 with confirmed cleanup and passes sealed imports/function/source-bound-branch assertions; preserve static-only limitations.",
+      "failure": "Fixture disclosed before freeze, any semantic assertion fails, fabricated graph, cleanup unresolved or runtime overclaim."
+    }
+  ],
+  "benefit": {
+    "metric": "real_semantic_success",
+    "direction": "higher",
+    "min_delta": 1
+  },
+  "metric_definition": "Binary 1 only when C1 actual original fixture semantic assertions and process completion/cleanup pass; otherwise 0. Frozen baseline 0 backed actual duplicate-definition failure; candidate must be 1. H1 and all regressions mandatory independently.",
+  "held_out_manifest_sha256": "d56767e79ff1c3f1574a0850dd7cff5c99e41de211d21c9e7ee30a89e9f1f98b"
+}

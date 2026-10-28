@@ -1,0 +1,10 @@
+{
+  "candidate_hash": "850e1fd6286663bb0c7f360a2e47adca7c78822917b7ed7a2e4d8d4fad01f454",
+  "test_sha256": "f459df716f4555cef0ebd8b589a21574d2d2bb8b4b466d151ea4ddd4b015a0ab",
+  "frozen_at": "2026-10-28T08:13:18.672647+00:00",
+  "criteria_hash": "6d12ca1829a79cd136b22a2137540c61a7f075b9e346fb436e3febfeca725247",
+  "evaluator_hash": "b992c41fc024847430bb1bc7936286fb2beef9416e791f4264ecfd11ee1ea2dd",
+  "heldout_unseen": "Supplemental round2 fixture unseen; originalH1 retained regression",
+  "construction_refinements": "Cleanup uncertainty and Windows-safe test separation resolved before behavioral candidate evaluation; no heldout disclosed.",
+  "round": 2
+}

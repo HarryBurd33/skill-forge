@@ -63,3 +63,7 @@ The reviewed REA package declares Node `^22.23.4 || ^24.22.1 || >=26.12.1`; this
 ### v0.4.0 integration checks
 
 [All six candidate jobs passed](../evals/v0.4.0/platform-checks.json) at `fd45d89`: Windows/Ubuntu Python3.9 and3.13, Intel macOS3.9 and ARM macOS3.13. This includes the new resource-attachment and package-boundary tests. Native Claude, other-model behavior and REA providers on these platforms remain separate, unverified integrations. The required local HTML layout/keyboard/reduced-motion checks passed through maintainer-reported manual execution and independent review; browser/version is unknown. No automated browser execution is claimed. See the [final report](../evals/v0.4.0/REPORT.md).
+
+## v0.4.1 macOS recovery scope
+
+The optional `rea_macos.py` runner targets the observed macOS duplicate SwiftBridging module-map conflict only. Its guards refuse other operating systems, unmatched module definitions/errors and existing custom compiler/SDK settings. Its process tests use POSIX processes; Windows runs platform-safe guards and explicitly skips POSIX process cases. Core Forge helpers remain cross-platform. Native REA semantic execution is tested only on the recorded Apple Silicon macOS toolchain; Windows/Linux REA providers and Intel Mac native compiler recovery are unverified. See [the current report](../evals/v0.4.1/REPORT.md).

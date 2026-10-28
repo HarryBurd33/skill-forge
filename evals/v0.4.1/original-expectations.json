@@ -1,0 +1,13 @@
+{
+  "import_source": "entry.js",
+  "import_target": "feature.js",
+  "specifier": "./feature.js",
+  "imported_name": "summarize",
+  "local_name": "summarize",
+  "functions": {
+    "entry.js": "reviewTicket",
+    "feature.js": "summarize"
+  },
+  "branch_source": "feature.js",
+  "branch_text": "priority === 'urgent' ? 'page-owner' : 'queue-review'"
+}

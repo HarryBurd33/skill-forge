@@ -1,0 +1,15 @@
+{
+  "candidate_hash": "31c7cfcec6f98acca4f05e9ece6f5e856cf6992eaff30c78d7df64df6c95efa3",
+  "verdict": "reject",
+  "failed_checks": [
+    "C5"
+  ],
+  "failure_evidence": "probe-decode-reproduction.json",
+  "reason": "Post-spawn compiler probe UnicodeDecodeError deletes probe state despite detached live descendant because exception retention checks forced stop instead of whether probe started.",
+  "H1": "Actual held-out passes; full captured execution and semantic assertion in heldout-review-result.json. Does not override C5 failure.",
+  "C1": "Parent reports original execution passes; not enough to override C5.",
+  "next": "Fix failed exception retention branch and add independent reproduction as regression; freeze candidate2 hash before fresh supplemental held-out release. Original frozen H1 remains mandatory.",
+  "criteria_hash": "6d12ca1829a79cd136b22a2137540c61a7f075b9e346fb436e3febfeca725247",
+  "evaluator_hash": "b992c41fc024847430bb1bc7936286fb2beef9416e791f4264ecfd11ee1ea2dd",
+  "supplemental_heldout_manifest_sha256": "57a90387f496c403bb67e71b2c193a5568e31644cbaf4a67c14039793f29296b"
+}
