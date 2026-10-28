@@ -1,0 +1,49 @@
+{
+  "status": "PASS_STRUCTURAL_ONLY",
+  "baseline_hash": "51f4b6ace943de87cbc6b09ca25213e578bea4a5d7dfe45599ca19734031aea4",
+  "notice_candidate_hash": "da8e24cf80f7dfc57597a7746ff917a22a2030adf4a7ee7983506e446380dbeb",
+  "expected_baseline_hash": "51f4b6ace943de87cbc6b09ca25213e578bea4a5d7dfe45599ca19734031aea4",
+  "same_paths": true,
+  "only_changed_paths": [
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "exact_prescribed_sentence_replacement": true,
+  "all_other_bytes_identical": true,
+  "license_paths_retained_identical": [
+    "LICENSE",
+    "resources/anatomy/vendor/LICENSE",
+    "subskills/anatomy/LICENSE",
+    "subskills/reverse-engineer/LICENSE",
+    "subskills/skill-finder/LICENSE"
+  ],
+  "validations": {
+    "baseline": {
+      "status": "pass",
+      "name": "skill-forge",
+      "profile": "generic",
+      "files": 32,
+      "relative_links": 28,
+      "questions": 11,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality."
+    },
+    "notice_candidate": {
+      "status": "pass",
+      "name": "skill-forge",
+      "profile": "generic",
+      "files": 32,
+      "relative_links": 28,
+      "questions": 11,
+      "limitations": "Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality."
+    }
+  },
+  "metric": "false_bundling_claims",
+  "baseline": 1,
+  "candidate": 0,
+  "delta_lower": 1,
+  "controls_sha256": {
+    "notice-criteria.json": "f666194d9e3c4e320f6847e787276734a77a316e468f3fc7ef5d6f01db0bb16d",
+    "notice-evaluator.md": "0f935cf73298db6d335ad34e9648a50c89ccf89a1844d41b8d52de8f9390a1b6",
+    "notice-replacement.json": "a4f9abffb075682b9236d7c97f54786c18ad1e2c34fbe326d622e368a86aa9d0"
+  },
+  "behavior_implication": "No new model/behavior pass. Original behavior candidate and its incomplete S1 gate remain unchanged. Structural review is not adoption authorization."
+}

@@ -8,7 +8,7 @@ Python is optional for the interview, implementation spec and skill-file output.
 
 1. Extract the download. Find the complete `skills/skill-forge` folder in the repository, or `skill-forge` in the skill ZIP.
 2. Choose **personal** for local projects or **project** for one working repository. Create missing parent folders.
-3. Copy the entire folder to one destination below. Keep its references, templates, scripts, license and nested Skill Finder; copying only `SKILL.md` is incomplete.
+3. Copy the entire folder to one destination below. Keep its references, templates, scripts, resources, license and nested adapters; copying only `SKILL.md` is incomplete.
 4. Open Codex and select Skill Forge. Changes are normally detected automatically; restart if it is missing.
 
 | Scope | macOS/Linux | Windows |
@@ -95,3 +95,9 @@ For project scope move that project's installation instead. Start a new Codex ch
 Installation does not grant file, network, execution, subagent or publication access. The nested [Skill Finder](skill-finder.md) needs no second installation; independent discovery of its nested directory is not assumed. Without a launch tool the parent works directly and says so; without browsing it uses supplied material and marks external research unavailable.
 
 Host setup and paths were checked against official documentation on **2026-10-21**. Executed behavior and helper evidence are recorded separately in [compatibility](compatibility.md).
+
+## Optional reconstruction and explanatory visuals
+
+No second skill installation is needed for Forge's REA and Anatomy routing instructions. [The integration guide](integrations.md) explains when each applies. Normal complete-source work uses ordinary read tools; shipped-artifact and runtime questions may need a connected compatible REA tool. Installing Forge does not connect REA or install its engines.
+
+For a generated physical explainer, Forge selects Anatomy when it helps the agreed output and includes the actual renderer/CSS and notices in that target. Node.js 20.10+ is optional until rendering; no npm packages are needed for this basic SVG example. A browser is needed for visual/interaction checks. Keep the complete target folder when moving or sharing it; the generated target needs no Forge runtime. Plain text, CSV, ordinary flowcharts and explicit no-visual requests do not receive automatic Anatomy assets.

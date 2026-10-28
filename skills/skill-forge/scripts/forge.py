@@ -20,7 +20,7 @@ import tempfile
 import uuid
 import zipfile
 
-VERSION = "0.3.1"
+VERSION = "0.4.0"
 SCHEMA = 1
 MARKER = ".skill-forge-managed.json"
 SKIP_DIRS = {".git", "__pycache__", ".pytest_cache"}
@@ -544,6 +544,93 @@ def install(source, dest, update=False):
     return {"status": "updated" if update else "installed", "destination": str(dest), "installed_hash": source_hash}
 
 
+def real_path_chain(path):
+    """Check the lexical chain before resolve can hide a link or junction."""
+    path = Path(os.path.abspath(str(Path(path).expanduser())))
+    for component in [path] + list(path.parents):
+        require(not is_link(component), "Symlink/reparse point in resource path: {}".format(component))
+    return path
+
+
+def rename_directory_exclusive(source, destination):
+    """Atomic publish without replacing even an empty existing directory."""
+    # POSIX rename alone may overwrite an empty directory. Use the host's
+    # exclusive primitive, or fail closed rather than weakening this guarantee.
+    if os.name == "nt":
+        os.rename(str(source), str(destination))  # Windows refuses existing dest.
+        return
+    import ctypes
+    libc = ctypes.CDLL(None, use_errno=True)
+    source_bytes, dest_bytes = os.fsencode(source), os.fsencode(destination)
+    if sys.platform == "darwin" and hasattr(libc, "renamex_np"):
+        function = libc.renamex_np
+        function.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_uint]
+        result = function(source_bytes, dest_bytes, 4)  # RENAME_EXCL
+    elif sys.platform.startswith("linux") and hasattr(libc, "renameat2"):
+        function = libc.renameat2
+        function.argtypes = [ctypes.c_int, ctypes.c_char_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_uint]
+        result = function(-100, source_bytes, -100, dest_bytes, 1)  # RENAME_NOREPLACE
+    else:
+        raise ForgeError("Atomic exclusive directory publication is unavailable on this host")
+    if result:
+        code = ctypes.get_errno()
+        raise OSError(code, os.strerror(code), str(destination))
+
+
+def attach_anatomy(target):
+    """Add an intact renderer slice without rewriting the target skill."""
+    require(".." not in Path(target).parts, "Target cannot contain parent traversal")
+    target = real_path_chain(target)
+    validate(target)
+    source = real_path_chain(Path(__file__).resolve().parent.parent / "resources" / "anatomy")
+    inventory = files(source)
+    expected = {"vendor/iso-kit.mjs", "vendor/iso.css", "vendor/LICENSE", "model.mjs", "build.mjs", "README.md", "PROVENANCE.json"}
+    require({p.relative_to(source).as_posix() for p in inventory} == expected, "Bundled Anatomy resource slice is incomplete or contains unexpected files")
+    payload = {p.relative_to(source).as_posix(): p.read_bytes() for p in inventory}
+    provenance = json.loads(payload["PROVENANCE.json"].decode("utf-8"))
+    for name, sha in provenance["vendor_sha256"].items():
+        require(digest(payload[name]) == sha, "Pinned Anatomy vendor checksum mismatch: {}".format(name))
+    assets, destination = target / "assets", target / "assets" / "anatomy"
+    real_path_chain(assets)
+    if assets.exists():
+        require(assets.is_dir(), "Target assets path is not a directory")
+    real_path_chain(destination)
+    listed = ["assets/anatomy/" + name for name in sorted(payload)]
+    reminder = "Integrate assets/anatomy/README.md into the target workflow and run its build and visual checks; SKILL.md was not rewritten. Node.js 20.10+ is optional until rendering is requested."
+    if destination.exists():
+        require(destination.is_dir(), "Anatomy destination is not a directory")
+        existing = files(destination)
+        require({p.relative_to(destination).as_posix() for p in existing} == set(payload), "Existing Anatomy resources differ; refusing partial or customized tree")
+        require(all(p.read_bytes() == payload[p.relative_to(destination).as_posix()] for p in existing), "Existing Anatomy resources are customized; refusing to overwrite")
+        return {"status": "unchanged", "files": listed, "integration_reminder": reminder}
+    # Stage the entire new directory on the destination filesystem. If assets
+    # does not exist, publish it together with anatomy in one atomic operation.
+    parent = assets if assets.exists() else target
+    published = destination if assets.exists() else assets
+    temporary = Path(tempfile.mkdtemp(prefix=".forge-anatomy-stage-", dir=str(parent)))
+    stage = temporary / "payload"
+    try:
+        root = stage if published == destination else stage / "anatomy"
+        root.mkdir(parents=True)
+        for name, data in payload.items():
+            out = root / name
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_bytes(data)
+        require({p.relative_to(root).as_posix(): p.read_bytes() for p in files(root)} == payload, "Staged resource verification failed")
+        real_path_chain(destination)
+        require(not published.exists(), "Resource destination appeared while staging; refusing conflict")
+        rename_directory_exclusive(stage, published)
+    finally:
+        # Only this invocation's staging area is owned by this helper.
+        shutil.rmtree(str(temporary), ignore_errors=True)
+    return {"status": "attached", "files": listed, "integration_reminder": reminder}
+
+
+def integrations():
+    """Describe bundled adapters only; this does not probe or configure tools."""
+    return {"version": VERSION, "anatomy": {"status": "bundled SVG core", "revision": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80", "attach_command": "attach-anatomy TARGET", "render_dependency": "Node.js >=20.10; no npm packages", "visual_verification": "Chrome or compatible browser; perform separately"}, "rea": {"status": "optional workflow adapter; connection/runtime not probed", "reference_revision": "0cd7ef456bf960da265e04b341e82a24b1e377d5", "package_reference": "rea-agents 6.8.0; runtime and provider compatibility must be verified separately", "setup_executed": False}}
+
+
 def check_public_file(path, rel):
     require(not (set(rel.parts) & (PRIVATE_PARTS | SKIP_DIRS)), "Private or generated directory cannot be packaged: {}".format(rel))
     require(not any(part.startswith(".env") or part.startswith("run-") or part.startswith("session-") for part in rel.parts), "Private state cannot be packaged: {}".format(rel))
@@ -625,6 +712,9 @@ def parser():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--version", action="version", version=VERSION)
     sub = p.add_subparsers(dest="command", required=True)
+    q = sub.add_parser("attach-anatomy", help="Atomically attach the self-contained Anatomy SVG resource slice")
+    q.add_argument("target", type=Path)
+    sub.add_parser("integrations", help="Describe bundled adapters without probing or setup")
     q = sub.add_parser("validate", help="Check skill metadata and packaged references")
     q.add_argument("path", type=Path)
     q.add_argument("--profile", choices=("generic", "claude"), default="generic", help="Add Claude-specific discovery metadata restrictions")
@@ -669,7 +759,11 @@ def parser():
 def main(argv=None):
     args = parser().parse_args(argv)
     try:
-        if args.command == "validate":
+        if args.command == "attach-anatomy":
+            result = attach_anatomy(args.target)
+        elif args.command == "integrations":
+            result = integrations()
+        elif args.command == "validate":
             result = validate(args.path, args.profile)
         elif args.command == "questions":
             result = search_questions(args.skill, args.query, args.status)

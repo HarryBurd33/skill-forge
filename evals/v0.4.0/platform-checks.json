@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-27",
+  "repository": "HarryBurd33/skill-forge",
+  "commit": "fd45d89a86ecaea0b6e38244ff8ef4afc38bd466",
+  "workflow_run": 40563307934,
+  "url": "https://github.com/HarryBurd33/skill-forge/actions/runs/40563307934",
+  "jobs": [
+    {
+      "id": 122397812541,
+      "name": "check (ubuntu-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122397813160,
+      "name": "check (windows-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122397813168,
+      "name": "check (windows-latest, 3.9)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122397813220,
+      "name": "check (ubuntu-latest, 3.9)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122397813359,
+      "name": "check (macos-15-intel, 3.9)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122397813486,
+      "name": "check (macos-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "scope": "Actual hosted helper/unit/package/temporary-install checks; not native Claude, REA provider or browser interaction evidence."
+}

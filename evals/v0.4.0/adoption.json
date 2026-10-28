@@ -1,0 +1,120 @@
+{
+  "status": "adopted_locally_after_all_fixed_checks_passed",
+  "original_baseline_hash": "5b25ded0676dc20f8331442bfe62a4d3e17df05a9f71603cd745224c7b5a27c7",
+  "behavior_candidate_hash": "51f4b6ace943de87cbc6b09ca25213e578bea4a5d7dfe45599ca19734031aea4",
+  "criteria_hash": "5375e764e54c563d040a7956f3bafb5a676e073ffb1f26d26ec77537cfe5c4c9",
+  "evaluator_hash": "7f5da49f1a050d1a68c446965b9ddc8be6ae0be0779e5ada934008b719de2584",
+  "final_notice_corrected_hash": "da8e24cf80f7dfc57597a7746ff917a22a2030adf4a7ee7983506e446380dbeb",
+  "checks": [
+    {
+      "id": "D1-source-data",
+      "baseline": "pass",
+      "candidate": "pass",
+      "explanation": "Actual completed paired model executions graded per frozen critical conditions."
+    },
+    {
+      "id": "D2-shipped-js-no-rea",
+      "baseline": "pass",
+      "candidate": "pass",
+      "explanation": "Actual completed paired model executions graded per frozen critical conditions."
+    },
+    {
+      "id": "D3-anatomy",
+      "baseline": "fail",
+      "candidate": "pass",
+      "explanation": "Actual completed paired model executions graded per frozen critical conditions."
+    },
+    {
+      "id": "D4-csv-optout",
+      "baseline": "pass",
+      "candidate": "pass",
+      "explanation": "Actual completed paired model executions graded per frozen critical conditions."
+    },
+    {
+      "id": "H1",
+      "baseline": "fail",
+      "candidate": "pass",
+      "explanation": "Actual completed paired model executions graded per frozen critical conditions."
+    },
+    {
+      "id": "H2",
+      "baseline": "pass",
+      "candidate": "pass",
+      "explanation": "Actual completed paired model executions graded per frozen critical conditions."
+    },
+    {
+      "id": "N1",
+      "baseline": "fail",
+      "candidate": "pass",
+      "explanation": "Actual generated self-contained Anatomy outcome baseline0/candidate1; real usage/build/relocation, not file presence alone."
+    },
+    {
+      "id": "N2",
+      "baseline": "pass",
+      "candidate": "pass",
+      "explanation": "Established truthful fallback preservation passes D2/H2 both arms; no benefit credit."
+    },
+    {
+      "id": "S1-package-helper",
+      "baseline": "fail",
+      "candidate": "pass",
+      "explanation": "Actual frozen baseline tree lacks resources/anatomy and attach_anatomy helper; D3 baseline execution explicitly records missing real Anatomy kit/license and substitutes an original renderer. No unperformed baseline browser/helper run is invented."
+    },
+    {
+      "id": "R1-rea-available",
+      "baseline": "pass",
+      "candidate": "pass",
+      "explanation": "Conditional contract pass via proven unavailable compatible semantic provider; actual analyze-JS attempt failed nonretryably. This is NOT semantic-analysis execution success for either arm. Separate real ZIP inspection is narrower additional evidence."
+    }
+  ],
+  "benefit": {
+    "metric": "self_contained_anatomy_outcomes",
+    "baseline": 0,
+    "candidate": 1
+  },
+  "actual_helper_adoptions": [
+    {
+      "round": 1,
+      "time": "2026-10-28T05:17:02.059091+00:00",
+      "candidate_hash": "51f4b6ace943de87cbc6b09ca25213e578bea4a5d7dfe45599ca19734031aea4",
+      "status": "adopted",
+      "reason": "All frozen checks passed and predefined benefit was demonstrated",
+      "benefit_delta": 1,
+      "validation": {
+        "status": "pass",
+        "name": "skill-forge",
+        "profile": "generic",
+        "files": 32,
+        "relative_links": 28,
+        "questions": 11,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality."
+      },
+      "evidence_limit": "Supplied execution records were checked; authenticity and evaluator quality require independent review."
+    },
+    {
+      "round": 1,
+      "time": "2026-10-28T05:17:23.455155+00:00",
+      "candidate_hash": "da8e24cf80f7dfc57597a7746ff917a22a2030adf4a7ee7983506e446380dbeb",
+      "status": "adopted",
+      "reason": "All frozen checks passed and predefined benefit was demonstrated",
+      "benefit_delta": 1,
+      "validation": {
+        "status": "pass",
+        "name": "skill-forge",
+        "profile": "generic",
+        "files": 32,
+        "relative_links": 28,
+        "questions": 11,
+        "limitations": "Checks supported frontmatter fields and file links, not full YAML, native host acceptance or semantic quality."
+      },
+      "evidence_limit": "Supplied execution records were checked; authenticity and evaluator quality require independent review."
+    }
+  ],
+  "reviewable_public_evidence": [
+    "results.json",
+    "manual-browser.json",
+    "final-s1-review.json",
+    "notice-review.json"
+  ],
+  "private_evidence": "Original hash-bound evaluator inputs and raw transcripts retained privately; not redistributed. Helper records validate supplied evidence, not evaluator truthfulness."
+}

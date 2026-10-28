@@ -1,0 +1,4 @@
+{
+  "old": "This skill and its helpers are original MIT-licensed Skill Forge material; no upstream source text or code is bundled.",
+  "new": "Skill Forge's original instructions and helpers are MIT-licensed. This v0.4.0 bundle additionally includes the identified Anatomy renderer and CSS under their upstream MIT license, with complete notices and provenance retained."
+}

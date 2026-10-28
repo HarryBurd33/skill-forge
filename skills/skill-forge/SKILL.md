@@ -3,7 +3,7 @@ name: skill-forge
 description: Create reusable agent skills from ideas, conversations or project workflows; improve existing skills or Skill Forge from observed failures. Use when asked to turn this conversation or project into a skill, not merely perform its domain task or write a one-off prompt.
 license: MIT
 metadata:
-  version: "0.3.1"
+  version: "0.4.0"
 ---
 
 # Skill Forge
@@ -50,6 +50,10 @@ Aim for the most useful refinement within the user's pace and effort limits. Con
 ## Find foundations, build and check
 
 Once the brief is ready, before implementation, run the nested [Skill Finder](subskills/skill-finder/SKILL.md). With subagents, delegate its bounded research using a sanitized brief and needed constraints. If the host lacks subagent-launch capability, say so explicitly and do the bounded research directly, reporting the actual search method, queries and results. Disclose any other reason delegation did not run truthfully. Finder searches relevant GitHub, Hugging Face and primary resources, inspects actual files and reuse rights, and returns an adoption plan. Distinguish inspected evidence from unverified content, licenses and revisions; recover from access failures within the budget or report partial findings honestly. Without research tools, draft original provisional files with verification pending. Use a suitable verified foundation when it improves the result; never force a match or copy unlicensed material. Respect a user decline, a still-current report, or the effort limit and record why research was skipped or limited. If findings change a material decision, refine that decision before building.
+
+When a foundation is an existing skill, repository or software artifact, use the [reverse-engineering bridge](subskills/reverse-engineer/SKILL.md) when understanding its behavior is needed. Derive its workflow and rights from actual evidence; use normal repository tools for complete readable source, and REA only for shipped-artifact/runtime-dependent questions. Missing providers leave named gaps, not fabricated analysis.
+
+Automatically apply the [Anatomy adapter](subskills/anatomy/SKILL.md) when the target skill’s agreed output benefits from a physical mechanism or interactive technical explanation. Include the actual renderer/resources and notices in that target and check them independently. Skip text/CSV-only skills, generic flowcharts, decorative extras and user opt-outs. Put the chosen integration, dependencies and checks in the pre-build spec. The bundled basic SVG/HTML slice is not the full upstream advanced toolkit.
 
 Before target implementation, present a readable [implementation spec](references/specification.md) with a [right-sized template](templates/implementation-spec.md): behavior and boundaries, input/output contract, files and foundations, assumptions/dependencies, ordered work and delegated roles, privacy/delivery, and a concrete verification plan. Label any unprovided language/framework choice as a proposed default. Make the entire intended approach reviewable before producing or replacing the target; a small skill may need only a short plan.
 

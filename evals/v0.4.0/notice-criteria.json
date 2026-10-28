@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "builder",
+  "change_kind": "structural",
+  "evaluation_kind": "script_execution",
+  "checks": [
+    {
+      "id": "notice-accuracy",
+      "kind": "acceptance",
+      "input": "Candidate1 bundles the pinned Anatomy JavaScript/CSS but inherits the sentence claiming no upstream text/code bundled. Inspect its notice and complete existing licenses.",
+      "expected": "Only that false legacy sentence is replaced by accurate identification of original material plus bundled Anatomy renderer/CSS and applicable MIT notices; existing foundation attribution and full license files are preserved.",
+      "failure": "False no-code claim remains, credit/license is removed, or extra edits occur."
+    },
+    {
+      "id": "byte-preservation",
+      "kind": "regression",
+      "input": "Compare full candidate1 tree51f4b6ace943de87cbc6b09ca25213e578bea4a5d7dfe45599ca19734031aea4 to proposed notice-only tree.",
+      "expected": "Exactly THIRD_PARTY_NOTICES.md differs by the predefined sentence replacement; all behavior instructions, scripts, assets, questions, templates and licenses byte-identical; both validate.",
+      "failure": "Any other bytes/path differ, validation fails, or baseline binding differs."
+    }
+  ],
+  "benefit": {
+    "metric": "false_bundling_claims",
+    "direction": "lower",
+    "min_delta": 1
+  }
+}

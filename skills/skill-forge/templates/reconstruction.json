@@ -1,0 +1,28 @@
+{
+  "target": {
+    "kind": null,
+    "origin": null,
+    "revision_or_hash": null,
+    "inspected_scope": []
+  },
+  "rights": {
+    "license": null,
+    "reuse_scope": null,
+    "notices": []
+  },
+  "observations": [],
+  "inferences": [],
+  "unknowns": [],
+  "behavior_contract": {
+    "activation": [],
+    "exclusions": [],
+    "inputs": [],
+    "outputs": [],
+    "decision_order": [],
+    "resources": [],
+    "preserve": []
+  },
+  "reconstruction_plan": [],
+  "checks": [],
+  "limitations": []
+}

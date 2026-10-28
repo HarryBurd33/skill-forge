@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "retrieved_date": "2026-10-15",
-  "method": "Official documentation opened via web; repository files fetched from raw.githubusercontent.com at GitHub API-resolved main commits; license and notice inventories inspected.",
+  "retrieved_date": "2026-10-27",
+  "method": "Official documentation opened via web; repository files fetched from raw.githubusercontent.com at GitHub API-resolved main commits; license and notice inventories inspected. Follow-up REA/Anatomy review on 2026-10-27 inspected pinned source/license files; the explicitly listed Anatomy core files are bundled unchanged. Historical source entries retain their original dates and scope.",
   "sources": [
     {
       "id": "mattpocock-skills",
@@ -280,6 +280,81 @@
       ],
       "license": "No redistribution permission found in supplied PDF; no Apache inference from separate repository",
       "reuse": "Conceptual only; original validator code and explanation. PDF, extraction and source prose not distributed."
+    },
+    {
+      "id": "morluto-rea",
+      "type": "repository",
+      "repository_url": "https://github.com/morluto/rea",
+      "retrieved_date": "2026-10-27",
+      "commit": "0cd7ef456bf960da265e04b341e82a24b1e377d5",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 morluto",
+      "license_url": "https://github.com/morluto/rea/blob/0cd7ef456bf960da265e04b341e82a24b1e377d5/LICENSE",
+      "reuse": "Original scoped adapter informed by upstream routing/evidence practice; complete MIT notice retained. REA server, package and provider engines are not redistributed.",
+      "files": [
+        {
+          "path": ".agents/skills/reverse-engineer-anything/SKILL.md",
+          "url": "https://github.com/morluto/rea/blob/0cd7ef456bf960da265e04b341e82a24b1e377d5/.agents/skills/reverse-engineer-anything/SKILL.md",
+          "sha256": "6af693f3c6474740535f5c628dd12261d9b4c5068df502e029d9a9367aa2ae96",
+          "bytes": 34708
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/morluto/rea/blob/0cd7ef456bf960da265e04b341e82a24b1e377d5/LICENSE",
+          "sha256": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b",
+          "bytes": 1064,
+          "bundled_as": "skills/skill-forge/subskills/reverse-engineer/LICENSE"
+        }
+      ],
+      "inspected_scope": "Listed files plus source/license/API scope described in docs/foundations.md; not an exhaustive review of the whole upstream repository.",
+      "package_execution": {
+        "name": "rea-agents",
+        "version": "6.8.0",
+        "isolated_node_version": "24.22.1",
+        "observed": "Version/help and ZIP inspection succeeded; JavaScript static analysis failed at macOS process-helper compilation (SwiftBridging redefinition). No target runtime observation or universal provider support established.",
+        "repository_package_parity": "Not established; source revision and npm package are separate identities."
+      }
+    },
+    {
+      "id": "wheresryan22-anatomy",
+      "type": "repository",
+      "repository_url": "https://github.com/wheresryan22/anatomy",
+      "retrieved_date": "2026-10-27",
+      "commit": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Ryan",
+      "license_url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/LICENSE",
+      "reuse": "Actual basic renderer and CSS bundled byte-for-byte with complete MIT notice. Adapter guidance and pressure-rig model/build example are original Forge additions. Advanced upstream modules, example library and verification scripts are not bundled.",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/SKILL.md",
+          "sha256": "3423ada45a05033bb6e320dfc3b3ac832569969a5afb059bbfc9096c5cf0c71b",
+          "bytes": 33589
+        },
+        {
+          "path": "kit/iso-kit.mjs",
+          "url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/kit/iso-kit.mjs",
+          "sha256": "6d3ecc725d30c3b0346da309cf61dfa5a65017c23620bbd4093009d4fb104018",
+          "bytes": 35175,
+          "bundled_as": "skills/skill-forge/resources/anatomy/vendor/iso-kit.mjs"
+        },
+        {
+          "path": "kit/iso.css",
+          "url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/kit/iso.css",
+          "sha256": "ef19bac5a42ba9be42b56b2c1cf7fc7e21d332a8060765e9ca1d987b8ab23924",
+          "bytes": 7698,
+          "bundled_as": "skills/skill-forge/resources/anatomy/vendor/iso.css"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/LICENSE",
+          "sha256": "87c078ab9d90a3044f359e6b563d4e6afea7aa060897cf4f21618687b3856796",
+          "bytes": 1061,
+          "bundled_as": "skills/skill-forge/resources/anatomy/vendor/LICENSE"
+        }
+      ],
+      "inspected_scope": "Listed files plus source/license/API scope described in docs/foundations.md; not an exhaustive review of the whole upstream repository."
     }
   ],
   "verification_updates": [
@@ -330,6 +405,14 @@
       ],
       "method": "Actual primary pages opened through web; relevant discovery/path/update and OS-support sections inspected.",
       "result": "Codex user/project .agents/skills and automatic detection; Claude user/project .claude/skills, /skill-name, personal precedence and reload behavior; native Windows alternatives remain documented. No native-host execution claimed, no source material copied."
+    },
+    {
+      "date": "2026-10-27",
+      "sources": [
+        "morluto-rea",
+        "wheresryan22-anatomy"
+      ],
+      "result": "Scoped original adapters and actual basic Anatomy renderer/CSS integrated as a candidate. Full notices retained; advanced modules and REA executable service not bundled. Candidate local helper/renderer checks are separate from pending browser checks and final release review."
     }
   ]
 }

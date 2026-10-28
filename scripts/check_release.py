@@ -54,6 +54,53 @@ def clean_first_use():
             'scope': 'Filesystem/CLI only; native Codex and Claude discovery are separate checks.'}
 
 
+def validate_skill_packages(root):
+    """Validate closures at outermost SKILL boundaries and every nested header.
+
+    Nested adapters may reference their containing package's shared resources.
+    They are not standalone distributions, but still need valid metadata and
+    matching directory names. Independent examples retain their own closures.
+    """
+    root = Path(root)
+    forge.require(root.is_dir() and not forge.is_link(root), 'Expected a real release root')
+    paths = sorted(
+        (path for path in root.rglob('SKILL.md')
+         if not ({'.git', 'dist'} & set(path.relative_to(root).parts))),
+        key=lambda path: (len(path.relative_to(root).parts), path.relative_to(root).as_posix()),
+    )
+    packages = []
+    metadata_records = {}
+    for path in paths:
+        forge.require(not forge.is_link(path), 'Skill metadata cannot be a symlink/reparse point')
+        directory = path.parent
+        container = next((package for package in packages
+                          if package == directory or package in directory.parents), None)
+        if container is None:
+            container = directory
+            packages.append(container)
+            metadata_records[container] = []
+        meta = forge.metadata(path.read_text(encoding='utf-8'))
+        forge.require(meta['name'] == directory.name,
+                      'Frontmatter name must match skill directory name: ' +
+                      path.relative_to(root).as_posix())
+        if directory != container:
+            metadata_records[container].append({
+                'path': path.relative_to(container).as_posix(),
+                'name': meta['name'],
+                'status': 'pass',
+            })
+    checks = []
+    for package in packages:
+        # validate traverses all Markdown beneath this boundary, including each
+        # nested adapter. Links leaving this package remain rejected, even when
+        # their destination is another existing file inside the repository.
+        result = forge.validate(package)
+        result['package'] = package.relative_to(root).as_posix()
+        result['nested_metadata'] = metadata_records[package]
+        checks.append(result)
+    return checks
+
+
 def main():
     selection = json.loads((ROOT/'release-manifest.json').read_text(encoding="utf-8"))['files']
     assert len(selection) == len(set(selection)), 'Duplicate manifest entries'
@@ -82,10 +129,7 @@ def main():
                 if target.is_file():
                     forge.require(target.relative_to(ROOT).as_posix() in selected, 'Linked file omitted: '+rel+' '+link)
                 links += 1
-    skill_checks = []
-    for path in ROOT.rglob('SKILL.md'):
-        if '.git' not in path.parts and 'dist' not in path.parts:
-            skill_checks.append(forge.validate(path.parent))
+    skill_checks = validate_skill_packages(ROOT)
     forge.require((ROOT/'portable/skill-forge-prompt.md').read_text(encoding="utf-8") == forge.portable_text(ROOT/'skills/skill-forge'), 'Portable prompt drift')
     first_use = clean_first_use()
     print(json.dumps({'status':'pass','public_files':len(selection),'relative_links':links,

@@ -8,7 +8,7 @@ Python is optional for interviewing, the spec and file output. Only optional hel
 
 1. Download and extract the [repository or skill ZIP](../README.md).
 2. Find the entire `skills/skill-forge` folder in the repository, or `skill-forge` in the skill ZIP.
-3. Choose a destination below, create missing parents, and copy the complete folder. Keep all supporting files and nested Skill Finder.
+3. Choose a destination below, create missing parents, and copy the complete folder. Keep all supporting files, bundled resources and nested adapters.
 4. Start Claude Code in your project and enter `/skill-forge`.
 
 | Scope | macOS/Linux | Windows |
@@ -90,3 +90,9 @@ Improve a writable local source rather than vendor-managed or account-synced cac
 ## Optional metadata lint
 
 Before installing a generated Claude-targeted skill, the v0.3.1 helper supports `validate /path/to/my-skill --profile claude` (use the script path shown above). It checks reserved name substrings and angle brackets in discovery metadata while allowing markup in the body. A supplied `compatibility` field must contain 1–500 characters. This is supported-subset lint, not a complete YAML parser or a native Claude execution test. See the [guide review](claude-guide-review.md).
+
+## Optional reconstruction and explanatory visuals
+
+No second skill installation is needed for Forge's REA and Anatomy routing instructions. [The integration guide](integrations.md) explains when each applies. Normal complete-source work uses ordinary read tools; shipped-artifact and runtime questions may need a connected compatible REA tool. Installing Forge does not connect REA or install its engines.
+
+For a generated physical explainer, Forge selects Anatomy when it helps the agreed output and includes the actual renderer/CSS and notices in that target. Node.js 20.10+ is optional until rendering; no npm packages are needed for this basic SVG example. A browser is needed for visual/interaction checks. Keep the complete target folder when moving or sharing it; the generated target needs no Forge runtime. Plain text, CSV, ordinary flowcharts and explicit no-visual requests do not receive automatic Anatomy assets.

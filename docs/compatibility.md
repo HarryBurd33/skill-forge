@@ -49,4 +49,17 @@ Final source86daffd3… adds only reference navigation to the behavior-tested so
 
 ## v0.3.1 metadata-helper scope
 
-The opt-in Claude profile checks discovery metadata against documented restrictions; it does not establish native Claude upload acceptance. The current comparison ran26actual CLI cases, with30local unit passes and1Windows-only skip. [The v0.3.1 report](../evals/v0.3.1/REPORT.md) records frozen inputs and limits; earlier model/host evidence remains historical.
+The opt-in Claude profile checks discovery metadata against documented restrictions; it does not establish native Claude upload acceptance. The current comparison ran26actual CLI cases, with30local unit passes and1 Windows-only skip. [The v0.3.1 report](../evals/v0.3.1/REPORT.md) records frozen inputs and limits; earlier model/host evidence remains historical.
+
+## v0.4.0 integrations
+
+The local release suite recorded **42 passes and one Windows-only skip**. New checks cover complete resource copying, relocation, unchanged repeats, customized/partial conflicts, symlink/path refusal, injected failures and exclusive publication. The original mechanism builds with the actual renderer; SVG and model/inline-script checks ran. Required HTML layout, keyboard/control and reduced-motion checks passed through maintainer-reported manual execution and independent review. Browser/version remains unknown; no automated browser execution is claimed.
+
+REA 6.8.0 version/help and ZIP artifact inspection succeeded with isolated Node 24.22.1. JavaScript semantic analysis failed at a local macOS SwiftBridging compiler conflict; no semantic or application-runtime success is claimed. Installing Forge does not register REA or install its engines.
+
+The reviewed REA package declares Node `^22.23.4 || ^24.22.1 || >=26.12.1`; this differs from the basic Anatomy example's minimum. Individual REA providers and operating systems have separate prerequisites. A source revision, CLI version or successful ZIP inspection does not prove all providers work. These provider checks do not establish universal target support or native model parity.
+
+
+### v0.4.0 integration checks
+
+[All six candidate jobs passed](../evals/v0.4.0/platform-checks.json) at `fd45d89`: Windows/Ubuntu Python3.9 and3.13, Intel macOS3.9 and ARM macOS3.13. This includes the new resource-attachment and package-boundary tests. Native Claude, other-model behavior and REA providers on these platforms remain separate, unverified integrations. The required local HTML layout/keyboard/reduced-motion checks passed through maintainer-reported manual execution and independent review; browser/version is unknown. No automated browser execution is claimed. See the [final report](../evals/v0.4.0/REPORT.md).
