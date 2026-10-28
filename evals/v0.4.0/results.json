@@ -184,7 +184,7 @@
       "transcript_sha256": "4824bc465eddd7050dda9213c11f3d35af5f7e453e58e00e5fa80c585f4a6c24",
       "limitations": [
         "DOM stub is not browser; candidate explicitly keeps native keyboard/layout/themes/reduced-motion visual checks pending.",
-        "Candidate side N1 outcome established; baseline comparison still pending."
+        "Historical incremental observation: the candidate N1 outcome was established before baseline grading completed. Final comparison is baseline0/candidate1; per-actor browser limits remain as originally recorded."
       ]
     },
     {
@@ -425,7 +425,7 @@
       "baseline": 0,
       "delta": 1,
       "metric": "self_contained_anatomy_outcomes",
-      "status": "PASS measured generated-resource outcome; global S1 visual gate still unexecuted"
+      "status": "PASS measured generated-resource outcome, baseline0/candidate1; global S1 subsequently passed using separately reviewed maintainer-reported manual evidence."
     },
     "N2": "PASS mandatory preservation both arms on D2/H2, no benefit credit"
   },
@@ -495,5 +495,12 @@
     "automated_browser_execution": false
   },
   "disclosure": "Synthetic requests and sanitized independent outcomes are public; raw transcripts, private paths, native state and temporary workspaces are excluded. Digests bind retained local evidence, not publicly replayable logs.",
-  "adoption": "adoption.json"
+  "adoption": "adoption.json",
+  "historical_incremental_notes": {
+    "superseded_status_strings": [
+      "Candidate side N1 outcome established; baseline comparison still pending.",
+      "PASS measured generated-resource outcome; global S1 visual gate still unexecuted"
+    ],
+    "context": "Retained for traceability only; final results and manual S1 resolution supersede these earlier pending statements."
+  }
 }
