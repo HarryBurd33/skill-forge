@@ -1,0 +1,33 @@
+{
+  "verdict": "accept-for-staged-adoption",
+  "candidate_hash": "850e1fd6286663bb0c7f360a2e47adca7c78822917b7ed7a2e4d8d4fad01f454",
+  "fixed_checks_passed": [
+    "C0",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "H1"
+  ],
+  "benefit_delta": 1,
+  "gate_evidence_sha256": "7a883c739c0fa4e577a0bb0c3132d061dfcbfc81c183ad31f9b4fcb8d1a491b6",
+  "source_and_staged_hash_match": true,
+  "original_43_test_sources_byte_unchanged": true,
+  "actual_host_runs": [
+    "final-original-execution.json",
+    "candidate2-original-heldout-result.json",
+    "candidate2-supplemental-heldout-result.json"
+  ],
+  "failure_regression": "candidate2-probe-decode-reproduction.json",
+  "review": "All nine fixed checks pass under documented staged interpretation. Candidate1 C5 failure is fixed by narrowly retaining state on any post-launch probe exception. Original and supplemental unseen semantic assertions pass on actual REA output.",
+  "closing_requirements": [
+    "Finish sanitized v0.4.1 report using actual findings, including candidate1 rejection and platform limits.",
+    "After adoption verify canonical, installed and public package core parity.",
+    "Do not claim current Windows/Intel-native provider execution from local macOS tests."
+  ],
+  "criteria_or_evaluator_changed": false,
+  "proof_limits": "No global process-cleanup promise. Probe-decode repro intentionally retained its owned root and reported uncertainty; this is expected failure-path behavior."
+}

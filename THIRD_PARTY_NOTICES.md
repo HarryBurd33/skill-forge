@@ -26,3 +26,7 @@ Anthropic’s *The Complete Guide to Building Skills for Claude* was reviewed on
 The [resource provenance](skills/skill-forge/resources/anatomy/PROVENANCE.json) and [source ledger](SOURCES.json) record immutable source paths, vendor hashes and modification scope. Copies attached to generated skills must retain their complete notices and provenance. Built HTML includes the renderer's notice; standalone SVG redistribution should be accompanied by the license/provenance. Original Skill Forge MIT licensing does not erase these obligations or relicense an inspected target.
 
 Only the basic SVG core/CSS is bundled. Advanced upstream modules, browser verification scripts, the example library and publishing workflows are excluded. See [integration scope](docs/integrations.md). Earlier historical acknowledgments describe their own release scopes; the table above records the later code addition.
+
+## macOS compiler overlay strategy
+
+Consulted [tobias-x/screentime-archive](https://github.com/tobias-x/screentime-archive/tree/27fb07e3edb0f715c1e187fc41e6cb0458d63ab1), MIT, copyright (c) 2026 Tobias Franks. Forge’s runner is original; the complete consulted upstream notice is retained in [rea-macos-license.txt](skills/skill-forge/references/rea-macos-license.txt).

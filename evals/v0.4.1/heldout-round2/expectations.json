@@ -1,0 +1,13 @@
+{
+  "import_source": "monitor.js",
+  "import_target": "threshold.js",
+  "specifier": "./threshold.js",
+  "imported_name": "inspectReading",
+  "local_name": "inspect",
+  "functions": {
+    "monitor.js": "reviewReading",
+    "threshold.js": "inspectReading"
+  },
+  "branch_source": "threshold.js",
+  "branch_text": "voltage < 4 ? 'replace-cell' : 'continue-sampling'"
+}

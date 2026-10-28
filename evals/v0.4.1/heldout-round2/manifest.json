@@ -1,0 +1,9 @@
+{
+  "assert_semantics.py": "d9f9d0e215ba723bc25ad976618b17324b101d1e837a90b429088b9d7953a924",
+  "execution-plan.md": "0473b8aae43b56af4080c818d812216f821b1a7aeb02f5ebb085f0eec2a18558",
+  "expectations.json": "e9767d3db54ca1c035caaf7762bc73433537ec9ce3974a2bd760f277a5f17f0b",
+  "fixture/LICENSE": "3c158e19187c80bd42c4dd2f716667a8472db584e34f6108d7565fcc27e8502e",
+  "fixture/monitor.js": "9d5177720d294adc7889d95d655757c652797858b4c8cdeba9976f8a54cc8c7f",
+  "fixture/package.json": "b834cb6c8272633af7b619e00dd965af78d63f83f42fbcbb04ee4cf5e14340e6",
+  "fixture/threshold.js": "0772cbd1ec115b32638dff678ec11a4e3ac7f775b8a6e896ff83d625de66a9e2"
+}

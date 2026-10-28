@@ -1,3 +1,7 @@
+## v0.4.1 focused maintenance — 2026-10-28
+
+Add a guarded opt-in macOS REA compiler recovery without Apple-file edits or native ownership bypass. Preserve cache/argv/customization boundaries, existing regressions and static-only evidence limits. Freeze real baseline, original semantic assertions, independent held-out fixture and failure-path checks before adoption. See [the report](evals/v0.4.1/REPORT.md).
+
 # Skill Forge requirements and evidence
 
 ## v0.4.0 additions — 2026-10-28

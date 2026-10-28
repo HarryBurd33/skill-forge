@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.1 — 2026-10-28
+
+- Add an explicit, fail-closed macOS runner for the observed duplicate SwiftBridging module-map compiler failure. A process-local VFS overlay hides only the verified redundant definition; Apple files and REA native ownership code stay unchanged.
+- Preserve command arguments and caller caches; refuse existing custom compiler/SDK selectors and unmatched errors. Report failed/interrupted cleanup uncertainty and retain dependent temporary state.
+- Add executable guard, concurrency, signal and cleanup regressions, a real original-fixture comparison and an independently sealed JavaScript fixture. See the versioned report for actual outcomes and platform coverage.
+- Keep the core interview behavior unchanged; refresh the derived prompt, installation and release packages.
+
 ## 0.4.0 — 2026-10-28
 
 - Add a scoped reconstruction adapter: inspect complete source with ordinary tools, and use discovered compatible REA tooling for shipped-artifact/runtime-dependent claims while preserving missing-provider gaps.

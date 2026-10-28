@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "retrieved_date": "2026-10-27",
+  "retrieved_date": "2026-10-28",
   "method": "Official documentation opened via web; repository files fetched from raw.githubusercontent.com at GitHub API-resolved main commits; license and notice inventories inspected. Follow-up REA/Anatomy review on 2026-10-27 inspected pinned source/license files; the explicitly listed Anatomy core files are bundled unchanged. Historical source entries retain their original dates and scope.",
   "sources": [
     {
@@ -355,6 +355,26 @@
         }
       ],
       "inspected_scope": "Listed files plus source/license/API scope described in docs/foundations.md; not an exhaustive review of the whole upstream repository."
+    },
+    {
+      "id": "swift-overlay-strategy",
+      "type": "repository",
+      "repository_url": "https://github.com/tobias-x/screentime-archive",
+      "retrieved_date": "2026-10-28",
+      "commit": "27fb07e3edb0f715c1e187fc41e6cb0458d63ab1",
+      "license": "MIT",
+      "license_url": "https://github.com/tobias-x/screentime-archive/blob/27fb07e3edb0f715c1e187fc41e6cb0458d63ab1/LICENSE",
+      "reuse": "Consulted empty-file VFS overlay strategy; original guarded Python implementation. Complete Tobias Franks MIT notice retained conservatively.",
+      "files": [
+        {
+          "path": "build.sh",
+          "sha256": "5e73976516b875aafe1f0f400e5f0fd42a32f8a41a892a5d82e646549cc2764d"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "f8d32364b0f75d80661bf44120a818fb9e24e03a94b10653b1e645f633aab913"
+        }
+      ]
     }
   ],
   "verification_updates": [
@@ -413,6 +433,15 @@
         "wheresryan22-anatomy"
       ],
       "result": "Scoped original adapters and actual basic Anatomy renderer/CSS integrated as a candidate. Full notices retained; advanced modules and REA executable service not bundled. Candidate local helper/renderer checks are separate from pending browser checks and final release review."
+    },
+    {
+      "date": "2026-10-28",
+      "scope": "v0.4.1 native macOS repair",
+      "sources": [
+        "https://github.com/morluto/rea/tree/0e4b806db14f2cbdf4a31a6268fe1a3514401677",
+        "https://clang.llvm.org/docs/ClangCommandLineReference.html"
+      ],
+      "method": "Actual installed rea-agents6.8.0 compiler selection/process ownership source and Swift helper files inspected; swiftc-help confirms VFS overlay option. Runtime outcomes recorded separately in evals/v0.4.1."
     }
   ]
 }

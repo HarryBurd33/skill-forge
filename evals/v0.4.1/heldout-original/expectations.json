@@ -1,0 +1,13 @@
+{
+  "import_source": "dispatch.js",
+  "import_target": "routing.js",
+  "specifier": "./routing.js",
+  "imported_name": "classifyParcel",
+  "local_name": "classify",
+  "functions": {
+    "dispatch.js": "dispatchParcel",
+    "routing.js": "classifyParcel"
+  },
+  "branch_source": "routing.js",
+  "branch_text": "mass > 12 ? 'freight-lane' : 'hand-sort'"
+}

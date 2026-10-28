@@ -12,7 +12,7 @@ their references below describe capabilities, not tools available in plain chat.
 Generated from canonical instructions and all reference, template, question,
 and bundled sub-skill resources. Edit those sources and regenerate this file; do not edit this bundle.
 
-Source SHA-256: `1af701f6318528a45545e3a7ea9fe6f02e62e3064af1d56b526385d3fe774240`
+Source SHA-256: `27c1d1cfacc654b0a61ae783d4961b607fb5f4591a2d5add15caefd0eab29914`
 
 <a id="resource-skill-md"></a>
 
@@ -23,7 +23,7 @@ name: skill-forge
 description: Create reusable agent skills from ideas, conversations or project workflows; improve existing skills or Skill Forge from observed failures. Use when asked to turn this conversation or project into a skill, not merely perform its domain task or write a one-off prompt.
 license: MIT
 metadata:
-  version: "0.4.0"
+  version: "0.4.1"
 ---
 
 # Skill Forge
@@ -556,6 +556,64 @@ The self-contained portable prompt is generated from canonical instructions, ref
 Core instructions are text and do not depend on macOS, Intel, ARM or any particular model vendor. Native host installation, model capability and optional Python execution are separate requirements. On Windows, use the documented PowerShell or manual-copy route; on macOS/Linux use the documented shell or manual-copy route. No Python is needed to conduct the interview. Compatibility does not establish identical model performance.
 
 For any capable plain-chat model, supply the generated portable prompt and relevant conversation/project excerpts. It must state what it can actually see, extract final decisions and private-versus-reusable facts, then return a brief and implementation spec/check plan before target contents. Wait if review-first is requested; otherwise continue the authorized draft. Without subagents, say launch is unavailable and perform useful work directly. Without tools, checks remain manual/unexecuted, and no installation, persistence or publication may be claimed. Save the spec revision, review preference and next action in the handoff so another conversation can resume.
+
+<a id="resource-references-rea-macos-license-txt"></a>
+
+## Included resource: references/rea-macos-license.txt
+
+MIT License
+
+Copyright (c) 2026 Tobias Franks
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+<a id="resource-references-rea-macos-md"></a>
+
+## Included resource: references/rea-macos.md
+
+# Guarded REA macOS compiler workaround
+
+Use only after actual `error: redefinition of module 'SwiftBridging'` blocks an authorized installed REA analysis. Ordinary complete-source inspection still uses file/search tools. This Python 3.9+ utility refuses other errors, non-Darwin hosts, missing/mismatching maps, additional map declarations, absent executables, and existing nonempty `REA_DARWIN_SWIFTC_PATH` or `SDKROOT`. It discovers the selected compiler and SDK using `/usr/bin/xcrun`. Without `--diagnostic`, it first runs a bounded Foundation compiler probe; a supplied file must contain actual stderr or JSON capturing that known error.
+
+From the skill directory:
+
+```text
+python3 scripts/rea_macos.py --diagnostic /absolute/path/actual-stderr.txt -- /absolute/path/to/rea analyze-javascript-application /absolute/path/to/extracted-app --format json
+```
+
+Only when package acquisition is separately authorized, the pinned package runner may be the command:
+
+```text
+python3 scripts/rea_macos.py --diagnostic /absolute/path/actual-stderr.txt -- npm exec --yes --package=node@24.22.1 --package=rea-agents@6.8.0 -- rea analyze-javascript-application /absolute/path/to/extracted-app --format json
+```
+
+No package acquisition occurs in the utility itself. Inspect the installed version/help and REA's supported Node requirements first. Native inspection still requires the host's actual process-inspection permissions. This does not change security policy, install providers, or promise to repair other compiler/REA errors.
+
+The runner verifies both selected-toolchain maps are solely the matching known SwiftBridging definition, then overlays only redundant `module.modulemap` with a unique owned empty file. It retains `bridging.modulemap`. A generated Python executable forwards real compiler argv using `os.execv`, with `-vfsoverlay FILE -Xcc -ivfsoverlay -Xcc FILE`; the short `/usr/bin/env python3` launcher avoids space/length limits in the calling interpreter path. Keep the intended Python 3 on PATH. Apple files and REA's native ownership helper remain unchanged. Child-only `REA_DARWIN_SWIFTC_PATH` and `SDKROOT` select that compiler; no global environment/configuration is written.
+
+All other environment values, including custom `REA_DARWIN_MODULE_CACHE_PATH` and `CLANG_MODULE_CACHE_PATH`, pass unchanged. REA itself may suppress `CLANG_MODULE_CACHE_PATH` when its supported cache selector is empty. The utility never removes caches. Default REA caches can persist as REA normally manages them.
+
+Stdout/stderr stream directly, preserving REA JSON stdout. Nonzero exits and signals remain failures. `--timeout` defaults to 600 seconds; `--probe-timeout` to 60 (each accepts at most 3600). Cold Swift startup can take minutes, so raise the explicit probe limit if needed. Discovery is bounded at 10 seconds per command. On interruption/timeout, only the owned root process group is signaled, with two bounded settlement waits of two seconds; compiler-probe timeout starts with SIGINT. REA documents Swift frontend jobs using separate process groups, so disappearance of the root group cannot establish native descendant settlement. On failed/interrupted/timed-out or forcibly stopped analyzer runs, the utility preserves its unique temporary state and explicitly reports that native descendant settlement remains unverified, while preserving the original failure or signal. A forced-stop path cannot report success. Any nonzero compiler-probe exit also leaves native descendant settlement unverified, including a recognized duplicate error. Its dependent state is retained; if the later analyzer succeeds, unresolved probe uncertainty still makes the utility exit nonzero. A supplied actual diagnostic avoids launching that probe. Probe forced-stop paths and any exception after compiler launch retain their state as well, even when the compiler leader has already exited. It never guesses or signals escaped process groups. A normal REA exit zero retains REA's native ownership/cleanup behavior; confirm its actual cleanup evidence before claiming success. Cleanup errors remain visible failures. No custom caches or foreign files are deleted. Retained state can be removed only after separately establishing that the native work has ended.
+
+Static REA output does not prove runtime execution. Verify actual imports/functions/source hashes and ranges; a source-backed ternary interpretation is not an invented REA branch edge or resolved inter-module call. Preserve unknown-call and static-only limits.
+
+Overlay strategy reference: [Tobias Franks's pinned build.sh](https://github.com/tobias-x/screentime-archive/blob/27fb07e3edb0f715c1e187fc41e6cb0458d63ab1/build.sh), [MIT license at the same commit](https://github.com/tobias-x/screentime-archive/blob/27fb07e3edb0f715c1e187fc41e6cb0458d63ab1/LICENSE). This utility is independently implemented; the complete notice is [retained conservatively](#resource-references-rea-macos-license-txt).
 
 <a id="resource-references-specification-md"></a>
 
@@ -1277,7 +1335,7 @@ name: reverse-engineer
 description: Recover a reusable workflow or skill contract from supplied repository source, an existing skill, or authorized software artifacts. Use during Skill Forge foundation analysis; use REA only for shipped-artifact or runtime-dependent questions, not routine complete-source analysis.
 license: MIT
 metadata:
-  version: "0.4.0"
+  version: "0.4.1"
 ---
 
 # Reverse-engineering bridge
@@ -1293,6 +1351,8 @@ Investigate only the supplied or authorized target and behavior needed for the r
 For an existing local REA CLI, inspect its version/help and use documented commands. The reviewed package is `rea-agents@6.8.0`, with Node `^22.23.4 || ^24.22.1 || >=26.12.1`. An isolated compatible Node package can avoid changing system Node. Acquiring packages, registering MCP, installing engines or changing configuration must be within the current user's scope and permissions. Text installation does not register a server. Read the [pinned CLI guide](https://github.com/morluto/rea/blob/0cd7ef456bf960da265e04b341e82a24b1e377d5/docs/cli.md) and [setup guide](https://github.com/morluto/rea/blob/0cd7ef456bf960da265e04b341e82a24b1e377d5/docs/installation.md) only when that path is needed. Repository-main instructions can describe capabilities absent from the published package; actual runtime/help wins.
 
 A pinned runner, when package acquisition is authorized, is `npm exec --yes --package=node@24.22.1 --package=rea-agents@6.8.0 -- rea --help`. For a supplied extracted JavaScript app use `analyze-javascript-application /absolute/path/to/app --format json`; this inspects the target, not evidence of running the application. Keep private paths and raw output outside public source. Windows/Linux/macOS and individual providers differ.
+
+For the recognized macOS compiler error `redefinition of module 'SwiftBridging'`, the explicit [process-local workaround](#resource-references-rea-macos-md) may be used within the authorized analysis scope. Its guard must match the actual diagnostic and both current modulemaps; other failures remain unsupported.
 
 ## Produce a reconstruction brief
 
@@ -1422,3 +1482,7 @@ See the [source ledger](https://github.com/HarryBurd33/skill-forge/blob/main/SOU
 ## v0.4.0 integrations
 
 Anatomy basic renderer/CSS: Copyright (c) 2026 Ryan, MIT. See the complete bundled license/provenance under resources/anatomy. REA workflow integration: Copyright (c) 2026 morluto, MIT; full notice is retained in subskills/reverse-engineer/LICENSE. Original adapter text narrows the upstream workflows and documents optional tool requirements. No rights to inspected third-party targets are implied.
+
+## v0.4.1 macOS workaround
+
+The optional original Python runner uses a process-local VFS overlay strategy informed by Tobias Franks's MIT-licensed screentime-archive build workaround (2026), pinned at [27fb07e3edb0f715c1e187fc41e6cb0458d63ab1](https://github.com/tobias-x/screentime-archive/blob/27fb07e3edb0f715c1e187fc41e6cb0458d63ab1/build.sh). No upstream implementation is bundled; the complete MIT notice is conservatively retained in [references/rea-macos-license.txt](#resource-references-rea-macos-license-txt).

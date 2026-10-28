@@ -47,4 +47,6 @@ The portable prompt contains workflow instructions, including the nested adapter
 
 When real assets are available, the bundled SVG/HTML example needs Node.js 20.10+ and a browser for visual checks, with no npm dependencies. The built HTML embeds its renderer, model and CSS. Keep notices/provenance when sharing; the generated target and built HTML do not depend on Forge. See [the exact scope](integrations.md#what-is-included).
 
-The candidate full skill ZIP carries the complete 32-file skill folder, including real Anatomy assets. The portable ZIP is the prompt-and-notices route; its instructions alone are not those executable assets. A plain-chat model can return complete original file texts and a spec, but cannot fetch the pinned kit or render it without the necessary tools or user-supplied files.
+The candidate full skill ZIP carries the complete skill folder, including real Anatomy assets. The portable ZIP is the prompt-and-notices route; its instructions alone are not those executable assets. A plain-chat model can return complete original file texts and a spec, but cannot fetch the pinned kit or render it without the necessary tools or user-supplied files.
+
+The v0.4.1 portable prompt includes the macOS recovery instructions and notices, but not the executable Python runner. Use the full skill/source package when that optional helper is required.

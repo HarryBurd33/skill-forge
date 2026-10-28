@@ -7,3 +7,7 @@ See the [source ledger](https://github.com/HarryBurd33/skill-forge/blob/main/SOU
 ## v0.4.0 integrations
 
 Anatomy basic renderer/CSS: Copyright (c) 2026 Ryan, MIT. See the complete bundled license/provenance under resources/anatomy. REA workflow integration: Copyright (c) 2026 morluto, MIT; full notice is retained in subskills/reverse-engineer/LICENSE. Original adapter text narrows the upstream workflows and documents optional tool requirements. No rights to inspected third-party targets are implied.
+
+## v0.4.1 macOS workaround
+
+The optional original Python runner uses a process-local VFS overlay strategy informed by Tobias Franks's MIT-licensed screentime-archive build workaround (2026), pinned at [27fb07e3edb0f715c1e187fc41e6cb0458d63ab1](https://github.com/tobias-x/screentime-archive/blob/27fb07e3edb0f715c1e187fc41e6cb0458d63ab1/build.sh). No upstream implementation is bundled; the complete MIT notice is conservatively retained in [references/rea-macos-license.txt](references/rea-macos-license.txt).

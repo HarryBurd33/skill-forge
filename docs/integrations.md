@@ -1,6 +1,6 @@
 # Learn from software and build physical explainers
 
-Skill Forge 0.4.0 adds two conditional routes. REA helps investigate supplied software artifacts when ordinary source inspection cannot establish the needed facts. Anatomy supplies a real SVG renderer when a generated skill's output benefits from an explanatory physical mechanism. You do not need either route for an ordinary text workflow.
+Skill Forge provides two conditional routes. REA helps investigate supplied software artifacts when ordinary source inspection cannot establish the needed facts. Anatomy supplies a real SVG renderer when a generated skill's output benefits from an explanatory physical mechanism. You do not need either route for an ordinary text workflow.
 
 These are supporting adapters inside Forge. The main workflow reads them when relevant; a host is not assumed to discover nested adapters independently. Installing instructions does not connect a tool or run a check.
 
@@ -73,4 +73,8 @@ The following evidence was recorded for v0.4.0; evaluation and publication are s
 
 The isolated REA test environment changed no global registration or system Node configuration. Historical platform/model results remain in their versioned reports; these local checks do not revalidate every host, provider or model. Public summaries should contain sanitized outcomes and provenance, while credentials, private paths and raw transcripts stay outside the release allowlist.
 
-The full skill ZIP carries the complete 32-file skill folder, including real Anatomy assets. The portable ZIP is the prompt-and-notices route; its instructions alone are not those executable assets. A plain-chat model can return complete original file texts and a spec, but cannot fetch the pinned kit or render it without the necessary tools or user-supplied files.
+The full skill ZIP carries the complete skill folder, including real Anatomy assets. The portable ZIP is the prompt-and-notices route; its instructions alone are not those executable assets. A plain-chat model can return complete original file texts and a spec, but cannot fetch the pinned kit or render it without the necessary tools or user-supplied files.
+
+## macOS SwiftBridging recovery in v0.4.1
+
+The v0.4.0 compiler failure above is historical. Version 0.4.1 adds an [opt-in guarded runner](../skills/skill-forge/references/rea-macos.md) for that exact duplicate-definition case. It supplies a temporary VFS overlay through REA’s supported compiler selector, retains native ownership checking and leaves Apple files unchanged. The [v0.4.1 report](../evals/v0.4.1/REPORT.md) separates actual semantic evidence, failed sandbox execution, synthetic runner regressions and remaining limitations. No target application execution or universal REA-provider compatibility is implied.

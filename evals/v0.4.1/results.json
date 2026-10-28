@@ -1,0 +1,117 @@
+{
+  "status": "fixed checks passed; local adoption accepted; public delivery closing checks recorded in release",
+  "environment": {
+    "os": "macOS Apple Silicon",
+    "compiler": "Apple Swift 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)",
+    "sdk": "MacOSX15.2.sdk selected through xcrun",
+    "rea": "rea-agents6.8.0",
+    "node": "24.22.1",
+    "packages": "already cached; offline npm invocation"
+  },
+  "baseline": {
+    "default_compiler_exit": 1,
+    "diagnostic": "error: redefinition of module 'SwiftBridging'",
+    "real_semantic_success": 0
+  },
+  "original_fixture": {
+    "runner_exit": 0,
+    "semantic_assertions": true,
+    "evidence_id": "ev_7b94044fd7e918518820c233fcd4c59c6d390e6f463fb67b76b19c9febf79f6b",
+    "semantic_nodes": 23,
+    "real_semantic_success": 1,
+    "branch_authority": "source excerpt anchored by REA static return-site evidence; no invented branch edge",
+    "seconds": 3.517
+  },
+  "protected_files": {
+    "all_unchanged": true,
+    "sha256": {
+      "module.modulemap": "d9da6cd205c11e66fa84a857a31b8061ab6fab31a82b805e04e1898725896699",
+      "bridging.modulemap": "62a792dbef5ff93f05740f69dde4a8141789ea571c1952baae935af45ffbd520",
+      "DarwinProcessRunTokenReader.js": "1569970106b4cb52194fc9ec87f08b678c47790608bbf1219afe5eeb2a8e92f5",
+      "ProcessOwnershipObservation.js-ownership": "81b1aaeded14556d884adaffa570cef41909deb01f76fc25a2d7bd0f9a775655",
+      "ProcessRunTokenReader.swift": "e17e730d02d10e77a0bf0fb00a462a305ab1926fffa47ccfc6bf8c60e890e02d",
+      "ProcessRunTokenReaderMain.swift": "c3f4fbc5a43ff2e1c3c3ae0a99e6dba31e81dc816b7936c27e4f762f2bfee05c"
+    }
+  },
+  "limitations": [
+    "Actual analysis required normal host process inspection; sandbox run failed cleanup and is not a success.",
+    "No application executed: static imports/functions/source-bound return expressions only; unknown inter-module calls retained.",
+    "A narrow optional process-local workaround; global Swift toolchain remains unchanged.",
+    "Intel Mac native recovery and Windows/Linux REA providers unverified; core helper CI is separate.",
+    "Failed native jobs can escape root groups; preserve state and report uncertainty instead of asserting global cleanup."
+  ],
+  "artifacts_sha256": {
+    "compiler-probe.json": "ababbdbcc0680cf44ca33d9e1ac3eee583e8b2675df93728c96bbc8ce66379a9",
+    "final-original-execution.json": "e5b53c67550bdcab422e7c224611ee050f51da3ce9a9fe91b93596c6a7166a6a",
+    "final-original-stdout.json": "40f07ab6d67e4ff747d893b9c1f9e56e065abcfb61de3121e2af7ec82d5b9170",
+    "protected-after-original.json": "2ee680222bf32c9a177decfb545a0719b0a25cf615d9abaae4e5572dd9f71681",
+    "final-unit-tests.txt": "fcf32b086daa48b830ef22f7f83a424e49d9fd7cb7d8075b9572dca754442da9",
+    "staged-release-check.json": "c7975756c6922caa2eb9f73d247049fe8ff17d129721e9fe2d1ded08c86fb82e",
+    "candidate2-freeze.json": "d80b10eb58aa8d1680cb742b437f7856fdee6cc1ec27ef376cf593c605f40e5d",
+    "candidate2-original-heldout-result.json": "d94c8818f3fdba5c82d24d8cdf1eb5ed57365e0424c5975fef7a6feacd9060ff",
+    "candidate2-supplemental-heldout-result.json": "66f23e3cf173a7980f29bf19a2359376818dfbd9922c1e53fc554ca99977ee1b",
+    "candidate2-probe-decode-reproduction.json": "81c9bf259132fa6c2d6c69195ae9bfb6f5c459c142b35b6eb59a4646a96960b2"
+  },
+  "candidate_hash": "850e1fd6286663bb0c7f360a2e47adca7c78822917b7ed7a2e4d8d4fad01f454",
+  "unit_tests": {
+    "discovered": 68,
+    "passed": 67,
+    "skipped": 1,
+    "existing_tests": "43 unchanged:42passes,1Windows-onlyskip",
+    "new_runner_tests": "25passes:20POSIXprocesscases+5portableguards",
+    "windows_note": "POSIX process class explicitly skipped; portable guards remain enabled. Actual hosted execution recorded separately."
+  },
+  "clean_first_use": {
+    "status": "pass",
+    "temporary_install_paths": 4,
+    "skill_hash_matches": true,
+    "portable_bytes_match": true,
+    "scope": "Filesystem/CLI only; native Codex and Claude discovery are separate checks."
+  },
+  "rejected_candidate1": {
+    "hash": "31c7cfcec6f98acca4f05e9ece6f5e856cf6992eaff30c78d7df64df6c95efa3",
+    "reason": "Independent compiler-probe UnicodeDecodeError reproduction deleted state while escaped child still depended on probe.swift.",
+    "preserved_prior_active": true,
+    "candidate2_patch": "Any launched probe exception marks descendants unverified and retains state; actual detached-child decode regression added."
+  },
+  "held_out": {
+    "H1": {
+      "exit_code": 0,
+      "seconds": 2.8562042089997703,
+      "assertion_exit_code": 0,
+      "protected_unchanged": true,
+      "new_runner_temp_roots": [],
+      "pass": true,
+      "heldout_manifest_sha256": "d56767e79ff1c3f1574a0850dd7cff5c99e41de211d21c9e7ee30a89e9f1f98b",
+      "evidence_id": "ev_16f56eacdc046f24696511a812f794fa57627cb9b919f0f3ecbbb297f3c6aa77"
+    },
+    "supplemental_unseen_round2": {
+      "exit_code": 0,
+      "seconds": 2.401982207999936,
+      "assertion_exit_code": 0,
+      "protected_unchanged": true,
+      "new_runner_temp_roots": [],
+      "pass": true,
+      "heldout_manifest_sha256": "57a90387f496c403bb67e71b2c193a5568e31644cbaf4a67c14039793f29296b",
+      "evidence_id": "ev_dd0075dbca49c36fcdf7bce614cb119c3a47dbed18b6ac96bf1d702d7c85fc2e"
+    }
+  },
+  "gate": {
+    "fixed_checks_passed": [
+      "C0",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1"
+    ],
+    "criteria_sha256": "6d12ca1829a79cd136b22a2137540c61a7f075b9e346fb436e3febfeca725247",
+    "evaluator_sha256": "b992c41fc024847430bb1bc7936286fb2beef9416e791f4264ecfd11ee1ea2dd",
+    "evidence_sha256": "7a883c739c0fa4e577a0bb0c3132d061dfcbfc81c183ad31f9b4fcb8d1a491b6",
+    "adopted_round": 2,
+    "predefined_benefit_delta": 1
+  }
+}

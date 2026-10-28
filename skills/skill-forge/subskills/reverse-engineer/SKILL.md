@@ -3,7 +3,7 @@ name: reverse-engineer
 description: Recover a reusable workflow or skill contract from supplied repository source, an existing skill, or authorized software artifacts. Use during Skill Forge foundation analysis; use REA only for shipped-artifact or runtime-dependent questions, not routine complete-source analysis.
 license: MIT
 metadata:
-  version: "0.4.0"
+  version: "0.4.1"
 ---
 
 # Reverse-engineering bridge
@@ -19,6 +19,8 @@ Investigate only the supplied or authorized target and behavior needed for the r
 For an existing local REA CLI, inspect its version/help and use documented commands. The reviewed package is `rea-agents@6.8.0`, with Node `^22.23.4 || ^24.22.1 || >=26.12.1`. An isolated compatible Node package can avoid changing system Node. Acquiring packages, registering MCP, installing engines or changing configuration must be within the current user's scope and permissions. Text installation does not register a server. Read the [pinned CLI guide](https://github.com/morluto/rea/blob/0cd7ef456bf960da265e04b341e82a24b1e377d5/docs/cli.md) and [setup guide](https://github.com/morluto/rea/blob/0cd7ef456bf960da265e04b341e82a24b1e377d5/docs/installation.md) only when that path is needed. Repository-main instructions can describe capabilities absent from the published package; actual runtime/help wins.
 
 A pinned runner, when package acquisition is authorized, is `npm exec --yes --package=node@24.22.1 --package=rea-agents@6.8.0 -- rea --help`. For a supplied extracted JavaScript app use `analyze-javascript-application /absolute/path/to/app --format json`; this inspects the target, not evidence of running the application. Keep private paths and raw output outside public source. Windows/Linux/macOS and individual providers differ.
+
+For the recognized macOS compiler error `redefinition of module 'SwiftBridging'`, the explicit [process-local workaround](../../references/rea-macos.md) may be used within the authorized analysis scope. Its guard must match the actual diagnostic and both current modulemaps; other failures remain unsupported.
 
 ## Produce a reconstruction brief
 
