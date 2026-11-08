@@ -230,6 +230,7 @@
     "evals/v0.4.1/independent-final-verification.json",
     "evals/v0.4.1/original-expectations.json",
     "evals/v0.4.1/results.json",
+    "evals/v0.4.2/REPORT.md",
     "examples/README.md",
     "examples/adaptive-planner/SKILL.md",
     "examples/adaptive-planner/brief.md",
@@ -270,6 +271,7 @@
     "skills/skill-forge/resources/anatomy/vendor/LICENSE",
     "skills/skill-forge/resources/anatomy/vendor/iso-kit.mjs",
     "skills/skill-forge/resources/anatomy/vendor/iso.css",
+    "skills/skill-forge/scripts/evaluation_resources.py",
     "skills/skill-forge/scripts/forge.py",
     "skills/skill-forge/scripts/rea_macos.py",
     "skills/skill-forge/subskills/anatomy/LICENSE",
@@ -283,6 +285,7 @@
     "skills/skill-forge/templates/improvement.json",
     "skills/skill-forge/templates/reconstruction.json",
     "skills/skill-forge/templates/session.json",
+    "tests/test_evaluation_resources.py",
     "tests/test_forge.py",
     "tests/test_integrations.py",
     "tests/test_rea_macos.py"

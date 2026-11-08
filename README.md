@@ -1,6 +1,6 @@
 # Skill Forge
 
-**Version 0.4.1.** Adds an opt-in recovery runner for the verified macOS SwiftBridging compiler conflict that blocked REA JavaScript analysis. The core skill-building workflows and bundled Anatomy renderer remain available. See [the recovery guide](skills/skill-forge/references/rea-macos.md), [validation report](evals/v0.4.1/REPORT.md) and [integration scope](docs/integrations.md).
+**Working version 0.4.2.** Adds an optional evaluation resource preflight and captured-access audit. Pin companion files, catch drift and undeclared reads, and retain incomplete evidence as inconclusive. See [resource guidance](skills/skill-forge/references/evaluation.md#optional-resource-preflight-and-captured-access-audit) and [validation](evals/v0.4.2/REPORT.md). The latest packaged release links below remain v0.4.1 until this draft is merged and released.
 
 
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
