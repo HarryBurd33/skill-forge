@@ -1,5 +1,9 @@
 # Skill Forge maintenance state
 
-v0.4.1 passed its nine fixed repair checks plus a fresh supplemental held-out fixture and was adopted locally. Canonical core SHA-256: `850e1fd6286663bb0c7f360a2e47adca7c78822917b7ed7a2e4d8d4fad01f454`. The managed personal Codex copy was updated with the same hash. See [validation](evals/v0.4.1/REPORT.md), [recovery instructions](skills/skill-forge/references/rea-macos.md), and the versioned release’s closing receipt for public download/CI verification.
+Version 0.4.2 adds the validated optional evaluation-resource helper. Core interview behavior and prior v0.4.1 functionality remain preserved. See [validation](evals/v0.4.2/REPORT.md), [PR #6](https://github.com/HarryBurd33/skill-forge/pull/6) and [release v0.4.2](https://github.com/HarryBurd33/skill-forge/releases/tag/v0.4.2).
 
-The recovery is explicit and process-local; global Swift files remain unchanged. Static JavaScript facts are supported, application-runtime behavior is not. Other native providers and native Claude/model parity remain unverified. Preserve criteria, notices, customizations and rollback history. No background work is scheduled.
+The canonical and managed installed skill share tree hash f4cf8b9b2598b20e46ccda8a99441704172860546115c7cc0d29722a93018a3e. A verified private v0.4.1 snapshot supports guarded rollback. The local 76-test run passed with one Windows-only skip; all six hosted platform configurations passed on the reviewed source. Metadata, links, portable generation and four clean filesystem installations passed.
+
+Release assets are the complete skill ZIP, portable ZIP, source ZIP and SHA256SUMS.txt. The release record identifies its source commit and final public-download checks; the tag is the immutable source reference. Do not replace an already published package silently.
+
+The [future-session plan](docs/FUTURE-VALIDATION-PLAN.md) covers supported same-chat handoff, production access capture, native Office/cloud round trips, generated GitHub execution and model/allowance calibration. Missing capture remains inconclusive; no background work is scheduled.

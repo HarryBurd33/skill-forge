@@ -20,7 +20,7 @@ import tempfile
 import uuid
 import zipfile
 
-VERSION = "0.4.1"
+VERSION = "0.4.2"
 SCHEMA = 1
 MARKER = ".skill-forge-managed.json"
 SKIP_DIRS = {".git", "__pycache__", ".pytest_cache"}

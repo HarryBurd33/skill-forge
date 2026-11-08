@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.2 — 2026-11-08
+
+- Add an optional standard-library resource manifest checker with explicit permitted files, exact hashes, provenance and sharing constraints.
+- Audit supplied access records against the frozen manifest; observed violations fail, missing or partial coverage remains inconclusive. The helper does not collect traces or enforce containment.
+- Add eight focused tests and independent boundary verification. Preserve existing interview and adoption gates; no downstream model-quality gain is claimed.
+
 ## 0.4.1 — 2026-10-28
 
 - Add an explicit, fail-closed macOS runner for the observed duplicate SwiftBridging module-map compiler failure. A process-local VFS overlay hides only the verified redundant definition; Apple files and REA native ownership code stay unchanged.
