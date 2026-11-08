@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.2 — 2026-11-08 — working draft
+## 0.4.2 — 2026-11-08
 
 - Add an optional standard-library resource manifest checker with explicit permitted files, exact hashes, provenance and sharing constraints.
 - Audit supplied access records against the frozen manifest; observed violations fail, missing or partial coverage remains inconclusive. The helper does not collect traces or enforce containment.

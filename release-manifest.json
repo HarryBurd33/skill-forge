@@ -17,6 +17,7 @@
     "SOURCES.json",
     "THIRD_PARTY_NOTICES.md",
     "VERSION",
+    "docs/FUTURE-VALIDATION-PLAN.md",
     "docs/claude-code.md",
     "docs/claude-guide-review.md",
     "docs/codex.md",

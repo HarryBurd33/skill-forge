@@ -1,6 +1,6 @@
 # Skill Forge
 
-**Working version 0.4.2.** Adds an optional evaluation resource preflight and captured-access audit. Pin companion files, catch drift and undeclared reads, and retain incomplete evidence as inconclusive. See [resource guidance](skills/skill-forge/references/evaluation.md#optional-resource-preflight-and-captured-access-audit) and [validation](evals/v0.4.2/REPORT.md). The latest packaged release links below remain v0.4.1 until this draft is merged and released.
+**Version 0.4.2.** Adds an optional evaluation resource preflight and captured-access audit. Pin companion files, catch drift and undeclared reads, and retain incomplete evidence as inconclusive. See [resource guidance](skills/skill-forge/references/evaluation.md#optional-resource-preflight-and-captured-access-audit) and [validation](evals/v0.4.2/REPORT.md). See the [future-session validation plan](docs/FUTURE-VALIDATION-PLAN.md) for the remaining host and integration limits.
 
 
 **Turn a useful idea into a reusable AI skill—and improve it with evidence.**
@@ -32,7 +32,7 @@ Choose the skill ZIP for Codex/Claude Code, or the portable ZIP for another capa
 
 ### Codex or Claude Code: install without commands
 
-1. Download [skill-forge-v0.4.1.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.1/skill-forge-v0.4.1.zip) and extract it.
+1. Download [skill-forge-v0.4.2.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.2/skill-forge-v0.4.2.zip) and extract it.
 2. Copy the **complete `skill-forge` folder**, including its references, scripts, templates, resources and nested adapters, to **one** destination below. Create missing parent folders. Copying only `SKILL.md` is incomplete.
 3. Open a new session in your host and invoke Skill Forge as shown below. If it does not appear, restart the host.
 
@@ -58,7 +58,7 @@ The [Codex guide](docs/codex.md) and [Claude Code guide](docs/claude-code.md) al
 
 ### Other capable LLMs: use the portable prompt
 
-1. Download [skill-forge-portable-v0.4.1.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.1/skill-forge-portable-v0.4.1.zip) and extract it.
+1. Download [skill-forge-portable-v0.4.2.zip](https://github.com/HarryBurd33/skill-forge/releases/download/v0.4.2/skill-forge-portable-v0.4.2.zip) and extract it.
 2. Upload **`skill-forge-prompt.md`**, or paste its complete contents into a new conversation. Use the full bundle, not just the short installed `SKILL.md`. Choose a model with enough context for the entire file.
 3. Say: **“Use Skill Forge to build a skill for [my repeated workflow].”** Supply relevant context and references. With no file tools, it returns complete file contents for you to save.
 
