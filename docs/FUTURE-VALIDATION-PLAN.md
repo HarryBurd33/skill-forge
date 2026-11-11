@@ -2,6 +2,8 @@
 
 This plan addresses the limits remaining after the November 2026 Prompt Forge audit and Skill Forge v0.4.2 resource-check repair. It is a plan for later requested sessions, not scheduled work or permission for additional account access. Recheck current versions, available tools, authority, task ownership and allowance at each start. Keep the existing 20% remaining-allowance reserve unless the user chooses otherwise.
 
+See [executed follow-up results](FUTURE-VALIDATION-RESULTS-2026-11-11.md). Supported tests have run; remaining work depends on the recorded host capabilities and measurement prerequisites.
+
 ## Priority and dependency order
 
 | Session | Owner and objective | First bounded work | Acceptance evidence | Fallback or stop condition |

@@ -7,3 +7,5 @@ The canonical and managed installed skill share tree hash f4cf8b9b2598b20e46ccda
 Release assets are the complete skill ZIP, portable ZIP, source ZIP and SHA256SUMS.txt. The release record identifies its source commit and final public-download checks; the tag is the immutable source reference. Do not replace an already published package silently.
 
 The [future-session plan](docs/FUTURE-VALIDATION-PLAN.md) covers supported same-chat handoff, production access capture, native Office/cloud round trips, generated GitHub execution and model/allowance calibration. Missing capture remains inconclusive; no background work is scheduled.
+
+The [2026-11-11 session results](docs/FUTURE-VALIDATION-RESULTS-2026-11-11.md) record executed follow-up coverage and remaining infrastructure prerequisites. Skill runtime and v0.4.2 release archives remain unchanged.
